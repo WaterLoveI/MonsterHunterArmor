@@ -1,0 +1,26 @@
+This mod aims to add monster hunter armor into the game and add a skill point system similar to MHW-Rise with armors even vanilla armors get skills.
+
+Also just a heads up, I'm new to modding.
+
+There's no wiki right now so feel free to join the discord to ask questions and let me know what you want to see added!
+
+Discord: https://discord.gg/un9UAmhrcd
+
+Google Sheets that acts like a wiki and I'll try to keep it up to date.
+https://docs.google.com/spreadsheets/d/1roO5H1dL77ES_XkoLvXZgxPKBEAengKaJF6gw4HFGgA/edit?usp=sharing
+
+V 0.0.1.3
+More quick fixes
+Added Whetstones to starting gear
+Armor Nerfs in points
+
+V 0.0.1.2
+More quick fixes
+Changed Resentment/Strife to only work if the player has potion sickness.
+Counterstrike no longer need to be knocked back to get the buff.
+
+V 0.0.1.1
+Quick Fixes to Fire attack
+Changed Evade Distance to increase dash distance instead of giving iframes when dashing.
+Changed Evasion to give iframes instead of random chance to dodge hits.
+
