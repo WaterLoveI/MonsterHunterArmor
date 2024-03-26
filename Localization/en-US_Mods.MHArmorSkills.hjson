@@ -1467,7 +1467,7 @@ Items: {
 			Increase the Evasion Skill by 1.
 			Increase the Sneak Skill by 1.
 			[◯]x1
-			[◯][◯]x1
+			[◯][◯]x2
 			'''
 	}
 
@@ -2529,277 +2529,582 @@ Items: {
 	}
 
 	Diversion1: {
-		DisplayName: Diversion1
-		Tooltip: ""
+		DisplayName: Diversion Decoration 1
+		Tooltip:
+			'''
+			Increase the Diversion Skill by 1.
+			Works even in the vanity slot.
+			[◯]
+			'''
 	}
 
 	Diversion3: {
-		DisplayName: Diversion3
-		Tooltip: ""
+		DisplayName: Diversion Decoration 3
+		Tooltip:
+			'''
+			Increase the Diversion Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
 	}
 
 	Elemental1: {
-		DisplayName: Elemental1
-		Tooltip: ""
+		DisplayName: Elemental Decoration 1
+		Tooltip:
+			'''
+			Increase the Elemental Skill by 1.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
 	}
 
 	EvadeDistance1: {
-		DisplayName: Evade Distance1
-		Tooltip: ""
+		DisplayName: Evade Distance Decoration 1
+		Tooltip:
+			'''
+			Increase the Evade Distance Skill by 1.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
 	}
 
 	EvadeDistance2: {
-		DisplayName: Evade Distance2
-		Tooltip: ""
+		DisplayName: Evade Distance Decoration 2
+		Tooltip:
+			'''
+			Increase the Evade Distance Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
 	}
 
 	Evasion1: {
-		DisplayName: Evasion1
-		Tooltip: ""
+		DisplayName: Evasion Decoration 1
+		Tooltip:
+			'''
+			Increase the Evasion Skill by 1.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
 	}
 
 	Evasion2: {
-		DisplayName: Evasion2
-		Tooltip: ""
+		DisplayName: Evasion Decoration 2
+		Tooltip:
+			'''
+			Increase the Evasion Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
 	}
 
 	Fate1: {
-		DisplayName: Fate1
-		Tooltip: ""
+		DisplayName: Fate Decoration 1
+		Tooltip:
+			'''
+			Increase the Fate Skill by 1.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
 	}
 
 	Fencing1: {
-		DisplayName: Fencing1
-		Tooltip: ""
+		DisplayName: Fencing Decoration 1
+		Tooltip:
+			'''
+			Increase the Fencing Skill by 1.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
 	}
 
 	FishingExpert1: {
-		DisplayName: Fishing Expert1
-		Tooltip: ""
+		DisplayName: Fishing Expert Decoration 1
+		Tooltip:
+			'''
+			Increase the Fishing Expert Skill by 1.
+			Works even in the vanity slot.
+			[◯]
+			'''
 	}
 
 	FreeMeal1: {
-		DisplayName: Free Meal1
-		Tooltip: ""
+		DisplayName: Free Meal Decoration 1
+		Tooltip:
+			'''
+			Increase the Free Meal Skill by 1.
+			Works even in the vanity slot.
+			[◯]
+			'''
 	}
 
 	Geologist1: {
-		DisplayName: Geologist1
-		Tooltip: ""
+		DisplayName: Geologist Decoration 1
+		Tooltip:
+			'''
+			Increase the Geologist Skill by 1.
+			Works even in the vanity slot.
+			[◯]
+			'''
 	}
 
 	Guard1: {
-		DisplayName: Guard1
-		Tooltip: ""
+		DisplayName: Guard Decoration 1
+		Tooltip:
+			'''
+			Increase the Guard Skill by 1.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
 	}
 
 	Guard2: {
-		DisplayName: Guard2
-		Tooltip: ""
+		DisplayName: Guard Decoration 2
+		Tooltip:
+			'''
+			Increase the Guard Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
 	}
 
 	GuardUp1: {
-		DisplayName: Guard Up1
-		Tooltip: ""
+		DisplayName: Guard Up Decoration 1
+		Tooltip:
+			'''
+			Increase the Guard Up Skill by 1.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
 	}
 
 	GuardUp2: {
-		DisplayName: Guard Up2
-		Tooltip: ""
+		DisplayName: Guard Up Decoration 2
+		Tooltip:
+			'''
+			Increase the Guard Up Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
 	}
 
 	IceAttack1: {
-		DisplayName: Ice Attack1
-		Tooltip: ""
+		DisplayName: Ice Attack Decoration 1
+		Tooltip:
+			'''
+			Increase the Ice Attack Skill by 1.
+			Works even in the vanity slot.
+			[◯]
+			'''
 	}
 
 	IceAttack2: {
-		DisplayName: Ice Attack2
-		Tooltip: ""
+		DisplayName: Ice Attack Decoration 2
+		Tooltip:
+			'''
+			Increase the Ice Attack Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
 	}
 
 	IceAttack3: {
-		DisplayName: Ice Attack3
-		Tooltip: ""
+		DisplayName: Ice Attack Decoration 3
+		Tooltip:
+			'''
+			Increase the Ice Attack Skill by 3.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
 	}
 
 	IceRes1: {
-		DisplayName: Ice Res1
-		Tooltip: ""
+		DisplayName: Ice Res Decoration 1
+		Tooltip:
+			'''
+			Increase the Ice Res Skill by 1.
+			Works even in the vanity slot.
+			[◯]
+			'''
 	}
 
 	IntrepidHeart1: {
-		DisplayName: Intrepid Heart1
-		Tooltip: ""
+		DisplayName: Intrepid Heart Decoration 1
+		Tooltip:
+			'''
+			Increase the Intrepid Heart Skill by 1.
+			Works even in the vanity slot.
+			[◯]
+			'''
 	}
 
 	JumpMaster1: {
-		DisplayName: Jump Master1
-		Tooltip: ""
+		DisplayName: Jump Master Decoration 1
+		Tooltip:
+			'''
+			Increase the Jump Master Skill by 1.
+			Works even in the vanity slot.
+			[◯]
+			'''
 	}
 
 	LastingPower1: {
-		DisplayName: Lasting Power1
-		Tooltip: ""
+		DisplayName: Lasting Power Decoration 1
+		Tooltip:
+			'''
+			Increase the Lasting Power Skill by 1.
+			Works even in the vanity slot.
+			[◯]
+			'''
 	}
 
 	LatentPower1: {
-		DisplayName: Latent Power1
-		Tooltip: ""
+		DisplayName: Latent Power Decoration 1
+		Tooltip:
+			'''
+			Increase the Latent Power Skill by 1.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
 	}
 
 	LatentPower2: {
-		DisplayName: Latent Power2
-		Tooltip: ""
+		DisplayName: Latent Power Decoration 2
+		Tooltip:
+			'''
+			Increase the Latent Power Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
 	}
 
 	MastersTouch1: {
-		DisplayName: Masters Touch1
-		Tooltip: ""
+		DisplayName: Masters Touch Decoration 1
+		Tooltip:
+			'''
+			Increase the Masters Touch Skill by 1.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
 	}
 
 	MastersTouch2: {
-		DisplayName: Masters Touch2
-		Tooltip: ""
+		DisplayName: Masters Touch Decoration 2
+		Tooltip:
+			'''
+			Increase the Masters Touch Skill by 1.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
 	}
 
 	Mushroomancer1: {
-		DisplayName: Mushroomancer1
-		Tooltip: ""
+		DisplayName: Mushroomancer Decoration 1
+		Tooltip:
+			'''
+			Increase the Mushroomancer Skill by 1.
+			Works even in the vanity slot.
+			[◯]
+			'''
 	}
 
 	NormalUp1: {
-		DisplayName: Normal Up1
-		Tooltip: ""
+		DisplayName: Normal Up Decoration 1
+		Tooltip:
+			'''
+			Increase the Normal Up Skill by 1.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
 	}
 
 	OffensiveGuard1: {
-		DisplayName: Offensive Guard1
-		Tooltip: ""
+		DisplayName: Offensive Guard Decoration 1
+		Tooltip:
+			'''
+			Increase the Offensive Guard Skill by 1.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
 	}
 
 	PelletUp1: {
-		DisplayName: Pellet Up1
-		Tooltip: ""
+		DisplayName: Pellet Up Decoration 1
+		Tooltip:
+			'''
+			Increase the Pellet Up Skill by 1.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
 	}
 
 	PierceUp1: {
-		DisplayName: Pierce Up1
-		Tooltip: ""
+		DisplayName: Pierce Up Decoration 1
+		Tooltip:
+			'''
+			Increase the Pierce Up Skill by 1.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
 	}
 
 	Poison1: {
-		DisplayName: Poison1
-		Tooltip: ""
+		DisplayName: Anti-Poison Decoration 1
+		Tooltip:
+			'''
+			Increase the Anti-Poison Skill by 1.
+			Works even in the vanity slot.
+			[◯]
+			'''
 	}
 
 	PoisonCoating1: {
-		DisplayName: Poison Coating1
-		Tooltip: ""
+		DisplayName: Poison Coating Plus Decoration 1
+		Tooltip:
+			'''
+			Increase the Poison Coating Plus Skill by 1.
+			Works even in the vanity slot.
+			[◯]
+			'''
 	}
 
 	PolarHunter1: {
-		DisplayName: Polar Hunter1
-		Tooltip: ""
+		DisplayName: Polar Hunter Decoration 1
+		Tooltip:
+			'''
+			Increase the Polar Hunter Skill by 1.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
 	}
 
 	PolarHunter2: {
-		DisplayName: Polar Hunter2
-		Tooltip: ""
+		DisplayName: Polar Hunter Decoration 2
+		Tooltip:
+			'''
+			Increase the Polar Hunter Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
 	}
 
 	Protection1: {
-		DisplayName: Protection1
-		Tooltip: ""
+		DisplayName: Protection Decoration 1
+		Tooltip:
+			'''
+			Increase the Protection Skill by 1.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
 	}
 
 	Protection2: {
-		DisplayName: Protection2
-		Tooltip: ""
+		DisplayName: Protection Decoration 2
+		Tooltip:
+			'''
+			Increase the Protection Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
 	}
 
 	PunishDraw1: {
-		DisplayName: Punish Draw1
-		Tooltip: ""
+		DisplayName: Punish Draw Decoration 1
+		Tooltip:
+			'''
+			Increase the Punish Draw Skill by 1.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
 	}
 
 	PunishDraw2: {
-		DisplayName: Punish Draw2
-		Tooltip: ""
+		DisplayName: Punish Draw Decoration 2
+		Tooltip:
+			'''
+			Increase the Punish Draw Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
 	}
 
 	Scholar1: {
-		DisplayName: Scholar1
-		Tooltip: ""
+		DisplayName: Scholar Decoration 1
+		Tooltip:
+			'''
+			Increase the Scholar Skill by 1.
+			Works even in the vanity slot.
+			[◯]
+			'''
 	}
 
 	Sneak1: {
-		DisplayName: Sneak1
-		Tooltip: ""
+		DisplayName: Sneak Decoration 1
+		Tooltip:
+			'''
+			Increase the Sneak Skill by 1.
+			Works even in the vanity slot.
+			[◯]
+			'''
 	}
 
 	Sneak3: {
-		DisplayName: Sneak3
-		Tooltip: ""
+		DisplayName: Sneak Decoration 3
+		Tooltip:
+			'''
+			Increase the Sneak Skill by 3.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
 	}
 
 	SpeedEating1: {
-		DisplayName: Speed Eating1
-		Tooltip: ""
+		DisplayName: Speed Eating Decoration 1
+		Tooltip:
+			'''
+			Increase the Speed Eating Skill by 1.
+			Works even in the vanity slot.
+			[◯]
+			'''
 	}
 
 	SpeedSetUp1: {
-		DisplayName: Speed Set Up1
-		Tooltip: ""
+		DisplayName: Speed Setup Decoration 1
+		Tooltip:
+			'''
+			Increase the Speed Setup Skill by 1.
+			Works even in the vanity slot.
+			[◯]
+			'''
 	}
 
 	SpiritBirdsCall1: {
-		DisplayName: Spirit Birds Call1
-		Tooltip: ""
+		DisplayName: Spirit Birds Call Decoration 1
+		Tooltip:
+			'''
+			Increase the Spirit Bird's Call Skill by 1.
+			Works even in the vanity slot.
+			[◯]
+			'''
 	}
 
 	StaminaRecovery1: {
-		DisplayName: Stamina Recovery1
-		Tooltip: ""
+		DisplayName: Stamina Recovery Decoration 1
+		Tooltip:
+			'''
+			Increase the Stamina Recovery Skill by 1.
+			Works even in the vanity slot.
+			[◯]
+			'''
 	}
 
 	StaminaRecovery3: {
-		DisplayName: Stamina Recovery3
-		Tooltip: ""
+		DisplayName: Stamina Recovery Decoration 3
+		Tooltip:
+			'''
+			Increase the Stamina Recovery Skill by 3.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
 	}
 
 	Strife1: {
-		DisplayName: Strife1
-		Tooltip: ""
+		DisplayName: Strife Decoration 1
+		Tooltip:
+			'''
+			Increase the Strife Skill by 1.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
 	}
 
 	Unscathed1: {
-		DisplayName: Unscathed1
-		Tooltip: ""
+		DisplayName: Unscathed Decoration 1
+		Tooltip:
+			'''
+			Increase the Unscathed Skill by 1.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
 	}
 
 	Unscathed2: {
-		DisplayName: Unscathed2
-		Tooltip: ""
+		DisplayName: Unscathed Decoration 2
+		Tooltip:
+			'''
+			Increase the Unscathed Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
 	}
 
 	Vault1: {
-		DisplayName: Vault1
-		Tooltip: ""
+		DisplayName: Vault Decoration 1
+		Tooltip:
+			'''
+			Increase the Vault Skill by 1.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
 	}
 
 	WaterAttack1: {
-		DisplayName: Water Attack1
-		Tooltip: ""
+		DisplayName: Water Attack Decoration 1
+		Tooltip:
+			'''
+			Increase the Water Attack Skill by 1.
+			Works even in the vanity slot.
+			[◯]
+			'''
 	}
 
 	WaterAttack3: {
-		DisplayName: Water Attack3
-		Tooltip: ""
+		DisplayName: Water Attack Decoration 3
+		Tooltip:
+			'''
+			Increase the Water Attack Skill by 3.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
 	}
 
 	WaterRes1: {
-		DisplayName: Water Res1
-		Tooltip: ""
+		DisplayName: Water Res Decoration 1
+		Tooltip:
+			'''
+			Increase the Water Res Skill by 1.
+			Works even in the vanity slot.
+			[◯]
+			'''
+	}
+
+	AquaticMobility1: {
+		DisplayName: Aquatic Mobility Decoration 1
+		Tooltip:
+			'''
+			Increase the Aquatic Mobility Skill by 1.
+			Works even in the vanity slot.
+			[◯]
+			'''
+	}
+
+	Spirit1: {
+		DisplayName: Spirit Decoration 1
+		Tooltip:
+			'''
+			Increase the Spirit Skill by 1.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
+	}
+
+	Spirit2: {
+		DisplayName: Spirit Decoration 2
+		Tooltip:
+			'''
+			Increase the Spirit Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
 	}
 }

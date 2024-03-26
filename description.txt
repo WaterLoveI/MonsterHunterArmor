@@ -9,6 +9,11 @@ Discord: https://discord.gg/un9UAmhrcd
 Google Sheets that acts like a wiki and I'll try to keep it up to date.
 https://docs.google.com/spreadsheets/d/1roO5H1dL77ES_XkoLvXZgxPKBEAengKaJF6gw4HFGgA/edit?usp=sharing
 
+V 0.0.2
+Armor Decorations added
+fixed attack boost giving defense boost
+latent power reworked
+
 V 0.0.1.3
 More quick fixes
 Added Whetstones to starting gear
