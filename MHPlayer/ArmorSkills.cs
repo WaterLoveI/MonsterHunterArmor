@@ -2004,15 +2004,15 @@ namespace MHArmorSkills.MHPlayer
             {
                 if (StamRec >= 1)
                 {
-                    Player.manaRegenDelay -= 5;
+                    modPlayer.StaminaRec += 1;
                 }
                 if (StamRec >= 2)
                 {
-                    Player.manaRegenDelay -= 10;
+                    modPlayer.StaminaRec += 1;
                 }
                 if (StamRec >= 3)
                 {
-                    Player.manaRegenDelay -= 15;
+                    modPlayer.StaminaRec += 2;
                 }
             }
             #endregion

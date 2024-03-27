@@ -19,7 +19,7 @@ namespace MHArmorSkills.Global
         public static readonly int Rarity9BuyPrice = Item.buyPrice(0, 60, 0, 0);
         public static readonly int Rarity10BuyPrice = Item.buyPrice(1, 0, 0, 0);
         public static readonly int Rarity11BuyPrice = Item.buyPrice(1, 10, 0, 0);
-        
+
 
         public static readonly int RarityWhiteBuyPrice = Item.buyPrice(0, 0, 50, 0);
         public static readonly int RarityBlueBuyPrice = Item.buyPrice(0, 1, 0, 0);
@@ -33,7 +33,7 @@ namespace MHArmorSkills.Global
         public static readonly int RarityCyanBuyPrice = Item.buyPrice(0, 60, 0, 0);
         public static readonly int RarityRedBuyPrice = Item.buyPrice(1, 0, 0, 0);
         public static readonly int RarityPurpleBuyPrice = Item.buyPrice(1, 10, 0, 0);
-        
+
 
         public static int GetBuyPrice(int rarity)
         {
@@ -75,7 +75,20 @@ namespace MHArmorSkills.Global
             return GetBuyPrice(item.rare);
         }
         #endregion
+
+        public override bool CanAccessoryBeEquippedWith(Item equippedItem, Item incomingItem, Player player)
+    
+        {
+            // Check if both items are in the ArmorDecorations list
+            Item item = incomingItem;
+            if (MHLists.ArmorDecorations.Contains(item.type))
+            {
+                return false;
+            }
+
+            return base.CanAccessoryBeEquippedWith(equippedItem, incomingItem, player);
             
-        
+
+        }
     }
 }

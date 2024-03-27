@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Terraria.GameContent.ItemDropRules;
-using Terraria.ID;
-using Terraria;
-using Terraria.ModLoader;
+﻿using MHArmorSkills.Items.Accessories.Decorations;
 using MHArmorSkills.Items.Crafting_Materials.ArmorSphere;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
-using MHArmorSkills.Items.Accessories.Decorations;
+using Terraria;
+using Terraria.GameContent.ItemDropRules;
+using Terraria.ID;
+using Terraria.ModLoader;
 
 namespace MHArmorSkills.Global
 {
@@ -21,7 +16,7 @@ namespace MHArmorSkills.Global
             {
                 #region Boss Treasure Bags
                 case ItemID.KingSlimeBossBag:
-                    loot.Add(new CommonDrop(ModContent.ItemType<ArmorSphere>(), 1 ,1 , 3));
+                    loot.Add(new CommonDrop(ModContent.ItemType<ArmorSphere>(), 1, 1, 3));
                     loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, ModContent.ItemType<BirdWyvernGem>(), ModContent.ItemType<WyvernGem>()));
                     loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, ModContent.ItemType<BeastGem>(), ModContent.ItemType<InsectShell>(), ModContent.ItemType<CrabPearl>()));
                     break;
@@ -88,9 +83,9 @@ namespace MHArmorSkills.Global
                 case ItemID.QueenSlimeBossBag:
                     loot.Add(new CommonDrop(ModContent.ItemType<HeavyArmorSphere>(), 1, 3, 5));
                     loot.Add(new CommonDrop(ModContent.ItemType<InsectCarapace>(), 1, 1, 3));
-                    loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 1, ModContent.ItemType<LrgBeastGem>(), ModContent.ItemType<FeyWyvernGem>(),  ModContent.ItemType<FineBlackPearl>()));
-                    loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, ModContent.ItemType<LrgBeastGem>(), ModContent.ItemType<FeyWyvernGem>(),  ModContent.ItemType<FineBlackPearl>()));
-                    loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 3, ModContent.ItemType<LrgBeastGem>(), ModContent.ItemType<FeyWyvernGem>(),  ModContent.ItemType<FineBlackPearl>()));
+                    loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 1, ModContent.ItemType<LrgBeastGem>(), ModContent.ItemType<FeyWyvernGem>(), ModContent.ItemType<FineBlackPearl>()));
+                    loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, ModContent.ItemType<LrgBeastGem>(), ModContent.ItemType<FeyWyvernGem>(), ModContent.ItemType<FineBlackPearl>()));
+                    loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 3, ModContent.ItemType<LrgBeastGem>(), ModContent.ItemType<FeyWyvernGem>(), ModContent.ItemType<FineBlackPearl>()));
                     loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 4, ModContent.ItemType<LrgBeastGem>(), ModContent.ItemType<FeyWyvernGem>(), ModContent.ItemType<FineBlackPearl>()));
                     loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, ModContent.ItemType<Atk2>(), ModContent.ItemType<BladehoneScale2>(), ModContent.ItemType<ChallengeSheath2>(), ModContent.ItemType<Coalescence2>(), ModContent.ItemType<Constitution2>()
                         , ModContent.ItemType<Counterstrike2>(), ModContent.ItemType<CritElement2>(), ModContent.ItemType<CritDraw2>(), ModContent.ItemType<CritEye2>(), ModContent.ItemType<Defense3>(), ModContent.ItemType<Defiance3>(), ModContent.ItemType<Embolden2>()
@@ -98,7 +93,10 @@ namespace MHArmorSkills.Global
                         , ModContent.ItemType<Health2>(), ModContent.ItemType<IceAttack3>(), ModContent.ItemType<LatentPower2>(), ModContent.ItemType<MastersTouch2>(), ModContent.ItemType<PolarHunter2>(), ModContent.ItemType<Protection2>(), ModContent.ItemType<ProtectivePolish3>()
                         , ModContent.ItemType<PunishDraw2>(), ModContent.ItemType<SpeedSharpening3>(), ModContent.ItemType<QuickSheath3>(), ModContent.ItemType<RazorSharp3>(), ModContent.ItemType<RecUp3>(), ModContent.ItemType<RecoverySpd3>(), ModContent.ItemType<Resentment2>()
                         , ModContent.ItemType<Resusitate2>(), ModContent.ItemType<Sneak3>(), ModContent.ItemType<Diversion3>(), ModContent.ItemType<SpareShot3>(), ModContent.ItemType<Spirit2>(), ModContent.ItemType<StaminaRecovery3>(), ModContent.ItemType<ThunderAttack3>()
-                        , ModContent.ItemType<Unscathed2>(), ModContent.ItemType<WaterAttack3>()));
+                        , ModContent.ItemType<Unscathed2>(), ModContent.ItemType<WaterAttack3>(), ModContent.ItemType<Blightproof2>(), ModContent.ItemType<Bloodlust2>(), ModContent.ItemType<BloodRite2>(), ModContent.ItemType<BombBoost2>(), ModContent.ItemType<BubbleDance3>(), ModContent.ItemType<CritBoost2>()
+                        , ModContent.ItemType<DeadEye2>(), ModContent.ItemType<Fate2>(), ModContent.ItemType<Fencing2>(), ModContent.ItemType<FreeMeal3>(), ModContent.ItemType<Gluttony3>(), ModContent.ItemType<Grinder2>(), ModContent.ItemType<Handicraft2>(), ModContent.ItemType<HeroShield2>()
+                        , ModContent.ItemType<JumpMaster3>(), ModContent.ItemType<LastingPower3>(), ModContent.ItemType<NormalUp2>(), ModContent.ItemType<OffensiveGuard2>(), ModContent.ItemType<PelletUp2>(), ModContent.ItemType<PierceUp2>(), ModContent.ItemType<SneakAttack2>()
+                        , ModContent.ItemType<Strife2>(), ModContent.ItemType<Tenderizer2>(), ModContent.ItemType<TropicsHunter2>(), ModContent.ItemType<Vault2>(), ModContent.ItemType<Elemental2>()));
 
                     break;
                 case ItemID.TwinsBossBag:
@@ -113,7 +111,10 @@ namespace MHArmorSkills.Global
                         , ModContent.ItemType<Health2>(), ModContent.ItemType<IceAttack3>(), ModContent.ItemType<LatentPower2>(), ModContent.ItemType<MastersTouch2>(), ModContent.ItemType<PolarHunter2>(), ModContent.ItemType<Protection2>(), ModContent.ItemType<ProtectivePolish3>()
                         , ModContent.ItemType<PunishDraw2>(), ModContent.ItemType<SpeedSharpening3>(), ModContent.ItemType<QuickSheath3>(), ModContent.ItemType<RazorSharp3>(), ModContent.ItemType<RecUp3>(), ModContent.ItemType<RecoverySpd3>(), ModContent.ItemType<Resentment2>()
                         , ModContent.ItemType<Resusitate2>(), ModContent.ItemType<Sneak3>(), ModContent.ItemType<Diversion3>(), ModContent.ItemType<SpareShot3>(), ModContent.ItemType<Spirit2>(), ModContent.ItemType<StaminaRecovery3>(), ModContent.ItemType<ThunderAttack3>()
-                        , ModContent.ItemType<Unscathed2>(), ModContent.ItemType<WaterAttack3>()));
+                        , ModContent.ItemType<Unscathed2>(), ModContent.ItemType<WaterAttack3>(), ModContent.ItemType<Blightproof2>(), ModContent.ItemType<Bloodlust2>(), ModContent.ItemType<BloodRite2>(), ModContent.ItemType<BombBoost2>(), ModContent.ItemType<BubbleDance3>(), ModContent.ItemType<CritBoost2>()
+                        , ModContent.ItemType<DeadEye2>(), ModContent.ItemType<Fate2>(), ModContent.ItemType<Fencing2>(), ModContent.ItemType<FreeMeal3>(), ModContent.ItemType<Gluttony3>(), ModContent.ItemType<Grinder2>(), ModContent.ItemType<Handicraft2>(), ModContent.ItemType<HeroShield2>()
+                        , ModContent.ItemType<JumpMaster3>(), ModContent.ItemType<LastingPower3>(), ModContent.ItemType<NormalUp2>(), ModContent.ItemType<OffensiveGuard2>(), ModContent.ItemType<PelletUp2>(), ModContent.ItemType<PierceUp2>(), ModContent.ItemType<SneakAttack2>()
+                        , ModContent.ItemType<Strife2>(), ModContent.ItemType<Tenderizer2>(), ModContent.ItemType<TropicsHunter2>(), ModContent.ItemType<Vault2>(), ModContent.ItemType<Elemental2>()));
                     break;
                 case ItemID.DestroyerBossBag:
                     loot.Add(new CommonDrop(ModContent.ItemType<HeavyArmorSphere>(), 1, 3, 5));
@@ -127,7 +128,10 @@ namespace MHArmorSkills.Global
                         , ModContent.ItemType<Health2>(), ModContent.ItemType<IceAttack3>(), ModContent.ItemType<LatentPower2>(), ModContent.ItemType<MastersTouch2>(), ModContent.ItemType<PolarHunter2>(), ModContent.ItemType<Protection2>(), ModContent.ItemType<ProtectivePolish3>()
                         , ModContent.ItemType<PunishDraw2>(), ModContent.ItemType<SpeedSharpening3>(), ModContent.ItemType<QuickSheath3>(), ModContent.ItemType<RazorSharp3>(), ModContent.ItemType<RecUp3>(), ModContent.ItemType<RecoverySpd3>(), ModContent.ItemType<Resentment2>()
                         , ModContent.ItemType<Resusitate2>(), ModContent.ItemType<Sneak3>(), ModContent.ItemType<Diversion3>(), ModContent.ItemType<SpareShot3>(), ModContent.ItemType<Spirit2>(), ModContent.ItemType<StaminaRecovery3>(), ModContent.ItemType<ThunderAttack3>()
-                        , ModContent.ItemType<Unscathed2>(), ModContent.ItemType<WaterAttack3>()));
+                        , ModContent.ItemType<Unscathed2>(), ModContent.ItemType<WaterAttack3>(), ModContent.ItemType<Blightproof2>(), ModContent.ItemType<Bloodlust2>(), ModContent.ItemType<BloodRite2>(), ModContent.ItemType<BombBoost2>(), ModContent.ItemType<BubbleDance3>(), ModContent.ItemType<CritBoost2>()
+                        , ModContent.ItemType<DeadEye2>(), ModContent.ItemType<Fate2>(), ModContent.ItemType<Fencing2>(), ModContent.ItemType<FreeMeal3>(), ModContent.ItemType<Gluttony3>(), ModContent.ItemType<Grinder2>(), ModContent.ItemType<Handicraft2>(), ModContent.ItemType<HeroShield2>()
+                        , ModContent.ItemType<JumpMaster3>(), ModContent.ItemType<LastingPower3>(), ModContent.ItemType<NormalUp2>(), ModContent.ItemType<OffensiveGuard2>(), ModContent.ItemType<PelletUp2>(), ModContent.ItemType<PierceUp2>(), ModContent.ItemType<SneakAttack2>()
+                        , ModContent.ItemType<Strife2>(), ModContent.ItemType<Tenderizer2>(), ModContent.ItemType<TropicsHunter2>(), ModContent.ItemType<Vault2>(), ModContent.ItemType<Elemental2>()));
                     break;
                 case ItemID.SkeletronPrimeBossBag:
                     loot.Add(new CommonDrop(ModContent.ItemType<HeavyArmorSphere>(), 1, 3, 5));
@@ -141,7 +145,10 @@ namespace MHArmorSkills.Global
                         , ModContent.ItemType<Health2>(), ModContent.ItemType<IceAttack3>(), ModContent.ItemType<LatentPower2>(), ModContent.ItemType<MastersTouch2>(), ModContent.ItemType<PolarHunter2>(), ModContent.ItemType<Protection2>(), ModContent.ItemType<ProtectivePolish3>()
                         , ModContent.ItemType<PunishDraw2>(), ModContent.ItemType<SpeedSharpening3>(), ModContent.ItemType<QuickSheath3>(), ModContent.ItemType<RazorSharp3>(), ModContent.ItemType<RecUp3>(), ModContent.ItemType<RecoverySpd3>(), ModContent.ItemType<Resentment2>()
                         , ModContent.ItemType<Resusitate2>(), ModContent.ItemType<Sneak3>(), ModContent.ItemType<Diversion3>(), ModContent.ItemType<SpareShot3>(), ModContent.ItemType<Spirit2>(), ModContent.ItemType<StaminaRecovery3>(), ModContent.ItemType<ThunderAttack3>()
-                        , ModContent.ItemType<Unscathed2>(), ModContent.ItemType<WaterAttack3>()));
+                        , ModContent.ItemType<Unscathed2>(), ModContent.ItemType<WaterAttack3>(), ModContent.ItemType<Blightproof2>(), ModContent.ItemType<Bloodlust2>(), ModContent.ItemType<BloodRite2>(), ModContent.ItemType<BombBoost2>(), ModContent.ItemType<BubbleDance3>(), ModContent.ItemType<CritBoost2>()
+                        , ModContent.ItemType<DeadEye2>(), ModContent.ItemType<Fate2>(), ModContent.ItemType<Fencing2>(), ModContent.ItemType<FreeMeal3>(), ModContent.ItemType<Gluttony3>(), ModContent.ItemType<Grinder2>(), ModContent.ItemType<Handicraft2>(), ModContent.ItemType<HeroShield2>()
+                        , ModContent.ItemType<JumpMaster3>(), ModContent.ItemType<LastingPower3>(), ModContent.ItemType<NormalUp2>(), ModContent.ItemType<OffensiveGuard2>(), ModContent.ItemType<PelletUp2>(), ModContent.ItemType<PierceUp2>(), ModContent.ItemType<SneakAttack2>()
+                        , ModContent.ItemType<Strife2>(), ModContent.ItemType<Tenderizer2>(), ModContent.ItemType<TropicsHunter2>(), ModContent.ItemType<Vault2>(), ModContent.ItemType<Elemental2>()));
                     break;
                 case ItemID.PlanteraBossBag:
                     loot.Add(new CommonDrop(ModContent.ItemType<HeavyArmorSphere>(), 2, 3, 5));
@@ -154,7 +161,10 @@ namespace MHArmorSkills.Global
                         , ModContent.ItemType<Health2>(), ModContent.ItemType<IceAttack3>(), ModContent.ItemType<LatentPower2>(), ModContent.ItemType<MastersTouch2>(), ModContent.ItemType<PolarHunter2>(), ModContent.ItemType<Protection2>(), ModContent.ItemType<ProtectivePolish3>()
                         , ModContent.ItemType<PunishDraw2>(), ModContent.ItemType<SpeedSharpening3>(), ModContent.ItemType<QuickSheath3>(), ModContent.ItemType<RazorSharp3>(), ModContent.ItemType<RecUp3>(), ModContent.ItemType<RecoverySpd3>(), ModContent.ItemType<Resentment2>()
                         , ModContent.ItemType<Resusitate2>(), ModContent.ItemType<Sneak3>(), ModContent.ItemType<Diversion3>(), ModContent.ItemType<SpareShot3>(), ModContent.ItemType<Spirit2>(), ModContent.ItemType<StaminaRecovery3>(), ModContent.ItemType<ThunderAttack3>()
-                        , ModContent.ItemType<Unscathed2>(), ModContent.ItemType<WaterAttack3>()));
+                        , ModContent.ItemType<Unscathed2>(), ModContent.ItemType<WaterAttack3>(), ModContent.ItemType<Blightproof2>(), ModContent.ItemType<Bloodlust2>(), ModContent.ItemType<BloodRite2>(), ModContent.ItemType<BombBoost2>(), ModContent.ItemType<BubbleDance3>(), ModContent.ItemType<CritBoost2>()
+                        , ModContent.ItemType<DeadEye2>(), ModContent.ItemType<Fate2>(), ModContent.ItemType<Fencing2>(), ModContent.ItemType<FreeMeal3>(), ModContent.ItemType<Gluttony3>(), ModContent.ItemType<Grinder2>(), ModContent.ItemType<Handicraft2>(), ModContent.ItemType<HeroShield2>()
+                        , ModContent.ItemType<JumpMaster3>(), ModContent.ItemType<LastingPower3>(), ModContent.ItemType<NormalUp2>(), ModContent.ItemType<OffensiveGuard2>(), ModContent.ItemType<PelletUp2>(), ModContent.ItemType<PierceUp2>(), ModContent.ItemType<SneakAttack2>()
+                        , ModContent.ItemType<Strife2>(), ModContent.ItemType<Tenderizer2>(), ModContent.ItemType<TropicsHunter2>(), ModContent.ItemType<Vault2>(), ModContent.ItemType<Elemental2>()));
                     break;
                 case ItemID.GolemBossBag:
                     loot.Add(new CommonDrop(ModContent.ItemType<KingArmorSphere>(), 1, 3, 5));
@@ -167,7 +177,10 @@ namespace MHArmorSkills.Global
                         , ModContent.ItemType<Health2>(), ModContent.ItemType<IceAttack3>(), ModContent.ItemType<LatentPower2>(), ModContent.ItemType<MastersTouch2>(), ModContent.ItemType<PolarHunter2>(), ModContent.ItemType<Protection2>(), ModContent.ItemType<ProtectivePolish3>()
                         , ModContent.ItemType<PunishDraw2>(), ModContent.ItemType<SpeedSharpening3>(), ModContent.ItemType<QuickSheath3>(), ModContent.ItemType<RazorSharp3>(), ModContent.ItemType<RecUp3>(), ModContent.ItemType<RecoverySpd3>(), ModContent.ItemType<Resentment2>()
                         , ModContent.ItemType<Resusitate2>(), ModContent.ItemType<Sneak3>(), ModContent.ItemType<Diversion3>(), ModContent.ItemType<SpareShot3>(), ModContent.ItemType<Spirit2>(), ModContent.ItemType<StaminaRecovery3>(), ModContent.ItemType<ThunderAttack3>()
-                        , ModContent.ItemType<Unscathed2>(), ModContent.ItemType<WaterAttack3>()));
+                        , ModContent.ItemType<Unscathed2>(), ModContent.ItemType<WaterAttack3>(), ModContent.ItemType<Blightproof2>(), ModContent.ItemType<Bloodlust2>(), ModContent.ItemType<BloodRite2>(), ModContent.ItemType<BombBoost2>(), ModContent.ItemType<BubbleDance3>(), ModContent.ItemType<CritBoost2>()
+                        , ModContent.ItemType<DeadEye2>(), ModContent.ItemType<Fate2>(), ModContent.ItemType<Fencing2>(), ModContent.ItemType<FreeMeal3>(), ModContent.ItemType<Gluttony3>(), ModContent.ItemType<Grinder2>(), ModContent.ItemType<Handicraft2>(), ModContent.ItemType<HeroShield2>()
+                        , ModContent.ItemType<JumpMaster3>(), ModContent.ItemType<LastingPower3>(), ModContent.ItemType<NormalUp2>(), ModContent.ItemType<OffensiveGuard2>(), ModContent.ItemType<PelletUp2>(), ModContent.ItemType<PierceUp2>(), ModContent.ItemType<SneakAttack2>()
+                        , ModContent.ItemType<Strife2>(), ModContent.ItemType<Tenderizer2>(), ModContent.ItemType<TropicsHunter2>(), ModContent.ItemType<Vault2>(), ModContent.ItemType<Elemental2>()));
                     break;
                 case ItemID.FairyQueenBossBag:
                     loot.Add(new CommonDrop(ModContent.ItemType<KingArmorSphere>(), 1, 3, 5));
@@ -180,7 +193,10 @@ namespace MHArmorSkills.Global
                         , ModContent.ItemType<Health2>(), ModContent.ItemType<IceAttack3>(), ModContent.ItemType<LatentPower2>(), ModContent.ItemType<MastersTouch2>(), ModContent.ItemType<PolarHunter2>(), ModContent.ItemType<Protection2>(), ModContent.ItemType<ProtectivePolish3>()
                         , ModContent.ItemType<PunishDraw2>(), ModContent.ItemType<SpeedSharpening3>(), ModContent.ItemType<QuickSheath3>(), ModContent.ItemType<RazorSharp3>(), ModContent.ItemType<RecUp3>(), ModContent.ItemType<RecoverySpd3>(), ModContent.ItemType<Resentment2>()
                         , ModContent.ItemType<Resusitate2>(), ModContent.ItemType<Sneak3>(), ModContent.ItemType<Diversion3>(), ModContent.ItemType<SpareShot3>(), ModContent.ItemType<Spirit2>(), ModContent.ItemType<StaminaRecovery3>(), ModContent.ItemType<ThunderAttack3>()
-                        , ModContent.ItemType<Unscathed2>(), ModContent.ItemType<WaterAttack3>()));
+                        , ModContent.ItemType<Unscathed2>(), ModContent.ItemType<WaterAttack3>(), ModContent.ItemType<Blightproof2>(), ModContent.ItemType<Bloodlust2>(), ModContent.ItemType<BloodRite2>(), ModContent.ItemType<BombBoost2>(), ModContent.ItemType<BubbleDance3>(), ModContent.ItemType<CritBoost2>()
+                        , ModContent.ItemType<DeadEye2>(), ModContent.ItemType<Fate2>(), ModContent.ItemType<Fencing2>(), ModContent.ItemType<FreeMeal3>(), ModContent.ItemType<Gluttony3>(), ModContent.ItemType<Grinder2>(), ModContent.ItemType<Handicraft2>(), ModContent.ItemType<HeroShield2>()
+                        , ModContent.ItemType<JumpMaster3>(), ModContent.ItemType<LastingPower3>(), ModContent.ItemType<NormalUp2>(), ModContent.ItemType<OffensiveGuard2>(), ModContent.ItemType<PelletUp2>(), ModContent.ItemType<PierceUp2>(), ModContent.ItemType<SneakAttack2>()
+                        , ModContent.ItemType<Strife2>(), ModContent.ItemType<Tenderizer2>(), ModContent.ItemType<TropicsHunter2>(), ModContent.ItemType<Vault2>(), ModContent.ItemType<Elemental2>()));
                     break;
                 case ItemID.FishronBossBag:
                     loot.Add(new CommonDrop(ModContent.ItemType<KingArmorSphere>(), 1, 3, 5));
@@ -193,7 +209,10 @@ namespace MHArmorSkills.Global
                         , ModContent.ItemType<Health2>(), ModContent.ItemType<IceAttack3>(), ModContent.ItemType<LatentPower2>(), ModContent.ItemType<MastersTouch2>(), ModContent.ItemType<PolarHunter2>(), ModContent.ItemType<Protection2>(), ModContent.ItemType<ProtectivePolish3>()
                         , ModContent.ItemType<PunishDraw2>(), ModContent.ItemType<SpeedSharpening3>(), ModContent.ItemType<QuickSheath3>(), ModContent.ItemType<RazorSharp3>(), ModContent.ItemType<RecUp3>(), ModContent.ItemType<RecoverySpd3>(), ModContent.ItemType<Resentment2>()
                         , ModContent.ItemType<Resusitate2>(), ModContent.ItemType<Sneak3>(), ModContent.ItemType<Diversion3>(), ModContent.ItemType<SpareShot3>(), ModContent.ItemType<Spirit2>(), ModContent.ItemType<StaminaRecovery3>(), ModContent.ItemType<ThunderAttack3>()
-                        , ModContent.ItemType<Unscathed2>(), ModContent.ItemType<WaterAttack3>()));
+                        , ModContent.ItemType<Unscathed2>(), ModContent.ItemType<WaterAttack3>(), ModContent.ItemType<Blightproof2>(), ModContent.ItemType<Bloodlust2>(), ModContent.ItemType<BloodRite2>(), ModContent.ItemType<BombBoost2>(), ModContent.ItemType<BubbleDance3>(), ModContent.ItemType<CritBoost2>()
+                        , ModContent.ItemType<DeadEye2>(), ModContent.ItemType<Fate2>(), ModContent.ItemType<Fencing2>(), ModContent.ItemType<FreeMeal3>(), ModContent.ItemType<Gluttony3>(), ModContent.ItemType<Grinder2>(), ModContent.ItemType<Handicraft2>(), ModContent.ItemType<HeroShield2>()
+                        , ModContent.ItemType<JumpMaster3>(), ModContent.ItemType<LastingPower3>(), ModContent.ItemType<NormalUp2>(), ModContent.ItemType<OffensiveGuard2>(), ModContent.ItemType<PelletUp2>(), ModContent.ItemType<PierceUp2>(), ModContent.ItemType<SneakAttack2>()
+                        , ModContent.ItemType<Strife2>(), ModContent.ItemType<Tenderizer2>(), ModContent.ItemType<TropicsHunter2>(), ModContent.ItemType<Vault2>(), ModContent.ItemType<Elemental2>()));
                     break;
                 case ItemID.BossBagBetsy:
                     loot.Add(new CommonDrop(ModContent.ItemType<KingArmorSphere>(), 1, 3, 5));
@@ -206,7 +225,10 @@ namespace MHArmorSkills.Global
                         , ModContent.ItemType<Health2>(), ModContent.ItemType<IceAttack3>(), ModContent.ItemType<LatentPower2>(), ModContent.ItemType<MastersTouch2>(), ModContent.ItemType<PolarHunter2>(), ModContent.ItemType<Protection2>(), ModContent.ItemType<ProtectivePolish3>()
                         , ModContent.ItemType<PunishDraw2>(), ModContent.ItemType<SpeedSharpening3>(), ModContent.ItemType<QuickSheath3>(), ModContent.ItemType<RazorSharp3>(), ModContent.ItemType<RecUp3>(), ModContent.ItemType<RecoverySpd3>(), ModContent.ItemType<Resentment2>()
                         , ModContent.ItemType<Resusitate2>(), ModContent.ItemType<Sneak3>(), ModContent.ItemType<Diversion3>(), ModContent.ItemType<SpareShot3>(), ModContent.ItemType<Spirit2>(), ModContent.ItemType<StaminaRecovery3>(), ModContent.ItemType<ThunderAttack3>()
-                        , ModContent.ItemType<Unscathed2>(), ModContent.ItemType<WaterAttack3>()));
+                        , ModContent.ItemType<Unscathed2>(), ModContent.ItemType<WaterAttack3>(), ModContent.ItemType<Blightproof2>(), ModContent.ItemType<Bloodlust2>(), ModContent.ItemType<BloodRite2>(), ModContent.ItemType<BombBoost2>(), ModContent.ItemType<BubbleDance3>(), ModContent.ItemType<CritBoost2>()
+                        , ModContent.ItemType<DeadEye2>(), ModContent.ItemType<Fate2>(), ModContent.ItemType<Fencing2>(), ModContent.ItemType<FreeMeal3>(), ModContent.ItemType<Gluttony3>(), ModContent.ItemType<Grinder2>(), ModContent.ItemType<Handicraft2>(), ModContent.ItemType<HeroShield2>()
+                        , ModContent.ItemType<JumpMaster3>(), ModContent.ItemType<LastingPower3>(), ModContent.ItemType<NormalUp2>(), ModContent.ItemType<OffensiveGuard2>(), ModContent.ItemType<PelletUp2>(), ModContent.ItemType<PierceUp2>(), ModContent.ItemType<SneakAttack2>()
+                        , ModContent.ItemType<Strife2>(), ModContent.ItemType<Tenderizer2>(), ModContent.ItemType<TropicsHunter2>(), ModContent.ItemType<Vault2>(), ModContent.ItemType<Elemental2>()));
                     break;
                 case ItemID.CultistBossBag:
                     loot.Add(new CommonDrop(ModContent.ItemType<KingArmorSphere>(), 1, 3, 5));
@@ -217,18 +239,24 @@ namespace MHArmorSkills.Global
                         , ModContent.ItemType<Health2>(), ModContent.ItemType<IceAttack3>(), ModContent.ItemType<LatentPower2>(), ModContent.ItemType<MastersTouch2>(), ModContent.ItemType<PolarHunter2>(), ModContent.ItemType<Protection2>(), ModContent.ItemType<ProtectivePolish3>()
                         , ModContent.ItemType<PunishDraw2>(), ModContent.ItemType<SpeedSharpening3>(), ModContent.ItemType<QuickSheath3>(), ModContent.ItemType<RazorSharp3>(), ModContent.ItemType<RecUp3>(), ModContent.ItemType<RecoverySpd3>(), ModContent.ItemType<Resentment2>()
                         , ModContent.ItemType<Resusitate2>(), ModContent.ItemType<Sneak3>(), ModContent.ItemType<Diversion3>(), ModContent.ItemType<SpareShot3>(), ModContent.ItemType<Spirit2>(), ModContent.ItemType<StaminaRecovery3>(), ModContent.ItemType<ThunderAttack3>()
-                        , ModContent.ItemType<Unscathed2>(), ModContent.ItemType<WaterAttack3>()));
+                        , ModContent.ItemType<Unscathed2>(), ModContent.ItemType<WaterAttack3>(), ModContent.ItemType<Blightproof2>(), ModContent.ItemType<Bloodlust2>(), ModContent.ItemType<BloodRite2>(), ModContent.ItemType<BombBoost2>(), ModContent.ItemType<BubbleDance3>(), ModContent.ItemType<CritBoost2>()
+                        , ModContent.ItemType<DeadEye2>(), ModContent.ItemType<Fate2>(), ModContent.ItemType<Fencing2>(), ModContent.ItemType<FreeMeal3>(), ModContent.ItemType<Gluttony3>(), ModContent.ItemType<Grinder2>(), ModContent.ItemType<Handicraft2>(), ModContent.ItemType<HeroShield2>()
+                        , ModContent.ItemType<JumpMaster3>(), ModContent.ItemType<LastingPower3>(), ModContent.ItemType<NormalUp2>(), ModContent.ItemType<OffensiveGuard2>(), ModContent.ItemType<PelletUp2>(), ModContent.ItemType<PierceUp2>(), ModContent.ItemType<SneakAttack2>()
+                        , ModContent.ItemType<Strife2>(), ModContent.ItemType<Tenderizer2>(), ModContent.ItemType<TropicsHunter2>(), ModContent.ItemType<Vault2>(), ModContent.ItemType<Elemental2>()));
                     break;
 
                 case ItemID.MoonLordBossBag:
                     loot.Add(new CommonDrop(ModContent.ItemType<KingArmorSphere>(), 1, 3, 5));
-                    loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 1, ModContent.ItemType<Atk2>(), ModContent.ItemType<BladehoneScale2>(), ModContent.ItemType<ChallengeSheath2>(), ModContent.ItemType<Coalescence2>(), ModContent.ItemType<Constitution2>()
+                    loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, ModContent.ItemType<Atk2>(), ModContent.ItemType<BladehoneScale2>(), ModContent.ItemType<ChallengeSheath2>(), ModContent.ItemType<Coalescence2>(), ModContent.ItemType<Constitution2>()
                         , ModContent.ItemType<Counterstrike2>(), ModContent.ItemType<CritElement2>(), ModContent.ItemType<CritDraw2>(), ModContent.ItemType<CritEye2>(), ModContent.ItemType<Defense3>(), ModContent.ItemType<Defiance3>(), ModContent.ItemType<Embolden2>()
                         , ModContent.ItemType<EvadeDistance2>(), ModContent.ItemType<Evasion2>(), ModContent.ItemType<FireAttack3>(), ModContent.ItemType<Foray2>(), ModContent.ItemType<Guard2>(), ModContent.ItemType<GuardUp2>(), ModContent.ItemType<HastenRecovery2>()
                         , ModContent.ItemType<Health2>(), ModContent.ItemType<IceAttack3>(), ModContent.ItemType<LatentPower2>(), ModContent.ItemType<MastersTouch2>(), ModContent.ItemType<PolarHunter2>(), ModContent.ItemType<Protection2>(), ModContent.ItemType<ProtectivePolish3>()
                         , ModContent.ItemType<PunishDraw2>(), ModContent.ItemType<SpeedSharpening3>(), ModContent.ItemType<QuickSheath3>(), ModContent.ItemType<RazorSharp3>(), ModContent.ItemType<RecUp3>(), ModContent.ItemType<RecoverySpd3>(), ModContent.ItemType<Resentment2>()
                         , ModContent.ItemType<Resusitate2>(), ModContent.ItemType<Sneak3>(), ModContent.ItemType<Diversion3>(), ModContent.ItemType<SpareShot3>(), ModContent.ItemType<Spirit2>(), ModContent.ItemType<StaminaRecovery3>(), ModContent.ItemType<ThunderAttack3>()
-                        , ModContent.ItemType<Unscathed2>(), ModContent.ItemType<WaterAttack3>()));
+                        , ModContent.ItemType<Unscathed2>(), ModContent.ItemType<WaterAttack3>(), ModContent.ItemType<Blightproof2>(), ModContent.ItemType<Bloodlust2>(), ModContent.ItemType<BloodRite2>(), ModContent.ItemType<BombBoost2>(), ModContent.ItemType<BubbleDance3>(), ModContent.ItemType<CritBoost2>()
+                        , ModContent.ItemType<DeadEye2>(), ModContent.ItemType<Fate2>(), ModContent.ItemType<Fencing2>(), ModContent.ItemType<FreeMeal3>(), ModContent.ItemType<Gluttony3>(), ModContent.ItemType<Grinder2>(), ModContent.ItemType<Handicraft2>(), ModContent.ItemType<HeroShield2>()
+                        , ModContent.ItemType<JumpMaster3>(), ModContent.ItemType<LastingPower3>(), ModContent.ItemType<NormalUp2>(), ModContent.ItemType<OffensiveGuard2>(), ModContent.ItemType<PelletUp2>(), ModContent.ItemType<PierceUp2>(), ModContent.ItemType<SneakAttack2>()
+                        , ModContent.ItemType<Strife2>(), ModContent.ItemType<Tenderizer2>(), ModContent.ItemType<TropicsHunter2>(), ModContent.ItemType<Vault2>(), ModContent.ItemType<Elemental2>()));
                     break;
 
                     #endregion

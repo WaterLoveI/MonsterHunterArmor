@@ -139,6 +139,7 @@ namespace MHArmorSkills.MHPlayer
         public int ChallengeSheathe;
         public int Grinder;
         public int QuickSheath;
+        public int StaminaRec;
         public float FireRes;
         public float WaterRes;
         public float IceRes;
@@ -260,6 +261,7 @@ namespace MHArmorSkills.MHPlayer
             Vault = 0;
             WaterAttack = 0;
             WaterRes = 0;
+            StaminaRec = 0;
             #endregion
 
             BubbleBlight = false;
@@ -277,7 +279,7 @@ namespace MHArmorSkills.MHPlayer
             if (LatentPowerCounter >= 1)
             {
                 LatentPowerCounter++;
-                if (Main.rand.NextBool(5)) 
+                if (Main.rand.NextBool(5))
                 {
                     Lighting.AddLight((int)Player.Center.X / 16, (int)Player.Center.Y / 16, 0.4f, 0.6f, 1f);
                     for (int i = 0; i < 2; i++)
@@ -289,7 +291,7 @@ namespace MHArmorSkills.MHPlayer
                         Main.dust[d].velocity *= 0.6f;
                     }
                 }
-                
+
             }
             #endregion
             #region Affinity Sliding
@@ -440,7 +442,7 @@ namespace MHArmorSkills.MHPlayer
             #region Resentment/Strife
             if (Player.HasBuff(BuffID.PotionSickness))
             {
-                if (StrifeCrit >=1)
+                if (StrifeCrit >= 1)
                 {
                     Player.GetCritChance(DamageClass.Generic) += StrifeCrit;
                 }
@@ -454,6 +456,20 @@ namespace MHArmorSkills.MHPlayer
             if (EvadeTimer > 0)
             {
                 EvadeTimer--;
+            }
+            #endregion
+            #region Stam Rec
+            if (StaminaRec >= 1)
+            {
+                int StamRecLevel = 11 - StaminaRec;
+                if (Main.rand.NextBool(StamRecLevel))
+                {
+                    if (Player.statManaMax2 > Player.statMana)
+                    {
+                        Player.statMana++;
+                    }
+                }
+
             }
             #endregion
         }
@@ -478,9 +494,9 @@ namespace MHArmorSkills.MHPlayer
                     Player.maxRunSpeed *= 0.5f; // Slow down horizontal movement
                     Player.wingAccRunSpeed /= 2;
                 }
-                if (BubbleDance >= 2)
+                if (BubbleDance >= 3)
                 {
-                    Player.maxRunSpeed *= 1.1f;
+                    Player.maxRunSpeed *= 1.2f;
                 }
             }
             #endregion
@@ -601,7 +617,7 @@ namespace MHArmorSkills.MHPlayer
                         Main.dust[d].velocity *= 1.1f;
                     }
                 }
-                    
+
                 LatentPowerCounter = 0;
             }
             #endregion
@@ -667,8 +683,8 @@ namespace MHArmorSkills.MHPlayer
             {
                 Player.AddBuff(ModContent.BuffType<Coalescence>(), 600);
             }
-             if (Player.HasBuff(ModContent.BuffType<Coalescence>()))
-                {
+            if (Player.HasBuff(ModContent.BuffType<Coalescence>()))
+            {
                 Player.GetDamage(DamageClass.Generic) += Coalescence / 100f;
             }
 
@@ -868,25 +884,25 @@ namespace MHArmorSkills.MHPlayer
                 }
                 #endregion
                 #region Bubble Dance
-                if (BubbleDance >= 3 && !Player.HasBuff(ModContent.BuffType<BubbleBlight>()))
+                if (BubbleDance >= 1 && !Player.HasBuff(ModContent.BuffType<BubbleBlight>()))
                 {
                     Player.AddBuff(ModContent.BuffType<BubbleBlight>(), 15 * 60);
                 }
                 #endregion
                 #region Evade Distance
-                if (EvadeDistance >= 1 )
+                if (EvadeDistance >= 1)
                 {
-                    
-                    float ED = EvadeDistance/10;
+
+                    float ED = EvadeDistance / 10;
                     if (Player.direction == 1 && Player.velocity.X != 0f) // If true, the player is facing right
                     {
-                        
-                        Player.velocity.X += ED; 
+
+                        Player.velocity.X += ED;
                     }
                     else if (Player.direction == -1 && Player.velocity.X != 0f)
                     {
-                        
-                        Player.velocity.X -= ED; 
+
+                        Player.velocity.X -= ED;
                     }
                 }
                 #endregion
@@ -990,7 +1006,7 @@ namespace MHArmorSkills.MHPlayer
                         Main.dust[d].velocity *= 0.6f;
                     }
                 }
-                    
+
             }
             if (Player.HasBuff(ModContent.BuffType<FrenzyCure>()))
             {
@@ -1032,9 +1048,9 @@ namespace MHArmorSkills.MHPlayer
                     Main.dust[d].velocity *= 0.5f;
                 }
             }
-                Lighting.AddLight((int)Player.Center.X / 16, (int)Player.Center.Y / 16, 1f, 0.8f, 0.8f);
+            Lighting.AddLight((int)Player.Center.X / 16, (int)Player.Center.Y / 16, 1f, 0.8f, 0.8f);
             Player.AddBuff(ModContent.BuffType<Spirit>(), 2);
-            
+
         }
         #endregion
         #region Defiance
@@ -1076,7 +1092,7 @@ namespace MHArmorSkills.MHPlayer
                 }
             }
 
-               
+
         }
         #endregion
         #region Embolden
@@ -1104,7 +1120,7 @@ namespace MHArmorSkills.MHPlayer
                     Main.dust[d].velocity *= 0.5f;
                 }
             }
-                
+
             GuardEffect();
         }
         #endregion
@@ -1369,13 +1385,13 @@ namespace MHArmorSkills.MHPlayer
         }
         public override bool FreeDodge(Player.HurtInfo info)
         {
-           // #region Evasion
+            // #region Evasion
             //if (EvasionChance >= 1 && Main.rand.NextBool(EvasionChance))
             //{
             //    Player.NinjaDodge();
             //    return true;
-           // }
-           // #endregion
+            // }
+            // #endregion
 
 
             return base.FreeDodge(info);
@@ -1457,7 +1473,7 @@ namespace MHArmorSkills.MHPlayer
         public override void OnHitByNPC(NPC npc, Terraria.Player.HurtInfo hurtInfo)
         {
             base.OnHitByNPC(npc, hurtInfo);
-            
+
             #region Intrepid Heart
             if (IHeartCountdown >= 1)
             {
@@ -1715,6 +1731,7 @@ namespace MHArmorSkills.MHPlayer
             {
                 return true;
             }
+
             return base.CanAutoReuseItem(item);
         }
         public override bool Shoot(Item item, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
@@ -1978,6 +1995,5 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
         }
-
     }
 }

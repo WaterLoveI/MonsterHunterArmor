@@ -3107,4 +3107,569 @@ Items: {
 			[◯][◯][◯]
 			'''
 	}
+
+	AffinitySliding2: {
+		DisplayName: Affinity Sliding Decoration 2
+		Tooltip:
+			'''
+			Increase the Affinity Sliding Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
+	}
+
+	AquaticMobility2: {
+		DisplayName: Aquatic Mobility Decoration 2
+		Tooltip:
+			'''
+			Increase the Aquatic Mobility Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
+	}
+
+	AquaticMobility3: {
+		DisplayName: Aquatic Mobility Decoration 3
+		Tooltip:
+			'''
+			Increase the Aquatic Mobility Skill by 3.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
+	}
+
+	Artillery2: {
+		DisplayName: Artillery Decoration 2
+		Tooltip:
+			'''
+			Increase the Artillery Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
+	}
+
+	AutoTracker2: {
+		DisplayName: Auto Tracker Decoration 2
+		Tooltip:
+			'''
+			Increase the Auto Tracker Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
+	}
+
+	Blightproof2: {
+		DisplayName: Blightproof Decoration 2
+		Tooltip:
+			'''
+			Increase the Blightproof Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
+	}
+
+	Bloodlust2: {
+		DisplayName: Bloodlust Decoration 2
+		Tooltip:
+			'''
+			Increase the Bloodlust Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
+	}
+
+	BloodRite2: {
+		DisplayName: Blood Rite Decoration 2
+		Tooltip:
+			'''
+			Increase the Blood Rite Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
+	}
+
+	BombBoost2: {
+		DisplayName: Bomb Boost Decoration 2
+		Tooltip:
+			'''
+			Increase the Bomb Boost Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
+	}
+
+	BubbleDance3: {
+		DisplayName: Bubble Dance Decoration 3
+		Tooltip:
+			'''
+			Increase the Bubble Dance Skill by 3.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
+	}
+
+	Cliffhanger2: {
+		DisplayName: Cliffhanger Decoration 2
+		Tooltip:
+			'''
+			Increase the Cliffhanger Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
+	}
+
+	ColdRes2: {
+		DisplayName: Cold Res Decoration 2
+		Tooltip:
+			'''
+			Increase the Cold Res Skill by 3.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
+	}
+
+	CritBoost2: {
+		DisplayName: Critical Boost Decoration 2
+		Tooltip:
+			'''
+			Increase the Critical Boost Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
+	}
+
+	DeadEye2: {
+		DisplayName: DeadEye Decoration 2
+		Tooltip:
+			'''
+			Increase the Deadeye Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
+	}
+
+	Fate2: {
+		DisplayName: Fate Decoration 2
+		Tooltip:
+			'''
+			Increase the Fate Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
+	}
+
+	Fencing2: {
+		DisplayName: Fencing Decoration 2
+		Tooltip:
+			'''
+			Increase the Fencing Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
+	}
+
+	FireAttack2: {
+		DisplayName: Fire Attack Decoration 2
+		Tooltip:
+			'''
+			Increase the Fire Attack Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
+	}
+
+	FireRes2: {
+		DisplayName: Fire Res Decoration 2
+		Tooltip:
+			'''
+			Increase the Fire Res Skill by 3.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
+	}
+
+	FishingExpert2: {
+		DisplayName: Fishing Expert Decoration 2
+		Tooltip:
+			'''
+			Increase the Fishing Expert Skill by 3.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
+	}
+
+	FreeMeal2: {
+		DisplayName: Free Meal Decoration 2
+		Tooltip:
+			'''
+			Increase the Free Meal Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
+	}
+
+	FreeMeal3: {
+		DisplayName: Free Meal Decoration 3
+		Tooltip:
+			'''
+			Increase the Free Meal Skill by 3.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
+	}
+
+	Gathering2: {
+		DisplayName: Gathering Decoration 2
+		Tooltip:
+			'''
+			Increase the Gathering Skill by 3.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
+	}
+
+	Geologist2: {
+		DisplayName: Geologist Decoration 2
+		Tooltip:
+			'''
+			Increase the Geologist Skill by 3.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
+	}
+
+	Gluttony2: {
+		DisplayName: Gluttony Decoration 2
+		Tooltip:
+			'''
+			Increase the Gluttony Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
+	}
+
+	Gluttony3: {
+		DisplayName: Gluttony Decoration 3
+		Tooltip:
+			'''
+			Increase the Gluttony Skill by 3.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
+	}
+
+	Grinder2: {
+		DisplayName: Grinder Decoration 2
+		Tooltip:
+			'''
+			Increase the Grinder Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
+	}
+
+	Handicraft1: {
+		DisplayName: Handicraft Decoration 1
+		Tooltip:
+			'''
+			Increase the Handicraft Skill by 1.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
+	}
+
+	Handicraft2: {
+		DisplayName: Handicraft Decoration 2
+		Tooltip:
+			'''
+			Increase the Handicraft Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
+	}
+
+	HeatRes2: {
+		DisplayName: Heat Res Decoration 2
+		Tooltip:
+			'''
+			Increase the Heat Res Skill by 3.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
+	}
+
+	HeroShield2: {
+		DisplayName: Hero Shield Decoration 2
+		Tooltip:
+			'''
+			Increase the Hero Shield Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
+	}
+
+	HoneyHunter2: {
+		DisplayName: Honey Hunter Decoration 2
+		Tooltip:
+			'''
+			Increase the Honey Hunter Skill by 3.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
+	}
+
+	IceRes2: {
+		DisplayName: Ice Res Decoration 2
+		Tooltip:
+			'''
+			Increase the Ice Res Skill by 3.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
+	}
+
+	JumpMaster2: {
+		DisplayName: Jump Master Decoration 2
+		Tooltip:
+			'''
+			Increase the Jump Master Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
+	}
+
+	JumpMaster3: {
+		DisplayName: Jump Master Decoration 3
+		Tooltip:
+			'''
+			Increase the Jump Master Skill by 3.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
+	}
+
+	LastingPower2: {
+		DisplayName: Lasting Power Decoration 2
+		Tooltip:
+			'''
+			Increase the Lasting Power Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
+	}
+
+	LastingPower3: {
+		DisplayName: Lasting Power Decoration 3
+		Tooltip:
+			'''
+			Increase the Lasting Power Skill by 3.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
+	}
+
+	Mushroomancer2: {
+		DisplayName: Mushroomancer Decoration 2
+		Tooltip:
+			'''
+			Increase the Mushroomancer Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
+	}
+
+	NormalUp2: {
+		DisplayName: Normal Up Decoration 2
+		Tooltip:
+			'''
+			Increase the Normal Up Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
+	}
+
+	OffensiveGuard2: {
+		DisplayName: Offensive Guard Decoration 2
+		Tooltip:
+			'''
+			Increase the Offensive Guard Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
+	}
+
+	PelletUp2: {
+		DisplayName: Pellet Up Decoration 2
+		Tooltip:
+			'''
+			Increase the Pellet Up Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
+	}
+
+	PierceUp2: {
+		DisplayName: Pierce Up Decoration 2
+		Tooltip:
+			'''
+			Increase the Pierce Up Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
+	}
+
+	Poison2: {
+		DisplayName: Anti-Poison Decoration 2
+		Tooltip:
+			'''
+			Increase the Poison Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
+	}
+
+	RockSteady1: {
+		DisplayName: Rock Steady Decoration 1
+		Tooltip:
+			'''
+			Increase the Rock Steady Skill by 1.
+			Works even in the vanity slot.
+			[◯]
+			'''
+	}
+
+	Scholar2: {
+		DisplayName: Scholar Decoration 2
+		Tooltip:
+			'''
+			Increase the Scholar Skill by 3.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
+	}
+
+	SneakAttack2: {
+		DisplayName: Sneak Attack Decoration 2
+		Tooltip:
+			'''
+			Increase the Sneak Attack Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
+	}
+
+	SpeedEating2: {
+		DisplayName: Speed Eating Decoration 2
+		Tooltip:
+			'''
+			Increase the Speed Eating Skill by 3.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
+	}
+
+	SpeedSetUp2: {
+		DisplayName: Speed SetUp Decoration 2
+		Tooltip:
+			'''
+			Increase the Speed SetUp Skill by 3.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
+	}
+
+	Strife2: {
+		DisplayName: Strife Decoration 2
+		Tooltip:
+			'''
+			Increase the Strife Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
+	}
+
+	Tenderizer2: {
+		DisplayName: Tenderizer Decoration 2
+		Tooltip:
+			'''
+			Increase the Tenderizer Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
+	}
+
+	ThunderAttack2: {
+		DisplayName: Thunder Attack Decoration 2
+		Tooltip:
+			'''
+			Increase the Thunder Attack Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
+	}
+
+	ThunderRes2: {
+		DisplayName: Thunder Res Decoration 2
+		Tooltip:
+			'''
+			Increase the Thunder Res Skill by 3.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
+	}
+
+	TropicsHunter1: {
+		DisplayName: Tropics Hunter Decoration 1
+		Tooltip:
+			'''
+			Increase the Tropics Hunter Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
+	}
+
+	TropicsHunter2: {
+		DisplayName: Tropics Hunter Decoration 2
+		Tooltip:
+			'''
+			Increase the Tropics Hunter Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
+	}
+
+	Vault2: {
+		DisplayName: Vault Decoration 2
+		Tooltip:
+			'''
+			Increase the Vault Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
+	}
+
+	WaterAttack2: {
+		DisplayName: Water Attack Decoration 2
+		Tooltip:
+			'''
+			Increase the Water Attack Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
+	}
+
+	WaterRes2: {
+		DisplayName: Water Res Decoration 2
+		Tooltip:
+			'''
+			Increase the Water Res Skill by 3.
+			Works even in the vanity slot.
+			[◯][◯]
+			'''
+	}
+
+	Elemental2: {
+		DisplayName: Elemental2
+		Tooltip: ""
+	}
 }
