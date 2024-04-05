@@ -84,9 +84,6 @@ public partial class DecorationSlots : ModPlayer
             {
                 if (MHLists.ArmorDecorations.Contains(item.type))
                 {
-                    if (item.accessory)
-                        Player.GrantPrefixBenefits(item);
-
                     Player.GrantArmorBenefits(item);
                 }
                     

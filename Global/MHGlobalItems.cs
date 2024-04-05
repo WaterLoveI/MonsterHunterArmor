@@ -1,4 +1,5 @@
 ﻿using Terraria;
+using Terraria.ID;
 using Terraria.ModLoader;
 
 
@@ -77,18 +78,37 @@ namespace MHArmorSkills.Global
         #endregion
 
         public override bool CanAccessoryBeEquippedWith(Item equippedItem, Item incomingItem, Player player)
-    
         {
-            // Check if both items are in the ArmorDecorations list
-            Item item = incomingItem;
-            if (MHLists.ArmorDecorations.Contains(item.type))
+            bool isIncomingItemInList = MHLists.ArmorDecorations.Contains(incomingItem.type);
+            if (isIncomingItemInList)
             {
                 return false;
             }
-
-            return base.CanAccessoryBeEquippedWith(equippedItem, incomingItem, player);
-            
-
+            if (!isIncomingItemInList)
+            {
+                for (int i = 0; i < player.armor.Length; i++)
+                {
+                    // If the player has an item equipped that is the same type as the incoming item
+                    if (player.armor[i].type == incomingItem.type)
+                    {
+                        // Prevent the incoming item from being equipped if it's a duplicate
+                        return true;
+                    }
+                }
+            }
+            return false;
         }
+        public override void SetDefaults(Item entity)
+        {
+            // got lazy to copy paste to all the decor .cs
+            
+            bool isIncomingItemInList = MHLists.ArmorDecorations.Contains(entity.type);
+            if (isIncomingItemInList)
+            {
+                entity.maxStack = 9999;
+                entity.value = Item.sellPrice(0, 0, 50, 0);
+            }
+        }
+
     }
 }

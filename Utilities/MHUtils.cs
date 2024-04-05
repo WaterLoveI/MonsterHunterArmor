@@ -1,60 +1,17 @@
 using Microsoft.Xna.Framework;
+using System;
 using Terraria;
+using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace MHArmorSkills
+namespace MHArmorSkills.Utilities
 {
     public static partial class MHUtils
     {
-        public static Vector2 RandomVelocity(float directionMult, float speedLowerLimit, float speedCap, float speedMult = 0.1f)
-        {
-            Vector2 velocity = new Vector2(Main.rand.NextFloat(-directionMult, directionMult), Main.rand.NextFloat(-directionMult, directionMult));
-            //Rerolling to avoid dividing by zero
-            while (velocity.X == 0f && velocity.Y == 0f)
-            {
-                velocity = new Vector2(Main.rand.NextFloat(-directionMult, directionMult), Main.rand.NextFloat(-directionMult, directionMult));
-            }
-            velocity.Normalize();
-            velocity *= Main.rand.NextFloat(speedLowerLimit, speedCap) * speedMult;
-            return velocity;
-        }
-        public static bool StandingStill(this Terraria.Player player, float velocity = 0.05f) => player.velocity.Length() < velocity;
-        /// <summary>
-        /// Checks if the player is ontop of solid ground. May also check for solid ground for X tiles in front of them
-        /// </summary>
-        /// <param name="player">The Player whose position is being checked</param>
-        /// <param name="solidGroundAhead">How many tiles in front of the player to check</param>
-        /// <param name="airExposureNeeded">How many tiles above every checked tile are checked for non-solid ground</param>
-        public static bool CheckSolidGround(this Terraria.Player player, int solidGroundAhead = 0, int airExposureNeeded = 0)
-        {
-            if (player.velocity.Y != 0) // Player gotta be standing still in any case.
-                return false;
-
-            Tile checkedTile;
-            bool ConditionMet = true;
-
-            int playerCenterX = (int)player.Center.X / 16;
-            int playerCenterY = (int)(player.position.Y + (float)player.height - 1f) / 16 + 1;
-            for (int i = 0; i <= solidGroundAhead; i++) // Check i tiles in front of the player.
-            {
-                ConditionMet = Main.tile[playerCenterX + player.direction * i, playerCenterY].IsTileSolidGround();
-                if (!ConditionMet)
-                    return ConditionMet;
-
-                for (int j = 1; j <= airExposureNeeded; j++) // Check j tiles ontop of each checked tiles for non-solid ground.
-                {
-                    checkedTile = Main.tile[playerCenterX + player.direction * i, playerCenterY - j];
-
-                    ConditionMet = !(checkedTile != null && checkedTile.HasUnactuatedTile && Main.tileSolid[checkedTile.TileType]); // IsTileSolidGround minus the ground part, to avoid platforms and other half solid tiles messing it up.
-                    if (!ConditionMet)
-                        return ConditionMet;
-                }
-            }
-            return ConditionMet;
-        }
+        
         public static Item ActiveItem(this Player player) => Main.mouseItem.IsAir ? player.HeldItem : Main.mouseItem;
-        public static bool IsTileSolidGround(this Tile tile) => tile != null && tile.HasUnactuatedTile && (Main.tileSolid[tile.TileType] || Main.tileSolidTop[tile.TileType]);
         public static int GetOreItemID(this Tile tile)
         {
             int item = -1;
@@ -167,6 +124,21 @@ namespace MHArmorSkills
 
             return true;
         }
+        #region Fraction Struct (thanks Yorai)
+        public struct Fraction
+        {
+            internal readonly int numerator;
+            internal readonly int denominator;
 
+            public Fraction(int n, int d)
+            {
+                numerator = n < 0 ? 0 : n;
+                denominator = d <= 0 ? 1 : d;
+            }
+
+            public static implicit operator float(Fraction f) => f.numerator / (float)f.denominator;
+        }
+        #endregion
+        
     }
 }

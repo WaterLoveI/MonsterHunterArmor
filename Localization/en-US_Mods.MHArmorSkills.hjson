@@ -1,3 +1,5 @@
+RecipeGroup.Any1SlotDecor: Any 1 slot Decoration
+
 Buffs: {
 	AntiBleeding: {
 		DisplayName: Anti Bleeding
@@ -52,7 +54,7 @@ Buffs: {
 
 	Diversion: {
 		DisplayName: Diversion
-		Description: Increase Aggro by 100/200/300.
+		Description: In range for Diversion 2/3's effects.
 	}
 
 	Fate: {
@@ -345,6 +347,11 @@ Buffs: {
 		DisplayName: Strife
 		Description: Increase critical strike chance.
 	}
+
+	Embolden: {
+		DisplayName: Embolden
+		Description: Mods.MHArmorSkills.Buffs.Embolden.Description
+	}
 }
 
 Items: {
@@ -562,7 +569,7 @@ Items: {
 			Increases critical strike chance by 5%.
 			Increase the Latent Power Skill by 2.
 			Increase the Thunder Attack Skill by 1.
-			[◯]x1
+			[◯][◯]x1
 			'''
 	}
 
@@ -1460,13 +1467,12 @@ Items: {
 		DisplayName: Zinogre Helm X
 		Tooltip:
 			'''
-			Increase Critical Strike Chance by 12%.
-			Increase Damage by 12%. 
+			Increase Critical Strike Chance by 10%.
+			Increase Damage by 10%. 
 			Increase the Latent Power Skill by 2.
 			Increase the Thunder Attack Skill by 1.
 			Increase the Evasion Skill by 1.
 			Increase the Sneak Skill by 1.
-			[◯]x1
 			[◯][◯]x2
 			'''
 	}
@@ -3669,7 +3675,138 @@ Items: {
 	}
 
 	Elemental2: {
-		DisplayName: Elemental2
+		DisplayName: Elemental Decoration 2
+		Tooltip:
+			'''
+			Increase the Elemental Skill by 2.
+			Works even in the vanity slot.
+			[◯][◯][◯]
+			'''
+	}
+
+	ZinogreGreaves: {
+		DisplayName: Zinogre Greaves
+		Tooltip:
+			'''
+			Increases Critical Strike Chance by 5%.
+			Increase the Critical Eye Skill by 1.
+			Increase the Latent Power Skill by 1.
+			Increase the Thunder Attack Skill by 1.
+			[◯]x1
+			'''
+	}
+
+	ZinogreMail: {
+		DisplayName: Zinogre Mail
+		Tooltip:
+			'''
+			Increases Critical Strike Chance by 5%.
+			Increase the Latent Power Skill by 2.
+			Increase the Thunder Attack Skill by 2.
+			[◯]x1
+			'''
+	}
+
+	ZinogreGreavesX: {
+		DisplayName: Zinogre Greaves X
+		Tooltip:
+			'''
+			Increase Movement Speed by 12%
+			Increases Critical Strike Chance by 5%.
+			Increase the Evasion Skill by 2.
+			Increase the Latent Power Skill by 2.
+			[◯][◯][◯]x1
+			'''
+	}
+
+	ZinogreMailX: {
+		DisplayName: Zinogre Mail X
+		Tooltip:
+			'''
+			Increases Damage by 15%.
+			Increases Mana by 20.
+			Increase the Thunder Attack Skill by 3.
+			Increase the Unscathed Skill by 2.
+			Increase the Latent Power Skill by 1.
+			[◯]x1
+			'''
+	}
+
+	ZinogreGreavesZ: {
+		DisplayName: Zinogre Greaves Z
+		Tooltip:
+			'''
+			Increase Movement Speed by 7%
+			Increases Critical Strike Chance by 12%.
+			Increase the Critical Eye Skill by 2.
+			Increase the Latent Power Skill by 1.
+			Increase the Unscathed Skill by 1.
+			[◯]x1
+			'''
+	}
+
+	ZinogreHelmZ: {
+		DisplayName: Zinogre Helm Z
+		Tooltip:
+			'''
+			Increase Damage by 10%
+			Increases Critical Strike Chance by 8%.
+			Increase the Evasion Skill by 2.
+			Increase the Latent Power Skill by 1.
+			Increase the Unscathed Skill by 1.
+			[◯][◯][◯]x1
+			'''
+	}
+
+	ZinogreMailZ: {
+		DisplayName: Zinogre Mail Z
+		Tooltip:
+			'''
+			Increases Damage by 15%.
+			Increases Mana by 20.
+			Increase the Latent Power Skill by 3.
+			Increase the Unscathed Skill by 1.
+			[◯][◯]x2
+			'''
+	}
+
+	ZinogreHelmEX: {
+		DisplayName: Zinogre Helm EX
+		Tooltip:
+			'''
+			Increases Critical Strike Chance by 5%.
+			Increase the Latent Power Skill by 3.
+			[◯][◯]x1
+			'''
+	}
+
+	HornetaurMailX: {
+		DisplayName: Hornetaur Mail X
+		Tooltip:
+			'''
+			Increases your max number of minions by 1
+			Increases Damage by 10%.
+			Increase the Free Meal Skill by 2.
+			Increase the Guard Skill by 1.
+			Increase the Tenderizer Skill by 1.
+			[◯]x1
+			'''
+	}
+
+	HornetaurGreavesX: {
+		DisplayName: Hornetaur Greaves X
+		Tooltip:
+			'''
+			Increases your max number of minions by 1
+			Increases Movement Speed Chance by 7%.
+			Increase the Guard Skill by 2.
+			Increase the Recovery Up Skill by 1.
+			[◯][◯]x1
+			'''
+	}
+
+	DrothGreaves: {
+		DisplayName: Droth Greaves
 		Tooltip: ""
 	}
 }

@@ -31,8 +31,19 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.LatentPower += 2;
             modPlayer.ThunderAttack += 1;
+            modPlayer.ZinogreEssence += 1;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += 1;
+            SlotPlayer.DecorationTwoSlots += 1;
+        }
+
+        public override bool IsArmorSet(Item head, Item body, Item legs)
+        {
+            return body.type == ModContent.ItemType<ZinogreMail>() && legs.type == ModContent.ItemType<ZinogreGreaves>();
+        }
+
+        public override void ArmorSetShadows(Player player)
+        {
+            player.armorEffectDrawShadow = true;
         }
         public override void AddRecipes()
         {

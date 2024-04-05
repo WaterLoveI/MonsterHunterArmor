@@ -1,6 +1,7 @@
 ﻿using MHArmorSkills.Buffs;
 using MHArmorSkills.Buffs.ArmorBuffs;
 using MHArmorSkills.Items.Consumables;
+using MHArmorSkills.Utilities;
 using Microsoft.CodeAnalysis;
 using Microsoft.Xna.Framework;
 using System;
@@ -140,15 +141,23 @@ namespace MHArmorSkills.MHPlayer
         public int Grinder;
         public int QuickSheath;
         public int StaminaRec;
+        public int Diversion;
+        public int Sneak;
         public float FireRes;
         public float WaterRes;
         public float IceRes;
         public float ThunderRes;
         public float ElementalRes;
         #endregion
+
+        public bool ZinogreEssence;
+
         public bool BubbleBlight;
         private int lastWeaponType = -1;
         private float cooldownTimer = 0;
+
+        public int ControlledAttack;
+        public int ControlledCrit;
 
         public override void ResetEffects()
         {
@@ -179,6 +188,7 @@ namespace MHArmorSkills.MHPlayer
             CritELeTrue = false;
             DeadEye = 0;
             Defiance = 0;
+            Diversion = 0;
             Elemental = 0;
             ElementalRes = 0;
             Embolden = 0;
@@ -241,6 +251,7 @@ namespace MHArmorSkills.MHPlayer
             ResentmentBuff = 0;
             ResusitateBuff = 0;
             Scholar = 0;
+            Sneak = 0;
             Sharpness = false;
             SneakAttack = 1f;
             SpareShot = 0;
@@ -264,7 +275,11 @@ namespace MHArmorSkills.MHPlayer
             StaminaRec = 0;
             #endregion
 
+            ZinogreEssence = false;
+
             BubbleBlight = false;
+            ControlledAttack = 0;
+            ControlledCrit = 0;
         }
 
 
@@ -444,11 +459,11 @@ namespace MHArmorSkills.MHPlayer
             {
                 if (StrifeCrit >= 1)
                 {
-                    Player.GetCritChance(DamageClass.Generic) += StrifeCrit;
+                    ControlledCrit += StrifeCrit;
                 }
                 if (ResentmentBuff >= 1)
                 {
-                    Player.GetDamage(DamageClass.Generic) += ResentmentBuff / 100f;
+                    ControlledAttack += ResentmentBuff;
                 }
             }
             #endregion
@@ -472,6 +487,7 @@ namespace MHArmorSkills.MHPlayer
 
             }
             #endregion
+
         }
 
         public override void PostUpdateMiscEffects()
@@ -479,9 +495,15 @@ namespace MHArmorSkills.MHPlayer
             #region Mail of Hellfire
             if (MailofHellfire >= 1)
             {
-                Player.GetDamage(DamageClass.Generic) += (MailofHellfire * 5) / 100f;
-                Player.statDefense /= MailofHellfire;
-                Player.endurance /= MailofHellfire;
+                ControlledAttack += (MailofHellfire);
+                Player.statDefense /= 2;
+                Player.endurance /= 2;
+            }
+            #endregion
+            #region Affinity Sliding
+            if (Player.HasBuff(ModContent.BuffType<AffinitySliding>()))
+            {
+                ControlledCrit += aSlidingCrit;
             }
             #endregion
             #region Bubble Blight/Dance
@@ -547,7 +569,7 @@ namespace MHArmorSkills.MHPlayer
             #region CounterStrike
             if (Player.HasBuff(ModContent.BuffType<CounterStrike>()))
             {
-                Player.GetCritChance(DamageClass.Generic) += CounterStrike / 100f;
+                ControlledAttack += CounterStrike;
             }
             #endregion
             #region Resusitate
@@ -561,7 +583,7 @@ namespace MHArmorSkills.MHPlayer
                     bool Statused = MHLists.debuffList.Contains(buffID);
                     if (Statused)
                     {
-                        Player.GetDamage(DamageClass.Generic) += ResusitateBuff / 100f;
+                        ControlledAttack += ResusitateBuff;
                     }
                 }
             }
@@ -570,7 +592,7 @@ namespace MHArmorSkills.MHPlayer
             if (Player.HasBuff(ModContent.BuffType<CritDraw>()))
             {
                 int CDraw = CritDraw * 7;
-                Player.GetCritChance(DamageClass.Generic) += CDraw;
+                ControlledCrit += CDraw;
             }
             #endregion
             #region Punish Draw
@@ -585,7 +607,7 @@ namespace MHArmorSkills.MHPlayer
             if (Player.HasBuff(ModContent.BuffType<Grinder>()))
             {
 
-                Player.GetDamage(DamageClass.Generic) += Grinder / 100f;
+                ControlledAttack += Grinder;
             }
             #endregion
             #region Intrepid Heart
@@ -603,7 +625,7 @@ namespace MHArmorSkills.MHPlayer
 
             if (Player.HasBuff(ModContent.BuffType<LatentPower>()))
             {
-                Player.GetCritChance(DamageClass.Generic) += LatentPowerAffinity;
+                ControlledCrit += LatentPowerAffinity;
                 Player.manaCost *= LatentPowerManaCost / 100;
                 if (Main.rand.NextBool(5))
                 {
@@ -625,27 +647,27 @@ namespace MHArmorSkills.MHPlayer
             if (Unscathed >= 1 && Player.statLife == Player.statLifeMax2)
             {
                 Player.AddBuff(ModContent.BuffType<Unscathed>(), 2);
-                Player.GetDamage(DamageClass.Generic) += Unscathed / 100f;
+                ControlledAttack += Unscathed;
             }
             #endregion
             #region Vault
             if (Vault >= 1 && (Player.velocity.Y != 0f || Player.wingTime > 0))
             {
                 Player.AddBuff(ModContent.BuffType<Vault>(), 2);
-                Player.GetDamage(DamageClass.Generic) += Vault / 100f;
+                ControlledAttack += Vault;
             }
             #endregion
             #region Offensive Guard
             if (Player.HasBuff(ModContent.BuffType<OffensiveGuard>()))
             {
-                Player.GetDamage(DamageClass.Generic) += OffensiveGuardBoost / 100f;
+                ControlledAttack += OffensiveGuardBoost;
             }
             #endregion
             #region Polar Hunter
             if (PolarHunterDef >= 1 && Player.ZoneSnow)
             {
                 Player.AddBuff(ModContent.BuffType<PolarHunter>(), 2);
-                Player.GetDamage(DamageClass.Generic) += PolarHunterAtk / 100f;
+                ControlledAttack += PolarHunterAtk;
                 Player.moveSpeed += PolarHunterMovement / 100f;
                 Player.statDefense += PolarHunterDef;
             }
@@ -654,7 +676,7 @@ namespace MHArmorSkills.MHPlayer
             if (TropicHunterDef >= 1 && (Player.ZoneDesert || Player.ZoneJungle || Player.ZoneUnderworldHeight))
             {
                 Player.AddBuff(ModContent.BuffType<TropicHunter>(), 2);
-                Player.GetDamage(DamageClass.Generic) += TropicHunterAtk / 100f;
+                ControlledAttack += TropicHunterAtk;
                 Player.moveSpeed += TropicHunterMovement / 100f;
                 Player.statDefense += TropicHunterDef;
             }
@@ -685,7 +707,7 @@ namespace MHArmorSkills.MHPlayer
             }
             if (Player.HasBuff(ModContent.BuffType<Coalescence>()))
             {
-                Player.GetDamage(DamageClass.Generic) += Coalescence / 100f;
+                ControlledAttack += Coalescence;
             }
 
             #endregion
@@ -812,9 +834,13 @@ namespace MHArmorSkills.MHPlayer
                 if (npc.active && npc.boss && npc.friendly == false && npc.chaseable && !npc.immortal)
                 {
                     // Count the number of active hostile NPCs nearby
-                    if (npc.Distance(Player.Center) < 1000f) // Adjust the range as desired
+                    if (npc.Distance(Player.Center) < 1200f) // Adjust the range as desired
                     {
                         hostileNPCs++;
+                    }
+                    if (npc.Distance(Player.Center) < 240f && Diversion >= 1) // Adjust the range as desired
+                    {
+                        DiversionEffect();
                     }
                 }
             }
@@ -849,11 +875,7 @@ namespace MHArmorSkills.MHPlayer
                 if (aSlidingCrit >= 1 && aSlidingTimer == 0)
                 {
                     Player.AddBuff(ModContent.BuffType<AffinitySliding>(), 5 * 60);
-                    aSlidingTimer = 5 * 60;
-                    if (Player.HasBuff(ModContent.BuffType<AffinitySliding>()))
-                    {
-                        Player.GetCritChance(DamageClass.Generic) += aSlidingCrit;
-                    }
+                    aSlidingTimer = 7 * 60;
                 }
                 #endregion
                 #region Bladehone Scale
@@ -916,6 +938,28 @@ namespace MHArmorSkills.MHPlayer
                 #endregion
             }
             #endregion
+
+            #region Attack/Crit Mitigation
+            if (ControlledCrit >= 21)
+            {
+                int newcrit = (ControlledCrit - 20) / 2;
+                Player.GetCritChance(DamageClass.Generic) += newcrit + 20;
+            }
+            else
+            {
+                Player.GetCritChance(DamageClass.Generic) += ControlledCrit;
+            }
+            if (ControlledAttack >= 21)
+            {
+                int newattack = (ControlledAttack - 20) / 2;
+                Player.GetDamage(DamageClass.Generic) += (newattack + 20) / 100f;
+            }
+            else
+            {
+                Player.GetDamage(DamageClass.Generic) += ControlledAttack / 100f;
+            }
+            #endregion
+
         }
         #region Guard
         public void GuardEffect()
@@ -938,7 +982,8 @@ namespace MHArmorSkills.MHPlayer
                 Player.shieldRaised = true;
                 Player.moveSpeed += GuardMovement / 100f;
 
-                int GDef = 5 + (Guardup * 5);
+                ArmorSkills modPlayer = Player.GetModPlayer<ArmorSkills>();
+                int GDef = 5 + modPlayer.Guard + (Guardup * 3);
 
                 Player.statDefense += GDef;
                 Player.moveSpeed /= 3;
@@ -989,12 +1034,9 @@ namespace MHArmorSkills.MHPlayer
             if (Player.HasBuff(ModContent.BuffType<Frenzy>()))
             {
                 Player.manaCost *= ((100 - (Bloodlust * 3))) / 100f;
-                Player.GetDamage(DamageClass.Generic) += (Bloodlust * 4) / 100f;
+                ControlledAttack += (Bloodlust * 4);
                 Player.lifeRegen = 0;
-                if (EvasionChance > 0 && EvasionChance > 19)
-                {
-                    EvasionChance = 20;
-                }
+
                 if (Main.rand.NextBool(5))
                 {
                     for (int i = 0; i < 2; i++)
@@ -1010,7 +1052,7 @@ namespace MHArmorSkills.MHPlayer
             }
             if (Player.HasBuff(ModContent.BuffType<FrenzyCure>()))
             {
-                Player.GetCritChance(DamageClass.Generic) += Bloodlust * 5;
+                ControlledCrit += Bloodlust * 5;
 
             }
             if (Player.HasBuff(ModContent.BuffType<FrenzyFail>()))
@@ -1028,15 +1070,15 @@ namespace MHArmorSkills.MHPlayer
             {
                 Player.AddBuff(ModContent.BuffType<Heroics>(), 2);
                 Player.statDefense += HeroicsDefence;
-                Player.GetDamage(DamageClass.Generic) += HeroicsAttack / 100f;
+                ControlledAttack += HeroicsAttack;
             }
         }
         #endregion
         #region Spirit
         public void SpiritEffect()
         {
-            Player.GetDamage(DamageClass.Generic) += SpiritAttack / 100f;
-            Player.GetCritChance(DamageClass.Generic) += SpiritCrit;
+            ControlledAttack += SpiritAttack;
+            ControlledCrit += SpiritCrit;
             if (Main.rand.NextBool(5))
             {
                 for (int i = 0; i < 2; i++)
@@ -1059,20 +1101,20 @@ namespace MHArmorSkills.MHPlayer
             Player.AddBuff(ModContent.BuffType<Defiance>(), 2);
             if (Defiance >= 1)
             {
-                Player.statDefense += 5;
+                Player.statDefense += 3;
                 Player.noKnockback = true;
             }
             if (Defiance >= 2)
             {
-                Player.statDefense += 5;
+                Player.statDefense += 2;
             }
             if (Defiance >= 3)
             {
-                Player.statDefense += 5;
+                Player.statDefense += 3;
             }
             if (Defiance >= 4)
             {
-                Player.statDefense += 5;
+                Player.statDefense += 2;
                 Player.longInvince = true;
             }
             if (Defiance >= 5)
@@ -1101,14 +1143,10 @@ namespace MHArmorSkills.MHPlayer
             ArmorSkills modPlayer = Player.GetModPlayer<ArmorSkills>();
             Player.aggro += EmboldenAggro;
             Player.statDefense += EmboldenDef;
-            int evasionboost = modPlayer.Embolden - modPlayer.Evasion;
-            int guardboost = modPlayer.Embolden - modPlayer.Guard;
-            int neweva = 20 - Embolden;
-            if (evasionboost > EvasionChance)
-            {
-                EvasionChance = evasionboost;
-            }
-            modPlayer.Guard += guardboost;
+            Player.AddBuff(ModContent.BuffType<Embolden>(), 2);
+
+
+
             if (Main.rand.NextBool(5))
             {
                 for (int i = 0; i < 3; i++)
@@ -1151,6 +1189,21 @@ namespace MHArmorSkills.MHPlayer
        CritEle > 0)
             {
                 CritELeTrue = true;
+            }
+        }
+        #endregion
+        #region Diversion
+        public void DiversionEffect()
+        {
+            Player.AddBuff(ModContent.BuffType<Diversion>(), 2);
+            if (Diversion >= 2)
+            {
+                Player.GetAttackSpeed(DamageClass.Melee) += 0.1f;
+            }
+
+            if (Diversion >= 3)
+            {
+                Player.GetDamage(DamageClass.Melee) += 5 / 100f;
             }
         }
         #endregion
@@ -1231,6 +1284,19 @@ namespace MHArmorSkills.MHPlayer
             if (HastenRec >= 1 && !Player.HasBuff(ModContent.BuffType<HastenRecovery>()))
             {
                 Player.AddBuff(ModContent.BuffType<HastenRecovery>(), 5 * 60);
+            }
+            #endregion
+            #region Sneak 
+            if (Sneak >= 1)
+            {
+                Vector2 relativePosition = target.Center - Player.Center;
+
+
+                if (relativePosition.Y > 0)
+                {
+
+                    target.AddBuff(BuffID.Confused, 5 * 60);
+                }
             }
             #endregion
             MastersTouchEffect(target, damageDone, hit.Crit);
@@ -1376,7 +1442,7 @@ namespace MHArmorSkills.MHPlayer
                 float Res = 1 - IceRes;
                 modifiers.FinalDamage *= Res;
             }
-            if (ThunderRes >= 1 && MHLists.iceresprojList.Contains(proj.type))
+            if (ThunderRes >= 1 && MHLists.thunderresprojList.Contains(proj.type))
             {
                 float Res = 1 - ThunderRes;
                 modifiers.FinalDamage *= Res;
@@ -1424,7 +1490,7 @@ namespace MHArmorSkills.MHPlayer
             {
                 if (proj.type == ProjectileID.Bullet || proj.type == ProjectileID.WoodenArrowFriendly || proj.type == ProjectileID.SilverBullet)
                 {
-                    proj.damage *= NormalBuff + 100 / 100;
+                    proj.damage *= 1 + (NormalBuff / 100);
                 }
             }
             #endregion
@@ -1433,7 +1499,7 @@ namespace MHArmorSkills.MHPlayer
             {
                 if (proj.type == ProjectileID.CrystalBullet || proj.type == ProjectileID.HolyArrow)
                 {
-                    proj.damage *= PelletBuff + 100 / 100;
+                    proj.damage *= 1 + (PelletBuff / 100);
                 }
             }
             #endregion
@@ -1442,16 +1508,8 @@ namespace MHArmorSkills.MHPlayer
             {
                 if (proj.type == ProjectileID.MeteorShot || proj.type == ProjectileID.BulletHighVelocity || proj.type == ProjectileID.MoonlordBullet || proj.type == ProjectileID.JestersArrow || proj.type == ProjectileID.UnholyArrow || proj.type == ProjectileID.BoneArrow)
                 {
-                    proj.damage *= PieceBuff + 100 / 100;
+                    proj.damage *= 1 + (PieceBuff / 100);
                 }
-            }
-            #endregion
-            #region Dead Eye
-            if (DeadEye > 0)
-            {
-                float DistanceInterpolant = Utils.GetLerpValue(300f, 800f, target.Distance(Main.player[Main.myPlayer].Center), true);
-                float rangedBoost = MathHelper.Lerp(0f, DeadEye, DistanceInterpolant);
-                modifiers.SourceDamage += rangedBoost;
             }
             #endregion
             #region Ranged Arrow
@@ -1460,14 +1518,30 @@ namespace MHArmorSkills.MHPlayer
                 #region Close Range
                 if (CRangePlus)
                 {
-                    float DistanceInterpolant = Utils.GetLerpValue(1f, 320f, target.Distance(Main.player[Main.myPlayer].Center), true);
-                    float rangedBoost = MathHelper.Lerp(0f, 0.1f, DistanceInterpolant);
+                    float DistanceInterpolant = Utils.GetLerpValue(240f, 1f, target.Distance(Main.player[Main.myPlayer].Center), true);
+                    float rangedBoost = MathHelper.Lerp(0f, 1.1f, DistanceInterpolant);
                     modifiers.SourceDamage += rangedBoost;
                 }
 
                 #endregion
             }
             #endregion
+
+        }
+        public override void ModifyHitNPCWithItem(Item item, NPC target, ref NPC.HitModifiers modifiers)
+        {
+            #region Dead Eye
+            if (DeadEye > 0)
+            {
+                float DistanceInterpolant = Utils.GetLerpValue(300f, 800f, target.Distance(Main.player[Main.myPlayer].Center), true);
+                if (item.CountsAsClass<RangedDamageClass>())
+                {
+                    float rangedBoost = MathHelper.Lerp(0f, DeadEye, DistanceInterpolant);
+                    modifiers.SourceDamage += rangedBoost;
+                }
+            }
+            #endregion
+
         }
 
         public override void OnHitByNPC(NPC npc, Terraria.Player.HurtInfo hurtInfo)
@@ -1483,7 +1557,12 @@ namespace MHArmorSkills.MHPlayer
             #region Latent Power
             if (LatentPowerHostile)
             {
-                LatentPowerCounter += 5 * 60;
+                int CDTimer = 5 * 60;
+                if (ZinogreEssence)
+                {
+                    CDTimer = 10 * 60;
+                }
+                LatentPowerCounter += CDTimer;
             }
             #endregion
             #region Counter Strike
@@ -1504,6 +1583,12 @@ namespace MHArmorSkills.MHPlayer
                 Player.AddBuff(BuffID.Honey, 7 * 60);
             }
             #endregion
+            #region Guard
+            if (GuardRaised)
+            {
+                SoundEngine.PlaySound(SoundID.NPCHit4);
+            }
+            #endregion
         }
         public override void OnRespawn()
         {
@@ -1511,7 +1596,7 @@ namespace MHArmorSkills.MHPlayer
             #region Fortified
             if (Fortified)
             {
-                Player.AddBuff(ModContent.BuffType<Fortified>(), 10 * 60);
+                Player.AddBuff(ModContent.BuffType<Fortified>(), 10 * 60 * 60);
             }
             #endregion
             BloodlustCount = 0;
@@ -1519,11 +1604,6 @@ namespace MHArmorSkills.MHPlayer
             Player.timeSinceLastDashStarted = 3;
             cooldownTimer = 30;
             Player.dashDelay = 2;
-        }
-        public override bool CanUseItem(Item item)
-        {
-
-            return base.CanUseItem(item);
         }
         public override bool CanConsumeAmmo(Item weapon, Item ammo)
         {
@@ -1537,10 +1617,6 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
             return base.CanConsumeAmmo(weapon, ammo);
-        }
-        public override void UpdateEquips()
-        {
-
         }
         public override void ModifyWeaponDamage(Item item, ref StatModifier damage)
         {
@@ -1680,6 +1756,15 @@ namespace MHArmorSkills.MHPlayer
                 crit += WaterAttack + 2;
             }
             #endregion
+            #region Speed Setup
+            if (SpeedSetup >= 3)
+            {
+                if (item.consumable && item.useStyle == ItemUseStyleID.Swing)
+                {
+                    crit += 5;
+                }
+            }
+            #endregion
         }
         public override bool? CanAutoReuseItem(Item item)
         {
@@ -1762,10 +1847,6 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
             return base.Shoot(item, source, position, velocity, type, damage, knockback);
-        }
-        public override void ModifyShootStats(Item item, ref Vector2 position, ref Vector2 velocity, ref int type, ref int damage, ref float knockback)
-        {
-            base.ModifyShootStats(item, ref position, ref velocity, ref type, ref damage, ref knockback);
         }
         public override bool PreKill(double damage, int hitDirection, bool pvp, ref bool playSound, ref bool genDust, ref PlayerDeathReason damageSource)
         {
@@ -1858,7 +1939,12 @@ namespace MHArmorSkills.MHPlayer
             {
                 if (item.consumable && item.useStyle == ItemUseStyleID.Swing)
                 {
-                    return 1.5f;
+                    float basespeed = 1.5f;
+                    if (SpeedSetup >= 2)
+                    {
+                        basespeed = 2f;
+                    }
+                    return basespeed;
                 }
             }
             #endregion
@@ -1995,5 +2081,6 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
         }
+
     }
 }

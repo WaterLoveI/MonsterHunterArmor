@@ -1,11 +1,9 @@
-﻿using MHArmorSkills.Buffs.ArmorBuffs;
-using MHArmorSkills.Items.Accessories.Decorations;
+﻿using MHArmorSkills.Items.Accessories.Decorations;
 using MHArmorSkills.Items.Armor.MonsterHunter.LowRank;
 using MHArmorSkills.Items.Crafting_Materials.ArmorSphere;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using MHArmorSkills.MHPlayer;
 using MHArmorSkills.MHPlayer.PKMItemDropRule;
-using Microsoft.Xna.Framework;
 using System;
 using System.Linq;
 using Terraria;
@@ -17,7 +15,7 @@ namespace MHArmorSkills.Global
 {
     public class GlobalNPCLoot : GlobalNPC
     {
-        
+
         public override void ModifyGlobalLoot(GlobalLoot globalLoot)
         {
             #region Gathering
@@ -208,10 +206,10 @@ namespace MHArmorSkills.Global
         {
             switch (npc.type)
             {
-                
+                #region mini bosses
                 case NPCID.Mothron:
 
-                    npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<FlamingShard>(), 1 ,1,3));
+                    npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<FlamingShard>(), 1, 1, 3));
 
                     break;
                 case NPCID.MartianSaucerCore:
@@ -229,7 +227,267 @@ namespace MHArmorSkills.Global
                     npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<FineEbonShell>(), 1, 1, 2));
                     npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<AmberHardfang>(), 1, 1, 2));
                     break;
+                #endregion
+                #region bosses
 
+                case NPCID.KingSlime:
+                    if (!Main.expertMode && !Main.masterMode)
+                    {
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<ArmorSphere>(), 1, 1, 3));
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, ModContent.ItemType<BirdWyvernGem>(), ModContent.ItemType<WyvernGem>()));
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, ModContent.ItemType<BeastGem>(), ModContent.ItemType<InsectShell>(), ModContent.ItemType<CrabPearl>()));
+                    }
+
+                    break;
+                case NPCID.EyeofCthulhu:
+                    if (!Main.expertMode && !Main.masterMode)
+                    {
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<ArmorSphere>(), 2, 2, 3));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<ArmorSpherePlus>(), 1, 1, 3));
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 1, ModContent.ItemType<BirdWyvernGem>(), ModContent.ItemType<WyvernGem>()));
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 1, ModContent.ItemType<BeastGem>(), ModContent.ItemType<InsectShell>(), ModContent.ItemType<CrabPearl>()));
+                    }
+
+                    break;
+                case NPCID.EaterofWorldsHead:
+                    if (!Main.expertMode && !Main.masterMode)
+                    {
+                        if (System.Array.IndexOf(new int[] { NPCID.EaterofWorldsBody, NPCID.EaterofWorldsHead, NPCID.EaterofWorldsTail }, npc.type) > -1)
+                        {
+                            LeadingConditionRule leadingConditionRule = new(new Conditions.LegacyHack_IsABoss());
+                            npcLoot.Add(leadingConditionRule);
+                            npcLoot.Add(new CommonDrop(ModContent.ItemType<ArmorSphere>(), 12, 1, 1));
+                            npcLoot.Add(new CommonDrop(ModContent.ItemType<ArmorSpherePlus>(), 10, 1, 1));
+                            npcLoot.Add(new CommonDrop(ModContent.ItemType<HardArmorSphere>(), 9, 1, 1));
+                            npcLoot.Add(new CommonDrop(ModContent.ItemType<FlameSac>(), 5, 1, 1));
+                            npcLoot.Add(new CommonDrop(ModContent.ItemType<FlamingScale>(), 5, 1, 1));
+                        }
+                    }
+
+                    break;
+                case NPCID.BrainofCthulhu:
+                    if (!Main.expertMode && !Main.masterMode)
+                    {
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<ArmorSphere>(), 3, 2, 3));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<ArmorSpherePlus>(), 1, 2, 3));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<HardArmorSphere>(), 3, 1, 3));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<FlameSac>(), 1, 1, 4));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<FlamingScale>(), 1, 1, 4));
+                    }
+
+                    break;
+                case NPCID.Deerclops:
+                    if (!Main.expertMode && !Main.masterMode)
+                    {
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<ArmorSpherePlus>(), 2, 2, 3));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<HardArmorSphere>(), 1, 2, 4));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<FrostSac>(), 1, 2, 4));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<SnowClod>(), 1, 2, 4));
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 1, ModContent.ItemType<EbonShell>(), ModContent.ItemType<AmberTusk>()));
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, ModContent.ItemType<EbonShell>(), ModContent.ItemType<AmberTusk>()));
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 3, ModContent.ItemType<EbonShell>(), ModContent.ItemType<AmberTusk>()));
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 4, ModContent.ItemType<EbonShell>(), ModContent.ItemType<AmberTusk>()));
+                    }
+
+                    break;
+                case NPCID.QueenBee:
+                    if (!Main.expertMode && !Main.masterMode)
+                    {
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<ArmorSpherePlus>(), 2, 2, 3));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<HardArmorSphere>(), 1, 2, 4));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<AquaSac>(), 1, 2, 4));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<DroneSubstance>(), 1, 2, 4));
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 1, ModContent.ItemType<FulgurBug>(), ModContent.ItemType<Bubblefoam>()));
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, ModContent.ItemType<FulgurBug>(), ModContent.ItemType<Bubblefoam>()));
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 3, ModContent.ItemType<FulgurBug>(), ModContent.ItemType<Bubblefoam>()));
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 4, ModContent.ItemType<FulgurBug>(), ModContent.ItemType<Bubblefoam>()));
+                    }
+
+                    break;
+                case NPCID.Skeleton:
+                    if (!Main.expertMode && !Main.masterMode)
+                    {
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<HardArmorSphere>(), 1, 2, 5));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<ElectroSac>(), 1, 2, 4));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<ElectroShocker>(), 1, 2, 4));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<MysteriousSlime>(), 1, 2, 4));
+                    }
+
+                    break;
+                case NPCID.WallofFlesh:
+                    if (!Main.expertMode && !Main.masterMode)
+                    {
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<HardArmorSphere>(), 1, 3, 6));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<ElderDragonGem>(), 4, 1, 1));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<ElderDragonGem>(), 10, 1, 1));
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 1, ModContent.ItemType<FlameSac>(), ModContent.ItemType<AquaSac>(), ModContent.ItemType<ElectroSac>(), ModContent.ItemType<FrostSac>()));
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, ModContent.ItemType<FlameSac>(), ModContent.ItemType<AquaSac>(), ModContent.ItemType<ElectroSac>(), ModContent.ItemType<FrostSac>()));
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 1, ModContent.ItemType<FlamingScale>(), ModContent.ItemType<AmberTusk>(), ModContent.ItemType<EbonShell>(), ModContent.ItemType<ElectroSac>()));
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, ModContent.ItemType<FlamingScale>(), ModContent.ItemType<AmberTusk>(), ModContent.ItemType<EbonShell>(), ModContent.ItemType<ElectroSac>()));
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 1, ModContent.ItemType<SnowClod>(), ModContent.ItemType<Bubblefoam>(), ModContent.ItemType<FulgurBug>(), ModContent.ItemType<GlowingSlime>(), ModContent.ItemType<DroneSubstance>()));
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, ModContent.ItemType<SnowClod>(), ModContent.ItemType<Bubblefoam>(), ModContent.ItemType<FulgurBug>(), ModContent.ItemType<GlowingSlime>(), ModContent.ItemType<DroneSubstance>()));
+                    }
+
+                    break;
+                case NPCID.QueenSlimeBoss:
+                    if (!Main.expertMode && !Main.masterMode)
+                    {
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<HeavyArmorSphere>(), 1, 3, 5));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<InsectCarapace>(), 1, 1, 3));
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 1, ModContent.ItemType<LrgBeastGem>(), ModContent.ItemType<FeyWyvernGem>(), ModContent.ItemType<FineBlackPearl>()));
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, ModContent.ItemType<LrgBeastGem>(), ModContent.ItemType<FeyWyvernGem>(), ModContent.ItemType<FineBlackPearl>()));
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 3, ModContent.ItemType<LrgBeastGem>(), ModContent.ItemType<FeyWyvernGem>(), ModContent.ItemType<FineBlackPearl>()));
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 4, ModContent.ItemType<LrgBeastGem>(), ModContent.ItemType<FeyWyvernGem>(), ModContent.ItemType<FineBlackPearl>()));
+                        int[] QSThreeSlotArray = MHLists.ThreeSlotDecorations.ToArray();
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, QSThreeSlotArray));
+                    }
+
+                    break;
+                case NPCID.Retinazer:
+                    if (!Main.expertMode && !Main.masterMode)
+                    {
+                        if (npc.type == NPCID.Retinazer || npc.type == NPCID.Spazmatism)
+                        {
+                            LeadingConditionRule leadingConditionRule = new LeadingConditionRule(new Conditions.MissingTwin());
+                            npcLoot.Add(leadingConditionRule);
+                            npcLoot.Add(new CommonDrop(ModContent.ItemType<HeavyArmorSphere>(), 2, 3, 5));
+                            npcLoot.Add(new CommonDrop(ModContent.ItemType<InfernoSac>(), 2, 1, 3));
+                            npcLoot.Add(new CommonDrop(ModContent.ItemType<TorrentSac>(), 2, 1, 3));
+                            npcLoot.Add(new CommonDrop(ModContent.ItemType<FineBlackPearl>(), 3, 1, 3));
+                            npcLoot.Add(new CommonDrop(ModContent.ItemType<LrgWyvernGem>(), 5, 1, 1));
+                            int[] TwinsThreeSlotArray = MHLists.ThreeSlotDecorations.ToArray();
+                            npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(3, 1, TwinsThreeSlotArray));
+                        }
+                    }
+
+                    break;
+                case NPCID.Spazmatism:
+                    if (!Main.expertMode && !Main.masterMode)
+                    {
+                        if (npc.type == NPCID.Retinazer || npc.type == NPCID.Spazmatism)
+                        {
+                            LeadingConditionRule leadingConditionRule = new LeadingConditionRule(new Conditions.MissingTwin());
+                            npcLoot.Add(new CommonDrop(ModContent.ItemType<HeavyArmorSphere>(), 2, 3, 5));
+                            npcLoot.Add(new CommonDrop(ModContent.ItemType<InfernoSac>(), 2, 1, 3));
+                            npcLoot.Add(new CommonDrop(ModContent.ItemType<TorrentSac>(), 2, 1, 3));
+                            npcLoot.Add(new CommonDrop(ModContent.ItemType<FineBlackPearl>(), 3, 1, 3));
+                            npcLoot.Add(new CommonDrop(ModContent.ItemType<LrgWyvernGem>(), 5, 1, 1));
+                            int[] TwinsThreeSlotArray = MHLists.ThreeSlotDecorations.ToArray();
+                            npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(3, 1, TwinsThreeSlotArray));
+                        }
+                    }
+
+                    break;
+                case NPCID.TheDestroyer:
+                    if (!Main.expertMode && !Main.masterMode)
+                    {
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<HeavyArmorSphere>(), 1, 3, 5));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<InfernoSac>(), 1, 1, 3));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<FreezerSac>(), 1, 1, 3));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<LrgBeastGem>(), 2, 1, 3));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<LrgWyvernGem>(), 5, 1, 1));
+                        int[] DThreeSlotArray = MHLists.ThreeSlotDecorations.ToArray();
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, DThreeSlotArray));
+                    }
+
+                    break;
+                case NPCID.SkeletronPrime:
+                    if (!Main.expertMode && !Main.masterMode)
+                    {
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<HeavyArmorSphere>(), 1, 3, 5));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<InfernoSac>(), 1, 1, 3));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<ThunderSac>(), 1, 1, 3));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<FeyWyvernGem>(), 2, 1, 1));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<LrgWyvernGem>(), 5, 1, 1));
+                        int[] SPThreeSlotArray = MHLists.ThreeSlotDecorations.ToArray();
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, SPThreeSlotArray));
+                    }
+
+                    break;
+                case NPCID.Plantera:
+                    if (!Main.expertMode && !Main.masterMode)
+                    {
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<HeavyArmorSphere>(), 2, 3, 5));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<KingArmorSphere>(), 1, 3, 5));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<TorrentSac>(), 1, 2, 3));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<QueenSubstance>(), 1, 2, 3));
+                        int[] PThreeSlotArray = MHLists.ThreeSlotDecorations.ToArray();
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, PThreeSlotArray));
+                    }
+
+                    break;
+                case NPCID.Golem:
+                    if (!Main.expertMode && !Main.masterMode)
+                    {
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<KingArmorSphere>(), 1, 3, 5));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<GlowingSlime>(), 1, 3, 5));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<DeathlyShocker>(), 3, 1, 3));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<EbonShell>(), 3, 2, 3));
+                        int[] GThreeSlotArray = MHLists.ThreeSlotDecorations.ToArray();
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, GThreeSlotArray));
+                    }
+
+                    break;
+                case NPCID.HallowBoss:
+                    if (!Main.expertMode && !Main.masterMode)
+                    {
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<KingArmorSphere>(), 1, 3, 5));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<TrueArmorSphere>(), 2, 3, 5));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<ThunderSac>(), 2, 3, 5));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<BoltScale>(), 2, 1, 3));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<GammothIceOrb>(), 5, 1, 1));
+                        int[] EoLThreeSlotArray = MHLists.ThreeSlotDecorations.ToArray();
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, EoLThreeSlotArray));
+                    }
+
+                    break;
+                case NPCID.DukeFishron:
+                    if (!Main.expertMode && !Main.masterMode)
+                    {
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<KingArmorSphere>(), 1, 3, 5));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<TrueArmorSphere>(), 2, 3, 5));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<TorrentSac>(), 2, 3, 5));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<DistilledBubblefoam>(), 2, 1, 3));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<MizutsuneWaterOrb>(), 5, 1, 1));
+                        int[] FThreeSlotArray = MHLists.ThreeSlotDecorations.ToArray();
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, FThreeSlotArray));
+                    }
+
+                    break;
+                case NPCID.DD2Betsy:
+                    if (!Main.expertMode && !Main.masterMode)
+                    {
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<KingArmorSphere>(), 1, 3, 5));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<TrueArmorSphere>(), 2, 3, 5));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<InfernoSac>(), 2, 3, 5));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<FlamingShard>(), 2, 1, 3));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<RathalosRuby>(), 5, 1, 1));
+                        int[] BThreeSlotArray = MHLists.ThreeSlotDecorations.ToArray();
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, BThreeSlotArray));
+                    }
+
+                    break;
+                case NPCID.CultistBoss:
+                    if (!Main.expertMode && !Main.masterMode)
+                    {
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<TrueArmorSphere>(), 1, 5, 10));
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 5, ModContent.ItemType<RathalosRuby>(), ModContent.ItemType<GammothIceOrb>(), ModContent.ItemType<ZinogreJasper>(), ModContent.ItemType<MizutsuneWaterOrb>()));
+                        int[] CThreeSlotArray = MHLists.ThreeSlotDecorations.ToArray();
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, CThreeSlotArray));
+                    }
+
+                        break;
+                case NPCID.MoonLordCore:
+                    if (!Main.expertMode && !Main.masterMode)
+                    {
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<TrueArmorSphere>(), 1, 10, 15));
+                        int[] MLThreeSlotArray = MHLists.ThreeSlotDecorations.ToArray();
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, MLThreeSlotArray));
+                    }
+
+                    break;
+
+                    #endregion
             }
         }
         private static int[] IllegalLootMultiplierNPCs => new int[] {
@@ -245,7 +503,7 @@ namespace MHArmorSkills.Global
 
             if (player.GetModPlayer<ArmorSkills>().Carving >= 1 && !npc.boss && !IllegalLootMultiplierNPCs.Contains(npc.type))
             {
-                if (Main.rand.NextBool(player.GetModPlayer<MHPlayerArmorSkill>().CarvingChance)) 
+                if (Main.rand.NextBool(player.GetModPlayer<MHPlayerArmorSkill>().CarvingChance))
                 {
                     npc.NPCLoot();
                 }

@@ -15,6 +15,7 @@ namespace MHArmorSkills.Items.Accessories.Decorations
             Item.height = 32;
             Item.accessory = true;
             Item.vanity = true;
+            Item.maxStack = 9999;
             Item.value = Item.sellPrice(0, 1, 0, 0);
             Item.rare = ItemRarityID.LightRed;
         }

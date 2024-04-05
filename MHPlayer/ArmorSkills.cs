@@ -1,4 +1,5 @@
-﻿using MHArmorSkills.Buffs.ArmorBuffs;
+﻿using MHArmorSkills.Buffs;
+using MHArmorSkills.Buffs.ArmorBuffs;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -130,6 +131,10 @@ namespace MHArmorSkills.MHPlayer
         public int ChallengeSheathe;
         public int Grinder;
         #endregion
+
+        #region Essence
+        public int ZinogreEssence;
+        #endregion
         public override void ResetEffects()
         {
             #region Skills
@@ -250,26 +255,37 @@ namespace MHArmorSkills.MHPlayer
             WaterRes = 0;
             WindMantle = 0;
             #endregion
+
+            #region Essence
+            ZinogreEssence = 0;
+            #endregion
         }
 
         public override void UpdateEquips()
         {
             MHPlayerArmorSkill modPlayer = Player.GetModPlayer<MHPlayerArmorSkill>();
+            #region Essence
+            if (ZinogreEssence >= 3)
+            {
+                EvadeDistance += 2;
+            }
+            #endregion
+            #region Skills
             #region Affinity Sliding
             if (AffinitySliding >= 1)
             {
 
                 if (AffinitySliding >= 1)
                 {
-                    modPlayer.aSlidingCrit += 5;
+                    modPlayer.aSlidingCrit += 3;
                 }
                 if (AffinitySliding >= 2)
                 {
-                    modPlayer.aSlidingCrit += 5;
+                    modPlayer.aSlidingCrit += 6;
                 }
                 if (AffinitySliding >= 3)
                 {
-                    modPlayer.aSlidingCrit += 10;
+                    modPlayer.aSlidingCrit += 4;
                 }
             }
             #endregion
@@ -282,13 +298,13 @@ namespace MHArmorSkills.MHPlayer
                 }
                 if (AMobility >= 2 && Player.wet)
                 {
-                    Player.moveSpeed += 10 / 100f;
+                    Player.trident = true;
                 }
                 if (AMobility >= 3)
                 {
-                    if (Player.wet && Evasion < 2)
+                    if (Player.wet)
                     {
-                        Evasion = 2;
+                        Evasion += 3;
                     }
                 }
             }
@@ -357,12 +373,12 @@ namespace MHArmorSkills.MHPlayer
                 }
                 if (Attack >= 6)
                 {
-                    Player.GetDamage(DamageClass.Generic) += 4 / 100f;
+                    modPlayer.ControlledAttack += 4;
                     Player.GetDamage(DamageClass.Generic).Base += 1;
                 }
                 if (Attack >= 7)
                 {
-                    Player.GetDamage(DamageClass.Generic) += 5 / 100f;
+                    modPlayer.ControlledAttack += 5;
                     Player.GetDamage(DamageClass.Generic).Base += 2;
                 }
             }
@@ -418,13 +434,14 @@ namespace MHArmorSkills.MHPlayer
             #region Bloodlust
             if (Bloodlust >= 1)
             {
+                if (Player.HasBuff(ModContent.BuffType<Frenzy>()) && Evasion <= Bloodlust)
+                {
+                    Evasion = Bloodlust;
+                }
                 if (Bloodlust >= 1)
                 {
                     modPlayer.Bloodlust += 1;
-                    if (Player.HasBuff(ModContent.BuffType<Frenzy>()) && Evasion <= Bloodlust)
-                    {
-                        Evasion = Bloodlust;
-                    }
+                    
                 }
                 if (Bloodlust >= 2)
                 {
@@ -587,6 +604,10 @@ namespace MHArmorSkills.MHPlayer
                 if (ColdRes >= 3)
                 {
                     Player.buffImmune[BuffID.Frozen] = true;
+                    if (Player.ZoneSnow)
+                    {
+                        Constitution += 1;
+                    }
                 }
             }
             #endregion
@@ -664,32 +685,32 @@ namespace MHArmorSkills.MHPlayer
                 Player.AddBuff(ModContent.BuffType<CritEye>(), 2);
                 if (CritEye >= 1)
                 {
-                    Player.GetCritChance(DamageClass.Generic) += 2;
+                    modPlayer.ControlledCrit += 2;
                 }
                 if (CritEye >= 2)
                 {
-                    Player.GetCritChance(DamageClass.Generic) += 2;
+                    modPlayer.ControlledCrit += 2;
                 }
                 if (CritEye >= 3)
                 {
-                    Player.GetCritChance(DamageClass.Generic) += 3;
+                    modPlayer.ControlledCrit += 3;
                 }
                 if (CritEye >= 4)
                 {
-                    Player.GetCritChance(DamageClass.Generic) += 3;
+                    modPlayer.ControlledCrit += 3;
                 }
                 if (CritEye >= 5)
                 {
-                    Player.GetCritChance(DamageClass.Generic) += 3;
+                    modPlayer.ControlledCrit += 3;
                 }
                 if (CritEye >= 6)
                 {
-                    Player.GetCritChance(DamageClass.Generic) += 3;
+                    modPlayer.ControlledCrit += 3;
                     Player.GetCritChance(DamageClass.Generic) *= 1.05f;
                 }
                 if (CritEye >= 7)
                 {
-                    Player.GetCritChance(DamageClass.Generic) += 3;
+                    modPlayer.ControlledCrit += 3;
                     Player.GetCritChance(DamageClass.Generic) *= 1.05f;
                 }
             }
@@ -750,19 +771,19 @@ namespace MHArmorSkills.MHPlayer
                 }
                 if (DefenseBoost >= 5)
                 {
-                    Player.statDefense += 5;
+                    Player.statDefense *= 1.05f;
                 }
                 if (DefenseBoost >= 6)
                 {
-                    Player.statDefense += 3;
-                    Player.statDefense *= 1.1f;
+                    
+                    Player.statDefense *= 1.05f;
                     Player.endurance += 2 / 100f;
                 }
                 if (DefenseBoost >= 7)
                 {
-                    Player.statDefense += 3;
-                    Player.statDefense *= 1.1f;
-                    Player.endurance += 2 / 100f;
+                    
+                    Player.statDefense *= 1.05f;
+                    Player.endurance += 5 / 100f;
                 }
             }
             #endregion
@@ -813,14 +834,17 @@ namespace MHArmorSkills.MHPlayer
             {
                 if (Diversion >= 1)
                 {
+                    modPlayer.Diversion += 1;
                     Player.aggro += 100;
                 }
                 if (Diversion >= 2)
                 {
+                    modPlayer.Diversion += 1;
                     Player.aggro += 100;
                 }
                 if (Diversion >= 3)
                 {
+                    modPlayer.Diversion += 1;
                     Player.aggro += 100;
                 }
             }
@@ -865,24 +889,34 @@ namespace MHArmorSkills.MHPlayer
             #region Embolden
             if (Embolden >= 1)
             {
+                if (Player.HasBuff(ModContent.BuffType<Embolden>()) && Evasion <= (Embolden +2))
+                {
+                    Evasion = Embolden + 2;
+                }
+                if (Player.HasBuff(ModContent.BuffType<Embolden>()) && Guard <= (Embolden + 2))
+                {
+                    Guard = Embolden + 2;
+                }
+
                 if (Embolden >= 1)
                 {
                     modPlayer.Embolden += 1;
                     modPlayer.EmboldenAggro += 500;
                     modPlayer.EmboldenDef += 5;
+                    
 
                 }
                 if (Embolden >= 2)
                 {
                     modPlayer.Embolden += 2;
-                    modPlayer.EmboldenAggro += 500;
-                    modPlayer.EmboldenDef += 5;
+                    modPlayer.EmboldenAggro += 250;
+                    modPlayer.EmboldenDef += 2;
                 }
                 if (Embolden >= 3)
                 {
                     modPlayer.Embolden += 2;
-                    modPlayer.EmboldenAggro += 500;
-                    modPlayer.EmboldenDef += 5;
+                    modPlayer.EmboldenAggro += 250;
+                    modPlayer.EmboldenDef += 2;
                 }
             }
             #endregion
@@ -891,15 +925,15 @@ namespace MHArmorSkills.MHPlayer
             {
                 if (EvadeDistance >= 1)
                 {
-                    modPlayer.EvadeDistance += 30;
+                    modPlayer.EvadeDistance += 10;
                 }
                 if (EvadeDistance >= 2)
                 {
-                    modPlayer.EvadeDistance += 30;
+                    modPlayer.EvadeDistance += 10;
                 }
                 if (EvadeDistance >= 3)
                 {
-                    modPlayer.EvadeDistance += 40;
+                    modPlayer.EvadeDistance += 20;
                 }
             }
             #endregion
@@ -955,11 +989,11 @@ namespace MHArmorSkills.MHPlayer
                 }
                 if (Fencing >= 2)
                 {
-                    Player.GetArmorPenetration(DamageClass.Generic) += 4;
+                    Player.GetArmorPenetration(DamageClass.Generic) += 2;
                 }
                 if (Fencing >= 3)
                 {
-                    Player.GetArmorPenetration(DamageClass.Generic) += 5;
+                    Player.GetArmorPenetration(DamageClass.Generic) += 2;
                 }
             }
             #endregion
@@ -1091,7 +1125,7 @@ namespace MHArmorSkills.MHPlayer
             {
                 if (FreeMeal >= 1)
                 {
-                    modPlayer.FreeMeal += 4;
+                    modPlayer.FreeMeal += 3;
                 }
                 if (FreeMeal >= 2)
                 {
@@ -1219,7 +1253,7 @@ namespace MHArmorSkills.MHPlayer
                 }
                 if (Handicraft >= 2)
                 {
-                    modPlayer.Handicraft += 1;
+                    modPlayer.Handicraft += 2;
                 }
             }
             #endregion
@@ -1273,6 +1307,10 @@ namespace MHArmorSkills.MHPlayer
                 if (HeatRes >= 3)
                 {
                     Player.lavaMax += 420;
+                    if (Player.ZoneUnderworldHeight || Player.ZoneDesert || Player.ZoneJungle)
+                    {
+                        RecSpeed += 1;
+                    }
                 }
             }
             #endregion
@@ -1454,8 +1492,8 @@ namespace MHArmorSkills.MHPlayer
             {
                 if (LatentPower >= 1)
                 {
-                    modPlayer.LatentPower = true; 
-                   modPlayer.LatentPowerAffinity += 3;
+                    modPlayer.LatentPower = true;
+                    modPlayer.LatentPowerAffinity += 3;
                     modPlayer.LatentPowerManaCost += 95;
                 }
                 if (LatentPower >= 2)
@@ -1476,6 +1514,17 @@ namespace MHArmorSkills.MHPlayer
                     modPlayer.LatentPowerAffinity += 3;
                     modPlayer.LatentPowerManaCost -= 5;
                 }
+                if (LatentPower >= 6 && ZinogreEssence >= 2)
+                {
+                    modPlayer.LatentPowerAffinity += 3;
+                    modPlayer.LatentPowerManaCost -= 5;
+                    modPlayer.ZinogreEssence = true;
+                }
+                if (LatentPower >= 7 && ZinogreEssence >= 2)
+                {
+                    modPlayer.LatentPowerAffinity += 3;
+                    modPlayer.LatentPowerManaCost -= 5;
+                }
             }
             #endregion
             #region Mail of Hellfire
@@ -1483,15 +1532,15 @@ namespace MHArmorSkills.MHPlayer
             {
                 if (MailofHellfire >= 1)
                 {
-                    modPlayer.MailofHellfire += 2;
+                    modPlayer.MailofHellfire += 10;
                 }
                 if (MailofHellfire >= 2)
                 {
-                    modPlayer.MailofHellfire += 1;
+                    modPlayer.MailofHellfire += 5;
                 }
                 if (MailofHellfire >= 3)
                 {
-                    modPlayer.MailofHellfire += 1;
+                    modPlayer.MailofHellfire += 5;
                 }
             }
             #endregion
@@ -1528,15 +1577,15 @@ namespace MHArmorSkills.MHPlayer
             {
                 if (NormalUp >= 1)
                 {
-                    modPlayer.NormalBuff += 10;
+                    modPlayer.NormalBuff += 20;
                 }
                 if (NormalUp >= 2)
                 {
-                    modPlayer.NormalBuff += 10;
+                    modPlayer.NormalBuff += 20;
                 }
                 if (NormalUp >= 3)
                 {
-                    modPlayer.NormalBuff += 10;
+                    modPlayer.NormalBuff += 20;
                 }
             }
             #endregion
@@ -1600,16 +1649,23 @@ namespace MHArmorSkills.MHPlayer
             #region Polar Hunter
             if (PolarHunter >= 1)
             {
+                if (Player.HasBuff(BuffID.Warmth))
+                {
+                    Player.GetDamage(DamageClass.Generic) += 5 / 100f;
+                }
                 if (PolarHunter >= 1)
                 {
                     modPlayer.PolarHunterDef += 5;
                 }
                 if (PolarHunter >= 2)
                 {
+                    modPlayer.PolarHunterDef += 1;
                     modPlayer.PolarHunterMovement += 5;
                 }
                 if (PolarHunter >= 3)
                 {
+                    modPlayer.PolarHunterDef += 1;
+                    modPlayer.PolarHunterMovement += 5;
                     modPlayer.PolarHunterAtk += 5;
                 }
             }
@@ -1882,10 +1938,12 @@ namespace MHArmorSkills.MHPlayer
                 if (Sneak >= 2)
                 {
                     Player.aggro -= 150;
+                    modPlayer.Sneak += 1;
                 }
                 if (Sneak >= 3)
                 {
                     Player.aggro -= 200;
+                    Player.GetCritChance(DamageClass.Generic) += 3;
                 }
             }
             #endregion
@@ -2102,10 +2160,13 @@ namespace MHArmorSkills.MHPlayer
                 }
                 if (TropicHunter >= 2)
                 {
+                    modPlayer.TropicHunterDef += 1;
                     modPlayer.TropicHunterMovement += 5;
                 }
                 if (TropicHunter >= 3)
                 {
+                    modPlayer.TropicHunterDef += 1;
+                    modPlayer.TropicHunterMovement += 5;
                     modPlayer.TropicHunterAtk += 5;
                 }
             }
@@ -2133,15 +2194,15 @@ namespace MHArmorSkills.MHPlayer
 
                 if (Vault >= 1)
                 {
-                    modPlayer.Vault += 2;
+                    modPlayer.Vault += 3;
                 }
                 if (Vault >= 2)
                 {
-                    modPlayer.Vault += 3;
+                    modPlayer.Vault += 2;
                 }
                 if (Vault >= 3)
                 {
-                    modPlayer.Vault += 4;
+                    modPlayer.Vault += 2;
                 }
             }
             #endregion
@@ -2188,6 +2249,8 @@ namespace MHArmorSkills.MHPlayer
                 }
             }
             #endregion
+            #endregion
+            
         }
     }
 }

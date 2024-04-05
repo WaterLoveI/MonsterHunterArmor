@@ -17,23 +17,31 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
         {
             Item.width = 28;
             Item.height = 26;
-            Item.value = MHGlobalItems.RarityLimeBuyPrice;
-            Item.rare = ItemRarityID.Lime;
+            Item.value = MHGlobalItems.RarityYellowBuyPrice;
+            Item.rare = ItemRarityID.Yellow;
             Item.defense = 16;
         }
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.GetDamage<GenericDamageClass>() += 0.12f;
-            player.GetCritChance<GenericDamageClass>() += 12;
+            player.GetDamage<GenericDamageClass>() += 0.10f;
+            player.GetCritChance<GenericDamageClass>() += 8;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.ThunderAttack += 1;
-            modPlayer.LatentPower += 2;
-            modPlayer.Sneak += 1;
-            modPlayer.Evasion += 1;
+            modPlayer.LatentPower += 1;
+            modPlayer.Unscathed += 1;
+            modPlayer.Evasion += 2;
+            modPlayer.ZinogreEssence += 1;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += 1;
-            SlotPlayer.DecorationTwoSlots += 2;
+            SlotPlayer.DecorationThreeSlots += 2;
+        }
+        public override bool IsArmorSet(Item head, Item body, Item legs)
+        {
+            return body.type == ModContent.ItemType<ZinogreMailX>() && legs.type == ModContent.ItemType<ZinogreGreavesX>();
+        }
+
+        public override void ArmorSetShadows(Player player)
+        {
+            player.armorEffectDrawShadow = true;
         }
         public override void AddRecipes()
         {
@@ -41,7 +49,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
                 AddIngredient<ZinogreHelm>().
                 AddIngredient<BoltScale>(3).
                 AddIngredient<ZinogreJasper>().
-                AddIngredient(ItemID.MagnetSphere).
+                AddIngredient(ItemID.SpookyWood,15).
                 AddIngredient<KingArmorSphere>(10).
                 AddTile(TileID.MythrilAnvil).
                 Register();

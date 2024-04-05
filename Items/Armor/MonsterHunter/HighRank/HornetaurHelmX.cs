@@ -16,7 +16,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
         public override void SetDefaults()
         {
             Item.width = 24;
-            Item.height = 22;
+            Item.height = 26;
             Item.value = MHGlobalItems.RarityLightRedBuyPrice;
             Item.rare = ItemRarityID.LightRed;
             Item.defense = 8;

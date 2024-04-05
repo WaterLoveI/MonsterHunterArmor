@@ -1,4 +1,5 @@
-﻿using MHArmorSkills.MHPlayer;
+﻿using MHArmorSkills.Buffs.ArmorBuffs;
+using MHArmorSkills.MHPlayer;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -32,6 +33,22 @@ namespace MHArmorSkills.Global
             {
                 return false;
             }
+            if ((player.HasBuff(BuffID.WellFed) || player.HasBuff(BuffID.WellFed2) || player.HasBuff(BuffID.WellFed3)) && (item.consumable && item.buffTime > 0 && player.GetModPlayer<MHPlayerArmorSkill>().SpeedEating >= 1) && Main.rand.NextBool(2))
+            {
+                return false;
+            }
+            if ((player.HasBuff(BuffID.WellFed) || player.HasBuff(BuffID.WellFed2) || player.HasBuff(BuffID.WellFed3)) && (item.consumable && item.healLife > 0 && player.GetModPlayer<MHPlayerArmorSkill>().SpeedEating >= 3) && Main.rand.NextBool(2))
+            {
+                return false;
+            }
+            if (((player.HasBuff(BuffID.WellFed) || player.HasBuff(BuffID.WellFed2) || player.HasBuff(BuffID.WellFed3)) && item.consumable && item.healMana > 0 && player.GetModPlayer<MHPlayerArmorSkill>().SpeedEating >= 2) && Main.rand.NextBool(2))
+            {
+                return false;
+            }
+            if ((item.consumable && item.damage > 0 && player.GetModPlayer<MHPlayerArmorSkill>().SpeedSetup >= 2) && Main.rand.NextBool(5))
+            {
+                return false;
+            }
             return base.ConsumeItem(item, player);
         }
 
@@ -41,20 +58,21 @@ namespace MHArmorSkills.Global
             if (item.healLife > 0 && player.GetModPlayer<ArmorSkills>().Gluttony == 1)
             {
 
-                player.statMana += (int)(item.healLife * 0.3f);
-                player.ManaEffect((int)(item.healLife * 0.3f));
+                player.statMana += (int)(item.healLife * 0.5f);
+                player.ManaEffect((int)(item.healLife * 0.5f));
             }
             if (item.healLife > 0 && player.GetModPlayer<ArmorSkills>().Gluttony == 2)
             {
 
-                player.statMana += (int)(item.healLife * 0.6f);
-                player.ManaEffect((int)(item.healLife * 0.6f));
+                player.statMana += (int)(item.healLife * 1f);
+                player.ManaEffect((int)(item.healLife * 1f));
             }
             if (item.healLife > 0 && player.GetModPlayer<ArmorSkills>().Gluttony >= 3)
             {
 
-                player.statMana += (int)(item.healLife);
-                player.ManaEffect((int)(item.healLife));
+                player.statMana += (int)(item.healLife *1.5f );
+                player.ManaEffect((int)(item.healLife * 1.5f ));
+                player.AddBuff(BuffID.WellFed2, 30*60);
             }
 
         }
