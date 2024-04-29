@@ -37,7 +37,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
                 AddIngredient<BlangoHelm>().
                 AddIngredient<LrgSnowClod>().
                 AddIngredient<LrgBeastGem>().
-                AddIngredient(ItemID.FrostCore,2).
                 AddIngredient<KingArmorSphere>(5).
                 AddTile(TileID.MythrilAnvil).
                 Register();

@@ -17,8 +17,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
         {
             Item.width = 32;
             Item.height = 32;
-            Item.value = MHGlobalItems.RarityLimeBuyPrice;
-            Item.rare = ItemRarityID.Lime;
+            Item.value = MHGlobalItems.RarityYellowBuyPrice;
+            Item.rare = ItemRarityID.Yellow;
             Item.defense = 20;
         }
 
@@ -27,12 +27,10 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
             player.GetDamage<GenericDamageClass>() += 0.12f;
             player.GetCritChance<GenericDamageClass>() += 12;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.IceAttack += 1;
             modPlayer.PolarHunter += 2;
             modPlayer.Attack += 2;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
             SlotPlayer.DecorationOneSlots += 1;
-            SlotPlayer.DecorationTwoSlots += 1;
         }
         public override void AddRecipes()
         {
@@ -40,7 +38,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
                 AddIngredient<GammothHelm>().
                 AddIngredient<LrgSnowClod>().
                 AddIngredient<GammothIceOrb>().
-                AddIngredient(ItemID.SnowmanCannon).
                 AddIngredient<KingArmorSphere>(10).
                 AddTile(TileID.MythrilAnvil).
                 Register();

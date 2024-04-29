@@ -25,7 +25,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
         public override void UpdateEquip(Terraria.Player player)
         {
             player.moveSpeed += 0.12f;
-            player.GetCritChance<GenericDamageClass>() += 5;
+            player.GetCritChance<GenericDamageClass>() += 10;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.LatentPower += 2;
             modPlayer.Evasion += 2;
@@ -39,7 +39,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
                 AddIngredient<ZinogreGreaves>().
                 AddIngredient<BoltScale>(3).
                 AddIngredient<DeathlyShocker>(3).
-                AddIngredient(ItemID.LightningBug,3).
                 AddIngredient<KingArmorSphere>(10).
                 AddTile(TileID.MythrilAnvil).
                 Register();

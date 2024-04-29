@@ -39,7 +39,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             CreateRecipe().
                 AddIngredient<MysteriousSlime>(2).
                 AddIngredient<EbonShell>(3).
-                AddIngredient(ItemID.Dynamite,5).
                 AddIngredient<HardArmorSphere>(4).
                 AddTile(TileID.Anvils).
                 Register();

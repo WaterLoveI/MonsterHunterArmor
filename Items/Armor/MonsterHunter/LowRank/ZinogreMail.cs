@@ -36,7 +36,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             CreateRecipe().
                 AddIngredient<WyvernGem>().
                 AddIngredient<ElectroShocker>(4).
-                AddIngredient(ItemID.Bone, 5).
                 AddIngredient<HardArmorSphere>(5).
                 AddTile(TileID.Anvils).
                 Register();

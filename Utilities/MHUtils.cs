@@ -10,7 +10,7 @@ namespace MHArmorSkills.Utilities
 {
     public static partial class MHUtils
     {
-        
+
         public static Item ActiveItem(this Player player) => Main.mouseItem.IsAir ? player.HeldItem : Main.mouseItem;
         public static int GetOreItemID(this Tile tile)
         {
@@ -124,21 +124,34 @@ namespace MHArmorSkills.Utilities
 
             return true;
         }
-        #region Fraction Struct (thanks Yorai)
-        public struct Fraction
+        public static bool IsTileSolidGround(this Tile tile) => tile != null && tile.HasUnactuatedTile && (Main.tileSolid[tile.TileType] || Main.tileSolidTop[tile.TileType]);
+        public static bool CheckSolidGround(this Player player, int solidGroundAhead = 0, int airExposureNeeded = 0)
         {
-            internal readonly int numerator;
-            internal readonly int denominator;
+            if (player.velocity.Y != 0) // Player gotta be standing still in any case.
+                return false;
 
-            public Fraction(int n, int d)
+            Tile checkedTile;
+            bool ConditionMet = true;
+
+            int playerCenterX = (int)player.Center.X / 16;
+            int playerCenterY = (int)(player.position.Y + (float)player.height - 1f) / 16 + 1;
+            for (int i = 0; i <= solidGroundAhead; i++) // Check i tiles in front of the player.
             {
-                numerator = n < 0 ? 0 : n;
-                denominator = d <= 0 ? 1 : d;
-            }
+                ConditionMet = Main.tile[playerCenterX + player.direction * i, playerCenterY].IsTileSolidGround();
+                if (!ConditionMet)
+                    return ConditionMet;
 
-            public static implicit operator float(Fraction f) => f.numerator / (float)f.denominator;
+                for (int j = 1; j <= airExposureNeeded; j++) // Check j tiles ontop of each checked tiles for non-solid ground.
+                {
+                    checkedTile = Main.tile[playerCenterX + player.direction * i, playerCenterY - j];
+
+                    ConditionMet = !(checkedTile != null && checkedTile.HasUnactuatedTile && Main.tileSolid[checkedTile.TileType]); // IsTileSolidGround minus the ground part, to avoid platforms and other half solid tiles messing it up.
+                    if (!ConditionMet)
+                        return ConditionMet;
+                }
+            }
+            return ConditionMet;
+
         }
-        #endregion
-        
     }
 }

@@ -41,7 +41,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
                 AddIngredient<AgnaktorHelm>().
                 AddIngredient<InfernoSac>(3).
                 AddIngredient<RathalosRuby>().
-                AddIngredient(ItemID.FireGauntlet).
                 AddIngredient<KingArmorSphere>(10).
                 AddTile(TileID.MythrilAnvil).
                 Register();

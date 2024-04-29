@@ -31,7 +31,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         {
             player.moveSpeed += 0.1f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.ThunderAttack += 4;
+            modPlayer.ThunderAttack += 3;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
             SlotPlayer.DecorationOneSlots += 1;
         }
@@ -40,7 +40,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             CreateRecipe().
                 AddIngredient<FulgurBug>(2).
                 AddIngredient<ElectroShocker>(3).
-                AddIngredient(ItemID.CyanHusk).
                 AddIngredient<HardArmorSphere>(4).
                 AddTile(TileID.Anvils).
                 Register();

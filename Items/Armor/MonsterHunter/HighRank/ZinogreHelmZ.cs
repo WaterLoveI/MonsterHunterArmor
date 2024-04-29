@@ -15,8 +15,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 
         public override void SetDefaults()
         {
-            Item.width = 26;
-            Item.height = 30;
+            Item.width = 28;
+            Item.height = 26;
             Item.value = MHGlobalItems.RarityYellowBuyPrice;
             Item.rare = ItemRarityID.Yellow;
             Item.defense = 16;
@@ -25,19 +25,18 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
         public override void UpdateEquip(Terraria.Player player)
         {
             player.GetDamage<GenericDamageClass>() += 0.10f;
-            player.GetCritChance<GenericDamageClass>() += 8;
+            player.GetCritChance<GenericDamageClass>() += 12;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.ThunderAttack += 1;
-            modPlayer.LatentPower += 2;
-            modPlayer.Sneak += 1;
-            modPlayer.Evasion += 1;
+            modPlayer.LatentPower += 1;
+            modPlayer.Unscathed += 1;
+            modPlayer.Evasion += 2;
             modPlayer.ZinogreEssence += 1;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationTwoSlots += 2;
+            SlotPlayer.DecorationThreeSlots += 1;
         }
         public override bool IsArmorSet(Item head, Item body, Item legs)
         {
-            return body.type == ModContent.ItemType<ZinogreMailZ>() && legs.type == ModContent.ItemType<ZinogreGreavesZ>();
+            return body.type == ModContent.ItemType<ZinogreMailX>() && legs.type == ModContent.ItemType<ZinogreGreavesX>();
         }
 
         public override void ArmorSetShadows(Player player)
@@ -50,7 +49,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
                 AddIngredient<ZinogreHelm>().
                 AddIngredient<BoltScale>(3).
                 AddIngredient<ZinogreJasper>().
-                AddIngredient(ItemID.MagnetSphere).
                 AddIngredient<KingArmorSphere>(10).
                 AddTile(TileID.MythrilAnvil).
                 Register();

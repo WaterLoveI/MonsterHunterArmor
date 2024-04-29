@@ -17,7 +17,7 @@ namespace MHArmorSkills.Buffs.ArmorBuffs
         }
         public override void Update(Player player, ref int buffIndex)
         {
-            player.moveSpeed += 5 / 100f;
+            
         }
     }
     

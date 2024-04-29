@@ -39,7 +39,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             CreateRecipe().
                 AddIngredient<FlameSac>(2).
                 AddIngredient<EbonShell>(3).
-                AddIngredient(ItemID.FieryGreatsword).
                 AddIngredient<HardArmorSphere>(4).
                 AddTile(TileID.Anvils).
                 Register();

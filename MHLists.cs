@@ -1,6 +1,7 @@
 ﻿using MHArmorSkills.Buffs;
 using MHArmorSkills.Buffs.ArmorBuffs;
 using MHArmorSkills.Items.Accessories.Decorations;
+using MHArmorSkills.Items.Weapons;
 using System.Collections.Generic;
 using Terraria.Graphics;
 using Terraria.ID;
@@ -192,6 +193,7 @@ namespace MHArmorSkills
                 ItemID.Xenopopper,
                 ItemID.PirateStaff,
                 ItemID.GoldenShower,
+                ItemType<FrozenSpearTuna>(),
             };
             thunderelementList = new List<int>()
             {
@@ -424,6 +426,8 @@ namespace MHArmorSkills
             };
             ArmorDecorations = new List<int>()
             {
+                ItemType<AdrenalineRush1>(),
+                ItemType<AdrenalineRush2>(),
                 ItemType<AffinitySliding1>(),
                 ItemType<AffinitySliding2>(),
                 ItemType<AquaticMobility1>(),
@@ -453,6 +457,7 @@ namespace MHArmorSkills
                 ItemType<Carving1>(),
                 ItemType<ChallengeSheath1>(),
                 ItemType<ChallengeSheath2>(),
+                ItemType<ChameleosBless1>(),
                 ItemType<Cliffhanger1>(),
                 ItemType<Cliffhanger2>(),
                 ItemType<CloseRangePlus1>(),
@@ -543,6 +548,7 @@ namespace MHArmorSkills
                 ItemType<JumpMaster1>(),
                 ItemType<JumpMaster2>(),
                 ItemType<JumpMaster3>(),
+                ItemType<KushalaBless1>(),
                 ItemType<LastingPower1>(),
                 ItemType<LastingPower2>(),
                 ItemType<LastingPower3>(),
@@ -552,6 +558,8 @@ namespace MHArmorSkills
                 ItemType<MastersTouch2>(),
                 ItemType<Mushroomancer1>(),
                 ItemType<Mushroomancer2>(),
+                ItemType<NegativeCrit1>(),
+                ItemType<NegativeCrit2>(),
                 ItemType<NormalUp1>(),
                 ItemType<NormalUp2>(),
                 ItemType<OffensiveGuard1>(),
@@ -604,15 +612,21 @@ namespace MHArmorSkills
                 ItemType<SpiritBirdsCall1>(),
                 ItemType<StaminaRecovery1>(),
                 ItemType<StaminaRecovery3>(),
+                ItemType<StatusTrigger1>(),
+                ItemType<StatusTrigger2>(),
                 ItemType<Strife1>(),
                 ItemType<Strife2>(),
                 ItemType<Tenderizer1>(),
                 ItemType<Tenderizer2>(),
+                ItemType<TeostraBless1>(),
                 ItemType<ThunderAttack1>(),
                 ItemType<ThunderAttack2>(),
                 ItemType<ThunderAttack3>(),
                 ItemType<ThunderRes1>(),
                 ItemType<ThunderRes2>(),
+                ItemType<TremorRes1>(),
+                ItemType<TremorRes2>(),
+                ItemType<TremorRes3>(),
                 ItemType<Unscathed1>(),
                 ItemType<Unscathed2>(),
                 ItemType<Vault1>(),
@@ -622,6 +636,9 @@ namespace MHArmorSkills
                 ItemType<WaterAttack3>(),
                 ItemType<WaterRes1>(),
                 ItemType<WaterRes2>(),
+                ItemType<Windproof1>(),
+                ItemType<Windproof2>(),
+                ItemType<Windproof3>(),
             };
             OneSlotDecorations = new List<int>()
             {
@@ -632,6 +649,7 @@ namespace MHArmorSkills
                 ItemType<BubbleDance1>(),
                 ItemType<Cliffhanger1>(),
                 ItemType<CloseRangePlus1>(),
+                ItemType<ChameleosBless1>(),
                 ItemType<ColdRes1>(),
                 ItemType<Defense1>(),
                 ItemType<Defiance1>(),
@@ -651,6 +669,7 @@ namespace MHArmorSkills
                 ItemType<IceRes1>(),
                 ItemType<IntrepidHeart1>(),
                 ItemType<JumpMaster1>(),
+                ItemType<KushalaBless1>(),
                 ItemType<LastingPower1>(),
                 ItemType<Mushroomancer1>(),
                 ItemType<Poison1>(),
@@ -669,13 +688,17 @@ namespace MHArmorSkills
                 ItemType<SpeedSharpening1>(),
                 ItemType<SpiritBirdsCall1>(),
                 ItemType<StaminaRecovery1>(),
+                ItemType<TeostraBless1>(),
                 ItemType<ThunderAttack1>(),
                 ItemType<ThunderRes1>(),
+                ItemType<TremorRes1>(),
                 ItemType<WaterAttack1>(),
                 ItemType<WaterRes1>(),
+                ItemType<Windproof1>(),
             };
             TwoSlotDecorations = new List<int>()
             {
+                ItemType<AdrenalineRush1>(),
                 ItemType<AffinitySliding1>(),
                 ItemType<AquaticMobility2>(),
                 ItemType<Artillery1>(),
@@ -732,6 +755,7 @@ namespace MHArmorSkills
                 ItemType<LatentPower2>(),
                 ItemType<MastersTouch1>(),
                 ItemType<Mushroomancer2>(),
+                ItemType<NegativeCrit1>(),
                 ItemType<NormalUp1>(),
                 ItemType<OffensiveGuard1>(),
                 ItemType<PelletUp1>(),
@@ -747,18 +771,22 @@ namespace MHArmorSkills
                 ItemType<SpeedEating2>(),
                 ItemType<SpeedSetUp2>(),
                 ItemType<Spirit1>(),
+                ItemType<StatusTrigger1>(),
                 ItemType<Strife1>(),
                 ItemType<Tenderizer1>(),
                 ItemType<ThunderAttack2>(),
                 ItemType<ThunderRes2>(),
+                ItemType<TremorRes2>(),
                 ItemType<TropicsHunter1>(),
                 ItemType<Unscathed1>(),
                 ItemType<Vault1>(),
                 ItemType<WaterAttack2>(),
                 ItemType<WaterRes2>(),
+                ItemType<Windproof2>(),
             };
             ThreeSlotDecorations = new List<int>()
             {
+                ItemType<AdrenalineRush2>(),
                 ItemType<AffinitySliding2>(),
                 ItemType<AquaticMobility3>(),
                 ItemType<Artillery2>(),
@@ -804,6 +832,7 @@ namespace MHArmorSkills
                 ItemType<LastingPower3>(),
                 ItemType<LatentPower2>(),
                 ItemType<MastersTouch2>(),
+                ItemType<NegativeCrit2>(),
                 ItemType<NormalUp2>(),
                 ItemType<OffensiveGuard2>(),
                 ItemType<PelletUp2>(),
@@ -824,12 +853,15 @@ namespace MHArmorSkills
                 ItemType<SpeedSharpening3>(),
                 ItemType<Spirit2>(),
                 ItemType<StaminaRecovery3>(),
+                ItemType<StatusTrigger2>(),
                 ItemType<Strife2>(),
                 ItemType<Tenderizer2>(),
                 ItemType<ThunderAttack3>(),
+                ItemType<TremorRes3>(),
                 ItemType<TropicsHunter2>(),
                 ItemType<Unscathed2>(),
                 ItemType<WaterAttack3>(),
+                ItemType<Windproof3>(),
             };
             }
         public static void UnloadLists()

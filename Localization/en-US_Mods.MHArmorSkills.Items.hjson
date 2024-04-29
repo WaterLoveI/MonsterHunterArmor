@@ -1,0 +1,254 @@
+DustOfLife: {
+	DisplayName: Dust Of Life
+	Tooltip: Restore health for you and your allies.
+}
+
+LifePowder: {
+	DisplayName: Life Powder
+	Tooltip: Restore a little health for you and your allies.
+}
+
+WhetStone: {
+	DisplayName: Whet Stone
+	Tooltip: Sharpens your weapons and grants the Sharpness buff for 45 seconds.
+}
+
+ArmorSphere: {
+	DisplayName: Armor Sphere
+	Tooltip: ""
+}
+
+ArmorSpherePlus: {
+	DisplayName: Armor Sphere Plus
+	Tooltip: ""
+}
+
+HardArmorSphere: {
+	DisplayName: Hard Armor Sphere
+	Tooltip: ""
+}
+
+HeavyArmorSphere: {
+	DisplayName: Heavy Armor Sphere
+	Tooltip: ""
+}
+
+KingArmorSphere: {
+	DisplayName: King Armor Sphere
+	Tooltip: ""
+}
+
+TrueArmorSphere: {
+	DisplayName: True Armor Sphere
+	Tooltip: ""
+}
+
+FrozenSpearTuna: {
+	DisplayName: Frozen Spear Tuna
+	Tooltip: ""
+}
+
+AmberHardfang: {
+	DisplayName: Amber Hardfang
+	Tooltip: ""
+}
+
+AmberTusk: {
+	DisplayName: Amber Tusk
+	Tooltip: ""
+}
+
+AquaSac: {
+	DisplayName: Aqua Sac
+	Tooltip: ""
+}
+
+BeastGem: {
+	DisplayName: Beast Gem
+	Tooltip: ""
+}
+
+BirdWyvernGem: {
+	DisplayName: Bird Wyvern Gem
+	Tooltip: ""
+}
+
+BoltScale: {
+	DisplayName: Bolt Scale
+	Tooltip: "An Astalos scale that bristles with electricity, even after being separated from its body. "
+}
+
+Bubblefoam: {
+	DisplayName: Bubblefoam
+	Tooltip: ""
+}
+
+CrabPearl: {
+	DisplayName: Crab Pearl
+	Tooltip: ""
+}
+
+DeathlyShocker: {
+	DisplayName: Deathly Shocker
+	Tooltip: ""
+}
+
+DistilledBubblefoam: {
+	DisplayName: Distilled Bubblefoam
+	Tooltip: "The top layer of a Mizutsune's fluid, strained and distilled to the highest purity. "
+}
+
+DroneSubstance: {
+	DisplayName: Drone Substance
+	Tooltip: ""
+}
+
+EbonShell: {
+	DisplayName: Ebon Shell
+	Tooltip: ""
+}
+
+ElderDragonGem: {
+	DisplayName: Elder Dragon Gem
+	Tooltip: ""
+}
+
+ElectroSac: {
+	DisplayName: Electro Sac
+	Tooltip: ""
+}
+
+ElectroShocker: {
+	DisplayName: Electro Shocker
+	Tooltip: "A shell with electric power that shames even lightning. Its effect on forged equipment is vast. "
+}
+
+FeyWyvernGem: {
+	DisplayName: Fey Wyvern Gem
+	Tooltip: ""
+}
+
+FineBlackPearl: {
+	DisplayName: Fine Black Pearl
+	Tooltip: ""
+}
+
+FineEbonShell: {
+	DisplayName: Fine Ebon Shell
+	Tooltip: ""
+}
+
+FlameSac: {
+	DisplayName: Flame Sac
+	Tooltip: ""
+}
+
+FlamingScale: {
+	DisplayName: Flaming Scale
+	Tooltip: ""
+}
+
+FlamingShard: {
+	DisplayName: Flaming Shard
+	Tooltip: ""
+}
+
+FreezerSac: {
+	DisplayName: Freezer Sac
+	Tooltip: ""
+}
+
+FrostSac: {
+	DisplayName: Frost Sac
+	Tooltip: ""
+}
+
+FulgurBug: {
+	DisplayName: Fulgur Bug
+	Tooltip: ""
+}
+
+GammothIceOrb: {
+	DisplayName: Gammoth Ice Orb
+	Tooltip: ""
+}
+
+GlowingSlime: {
+	DisplayName: Glowing Slime
+	Tooltip: ""
+}
+
+InfernoSac: {
+	DisplayName: Inferno Sac
+	Tooltip: ""
+}
+
+InsectCarapace: {
+	DisplayName: Insect Carapace
+	Tooltip: ""
+}
+
+InsectShell: {
+	DisplayName: Insect Shell
+	Tooltip: ""
+}
+
+LrgBeastGem: {
+	DisplayName: Lrg Beast Gem
+	Tooltip: ""
+}
+
+LrgSnowClod: {
+	DisplayName: Lrg Snow Clod
+	Tooltip: ""
+}
+
+LrgWyvernGem: {
+	DisplayName: Lrg Wyvern Gem
+	Tooltip: ""
+}
+
+MizutsuneWaterOrb: {
+	DisplayName: Mizutsune Water Orb
+	Tooltip: ""
+}
+
+MysteriousSlime: {
+	DisplayName: Mysterious Slime
+	Tooltip: ""
+}
+
+QueenSubstance: {
+	DisplayName: Queen Substance
+	Tooltip: ""
+}
+
+RathalosRuby: {
+	DisplayName: Rathalos Ruby
+	Tooltip: ""
+}
+
+SnowClod: {
+	DisplayName: Snow Clod
+	Tooltip: ""
+}
+
+ThunderSac: {
+	DisplayName: Thunder Sac
+	Tooltip: ""
+}
+
+TorrentSac: {
+	DisplayName: Torrent Sac
+	Tooltip: ""
+}
+
+WyvernGem: {
+	DisplayName: Wyvern Gem
+	Tooltip: ""
+}
+
+ZinogreJasper: {
+	DisplayName: Zinogre Jasper
+	Tooltip: A rare gem sometimes produced inside a Zinogre's body. The monarch's power swells within.
+}

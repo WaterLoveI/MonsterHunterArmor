@@ -1,0 +1,209 @@
+Defiance: {
+	DisplayName: Defiance
+	Description:
+		'''
+		Level 1: Increase Defense by 3 and grant immunity to KnockBack.
+		Level 2: Increase Defense by 2
+		Level 3: Increase Defense by 3 and debuff timer decrease twice as fast.
+		Level 4: Increase Defense by 2
+		Level 5: Increase Defense by 3 and enemies may drop life boosters when hit.
+		'''
+}
+
+Diversion: {
+	DisplayName: Diversion
+	Description: In range for Diversion 2/3's effects.
+}
+
+Foray: {
+	DisplayName: Foray
+	Description: Increase damage dealt on targets that's suffering from debuffs by 3% / 6% / 10%.
+}
+
+Fortified: {
+	DisplayName: Fortified
+	Description: Increase Attack and Defense by 7%.
+}
+
+Frenzy: {
+	DisplayName: Frenzy
+	Description:
+		'''
+		Reduce natural healing.
+		Increase damage by 4% /8% /12%.
+		Reduce mana cost by 3% /6% /9%
+		Keeping dealing attacking enemies to overcome the frenzy.
+		'''
+}
+
+FrenzyCure: {
+	DisplayName: Frenzy Cure
+	Description: Increase Critial Strike Chance by 3% /6% /9%
+}
+
+FrenzyFail: {
+	DisplayName: Frenzy Fail
+	Description: You've failed to overcome the frenzy. You are losing health.
+}
+
+Gathering: {
+	DisplayName: Gathering
+	Description: Enemies may drop Herb bags upon death.
+}
+
+Guard: {
+	DisplayName: Guard
+	Description: Reduce damage taken while your shield is up.
+}
+
+HeavenSent: {
+	DisplayName: Heaven Sent
+	Description: Mods.MHArmorSkills.Buffs.HeavenSent.Description
+}
+
+Heroics: {
+	DisplayName: Heroics
+	Description: Increase Attack and Defense while you're under 35% HP.
+}
+
+HoneyHunter: {
+	DisplayName: Honey Hunter
+	Description: You smell honey nearby. Increase movement speed by 5%.
+}
+
+IntrepidHeart: {
+	DisplayName: Intrepid Heart
+	Description: Reduce Damage Taken.
+}
+
+LatentPower: {
+	DisplayName: Latent Power
+	Description: Increase critical strike chance and reduce mana cost.
+}
+
+Spirit: {
+	DisplayName: Spirit
+	Description: Increase damage and critical strike chance.
+}
+
+SpiritBirdBlue: {
+	DisplayName: Spirit Bird Blue
+	Description: Increase movement speed by 5%.
+}
+
+SpiritBirdGreen: {
+	DisplayName: Spirit Bird Green
+	Description: Increase max health by 20.
+}
+
+SpiritBirdOrange: {
+	DisplayName: Spirit Bird Orange
+	Description: Increase damage by 5%.
+}
+
+SpiritBirdYellow: {
+	DisplayName: Spirit Bird Yellow
+	Description: Increase defense by 5.
+}
+
+Unscathed: {
+	DisplayName: Unscathed
+	Description: Increase damage dealt when health is full.
+}
+
+SpiritBirdPrism: {
+	DisplayName: Spirit Bird Prism
+	Description:
+		'''
+		Has the combined effect of all the spirit birds.
+		Increase max health by 20.
+		Increase damage by 5%.
+		Description: Increase defense by 5.
+		Increase movement speed by 5%.
+		'''
+}
+
+AffinitySliding: {
+	DisplayName: Affinity Sliding
+	Description: Increase Critical strike chance.
+}
+
+AquaticMobility: {
+	DisplayName: Aquatic Mobility
+	Description: Mods.MHArmorSkills.Buffs.AquaticMobility.Description
+}
+
+Beserk: {
+	DisplayName: Beserk
+	Description:
+		'''
+		Set life regen to 0.
+		Reduce damage taken by 75%
+		Rapidly lose life when hit.
+		'''
+}
+
+BladeHoneScale: {
+	DisplayName: Bladehone Scale
+	Description: Reduce Mana cost and chance to not consume ammo.
+}
+
+Sharpness: {
+	DisplayName: Sharpness
+	Description: Increase melee damage based on weapon rarity.
+}
+
+BubbleBlight: {
+	DisplayName: Bubble Blight
+	Description: Your movement is restricted.
+}
+
+HastenRecovery: {
+	DisplayName: Hasten Recovery
+	Description: Increase life regeneration.
+}
+
+OffensiveGuard: {
+	DisplayName: Offensive Guard
+	Description: Increase damage dealt after you successfully guarded.
+}
+
+CritDraw: {
+	DisplayName: Crit Draw
+	Description: Increase critical strike chance after switching weapons.
+}
+
+Grinder: {
+	DisplayName: Grinder
+	Description: Increase damage dealt by your sharpened weapons.
+}
+
+PunishDraw: {
+	DisplayName: Punish Draw
+	Description: Increase melee damage and knockback after switching weapons.
+}
+
+Coalescence: {
+	DisplayName: Coalescence
+	Description: Increase damage dealt after overcoming a debuff.
+}
+
+CounterStrike: {
+	DisplayName: Counter Strike
+	Description: Increase damage dealt after taking knockback.
+}
+
+Strife: {
+	DisplayName: Strife
+	Description: Increase critical strike chance while having potion sickness.
+}
+
+Embolden: {
+	DisplayName: Embolden
+	Description: Increase aggro and increase Guard and Evasion levels.
+}
+
+AdrenalineRush: {
+	DisplayName: Adrenaline Rush
+	Description: Increase damage dealt after successfully evading.
+}

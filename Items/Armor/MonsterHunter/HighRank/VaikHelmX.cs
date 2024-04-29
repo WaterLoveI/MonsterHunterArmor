@@ -38,7 +38,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
                 AddIngredient<VaikHelm>().
                 AddIngredient<FineBlackPearl>().
                 AddIngredient(ItemID.SharkFin,5).
-                AddIngredient(ItemID.SoulofSight,5).
                 AddIngredient<HeavyArmorSphere>(5).
                 AddTile(TileID.MythrilAnvil).
                 Register();

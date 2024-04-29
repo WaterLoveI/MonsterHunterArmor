@@ -35,7 +35,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             CreateRecipe().
                 AddIngredient<FlameSac>(3).
                 AddIngredient<FlamingScale>(4).
-                AddIngredient(ItemID.ObsidianRose).
                 AddIngredient<HardArmorSphere>(3).
                 AddTile(TileID.Anvils).
                 Register();

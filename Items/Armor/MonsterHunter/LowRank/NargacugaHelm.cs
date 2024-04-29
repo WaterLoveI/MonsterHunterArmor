@@ -35,9 +35,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         public override void AddRecipes()
         {
             CreateRecipe().
-                AddIngredient<WyvernGem>().
+                AddIngredient(ItemID.NinjaHood).
                 AddIngredient<EbonShell>(3).
-                AddIngredient(ItemID.BlackLens).
                 AddIngredient<HardArmorSphere>(4).
                 AddTile(TileID.Anvils).
                 Register();

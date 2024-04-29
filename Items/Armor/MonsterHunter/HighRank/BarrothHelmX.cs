@@ -38,7 +38,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
                 AddIngredient<BarrothHelm>().
                 AddIngredient<LrgWyvernGem>(3).
                 AddIngredient(ItemID.SoulofMight,5).
-                AddIngredient(ItemID.GoldCrown).
                 AddIngredient<HeavyArmorSphere>(5).
                 AddTile(TileID.MythrilAnvil).
                 Register();

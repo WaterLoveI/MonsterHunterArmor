@@ -25,7 +25,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
         public override void UpdateEquip(Terraria.Player player)
         {
             player.GetDamage<GenericDamageClass>() += 0.12f;
-            player.GetAttackSpeed<MeleeDamageClass>() += 0.15f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.AntiPoison += 2;
             modPlayer.Guard += 1;
@@ -37,7 +36,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
         {
             CreateRecipe().
                 AddIngredient<BasariosHelmet>().
-                AddIngredient<LrgWyvernGem>(3).
+                AddIngredient<LrgWyvernGem>().
                 AddIngredient<HeavyArmorSphere>(3).
                 AddTile(TileID.MythrilAnvil).
                 Register();

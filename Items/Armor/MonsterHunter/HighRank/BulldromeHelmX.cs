@@ -38,7 +38,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
                 AddIngredient<BullfangoMask>().
                 AddIngredient<LrgBeastGem>().
                 AddIngredient(ItemID.SoulofMight,5).
-                AddIngredient(ItemID.HallowedBar,5).
                 AddIngredient<HeavyArmorSphere>(5).
                 AddTile(TileID.MythrilAnvil).
                 Register();

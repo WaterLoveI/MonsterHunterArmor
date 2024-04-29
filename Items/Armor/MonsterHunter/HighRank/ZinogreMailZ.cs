@@ -39,7 +39,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
                 AddIngredient<ZinogreMail>().
                 AddIngredient<DeathlyShocker>(4).
                 AddIngredient<ThunderSac>(3).
-                AddIngredient(ItemID.ManaCrystal,5).
                 AddIngredient<KingArmorSphere>(10).
                 AddTile(TileID.MythrilAnvil).
                 Register();

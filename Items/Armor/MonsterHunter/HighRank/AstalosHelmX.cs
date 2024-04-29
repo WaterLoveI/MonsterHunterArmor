@@ -31,7 +31,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
             modPlayer.Vault += 1;
             modPlayer.PierceUp += 1;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += 2;
+            SlotPlayer.DecorationTwoSlots += 2;
         }
         public override void AddRecipes()
         {
@@ -39,7 +39,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
                 AddIngredient<AstalosHelm>().
                 AddIngredient<ThunderSac>(3).
                 AddIngredient<ZinogreJasper>().
-                AddIngredient(ItemID.BeetleHusk,5).
                 AddIngredient<KingArmorSphere>(10).
                 AddTile(TileID.MythrilAnvil).
                 Register();

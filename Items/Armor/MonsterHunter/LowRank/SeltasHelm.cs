@@ -35,7 +35,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             CreateRecipe().
                 AddIngredient<HornetaurHelm>().
                 AddIngredient<Bubblefoam>(3).
-                AddIngredient<AquaSac>(3).
                 AddIngredient<HardArmorSphere>(4).
                 AddTile(TileID.Anvils).
                 Register();

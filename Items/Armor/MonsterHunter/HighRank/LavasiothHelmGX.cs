@@ -36,10 +36,9 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
         public override void AddRecipes()
         {
             CreateRecipe().
-                AddIngredient<AgnaktorHelm>().
+                AddIngredient<LavasiothHelm>().
                 AddIngredient<InfernoSac>(3).
                 AddIngredient(ItemID.AdamantiteBar,5).
-                AddIngredient(ItemID.BottomlessLavaBucket).
                 AddIngredient<HeavyArmorSphere>(5).
                 AddTile(TileID.MythrilAnvil).
                 Register();

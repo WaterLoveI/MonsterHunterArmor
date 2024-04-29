@@ -38,7 +38,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
                 AddIngredient<ZamtriosHelm>().
                 AddIngredient<FreezerSac>(3).
                 AddIngredient(ItemID.IceSickle).
-                AddIngredient(ItemID.TitaniumBar,5).
                 AddIngredient<KingArmorSphere>(5).
                 AddTile(TileID.MythrilAnvil).
                 Register();

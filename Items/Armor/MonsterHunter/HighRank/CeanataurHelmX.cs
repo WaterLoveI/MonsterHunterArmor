@@ -38,7 +38,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
                 AddIngredient<CeanataurHelm>().
                 AddIngredient<TorrentSac>(3).
                 AddIngredient<FineBlackPearl>().
-                AddIngredient(ItemID.CobaltBar,5).
                 AddIngredient<HeavyArmorSphere>(5).
                 AddTile(TileID.MythrilAnvil).
                 Register();

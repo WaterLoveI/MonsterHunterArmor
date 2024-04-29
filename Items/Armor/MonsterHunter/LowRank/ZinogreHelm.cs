@@ -50,7 +50,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             CreateRecipe().
                 AddIngredient<FulgurBug>(3).
                 AddIngredient<ElectroShocker>(3).
-                AddIngredient(ItemID.Bone, 5).
                 AddIngredient<HardArmorSphere>(4).
                 AddTile(TileID.Anvils).
                 Register();

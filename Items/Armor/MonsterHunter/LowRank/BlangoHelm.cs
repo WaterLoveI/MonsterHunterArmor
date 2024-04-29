@@ -40,7 +40,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             CreateRecipe().
                 AddIngredient<SnowClod>(2).
                 AddIngredient<AmberTusk>(2).
-                AddIngredient(ItemID.FlinxFur, 5).
                 AddIngredient<HardArmorSphere>(3).
                 AddTile(TileID.Anvils).
                 Register();

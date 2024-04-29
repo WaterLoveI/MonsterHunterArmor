@@ -38,7 +38,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
                 AddIngredient<BrachydiosHelm>().
                 AddIngredient<GlowingSlime>(3).
                 AddIngredient<FineEbonShell>(4).
-                AddIngredient(ItemID.WarriorEmblem).
                 AddIngredient<KingArmorSphere>(10).
                 AddTile(TileID.MythrilAnvil).
                 Register();

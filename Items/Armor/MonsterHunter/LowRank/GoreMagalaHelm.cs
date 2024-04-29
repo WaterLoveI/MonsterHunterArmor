@@ -39,17 +39,10 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             CreateRecipe().
                 AddIngredient<MysteriousSlime>(2).
                 AddIngredient<EbonShell>(4).
-                AddIngredient(ItemID.ShadowScale,6).
                 AddIngredient<HardArmorSphere>(4).
                 AddTile(TileID.Anvils).
                 Register();
-            CreateRecipe().
-                AddIngredient<MysteriousSlime>(2).
-                AddIngredient<EbonShell>(4).
-                AddIngredient(ItemID.TissueSample, 6).
-                AddIngredient<HardArmorSphere>(4).
-                AddTile(TileID.Anvils).
-                Register();
+            
         }
     }
 }

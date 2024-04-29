@@ -39,18 +39,9 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             CreateRecipe().
                 AddIngredient<FlamingScale>(3).
                 AddIngredient<ElectroShocker>(3).
-                AddIngredient(ItemID.DemoniteBar,10).
-                AddIngredient<HardArmorSphere>(4).
-                AddTile(TileID.Anvils).
-                Register();
-            CreateRecipe().
-                AddIngredient<FlamingScale>(3).
-                AddIngredient<ElectroShocker>(3).
-                AddIngredient(ItemID.CrimtaneBar, 10).
                 AddIngredient<HardArmorSphere>(4).
                 AddTile(TileID.Anvils).
                 Register();
         }
-
     }
 }

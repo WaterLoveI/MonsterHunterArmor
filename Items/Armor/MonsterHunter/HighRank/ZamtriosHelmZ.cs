@@ -39,7 +39,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
                 AddIngredient<ZamtriosHelm>().
                 AddIngredient<AmberHardfang>(3).
                 AddIngredient(ItemID.AncientBattleArmorMaterial,3).
-                AddIngredient(ItemID.FireGauntlet).
                 AddIngredient<KingArmorSphere>(5).
                 AddTile(TileID.MythrilAnvil).
                 Register();

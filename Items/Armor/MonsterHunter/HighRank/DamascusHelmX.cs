@@ -38,7 +38,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
                 AddIngredient<DamascusHelm>().
                 AddIngredient<RathalosRuby>().
                 AddIngredient<ZinogreJasper>().
-                AddIngredient(ItemID.ShroomiteBar,5).
                 AddIngredient<KingArmorSphere>(10).
                 AddTile(TileID.MythrilAnvil).
                 Register();

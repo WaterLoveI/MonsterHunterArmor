@@ -41,7 +41,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             CreateRecipe().
                 AddIngredient<FrostSac>(2).
                 AddIngredient<AmberTusk>(3).
-                AddIngredient(ItemID.FrostDaggerfish, 10).
                 AddIngredient<HardArmorSphere>(3).
                 AddTile(TileID.Anvils).
                 Register();

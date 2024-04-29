@@ -18,7 +18,7 @@ namespace MHArmorSkills.Buffs.ArmorBuffs
         }
         public override void Update(Player player, ref int buffIndex)
         {
-            player.statLifeMax2 += 20;
+            
         }
     }
 }

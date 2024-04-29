@@ -40,7 +40,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
                 AddIngredient<HermitaurHelm>().
                 AddIngredient<TorrentSac>(3).
                 AddIngredient<FineEbonShell>(4).
-                AddIngredient(ItemID.ShroomiteBar,3).
                 AddIngredient<KingArmorSphere>(5).
                 AddTile(TileID.MythrilAnvil).
                 Register();

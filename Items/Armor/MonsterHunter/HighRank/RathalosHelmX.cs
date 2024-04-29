@@ -37,7 +37,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
                 AddIngredient<RathalosHelm>().
                 AddIngredient<FlamingShard>(3).
                 AddIngredient<InfernoSac>(3).
-                AddIngredient(ItemID.InfernoFork).
                 AddIngredient<KingArmorSphere>(5).
                 AddTile(TileID.MythrilAnvil).
                 Register();

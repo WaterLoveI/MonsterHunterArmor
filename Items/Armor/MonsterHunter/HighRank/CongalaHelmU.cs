@@ -38,8 +38,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
             CreateRecipe().
                 AddIngredient<CongalaHelm>().
                 AddIngredient<LrgBeastGem>(3).
-                AddIngredient(ItemID.TurtleShell,3).
-                AddIngredient(ItemID.ChlorophyteBar,5).
+                AddIngredient(ItemID.TurtleShell).
                 AddIngredient<KingArmorSphere>(5).
                 AddTile(TileID.MythrilAnvil).
                 Register();

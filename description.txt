@@ -9,6 +9,24 @@ Discord: https://discord.gg/un9UAmhrcd
 Google Sheets that acts like a wiki and I'll try to keep it up to date.
 https://docs.google.com/spreadsheets/d/1roO5H1dL77ES_XkoLvXZgxPKBEAengKaJF6gw4HFGgA/edit?usp=sharing
 
+V0.0.2.4
+-Fixed an issue with foray.
+
+V0.0.2.3					
+-Added full armor sets for Astalos/Glavenus/Gammoth/Mizutsune/Sailor and misc armor pieces
+-armors now requires less materials to craft.
+-Bugfixes
+
+
+V 0.0.2.2
+Bugs:
+-Normal/Pellet/Pierce Up damage fixed.
+-Bug that stops you from equipiing accessory freely fixed.
+Changes:
+-Some skills got buffed/nerfed.
+-You can now craft decorations and decorations now stack.
+-New Armors notably Zinogre and Hornetaur.
+					
 V 0.0.2
 Armor Decorations added
 fixed attack boost giving defense boost

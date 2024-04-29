@@ -1,11 +1,10 @@
 ﻿using MHArmorSkills.Global;
 using MHArmorSkills.Items.Crafting_Materials.ArmorSphere;
+using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using MHArmorSkills.MHPlayer;
 using Terraria;
 using Terraria.ID;
-using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using Terraria.ModLoader;
-using Terraria.Localization;
 
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
@@ -13,10 +12,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
     [AutoloadEquip(EquipType.Head)]
     public class BasariosHelmet : ModItem
     {
-        public static readonly int Skill1 = 1;
-        public static readonly int Skill2 = 2;
-
-        
 
         public override void SetDefaults()
         {
@@ -34,7 +29,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             modPlayer.AntiPoison += 1;
             modPlayer.Guard += 2;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += 1;
+            SlotPlayer.DecorationTwoSlots += 1;
         }
         public override void AddRecipes()
         {

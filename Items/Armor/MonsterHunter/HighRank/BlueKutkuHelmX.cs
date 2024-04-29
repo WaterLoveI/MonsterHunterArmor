@@ -37,7 +37,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
                 AddIngredient<BlueKutkuHelm>().
                 AddIngredient<InfernoSac>(3).
                 AddIngredient<FeyWyvernGem>().
-                AddIngredient(ItemID.GiantHarpyFeather).
                 AddIngredient<HeavyArmorSphere>(5).
                 AddTile(TileID.MythrilAnvil).
                 Register();

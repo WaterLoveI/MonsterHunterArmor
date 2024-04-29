@@ -40,7 +40,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             CreateRecipe().
                 AddIngredient<FlameSac>(2).
                 AddIngredient<FlamingScale>(3).
-                AddIngredient(ItemID.MagmaStone).
                 AddIngredient<HardArmorSphere>(3).
                 AddTile(TileID.Anvils).
                 Register();

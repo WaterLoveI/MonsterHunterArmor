@@ -49,7 +49,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             CreateRecipe().
                 AddIngredient<FulgurBug>(4).
                 AddIngredient<ElectroSac>(2).
-                AddIngredient(ItemID.Nazar).
                 AddIngredient<HardArmorSphere>(4).
                 AddTile(TileID.Anvils).
                 Register();

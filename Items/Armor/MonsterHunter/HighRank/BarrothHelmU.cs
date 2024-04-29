@@ -39,7 +39,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
                 AddIngredient<BarrothHelm>().
                 AddIngredient<LrgSnowClod>().
                 AddIngredient<LrgWyvernGem>().
-                AddIngredient(ItemID.FrozenTurtleShell).
                 AddIngredient<KingArmorSphere>(5).
                 AddTile(TileID.MythrilAnvil).
                 Register();

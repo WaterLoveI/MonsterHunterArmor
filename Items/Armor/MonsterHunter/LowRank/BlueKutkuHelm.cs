@@ -39,7 +39,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             CreateRecipe().
                 AddIngredient<KutkuHelm>().
                 AddIngredient<FlameSac>(3).
-                AddIngredient(ItemID.Feather, 5).
                 AddIngredient<HardArmorSphere>(3).
                 AddTile(TileID.Anvils).
                 Register();

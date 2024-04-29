@@ -38,7 +38,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
                 AddIngredient<BariothHelm>().
                 AddIngredient<FreezerSac>(3).
                 AddIngredient<AmberHardfang>(3).
-                AddIngredient(ItemID.NorthPole).
                 AddIngredient<KingArmorSphere>(5).
                 AddTile(TileID.MythrilAnvil).
                 Register();

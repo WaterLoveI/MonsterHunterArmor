@@ -39,7 +39,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
                 AddIngredient<SeregiosHelm>().
                 AddIngredient<AmberHardfang>(3).
                 AddIngredient<RathalosRuby>().
-                AddIngredient(ItemID.ChainGun).
                 AddIngredient<KingArmorSphere>(10).
                 AddTile(TileID.MythrilAnvil).
                 Register();

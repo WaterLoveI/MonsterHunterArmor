@@ -19,7 +19,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
             Item.height = 20;
             Item.value = MHGlobalItems.RarityLimeBuyPrice;
             Item.rare = ItemRarityID.Lime;
-            Item.defense = 18;
+            Item.defense = 16;
         }
 
         public override void UpdateEquip(Terraria.Player player)
@@ -40,7 +40,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
                 AddIngredient<NargacugaHelm>().
                 AddIngredient<LrgWyvernGem>().
                 AddIngredient<FineEbonShell>(4).
-                AddIngredient(ItemID.BlackBelt).
                 AddIngredient<KingArmorSphere>(5).
                 AddTile(TileID.MythrilAnvil).
                 Register();

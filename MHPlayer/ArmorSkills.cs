@@ -1,5 +1,5 @@
-﻿using MHArmorSkills.Buffs;
-using MHArmorSkills.Buffs.ArmorBuffs;
+﻿using MHArmorSkills.Buffs.ArmorBuffs;
+using MHArmorSkills.Utilities;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -12,7 +12,10 @@ namespace MHArmorSkills.MHPlayer
         public int AffinitySliding;
         public int AMobility;
         public bool AntiBleeding;
+        public int AdrenalineRush;
+        public int StatusTrigger;
         public int AntiPoison;
+        public int NegativeCrit;
         public int Artillery;
         public int Attack;
         public bool Autoreload;
@@ -130,6 +133,12 @@ namespace MHArmorSkills.MHPlayer
         public int PunishDraw;
         public int ChallengeSheathe;
         public int Grinder;
+        public int ChameleosBlessing;
+        public int KushalaBlessing;
+        public int Teostralessing;
+        public int Windproof;
+        public int TremorRes;
+
         #endregion
 
         #region Essence
@@ -138,7 +147,15 @@ namespace MHArmorSkills.MHPlayer
         public override void ResetEffects()
         {
             #region Skills
+            ChameleosBlessing = 0;
+            NegativeCrit = 0;
+            Teostralessing = 0;
+            KushalaBlessing = 0;
+            Windproof = 0;
+            TremorRes = 0;
             AffinitySliding = 0;
+            AdrenalineRush = 0;
+            StatusTrigger = 0;
             AMobility = 0;
             AntiBleeding = false;
             AntiPoison = 0;
@@ -271,6 +288,20 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
             #region Skills
+            #region Adrenaline Rush
+            if (AdrenalineRush >= 1)
+            {
+                modPlayer.AdrenalineRush += 6;
+                if (AdrenalineRush >= 2)
+                {
+                    modPlayer.AdrenalineRush += 3;
+                }
+                if (AdrenalineRush >= 3)
+                {
+                    modPlayer.AdrenalineRush += 3;
+                }
+            }
+            #endregion
             #region Affinity Sliding
             if (AffinitySliding >= 1)
             {
@@ -331,8 +362,6 @@ namespace MHArmorSkills.MHPlayer
             #region Artillery
             if (Artillery >= 1)
             {
-                Player.AddBuff(ModContent.BuffType<Artillery>(), 2);
-
                 if (Artillery >= 1)
                 {
                     modPlayer.ArtilleryBuff += 5;
@@ -350,7 +379,6 @@ namespace MHArmorSkills.MHPlayer
             #region Attack
             if (Attack >= 1)
             {
-                Player.AddBuff(ModContent.BuffType<Attack>(), 2);
                 if (Attack >= 1)
                 {
                     Player.GetDamage(DamageClass.Generic).Base += 1;
@@ -441,7 +469,7 @@ namespace MHArmorSkills.MHPlayer
                 if (Bloodlust >= 1)
                 {
                     modPlayer.Bloodlust += 1;
-                    
+
                 }
                 if (Bloodlust >= 2)
                 {
@@ -485,7 +513,6 @@ namespace MHArmorSkills.MHPlayer
             #region Bomb Boost
             if (BombBoost >= 1)
             {
-                Player.AddBuff(ModContent.BuffType<BombBoost>(), 2);
                 if (BombBoost >= 1)
                 {
                     modPlayer.BombBoostBuff += 10;
@@ -569,6 +596,23 @@ namespace MHArmorSkills.MHPlayer
                 if (ChallengeSheathe >= 3)
                 {
                     modPlayer.ChallengeSheathe += 1;
+                }
+            }
+            #endregion
+            #region Chameleos Bless
+            if (ChameleosBlessing >= 1)
+            {
+                if (ChameleosBlessing >= 1)
+                {
+                    modPlayer.ChamBlessing += 1;
+                }
+                if (ChameleosBlessing >= 2)
+                {
+                    modPlayer.ChamBlessing += 1;
+                }
+                if (ChameleosBlessing >= 3)
+                {
+                    modPlayer.ChamBlessing += 1;
                 }
             }
             #endregion
@@ -682,7 +726,6 @@ namespace MHArmorSkills.MHPlayer
             #region Crit Eye
             if (CritEye >= 1)
             {
-                Player.AddBuff(ModContent.BuffType<CritEye>(), 2);
                 if (CritEye >= 1)
                 {
                     modPlayer.ControlledCrit += 2;
@@ -752,7 +795,6 @@ namespace MHArmorSkills.MHPlayer
             #region Defense Boost
             if (DefenseBoost >= 1)
             {
-                Player.AddBuff(ModContent.BuffType<DefenseBoost>(), 2);
                 if (DefenseBoost >= 1)
                 {
                     Player.statDefense += 2;
@@ -775,13 +817,13 @@ namespace MHArmorSkills.MHPlayer
                 }
                 if (DefenseBoost >= 6)
                 {
-                    
+
                     Player.statDefense *= 1.05f;
                     Player.endurance += 2 / 100f;
                 }
                 if (DefenseBoost >= 7)
                 {
-                    
+
                     Player.statDefense *= 1.05f;
                     Player.endurance += 5 / 100f;
                 }
@@ -889,7 +931,7 @@ namespace MHArmorSkills.MHPlayer
             #region Embolden
             if (Embolden >= 1)
             {
-                if (Player.HasBuff(ModContent.BuffType<Embolden>()) && Evasion <= (Embolden +2))
+                if (Player.HasBuff(ModContent.BuffType<Embolden>()) && Evasion <= (Embolden + 2))
                 {
                     Evasion = Embolden + 2;
                 }
@@ -903,7 +945,7 @@ namespace MHArmorSkills.MHPlayer
                     modPlayer.Embolden += 1;
                     modPlayer.EmboldenAggro += 500;
                     modPlayer.EmboldenDef += 5;
-                    
+
 
                 }
                 if (Embolden >= 2)
@@ -942,30 +984,29 @@ namespace MHArmorSkills.MHPlayer
             {
                 if (Evasion >= 1)
                 {
-                    modPlayer.Evasion += 10;
+                    modPlayer.Evasion += 6;
                 }
                 if (Evasion >= 2)
                 {
-                    modPlayer.Evasion += 6;
+                    modPlayer.Evasion += 3;
                 }
                 if (Evasion >= 3)
                 {
-                    modPlayer.Evasion += 6;
+                    modPlayer.Evasion += 3;
                 }
                 if (Evasion >= 4)
                 {
-                    modPlayer.Evasion += 6;
+                    modPlayer.Evasion += 3;
                 }
                 if (Evasion >= 5)
                 {
-                    modPlayer.Evasion += 6;
+                    modPlayer.Evasion += 3;
                 }
             }
             #endregion
             #region Fate
             if (Fate >= 1)
             {
-                Player.AddBuff(ModContent.BuffType<Fate>(), 2);
                 if (Fencing >= 1)
                 {
                     Player.luck += 0.1f;
@@ -1083,24 +1124,24 @@ namespace MHArmorSkills.MHPlayer
             #region Foray
             if (Foray >= 1)
             {
-                if (Fencing >= 1)
+                if (Foray >= 1)
                 {
-                    modPlayer.Foray += 3;
+                    modPlayer.Foray += 1.03f;
                 }
-                if (Fencing >= 2)
+                if (Foray >= 2)
                 {
-                    modPlayer.Foray += 3;
+                    modPlayer.Foray += 0.03f;
                 }
-                if (Fencing >= 3)
+                if (Foray >= 3)
                 {
-                    modPlayer.Foray += 4;
+                    modPlayer.Foray += 0.04f;
                 }
             }
             #endregion
             #region Fortified
             if (Fortified)
             {
-                Player.AddBuff(ModContent.BuffType<Fortified>(), 2);
+                modPlayer.Fortified = true;
             }
             #endregion
             #region Free Element
@@ -1277,7 +1318,6 @@ namespace MHArmorSkills.MHPlayer
             #region Health
             if (Health >= 1)
             {
-                Player.AddBuff(ModContent.BuffType<Health>(), 2);
                 if (Health >= 1)
                 {
                     Player.statLifeMax2 += 20;
@@ -1456,6 +1496,23 @@ namespace MHArmorSkills.MHPlayer
                 }
             }
             #endregion
+            #region Kushala Bless
+            if (KushalaBlessing >= 1)
+            {
+                if (KushalaBlessing >= 1)
+                {
+                    modPlayer.KushBless += 1;
+                }
+                if (KushalaBlessing >= 2)
+                {
+                    modPlayer.KushBless += 1;
+                }
+                if (KushalaBlessing >= 3)
+                {
+                    modPlayer.KushBless += 1;
+                }
+            }
+            #endregion
             #region Lasting Power
             if (LastingPower >= 1)
             {
@@ -1569,6 +1626,23 @@ namespace MHArmorSkills.MHPlayer
                 if (Mushroomancer >= 2)
                 {
                     modPlayer.Mushroomancer += 1;
+                }
+            }
+            #endregion
+            #region Negative Crit
+            if (NegativeCrit >= 1)
+            {
+                if (NegativeCrit >= 1)
+                {
+                    modPlayer.NegCrit += 1;
+                }
+                if (NegativeCrit >= 2)
+                {
+                    modPlayer.NegCrit += 1;
+                }
+                if (NegativeCrit >= 3)
+                {
+                    modPlayer.NegCrit += 1;
                 }
             }
             #endregion
@@ -1729,15 +1803,15 @@ namespace MHArmorSkills.MHPlayer
             {
                 if (PunishDraw >= 1)
                 {
-                    modPlayer.PunishDraw += 1;
+                    modPlayer.PunishDraw += 3;
                 }
                 if (PunishDraw >= 2)
                 {
-                    modPlayer.PunishDraw += 1;
+                    modPlayer.PunishDraw += 2;
                 }
                 if (PunishDraw >= 3)
                 {
-                    modPlayer.PunishDraw += 1;
+                    modPlayer.PunishDraw += 2;
                 }
             }
             #endregion
@@ -1784,7 +1858,7 @@ namespace MHArmorSkills.MHPlayer
                 }
                 if (QuickSheath >= 3)
                 {
-                    modPlayer.QuickSheath += 2;
+                    modPlayer.QuickSheath += 1;
                 }
             }
             #endregion
@@ -2074,6 +2148,12 @@ namespace MHArmorSkills.MHPlayer
                 }
             }
             #endregion
+            #region Status Trigger
+            if (StatusTrigger >= 1)
+            {
+                modPlayer.StatusTrigger = StatusTrigger;
+            }
+            #endregion
             #region Strife
             if (Strife >= 1)
             {
@@ -2105,6 +2185,23 @@ namespace MHArmorSkills.MHPlayer
                 if (Tenderizer >= 3)
                 {
                     modPlayer.Tenderizer += 0.05f;
+                }
+            }
+            #endregion
+            #region Teostra Bless
+            if (Teostralessing >= 1)
+            {
+                if (Teostralessing >= 1)
+                {
+                    modPlayer.TeosBless += 1;
+                }
+                if (Teostralessing >= 2)
+                {
+                    modPlayer.TeosBless += 1;
+                }
+                if (Teostralessing >= 3)
+                {
+                    modPlayer.TeosBless += 1;
                 }
             }
             #endregion
@@ -2148,6 +2245,22 @@ namespace MHArmorSkills.MHPlayer
                 {
                     modPlayer.ThunderRes += 0.5f;
                     Player.statDefense += 3;
+                }
+            }
+            #endregion
+            #region Tremor Res
+            if (TremorRes >= 1 && Player.CheckSolidGround(1,3))
+            {
+                Player.statDefense += 2;
+
+                if (TremorRes >= 2)
+                {
+                    Player.noKnockback = true;
+                    Player.statDefense += 1;
+                }
+                if (TremorRes >= 3)
+                {
+                    Player.moveSpeed += 5 / 100f;
                 }
             }
             #endregion
@@ -2249,8 +2362,24 @@ namespace MHArmorSkills.MHPlayer
                 }
             }
             #endregion
+            #region Windproof
+            if (Windproof >= 1 && !Player.CheckSolidGround(1, 3))
+            {
+                Player.statDefense += 2;
+                Player.buffImmune[BuffID.WindPushed] = true;
+                if (Windproof >= 2)
+                {
+                    Player.noKnockback = true;
+                    Player.statDefense += 1;
+                }
+                if (Windproof >= 3)
+                {
+                    Player.moveSpeed += 5 / 100f;
+                }
+            }
             #endregion
-            
+            #endregion
+
         }
     }
 }

@@ -38,7 +38,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
                 AddIngredient(ItemID.VikingHelmet).
                 AddIngredient<LrgBeastGem>(2).
                 AddIngredient(ItemID.SoulofMight,5).
-                AddIngredient(ItemID.BandofRegeneration).
                 AddIngredient<HeavyArmorSphere>(5).
                 AddTile(TileID.MythrilAnvil).
                 Register();

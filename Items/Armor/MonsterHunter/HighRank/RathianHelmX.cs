@@ -39,7 +39,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
                 AddIngredient<RathianHelmet>().
                 AddIngredient<InfernoSac>(3).
                 AddIngredient<LrgWyvernGem>().
-                AddIngredient(ItemID.ChlorophyteBar,5).
                 AddIngredient<HeavyArmorSphere>(5).
                 AddTile(TileID.MythrilAnvil).
                 Register();

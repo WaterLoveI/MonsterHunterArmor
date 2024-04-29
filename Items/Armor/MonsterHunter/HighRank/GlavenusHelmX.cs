@@ -27,20 +27,17 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
             player.GetDamage<GenericDamageClass>() += 0.12f;
             player.GetCritChance<GenericDamageClass>() += 12;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.Handicraft += 1;
-            modPlayer.FireAttack += 1;
+            modPlayer.Handicraft += 2;
             modPlayer.Grinder += 1;
-            modPlayer.CritDraw += 1;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += 2;
+            SlotPlayer.DecorationThreeSlots += 1;
         }
         public override void AddRecipes()
         {
             CreateRecipe().
                 AddIngredient<GlavenusHelm>().
+                AddIngredient<InfernoSac>(3).
                 AddIngredient<FlamingShard>(4).
-                AddIngredient<RathalosRuby>().
-                AddIngredient(ItemID.DD2SquireBetsySword).
                 AddIngredient<KingArmorSphere>(10).
                 AddTile(TileID.MythrilAnvil).
                 Register();

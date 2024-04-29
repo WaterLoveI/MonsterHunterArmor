@@ -12,7 +12,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
     [AutoloadEquip(EquipType.Head)]
     public class MizutsuneHelmX : ModItem
     {
-
         public override void SetDefaults()
         {
             Item.width = 26;
@@ -20,7 +19,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
             Item.value = MHGlobalItems.RarityYellowBuyPrice;
             Item.rare = ItemRarityID.Yellow;
             Item.defense = 20;
-            
+
         }
 
         public override void UpdateEquip(Terraria.Player player)
@@ -29,8 +28,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
             player.GetCritChance<GenericDamageClass>() += 12;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.WaterAttack += 1;
-            modPlayer.BubbleDance += 2;
-            modPlayer.Resusitate += 1;
+            modPlayer.Constitution += 1;
+            modPlayer.Evasion += 1;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
             SlotPlayer.DecorationTwoSlots += 2;
         }
@@ -41,7 +40,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
                 AddIngredient<MizutsuneHelm>().
                 AddIngredient<DistilledBubblefoam>(3).
                 AddIngredient<MizutsuneWaterOrb>().
-                AddIngredient(ItemID.BubbleGun).
                 AddIngredient<KingArmorSphere>(10).
                 AddTile(TileID.MythrilAnvil).
                 Register();

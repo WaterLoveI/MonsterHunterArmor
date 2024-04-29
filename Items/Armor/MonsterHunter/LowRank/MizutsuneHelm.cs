@@ -40,7 +40,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             CreateRecipe().
                 AddIngredient<WyvernGem>().
                 AddIngredient<Bubblefoam>(3).
-                AddIngredient(ItemID.WhitePearl).
                 AddIngredient<HardArmorSphere>(4).
                 AddTile(TileID.Anvils).
                 Register();

@@ -39,7 +39,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
                 AddIngredient<SeltasHelm>().
                 AddIngredient<TorrentSac>(3).
                 AddIngredient<QueenSubstance>(3).
-                AddIngredient(ItemID.ChlorophyteBar,5).
                 AddIngredient<KingArmorSphere>(5).
                 AddTile(TileID.MythrilAnvil).
                 Register();

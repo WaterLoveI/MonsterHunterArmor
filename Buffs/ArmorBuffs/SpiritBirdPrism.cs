@@ -22,7 +22,6 @@ namespace MHArmorSkills.Buffs.ArmorBuffs
             player.statDefense += 5;
             player.GetDamage(DamageClass.Generic) += 5 / 100f;
             player.statLifeMax2 += 20;
-            player.statManaMax2 += 20;
         }
     }
     

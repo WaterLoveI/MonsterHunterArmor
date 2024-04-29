@@ -40,7 +40,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             CreateRecipe().
                 AddIngredient<WyvernGem>().
                 AddIngredient<AmberTusk>(3).
-                AddIngredient(ItemID.AntlionMandible, 5).
                 AddIngredient<HardArmorSphere>(4).
                 AddTile(TileID.Anvils).
                 Register();

@@ -39,7 +39,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
                 AddIngredient<GoreMagalaHelm>().
                 AddIngredient<FineEbonShell>(4).
                 AddIngredient<RathalosRuby>().
-                AddIngredient(ItemID.SpookyWood,15).
                 AddIngredient<KingArmorSphere>(10).
                 AddTile(TileID.MythrilAnvil).
                 Register();
