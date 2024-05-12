@@ -6,6 +6,7 @@ using Terraria;
 using Terraria.ID;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using Terraria.ModLoader;
+using MHArmorSkills.Buffs;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 {
@@ -31,6 +32,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
             modPlayer.CritEye += 3;
             modPlayer.EvadeDistance += 3;
             modPlayer.Unscathed += 1;
+            player.AddBuff(BuffID.Bleeding, 15 * 60);
         }
         
     }

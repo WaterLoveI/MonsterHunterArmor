@@ -1,22 +1,14 @@
-﻿using MHArmorSkills.MHPlayer;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Terraria.ID;
-using Terraria.Localization;
-using Terraria.ModLoader;
-using Terraria;
-using MHArmorSkills.Buffs;
+﻿using MHArmorSkills.Global;
 using Microsoft.Xna.Framework;
-using MHArmorSkills.Items.Crafting_Materials;
-using MHArmorSkills.Global;
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
 
 namespace MHArmorSkills.Items.Consumables
 {
     public class LifePowder : ModItem
     {
+        // trying to make it work but it doesnt seem to work right now.
         public override void SetDefaults()
         {
             Item.width = 22;
@@ -28,8 +20,8 @@ namespace MHArmorSkills.Items.Consumables
             Item.useAnimation = 30;
             Item.UseSound = SoundID.Item4;
             Item.maxStack = 9999;
-            Item.healLife = 75; // Modify this value to change the amount healed
-            Item.potion = true; // Treat it as a healing potion
+            Item.healLife = 75;
+            Item.potion = true;
             Item.UseSound = SoundID.Item3;
             Item.useTurn = true;
             Item.autoReuse = true;
@@ -47,19 +39,24 @@ namespace MHArmorSkills.Items.Consumables
                 {
                     teammate.statLife += Item.healLife;
                     teammate.HealEffect(Item.healLife);
-                    teammate.AddBuff(BuffID.PotionSickness, 3600); // Apply potion sickness for 60 seconds (60 * 60 = 3600 frames)
+                    teammate.AddBuff(BuffID.PotionSickness, 3600);
                     Dust.NewDust(teammate.position, teammate.width, teammate.height, DustID.GreenFairy, 0f, -1f, 0, default, 1f);
                 }
             }
+            for (int i = 0; i < Main.npc.Length; i++)
+            {
+                NPC npc = Main.npc[i];
+
+                if (npc.active && npc.CanBeChasedBy(player) && Vector2.Distance(player.Center, npc.Center) < range && npc.friendly)
+                {
+                    npc.life += Item.healLife;
+                    npc.HealEffect(Item.healLife);
+                    npc.AddBuff(BuffID.PotionSickness, 3600);
+                    Dust.NewDust(npc.position, npc.width, npc.height, DustID.GreenFairy, 0f, -1f, 0, default, 1f);
+                }
+            }
         }
-        public override void AddRecipes()
-        {
-            CreateRecipe().
-                AddIngredient(ItemID.HealingPotion, 4).
-                AddIngredient(ItemID.PurificationPowder, 4).
-                AddIngredient(ItemID.JungleSpores, 4).
-                AddTile(TileID.AlchemyTable).
-                Register();
-        }
+
+
     }
 }

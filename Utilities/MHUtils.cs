@@ -1,16 +1,12 @@
-using Microsoft.Xna.Framework;
-using System;
 using Terraria;
-using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
-using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace MHArmorSkills.Utilities
 {
     public static partial class MHUtils
     {
-
+        // yea pretty much all from calamity
         public static Item ActiveItem(this Player player) => Main.mouseItem.IsAir ? player.HeldItem : Main.mouseItem;
         public static int GetOreItemID(this Tile tile)
         {

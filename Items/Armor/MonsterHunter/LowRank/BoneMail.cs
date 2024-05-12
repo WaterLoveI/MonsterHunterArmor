@@ -4,35 +4,33 @@ using Terraria;
 using Terraria.ID;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using Terraria.ModLoader;
-using MHArmorSkills.Items.Crafting_Materials.ArmorSphere;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 {
-    [AutoloadEquip(EquipType.Head)]
-    public class BoneHelmet : ModItem
+    [AutoloadEquip(EquipType.Body)]
+    public class BoneMail : ModItem
     {
 
         public override void SetDefaults()
         {
-            Item.width = 30;
-            Item.height = 22;
+            Item.width = 26;
+            Item.height = 20;
             Item.value = MHGlobalItems.RarityWhiteBuyPrice;
             Item.rare = ItemRarityID.White;
-            Item.defense = 2;
+            Item.defense = 3;
         }
 
         public override void UpdateEquip(Terraria.Player player)
         {
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.Fortified = true;
+            modPlayer.TropicHunter += 1;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
             SlotPlayer.DecorationOneSlots += 1;
         }
-
         public override void AddRecipes()
         {
             CreateRecipe().
-                AddIngredient<MonsterBone>(3).
+                AddIngredient<MonsterBone>(4).
                 AddTile(TileID.Anvils).
                 Register();
         }

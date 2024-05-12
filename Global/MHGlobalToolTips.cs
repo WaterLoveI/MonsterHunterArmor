@@ -1,17 +1,9 @@
-﻿using MHArmorSkills.Buffs.ArmorBuffs;
-using MHArmorSkills.MHPlayer;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
+﻿using MHArmorSkills.MHPlayer;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
 using Terraria;
 using Terraria.ID;
-using Terraria.Localization;
 using Terraria.ModLoader;
-using Terraria.UI.Chat;
 
 
 namespace MHArmorSkills.Global
@@ -20,11 +12,11 @@ namespace MHArmorSkills.Global
     {
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {
-            // Modify all vanilla tooltips before appending mod mechanics (if any).
+            // Modify all vanilla tooltips before appending mod mechanics (if any). thanks calamity
             ModifyVanillaTooltips(item, tooltips);
         }
 
-            private static void ModifyVanillaTooltips(Item item, IList<TooltipLine> tooltips)
+        private static void ModifyVanillaTooltips(Item item, IList<TooltipLine> tooltips)
         {
             #region Modular Tooltip Editing Code
             // This is a modular tooltip editor which loops over all tooltip lines of an item,
@@ -811,7 +803,7 @@ namespace MHArmorSkills.Global
             if (item.type == ItemID.WizardHat)
                 EditTooltipByNum(0, (line) => line.Text = "Increase the Scholar Skill by 2.\n" +
                 "[◯][◯]x2");
-            if (item.type == ItemID.AmberRobe || item.type == ItemID.AmethystRobe || item.type == ItemID.DiamondRobe || item.type == ItemID.EmeraldRobe || item.type == ItemID.GypsyRobe || item.type == ItemID.RubyRobe || item.type == ItemID.SapphireRobe || item.type == ItemID.TopazRobe )
+            if (item.type == ItemID.AmberRobe || item.type == ItemID.AmethystRobe || item.type == ItemID.DiamondRobe || item.type == ItemID.EmeraldRobe || item.type == ItemID.GypsyRobe || item.type == ItemID.RubyRobe || item.type == ItemID.SapphireRobe || item.type == ItemID.TopazRobe)
                 EditTooltipByNum(0, (line) => line.Text = "Increase the Stamina Recovery Skill by 2.");
             if (item.type == ItemID.DivingHelmet)
                 EditTooltipByNum(0, (line) => line.Text = "Increase the Aquatic Mobility Skill by 2.");
@@ -850,8 +842,8 @@ namespace MHArmorSkills.Global
                 int healAmt = (int)(item.healLife * player.GetModPlayer<MHPlayerArmorSkill>().RecoveryUp);
                 EditTooltipByName("HealLife", (line) => line.Text = $"Restores {healAmt} life");
             }
-            
-            
+
+
         }
     }
 }

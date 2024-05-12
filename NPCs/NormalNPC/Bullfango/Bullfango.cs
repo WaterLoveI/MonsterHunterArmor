@@ -10,6 +10,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 using MHArmorSkills.Items.Armor.MonsterHunter.LowRank;
+using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 
 namespace MHArmorSkills.NPCs.NormalNPC.Bullfango
 {
@@ -86,6 +87,7 @@ namespace MHArmorSkills.NPCs.NormalNPC.Bullfango
         public override void ModifyNPCLoot(NPCLoot npcLoot)
         {
             npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<BullfangoMask>(), 50));
+            npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<MonsterBone>(), 2));
         }
     }
 }

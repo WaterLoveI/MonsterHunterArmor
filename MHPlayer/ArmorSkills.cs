@@ -1,4 +1,5 @@
-﻿using MHArmorSkills.Buffs.ArmorBuffs;
+﻿using MHArmorSkills.Buffs;
+using MHArmorSkills.Buffs.ArmorBuffs;
 using MHArmorSkills.Utilities;
 using Terraria;
 using Terraria.ID;
@@ -535,7 +536,7 @@ namespace MHArmorSkills.MHPlayer
                 if (BubbleDance >= 2)
                 {
                     modPlayer.BubbleDance += 1;
-                    if (modPlayer.BubbleBlight && Evasion < BubbleDance)
+                    if (Player.HasBuff(ModContent.BuffType<BubbleBlight>()) && Evasion < BubbleDance)
                     {
                         Evasion = BubbleDance;
                     }

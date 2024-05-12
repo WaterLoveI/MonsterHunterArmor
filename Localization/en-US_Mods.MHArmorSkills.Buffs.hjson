@@ -207,3 +207,8 @@ AdrenalineRush: {
 	DisplayName: Adrenaline Rush
 	Description: Increase damage dealt after successfully evading.
 }
+
+BlastBlight: {
+	DisplayName: Blast Blight
+	Description: You will explode when the timer hits zero.
+}

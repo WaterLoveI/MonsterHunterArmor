@@ -1,5 +1,4 @@
 ﻿using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 
@@ -79,6 +78,8 @@ namespace MHArmorSkills.Global
 
         public override bool CanAccessoryBeEquippedWith(Item equippedItem, Item incomingItem, Player player)
         {
+            // code that lets you equip multiple decors
+
             bool isIncomingItemInList = MHLists.ArmorDecorations.Contains(incomingItem.type);
             if (isIncomingItemInList)
             {
@@ -88,10 +89,10 @@ namespace MHArmorSkills.Global
             {
                 for (int i = 0; i < player.armor.Length; i++)
                 {
-                    // If the player has an item equipped that is the same type as the incoming item
+
                     if (player.armor[i].type == incomingItem.type)
                     {
-                        // Prevent the incoming item from being equipped if it's a duplicate
+
                         return true;
                     }
                 }
@@ -101,7 +102,7 @@ namespace MHArmorSkills.Global
         public override void SetDefaults(Item entity)
         {
             // got lazy to copy paste to all the decor .cs
-            
+
             bool isIncomingItemInList = MHLists.ArmorDecorations.Contains(entity.type);
             if (isIncomingItemInList)
             {

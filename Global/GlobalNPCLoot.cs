@@ -1,4 +1,5 @@
-﻿using MHArmorSkills.Items.Accessories.Decorations;
+﻿using MHArmorSkills.Buffs;
+using MHArmorSkills.Items.Accessories.Decorations;
 using MHArmorSkills.Items.Armor.MonsterHunter.LowRank;
 using MHArmorSkills.Items.Crafting_Materials.ArmorSphere;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
@@ -546,6 +547,47 @@ namespace MHArmorSkills.Global
                 }
             }
             return base.CheckDead(npc);
+        }
+        public override void OnHitPlayer(NPC npc, Player target, Player.HurtInfo hurtInfo)
+        {
+            base.OnHitPlayer(npc, target, hurtInfo);
+            if (!Main.GameModeInfo.IsExpertMode && !Main.GameModeInfo.IsMasterMode || !Main.GameModeInfo.IsExpertMode && !Main.GameModeInfo.IsMasterMode && !Main.GameModeInfo.IsJourneyMode)
+            {
+                switch (npc.type)
+                {
+                    case NPCID.Mothron:
+                        if (hurtInfo.Damage > 0 && !Main.rand.NextBool(3))
+                        {
+                            target.AddBuff(ModContent.BuffType<BlastBlight>(), 18 * 60);
+                        }
+                        break;
+                    case NPCID.MeteorHead:
+                        if (hurtInfo.Damage > 0 && Main.rand.NextBool(3))
+                        {
+                            target.AddBuff(ModContent.BuffType<BlastBlight>(), 18 * 60);
+                        }
+                        break;
+                    case NPCID.MothronSpawn:
+                        if (hurtInfo.Damage > 0 && Main.rand.NextBool(3))
+                        {
+                            target.AddBuff(ModContent.BuffType<BlastBlight>(), 18 * 60);
+                        }
+                        break;
+                    case NPCID.RedDevil:
+                        if (hurtInfo.Damage > 0 && !Main.rand.NextBool(3))
+                        {
+                            target.AddBuff(ModContent.BuffType<BlastBlight>(), 18 * 60);
+                        }
+                        break;
+
+                    case NPCID.QueenSlimeBoss:
+                        if (hurtInfo.Damage > 0 && Main.rand.NextBool(5))
+                        {
+                            target.AddBuff(ModContent.BuffType<BubbleBlight>(), 5 * 60);
+                        }
+                        break;
+                }
+            }
         }
     }
 }

@@ -16,7 +16,7 @@ namespace MHArmorSkills.Buffs
 
         public override void Update(Terraria.Player player, ref int buffIndex)
         {
-            MHPlayerArmorSkill modPlayer = player.GetModPlayer<MHPlayerArmorSkill>();
+            Debuff modPlayer = player.GetModPlayer<Debuff>();
             modPlayer.BubbleBlight = true;
             
         }

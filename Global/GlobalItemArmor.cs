@@ -13,6 +13,8 @@ namespace MHArmorSkills.Global
     {
         public override void UpdateEquip(Item item, Player player)
         {
+            // credits to calamity for this code
+            
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             DecorationSlots DecorPlayer = player.GetModPlayer<DecorationSlots>();
             switch (item.type)

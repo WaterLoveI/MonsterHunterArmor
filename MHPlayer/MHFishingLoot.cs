@@ -1,4 +1,5 @@
-﻿using MHArmorSkills.Items.Weapons;
+﻿using MHArmorSkills.Items.Consumables;
+using MHArmorSkills.Items.Weapons;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.DataStructures;
@@ -19,6 +20,27 @@ namespace MHArmorSkills.MHPlayer
                 if (attempt.uncommon && Main.rand.NextBool(7))
                 {
                     itemDrop = ModContent.ItemType<FrozenSpearTuna>();
+                }
+            }
+            if (inWater && Player.ZoneRockLayerHeight)
+            {
+                if (attempt.rare && Main.rand.NextBool(5))
+                {
+                    itemDrop = ModContent.ItemType<Whetfish>();
+                }
+            }
+            if (inWater && (Player.ZoneJungle || Player.ZoneBeach || Player.ZoneNormalUnderground || Player.ZoneForest || Player.ZoneDesert))
+            {
+                if (attempt.uncommon && Main.rand.NextBool(5))
+                {
+                    itemDrop = ModContent.ItemType<Sushifish>();
+                }
+            }
+            if (inWater && Player.ZoneRockLayerHeight && (Player.ZoneCorrupt || Player.ZoneCrimson || Player.ZoneHallow) && Main.hardMode)
+            {
+                if (attempt.legendary && Main.rand.NextBool(7))
+                {
+                    itemDrop = ModContent.ItemType<GreatWhetfish>();
                 }
             }
         }

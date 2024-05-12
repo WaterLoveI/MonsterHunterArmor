@@ -1,6 +1,4 @@
 ﻿using MHArmorSkills;
-using MHArmorSkills.Items.Accessories.Decorations;
-using System;
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.UI;
@@ -35,23 +33,22 @@ public partial class DecorationSlots : ModPlayer
         {
             if (inv == Main.LocalPlayer.armor)
             {
-                // Assuming ArmorDecorations is accessible and contains the type IDs of the items you want to affect
+
                 Item item = Main.HoverItem;
                 if (MHLists.ArmorDecorations.Contains(item.type))
                 {
-                    // The item being hovered over is in the ArmorDecorations list
+
                     hoveredItem = item;
                     Main.HoverItem.social = false;
                 }
             }
             else
             {
-                // Is a modded slot.
-                // Assuming ArmorDecorations is accessible and contains the type IDs of the items you want to affect
+
                 Item item = Main.HoverItem;
                 if (MHLists.ArmorDecorations.Contains(item.type))
                 {
-                    // The item being hovered over is in the ArmorDecorations list
+
                     hoveredItem = item;
                     Main.HoverItem.social = false;
                 }
@@ -59,11 +56,11 @@ public partial class DecorationSlots : ModPlayer
         }
         if (context == ItemSlot.Context.EquipArmorVanity)
         {
-            // Assuming ArmorDecorations is accessible and contains the type IDs of the items you want to affect
+
             Item item = Main.HoverItem;
             if (MHLists.ArmorDecorations.Contains(item.type))
             {
-                // The item being hovered over is in the ArmorDecorations list
+
                 hoveredItem = item;
                 hoveredItemIsSocialArmor = true;
                 Main.HoverItem.social = false;
@@ -73,9 +70,9 @@ public partial class DecorationSlots : ModPlayer
 
     public override void UpdateEquips()
     {
-        // Assuming you want to start from the 10th slot for social armor and from the 13th slot otherwise
-        int start = 13; // Start from the 10th slot for social armor
-        int end = 19; // End at the 20th slot
+
+        int start = 13;
+        int end = 19;
 
         for (int k = start; k < end; k++)
         {
@@ -86,7 +83,7 @@ public partial class DecorationSlots : ModPlayer
                 {
                     Player.GrantArmorBenefits(item);
                 }
-                    
+
             }
         }
 

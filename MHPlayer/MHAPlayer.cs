@@ -13,6 +13,8 @@ namespace MHArmorSkills.MHPlayer
     public partial class MHAPlayer : ModPlayer
     {
         #region InventoryStartup
+
+        // makes the player start with a whetstone
         public override IEnumerable<Item> AddStartingItems(bool mediumCoreDeath)
         {
             static Item createItem(int type)

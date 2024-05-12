@@ -86,7 +86,7 @@ namespace MHArmorSkills.Global
                 {
                     SharpnessDust = 11;
                 }
-                int dustCount = 5; // Change this value to control the number of dust particles
+                int dustCount = 5; 
                 switch (SharpnessDust)
                 {
                     case 0:
@@ -164,6 +164,7 @@ namespace MHArmorSkills.Global
                 }
             }
             #endregion
+            // dust effects to indicate sharpness level
         }
     }
 }

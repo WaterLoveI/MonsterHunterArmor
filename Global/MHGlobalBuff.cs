@@ -12,7 +12,6 @@ namespace MHArmorSkills.Global
             Player player = Main.player[npc.lastInteraction];
             int extendedDuration = (int)(npc.buffTime[buffIndex] * 1.1);
 
-            // Set the buff time to the extended duration if it's larger than the current duration
             if (extendedDuration > npc.buffTime[buffIndex] && player.GetModPlayer<MHPlayerArmorSkill>().ChamBlessing >= 3)
             {
                 npc.buffTime[buffIndex] += extendedDuration;

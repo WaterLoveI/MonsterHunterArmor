@@ -66,6 +66,7 @@ namespace MHArmorSkills
                 BuffID.BetsysCurse,
                 BuffType<FrenzyFail>(),
                 BuffType<BubbleBlight>(),
+                BuffType<BlastBlight>(),
             };
             buffList = new List<int>()
             {
@@ -193,7 +194,7 @@ namespace MHArmorSkills
                 ItemID.Xenopopper,
                 ItemID.PirateStaff,
                 ItemID.GoldenShower,
-                ItemType<FrozenSpearTuna>(),
+                
             };
             thunderelementList = new List<int>()
             {
@@ -262,6 +263,7 @@ namespace MHArmorSkills
                 ItemID.SnowmanCannon,
                 ItemID.Amarok,
                 ItemID.ElfMelter,
+                ItemType<FrozenSpearTuna>(),
             };
             fireresList = new List<int>()
             {

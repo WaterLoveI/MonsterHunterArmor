@@ -159,7 +159,6 @@ namespace MHArmorSkills.MHPlayer
 
         public bool ZinogreEssence;
 
-        public bool BubbleBlight;
         private int lastWeaponType = -1;
         private float cooldownTimer = 0;
 
@@ -291,7 +290,6 @@ namespace MHArmorSkills.MHPlayer
 
             ZinogreEssence = false;
 
-            BubbleBlight = false;
             ControlledAttack = 0;
             ControlledCrit = 0;
         }
@@ -436,7 +434,7 @@ namespace MHArmorSkills.MHPlayer
                         }
                     }
                 }
-                
+
                 if (rand > 1 && cooldownTimer == 0)
                 {
                     cooldownTimer = 45;
@@ -531,7 +529,7 @@ namespace MHArmorSkills.MHPlayer
                 }
                 if (ResentmentBuff >= 1)
                 {
-                    
+
                     if (Main.rand.NextBool(5))
                     {
                         for (int i = 0; i < 2; i++)
@@ -560,15 +558,11 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
             #region Bubble Blight/Dance
-            if (BubbleBlight && BubbleDance == 0)
+            if (BubbleDance >= 1 && Player.HasBuff(ModContent.BuffType<BubbleBlight>()))
             {
-                if (BubbleDance == 0)
-                {
-                    Player.accRunSpeed = 0.5f; // Reduce run speed
-                    Player.jumpBoost = false; // Remove jump boost
-                    Player.maxRunSpeed *= 0.5f; // Slow down horizontal movement
-                    Player.wingAccRunSpeed /= 2;
-                }
+                Player.accRunSpeed *= 2.25f; // 1.125% increase to counter the decrease bubbleblight gives
+                Player.maxRunSpeed *= 2.25f; // 1.125% increase to counter the decrease bubbleblight gives
+
                 if (BubbleDance >= 3)
                 {
                     Player.maxRunSpeed *= 1.2f;
@@ -750,7 +744,7 @@ namespace MHArmorSkills.MHPlayer
             {
                 Player.iceSkate = true;
                 Player.accFlipper = true;
-                
+
             }
             #endregion
             #region Coalescence
@@ -763,10 +757,10 @@ namespace MHArmorSkills.MHPlayer
                 for (int i = 0; i < 7; i++)
                 {
                     int d = Dust.NewDust(Player.position, Player.width + 2, Player.height + 3, DustID.Electric, 0, 0, 100, Color.Purple, 0.5f);
-                    Main.dust[d].noGravity = true; 
-                    Main.dust[d].noLight = false; 
-                    Main.dust[d].fadeIn = 1f; 
-                    Main.dust[d].velocity *= 1.1f; 
+                    Main.dust[d].noGravity = true;
+                    Main.dust[d].noLight = false;
+                    Main.dust[d].fadeIn = 1f;
+                    Main.dust[d].velocity *= 1.1f;
                 }
             }
             if (Player.HasBuff(ModContent.BuffType<Coalescence>()))
@@ -806,7 +800,7 @@ namespace MHArmorSkills.MHPlayer
             if (SpiritBirdCall && !(Player.HasBuff(ModContent.BuffType<SpiritBirdBlue>()) || Player.HasBuff(ModContent.BuffType<SpiritBirdGreen>()) || Player.HasBuff(ModContent.BuffType<SpiritBirdOrange>()) || Player.HasBuff(ModContent.BuffType<SpiritBirdPrism>()) || Player.HasBuff(ModContent.BuffType<SpiritBirdYellow>())))
             {
                 Random random = new Random();
-                int effectIndex = random.Next(0, 5); // Random number from 0 to 5
+                int effectIndex = random.Next(0, 5);
 
                 switch (effectIndex)
                 {
@@ -853,7 +847,7 @@ namespace MHArmorSkills.MHPlayer
             if (Player.HasBuff(ModContent.BuffType<SpiritBirdBlue>()))
             {
                 int Speed = 5;
-                if (ChamBlessing>=1)
+                if (ChamBlessing >= 1)
                 {
                     Speed = 10;
                 }
@@ -885,10 +879,10 @@ namespace MHArmorSkills.MHPlayer
                 int Health = 20;
                 if (ChamBlessing >= 1)
                 {
-                     Speed = 10;
-                     Defense = 10;
-                     Damage = 10;
-                     Health = 40;
+                    Speed = 10;
+                    Defense = 10;
+                    Damage = 10;
+                    Health = 40;
                 }
                 Player.moveSpeed += Speed / 100f;
                 Player.statDefense += Defense;
@@ -952,11 +946,11 @@ namespace MHArmorSkills.MHPlayer
                 if (npc.active && npc.boss && npc.friendly == false && npc.chaseable && !npc.immortal)
                 {
                     // Count the number of active hostile NPCs nearby
-                    if (npc.Distance(Player.Center) < 1200f) // Adjust the range as desired
+                    if (npc.Distance(Player.Center) < 1200f)
                     {
                         hostileNPCs++;
                     }
-                    if (npc.Distance(Player.Center) < 240f && Diversion >= 1) // Adjust the range as desired
+                    if (npc.Distance(Player.Center) < 240f && Diversion >= 1)
                     {
                         DiversionEffect();
                     }
@@ -1061,17 +1055,12 @@ namespace MHArmorSkills.MHPlayer
             {
                 NPC npc = Main.npc[i];
 
-                // Check if the NPC is active and not a friendly NPC.
                 if (npc.active && !npc.friendly)
                 {
-                    // Calculate the distance between the player and the NPC.
                     float distance = Vector2.Distance(Player.Center, npc.Center);
 
-                    // Check if the distance is less than the sum of the player's hitbox and the NPC's hitbox.
                     if (distance < Player.Hitbox.Width / 2 + npc.Hitbox.Width / 2)
                     {
-                        // If the player has iframes, apply a buff to the player.
-                        // Example: Applying the Regeneration buff for 60 frames (1 second).
                         if (Player.immune && EvadeDodgeCD == 0)
                         {
                             if (AdrenalineRush > 0 && !Player.HasBuff(ModContent.BuffType<AdrenalineRush>()))
@@ -1318,10 +1307,8 @@ namespace MHArmorSkills.MHPlayer
                 MastersTouchCooldown = 60;
                 int SharpnessBuffIndex = Player.FindBuffIndex((ModContent.BuffType<Sharpness>()));
 
-                // Check if the player has the Regeneration buff
                 if (SharpnessBuffIndex != -1)
                 {
-                    // Add one second to the Regeneration buff
                     Player.buffTime[SharpnessBuffIndex] += 60;
                 }
             }
@@ -1427,7 +1414,7 @@ namespace MHArmorSkills.MHPlayer
                 Vector2 relativePosition = target.Center - Player.Center;
 
 
-                if (relativePosition.Y > 0)
+                if ((relativePosition.X > 0 && target.direction == 1) || (relativePosition.X < 0 && target.direction == -1))
                 {
 
                     target.AddBuff(BuffID.Confused, 5 * 60);
@@ -2127,14 +2114,11 @@ namespace MHArmorSkills.MHPlayer
             return base.UseSpeedMultiplier(item);
         }
 
-        // This code snippet checks if the player is within 75 tiles of honey and applies a buff and increases move speed if so.
-        // It's structured correctly for the intended functionality.
-
         #region Honey Hunter
         public override void PostUpdate()
         {
             // Check if the player is near honey
-            if (IsPlayerNearHoney() && HoneyHunter >=1)
+            if (IsPlayerNearHoney() && HoneyHunter >= 1)
             {
                 HoneyActive();
             }
@@ -2142,20 +2126,17 @@ namespace MHArmorSkills.MHPlayer
 
         private bool IsPlayerNearHoney()
         {
-            // Define the radius for detecting honey (adjusted to 75 tiles as per your requirement)
             int radius = 75;
 
-            // Get the player's position
             int playerX = (int)(Player.position.X / 16);
             int playerY = (int)(Player.position.Y / 16);
 
-            // Check if honey is present within the specified radius
             for (int x = playerX - radius; x <= playerX + radius; x++)
             {
                 for (int y = playerY - radius; y <= playerY + radius; y++)
                 {
                     Tile tile = Main.tile[x, y];
-                    if (tile != null && tile.LiquidType == LiquidID.Honey && tile.LiquidAmount > 0) // 3 is the ID for honey in Terraria
+                    if (tile != null && tile.LiquidType == LiquidID.Honey && tile.LiquidAmount > 0)
                     {
                         return true;
                     }
@@ -2167,10 +2148,8 @@ namespace MHArmorSkills.MHPlayer
 
         private void HoneyActive()
         {
-            // Assuming HoneyHunter is a float variable representing the percentage increase in move speed
             Player.moveSpeed += HoneyHunter / 100f;
-            // Assuming HoneyHunter is a custom buff you've created
-            Player.AddBuff(ModContent.BuffType<HoneyHunter>(), 2); // Duration of 2 seconds
+            Player.AddBuff(ModContent.BuffType<HoneyHunter>(), 2);
         }
         #endregion
 
@@ -2185,33 +2164,10 @@ namespace MHArmorSkills.MHPlayer
             #region Draw Hair
             if ((Player.armor[0].type == ModContent.ItemType<MizutsuneHelmX>()) && (Player.armor[10].headSlot == -1) || (Player.armor[10].type == ModContent.ItemType<MizutsuneHelmX>()))
             {
-                // Ensure the head (including hair) is drawn.
                 drawInfo.fullHair = true;
             }
             #endregion
         }
-        public override void DrawEffects(PlayerDrawSet drawInfo, ref float r, ref float g, ref float b, ref float a, ref bool fullBright)
-        {
-            #region Bubble Blight
-            if (BubbleBlight && Main.netMode != NetmodeID.Server && drawInfo.shadow == 0f)
-            {
-                if (Main.rand.NextBool(4))
-                {
-                    Vector2 velocity = Main.rand.NextVector2Unit();
-                    velocity.X *= 0.66f;
-                    velocity *= Main.rand.NextFloat(1f, 2f);
-
-                    int bubble = Gore.NewGore(Player.GetSource_FromThis(), drawInfo.Position + new Vector2(Main.rand.Next(Player.width + 1), Main.rand.Next(Player.height + 1)), velocity, 411, Main.rand.NextFloat(0.4f, 1.2f));
-                    Main.gore[bubble].sticky = false;
-                    Main.gore[bubble].velocity *= 0.4f;
-                    Main.gore[bubble].velocity.Y -= 0.6f;
-                    drawInfo.GoreCache.Add(bubble);
-                }
-            }
-            #endregion
-
-        }
-
         public override void ModifyHitNPC(NPC target, ref NPC.HitModifiers modifiers)
         {
             #region Crit Boost
@@ -2249,11 +2205,9 @@ namespace MHArmorSkills.MHPlayer
             {
                 Vector2 relativePosition = target.Center - Player.Center;
 
-                // Check if the player is behind the target
-                if (relativePosition.Y > 0)
+                if ((relativePosition.X > 0 && target.direction == 1) || (relativePosition.X < 0 && target.direction == -1))
                 {
-                    // The player is attacking from the back
-                    modifiers.FinalDamage *= SneakAttack; // Increase the damage by 50%
+                    modifiers.FinalDamage *= SneakAttack;
                 }
             }
             #endregion
@@ -2273,7 +2227,7 @@ namespace MHArmorSkills.MHPlayer
             {
                 modifiers.NonCritDamage *= 1.5f;
             }
-            
+
             #endregion
         }
 

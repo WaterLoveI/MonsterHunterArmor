@@ -252,3 +252,32 @@ ZinogreJasper: {
 	DisplayName: Zinogre Jasper
 	Tooltip: A rare gem sometimes produced inside a Zinogre's body. The monarch's power swells within.
 }
+
+Sushifish: {
+	DisplayName: Sushifish
+	Tooltip: Also grant the regeneration buff.
+}
+
+Whetfish: {
+	DisplayName: Whetfish
+	Tooltip:
+		'''
+		Grant the "Sharpness" buff for 30 seconds.
+		Faster usetime than the Whetstone.
+		'''
+}
+
+GreatWhetfish: {
+	DisplayName: Great Whetfish
+	Tooltip: Having this item in hand automatically grant the "Sharpness" buff for 45 seconds.
+}
+
+MonsterBone: {
+	DisplayName: Monster Bone
+	Tooltip: ""
+}
+
+BoneClub: {
+	DisplayName: Bone Club
+	Tooltip: Increase damage by 50% when hitting enemies from the front.
+}

@@ -32,6 +32,20 @@ Mods: {
 					'''
 			}
 
+			BoneMail: {
+				DisplayName: Bone Helmet
+				Tooltip:
+					'''
+					Increase the Tropics Hunter Skill by 1.
+					[○]x1
+					'''
+			}
+
+			BoneGreaves: {
+				DisplayName: Bone Helmet
+				Tooltip: "[○]x2"
+			}
+
 			BullfangoMask: {
 				DisplayName: Bullfango Mask
 				Tooltip: Increase the Attack Boost Skill by 2.
@@ -689,6 +703,29 @@ Mods: {
 					Increase the Punish Draw Skill by 1.
 					Increase the Fortified Skill by 1.
 					[○][○][○]x1
+					'''
+			}
+
+			BoneMailX: {
+				DisplayName: Bone Mail X
+				Tooltip:
+					'''
+					Increase Damage by 12%.
+					Increase the Attack Boost Skill by 2.
+					Increase the Punish Draw Skill by 1.
+					[○][○][○]x1
+					'''
+			}
+
+			BoneGreavesX: {
+				DisplayName: Bone Helmet X
+				Tooltip:
+					'''
+					Increase Melee Attack Speed by 10%. 
+					Increase Movement Speed by 5%. 
+					Increase the Attack Boost Skill by 2.
+					[○]x1
+					[○][○]x1
 					'''
 			}
 
@@ -3693,6 +3730,9 @@ Mods: {
 			Bnahabra.DisplayName: Bnahabra
 		}
 
-		Projectiles.BnahabraSpit.DisplayName: Bnahabra Spit
+		Projectiles: {
+			BnahabraSpit.DisplayName: Bnahabra's Spit
+			BlastExplosionHostile.DisplayName: Explosion
+		}
 	}
 }

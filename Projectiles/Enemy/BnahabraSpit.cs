@@ -53,7 +53,7 @@ namespace MHArmorSkills.Projectiles.Enemy
         {
             for (int i = 0; i < 10; i++)
             {
-                Dust.NewDust(Projectile.Center, 1, 1, DustID.Water, Projectile.velocity.X, Projectile.velocity.Y);
+                Dust.NewDust(Projectile.Center, 1, 1, DustID.Water, Projectile.velocity.X, Projectile.velocity.Y,0,Color.GreenYellow);
             }
         }
     }

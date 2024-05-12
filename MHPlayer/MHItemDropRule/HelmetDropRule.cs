@@ -178,7 +178,7 @@ namespace MHArmorSkills.MHPlayer.PKMItemDropRule
         {
             if (info.npc.value > 0f && !info.IsInSimulation)
             {
-                return info.player.ZoneNormalUnderground;
+                return info.player.ZoneDirtLayerHeight;
             }
             return false;
         }
@@ -197,9 +197,9 @@ namespace MHArmorSkills.MHPlayer.PKMItemDropRule
     {
         public bool CanDrop(DropAttemptInfo info)
         {
-            if (info.npc.value > 0f && !info.IsInSimulation)
+            if (info.npc.value > 0f && !info.IsInSimulation && Main.hardMode)
             {
-                return info.player.ZoneNormalUnderground;
+                return info.player.ZoneDirtLayerHeight;
             }
             return false;
         }
@@ -325,7 +325,7 @@ namespace MHArmorSkills.MHPlayer.PKMItemDropRule
         {
             if (info.npc.value > 0f && !info.IsInSimulation)
             {
-                return info.player.ZoneNormalCaverns;
+                return info.player.ZoneRockLayerHeight;
             }
             return false;
         }
@@ -346,7 +346,7 @@ namespace MHArmorSkills.MHPlayer.PKMItemDropRule
         {
             if (info.npc.value > 0f && !info.IsInSimulation && Main.hardMode)
             {
-                return info.player.ZoneNormalCaverns;
+                return info.player.ZoneRockLayerHeight;
             }
             return false;
         }
