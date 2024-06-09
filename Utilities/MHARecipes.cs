@@ -1,4 +1,5 @@
 ﻿using MHArmorSkills.Items.Accessories.Decorations;
+using MHArmorSkills.Items.Consumables;
 using MHArmorSkills.Items.Crafting_Materials.ArmorSphere;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using MHArmorSkills.Utilities;
@@ -82,6 +83,23 @@ namespace MHArmorSkills
                 recipe.DisableDecraft();
                 recipe.Register();
             }
+            Recipe WhetfishFood = Recipe.Create(ItemID.SeafoodDinner);
+            WhetfishFood.AddIngredient(ModContent.ItemType<Whetfish>(), 1);
+            WhetfishFood.AddTile(TileID.CookingPots);
+            WhetfishFood.DisableDecraft();
+            WhetfishFood.Register();
+
+            Recipe GWhetfishFood = Recipe.Create(ItemID.SeafoodDinner);
+            GWhetfishFood.AddIngredient(ModContent.ItemType<GreatWhetfish>(), 1);
+            GWhetfishFood.AddTile(TileID.CookingPots);
+            GWhetfishFood.DisableDecraft();
+            GWhetfishFood.Register();
+
+            Recipe SushifishFood = Recipe.Create(ItemID.SeafoodDinner);
+            SushifishFood.AddIngredient(ModContent.ItemType<Sushifish>(), 1);
+            SushifishFood.AddTile(TileID.CookingPots);
+            SushifishFood.DisableDecraft();
+            SushifishFood.Register();
         }
     }
 }

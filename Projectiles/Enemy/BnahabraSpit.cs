@@ -28,10 +28,10 @@ namespace MHArmorSkills.Projectiles.Enemy
         {
             Projectile.rotation = (float)Math.Atan2((double)Projectile.velocity.Y, (double)Projectile.velocity.X) + MathHelper.ToRadians(45f);
 
-            Projectile.velocity.Y += 0.1f;
-            if (Projectile.velocity.Y > 16f)
+            Projectile.velocity.Y += 0.07f;
+            if (Projectile.velocity.Y > 14f)
             {
-                Projectile.velocity.Y = 16f;
+                Projectile.velocity.Y = 14f;
             }
         }
 

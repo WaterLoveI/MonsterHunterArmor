@@ -23,12 +23,12 @@ namespace MHArmorSkills.Global
             globalLoot.Add(ItemDropRule.ByCondition(new GatheringDropRule(), ItemID.HerbBag, 12, 1, 2));
             #endregion
             #region Helmets
-            globalLoot.Add(ItemDropRule.ByCondition(new DesertCondition(), ModContent.ItemType<BoneHelmet>(), 105, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new ForestCondition(), ModContent.ItemType<JaggiMask>(), 105, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new UndergroundCondition(), ModContent.ItemType<KonchuHelm>(), 105, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new SnowCondition(), ModContent.ItemType<MoofahHead>(), 105, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new JungleCondition(), ModContent.ItemType<MossSwineHat>(), 105, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new ForestCondition(), ModContent.ItemType<YukumoKasa>(), 105, 1, 1));
+            ///globalLoot.Add(ItemDropRule.ByCondition(new DesertCondition(), ModContent.ItemType<BoneHelmet>(), 105, 1, 1));
+           /// globalLoot.Add(ItemDropRule.ByCondition(new ForestCondition(), ModContent.ItemType<JaggiMask>(), 105, 1, 1));
+           /// globalLoot.Add(ItemDropRule.ByCondition(new UndergroundCondition(), ModContent.ItemType<KonchuHelm>(), 105, 1, 1));
+            ///globalLoot.Add(ItemDropRule.ByCondition(new SnowCondition(), ModContent.ItemType<MoofahHead>(), 105, 1, 1));
+            ///globalLoot.Add(ItemDropRule.ByCondition(new JungleCondition(), ModContent.ItemType<MossSwineHat>(), 105, 1, 1));
+            ///globalLoot.Add(ItemDropRule.ByCondition(new ForestCondition(), ModContent.ItemType<YukumoKasa>(), 105, 1, 1));
             #endregion
             #region Forest
             globalLoot.Add(ItemDropRule.ByCondition(new ForestCondition(), ModContent.ItemType<AffinitySliding1>(), 215, 1, 1));
@@ -251,7 +251,7 @@ namespace MHArmorSkills.Global
                     {
                         npcLoot.Add(new CommonDrop(ModContent.ItemType<ArmorSphere>(), 1, 1, 3));
                         npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, ModContent.ItemType<BirdWyvernGem>(), ModContent.ItemType<WyvernGem>()));
-                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, ModContent.ItemType<BeastGem>(), ModContent.ItemType<InsectShell>(), ModContent.ItemType<CrabPearl>()));
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, ModContent.ItemType<BeastGem>(), ModContent.ItemType<CrabPearl>()));
                     }
 
                     break;
@@ -261,7 +261,7 @@ namespace MHArmorSkills.Global
                         npcLoot.Add(new CommonDrop(ModContent.ItemType<ArmorSphere>(), 2, 2, 3));
                         npcLoot.Add(new CommonDrop(ModContent.ItemType<ArmorSpherePlus>(), 1, 1, 3));
                         npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 1, ModContent.ItemType<BirdWyvernGem>(), ModContent.ItemType<WyvernGem>()));
-                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 1, ModContent.ItemType<BeastGem>(), ModContent.ItemType<InsectShell>(), ModContent.ItemType<CrabPearl>()));
+                        npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 1, ModContent.ItemType<BeastGem>(), ModContent.ItemType<CrabPearl>()));
                     }
 
                     break;
@@ -349,7 +349,6 @@ namespace MHArmorSkills.Global
                     if (!Main.GameModeInfo.IsExpertMode && !Main.GameModeInfo.IsMasterMode || !Main.GameModeInfo.IsExpertMode && !Main.GameModeInfo.IsMasterMode && !Main.GameModeInfo.IsJourneyMode)
                     {
                         npcLoot.Add(new CommonDrop(ModContent.ItemType<HeavyArmorSphere>(), 1, 3, 5));
-                        npcLoot.Add(new CommonDrop(ModContent.ItemType<InsectCarapace>(), 1, 1, 3));
                         npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 1, ModContent.ItemType<LrgBeastGem>(), ModContent.ItemType<FeyWyvernGem>(), ModContent.ItemType<FineBlackPearl>()));
                         npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, ModContent.ItemType<LrgBeastGem>(), ModContent.ItemType<FeyWyvernGem>(), ModContent.ItemType<FineBlackPearl>()));
                         npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 3, ModContent.ItemType<LrgBeastGem>(), ModContent.ItemType<FeyWyvernGem>(), ModContent.ItemType<FineBlackPearl>()));

@@ -253,9 +253,29 @@ ZinogreJasper: {
 	Tooltip: A rare gem sometimes produced inside a Zinogre's body. The monarch's power swells within.
 }
 
+MonsterFluid: {
+	DisplayName: Monster Fluid
+	Tooltip: ""
+}
+
 Sushifish: {
-	DisplayName: Sushifish
-	Tooltip: Also grant the regeneration buff.
+	DisplayName: Sushi Fish
+	Tooltip: ""
+}
+
+GourmetFish: {
+	Tooltip: Also grants the regeneration buff for 1 minute.
+	DisplayName: Gourmet Fish
+}
+
+BnahabraBanner: {
+	DisplayName: Bnahabra Banner
+	Tooltip: ""
+}
+
+BullfangoBanner: {
+	DisplayName: Bullfango Banner
+	Tooltip: ""
 }
 
 Whetfish: {

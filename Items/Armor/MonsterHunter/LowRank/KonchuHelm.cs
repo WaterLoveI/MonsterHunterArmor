@@ -24,7 +24,14 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         {
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.Protection += 1;
-            
+        }
+        public override void AddRecipes()
+        {
+            CreateRecipe().
+                AddIngredient<MonsterFluid>(2).
+                AddIngredient<InsectShell>(2).
+                AddTile(TileID.Anvils).
+                Register();
         }
     }
 }

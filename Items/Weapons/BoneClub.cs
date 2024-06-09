@@ -16,7 +16,7 @@ namespace MHArmorSkills.Items.Weapons
         {
             Item.damage = 10;
             Item.DamageType = DamageClass.Melee;
-            Item.width = 50;
+            Item.width = 48;
             Item.height = 50;
             Item.useTime = 30;
             Item.useAnimation = 30;

@@ -30,6 +30,13 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             modPlayer.Gathering += 1;
             modPlayer.ThunderAttack += 2;
         }
-        
+        public override void AddRecipes()
+        {
+            CreateRecipe().
+                AddIngredient<MonsterBone>(3).
+                AddIngredient(ItemID.FlinxFur, 3).
+                AddTile(TileID.Anvils).
+                Register();
+        }
     }
 }

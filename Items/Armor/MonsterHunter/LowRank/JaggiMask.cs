@@ -4,6 +4,7 @@ using Terraria;
 using Terraria.ID;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using Terraria.ModLoader;
+using MHArmorSkills.Items.Crafting_Materials.ArmorSphere;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 {
@@ -29,6 +30,14 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.Attack += Skill1;
             modPlayer.CritEye += Skill1;
+        }
+        public override void AddRecipes()
+        {
+            CreateRecipe().
+                AddIngredient<MonsterBone>(3).
+                AddIngredient(ItemID.Leather, 3).
+                AddTile(TileID.Anvils).
+                Register();
         }
     }
 }

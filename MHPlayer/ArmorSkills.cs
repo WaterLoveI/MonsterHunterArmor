@@ -136,7 +136,7 @@ namespace MHArmorSkills.MHPlayer
         public int Grinder;
         public int ChameleosBlessing;
         public int KushalaBlessing;
-        public int Teostralessing;
+        public int TeostraBlessing;
         public int Windproof;
         public int TremorRes;
 
@@ -150,7 +150,7 @@ namespace MHArmorSkills.MHPlayer
             #region Skills
             ChameleosBlessing = 0;
             NegativeCrit = 0;
-            Teostralessing = 0;
+            TeostraBlessing = 0;
             KushalaBlessing = 0;
             Windproof = 0;
             TremorRes = 0;
@@ -277,6 +277,7 @@ namespace MHArmorSkills.MHPlayer
             #region Essence
             ZinogreEssence = 0;
             #endregion
+
         }
 
         public override void UpdateEquips()
@@ -2190,17 +2191,17 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
             #region Teostra Bless
-            if (Teostralessing >= 1)
+            if (TeostraBlessing >= 1)
             {
-                if (Teostralessing >= 1)
+                if (TeostraBlessing >= 1)
                 {
                     modPlayer.TeosBless += 1;
                 }
-                if (Teostralessing >= 2)
+                if (TeostraBlessing >= 2)
                 {
                     modPlayer.TeosBless += 1;
                 }
-                if (Teostralessing >= 3)
+                if (TeostraBlessing >= 3)
                 {
                     modPlayer.TeosBless += 1;
                 }
@@ -2382,5 +2383,7 @@ namespace MHArmorSkills.MHPlayer
             #endregion
 
         }
+
+
     }
 }

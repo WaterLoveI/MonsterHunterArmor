@@ -3728,6 +3728,10 @@ Mods: {
 		NPCs: {
 			Bullfango.DisplayName: Bullfango
 			Bnahabra.DisplayName: Bnahabra
+			BnahabraBlue.DisplayName: Bnahabra
+			BnahabraBrown.DisplayName: Bnahabra
+			BnahabraGreen.DisplayName: Bnahabra
+			BnahabraRed.DisplayName: Bnahabra
 		}
 
 		Projectiles: {

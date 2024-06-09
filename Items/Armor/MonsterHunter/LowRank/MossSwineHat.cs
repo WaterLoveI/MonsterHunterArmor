@@ -31,5 +31,13 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
             SlotPlayer.DecorationOneSlots += 1;
         }
+        public override void AddRecipes()
+        {
+            CreateRecipe().
+                AddIngredient<MonsterBone>(3).
+                AddIngredient(ItemID.Leather, 3).
+                AddTile(TileID.Anvils).
+                Register();
+        }
     }
 }

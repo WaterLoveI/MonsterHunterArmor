@@ -11,6 +11,8 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using MHArmorSkills.Items.Armor.MonsterHunter.LowRank;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
+using MHArmorSkills.Items.Placeables.Banners;
+using Terraria.GameContent.Bestiary;
 
 namespace MHArmorSkills.NPCs.NormalNPC.Bullfango
 {
@@ -23,19 +25,32 @@ namespace MHArmorSkills.NPCs.NormalNPC.Bullfango
 
         public override void SetDefaults()
         {
-            NPC.damage = 20;
+            NPC.damage = 13;
             NPC.aiStyle = NPCAIStyleID.Unicorn;
             NPC.width = 50;
             NPC.height = 28;
-            NPC.defense = 8;
-            NPC.lifeMax = 80;
+            NPC.defense = 3;
+            NPC.lifeMax = 38;
             NPC.knockBackResist = 0.3f;
             AnimationType = NPCID.Hellhound;
             NPC.value = Item.buyPrice(0, 0, 2, 0);
             NPC.HitSound = SoundID.NPCHit27;
             NPC.DeathSound = SoundID.NPCDeath30;
             Banner = NPC.type;
+            BannerItem = ModContent.ItemType<BullfangoBanner>();
         }
+
+        public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
+        {
+            // Sets the description of this NPC that is listed in the bestiary
+
+            bestiaryEntry.Info.AddRange(new List<IBestiaryInfoElement>
+            {
+                new MoonLordPortraitBackgroundProviderBestiaryInfoElement(), //Plain black background
+                new FlavorTextBestiaryInfoElement("Large, wild boars with a foul temper. Fertile and wide-ranging.")
+            });
+        }
+
         public override void AI()
         {
             if (Main.rand.NextBool(600))
@@ -78,16 +93,17 @@ namespace MHArmorSkills.NPCs.NormalNPC.Bullfango
         }
         public override float SpawnChance(NPCSpawnInfo spawnInfo)
         {
-            return spawnInfo.Player.ZoneSnow || spawnInfo.Player.ZoneForest || spawnInfo.Player.ZoneJungle &&
+            return spawnInfo.Player.ZoneSnow || spawnInfo.Player.ZoneJungle && !spawnInfo.Water &&
                 (!spawnInfo.Player.ZoneTowerNebula && !spawnInfo.Player.ZoneTowerSolar && !spawnInfo.Player.ZoneTowerStardust &&
                 !spawnInfo.Player.ZoneDungeon &&
                 !spawnInfo.Player.ZoneTowerVortex &&
-                !spawnInfo.PlayerInTown && !spawnInfo.Player.ZoneOldOneArmy && !Main.snowMoon && !Main.pumpkinMoon) ? 0.1f : 0f;
+                !spawnInfo.PlayerInTown && !spawnInfo.Player.ZoneOldOneArmy && !Main.snowMoon && !Main.pumpkinMoon) ? 0.06f : 0f;
         }
         public override void ModifyNPCLoot(NPCLoot npcLoot)
         {
             npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<BullfangoMask>(), 50));
-            npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<MonsterBone>(), 2));
+            npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<MonsterBone>(), 4));
+            npcLoot.Add(ItemDropRule.Common(ItemID.Leather, 5));
         }
     }
 }

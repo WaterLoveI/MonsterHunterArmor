@@ -19,13 +19,11 @@ namespace MHArmorSkills.Global
                 case ItemID.KingSlimeBossBag:
                     loot.Add(new CommonDrop(ModContent.ItemType<ArmorSphere>(), 1, 1, 3));
                     loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, ModContent.ItemType<BirdWyvernGem>(), ModContent.ItemType<WyvernGem>()));
-                    loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, ModContent.ItemType<BeastGem>(), ModContent.ItemType<InsectShell>(), ModContent.ItemType<CrabPearl>()));
                     break;
                 case ItemID.EyeOfCthulhuBossBag:
                     loot.Add(new CommonDrop(ModContent.ItemType<ArmorSphere>(), 2, 2, 3));
                     loot.Add(new CommonDrop(ModContent.ItemType<ArmorSpherePlus>(), 1, 1, 3));
                     loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 1, ModContent.ItemType<BirdWyvernGem>(), ModContent.ItemType<WyvernGem>()));
-                    loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 1, ModContent.ItemType<BeastGem>(), ModContent.ItemType<InsectShell>(), ModContent.ItemType<CrabPearl>()));
                     break;
                 case ItemID.EaterOfWorldsBossBag:
                     loot.Add(new CommonDrop(ModContent.ItemType<ArmorSphere>(), 3, 2, 3));
@@ -84,7 +82,6 @@ namespace MHArmorSkills.Global
                 case ItemID.QueenSlimeBossBag:
                     
                     loot.Add(new CommonDrop(ModContent.ItemType<HeavyArmorSphere>(), 1, 3, 5));
-                    loot.Add(new CommonDrop(ModContent.ItemType<InsectCarapace>(), 1, 1, 3));
                     loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 1, ModContent.ItemType<LrgBeastGem>(), ModContent.ItemType<FeyWyvernGem>(), ModContent.ItemType<FineBlackPearl>()));
                     loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, ModContent.ItemType<LrgBeastGem>(), ModContent.ItemType<FeyWyvernGem>(), ModContent.ItemType<FineBlackPearl>()));
                     loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 3, ModContent.ItemType<LrgBeastGem>(), ModContent.ItemType<FeyWyvernGem>(), ModContent.ItemType<FineBlackPearl>()));
