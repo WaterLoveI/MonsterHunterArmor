@@ -106,6 +106,13 @@ namespace MHArmorSkills.MHPlayer
                 Player.buffTime[Player.FindBuffIndex(ModContent.BuffType<BlastBlight>())] -= 180;
             }
             #endregion
+            #region BubbleBlight
+            if (Player.HasBuff(ModContent.BuffType<BubbleBlight>()))
+            {
+                Player.ClearBuff(ModContent.BuffType<BubbleBlight>());
+                SoundEngine.PlaySound(SoundID.Item54, Player.Center);
+            }
+            #endregion
         }
 
         public override void OnHitByProjectile(Projectile proj, Player.HurtInfo hurtInfo)
@@ -115,6 +122,13 @@ namespace MHArmorSkills.MHPlayer
             if (Player.HasBuff(ModContent.BuffType<BlastBlight>()) && Player.buffTime[Player.FindBuffIndex(ModContent.BuffType<BlastBlight>())] >= 190)
             {
                 Player.buffTime[Player.FindBuffIndex(ModContent.BuffType<BlastBlight>())] -= 180;
+            }
+            #endregion
+            #region BubbleBlight
+            if (Player.HasBuff(ModContent.BuffType<BubbleBlight>()))
+            {
+                Player.ClearBuff(ModContent.BuffType<BubbleBlight>());
+                SoundEngine.PlaySound(SoundID.Item54, Player.Center);
             }
             #endregion
         }

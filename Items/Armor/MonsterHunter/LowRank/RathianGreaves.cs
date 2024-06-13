@@ -8,34 +8,38 @@ using Terraria.ModLoader;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 {
-    [AutoloadEquip(EquipType.Body)]
-    public class LavasiothMail : ModItem
+    [AutoloadEquip(EquipType.Legs)]
+    public class RathianGreaves : ModItem
     {
+        public static readonly int Skill1 = 1;
+        public static readonly int Skill2 = 2;
+
+        
 
         public override void SetDefaults()
         {
-            Item.width = 30;
-            Item.height = 22;
-            Item.value = MHGlobalItems.RarityGreenBuyPrice;
-            Item.rare = ItemRarityID.Green;
+            Item.width = 22;
+            Item.height = 18;
+            Item.value = MHGlobalItems.RarityOrangeBuyPrice;
+            Item.rare = ItemRarityID.Orange;
             Item.defense = 6;
         }
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.GetAttackSpeed(DamageClass.Melee) += 0.05f;
+            player.moveSpeed += 0.1f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.Guard += 1;
-            modPlayer.Resentment += 1;
+            modPlayer.AntiPoison += 1;
+            modPlayer.RecSpeed += 2;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += 1;
+            SlotPlayer.DecorationTwoSlots += 1;
         }
         public override void AddRecipes()
         {
             CreateRecipe().
-                AddIngredient<WyvernGem>().
-                AddIngredient(ItemID.Obsidian,12).
-                AddIngredient<ArmorSpherePlus>(3).
+                AddIngredient<FlameSac>(2).
+                AddIngredient<FlamingScale>(3).
+                AddIngredient<HardArmorSphere>(3).
                 AddTile(TileID.Anvils).
                 Register();
         }

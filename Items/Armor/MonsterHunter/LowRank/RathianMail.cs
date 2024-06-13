@@ -28,7 +28,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             modPlayer.Health += 1;
             modPlayer.RecSpeed += 1;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationTwoSlots += 1;
+            SlotPlayer.DecorationTwoSlots += 2;
         }
         public override void AddRecipes()
         {

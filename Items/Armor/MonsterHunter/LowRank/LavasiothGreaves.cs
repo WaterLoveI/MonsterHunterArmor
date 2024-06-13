@@ -8,24 +8,28 @@ using Terraria.ModLoader;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 {
-    [AutoloadEquip(EquipType.Body)]
-    public class LavasiothMail : ModItem
+    [AutoloadEquip(EquipType.Legs)]
+    public class LavasiothGreaves : ModItem
     {
+        public static readonly int Skill1 = 1;
+        public static readonly int Skill2 = 2;
+
+        
 
         public override void SetDefaults()
         {
-            Item.width = 30;
-            Item.height = 22;
+            Item.width = 22;
+            Item.height = 18;
             Item.value = MHGlobalItems.RarityGreenBuyPrice;
             Item.rare = ItemRarityID.Green;
-            Item.defense = 6;
+            Item.defense = 5;
         }
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.GetAttackSpeed(DamageClass.Melee) += 0.05f;
+            player.moveSpeed += 0.07f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.Guard += 1;
+            modPlayer.RecoveryUp += 1;
             modPlayer.Resentment += 1;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
             SlotPlayer.DecorationOneSlots += 1;
@@ -34,7 +38,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         {
             CreateRecipe().
                 AddIngredient<WyvernGem>().
-                AddIngredient(ItemID.Obsidian,12).
+                AddIngredient(ItemID.Obsidian, 12).
                 AddIngredient<ArmorSpherePlus>(3).
                 AddTile(TileID.Anvils).
                 Register();

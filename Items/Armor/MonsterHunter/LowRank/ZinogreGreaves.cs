@@ -30,7 +30,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             modPlayer.Evasion += 1;
             modPlayer.ZinogreEssence += 1;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationTwoSlots += 1;
+            SlotPlayer.DecorationOneSlots += 1;
         }
         public override void AddRecipes()
         {

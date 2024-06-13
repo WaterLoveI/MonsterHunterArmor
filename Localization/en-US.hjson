@@ -308,7 +308,7 @@ Mods: {
 				DisplayName: Lavasioth Helm
 				Tooltip:
 					'''
-					Increase Movement speed by 10%. 
+					Increase Melee Speed by 5%. 
 					Increase the Fire Attack Skill by 3.
 					[○]x2
 					'''
@@ -1474,8 +1474,19 @@ Mods: {
 				DisplayName: Lavasioth Mail
 				Tooltip:
 					'''
-					Increases Melee Speed by 7%.
+					Increases Melee Speed by 5%.
 					Increase the Guard Skill by 1.
+					Increase the Resentment Skill by 1.
+					[○]x1
+					'''
+			}
+
+			LavasiothGreaves: {
+				DisplayName: Lavasioth Greaves
+				Tooltip:
+					'''
+					Increases Movement Speed by 7%.
+					Increase the Recovery Up Skill by 1.
 					Increase the Resentment Skill by 1.
 					[○]x1
 					'''
@@ -3737,6 +3748,17 @@ Mods: {
 		Projectiles: {
 			BnahabraSpit.DisplayName: Bnahabra's Spit
 			BlastExplosionHostile.DisplayName: Explosion
+		}
+
+		Configs: {
+			VanillaArmorSkills: {
+				DisplayName: Vanilla Armor Skills
+
+				VanillaArmorToggle: {
+					Label: Vanilla Armor Toggle
+					Tooltip: "{$Enable.to.give.vanilla.armors.armor.skills}"
+				}
+			}
 		}
 	}
 }

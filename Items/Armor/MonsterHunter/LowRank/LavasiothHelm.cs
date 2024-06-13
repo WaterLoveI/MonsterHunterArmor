@@ -27,7 +27,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.moveSpeed += 0.1f;
+            player.GetAttackSpeed(DamageClass.Melee) += 0.05f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.FireAttack += 3;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
