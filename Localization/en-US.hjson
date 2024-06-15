@@ -84,7 +84,7 @@ Mods: {
 				DisplayName: Nargacuga Helm
 				Tooltip:
 					'''
-					Increases movement speed by 10%.
+					Increases Critical Strike Chance by 5%.
 					Increase the Evasion Skill by 2.
 					Increase the Evasion Distance Skill by 2.
 					'''
@@ -1414,6 +1414,18 @@ Mods: {
 					'''
 			}
 
+			DrothGreavesX: {
+				DisplayName: Droth Greaves X
+				Tooltip:
+					'''
+					Increases maximum mana by 20.
+					Increases Movement Speed by 10%.
+					Increase the Water Attack Skill by 2.
+					Increase the Water Resistance Skill by 2.
+					[○]x1
+					'''
+			}
+
 			SailorSocksX: {
 				DisplayName: Sailor Socks X
 				Tooltip:
@@ -1546,7 +1558,30 @@ Mods: {
 					Increases Damage by 6%.
 					Increase the Health Skill by 1.
 					Increase the Recovery Speed Skill by 1.
+					[○][○]x2
+					'''
+			}
+
+			RathianGreaves: {
+				DisplayName: Rathian Greaves
+				Tooltip:
+					'''
+					Increases Movement Speed by 10%.
+					Increase the Recovery Speed Skill by 2.
+					Increase the Anti-Poison Skill by 1.
 					[○][○]x1
+					'''
+			}
+
+			RathianGreavesX: {
+				DisplayName: Rathian Greaves X
+				Tooltip:
+					'''
+					Increases Damage by 7%.
+					Increases Movement Speed by 10%.
+					Increase the Recovery Up Skill by 1.
+					Increase the Recovery Speed Skill by 1.
+					[○][○][○]x2
 					'''
 			}
 
@@ -1554,10 +1589,32 @@ Mods: {
 				DisplayName: Nargacuga Mail
 				Tooltip:
 					'''
-					Increases Critical Strike by 6%.
+					Increases Critical Strike Chance by 5%.
 					Increase the Sneak Skill by 2.
 					Increase the Critical Eye Skill by 1.
 					[○]x1
+					'''
+			}
+			NargacugaGreaves: {
+				DisplayName: Nargacuga Greaves
+				Tooltip:
+					'''
+					Increases Movement Speed by 10%.
+					Increase the Critical Eye Skill by 1.
+					Increase the Evade Distance Skill by 1.
+					[○]x2
+					'''
+			}
+
+			NargacugaGreavesX: {
+				DisplayName: Nargacuga Greaves X
+				Tooltip:
+					'''
+					Increases Critical Strike Chance by 5%
+					Increases Movement Speed by 10%.
+					Increase the Evasion Skill by 2.
+					Increase the Evade Distance Skill by 2.
+					[○][○]x1
 					'''
 			}
 
@@ -3733,6 +3790,11 @@ Mods: {
 					Works even in the vanity slot.
 					[○][○][○]
 					'''
+			}
+
+			LavasiothGreavesX: {
+				DisplayName: Lavasioth Greaves X
+				Tooltip: ""
 			}
 		}
 

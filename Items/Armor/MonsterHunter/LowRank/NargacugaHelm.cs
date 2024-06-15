@@ -27,7 +27,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.moveSpeed += 0.1f;
+            player.GetCritChance(DamageClass.Generic) += 5;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.EvadeDistance += 2;
             modPlayer.Evasion += 2;

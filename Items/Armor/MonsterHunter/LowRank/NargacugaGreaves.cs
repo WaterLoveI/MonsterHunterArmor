@@ -8,8 +8,8 @@ using Terraria.ModLoader;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 {
-    [AutoloadEquip(EquipType.Body)]
-    public class NargacugaMail : ModItem
+    [AutoloadEquip(EquipType.Legs)]
+    public class NargacugaGreaves : ModItem
     {
         public static readonly int Skill1 = 3;
         public static readonly int Skill2 = 2;
@@ -18,27 +18,27 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 
         public override void SetDefaults()
         {
-            Item.width = 30;
-            Item.height = 20;
+            Item.width = 22;
+            Item.height = 18;
             Item.value = MHGlobalItems.RarityOrangeBuyPrice;
             Item.rare = ItemRarityID.Orange;
-            Item.defense = 6;
+            Item.defense = 5;
         }
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.GetCritChance(DamageClass.Generic) += 5;
+            player.moveSpeed += 0.1f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.Sneak += 2;
+            modPlayer.EvadeDistance += 1;
             modPlayer.CritEye += 1; 
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += 1;
+            SlotPlayer.DecorationOneSlots += 2;
         }
         public override void AddRecipes()
         {
             CreateRecipe().
-                AddIngredient(ItemID.NinjaShirt).
-                AddIngredient<EbonShell>(4).
+                AddIngredient(ItemID.NinjaPants).
+                AddIngredient<EbonShell>(3).
                 AddIngredient<HardArmorSphere>(4).
                 AddTile(TileID.Anvils).
                 Register();

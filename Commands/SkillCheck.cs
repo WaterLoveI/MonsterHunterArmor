@@ -358,9 +358,14 @@ namespace MHArmorSkills.Commands
                 caller.Reply($"Lasting Power Level: {modPlayer.LastingPower} (Cap: 3)");
                 SkillActive = true;
             }
-            if (modPlayer.LatentPower >= 1)
+            if (modPlayer.LatentPower >= 1 && modPlayer.ZinogreEssence < 2)
             {
                 caller.Reply($"Latent Power Level: {modPlayer.LatentPower} (Cap: 5)");
+                SkillActive = true;
+            }
+            if (modPlayer.LatentPower >= 1 && modPlayer.ZinogreEssence >= 2)
+            {
+                caller.Reply($"Latent Power Level: {modPlayer.LatentPower} (Cap: 7)");
                 SkillActive = true;
             }
             if (modPlayer.MailofHellfire >= 1)
