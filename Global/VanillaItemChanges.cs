@@ -181,7 +181,7 @@ namespace MHArmorSkills.Global
                     modPlayer.QuickSharpening += 1;
                     break;
                 case ItemID.PlatinumHelmet:
-                    modPlayer.Fortified = true;
+                    modPlayer.Fortified += 1;
                     break;
                 case ItemID.PlatinumChainmail:
                     modPlayer.Protection += 1;
@@ -199,7 +199,7 @@ namespace MHArmorSkills.Global
                     modPlayer.FireRes += 1;
                     break;
                 case ItemID.FossilPants:
-                    modPlayer.Fortified = true;
+                    modPlayer.Fortified += 1;
                     modPlayer.FireRes += 1;
                     break;
                 case ItemID.GladiatorHelmet:

@@ -16,11 +16,5 @@ namespace MHArmorSkills.Buffs.ArmorBuffs
             Main.debuff[Type] = true;
         }
 
-        public override void Update(Terraria.Player player, ref int buffIndex)
-        {
-            
-        }
     }
 }
-
-

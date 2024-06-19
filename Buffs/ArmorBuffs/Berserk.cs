@@ -14,12 +14,8 @@ namespace MHArmorSkills.Buffs.ArmorBuffs
             Main.buffNoSave[Type] = true;
             BuffID.Sets.NurseCannotRemoveDebuff[Type] = true;
         }
-
-        public override void Update(Terraria.Player player, ref int buffIndex)
-        {
-
-        }
     }
 }
+
 
 

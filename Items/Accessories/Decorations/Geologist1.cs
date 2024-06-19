@@ -2,7 +2,6 @@
 using Terraria.ModLoader;
 using Terraria.ID;
 using MHArmorSkills.MHPlayer;
-using MHArmorSkills.Buffs.ArmorBuffs;
 
 namespace MHArmorSkills.Items.Accessories.Decorations
 {
@@ -37,9 +36,8 @@ namespace MHArmorSkills.Items.Accessories.Decorations
                 
             }
             return false;
-        }
+        }     
     }
-    
 }
 
 

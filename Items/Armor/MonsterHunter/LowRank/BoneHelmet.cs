@@ -5,12 +5,17 @@ using Terraria.ID;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using Terraria.ModLoader;
 using MHArmorSkills.Items.Crafting_Materials.ArmorSphere;
+using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 {
     [AutoloadEquip(EquipType.Head)]
     public class BoneHelmet : ModItem
     {
+        public static readonly int Fortified = 1;
+        public static readonly int Decor1 = 1;
+
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Fortified,Decor1);
 
         public override void SetDefaults()
         {
@@ -24,9 +29,9 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         public override void UpdateEquip(Terraria.Player player)
         {
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.Fortified = true;
+            modPlayer.Fortified += Fortified;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += 1;
+            SlotPlayer.DecorationOneSlots += Decor1;
         }
 
         public override void AddRecipes()

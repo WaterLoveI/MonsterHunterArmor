@@ -5,16 +5,21 @@ using Terraria;
 using Terraria.ID;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 {
     [AutoloadEquip(EquipType.Head)]
     public class BrachydiosHelm : ModItem
     {
-        public static readonly int Skill1 = 3;
-        public static readonly int Skill2 = 2;
+        public static readonly int Damage = 5;
+        public static readonly int Spirit = 2;
+        public static readonly int BombBoost = 1;
+        public static readonly int Decor1 = 1;
 
-        
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage,Spirit, BombBoost,Decor1);
+
+
 
         public override void SetDefaults()
         {
@@ -27,12 +32,12 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.GetDamage<GenericDamageClass>() += 0.05f;
+            player.GetDamage<GenericDamageClass>() += Damage/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.Spirit += 2;
-            modPlayer.BombBoost += 1;
+            modPlayer.Spirit += Spirit;
+            modPlayer.BombBoost += BombBoost;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationTwoSlots += 1;
+            SlotPlayer.DecorationTwoSlots += Decor1;
         }
         public override void AddRecipes()
         {

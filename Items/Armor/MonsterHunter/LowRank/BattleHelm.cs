@@ -13,11 +13,11 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
     [AutoloadEquip(EquipType.Head)]
     public class BattleHelm : ModItem
     {
-        public static readonly int Skill1 = 1;
-        public static readonly int Skill2 = 2;
+        public static readonly int MeleeSpeed = 5;
+        public static readonly int AutoTracker = 1;
+        public static readonly int RazorSharp = 1;
 
-        
-
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(MeleeSpeed, AutoTracker,RazorSharp);
         public override void SetDefaults()
         {
             Item.width = 22;
@@ -29,10 +29,10 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.GetAttackSpeed<MeleeDamageClass>() += 0.05f;
+            player.GetAttackSpeed<MeleeDamageClass>() += MeleeSpeed/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.AutoTracker += 1;
-            modPlayer.RazorSharp += 1;
+            modPlayer.AutoTracker += AutoTracker;
+            modPlayer.RazorSharp += RazorSharp;
         }
         public override void AddRecipes()
         {

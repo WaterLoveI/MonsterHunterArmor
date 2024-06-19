@@ -1,4 +1,6 @@
-﻿using Terraria;
+﻿using MHArmorSkills.Items.Accessories.Decorations;
+using Terraria;
+using Terraria.ID;
 using Terraria.ModLoader;
 
 
@@ -78,14 +80,8 @@ namespace MHArmorSkills.Global
 
         public override bool CanAccessoryBeEquippedWith(Item equippedItem, Item incomingItem, Player player)
         {
-            // code that lets you equip multiple decors
-
-            bool isIncomingItemInList = MHLists.ArmorDecorations.Contains(incomingItem.type);
-            if (isIncomingItemInList)
-            {
-                return false;
-            }
-            if (!isIncomingItemInList)
+            // quick equipping accessories sends it to the last slot, idk why
+            if (!MHLists.ArmorDecorations.Contains(incomingItem.type))
             {
                 for (int i = 0; i < player.armor.Length; i++)
                 {
@@ -103,11 +99,26 @@ namespace MHArmorSkills.Global
         {
             // got lazy to copy paste to all the decor .cs
 
-            bool isIncomingItemInList = MHLists.ArmorDecorations.Contains(entity.type);
-            if (isIncomingItemInList)
+            bool OneSlot = MHLists.OneSlotDecorations.Contains(entity.type);
+            bool TwoSlot = MHLists.TwoSlotDecorations.Contains(entity.type);
+            bool ThreeSlot = MHLists.ThreeSlotDecorations.Contains(entity.type);
+            if (OneSlot)
             {
+                entity.rare = ItemRarityID.Green;
                 entity.maxStack = 9999;
                 entity.value = Item.sellPrice(0, 0, 50, 0);
+            }
+            if (TwoSlot)
+            {
+                entity.rare = ItemRarityID.LightRed;
+                entity.maxStack = 9999;
+                entity.value = Item.sellPrice(0, 0, 75, 0);
+            }
+            if (ThreeSlot)
+            {
+                entity.rare = ItemRarityID.LightPurple;
+                entity.maxStack = 9999;
+                entity.value = Item.sellPrice(0, 1, 0, 0);
             }
         }
 

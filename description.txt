@@ -5,7 +5,11 @@ There's no wiki right now so feel free to join the discord to ask questions and 
 Full Armor Set
 -Bone
 -Hornetaur
+-Basarios
+-Lavasioth
 -Sailor
+-Rathian
+-Nargacuga
 -Zinogre
 -Astalos
 -Glavenus
@@ -15,6 +19,9 @@ Full Armor Set
 Enemies
 -Bullfango
 -Bnahabra
+
+Commands:
+- /skills - this command shows you what skills are active on the player currently.
 
 Discord: https://discord.gg/un9UAmhrcd
 

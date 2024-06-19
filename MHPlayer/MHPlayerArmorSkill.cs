@@ -81,6 +81,9 @@ namespace MHArmorSkills.MHPlayer
         public int FireAttack;
         public float Foray;
         public int FreeElement;
+        public int FortifedAtk;
+        public int FortifedDef;
+        public int FortifedTimer;
         public int FreeMeal;
         public int Gatherer;
         public int Geologist;
@@ -214,6 +217,9 @@ namespace MHArmorSkills.MHPlayer
             FireRes = 0;
             Foray = 0;
             Fortified = false;
+            FortifedAtk = 0;
+            FortifedDef = 0;
+            FortifedTimer = 0;
             FreeElement = 0;
             FreeMeal = 0;
             Gatherer = 0;
@@ -640,6 +646,13 @@ namespace MHArmorSkills.MHPlayer
             {
                 int CDraw = CritDraw * 7;
                 ControlledCrit += CDraw;
+            }
+            #endregion
+            #region Fortified
+            if (Player.HasBuff(ModContent.BuffType<Fortified>()))
+            {
+                ControlledAttack += FortifedAtk;
+                Player.statDefense += FortifedDef;
             }
             #endregion
             #region Punish Draw
@@ -1725,7 +1738,7 @@ namespace MHArmorSkills.MHPlayer
             #region Fortified
             if (Fortified)
             {
-                Player.AddBuff(ModContent.BuffType<Fortified>(), 10 * 60 * 60);
+                Player.AddBuff(ModContent.BuffType<Fortified>(), FortifedTimer * 60 * 60);
             }
             #endregion
             BloodlustCount = 0;

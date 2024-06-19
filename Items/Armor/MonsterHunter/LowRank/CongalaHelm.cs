@@ -5,13 +5,17 @@ using Terraria;
 using Terraria.ID;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 {
     [AutoloadEquip(EquipType.Head)]
     public class CongalaHelm : ModItem
     {
+        public static readonly int FreeMeal = 2;
+        public static readonly int Mushroomt = 1;
 
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(FreeMeal, Mushroomt);
         public override void SetDefaults()
         {
             Item.width = 20;

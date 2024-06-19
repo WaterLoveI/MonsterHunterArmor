@@ -14,10 +14,13 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
     [AutoloadEquip(EquipType.Head)]
     public class BariothHelm : ModItem
     {
-        public static readonly int Skill1 = 1;
-        public static readonly int Skill2 = 2;
+        public static readonly int Movespeed = 10;
+        public static readonly int CritEye = 1;
+        public static readonly int IceAttack = 1;
+        public static readonly int Evasion = 1;
 
-        
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Movespeed, CritEye, IceAttack, Evasion);
+
 
         public override void SetDefaults()
         {
@@ -30,11 +33,11 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.moveSpeed += 0.1f;
+            player.moveSpeed += Movespeed/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.CritEye += 1;
-            modPlayer.IceAttack += 1;
-            modPlayer.Evasion += 1;
+            modPlayer.CritEye += CritEye;
+            modPlayer.IceAttack += IceAttack;
+            modPlayer.Evasion += Evasion;
         }
         public override void AddRecipes()
         {

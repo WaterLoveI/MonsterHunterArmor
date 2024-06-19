@@ -58,7 +58,7 @@ namespace MHArmorSkills.MHPlayer
         public int FleetFeet;
         public int Focus;
         public int Foray;
-        public bool Fortified;
+        public int Fortified;
         public int FreeElement;
         public int FreeMeal;
         public int FrostCraft;
@@ -149,6 +149,7 @@ namespace MHArmorSkills.MHPlayer
         {
             #region Skills
             ChameleosBlessing = 0;
+            HeatRes = 0;
             NegativeCrit = 0;
             TeostraBlessing = 0;
             KushalaBlessing = 0;
@@ -202,7 +203,7 @@ namespace MHArmorSkills.MHPlayer
             FishingExpert = 0;
             FleetFeet = 0;
             Foray = 0;
-            Fortified = false;
+            Fortified = 0;
             FreeElement = 0;
             FreeMeal = 0;
             FrostCraft = 0;
@@ -1141,9 +1142,24 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
             #region Fortified
-            if (Fortified)
+            if (Fortified >=1)
             {
                 modPlayer.Fortified = true;
+                modPlayer.FortifedAtk += 5;
+                modPlayer.FortifedDef += 5;
+                modPlayer.FortifedTimer += 5;
+                if (Fortified >= 2)
+                {
+                    modPlayer.FortifedAtk += 5;
+                    modPlayer.FortifedDef += 5;
+                    modPlayer.FortifedTimer += 5;
+                }
+                if (Fortified >= 3)
+                {
+                    modPlayer.FortifedAtk += 5;
+                    modPlayer.FortifedDef += 5;
+                    modPlayer.FortifedTimer += 5;
+                }
             }
             #endregion
             #region Free Element

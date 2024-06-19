@@ -12,11 +12,8 @@ namespace MHArmorSkills.Buffs.ArmorBuffs
             Main.buffNoSave[Type] = true;
         }
 
-        public override void Update(Terraria.Player player, ref int buffIndex)
-        {
-
-        }
     }
 }
+
 
 

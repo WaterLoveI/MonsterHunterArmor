@@ -13,10 +13,14 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
     [AutoloadEquip(EquipType.Legs)]
     public class AstalosGreaves : ModItem
     {
-        public static readonly int Skill1 = 1;
-        public static readonly int Skill2 = 1;
+        public static readonly int CritChance = 5;
+        public static readonly int Vault = 2;
+        public static readonly int Decor1 = 1;
+        public static readonly int Decor2 = 1;
 
-        
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(CritChance, Vault, Decor1, Decor2);
+
+
 
         public override void SetDefaults()
         {
@@ -29,12 +33,12 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.GetCritChance<GenericDamageClass>() += 5;
+            player.GetCritChance<GenericDamageClass>() += CritChance;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.Vault += 2;
+            modPlayer.Vault += Vault;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationTwoSlots += 1;
-            SlotPlayer.DecorationOneSlots += 1;
+            SlotPlayer.DecorationTwoSlots += Decor1;
+            SlotPlayer.DecorationOneSlots += Decor2;
         }
         public override void AddRecipes()
         {

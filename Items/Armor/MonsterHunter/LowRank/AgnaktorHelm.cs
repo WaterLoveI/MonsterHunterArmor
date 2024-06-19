@@ -1,22 +1,23 @@
 ﻿using MHArmorSkills.Global;
-using MHArmorSkills.Items.Consumables;
 using MHArmorSkills.Items.Crafting_Materials.ArmorSphere;
+using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using MHArmorSkills.MHPlayer;
 using Terraria;
 using Terraria.ID;
-using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
-using Terraria.ModLoader;
 using Terraria.Localization;
+using Terraria.ModLoader;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 {
     [AutoloadEquip(EquipType.Head)]
     public class AgnaktorHelm : ModItem
     {
-        public static readonly int Skill1 = 1;
-        public static readonly int Skill2 = 1;
+        public static readonly int CritChance = 5;
+        public static readonly int FireAttack = 1;
+        public static readonly int Guard = 2;
+        public static readonly int RazorSharp = 1;
 
-        
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(CritChance, FireAttack, Guard, RazorSharp);
 
         public override void SetDefaults()
         {
@@ -29,11 +30,11 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.GetCritChance<GenericDamageClass>() += 5;
+            player.GetCritChance<GenericDamageClass>() += CritChance;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.FireAttack += 1;
-            modPlayer.Guard += 2;
-            modPlayer.RazorSharp += 1;
+            modPlayer.FireAttack += FireAttack;
+            modPlayer.Guard += Guard;
+            modPlayer.RazorSharp += RazorSharp;
         }
         public override void AddRecipes()
         {

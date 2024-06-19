@@ -36,7 +36,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
         public override void AddRecipes()
         {
             CreateRecipe().
-                AddIngredient<AstalosHelm>().
+                AddIngredient<AstalosMail>().
                 AddIngredient<ThunderSac>(3).
                 AddIngredient<ZinogreJasper>().
                 AddIngredient<KingArmorSphere>(10).

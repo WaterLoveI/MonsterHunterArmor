@@ -248,9 +248,9 @@ namespace MHArmorSkills.Commands
                 caller.Reply($"Foray Level: {modPlayer.Foray} (Cap: 3)");
                 SkillActive = true;
             }
-            if (modPlayer.Fortified == true)
+            if (modPlayer.Fortified >= 1)
             {
-                caller.Reply($"Fortified Skill: Active");
+                caller.Reply($"Fortified Level: {modPlayer.Fortified} (Cap: 3)");
                 SkillActive = true;
             }
             if (modPlayer.FreeMeal >= 1)

@@ -27,7 +27,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
             player.GetDamage<GenericDamageClass>() += 0.10f;
             player.GetAttackSpeed<MeleeDamageClass>() += 0.2f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.Fortified = true;
+            modPlayer.Fortified += 1;
             modPlayer.Slugger += 1;
             modPlayer.PunishDraw += 1;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();

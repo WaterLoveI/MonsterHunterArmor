@@ -1,8 +1,7 @@
-﻿using Terraria;
-using Terraria.ModLoader;
+﻿using MHArmorSkills.MHPlayer;
+using Terraria;
 using Terraria.ID;
-using MHArmorSkills.MHPlayer;
-using MHArmorSkills.Buffs.ArmorBuffs;
+using Terraria.ModLoader;
 
 namespace MHArmorSkills.Items.Accessories.Decorations
 {
@@ -35,12 +34,12 @@ namespace MHArmorSkills.Items.Accessories.Decorations
             {
                 SlotPlayer.DecorationTwoSlots -= 1;
                 return true;
-                
+
             }
             return false;
         }
     }
-    
+
 }
 
 

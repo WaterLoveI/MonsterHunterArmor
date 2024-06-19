@@ -1,14 +1,143 @@
 Mods: {
 	MHArmorSkills: {
+		CommonItemTooltip: {
+			IncreaseDamage: "{0}% increased damage"
+			IncreaseCrit: "{0}% increased critical strike chance"
+			IncreaseMovement: "{0}% increased movement speed"
+			IncreaseMelee: "{0}% increased melee attack speed"
+			IncreaseMana: Increases maximum mana by {0}
+			IncreaseSummon: Increases your max number of minions by {0}
+			IncreaseSentry: Increases your max number of Sentry by {0}
+			IncreaseRegen: Increases your life regeneration by {0}
+			OneSlotDecor: "[○]x{0}"
+			TwoSlotDecor: "[○][○]x{0}"
+			ThreeSlotDecor: "[○][○][○]x{0}"
+			AffinitySliding: Increases the Affinity Sliding Skill by {0}
+			AdrenalineRush: Increases the Adrenaline Rush Skill by {0}
+			AquaticMobility: Increases the Aquatic Mobility Skill by {0}
+			Artillery: Increases the Artillery Skill by {0}
+			AttackBoost: Increases the Attack Boost Skill by {0}
+			AutoTracker: Increases the Auto Tracker Skill by {0}
+			AutoReload: Increases the Auto Reload Skill by {0}
+			Berserk: Increases the Berserk Skill by {0}
+			BladehoneScale: Increases the Bladehone Scale Skill by {0}
+			Bleeding: Activates the Bleeding Resistance Skill
+			Blightproof: Increases the Blight Resistance Skill by {0}
+			Bloodlust: Increases the Bloodlust Skill by {0}
+			BloodRite: Increases the Blood Rite Skill by {0}
+			BombBoost: Increases the Bomb Boost Skill by {0}
+			BubbleDance: Increases the Bubble Dance Skill by {0}
+			Carving: Increases the Carving Skill by {0}
+			ChallengeSheath: Increases the Challenge Sheath Skill by {0}
+			ChameleosBlessing: Increases the Chameleos Blessing Skill by {0}
+			CliffHanger: Increases the Cliff Hanger Skill by {0}
+			Coalescence: Increases the Coalescence Skill by {0}
+			ColdRes: Increases the Cold Resistance Skill by {0}
+			Constitution: Increases the Constitution Skill by {0}
+			CounterStrike: Increases the Counter Strike Skill by {0}
+			CRangePlus: Activates the Close Range Plus Skill by {0}
+			CritDraw: Increases the Critical Draw Skill by {0}
+			CritElement: Increases the Critical Element Skill by {0}
+			CritEye: Increases the Critical Eye Skill by {0}
+			CriticalBoost: Increases the Critical Boost Skill by {0}
+			DeadEye: Increases the Dead Eye Skill by {0}
+			DefenseBoost: Increases the Defense Boost Skill by {0}
+			Defiance: Increases the Defiance Skill by {0}
+			DefLock: Increases the Defense Lock Skill by {0}
+			Diversion: Increases the Diversion Skill by {0}
+			Elemental: Increases the Elemental Damage Skill by {0}
+			Embolden: Increases the Embolden Skill by {0}
+			EvadeDistance: Increases the Evade Distance Skill by {0}
+			Evasion: Increases the Evasion Skill by {0}
+			Fate: Increases the Fate Skill by {0}
+			Fencing: Increases the Fencing Skill by {0}
+			FireAttack: Increases the Fire Attack Skill by {0}
+			FireRes: Increases the Fire Resistance Skill by {0}
+			FishingExpert: Increases the Fishing Expert Skill by {0}
+			Foray: Increases the Foray Skill by {0}
+			Fortified: Increases the Fortified Skill by {0}
+			FreeMeal: Increases the Free Meal Skill by {0}
+			Gathering: Increases the Gathering Skill by {0}
+			Geologist: Increases the Geologist Skill by {0}
+			Gluttony: Increases the Gluttony Skill by {0}
+			Grinder: Increases the Grinder Skill by {0}
+			Guard: Increases the Guard Skill by {0}
+			GuardUp: Increases the Guard Up Skill by {0}
+			Guts: Increases the Guts Skill by {0}
+			Handicraft: Increases the Handicraft Skill by {0}
+			HastenRecovery: Increases the Hasten Recovery Skill by {0}
+			Health: Increases the Health Boost Skill by {0}
+			HeatRes: Increases the Heat Resistance Skill by {0}
+			Heroics: Increases the Heroics Skill by {0}
+			HeroShield: Increases the Hero Shield Skill by {0}
+			HoneyHunter: Increases the Honey Hunter Skill by {0}
+			IceAttack: Increases the Ice Attack Skill by {0}
+			IceRes: Increases the Ice Resistance Skill by {0}
+			IntrepidHeart: Activates the Intrepid Heart Skill
+			JumpMaster: Increases the Jump Master Skill by {0}
+			KushalaBlessing: Increases the Kushala Blessing Skill by {0}
+			LastingPower: Increases the Lasting Power Skill by {0}
+			LatentPower: Increases the Latent Power Skill by {0}
+			MailOfHellfire: Increases the Mail of Hellfire Skill by {0}
+			MastersTouch: Increases the Master's Touch Skill by {0}
+			Mushroomancer: Increases the Mushroomancer Skill by {0}
+			NegativeCrit: Increases the Negative Critical Bonus Skill by {0}
+			NormalUp: Increases the Normal Up Skill by {0}
+			OffensiveGuard: Increases the Offensive Guard Skill by {0}
+			PelletUp: Increases the Pellet Up Skill by {0}
+			PierceUp: Increases the Pierce Up Skill by {0}
+			Poison: Increases the Poison Resistance Skill by {0}
+			PoisonCoatingPlus: Activates the Poison Coating Plus Skill
+			PolarHunter: Increases the Polar Hunter Skill by {0}
+			Protection: Increases the Protection Skill by {0}
+			ProtectivePolish: Increases the Protective Polish Skill by {0}
+			PunishDraw: Increases the Punish Draw Skill by {0}
+			QuickSharpening: Increases the Quick Sharpening Skill by {0}
+			QuickSheath: Increases the Quick Sheath Skill by {0}
+			RapidFire: Increases the Rapid Fire Skill by {0}
+			RazorSharp: Increases the Razor Sharp Skill by {0}
+			RecUp: Increases the Rec Up Skill by {0}
+			RecoverySpd: Increases the Recovery Speed Skill by {0}
+			Resentment: Increases the Resentment Skill by {0}
+			Resuscitate: Increases the Resuscitate Skill by {0}
+			RockSteady: Activates the Rock Steady Skill
+			Scholar: Increases the Scholar Skill by {0}
+			Sneak: Increases the Sneak Skill by {0}
+			SneakAttack: Increases the Sneak Attack Skill by {0}
+			SpareShot: Increases the Spare Shot Skill by {0}
+			SpeedEating: Increases the Speed Eating Skill by {0}
+			SpeedSetup: Increases the Speed Setup Skill by {0}
+			Spirit: Increases the Spirit Skill by {0}
+			SpiritbirdsCall: Activates the Spiritbird's Call Skill
+			StamRecovery: Increases the Stamina Recovery Skill by {0}
+			StatusTrigger: Increases the Status Trigger Skill by {0}
+			Strife: Increases the Strife Skill by {0}
+			Tenderizer: Increases the Tenderizer Skill by {0}
+			TeostraBlessing: Increases the Teostra Blessing Skill by {0}
+			ThunderAttack: Increases the Thunder Attack Skill by {0}
+			ThunderRes: Increases the Thunder Resistance Skill by {0}
+			TremorRes: Increases the Tremor Resistance Skill by {0}
+			TropicsHunter: Increases the Tropics Hunter Skill by {0}
+			Unscathed: Increases the Unscathed Skill by {0}
+			Vault: Increases the Vault Skill by {0}
+			WaterAttack: Increases the Water Attack Skill by {0}
+			WaterRes: Increases the Water Resistance Skill by {0}
+			Windproof: Increases the Windproof Skill by {0}
+			Vanity: Works even in the vanity slot.
+			OneSlotNoNumber: "[○]"
+			TwoSlotNoNumber: "[○][○]"
+			ThreeSlotNoNumber: "[○][○][○]"
+		}
+
 		Items: {
 			ArzurosHelm: {
 				DisplayName: Arzuros Helm
 				Tooltip:
 					'''
-					Increases melee attack speed by 5%.
-					Increase the Defense Boost Skill by 1.
-					Increase the Honey Hunter Skill by 1.
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseMelee}
+					{$CommonItemTooltip.HoneyHunter@1}
+					{$CommonItemTooltip.DefenseBoost@2}
+					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -16,10 +145,43 @@ Mods: {
 				DisplayName: Basarios Helmet
 				Tooltip:
 					'''
-					Increases Damage by 5%.
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.Guard@1}
+					{$CommonItemTooltip.Poison@2}
+					{$CommonItemTooltip.TwoSlotDecor@3}
+					'''
+			}
+
+			BasariosGreavesX: {
+				DisplayName: Basarios Greaves X
+				Tooltip:
+					'''
+					Increases Movement Speed by 15%.
+					Increase the Defense Boost Skill by 3.
+					[○][○][○]x2
+					'''
+			}
+
+			BasariosGreavesU: {
+				DisplayName: Basarios Greaves U
+				Tooltip:
+					'''
+					Increases Damage by 5%
+					Increases Movement Speed by 15%.
 					Increase the Guard Skill by 2.
-					Increase the Anti Poison Skill by 1.
-					[○][○]x1
+					Increase the Tremor Res Skill by 2.
+					[○][○][○]x1
+					'''
+			}
+
+			BasariosGreaves: {
+				DisplayName: Basarios Greaves
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseMovement}
+					{$CommonItemTooltip.Guard@1}
+					{$CommonItemTooltip.HeatRes@2}
+					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -27,28 +189,28 @@ Mods: {
 				DisplayName: Bone Helmet
 				Tooltip:
 					'''
-					Grants the Fortified Skill.
-					[○]x1
+					{$CommonItemTooltip.Fortified}
+					{$CommonItemTooltip.OneSlotDecor@1}
 					'''
 			}
 
 			BoneMail: {
-				DisplayName: Bone Helmet
+				DisplayName: Bone Mail
 				Tooltip:
 					'''
-					Increase the Tropics Hunter Skill by 1.
-					[○]x1
+					{$CommonItemTooltip.TropicsHunter}
+					{$CommonItemTooltip.OneSlotDecor@1}
 					'''
 			}
 
 			BoneGreaves: {
 				DisplayName: Bone Helmet
-				Tooltip: "[○]x2"
+				Tooltip: "{$CommonItemTooltip.OneSlotDecor}"
 			}
 
 			BullfangoMask: {
 				DisplayName: Bullfango Mask
-				Tooltip: Increase the Attack Boost Skill by 2.
+				Tooltip: "{$CommonItemTooltip.AttackBoost}"
 			}
 
 			GypcerosHelm: {
@@ -143,10 +305,11 @@ Mods: {
 				DisplayName: Ceanataur Helm
 				Tooltip:
 					'''
-					Increases melee critical strike chance by 5%.
-					Increase the Critical Eye Skill by 1.
-					Increase the Razor Sharp Skill by 1.
-					[○]x1
+					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.CritEye@1}
+					{$CommonItemTooltip.RazorSharp@2}
+					{$CommonItemTooltip.OneSlotDecor@3}
+
 					'''
 			}
 
@@ -187,9 +350,10 @@ Mods: {
 				DisplayName: Barroth Helm
 				Tooltip:
 					'''
-					Increases Damage by 5%.
-					Increase the Attack Boost Skill by 2.
-					Increase the Defense Boost Skill by 2.
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.AttackBoost@1}
+					{$CommonItemTooltip.DefenseBoost@2}
+
 					'''
 			}
 
@@ -213,8 +377,9 @@ Mods: {
 				DisplayName: Battle Helm
 				Tooltip:
 					'''
-					Increase the Autotracker Skill by 1.
-					Increase the Razor Sharp Skill by 1.
+					{$CommonItemTooltip.IncreaseMelee}
+					{$CommonItemTooltip.AutoTracker@1}
+					{$CommonItemTooltip.RazorSharp@2}
 					'''
 			}
 
@@ -279,10 +444,10 @@ Mods: {
 				DisplayName: Barioth Helm
 				Tooltip:
 					'''
-					Increase movement speed by 10%. 
-					Increase the Ice Attack Skill by 1.
-					Increase the Critical Eye Skill by 1.
-					Increase the Evasion Skill by 1.
+					{$CommonItemTooltip.IncreaseMovement}
+					{$CommonItemTooltip.CritEye@1}
+					{$CommonItemTooltip.IceAttack@2}
+					{$CommonItemTooltip.Evasion@3}
 					'''
 			}
 
@@ -329,10 +494,10 @@ Mods: {
 				DisplayName: Brachydios Helm
 				Tooltip:
 					'''
-					Increase damage by 5%. 
-					Increase the Spirit Skill by 2.
-					Increase the Bomb Boost Skill by 1.
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.Spirit@1}
+					{$CommonItemTooltip.BombBoost@2}
+					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -456,9 +621,9 @@ Mods: {
 				DisplayName: Astalos Helm
 				Tooltip:
 					'''
-					Increase Movement speed by 10%. 
-					Increase the Thunder Attack Skill by 4.
-					[○]x1
+					{$CommonItemTooltip.IncreaseMovement}
+					{$CommonItemTooltip.ThunderAttack@1}
+					{$CommonItemTooltip.OneSlotDecor@2}
 					'''
 			}
 
@@ -466,10 +631,10 @@ Mods: {
 				DisplayName: Astalos Mail
 				Tooltip:
 					'''
-					Increase Critical Strike Chance by 5%
-					Increase the Windproof Skill by 2.
-					Increase the Thunder Attack Skill by 1.
-					[○][○]x2
+					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.Windproof@1}
+					{$CommonItemTooltip.ThunderAttack@2}
+					{$CommonItemTooltip.TwoSlotDecor@2}
 					'''
 			}
 
@@ -477,10 +642,11 @@ Mods: {
 				DisplayName: Astalos Greaves
 				Tooltip:
 					'''
-					Increase Critical Strike Chance by 5%
-					Increase the Vault Skill by 2.
-					[○]x1
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.Vault@1}
+					{$CommonItemTooltip.OneSlotDecor@2}
+					{$CommonItemTooltip.TwoSlotDecor@3}
+
 					'''
 			}
 
@@ -519,8 +685,9 @@ Mods: {
 				DisplayName: Congala Helm
 				Tooltip:
 					'''
-					Increase the Free Meal Skill by 2.
-					Increase the Mushroomancer Skill by 1.
+					{$CommonItemTooltip.FreeMeal}
+					{$CommonItemTooltip.Mushroomancer@1}
+
 					'''
 			}
 
@@ -540,10 +707,10 @@ Mods: {
 				DisplayName: Akantor Helm
 				Tooltip:
 					'''
-					Increase Damage by 10%.
-					Increase Critical Strike Chance by 15%. 
-					Increase the Critical Eye Skill by 3.
-					Increase the Fire Attack Skill by 2.
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.CritEye@2}
+					{$CommonItemTooltip.FireAttack@3}
 					'''
 			}
 
@@ -551,10 +718,10 @@ Mods: {
 				DisplayName: Agnaktor Helm
 				Tooltip:
 					'''
-					Increase Critical Strike Chance by 5%. 
-					Increase the Fire Attack Skill by 1.
-					Increase the Guard Skill by 2.
-					Increase the Razor Sharp Skill by 1.
+					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.FireAttack@1}
+					{$CommonItemTooltip.Guard@2}
+					{$CommonItemTooltip.RazorSharp@3}
 					'''
 			}
 
@@ -1532,10 +1699,11 @@ Mods: {
 				DisplayName: Basarios Mail
 				Tooltip:
 					'''
-					Increases Melee Speed by 5%.
-					Increase the Defense Boost Skill by 2.
-					Increase the Diversion Skill by 1.
-					[○]x1
+					{$CommonItemTooltip.IncreaseMelee}
+					{$CommonItemTooltip.DefenseBoost@1}
+					{$CommonItemTooltip.Diversion@2}
+					{$CommonItemTooltip.OneSlotDecor@3}
+
 					'''
 			}
 
@@ -1595,6 +1763,7 @@ Mods: {
 					[○]x1
 					'''
 			}
+
 			NargacugaGreaves: {
 				DisplayName: Nargacuga Greaves
 				Tooltip:
