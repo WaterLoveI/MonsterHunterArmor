@@ -156,9 +156,9 @@ Mods: {
 				DisplayName: Basarios Greaves X
 				Tooltip:
 					'''
-					Increases Movement Speed by 15%.
-					{$CommonItemTooltip.DefenseBoost}
-					[○][○][○]x2
+					{$CommonItemTooltip.IncreaseMovemennt}
+					{$CommonItemTooltip.DefenseBoost@1}
+					{$CommonItemTooltip.ThreeSlotDecor@2}
 					'''
 			}
 
@@ -167,10 +167,10 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increases Movement Speed by 15%.
-					{$CommonItemTooltip.Guard}
-					Increase the Tremor Res Skill by 2.
-					[○][○][○]x1
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.Guard@2}
+					{$CommonItemTooltip.TremorRes@3}
+					{$CommonItemTooltip.ThreeSlotDecor@4}
 					'''
 			}
 
@@ -217,10 +217,10 @@ Mods: {
 				DisplayName: Gypceros Helm
 				Tooltip:
 					'''
-					Increases movement speed by 5%.
-					Increase the Free Meal Skill by 2.
-					Increase the Anti Poison Skill by 1.
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseMovement}
+					{$CommonItemTooltip.FreeMeal@1}
+					{$CommonItemTooltip.Poison@2}
+					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -228,8 +228,8 @@ Mods: {
 				DisplayName: Jaggi Mask
 				Tooltip:
 					'''
-					Increase the Attack Boost Skill by 1.
-					Increase the Critical Eye Skill by 1.
+					{$CommonItemTooltip.AttackBoost}
+					{$CommonItemTooltip.CritEye@1}
 					'''
 			}
 
@@ -237,8 +237,8 @@ Mods: {
 				DisplayName: Moofah Head
 				Tooltip:
 					'''
-					Increase the Thunder Attack Skill by 2.
-					Increase the Gathering Skill by 1.
+					{$CommonItemTooltip.ThunderAttack}
+					{$CommonItemTooltip.Gathering@1}
 					'''
 			}
 
@@ -246,9 +246,9 @@ Mods: {
 				DisplayName: Nargacuga Helm
 				Tooltip:
 					'''
-					Increases Critical Strike Chance by 5%.
-					Increase the Evasion Skill by 2.
-					Increase the Evasion Distance Skill by 2.
+					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.Evasion@1}
+					{$CommonItemTooltip.EvadeDistance@2}
 					'''
 			}
 
@@ -257,8 +257,8 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase the Health Skill by 2.
-					Increase the Protection Skill by 2.
+					{$CommonItemTooltip.Health@1}
+					{$CommonItemTooltip.Protection@2}
 					'''
 			}
 
@@ -267,7 +267,7 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.DefenseBoost}
-					Increase the Bomb Boost Skill by 1.
+					{$CommonItemTooltip.BombBoost@1}
 					'''
 			}
 
@@ -276,9 +276,9 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase movement speed by 15%.
-					Increase the Bomb Boost Skill by 3.
-					Increase the Artillery Skill by 1.
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.BombBoost@2}
+					{$CommonItemTooltip.Artillery@3}
 					'''
 			}
 
@@ -286,8 +286,8 @@ Mods: {
 				DisplayName: Yukumo Kasa
 				Tooltip:
 					'''
-					Increase the Critical Eye Skill by 1.
-					[○]x1
+					{$CommonItemTooltip.CritEye}
+					{$CommonItemTooltip.OneSlotDecor@1}
 					'''
 			}
 
@@ -296,8 +296,8 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase the Ice Attack Skill by 3.
-					Increase the Polar Hunter Skill by 1.
+					{$CommonItemTooltip.IceAttack@1}
+					{$CommonItemTooltip.PolarHunter@2}
 					'''
 			}
 
@@ -317,10 +317,10 @@ Mods: {
 				DisplayName: Kutku Helm
 				Tooltip:
 					'''
-					Increases critical strike chance by 3%.
-					Increase the Attack Boost Skill by 1.
-					Increase the Fire Attack Skill by 1.
-					[○]x2
+					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.AttackBoost@1}
+					{$CommonItemTooltip.FireAttack@2}
+					{$CommonItemTooltip.OneSlotDecor@3}
 					'''
 			}
 
@@ -339,10 +339,10 @@ Mods: {
 				DisplayName: Zinogre Helm
 				Tooltip:
 					'''
-					Increases critical strike chance by 5%.
-					Increase the Latent Power Skill by 2.
-					Increase the Thunder Attack Skill by 1.
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.LatentPower@1}
+					{$CommonItemTooltip.ThunderAttack@2}.
+					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -359,17 +359,17 @@ Mods: {
 
 			KonchuHelm: {
 				DisplayName: Konchu Helm
-				Tooltip: Increase the Protection Skill by 1.
+				Tooltip: "{$CommonItemTooltip.DefenseBoost}"
 			}
 
 			SeltasHelm: {
 				DisplayName: Seltas Helm
 				Tooltip:
 					'''
-					Increases critical strike chance by 5%.
-					Increase the Autotracker Skill by 2.
-					{$CommonItemTooltip.Guard}
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.AutoTracker@1}
+					{$CommonItemTooltip.Guard@2}
+					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -387,10 +387,10 @@ Mods: {
 				DisplayName: Blue Kutku Helm
 				Tooltip:
 					'''
-					Increase Critical Strike Chance by 5%. 
-					Increase the Fire Attack Skill by 2.
-					Increase the Critical Eye Skill by 2.
-					[○]x1
+					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.CritEye@1}
+					{$CommonItemTooltip.FireAttack@2}
+					{$CommonItemTooltip.OneSlotDecor@3}
 					'''
 			}
 
@@ -399,9 +399,9 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase the Tenderizer Skill by 2.
-					Increase the Attack Boost Skill by 1.
-					[○]x1
+					{$CommonItemTooltip.Tenderizer@1}
+					{$CommonItemTooltip.AttackBoost@2}
+					{$CommonItemTooltip.OneSlotDecor@3}
 					'''
 			}
 
@@ -409,10 +409,10 @@ Mods: {
 				DisplayName: Vaik Helm
 				Tooltip:
 					'''
-					Increase Melee Attack Speed by 5%. 
-					Increase the Water Attack Skill by 1.
-					Increase the Aqua Mobility Skill by 1.
-					Increase the Razor Sharp Skill by 1.
+					{$CommonItemTooltip.IncreaseMelee} 
+					{$CommonItemTooltip.AquaticMobility@1}
+					{$CommonItemTooltip.RqzorSharp@2}
+					{$CommonItemTooltip.WaterAttack@3}
 					'''
 			}
 
@@ -420,12 +420,12 @@ Mods: {
 				DisplayName: Kirin Helm
 				Tooltip:
 					'''
-					Increase Critical Strike Chance by 15%. 
-					Increase Movement Speed by 15%
-					Increase the Thunder Attack Skill by 1.
-					Increase the Lasting Power Skill by 1.
-					Increase the Protection Skill by 1.
-					Increase the Blightproof Skill by 2.
+					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.Movement@1}
+					{$CommonItemTooltip.Blightproof@2}
+					{$CommonItemTooltip.LastingPower@3}
+					{$CommonItemTooltip.Protection@4}
+					{$CommonItemTooltip.ThunderAttack@5}
 					'''
 			}
 
@@ -433,10 +433,10 @@ Mods: {
 				DisplayName: Sailor Hat
 				Tooltip:
 					'''
-					Increase Movement Speed by 5%. 
-					Increase the Evasion Skill by 1.
-					Increase the Fate Skill by 1.
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseMovement}
+					{$CommonItemTooltip.Evasion@1}
+					{$CommonItemTooltip.Fate@2}
+					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -455,8 +455,8 @@ Mods: {
 				DisplayName: Moss Swine Hat
 				Tooltip:
 					'''
-					Increase the Mushroomancer Skill by 1.
-					[○]x1
+					{$CommonItemTooltip.Mushroomancer}
+					{$CommonItemTooltip.OneSlotDecor@1}
 					'''
 			}
 
@@ -464,8 +464,8 @@ Mods: {
 				DisplayName: Hornetaur Helm
 				Tooltip:
 					'''
-					Increase the Spare Shot Skill by 1.
-					Increase the Protection Skill by 1.
+					{$CommonItemTooltip.Protection}
+					{$CommonItemTooltip.SpareShot@1}
 					'''
 			}
 
@@ -473,9 +473,9 @@ Mods: {
 				DisplayName: Lavasioth Helm
 				Tooltip:
 					'''
-					Increase Melee Speed by 5%. 
-					Increase the Fire Attack Skill by 3.
-					[○]x2
+					{$CommonItemTooltip.IncreaseMelee}
+					{$CommonItemTooltip.FireAttack@1}
+					{$CommonItemTooltip.OneSlotDecor@2}
 					'''
 			}
 
@@ -483,10 +483,10 @@ Mods: {
 				DisplayName: Zamtrios Helm
 				Tooltip:
 					'''
-					Increase Movement speed by 10%. 
-					Increase the Recovery Speed Skill by 2.
-					Increase the Ice Attack Skill by 1.
-					[○]x1
+					{$CommonItemTooltip.IncreaseMovement} 
+					{$CommonItemTooltip.RecoverySpd@1}.
+					{$CommonItemTooltip.IceAttack@2}
+					{$CommonItemTooltip.OneSlotDecor@3}
 					'''
 			}
 
@@ -505,10 +505,10 @@ Mods: {
 				DisplayName: Seregios Helm
 				Tooltip:
 					'''
-					Increase Critical Strike Chance by 5%. 
-					Increase the Bladehone Scale Skill by 1.
-					Increase the Bleeding Skill by 1.
-					[○][○]x2
+					{$CommonItemTooltip.IncreaseCrit} 
+					{$CommonItemTooltip.BladehoneScale@1}
+					{$CommonItemTooltip.Bleeding@2}
+					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -516,10 +516,10 @@ Mods: {
 				DisplayName: Mizutsune Helm
 				Tooltip:
 					'''
-					Increase Movement speed by 10%. 
-					Increase the Bubble Dance Skill by 2.
-					[○]x2
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseMovement}
+					{$CommonItemTooltip.BubbleDance@1}
+					{$CommonItemTooltip.OneSlotDecor@2}
+					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -528,10 +528,10 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Critical Strike Chance by 12%.
-					Increase the Bubble Dance Skill by 2.
-					Increase the Resusitate Skill by 2.
-					[○][○][○]x1
+					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.BubbleDance@2}
+					{$CommonItemTooltip.Resusitate@3}
+					{$CommonItemTooltip.ThreeSlotDecor@4}
 					'''
 			}
 
@@ -539,10 +539,10 @@ Mods: {
 				DisplayName: Mizutsune Mail
 				Tooltip:
 					'''
-					Increase Movement speed by 10%. 
-					Increase the Water Attack Skill by 2.
-					Increase the Bubble Dance Skill by 1.
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseMovement}
+					{$CommonItemTooltip.WaterAttack@1}
+					{$CommonItemTooltip.BubbleDance@2}
+					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -550,10 +550,10 @@ Mods: {
 				DisplayName: Mizutsune Greaves
 				Tooltip:
 					'''
-					Increase Movement speed by 10%. 
-					Increase the Water Attack Skill by 2.
-					Increase the Constitution Skill by 1.
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseMovement}
+					{$CommonItemTooltip.WaterAttack@1}
+					{$CommonItemTooltip.Constitution@2}
+					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -562,11 +562,11 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Movement speed by 15%. 
-					Increase the Constitution Skill by 2.
-					Increase the Bubble Dance Skill by 1.
-					[○]x1
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.Constitution@2}
+					{$CommonItemTooltip.BubbleDance@3}
+					{$CommonItemTooltip.OneSlotDecor@4}
+					{$CommonItemTooltip.TwoSlotDecor@5}
 					'''
 			}
 
@@ -609,11 +609,11 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Movement Speed by 15%. 
-					Increase the Spirit Skill by 2.
-					Increase the Razor Sharp Skill by 1.
-					[○]x1
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.Spirit@2}
+					{$CommonItemTooltip.RazorSharp@3}
+					{$CommonItemTooltip.OneSlotDecor@4}
+					{$CommonItemTooltip.TwoSlotDecor@5}
 					'''
 			}
 
