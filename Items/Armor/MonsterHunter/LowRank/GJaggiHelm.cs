@@ -5,16 +5,19 @@ using Terraria;
 using Terraria.ID;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 {
     [AutoloadEquip(EquipType.Head)]
     public class GJaggiHelm : ModItem
     {
-        public static readonly int Skill1 = 1;
-        public static readonly int Skill2 = 1;
+        public static readonly int Movement = 5;
+        public static readonly int AttackBoost = 2;
+        public static readonly int Gluttony = 2;
+        public static readonly int Decor = 1;
 
-        
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Movement, AttackBoost, Gluttony, Decor);
 
         public override void SetDefaults()
         {
@@ -27,12 +30,12 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.moveSpeed += 0.05f;
+            player.moveSpeed += Movement/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.Attack += 2;
-            modPlayer.Gluttony += 1;
+            modPlayer.Attack += AttackBoost;
+            modPlayer.Gluttony += Gluttony;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += 1;
+            SlotPlayer.DecorationOneSlots += Decor;
         }
         public override void AddRecipes()
         {

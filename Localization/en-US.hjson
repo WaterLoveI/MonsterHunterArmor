@@ -328,10 +328,10 @@ Mods: {
 				DisplayName: Gammoth Helm
 				Tooltip:
 					'''
-					Increases Damage by 5%.
-					Increase the Polar Hunter Skill by 2.
-					[○]x1
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.PolarHunter@1}
+					{$CommonItemTooltip.OneSlotDecor@2}
+					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -574,10 +574,10 @@ Mods: {
 				DisplayName: Glavenus Helm
 				Tooltip:
 					'''
-					Increase damage by 5%. 
-					Increase the Handicraft Skill by 2.
-					Increase the Razor Sharp Skill by 1.
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.Handicraft@1}
+					{$CommonItemTooltip.RazorSharp@2}
+					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -585,10 +585,10 @@ Mods: {
 				DisplayName: Glavenus Mail
 				Tooltip:
 					'''
-					Increase Critical Strike Chance by 5%. 
-					Increase the Attack Boost Skill by 1.
-					Increase the Razor Sharp Skill by 1.
-					[○][○]x2
+					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.AttackBoost@1}
+					{$CommonItemTooltip.RazorSharp@2}
+					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -596,11 +596,11 @@ Mods: {
 				DisplayName: Glavenus Greaves
 				Tooltip:
 					'''
-					Increase Movement Speed by 5%. 
-					Increase the Evasion Skill by 1.
-					Increase the Fire Attack Skill by 1.
-					Increase the Razor Sharp Skill by 1.
-					[○]x1
+					{$CommonItemTooltip.IncreaseMovement}
+					{$CommonItemTooltip.FireAttack@1}
+					{$CommonItemTooltip.Handicraft@2}
+					{$CommonItemTooltip.RazorSharp@3}
+					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
 
@@ -665,10 +665,10 @@ Mods: {
 				DisplayName: Damascus Helm
 				Tooltip:
 					'''
-					Increase Damage by 7%. 
-					Increase the Protective Polish Skill by 2.
-					Increase the Razor Sharp Skill by 2.
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.ProtectivePolish@1}
+					{$CommonItemTooltip.RazorSharp@2}
+					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -729,10 +729,10 @@ Mods: {
 				DisplayName: Great Jaggi Helm
 				Tooltip:
 					'''
-					Increase Movement speed by 5%.
-					Increase the Attack Boost Skill by 2.
-					Increase the Gluttony Skill by 1.
-					[○]x1
+					{$CommonItemTooltip.IncreaseMovement}
+					{$CommonItemTooltip.AttackBoost@1}
+					{$CommonItemTooltip.Gluttony@2}
+					{$CommonItemTooltip.OneSlotDecor@3}
 					'''
 			}
 
@@ -1354,10 +1354,10 @@ Mods: {
 				DisplayName: Gammoth Greaves
 				Tooltip:
 					'''
-					Increase Movement Speed by 7%
-					Increase the Attack Boost Skill by 1.
-					Increase the Polar Hunter Skill by 1.
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseMovement}
+					{$CommonItemTooltip.AttackBoost@1}
+					{$CommonItemTooltip.PolarHunter@2}
+					{$CommonItemTooltip.OneSlotDecor@3}
 					'''
 			}
 
@@ -1575,9 +1575,9 @@ Mods: {
 				DisplayName: Droth Greaves
 				Tooltip:
 					'''
-					Increases Movement Speed by 7%.
-					Increase the Water Resistance Skill by 2.
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseMovement}
+					{$CommonItemTooltip.WaterRes@1}
+					{$CommonItemTooltip.TwoSlotDecor@2}
 					'''
 			}
 
@@ -1668,6 +1668,20 @@ Mods: {
 					Increase the Recovery Up Skill by 1.
 					Increase the Resentment Skill by 1.
 					[○]x1
+					'''
+			}
+
+			LavasiothGreavesX: {
+				DisplayName: Lavasioth Greaves X
+				Tooltip:
+					'''
+					Increases Damage by 10%
+					Increases Movement Speed by 7%.
+					Increases life regen by 1.
+					Increase the Fortifed Skill by 1.
+					Increase the Recovery Up Skill by 1.
+					Increase the Resentment Skill by 1.
+					[○][○]x1
 					'''
 			}
 
@@ -1804,10 +1818,10 @@ Mods: {
 				DisplayName: Gammoth Mail
 				Tooltip:
 					'''
-					Increases Damage by 5%.
-					Increase the Attack Boost Skill by 2.
-					Increase the Tremor Res Skill by 2.
-					[○]x1
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.AttackBoost@1}
+					{$CommonItemTooltip.TremorRes@2}
+					{$CommonItemTooltip.OneSlotDecor@3}
 					'''
 			}
 
@@ -3960,11 +3974,6 @@ Mods: {
 					[○][○][○]
 					'''
 			}
-
-			LavasiothGreavesX: {
-				DisplayName: Lavasioth Greaves X
-				Tooltip: ""
-			}
 		}
 
 		NPCs: {
@@ -3974,6 +3983,21 @@ Mods: {
 			BnahabraBrown.DisplayName: Bnahabra
 			BnahabraGreen.DisplayName: Bnahabra
 			BnahabraRed.DisplayName: Bnahabra
+
+			Handler: {
+				DisplayName: Handler
+
+				TownNPCMood: {
+					Content: I am content.
+					NoHome: I hate not having a home.
+					FarFromHome: I am too far from home.
+					LoveSpace: I love having so much space.
+					DislikeCrowded: I dislike how crowded I am.
+					HateCrowded: I hate how crowded I am.
+					LikeNPC_Princess: I like {NPCName}.
+					Princess_LovesNPC: I like {NPCName}.
+				}
+			}
 		}
 
 		Projectiles: {

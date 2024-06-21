@@ -10,16 +10,20 @@ namespace MHArmorSkills.MHPlayer
     public partial class ArmorSkills : ModPlayer
     {
         #region SKills
+        public bool AntiBleeding;
+        public bool Autoreload;
+        public bool CRangePlus;
+        public bool HeavenSent;
+        public bool IntrepidHeart;
+        public bool PoisonCPlus;
+        public bool RockSteady;
+        public bool SpiritBirdsCall;
+        public int AdrenalineRush;
         public int AffinitySliding;
         public int AMobility;
-        public bool AntiBleeding;
-        public int AdrenalineRush;
-        public int StatusTrigger;
         public int AntiPoison;
-        public int NegativeCrit;
         public int Artillery;
         public int Attack;
-        public bool Autoreload;
         public int AutoTracker;
         public int Berserk;
         public int BladeScaleHone;
@@ -28,23 +32,26 @@ namespace MHArmorSkills.MHPlayer
         public int BloodRite;
         public int BombBoost;
         public int BubbleDance;
-        public bool CRangePlus;
         public int Carving;
+        public int ChallengeSheathe;
+        public int ChameleosBlessing;
         public int CliffHanger;
         public int Coalescence;
         public int ColdRes;
         public int Constitution;
         public int CounterStrike;
+        public int CritDraw;
+        public int CritElement;
         public int CritEye;
         public int CriticalBoost;
-        public int CritDraw;
         public int DeadEye;
         public int DefenseBoost;
         public int Defiance;
-        public int Diversion;
         public int DefLock;
+        public int Diversion;
         public int DragonSpirit;
         public int EdgeLore;
+        public int Elemental;
         public int ElementalAtk;
         public int ElementalRes;
         public int Embolden;
@@ -66,27 +73,28 @@ namespace MHArmorSkills.MHPlayer
         public int Gathering;
         public int Geologist;
         public int Gluttony;
+        public int Grinder;
         public int Guard;
         public int GuardUp;
         public int Guts;
-        public int HastenRecovery;
         public int Handicraft;
+        public int HastenRecovery;
         public int Health;
         public int HeatRes;
-        public int HeroShield;
-        public bool HeavenSent;
         public int Heroics;
+        public int HeroShield;
         public int HonedBlade;
         public int HoneyHunter;
         public int IceAttack;
         public int IceRes;
-        public bool IntrepidHeart;
         public int JumpMaster;
+        public int KushalaBlessing;
         public int LastingPower;
         public int LatentPower;
         public int MailofHellfire;
         public int MastersTouch;
         public int Mushroomancer;
+        public int NegativeCrit;
         public int NormalUp;
         public int OffensiveGuard;
         public int PelletUp;
@@ -95,7 +103,9 @@ namespace MHArmorSkills.MHPlayer
         public int PowderMantle;
         public int Protection;
         public int ProtectivePolish;
+        public int PunishDraw;
         public int QuickBreath;
+        public int QuickGather;
         public int QuickSharpening;
         public int QuickSheath;
         public int RapidFire;
@@ -104,42 +114,31 @@ namespace MHArmorSkills.MHPlayer
         public int RecSpeed;
         public int Resentment;
         public int Resusitate;
-        public bool RockSteady;
         public int Scholar;
         public int SilverBullet;
+        public int Slugger;
         public int Sneak;
         public int SneakAttack;
         public int SpareShot;
         public int SpeedEating;
         public int SpeedSetup;
         public int Spirit;
-        public bool SpiritBirdsCall;
         public int StamRec;
+        public int StatusTrigger;
         public int Strife;
         public int TeamLeader;
         public int Tenderizer;
+        public int TeostraBlessing;
         public int ThunderAttack;
         public int ThunderRes;
+        public int TremorRes;
         public int TropicHunter;
         public int Unscathed;
         public int Vault;
         public int WaterAttack;
         public int WaterRes;
         public int WindMantle;
-        public int Elemental;
-        public int Slugger;
-        public bool PoisonCPlus;
-        public int QuickGather;
-        public int CritElement;
-        public int PunishDraw;
-        public int ChallengeSheathe;
-        public int Grinder;
-        public int ChameleosBlessing;
-        public int KushalaBlessing;
-        public int TeostraBlessing;
         public int Windproof;
-        public int TremorRes;
-
         #endregion
 
         #region Essence
@@ -148,16 +147,8 @@ namespace MHArmorSkills.MHPlayer
         public override void ResetEffects()
         {
             #region Skills
-            ChameleosBlessing = 0;
-            HeatRes = 0;
-            NegativeCrit = 0;
-            TeostraBlessing = 0;
-            KushalaBlessing = 0;
-            Windproof = 0;
-            TremorRes = 0;
-            AffinitySliding = 0;
             AdrenalineRush = 0;
-            StatusTrigger = 0;
+            AffinitySliding = 0;
             AMobility = 0;
             AntiBleeding = false;
             AntiPoison = 0;
@@ -173,6 +164,7 @@ namespace MHArmorSkills.MHPlayer
             BombBoost = 0;
             BubbleDance = 0;
             Carving = 0;
+            ChameleosBlessing = 0;
             ChallengeSheathe = 0;
             CliffHanger = 0;
             Coalescence = 0;
@@ -219,6 +211,7 @@ namespace MHArmorSkills.MHPlayer
             HastenRecovery = 0;
             Health = 0;
             HeavenSent = false;
+            HeatRes = 0;
             Heroics = 0;
             HonedBlade = 0;
             HoneyHunter = 0;
@@ -226,10 +219,12 @@ namespace MHArmorSkills.MHPlayer
             IceRes = 0;
             IntrepidHeart = false;
             JumpMaster = 0;
+            KushalaBlessing = 0;
             LastingPower = 0;
             LatentPower = 0;
             MailofHellfire = 0;
             Mushroomancer = 0;
+            NegativeCrit = 0;
             NormalUp = 0;
             OffensiveGuard = 0;
             PelletUp = 0;
@@ -262,17 +257,21 @@ namespace MHArmorSkills.MHPlayer
             Spirit = 0;
             SpiritBirdsCall = false;
             StamRec = 0;
+            StatusTrigger = 0;
             Strife = 0;
             TeamLeader = 0;
+            TeostraBlessing = 0;
             Tenderizer = 0;
             ThunderAttack = 0;
             ThunderRes = 0;
+            TremorRes = 0;
             TropicHunter = 0;
             Unscathed = 0;
             Vault = 0;
             WaterAttack = 0;
             WaterRes = 0;
             WindMantle = 0;
+            Windproof = 0;
             #endregion
 
             #region Essence

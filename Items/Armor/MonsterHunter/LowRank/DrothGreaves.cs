@@ -5,13 +5,17 @@ using Terraria;
 using Terraria.ID;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 {
     [AutoloadEquip(EquipType.Legs)]
     public class DrothGreaves : ModItem
     {
-
+        public static readonly int movespeed = 7;
+        public static readonly int WaterRes = 2;
+        public static readonly int Decor = 1;
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(movespeed, WaterRes, Decor);
         public override void SetDefaults()
         {
             Item.width = 22;
@@ -23,11 +27,11 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.moveSpeed += 0.07f;
+            player.moveSpeed += movespeed/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.WaterRes += 2;
+            modPlayer.WaterRes += WaterRes;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationTwoSlots += 2;
+            SlotPlayer.DecorationTwoSlots += Decor;
         }
         public override void AddRecipes()
         {
