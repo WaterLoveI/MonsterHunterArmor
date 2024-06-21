@@ -48,5 +48,26 @@ namespace MHArmorSkills.NPCs.TownNPCs
         {
             return NPCProfile;
         }
+        public override void HitEffect(NPC.HitInfo hit)
+        {
+            for (int k = 0; k < 5; k++)
+            {
+                Dust.NewDust(NPC.position, NPC.width, NPC.height, DustID.Blood, hit.HitDirection, -1f, 0, default, 1f);
+            }
+            if (NPC.life <= 0)
+            {
+                for (int k = 0; k < 20; k++)
+                {
+                    Dust.NewDust(NPC.position, NPC.width, NPC.height, DustID.Blood, hit.HitDirection, -1f, 0, default, 1f);
+                }
+                if (Main.netMode != NetmodeID.Server)
+                {
+                    Gore.NewGore(NPC.GetSource_Death(), NPC.position, NPC.velocity, Mod.Find<ModGore>("Handler1").Type, 1f);
+                    Gore.NewGore(NPC.GetSource_Death(), NPC.position, NPC.velocity, Mod.Find<ModGore>("Handler2").Type, 1f);
+                    Gore.NewGore(NPC.GetSource_Death(), NPC.position, NPC.velocity, Mod.Find<ModGore>("Handler3").Type, 1f);
+                    Gore.NewGore(NPC.GetSource_Death(), NPC.position, NPC.velocity, Mod.Find<ModGore>("Handler3").Type, 1f);
+                }
+            }
+        }
     }
 }

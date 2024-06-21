@@ -157,7 +157,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increases Movement Speed by 15%.
-					Increase the Defense Boost Skill by 3.
+					{$CommonItemTooltip.DefenseBoost}
 					[○][○][○]x2
 					'''
 			}
@@ -166,9 +166,9 @@ Mods: {
 				DisplayName: Basarios Greaves U
 				Tooltip:
 					'''
-					Increases Damage by 5%
+					{$CommonItemTooltip.IncreaseDamage}
 					Increases Movement Speed by 15%.
-					Increase the Guard Skill by 2.
+					{$CommonItemTooltip.Guard}
 					Increase the Tremor Res Skill by 2.
 					[○][○][○]x1
 					'''
@@ -256,7 +256,7 @@ Mods: {
 				DisplayName: Rathian Helmet
 				Tooltip:
 					'''
-					Increases Damage by 5%.
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase the Health Skill by 2.
 					Increase the Protection Skill by 2.
 					'''
@@ -266,7 +266,7 @@ Mods: {
 				DisplayName: Rhenoplos Helm S
 				Tooltip:
 					'''
-					Increase the Defense Boost Skill by 2.
+					{$CommonItemTooltip.DefenseBoost}
 					Increase the Bomb Boost Skill by 1.
 					'''
 			}
@@ -275,7 +275,7 @@ Mods: {
 				DisplayName: Rhenoplos Helm X
 				Tooltip:
 					'''
-					Increase damage by 12%.
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase movement speed by 15%.
 					Increase the Bomb Boost Skill by 3.
 					Increase the Artillery Skill by 1.
@@ -295,7 +295,7 @@ Mods: {
 				DisplayName: Blango Helm
 				Tooltip:
 					'''
-					Increases Damage by 5%.
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase the Ice Attack Skill by 3.
 					Increase the Polar Hunter Skill by 1.
 					'''
@@ -368,7 +368,7 @@ Mods: {
 					'''
 					Increases critical strike chance by 5%.
 					Increase the Autotracker Skill by 2.
-					Increase the Guard Skill by 2.
+					{$CommonItemTooltip.Guard}
 					[○][○]x1
 					'''
 			}
@@ -398,7 +398,7 @@ Mods: {
 				DisplayName: Rathalos Helm
 				Tooltip:
 					'''
-					Increase Damage by 5%. 
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase the Tenderizer Skill by 2.
 					Increase the Attack Boost Skill by 1.
 					[○]x1
@@ -527,8 +527,8 @@ Mods: {
 				DisplayName: Mizutsune Mail X
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Critical Strike Chance by 12%.
-					Increase Damage by 12%. 
 					Increase the Bubble Dance Skill by 2.
 					Increase the Resusitate Skill by 2.
 					[○][○][○]x1
@@ -561,7 +561,7 @@ Mods: {
 				DisplayName: Mizutsune Greaves X
 				Tooltip:
 					'''
-					Increase Damage by 12%
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Movement speed by 15%. 
 					Increase the Constitution Skill by 2.
 					Increase the Bubble Dance Skill by 1.
@@ -608,7 +608,7 @@ Mods: {
 				DisplayName: Glavenus Greaves X
 				Tooltip:
 					'''
-					Increase Damage by 15%. 
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Movement Speed by 15%. 
 					Increase the Spirit Skill by 2.
 					Increase the Razor Sharp Skill by 1.
@@ -654,7 +654,7 @@ Mods: {
 				DisplayName: Gore Magala Helm
 				Tooltip:
 					'''
-					Increase Damage by 5%. 
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase the Bloodlust Skill by 1.
 					Increase the Resentment Skill by 2.
 					[○]x1
@@ -677,7 +677,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Free Meal Skill by 1.
-					Increase the Guard Skill by 1.
+					{$CommonItemTooltip.Guard}
 					'''
 			}
 
@@ -695,7 +695,7 @@ Mods: {
 				DisplayName: Ukanlos Helm
 				Tooltip:
 					'''
-					Increase Damage by 15%.
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Critical Strike Chance by 10%. 
 					Increase the Attack Boost Skill by 2.
 					Increase the Ice Attack Skill by 1.
@@ -740,7 +740,7 @@ Mods: {
 				DisplayName: Great Jaggi Helm X
 				Tooltip:
 					'''
-					Increase Damage by 10%.
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Movement speed by 10%. 
 					Increase the Attack Boost Skill by 2.
 					Increase the Critical Eye Skill by 2.
@@ -751,9 +751,9 @@ Mods: {
 				DisplayName: Hornetaur Helm GX
 				Tooltip:
 					'''
-					Increase Damage by 10%.
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Critical Strike Chance by 7%. 
-					Increase the Guard Skill by 1.
+					{$CommonItemTooltip.Guard}
 					Increase the Pierce Up Skill by 1.
 					Increase the Spare Shot Skill by 1.
 					[○]x1
@@ -764,9 +764,9 @@ Mods: {
 				DisplayName: Hornetaur Helm X
 				Tooltip:
 					'''
-					Increase Damage by 10%.
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Critical Strike Chance by 7%. 
-					Increase the Guard Skill by 1.
+					{$CommonItemTooltip.Guard}
 					Increase the Resentment Skill by 1.
 					Increase the Spare Shot Skill by 1.
 					[○]x1
@@ -777,9 +777,9 @@ Mods: {
 				DisplayName: Hornetaur Helm XR
 				Tooltip:
 					'''
-					Increase Damage by 12%.
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Melee Attack Speed by 10%. 
-					Increase the Guard Skill by 1.
+					{$CommonItemTooltip.Guard}
 					Increase the Razor Sharp Skill by 1.
 					Increase the Resentment Skill by 1.
 					[○]x1
@@ -790,7 +790,7 @@ Mods: {
 				DisplayName: Kutku Helm X
 				Tooltip:
 					'''
-					Increase Damage by 12%.
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Movement speed by 10%. 
 					Increase the Attack Boost Skill by 2.
 					Increase the Fire Attack Skill by 1.
@@ -802,7 +802,7 @@ Mods: {
 				DisplayName: Moofah Head X
 				Tooltip:
 					'''
-					Increase Damage by 12%.
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Movement speed by 15%. 
 					Increase the Gathering Skill by 1.
 					Increase the Thunder Attack Skill by 1.
@@ -815,7 +815,7 @@ Mods: {
 				DisplayName: Blango Helm GX
 				Tooltip:
 					'''
-					Increase Damage by 15%.
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Movement speed by 10%. 
 					Increase the Ice Attack Skill by 1.
 					Increase the Polar Hunter Skill by 1.
@@ -828,7 +828,7 @@ Mods: {
 				DisplayName: Blue Kutku Helm X
 				Tooltip:
 					'''
-					Increase Damage by 12%.
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Movement speed by 10%. 
 					Increase the Attack Boost Skill by 2.
 					Increase the Fire Attack Skill by 1.
@@ -840,10 +840,10 @@ Mods: {
 				DisplayName: Basarios Helm X
 				Tooltip:
 					'''
-					Increase Damage by 12%.
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase the Anti-Poison Skill by 2.
-					Increase the Guard Skill by 1.
-					Increase the Defense Boost skill by 1.
+					{$CommonItemTooltip.Guard}
+					{$CommonItemTooltip.DefenseBoost}
 					[○]x1
 					'''
 			}
@@ -852,9 +852,9 @@ Mods: {
 				DisplayName: Battle Helm X
 				Tooltip:
 					'''
-					Increase Damage by 12%.
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Melee Attack Speed by 10%. 
-					Increase the Guard Skill by 2.
+					{$CommonItemTooltip.Guard}
 					Increase the Attack Boost Skill by 1.
 					Increase the Razor Sharp Skill by 1.
 					'''
@@ -864,7 +864,7 @@ Mods: {
 				DisplayName: Bone Helmet X
 				Tooltip:
 					'''
-					Increase Damage by 10%.
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Melee Attack Speed by 20%. 
 					Increase the Slugger Skill by 1.
 					Increase the Punish Draw Skill by 1.
@@ -877,7 +877,7 @@ Mods: {
 				DisplayName: Bone Mail X
 				Tooltip:
 					'''
-					Increase Damage by 12%.
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase the Attack Boost Skill by 2.
 					Increase the Punish Draw Skill by 1.
 					[○][○][○]x1
@@ -900,7 +900,7 @@ Mods: {
 				DisplayName: Bullfango Mask X
 				Tooltip:
 					'''
-					Increase Damage by 10%.
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Movement speed by 10%. 
 					Increase the Heroics Skill by 2.
 					Increase the Attack Boost Skill by 2.
@@ -926,7 +926,7 @@ Mods: {
 					'''
 					20% to not consume ammo.
 					Increase Movement speed by 15%. 
-					Increase the Defense Boost Skill by 2.
+					{$CommonItemTooltip.DefenseBoost}
 					Increase the Def Lock Skill by 2.
 					Increase the Protection Skill by 1.
 					'''
@@ -936,8 +936,8 @@ Mods: {
 				DisplayName: Moss Swine Hat X
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Mana by 20.
-					Increase Damage by 12%. 
 					Increase the Mushroomancer Skill by 2.
 					Increase the Quick Gathering Skill by 2.
 					[○]x2
@@ -948,8 +948,8 @@ Mods: {
 				DisplayName: Sailor Hat X
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Movement speed by 7%.
-					Increase Damage by 12%. 
 					Increase the Fate Skill by 2.
 					Increase the Evasion Skill by 1.
 					[○][○][○]x1
@@ -960,8 +960,8 @@ Mods: {
 				DisplayName: Yukumo Kasa X
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Critical Strike Chance by 10%.
-					Increase Damage by 10%. 
 					Increase the Critical Eye Skill by 2.
 					Increase the Evasion Skill by 2.
 					[○]x1
@@ -972,10 +972,10 @@ Mods: {
 				DisplayName: Basarios Helmet U
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Melee Speed by 10%.
-					Increase Damage by 10%. 
 					Increase the Heat Res Skill by 2.
-					Increase the Guard Skill by 2.
+					{$CommonItemTooltip.Guard}
 					Increase the Offensive Guard Skill by 1.
 					'''
 			}
@@ -984,8 +984,8 @@ Mods: {
 				DisplayName: Lavasioth Helm GX
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Movement speed by 10%.
-					Increase Damage by 12%. 
 					Increase the Heat Res Skill by 2.
 					Increase the Offensive Guard Skill by 1.
 					Increase the Resentment Skill by 1.
@@ -997,8 +997,8 @@ Mods: {
 				DisplayName: Zamtrios Helm X
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Movement speed by 10%.
-					Increase Damage by 12%. 
 					Increase the Aquatic Mobility Skill by 2.
 					Increase the Recovery Speed Skill by 2.
 					[○][○][○]x1
@@ -1009,10 +1009,10 @@ Mods: {
 				DisplayName: Barroth Helm U
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Movement speed by 15%.
-					Increase Damage by 12%. 
 					Increase the Ice Attack Skill by 1.
-					Increase the Guard Skill by 1.
+					{$CommonItemTooltip.Guard}
 					Increase the Punish Draw Skill by 1.
 					[○]x3
 					'''
@@ -1022,11 +1022,11 @@ Mods: {
 				DisplayName: Barroth Helm X
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Movement speed by 10%.
-					Increase Damage by 12%. 
 					Increase the Attack Boost Skill by 2.
-					Increase the Defense Boost Skill by 2.
-					Increase the Guard Skill by 1.
+					{$CommonItemTooltip.DefenseBoost}
+					{$CommonItemTooltip.Guard}
 					'''
 			}
 
@@ -1034,8 +1034,8 @@ Mods: {
 				DisplayName: Congala Helm U
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Mana by 20.
-					Increase Damage by 15%. 
 					Increase the Attack Boost Skill by 1.
 					Increase the Free Meal Skill by 1.
 					Increase the Mushroomancer Skill by 1.
@@ -1047,8 +1047,8 @@ Mods: {
 				DisplayName: Congala Helm X
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Mana by 20.
-					Increase Damage by 12%. 
 					Increase the Attack Boost Skill by 1.
 					Increase the Gluttony Skill by 1.
 					Increase the Mushroomancer Skill by 1.
@@ -1060,8 +1060,8 @@ Mods: {
 				DisplayName: Zamtrios Helm Z
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Movement speed by 10%.
-					Increase Damage by 15%. 
 					Increase the Recovery Speed Skill by 1.
 					Increase the Recovery Up Skill by 1.
 					Increase Hasten Recovery Skill by 1.
@@ -1073,9 +1073,9 @@ Mods: {
 				DisplayName: Arzuros Helm X
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Movement speed by 10%.
-					Increase Damage by 10%. 
-					Increase the Defense Boost Skill by 1.
+					{$CommonItemTooltip.DefenseBoost}
 					Increase the Honey Hunter Skill by 1.
 					Increase the Protection Skill by 1.
 					[○][○]x1
@@ -1086,8 +1086,8 @@ Mods: {
 				DisplayName: Vaik Helm X
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Movement speed by 10%.
-					Increase Damage by 12%. 
 					Increase the Water Attack Skill by 2.
 					Increase the Sharpness Skill by 1.
 					[○][○]x1
@@ -1098,8 +1098,8 @@ Mods: {
 				DisplayName: Bulldrome Helm X
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Movement speed by 15%.
-					Increase Damage by 10%. 
 					Increase the Attack Boost Skill by 3.
 					Increase the Diversion Skill by 1.
 					[○][○]x1
@@ -1110,10 +1110,10 @@ Mods: {
 				DisplayName: Hermitaur Helm X
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Movement speed by 5%.
-					Increase Damage by 15%. 
 					Increase the Free Meal Skill by 2.
-					Increase the Guard Skill by 1.
+					{$CommonItemTooltip.Guard}
 					[○][○]x1
 					'''
 			}
@@ -1122,8 +1122,8 @@ Mods: {
 				DisplayName: Rathian Helm X
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Movement speed by 10%.
-					Increase Damage by 12%. 
 					Increase the Health Skill by 1.
 					Increase the Protection Skill by 1.
 					Increase the Recovery Up Skill by 1.
@@ -1135,8 +1135,8 @@ Mods: {
 				DisplayName: Rathian Helm XR
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Movement speed by 10%.
-					Increase Damage by 12%. 
 					Increase the Protection Skill by 2.
 					[○]x1
 					[○][○][○]x1
@@ -1147,8 +1147,8 @@ Mods: {
 				DisplayName: Ceanataur Helm GX
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Movement speed by 10%.
-					Increase Damage by 10%. 
 					Increase the Normal Up Skill by 2.
 					Increase the Spare Shot Skill by 1.
 					[○]x1
@@ -1159,8 +1159,8 @@ Mods: {
 				DisplayName: Ceanataur Helm X
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Movement speed by 10%.
-					Increase Damage by 10%. 
 					Increase the Critical Eye Skill by 3.
 					Increase the Water Attack Skill by 2.
 					[○]x1
@@ -1171,8 +1171,8 @@ Mods: {
 				DisplayName: Nargacuga Helm X
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Movement speed by 10%.
-					Increase Damage by 10%. 
 					Increase the Critical Eye Skill by 1.
 					Increase the Evasion Skill by 1.
 					Increase the Evade Distance Skill by 1.
@@ -1185,8 +1185,8 @@ Mods: {
 				DisplayName: Barioth Helm X
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Movement speed by 10%.
-					Increase Damage by 12%. 
 					Increase the Ice Attack Skill by 3.
 					Increase the Critical Eye Skill by 1.
 					[○][○]x2
@@ -1199,7 +1199,7 @@ Mods: {
 					'''
 					Increase Movement speed by 10%.
 					Increase Damage by 15%. 
-					Increase the Guard Skill by 1.
+					{$CommonItemTooltip.Guard}
 					Increase the Crit Draw Skill by 1.
 					Increase the Guts Skill by 1.
 					[○]x1
@@ -1244,7 +1244,7 @@ Mods: {
 					Increase Critical Strike Chance by 10%.
 					Increase Damage by 12%. 
 					Increase the Fire Attack Skill by 2.
-					Increase the Guard Skill by 1.
+					{$CommonItemTooltip.Guard}
 					Increase the Razor Sharp Skill by 1.
 					[○][○][○]x1
 					'''
@@ -1269,7 +1269,7 @@ Mods: {
 					'''
 					20% Chance to not consume ammo.
 					Increase Damage by 15%. 
-					Increase the Guard Skill by 1.
+					{$CommonItemTooltip.Guard}
 					Increase the Hero Shield Skill by 1.
 					Increase the Artillery Skill by 1.
 					[○]x3
@@ -1553,7 +1553,7 @@ Mods: {
 					Increases your max number of minions by 1
 					Increases Damage by 10%.
 					Increase the Free Meal Skill by 2.
-					Increase the Guard Skill by 1.
+					{$CommonItemTooltip.Guard}
 					Increase the Tenderizer Skill by 1.
 					[○]x1
 					'''
@@ -1565,7 +1565,7 @@ Mods: {
 					'''
 					Increases your max number of minions by 1
 					Increases Movement Speed Chance by 7%.
-					Increase the Guard Skill by 2.
+					{$CommonItemTooltip.Guard}
 					Increase the Recovery Up Skill by 1.
 					[○][○]x1
 					'''
@@ -1643,7 +1643,7 @@ Mods: {
 					'''
 					Increases Critical Strike Chance by 7%.
 					Increases Melee Speed by 10%.
-					Increase the Guard Skill by 2.
+					{$CommonItemTooltip.Guard}
 					Increase the Resentment Skill by 1.
 					[○][○]x2
 					'''
@@ -1654,7 +1654,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increases Melee Speed by 5%.
-					Increase the Guard Skill by 1.
+					{$CommonItemTooltip.Guard}
 					Increase the Resentment Skill by 1.
 					[○]x1
 					'''
@@ -1703,8 +1703,8 @@ Mods: {
 					'''
 					Increases Damage by 7%.
 					Increases Melee Speed by 15%.
-					Increase the Defense Boost Skill by 2.
-					Increase the Guard Skill by 2.
+					{$CommonItemTooltip.DefenseBoost}
+					{$CommonItemTooltip.Guard}
 					[○][○]x1
 					'''
 			}
@@ -1840,7 +1840,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Attack Boost Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -1850,7 +1850,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Attack Boost Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -1860,7 +1860,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Bladehone Scale Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -1870,7 +1870,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Bladehone Scale Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -1880,7 +1880,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Blood Rite Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -1890,7 +1890,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Carving Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -1900,7 +1900,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Constitution Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -1910,7 +1910,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Constitution Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -1920,7 +1920,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Counterstrike Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -1930,7 +1930,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Counterstrike Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -1940,7 +1940,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Critical Boost Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -1950,7 +1950,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Critical Draw Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -1960,7 +1960,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Critical Draw Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -1969,8 +1969,8 @@ Mods: {
 				DisplayName: Defense Boost Decoration 1
 				Tooltip:
 					'''
-					Increase the Defense Boost Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.DefenseBoost}
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -1979,8 +1979,8 @@ Mods: {
 				DisplayName: Defense Boost Decoration 2
 				Tooltip:
 					'''
-					Increase the Defense Boost Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.DefenseBoost}
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -1989,8 +1989,8 @@ Mods: {
 				DisplayName: Defense Boost Decoration 3
 				Tooltip:
 					'''
-					Increase the Defense Boost Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.DefenseBoost}
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -2000,7 +2000,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Defiance Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2010,7 +2010,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Defiance Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -2020,7 +2020,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Embolden Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2030,7 +2030,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Embolden Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -2040,7 +2040,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Fire Attack Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2050,7 +2050,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Fire Attack Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -2060,7 +2060,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Fire Res Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2070,7 +2070,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Foray Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2080,7 +2080,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Foray Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -2090,7 +2090,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Fortified Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2100,7 +2100,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Gathering Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2110,7 +2110,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Gluttony Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2120,7 +2120,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Grinder Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2130,7 +2130,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Hasten Recovery Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2140,7 +2140,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Hasten Recovery Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -2150,7 +2150,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Healthy Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2160,7 +2160,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Health Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -2170,7 +2170,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Heat Res Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2180,7 +2180,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Heroics Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2190,7 +2190,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Heroics Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -2200,7 +2200,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Hero Shield Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2210,7 +2210,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Honey Hunter Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2220,7 +2220,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Protective Polish Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2230,7 +2230,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Protective Polish Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -2240,7 +2240,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Quick Sheath Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2250,7 +2250,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Quick Sheath Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -2260,7 +2260,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Razor Sharp Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2270,7 +2270,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Razor Sharp Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -2280,7 +2280,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Recovery Speed Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2290,7 +2290,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Recovery Speed Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -2300,7 +2300,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Recovery Up Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2310,7 +2310,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Recovery Up Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -2320,7 +2320,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Resentment Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2330,7 +2330,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Resentment Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -2340,7 +2340,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Resusitate Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2350,7 +2350,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Resusitate Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -2360,7 +2360,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Sneak Attack Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2370,7 +2370,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Spare Shot Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2380,7 +2380,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Spare Shot Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -2390,7 +2390,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Speed Sharpening Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2400,7 +2400,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Speed Sharpening Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -2410,7 +2410,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Tenderizer Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2420,7 +2420,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Thunder Attack Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2430,7 +2430,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Thunder Attack Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -2440,7 +2440,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Thunder Res Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2450,7 +2450,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Affinity Sliding Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2460,7 +2460,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Artillery Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2470,7 +2470,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Autoreload Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2480,7 +2480,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Autotracker Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2490,7 +2490,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Bleeding Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2500,7 +2500,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Blightproof Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2510,7 +2510,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Bloodlust Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2520,7 +2520,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Bomb Boost Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2530,7 +2530,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Bubble Dance Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2540,7 +2540,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Bubble Dance Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2550,7 +2550,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Challenge Sheath Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2560,7 +2560,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Challenge Sheath Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -2570,7 +2570,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Cliffhanger Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2580,7 +2580,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Close Range Plus Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2590,7 +2590,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Coalescence Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2600,7 +2600,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Coalescence Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -2610,7 +2610,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Cold Res Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2620,7 +2620,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Critical Element Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2630,7 +2630,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Critical Element Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -2640,7 +2640,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Critical Eye Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2650,7 +2650,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Critical Eye Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -2660,7 +2660,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Deadeye Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2670,7 +2670,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Def Lock Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2680,7 +2680,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Diversion Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2690,7 +2690,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Diversion Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -2700,7 +2700,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Elemental Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2710,7 +2710,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Evade Distance Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2720,7 +2720,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Evade Distance Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -2730,7 +2730,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Evasion Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2740,7 +2740,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Evasion Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -2750,7 +2750,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Fate Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2760,7 +2760,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Fencing Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2770,7 +2770,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Fishing Expert Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2780,7 +2780,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Free Meal Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2790,7 +2790,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Geologist Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2799,8 +2799,8 @@ Mods: {
 				DisplayName: Guard Decoration 1
 				Tooltip:
 					'''
-					Increase the Guard Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Guard}
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2809,8 +2809,8 @@ Mods: {
 				DisplayName: Guard Decoration 2
 				Tooltip:
 					'''
-					Increase the Guard Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Guard}
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -2820,7 +2820,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Guard Up Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2830,7 +2830,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Guard Up Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -2840,7 +2840,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Ice Attack Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2850,7 +2850,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Ice Attack Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2860,7 +2860,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Ice Attack Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -2870,7 +2870,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Ice Res Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2880,7 +2880,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Intrepid Heart Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2890,7 +2890,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Jump Master Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2900,7 +2900,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Lasting Power Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2910,7 +2910,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Latent Power Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2920,7 +2920,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Latent Power Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -2930,7 +2930,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Masters Touch Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2940,7 +2940,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Masters Touch Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -2950,7 +2950,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Mushroomancer Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -2960,7 +2960,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Normal Up Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2970,7 +2970,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Offensive Guard Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2980,7 +2980,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Pellet Up Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -2990,7 +2990,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Pierce Up Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3000,7 +3000,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Anti-Poison Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -3010,7 +3010,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Poison Coating Plus Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -3020,7 +3020,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Polar Hunter Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3030,7 +3030,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Polar Hunter Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3040,7 +3040,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Protection Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3050,7 +3050,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Protection Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3060,7 +3060,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Punish Draw Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3070,7 +3070,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Punish Draw Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3080,7 +3080,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Scholar Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -3090,7 +3090,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Sneak Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -3100,7 +3100,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Sneak Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3110,7 +3110,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Speed Eating Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -3120,7 +3120,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Speed Setup Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -3130,7 +3130,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Spirit Bird's Call Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -3140,7 +3140,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Stamina Recovery Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -3150,7 +3150,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Stamina Recovery Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3160,7 +3160,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Strife Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3170,7 +3170,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Unscathed Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3180,7 +3180,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Unscathed Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3190,7 +3190,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Vault Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3200,7 +3200,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Water Attack Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -3210,7 +3210,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Water Attack Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3220,7 +3220,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Water Res Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -3230,7 +3230,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Aquatic Mobility Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -3240,7 +3240,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Spirit Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3250,7 +3250,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Spirit Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3260,7 +3260,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Affinity Sliding Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3270,7 +3270,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Aquatic Mobility Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3280,7 +3280,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Aquatic Mobility Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3290,7 +3290,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Artillery Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3300,7 +3300,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Auto Tracker Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3310,7 +3310,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Blightproof Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3320,7 +3320,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Bloodlust Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3330,7 +3330,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Blood Rite Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3340,7 +3340,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Bomb Boost Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3350,7 +3350,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Bubble Dance Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3360,7 +3360,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Cliffhanger Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3370,7 +3370,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Cold Res Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3380,7 +3380,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Critical Boost Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3390,7 +3390,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Deadeye Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3400,7 +3400,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Fate Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3410,7 +3410,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Fencing Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3420,7 +3420,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Fire Attack Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3430,7 +3430,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Fire Res Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3440,7 +3440,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Fishing Expert Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3450,7 +3450,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Free Meal Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3460,7 +3460,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Free Meal Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3470,7 +3470,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Gathering Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3480,7 +3480,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Geologist Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3490,7 +3490,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Gluttony Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3500,7 +3500,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Gluttony Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3510,7 +3510,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Grinder Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3520,7 +3520,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Handicraft Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3530,7 +3530,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Handicraft Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3540,7 +3540,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Heat Res Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3550,7 +3550,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Hero Shield Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3560,7 +3560,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Honey Hunter Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3570,7 +3570,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Ice Res Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3580,7 +3580,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Jump Master Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3590,7 +3590,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Jump Master Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3600,7 +3600,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Lasting Power Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3610,7 +3610,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Lasting Power Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3620,7 +3620,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Mushroomancer Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3630,7 +3630,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Normal Up Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3640,7 +3640,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Offensive Guard Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3650,7 +3650,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Pellet Up Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3660,7 +3660,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Pierce Up Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3670,7 +3670,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Poison Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3680,7 +3680,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Rock Steady Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -3690,7 +3690,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Scholar Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3700,7 +3700,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Sneak Attack Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3710,7 +3710,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Speed Eating Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3720,7 +3720,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Speed SetUp Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3730,7 +3730,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Strife Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3740,7 +3740,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Tenderizer Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3750,7 +3750,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Thunder Attack Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3760,7 +3760,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Thunder Res Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3770,7 +3770,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Tropics Hunter Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3780,7 +3780,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Tropics Hunter Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3790,7 +3790,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Vault Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3800,7 +3800,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Water Attack Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3810,7 +3810,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Water Res Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3820,7 +3820,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Elemental Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3830,7 +3830,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Adrenaline Rush Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3840,7 +3840,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Adrenaline Rush Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3850,7 +3850,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Status Rush Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3860,7 +3860,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Status Trigger Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3870,7 +3870,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Chameleos BLessing Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -3880,7 +3880,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Kushala Blessing Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -3890,7 +3890,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Teostra Blessing Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -3900,7 +3900,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Tremor Res Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -3910,7 +3910,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Tremor Res Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3920,7 +3920,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Tremor Res Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3930,7 +3930,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Windproof Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
 			}
@@ -3940,7 +3940,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Windproof Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3950,7 +3950,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Windproof Skill by 3.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
@@ -3960,7 +3960,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Negative Crit Skill by 1.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
 			}
@@ -3970,7 +3970,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increase the Negative Skill by 2.
-					Works even in the vanity slot.
+					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
 			}
