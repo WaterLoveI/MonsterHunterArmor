@@ -1197,8 +1197,8 @@ Mods: {
 				DisplayName: Hermitaur Helm Z
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Movement speed by 10%.
-					Increase Damage by 15%. 
 					{$CommonItemTooltip.Guard}
 					Increase the Crit Draw Skill by 1.
 					Increase the Guts Skill by 1.
@@ -1211,8 +1211,8 @@ Mods: {
 				DisplayName: Qurupeco Helm X
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Movement speed by 10%.
-					Increase Damage by 10%. 
 					Increase the Evasion Skill by 1.
 					Increase the Free Meal Skill by 1.
 					Increase the Recovery Up Skill by 1.
@@ -1229,8 +1229,8 @@ Mods: {
 				DisplayName: Brachydios Helm X
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Melee Speed by 15%.
-					Increase Damage by 15%. 
 					Increase the Spirit Skill by 2.
 					Increase the Slugger Skill by 1.
 					[○][○]x3
@@ -1241,8 +1241,8 @@ Mods: {
 				DisplayName: Agnaktor Helm X
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Critical Strike Chance by 10%.
-					Increase Damage by 12%. 
 					Increase the Fire Attack Skill by 2.
 					{$CommonItemTooltip.Guard}
 					Increase the Razor Sharp Skill by 1.
@@ -1254,8 +1254,8 @@ Mods: {
 				DisplayName: Seregios Helm X
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Critical Strike Chance by 12%.
-					Increase Damage by 12%. 
 					Increase the Constitution Skill by 2.
 					Increase the Bladescale Hone Skill by 1.
 					Increase the Bleed Skill by 1.
@@ -1267,8 +1267,8 @@ Mods: {
 				DisplayName: Seltas Helm X
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					20% Chance to not consume ammo.
-					Increase Damage by 15%. 
 					{$CommonItemTooltip.Guard}
 					Increase the Hero Shield Skill by 1.
 					Increase the Artillery Skill by 1.
@@ -1280,8 +1280,8 @@ Mods: {
 				DisplayName: Damascus Helm X
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Critical Strike Chance by 12%.
-					Increase Damage by 12%. 
 					Increase the Handicraft Skill by 2.
 					Increase the Razor Sharp Skill by 2.
 					[○][○][○]x2
@@ -1292,8 +1292,8 @@ Mods: {
 				DisplayName: Gore Magala Helm EX
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Critical Strike Chance by 12%.
-					Increase Damage by 12%. 
 					Increase the Spirit Skill by 2.
 					Increase the Coalescence Skill by 2.
 					Increase the Bloodlust Skill by 1.
@@ -1305,8 +1305,8 @@ Mods: {
 				DisplayName: Glavenus Helm X
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Critical Strike Chance by 12%.
-					Increase Damage by 12%. 
 					Increase the Handicraft Skill by 2.
 					Increase the Grinder Skill by 1.
 					[○][○][○]x1
@@ -1317,7 +1317,7 @@ Mods: {
 				DisplayName: Glavenus Mail X
 				Tooltip:
 					'''
-					Increase Damage by 15%.
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Melee Attack Speed by 15%. 
 					Increase the Grinder Skill by 2.
 					Increase the Razor Sharp Skill by 2.
@@ -1329,8 +1329,8 @@ Mods: {
 				DisplayName: Gammoth Helm X
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Critical Strike Chance by 12%.
-					Increase Damage by 12%. 
 					Increase the Attack Boost Skill by 2.
 					Increase the Polar Hunter Skill by 2.
 					[○]x1
@@ -1341,7 +1341,7 @@ Mods: {
 				DisplayName: Gammoth Greaves X
 				Tooltip:
 					'''
-					Increase Damage by 12%. 
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Movement Speed by 15%
 					Increase the Attack Boost Skill by 2.
 					Increase the Polar Hunter Skill by 1.
@@ -1365,8 +1365,8 @@ Mods: {
 				DisplayName: Astalos Helm X
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Critical Strike Chance by 12%.
-					Increase Damage by 12%. 
 					Increase the Thunder Attack Skill by 1.
 					Increase the Vault Skill by 1.
 					Increase the Pierce Up Skill by 1.
@@ -1378,8 +1378,8 @@ Mods: {
 				DisplayName: Astalos Mail X
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Critical Strike Chance by 12%.
-					Increase Damage by 12%. 
 					Increase the Spare Shot Skill by 2.
 					Increase the Vault Skill by 1.
 					Increase the Pierce Up Skill by 1.
@@ -1391,7 +1391,7 @@ Mods: {
 				DisplayName: Astalos Mail X
 				Tooltip:
 					'''
-					Increase Damage by 12%.
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Movement Speed by 15%. 
 					Increase the Thunder Attack Skill by 2.
 					Increase the Vault Skill by 1.
@@ -1404,8 +1404,8 @@ Mods: {
 				DisplayName: Mizutsune Helm X
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Critical Strike Chance by 12%.
-					Increase Damage by 12%. 
 					Increase the Constitution Skill by 1.
 					Increase the Evasion Skill by 1.
 					Increase the Water Attack Skill by 1.
@@ -1417,8 +1417,8 @@ Mods: {
 				DisplayName: Rathalos Helm X
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Movement Speed by 15%.
-					Increase Damage by 12%. 
 					Increase the Fire Attack Skill by 2.
 					Increase the Attack Boost Skill by 2.
 					Increase the Tenderizer Skill by 1.
@@ -1429,8 +1429,8 @@ Mods: {
 				DisplayName: Zinogre Helm X
 				Tooltip:
 					'''
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase Critical Strike Chance by 10%.
-					Increase Damage by 12%. 
 					Increase the Latent Power Skill by 2.
 					Increase the Evasion Skill by 1.
 					Increase the Sneak Skill by 1.
@@ -1442,7 +1442,7 @@ Mods: {
 				DisplayName: Banbaro Helm
 				Tooltip:
 					'''
-					Increase Damage by 12%.
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase health regeneration by 2.
 					Increase the Mushroomancer Skill by 2.
 					Increase the Resentment Skill by 2.
@@ -1489,7 +1489,7 @@ Mods: {
 				DisplayName: Zinogre Mail X
 				Tooltip:
 					'''
-					Increases Damage by 15%.
+					{$CommonItemTooltip.IncreaseDamage}
 					Increases Mana by 20.
 					Increase the Thunder Attack Skill by 3.
 					Increase the Unscathed Skill by 2.
@@ -1515,7 +1515,7 @@ Mods: {
 				DisplayName: Zinogre Helm Z
 				Tooltip:
 					'''
-					Increase Damage by 10%
+					{$CommonItemTooltip.IncreaseDamage}
 					Increases Critical Strike Chance by 12%.
 					Increase the Evasion Skill by 2.
 					Increase the Latent Power Skill by 1.
@@ -1528,7 +1528,7 @@ Mods: {
 				DisplayName: Zinogre Mail Z
 				Tooltip:
 					'''
-					Increases Damage by 15%.
+					{$CommonItemTooltip.IncreaseDamage}
 					Increases Mana by 20.
 					Increase the Latent Power Skill by 3.
 					Increase the Unscathed Skill by 1.
@@ -1619,7 +1619,7 @@ Mods: {
 				DisplayName: Sailor Shirt X
 				Tooltip:
 					'''
-					Increases Damage by 10%.
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase the Water Attack Skill by 3.
 					Increase the Aquatic Mobility Skill by 1.
 					[○][○]x1
@@ -1675,7 +1675,7 @@ Mods: {
 				DisplayName: Lavasioth Greaves X
 				Tooltip:
 					'''
-					Increases Damage by 10%
+					{$CommonItemTooltip.IncreaseDamage}
 					Increases Movement Speed by 7%.
 					Increases life regen by 1.
 					Increase the Fortifed Skill by 1.
@@ -1701,7 +1701,7 @@ Mods: {
 				DisplayName: Basarios Mail X
 				Tooltip:
 					'''
-					Increases Damage by 7%.
+					{$CommonItemTooltip.IncreaseDamage}
 					Increases Melee Speed by 15%.
 					{$CommonItemTooltip.DefenseBoost}
 					{$CommonItemTooltip.Guard}
@@ -1737,7 +1737,7 @@ Mods: {
 				DisplayName: Rathian Mail
 				Tooltip:
 					'''
-					Increases Damage by 6%.
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase the Health Skill by 1.
 					Increase the Recovery Speed Skill by 1.
 					[○][○]x2
@@ -1759,7 +1759,7 @@ Mods: {
 				DisplayName: Rathian Greaves X
 				Tooltip:
 					'''
-					Increases Damage by 7%.
+					{$CommonItemTooltip.IncreaseDamage}
 					Increases Movement Speed by 10%.
 					Increase the Recovery Up Skill by 1.
 					Increase the Recovery Speed Skill by 1.
@@ -1829,7 +1829,7 @@ Mods: {
 				DisplayName: Gammoth Mail X
 				Tooltip:
 					'''
-					Increases Damage by 5%.
+					{$CommonItemTooltip.IncreaseDamage}
 					Increase the Attack Boost Skill by 3.
 					Increase the Tremor Res Skill by 2.
 					'''
