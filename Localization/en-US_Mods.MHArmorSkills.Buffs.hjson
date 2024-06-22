@@ -1,23 +1,11 @@
 Defiance: {
 	DisplayName: Defiance
-	Description:
-		'''
-		Level 1: Increase Defense by 3 and grant immunity to KnockBack.
-		Level 2: Increase Defense by 2
-		Level 3: Increase Defense by 3 and debuff timer decrease twice as fast.
-		Level 4: Increase Defense by 2
-		Level 5: Increase Defense by 3 and enemies may drop life boosters when hit.
-		'''
+	Description: Level {0}: Increase Defense by {1} and defensive buffs.
 }
 
 Diversion: {
 	DisplayName: Diversion
 	Description: In range for Diversion 2/3's effects.
-}
-
-Foray: {
-	DisplayName: Foray
-	Description: Increase damage dealt on targets that's suffering from debuffs by 3% / 6% / 10%.
 }
 
 Fortified: {
@@ -42,17 +30,12 @@ FrenzyCure: {
 }
 
 FrenzyFail: {
-	DisplayName: Frenzy Fail
-	Description: You've failed to overcome the frenzy. You are losing health.
-}
-
-Gathering: {
-	DisplayName: Gathering
-	Description: Enemies may drop Herb bags upon death.
+	DisplayName: Frenzy Failed
+	Description: You've failed to overcome the frenzy. You are rapidly losing health.
 }
 
 Guard: {
-	DisplayName: Guard
+	DisplayName: Guarding
 	Description: Reduce damage taken while your shield is up.
 }
 

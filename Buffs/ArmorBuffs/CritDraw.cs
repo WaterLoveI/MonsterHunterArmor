@@ -15,7 +15,11 @@ namespace MHArmorSkills.Buffs.ArmorBuffs
             Main.pvpBuff[Type] = true;
             Main.buffNoSave[Type] = true;
         }
-
+        public override void ModifyBuffText(ref string buffName, ref string tip, ref int rare)
+        {
+            buffName = $"Critical Draw Level: {Main.LocalPlayer.GetModPlayer<ArmorSkills>().CritDraw} ";
+            tip = $"Increase critical strike chance by {Main.LocalPlayer.GetModPlayer<MHPlayerArmorSkill>().CritDraw}%";
+        }
     }
 }
 

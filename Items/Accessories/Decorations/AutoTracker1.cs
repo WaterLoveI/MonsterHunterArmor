@@ -3,12 +3,15 @@ using Terraria.ModLoader;
 using Terraria.ID;
 using MHArmorSkills.MHPlayer;
 using MHArmorSkills.Buffs.ArmorBuffs;
+using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Accessories.Decorations
 {
     public class AutoTracker1 : ModItem
     {
+        public static readonly int SkillPoint = 1;
 
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(SkillPoint);
         public override void SetDefaults()
         {
             Item.width = 32;

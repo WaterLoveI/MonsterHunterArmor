@@ -837,22 +837,27 @@ namespace MHArmorSkills.MHPlayer
                 if (Defiance >= 1)
                 {
                     modPlayer.Defiance += 1;
+                    modPlayer.DefianceDef += 3;
                 }
                 if (Defiance >= 2)
                 {
                     modPlayer.Defiance += 1;
+                    modPlayer.DefianceDef += 2;
                 }
                 if (Defiance >= 3)
                 {
                     modPlayer.Defiance += 1;
+                    modPlayer.DefianceDef += 3;
                 }
                 if (Defiance >= 4)
                 {
                     modPlayer.Defiance += 1;
+                    modPlayer.DefianceDef += 2;
                 }
                 if (Defiance >= 5)
                 {
                     modPlayer.Defiance += 1;
+                    modPlayer.DefianceDef += 3;
                 }
             }
             #endregion
@@ -1195,10 +1200,9 @@ namespace MHArmorSkills.MHPlayer
                 }
             }
             #endregion
+            // check GatheringDropRule instead
             #region Gathering
-            if (Gathering >= 1)
-            {
-            }
+
             #endregion
             // Geologist needs to work off the variable, not the buff
             #region Geologist 

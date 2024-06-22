@@ -2,7 +2,7 @@
 using Terraria.GameContent.ItemDropRules;
 using Terraria.Localization;
 
-namespace MHArmorSkills.MHPlayer.PKMItemDropRule
+namespace MHArmorSkills.MHPlayer.MHItemDropRule
 {
     public class JungleCondition : IItemDropRuleCondition, IProvideItemConditionDescription
     {

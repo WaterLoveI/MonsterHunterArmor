@@ -1,7 +1,7 @@
 ﻿using Terraria;
 using Terraria.GameContent.ItemDropRules;
 
-namespace MHArmorSkills.MHPlayer.PKMItemDropRule
+namespace MHArmorSkills.MHPlayer.MHItemDropRule
 {
     public class DecorationDropRule : IItemDropRuleCondition
     {

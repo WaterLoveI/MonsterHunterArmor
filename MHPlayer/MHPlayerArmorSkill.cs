@@ -82,6 +82,7 @@ namespace MHArmorSkills.MHPlayer
         public int CritBoost;
         public int CritDraw;
         public int Defiance;
+        public int DefianceDef;
         public int DefianceCooldown;
         public int Diversion;
         public int Elemental;
@@ -99,7 +100,6 @@ namespace MHArmorSkills.MHPlayer
         public int FortifedTimer;
         public int FreeElement;
         public int FreeMeal;
-        public int Gatherer;
         public int Geologist;
         public int Grinder;
         public int GuardCooldown;
@@ -200,6 +200,7 @@ namespace MHArmorSkills.MHPlayer
             CritELeTrue = false;
             DeadEye = 0;
             Defiance = 0;
+            DefianceDef = 0;
             Diversion = 0;
             Elemental = 0;
             ElementalRes = 0;
@@ -218,7 +219,6 @@ namespace MHArmorSkills.MHPlayer
             Fortified = false;
             FreeElement = 0;
             FreeMeal = 0;
-            Gatherer = 0;
             Geologist = 0;
             Grinder = 0;
             Guard = false;
@@ -554,7 +554,7 @@ namespace MHArmorSkills.MHPlayer
             #region Grinder
             if (Grinder >= 1 && Player.HasBuff(ModContent.BuffType<Sharpness>()))
             {
-                Player.AddBuff(ModContent.BuffType<Grinder>(), 2);
+                ControlledAttack += Grinder;
             }
             #endregion
             #region Affinity Sliding
@@ -663,18 +663,11 @@ namespace MHArmorSkills.MHPlayer
                 Player.GetDamage(DamageClass.Melee) += PunishDraw / 100f;
             }
             #endregion
-            #region Grinder
-            if (Player.HasBuff(ModContent.BuffType<Grinder>()))
-            {
-
-                ControlledAttack += Grinder;
-            }
-            #endregion
             #region Intrepid Heart
             if (IHeartCountdown >= 100 && !Player.HasBuff(ModContent.BuffType<IntrepidHeart>()))
             {
                 Player.AddBuff(ModContent.BuffType<IntrepidHeart>(), 2);
-                SoundEngine.PlaySound(SoundID.Item4);
+                SoundEngine.PlaySound(SoundID.NPCDeath7);
                 Player.noKnockback = true;
             }
             #endregion
@@ -1252,24 +1245,8 @@ namespace MHArmorSkills.MHPlayer
             Player.AddBuff(ModContent.BuffType<Defiance>(), 2);
             if (Defiance >= 1)
             {
-                Player.statDefense += 3;
+                Player.statDefense += DefianceDef;
                 Player.noKnockback = true;
-            }
-            if (Defiance >= 2)
-            {
-                Player.statDefense += 2;
-            }
-            if (Defiance >= 3)
-            {
-                Player.statDefense += 3;
-            }
-            if (Defiance >= 4)
-            {
-                Player.statDefense += 2;
-            }
-            if (Defiance >= 5)
-            {
-                Player.statDefense += 3;
             }
             if (Main.rand.NextBool(5))
             {
@@ -1511,7 +1488,7 @@ namespace MHArmorSkills.MHPlayer
             if (Player.HasBuff(ModContent.BuffType<IntrepidHeart>()))
             {
                 modifiers.FinalDamage *= 0.5f;
-                SoundEngine.PlaySound(SoundID.NPCDeath7);
+                SoundEngine.PlaySound(SoundID.NPCHit5);
                 IHeartCountdown = 0;
             }
             #endregion
@@ -1753,6 +1730,16 @@ namespace MHArmorSkills.MHPlayer
             if (SpareShot >= 1)
             {
                 if (Main.rand.NextBool(SpareShot))
+                {
+                    return false;
+                }
+            }
+            #endregion
+            #region Bladehone Scale
+            if (Player.HasBuff(ModContent.BuffType<BladeHoneScale>()))
+            {
+                int AmmoChance = 4 - BladeHoneScale;
+                if (Main.rand.NextBool(AmmoChance))
                 {
                     return false;
                 }

@@ -102,6 +102,7 @@ Mods: {
 			Resuscitate: Increases the Resuscitate Skill by {0}
 			RockSteady: Activates the Rock Steady Skill
 			Scholar: Increases the Scholar Skill by {0}
+			Slugger: Increases the Slugger Skill by {0}
 			Sneak: Increases the Sneak Skill by {0}
 			SneakAttack: Increases the Sneak Attack Skill by {0}
 			SpareShot: Increases the Spare Shot Skill by {0}
@@ -247,8 +248,8 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseCrit}
-					{$CommonItemTooltip.Evasion@1}
-					{$CommonItemTooltip.EvadeDistance@2}
+					{$CommonItemTooltip.EvadeDistance@1}
+					{$CommonItemTooltip.Evasion@2}
 					'''
 			}
 
@@ -530,7 +531,7 @@ Mods: {
 					{$CommonItemTooltip.IncreaseDamage}
 					{$CommonItemTooltip.IncreaseCrit@1}
 					{$CommonItemTooltip.BubbleDance@2}
-					{$CommonItemTooltip.Resusitate@3}
+					{$CommonItemTooltip.Resuscitate@3}
 					{$CommonItemTooltip.ThreeSlotDecor@4}
 					'''
 			}
@@ -655,9 +656,9 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase the Bloodlust Skill by 1.
-					Increase the Resentment Skill by 2.
-					[○]x1
+					{$CommonItemTooltip.Bloodlust@1}
+					{$CommonItemTooltip.Resentment@2}
+					{$CommonItemTooltip.OneSlotDecor@3}
 					'''
 			}
 
@@ -676,8 +677,8 @@ Mods: {
 				DisplayName: Hermitaur Helm
 				Tooltip:
 					'''
-					Increase the Free Meal Skill by 1.
-					{$CommonItemTooltip.Guard}
+					{$CommonItemTooltip.FreeMeal@1}
+					{$CommonItemTooltip.Guard@1}
 					'''
 			}
 
@@ -696,10 +697,10 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Critical Strike Chance by 10%. 
-					Increase the Attack Boost Skill by 2.
-					Increase the Ice Attack Skill by 1.
-					Increase the Handicraft Skill by 2.
+					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.AttackBoost@2}
+					{$CommonItemTooltip.IceAttack@3}
+					{$CommonItemTooltip.Handicraft@4}
 					'''
 			}
 
@@ -741,9 +742,9 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Movement speed by 10%. 
-					Increase the Attack Boost Skill by 2.
-					Increase the Critical Eye Skill by 2.
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.AttackBoost@2}
+					{$CommonItemTooltip.CritEye@3}
 					'''
 			}
 
@@ -752,11 +753,11 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Critical Strike Chance by 7%. 
-					{$CommonItemTooltip.Guard}
-					Increase the Pierce Up Skill by 1.
-					Increase the Spare Shot Skill by 1.
-					[○]x1
+					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.Guard@2}
+					{$CommonItemTooltip.PierceUp@3}
+					{$CommonItemTooltip.SpareShot@4}
+					{$CommonItemTooltip.OneShotDecor@5}
 					'''
 			}
 
@@ -765,11 +766,11 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Critical Strike Chance by 7%. 
-					{$CommonItemTooltip.Guard}
-					Increase the Resentment Skill by 1.
-					Increase the Spare Shot Skill by 1.
-					[○]x1
+					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.Guard@2}
+					{$CommonItemTooltip.Resentment@3}
+					{$CommonItemTooltip.SpareShot4}
+					{$CommonItemTooltip.OneShotDecor@5}
 					'''
 			}
 
@@ -778,11 +779,11 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Melee Attack Speed by 10%. 
-					{$CommonItemTooltip.Guard}
-					Increase the Razor Sharp Skill by 1.
-					Increase the Resentment Skill by 1.
-					[○]x1
+					{$CommonItemTooltip.IncreaseMelee@1}
+					{$CommonItemTooltip.Guard@2}
+					{$CommonItemTooltip.RazorSharp@3}
+					{$CommonItemTooltip.Resentment@4}
+					{$CommonItemTooltip.OneSlotDecor@5}
 					'''
 			}
 
@@ -791,10 +792,10 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Movement speed by 10%. 
-					Increase the Attack Boost Skill by 2.
-					Increase the Fire Attack Skill by 1.
-					[○]x2
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.AttackBoost@2}
+					{$CommonItemTooltip.FireAttack@3}
+					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
 
@@ -803,11 +804,11 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Movement speed by 15%. 
-					Increase the Gathering Skill by 1.
-					Increase the Thunder Attack Skill by 1.
-					Increase the Ice Res Skill by 1.
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.Gathering@2}
+					{$CommonItemTooltip.IceRes@3}
+					{$CommonItemTooltip.ThunderAttack@4}
+					{$CommonItemTooltip.TwoSlotDecor@5}
 					'''
 			}
 
@@ -816,11 +817,11 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Movement speed by 10%. 
-					Increase the Ice Attack Skill by 1.
-					Increase the Polar Hunter Skill by 1.
-					Increase the Hasten Recovery Skill by 1.
-					[○][○][○]x1
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.HastenRecovery@2}
+					{$CommonItemTooltip.IceAttack@3}
+					{$CommonItemTooltip.PolarHunter@4}
+					{$CommonItemTooltip.ThreeSlotDecor@5}
 					'''
 			}
 
@@ -829,10 +830,10 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Movement speed by 10%. 
-					Increase the Attack Boost Skill by 2.
-					Increase the Fire Attack Skill by 1.
-					Increase the Critical Eye Skill by 1.
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.AttackBoost@2}
+					{$CommonItemTooltip.CritEye@3}
+					{$CommonItemTooltip.FireAttack@4}
 					'''
 			}
 
@@ -841,10 +842,10 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase the Anti-Poison Skill by 2.
-					{$CommonItemTooltip.Guard}
-					{$CommonItemTooltip.DefenseBoost}
-					[○]x1
+					{$CommonItemTooltip.Poison@1}
+					{$CommonItemTooltip.Guard@2}
+					{$CommonItemTooltip.DefenseBoost@3}
+					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
 
@@ -853,10 +854,10 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Melee Attack Speed by 10%. 
-					{$CommonItemTooltip.Guard}
-					Increase the Attack Boost Skill by 1.
-					Increase the Razor Sharp Skill by 1.
+					{$CommonItemTooltip.IncreaseMelee@1}
+					{$CommonItemTooltip.Guard@2}
+					{$CommonItemTooltip.AttackBoost@3}
+					{$CommonItemTooltip.RazorSharp@4}
 					'''
 			}
 
@@ -865,11 +866,11 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Melee Attack Speed by 20%. 
-					Increase the Slugger Skill by 1.
-					Increase the Punish Draw Skill by 1.
-					Increase the Fortified Skill by 1.
-					[○][○][○]x1
+					{$CommonItemTooltip.IncreaseMelee@1}
+					{$CommonItemTooltip.Fortified@2}
+					{$CommonItemTooltip.Slugger@3}
+					{$CommonItemTooltip.PunishDraw@4}
+					{$CommonItemTooltip.ThreeSlotDecor@5}
 					'''
 			}
 
@@ -878,9 +879,9 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase the Attack Boost Skill by 2.
-					Increase the Punish Draw Skill by 1.
-					[○][○][○]x1
+					{$CommonItemTooltip.AttackBoost@1}
+					{$CommonItemTooltip.PunishDraw@2}
+					{$CommonItemTooltip.ThreeSlotDecor@3}
 					'''
 			}
 
@@ -888,11 +889,11 @@ Mods: {
 				DisplayName: Bone Helmet X
 				Tooltip:
 					'''
-					Increase Melee Attack Speed by 10%. 
-					Increase Movement Speed by 5%. 
-					Increase the Attack Boost Skill by 2.
-					[○]x1
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseMelee}
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.AttackBoost@2}
+					{$CommonItemTooltip.OneSlotDecor@3}
+					{$CommonItemTooltip.TwoSlotDecor@4}
 					'''
 			}
 
@@ -901,10 +902,10 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Movement speed by 10%. 
-					Increase the Heroics Skill by 2.
-					Increase the Attack Boost Skill by 2.
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.AttackBoost@2}
+					{$CommonItemTooltip.Heroics@3}
+					{$CommonItemTooltip.TwoSlotDecor@4}
 					'''
 			}
 
@@ -912,11 +913,11 @@ Mods: {
 				DisplayName: Jaggi Mask X
 				Tooltip:
 					'''
-					Increase Critical Strike Chance by 10%.
-					Increase Movement speed by 10%. 
-					Increase the Autotracker Skill by 2.
-					Increase the Speed Eating Skill by 2.
-					[○][○][○]x1
+					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.AutoTracker@2}
+					{$CommonItemTooltip.SpeedEating@3}
+					{$CommonItemTooltip.ThreeSlotDecor@4}
 					'''
 			}
 
@@ -924,11 +925,11 @@ Mods: {
 				DisplayName: Konchu Helm X
 				Tooltip:
 					'''
-					20% to not consume ammo.
-					Increase Movement speed by 15%. 
-					{$CommonItemTooltip.DefenseBoost}
-					Increase the Def Lock Skill by 2.
-					Increase the Protection Skill by 1.
+					{$ItemTooltip.AmmoReservationPotion}
+					{$CommonItemTooltip.IncreaseMovement@0}
+					{$CommonItemTooltip.DefenseBoost@1}
+					{$CommonItemTooltip.DefLock@2}
+					{$CommonItemTooltip.Protection@3}
 					'''
 			}
 
@@ -937,10 +938,10 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Mana by 20.
-					Increase the Mushroomancer Skill by 2.
-					Increase the Quick Gathering Skill by 2.
-					[○]x2
+					{$ItemTooltip.BandofStarpower}
+					{$CommonItemTooltip.Mushroomancer@1}
+					{$CommonItemTooltip.Gathering@2}
+					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -949,10 +950,10 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Movement speed by 7%.
-					Increase the Fate Skill by 2.
-					Increase the Evasion Skill by 1.
-					[○][○][○]x1
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.Fate@2}
+					{$CommonItemTooltip.Evasion@3}
+					{$CommonItemTooltip.ThreeSlotDecor@4}
 					'''
 			}
 
@@ -961,10 +962,10 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Critical Strike Chance by 10%.
-					Increase the Critical Eye Skill by 2.
-					Increase the Evasion Skill by 2.
-					[○]x1
+					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.CritEye@2}
+					{$CommonItemTooltip.Evasion@3}
+					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
 
@@ -973,10 +974,10 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Melee Speed by 10%.
-					Increase the Heat Res Skill by 2.
-					{$CommonItemTooltip.Guard}
-					Increase the Offensive Guard Skill by 1.
+					{$CommonItemTooltip.IncreaseMelee@1}
+					{$CommonItemTooltip.HeatRes@2}
+					{$CommonItemTooltip.Guard@3}
+					{$CommonItemTooltip.OffensiveGuard@4}
 					'''
 			}
 
@@ -985,11 +986,11 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Movement speed by 10%.
-					Increase the Heat Res Skill by 2.
-					Increase the Offensive Guard Skill by 1.
-					Increase the Resentment Skill by 1.
-					[○]x1
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.HeatRes@2}
+					{$CommonItemTooltip.OffensiveGuard@3}
+					{$CommonItemTooltip.Resentment@4}
+					{$CommonItemTooltip.OneSlotDecor@5}
 					'''
 			}
 
@@ -998,10 +999,10 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Movement speed by 10%.
-					Increase the Aquatic Mobility Skill by 2.
-					Increase the Recovery Speed Skill by 2.
-					[○][○][○]x1
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.AquaticMobility@2}
+					{$CommonItemTooltip.RecoverySpd@3}
+					{$CommonItemTooltip.ThreeSlotDecor@4}
 					'''
 			}
 
@@ -1010,11 +1011,11 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Movement speed by 15%.
-					Increase the Ice Attack Skill by 1.
-					{$CommonItemTooltip.Guard}
-					Increase the Punish Draw Skill by 1.
-					[○]x3
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.IceAttack@2}
+					{$CommonItemTooltip.Guard@3}
+					{$CommonItemTooltip.PunishDraw@4}
+					{$CommonItemTooltip.OneSlotDecor@5}
 					'''
 			}
 
@@ -1023,10 +1024,10 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Movement speed by 10%.
-					Increase the Attack Boost Skill by 2.
-					{$CommonItemTooltip.DefenseBoost}
-					{$CommonItemTooltip.Guard}
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.AttackBoost@2}
+					{$CommonItemTooltip.DefenseBoost@3}
+					{$CommonItemTooltip.Guard@4}
 					'''
 			}
 
@@ -1035,11 +1036,11 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Mana by 20.
-					Increase the Attack Boost Skill by 1.
-					Increase the Free Meal Skill by 1.
-					Increase the Mushroomancer Skill by 1.
-					[○][○]x2
+					{$ItemTooltip.BandofStarpower}
+					{$CommonItemTooltip.AttackBoost@1}
+					{$CommonItemTooltip.FreeMeal@2}
+					{$CommonItemTooltip.Mushroomancer@3}
+					{$CommonItemTooltip.TwoSlotDecor@4}
 					'''
 			}
 
@@ -1048,11 +1049,11 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Mana by 20.
-					Increase the Attack Boost Skill by 1.
-					Increase the Gluttony Skill by 1.
-					Increase the Mushroomancer Skill by 1.
-					[○][○]x1
+					{$ItemTooltip.BandofStarpower}
+					{$CommonItemTooltip.AttackBoost@1}
+					{$CommonItemTooltip.Gluttony@2}
+					{$CommonItemTooltip.Mushroomancer@3}
+					{$CommonItemTooltip.TwoSlotDecor@4}
 					'''
 			}
 
@@ -1061,11 +1062,11 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Movement speed by 10%.
-					Increase the Recovery Speed Skill by 1.
-					Increase the Recovery Up Skill by 1.
-					Increase Hasten Recovery Skill by 1.
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.RecoverySpd@2}
+					{$CommonItemTooltip.RecUp@3}
+					{$CommonItemTooltip.HastenRecovery@4}
+					{$CommonItemTooltip.TwoSlotDecor@5}
 					'''
 			}
 
@@ -1074,11 +1075,11 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Movement speed by 10%.
-					{$CommonItemTooltip.DefenseBoost}
-					Increase the Honey Hunter Skill by 1.
-					Increase the Protection Skill by 1.
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.DefenseBoost@2}
+					{$CommonItemTooltip.HoneyHunter@3}
+					{$CommonItemTooltip.Protection@4}
+					{$CommonItemTooltip.TwoSlotDecor@5}
 					'''
 			}
 
@@ -1087,10 +1088,10 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Movement speed by 10%.
-					Increase the Water Attack Skill by 2.
-					Increase the Sharpness Skill by 1.
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.WaterAttack@2}
+					{$CommonItemTooltip.RazorSharp@3}
+					{$CommonItemTooltip.TwoSlotDecor@4}
 					'''
 			}
 
@@ -1099,10 +1100,10 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Movement speed by 15%.
-					Increase the Attack Boost Skill by 3.
-					Increase the Diversion Skill by 1.
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.AttackBoost@2}
+					{$CommonItemTooltip.Diversion@3}
+					{$CommonItemTooltip.TwoSlotDecor@4}
 					'''
 			}
 
@@ -1111,10 +1112,10 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Movement speed by 5%.
-					Increase the Free Meal Skill by 2.
-					{$CommonItemTooltip.Guard}
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.FreeMeal@2}
+					{$CommonItemTooltip.Guard@3}
+					{$CommonItemTooltip.TwoSlotDecor@4}
 					'''
 			}
 
@@ -1123,11 +1124,11 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Movement speed by 10%.
-					Increase the Health Skill by 1.
-					Increase the Protection Skill by 1.
-					Increase the Recovery Up Skill by 1.
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.Health@2}
+					{$CommonItemTooltip.Protection@3}
+					{$CommonItemTooltip.RecUp@4}
+					{$CommonItemTooltip.TwoSlotDecor@5}
 					'''
 			}
 
@@ -1136,10 +1137,10 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Movement speed by 10%.
-					Increase the Protection Skill by 2.
-					[○]x1
-					[○][○][○]x1
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.Protection@2}
+					{$CommonItemTooltip.OneSlotDecor@3}
+					{$CommonItemTooltip.TwoSlotDecor@4}
 					'''
 			}
 
@@ -1148,10 +1149,10 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Movement speed by 10%.
-					Increase the Normal Up Skill by 2.
-					Increase the Spare Shot Skill by 1.
-					[○]x1
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.NormalUp@2}
+					{$CommonItemTooltip.SpareShot@3}
+					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
 
@@ -1160,10 +1161,10 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Movement speed by 10%.
-					Increase the Critical Eye Skill by 3.
-					Increase the Water Attack Skill by 2.
-					[○]x1
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.CritEye@2}
+					{$CommonItemTooltip.WaterAttack@3}
+					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
 
@@ -1172,11 +1173,11 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Movement speed by 10%.
-					Increase the Critical Eye Skill by 1.
-					Increase the Evasion Skill by 1.
-					Increase the Evade Distance Skill by 1.
-					Increase the Peak Performance Skill by 1.
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.CritEye@2}
+					{$CommonItemTooltip.EvadeDistance@3}
+					{$CommonItemTooltip.Evasion@4}
+					{$CommonItemTooltip.Unscathed@5}
 					[○]x1
 					'''
 			}
@@ -1186,10 +1187,10 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Movement speed by 10%.
-					Increase the Ice Attack Skill by 3.
-					Increase the Critical Eye Skill by 1.
-					[○][○]x2
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.IceAttack@2}
+					{$CommonItemTooltip.CritEye@3}
+					{$CommonItemTooltip.TwoSlotDecor@4}
 					'''
 			}
 
@@ -1198,12 +1199,12 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Movement speed by 10%.
-					{$CommonItemTooltip.Guard}
-					Increase the Crit Draw Skill by 1.
-					Increase the Guts Skill by 1.
-					[○]x1
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.Guard@2}
+					{$CommonItemTooltip.CritDraw@3}
+					{$CommonItemTooltip.Guts@4}
+					{$CommonItemTooltip.OneSlotDecor@5}
+					{$CommonItemTooltip.TwoSlotDecor@6}
 					'''
 			}
 
@@ -1212,11 +1213,11 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Movement speed by 10%.
-					Increase the Evasion Skill by 1.
-					Increase the Free Meal Skill by 1.
-					Increase the Recovery Up Skill by 1.
-					[○][○][○]x1
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.Evasion@2}
+					{$CommonItemTooltip.FreeMeal@3}
+					{$CommonItemTooltip.RecUp@4}
+					{$CommonItemTooltip.ThreeSlotDecor@5}
 					'''
 			}
 
@@ -1230,10 +1231,10 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Melee Speed by 15%.
-					Increase the Spirit Skill by 2.
-					Increase the Slugger Skill by 1.
-					[○][○]x3
+					{$CommonItemTooltip.IncreaseMelee@1}
+					{$CommonItemTooltip.Spirit@2}
+					{$CommonItemTooltip.Slugger@3}
+					{$CommonItemTooltip.TwoSlotDecor@4}
 					'''
 			}
 
@@ -1242,11 +1243,11 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Critical Strike Chance by 10%.
-					Increase the Fire Attack Skill by 2.
-					{$CommonItemTooltip.Guard}
-					Increase the Razor Sharp Skill by 1.
-					[○][○][○]x1
+					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.FireAttack@2}
+					{$CommonItemTooltip.Guard@3}
+					{$CommonItemTooltip.RazorSharp@4}
+					{$CommonItemTooltip.ThreeSlotDecor@5}
 					'''
 			}
 
@@ -1255,11 +1256,11 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Critical Strike Chance by 12%.
-					Increase the Constitution Skill by 2.
-					Increase the Bladescale Hone Skill by 1.
-					Increase the Bleed Skill by 1.
-					[○][○]x2
+					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.Constitution@2}
+					{$CommonItemTooltip.BladehoneScale@3}
+					{$CommonItemTooltip.Bleeding@4}
+					{$CommonItemTooltip.TwoSlotDecor@5}
 					'''
 			}
 
@@ -1268,11 +1269,11 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					20% Chance to not consume ammo.
-					{$CommonItemTooltip.Guard}
-					Increase the Hero Shield Skill by 1.
-					Increase the Artillery Skill by 1.
-					[○]x3
+					{$ItemTooltip.AmmoReservationPotion}
+					{$CommonItemTooltip.Guard@1}
+					{$CommonItemTooltip.Artillery@1}
+					{$CommonItemTooltip.HeroShield@2}
+					{$CommonItemTooltip.OneSlotDecor@3}
 					'''
 			}
 
@@ -1281,10 +1282,10 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Critical Strike Chance by 12%.
-					Increase the Handicraft Skill by 2.
-					Increase the Razor Sharp Skill by 2.
-					[○][○][○]x2
+					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.Handicraft@2}
+					{$CommonItemTooltip.RazorSharp@3}
+					{$CommonItemTooltip.ThreeSlotDecor@4}
 					'''
 			}
 
@@ -1293,11 +1294,11 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Critical Strike Chance by 12%.
-					Increase the Spirit Skill by 2.
-					Increase the Coalescence Skill by 2.
-					Increase the Bloodlust Skill by 1.
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.Coalescence@2}
+					{$CommonItemTooltip.Spirit@3}
+					{$CommonItemTooltip.Bloodlust@4}
+					{$CommonItemTooltip.TwoSlotDecor@5}
 					'''
 			}
 
@@ -1306,10 +1307,10 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Critical Strike Chance by 12%.
-					Increase the Handicraft Skill by 2.
-					Increase the Grinder Skill by 1.
-					[○][○][○]x1
+					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.Handicraft@2}
+					{$CommonItemTooltip.Grinder@3}
+					{$CommonItemTooltip.ThreeSlotDecor@4}
 					'''
 			}
 
@@ -1318,10 +1319,10 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Melee Attack Speed by 15%. 
-					Increase the Grinder Skill by 2.
-					Increase the Razor Sharp Skill by 2.
-					[○][○][○]x1
+					{$CommonItemTooltip.IncreaseMelee@1}
+					{$CommonItemTooltip.Grinder@2}
+					{$CommonItemTooltip.RazorSharp@3}
+					{$CommonItemTooltip.ThreeSlotDecor@4}
 					'''
 			}
 
@@ -1330,10 +1331,10 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Critical Strike Chance by 12%.
-					Increase the Attack Boost Skill by 2.
-					Increase the Polar Hunter Skill by 2.
-					[○]x1
+					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.AttackBoost@2}
+					{$CommonItemTooltip.PolarHunter@3}
+					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
 
@@ -1342,11 +1343,11 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Movement Speed by 15%
-					Increase the Attack Boost Skill by 2.
-					Increase the Polar Hunter Skill by 1.
-					[○]x1
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.AttackBoost@2}
+					{$CommonItemTooltip.PolarHunter@3}
+					{$CommonItemTooltip.OneSlotDecor@4}
+					{$CommonItemTooltip.TwoSlotDecor@5}
 					'''
 			}
 
@@ -1366,11 +1367,11 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Critical Strike Chance by 12%.
-					Increase the Thunder Attack Skill by 1.
-					Increase the Vault Skill by 1.
-					Increase the Pierce Up Skill by 1.
-					[○][○]x2
+					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.PieceUp@2}
+					{$CommonItemTooltip.ThunderAttack@3}
+					{$CommonItemTooltip.Vault@4}
+					{$CommonItemTooltip.TwoSlotDecor@5}
 					'''
 			}
 
@@ -1379,11 +1380,11 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Critical Strike Chance by 12%.
-					Increase the Spare Shot Skill by 2.
-					Increase the Vault Skill by 1.
-					Increase the Pierce Up Skill by 1.
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.SpareShot@2}
+					{$CommonItemTooltip.PierceUp@3}
+					{$CommonItemTooltip.Vault@4}
+					{$CommonItemTooltip.TwoSlotDecor@5}
 					'''
 			}
 
@@ -1392,11 +1393,11 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Movement Speed by 15%. 
-					Increase the Thunder Attack Skill by 2.
-					Increase the Vault Skill by 1.
-					Increase the Pierce Up Skill by 1.
-					[○]x2
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.ThunderAttack@2}
+					{$CommonItemTooltip.PierceUp@3}
+					{$CommonItemTooltip.Vault@4}
+					{$CommonItemTooltip.OneSlotDecor@5}
 					'''
 			}
 
@@ -1405,11 +1406,11 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Critical Strike Chance by 12%.
-					Increase the Constitution Skill by 1.
-					Increase the Evasion Skill by 1.
-					Increase the Water Attack Skill by 1.
-					[○][○]x2
+					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.Constitution@2}
+					{$CommonItemTooltip.Evasion@3}
+					{$CommonItemTooltip.WaterAttack@4}
+					{$CommonItemTooltip.TwoSlotDecor@5}
 					'''
 			}
 
@@ -1418,10 +1419,10 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Movement Speed by 15%.
-					Increase the Fire Attack Skill by 2.
-					Increase the Attack Boost Skill by 2.
-					Increase the Tenderizer Skill by 1.
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.AttackBoost@2}
+					{$CommonItemTooltip.FireAttack@3}
+					{$CommonItemTooltip.Tenderizer@4}
 					'''
 			}
 
@@ -1430,11 +1431,11 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase Critical Strike Chance by 10%.
-					Increase the Latent Power Skill by 2.
-					Increase the Evasion Skill by 1.
-					Increase the Sneak Skill by 1.
-					[○][○]x2
+					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.LatentPower@2}
+					{$CommonItemTooltip.Evasion@3}
+					{$CommonItemTooltip.Sneak@4}
+					{$CommonItemTooltip.TwoSlotDecor@5}
 					'''
 			}
 
@@ -1443,10 +1444,10 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase health regeneration by 2.
-					Increase the Mushroomancer Skill by 2.
-					Increase the Resentment Skill by 2.
-					[○]x2
+					{$ItemTooltip.BandofRegeneration}
+					{$CommonItemTooltip.Mushroomancer@1}
+					{$CommonItemTooltip.Resentment@2}
+					{$CommonItemTooltip.OneSlotDecor@3}
 					'''
 			}
 
@@ -1454,11 +1455,11 @@ Mods: {
 				DisplayName: Zinogre Greaves
 				Tooltip:
 					'''
-					Increases Critical Strike Chance by 5%.
-					Increase the Critical Eye Skill by 1.
-					Increase the Latent Power Skill by 1.
-					Increase the Thunder Attack Skill by 1.
-					[○]x1
+					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.CritEye@1}
+					{$CommonItemTooltip.LatentPower@2}
+					{$CommonItemTooltip.ThunderAttack@3}
+					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
 
@@ -1466,10 +1467,10 @@ Mods: {
 				DisplayName: Zinogre Mail
 				Tooltip:
 					'''
-					Increases Critical Strike Chance by 5%.
-					Increase the Latent Power Skill by 2.
-					Increase the Thunder Attack Skill by 2.
-					[○]x1
+					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.LatentPower@1}
+					{$CommonItemTooltip.ThunderAttack@2}
+					{$CommonItemTooltip.OneSlotDecor@3}
 					'''
 			}
 
@@ -1477,11 +1478,11 @@ Mods: {
 				DisplayName: Zinogre Greaves X
 				Tooltip:
 					'''
-					Increase Movement Speed by 12%
-					Increases Critical Strike Chance by 10%.
-					Increase the Evasion Skill by 2.
-					Increase the Latent Power Skill by 2.
-					[○][○][○]x1
+					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.Evasion@2}
+					{$CommonItemTooltip.LatentPower@3}
+					{$CommonItemTooltip.ThreeSlotDecor@4}
 					'''
 			}
 
@@ -1490,11 +1491,11 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increases Mana by 20.
-					Increase the Thunder Attack Skill by 3.
-					Increase the Unscathed Skill by 2.
-					Increase the Latent Power Skill by 1.
-					[○]x1
+					{$ItemTooltip.BandofStarpower}
+					{$CommonItemTooltip.ThunderAttack@1}
+					{$CommonItemTooltip.Unscathed@2}
+					{$CommonItemTooltip.LatentPower@3}
+					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
 
@@ -1502,12 +1503,12 @@ Mods: {
 				DisplayName: Zinogre Greaves Z
 				Tooltip:
 					'''
-					Increase Movement Speed by 10%
-					Increases Critical Strike Chance by 12%.
-					Increase the Critical Eye Skill by 2.
-					Increase the Latent Power Skill by 1.
-					Increase the Unscathed Skill by 1.
-					[○]x1
+					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.CritEye@2}
+					{$CommonItemTooltip.LatentPower@3}
+					{$CommonItemTooltip.Unscathed@4}
+					{$CommonItemTooltip.OneSlotDecor@5}
 					'''
 			}
 
@@ -1516,11 +1517,11 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increases Critical Strike Chance by 12%.
-					Increase the Evasion Skill by 2.
-					Increase the Latent Power Skill by 1.
-					Increase the Unscathed Skill by 1.
-					[○][○][○]x1
+					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.Evasion@2}
+					{$CommonItemTooltip.LatentPower@3}
+					{$CommonItemTooltip.Unscathed@4}
+					{$CommonItemTooltip.ThreeSlotDecor@5}
 					'''
 			}
 
@@ -1529,10 +1530,10 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increases Mana by 20.
-					Increase the Latent Power Skill by 3.
-					Increase the Unscathed Skill by 1.
-					[○][○]x2
+					{$ItemTooltip.BandofStarpower}
+					{$CommonItemTooltip.LatentPower@1}
+					{$CommonItemTooltip.Unscathed@2}
+					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -1540,9 +1541,9 @@ Mods: {
 				DisplayName: Zinogre Helm EX
 				Tooltip:
 					'''
-					Increases Critical Strike Chance by 5%.
-					Increase the Latent Power Skill by 3.
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.LatentPower@1}
+					{$CommonItemTooltip.TwoSlotDecor@2}
 					'''
 			}
 
@@ -1550,12 +1551,12 @@ Mods: {
 				DisplayName: Hornetaur Mail X
 				Tooltip:
 					'''
-					Increases your max number of minions by 1
-					Increases Damage by 10%.
-					Increase the Free Meal Skill by 2.
-					{$CommonItemTooltip.Guard}
-					Increase the Tenderizer Skill by 1.
-					[○]x1
+					{$CommonItemTooltip.IncreaseDamage}
+					{$ItemTooltip.PygmyNecklace}
+					{$CommonItemTooltip.FreeMeal@1}
+					{$CommonItemTooltip.Guard@2}
+					{$CommonItemTooltip.Tenderizer@3}
+					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
 
@@ -1563,11 +1564,11 @@ Mods: {
 				DisplayName: Hornetaur Greaves X
 				Tooltip:
 					'''
-					Increases your max number of minions by 1
-					Increases Movement Speed Chance by 7%.
-					{$CommonItemTooltip.Guard}
-					Increase the Recovery Up Skill by 1.
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseMovement}
+					{$ItemTooltip.PygmyNecklace}
+					{$CommonItemTooltip.Guard@1}
+					{$CommonItemTooltip.RecUp@2}
+					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -1585,11 +1586,11 @@ Mods: {
 				DisplayName: Droth Greaves X
 				Tooltip:
 					'''
-					Increases maximum mana by 20.
-					Increases Movement Speed by 10%.
-					Increase the Water Attack Skill by 2.
-					Increase the Water Resistance Skill by 2.
-					[○]x1
+					{$CommonItemTooltip.IncreaseMovement}
+					{$ItemTooltip.BandofStarpower}
+					{$CommonItemTooltip.WaterAttack@1}
+					{$CommonItemTooltip.WaterRes@2}
+					{$CommonItemTooltip.OneSlotDecor@3}
 					'''
 			}
 
@@ -1597,10 +1598,10 @@ Mods: {
 				DisplayName: Sailor Socks X
 				Tooltip:
 					'''
-					Increases Movement Speed by 10%.
-					Increase the Aquatic Mobility Skill by 2.
-					Increase the Water Attack Skill by 2.
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseMovement}
+					{$CommonItemTooltip.AquaticMobility@1}
+					{$CommonItemTooltip.WaterAttack@2}
+					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -1608,10 +1609,10 @@ Mods: {
 				DisplayName: Sailor Socks
 				Tooltip:
 					'''
-					Increases Movement Speed by 5%.
-					Increase the Aquatic Mobility Skill by 1.
-					Increase the Water Attack Skill by 1.
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseMovement}
+					{$CommonItemTooltip.AquaticMobility@1}
+					{$CommonItemTooltip.WaterAttack@2}
+					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -1620,9 +1621,9 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase the Water Attack Skill by 3.
-					Increase the Aquatic Mobility Skill by 1.
-					[○][○]x1
+					{$CommonItemTooltip.AquaticMobility@1}
+					{$CommonItemTooltip.WaterAttack@2}
+					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -1630,10 +1631,10 @@ Mods: {
 				DisplayName: Sailor Shirt
 				Tooltip:
 					'''
-					Increases Movement Speed by 5%.
-					Increase the Water Attack Skill by 2.
-					Increase the Evasion Skill by 1.
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseMovement}
+					{$CommonItemTooltip.WaterAttack@1}
+					{$CommonItemTooltip.Evasion@2}
+					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -1641,11 +1642,11 @@ Mods: {
 				DisplayName: Lavasioth Mail X
 				Tooltip:
 					'''
-					Increases Critical Strike Chance by 7%.
-					Increases Melee Speed by 10%.
-					{$CommonItemTooltip.Guard}
-					Increase the Resentment Skill by 1.
-					[○][○]x2
+					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.IncreaseMelee@1}
+					{$CommonItemTooltip.Guard@2}
+					{$CommonItemTooltip.Resentment@3}
+					{$CommonItemTooltip.TwoSlotDecor@4}
 					'''
 			}
 
@@ -1653,10 +1654,10 @@ Mods: {
 				DisplayName: Lavasioth Mail
 				Tooltip:
 					'''
-					Increases Melee Speed by 5%.
-					{$CommonItemTooltip.Guard}
-					Increase the Resentment Skill by 1.
-					[○]x1
+					{$CommonItemTooltip.IncreaseMelee}
+					{$CommonItemTooltip.Guard@1}
+					{$CommonItemTooltip.Resentment@2}
+					{$CommonItemTooltip.OneSlotDecor@3}
 					'''
 			}
 
@@ -1664,10 +1665,10 @@ Mods: {
 				DisplayName: Lavasioth Greaves
 				Tooltip:
 					'''
-					Increases Movement Speed by 7%.
-					Increase the Recovery Up Skill by 1.
-					Increase the Resentment Skill by 1.
-					[○]x1
+					{$CommonItemTooltip.IncreaseMovement}
+					{$CommonItemTooltip.RecUp@1}
+					{$CommonItemTooltip.Resentment@2}
+					{$CommonItemTooltip.OneSlotDecor@3}
 					'''
 			}
 
@@ -1676,12 +1677,12 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increases Movement Speed by 7%.
-					Increases life regen by 1.
-					Increase the Fortifed Skill by 1.
-					Increase the Recovery Up Skill by 1.
-					Increase the Resentment Skill by 1.
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$ItemTooltip.BandofRegeneration}
+					{$CommonItemTooltip.Fortified@2}
+					{$CommonItemTooltip.RecUp@3}
+					{$CommonItemTooltip.Resentment@4}
+					{$CommonItemTooltip.TwoSlotDecor@5}
 					'''
 			}
 
@@ -1689,11 +1690,11 @@ Mods: {
 				DisplayName: Basarios Mail U
 				Tooltip:
 					'''
-					Increases Critical Strike Chance by 10%.
-					Increases Melee Speed by 12%.
-					Increase the Offensive Guard Skill by 2.
-					Increase the Punish Draw Skill by 2.
-					[○]x2
+					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.IncreaseMelee@1}
+					{$CommonItemTooltip.OffensiveGuard@2}
+					{$CommonItemTooltip.PunishDraw@3}
+					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
 
@@ -1702,10 +1703,10 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increases Melee Speed by 15%.
-					{$CommonItemTooltip.DefenseBoost}
-					{$CommonItemTooltip.Guard}
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseMelee@1}
+					{$CommonItemTooltip.DefenseBoost@2}
+					{$CommonItemTooltip.Guard@3}
+					{$CommonItemTooltip.TwoSlotDecor@4}
 					'''
 			}
 
@@ -1725,11 +1726,11 @@ Mods: {
 				DisplayName: Rathian Mail X
 				Tooltip:
 					'''
-					Increases Critical Strike Chance by 7%.
-					Increases Movement Speed by 7%.
-					Increase the Attack Boost Skill by 2.
-					Increase the Protection Skill by 1.
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.AttackBoost@2}
+					{$CommonItemTooltip.Protection@3}
+					{$CommonItemTooltip.TwoSlotDecor@4}
 					'''
 			}
 
@@ -1738,9 +1739,9 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase the Health Skill by 1.
-					Increase the Recovery Speed Skill by 1.
-					[○][○]x2
+					{$CommonItemTooltip.Health@1}
+					{$CommonItemTooltip.RecoverySpd@2}
+					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -1748,10 +1749,10 @@ Mods: {
 				DisplayName: Rathian Greaves
 				Tooltip:
 					'''
-					Increases Movement Speed by 10%.
-					Increase the Recovery Speed Skill by 2.
-					Increase the Anti-Poison Skill by 1.
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.RecoverySpd@1}
+					{$CommonItemTooltip.Poison@2}
+					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -1760,10 +1761,10 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increases Movement Speed by 10%.
-					Increase the Recovery Up Skill by 1.
-					Increase the Recovery Speed Skill by 1.
-					[○][○][○]x2
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.RecUp@2}
+					{$CommonItemTooltip.RecoverySpd@3}
+					{$CommonItemTooltip.ThreeSlotDecor@4}
 					'''
 			}
 
@@ -1771,10 +1772,10 @@ Mods: {
 				DisplayName: Nargacuga Mail
 				Tooltip:
 					'''
-					Increases Critical Strike Chance by 5%.
-					Increase the Sneak Skill by 2.
-					Increase the Critical Eye Skill by 1.
-					[○]x1
+					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.Sneak@1}
+					{$CommonItemTooltip.CritEye@2}
+					{$CommonItemTooltip.OneSlotDecor@3}
 					'''
 			}
 
@@ -1782,10 +1783,10 @@ Mods: {
 				DisplayName: Nargacuga Greaves
 				Tooltip:
 					'''
-					Increases Movement Speed by 10%.
-					Increase the Critical Eye Skill by 1.
-					Increase the Evade Distance Skill by 1.
-					[○]x2
+					{$CommonItemTooltip.IncreaseMovement}
+					{$CommonItemTooltip.CritEye@1}
+					{$CommonItemTooltip.EvadeDistance@2}
+					{$CommonItemTooltip.OneSlotDecor@3}
 					'''
 			}
 
@@ -1793,11 +1794,11 @@ Mods: {
 				DisplayName: Nargacuga Greaves X
 				Tooltip:
 					'''
-					Increases Critical Strike Chance by 5%
-					Increases Movement Speed by 10%.
-					Increase the Evasion Skill by 2.
-					Increase the Evade Distance Skill by 2.
-					[○][○]x1
+					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.EvadeDistance@2}
+					{$CommonItemTooltip.Evasion@3}
+					{$CommonItemTooltip.TwoSlotDecor@4}
 					'''
 			}
 
@@ -1805,12 +1806,12 @@ Mods: {
 				DisplayName: Nargacuga Mail X
 				Tooltip:
 					'''
-					Increases Critical Strike Chance by 12%.
-					Increase Movement Speed by 5%
-					Increase the Evasion Skill by 2.
-					Increase the Adrenaline Rush Skill by 1.
-					[○]x1
-					[○][○][○]x1
+					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.Evasion@2}
+					{$CommonItemTooltip.AdrenalineRush@3}
+					{$CommonItemTooltip.OneSlotDecor@4}
+					{$CommonItemTooltip.ThreeSlotDecor@5}
 					'''
 			}
 
@@ -1830,8 +1831,8 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					Increase the Attack Boost Skill by 3.
-					Increase the Tremor Res Skill by 2.
+					{$CommonItemTooltip.AttackBoost@1}
+					{$CommonItemTooltip.TremorRes@2}
 					'''
 			}
 
@@ -1839,7 +1840,7 @@ Mods: {
 				DisplayName: Attack Boost Decoration 1
 				Tooltip:
 					'''
-					Increase the Attack Boost Skill by 1.
+					{$CommonItemTooltip.AttackBoost}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -1849,7 +1850,7 @@ Mods: {
 				DisplayName: Attack Boost Decoration 2
 				Tooltip:
 					'''
-					Increase the Attack Boost Skill by 2.
+					{$CommonItemTooltip.AttackBoost}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -1859,7 +1860,7 @@ Mods: {
 				DisplayName: Bladehone Scale Decoration 1
 				Tooltip:
 					'''
-					Increase the Bladehone Scale Skill by 1.
+					{$CommonItemTooltip.BladehoneScale}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -1869,7 +1870,7 @@ Mods: {
 				DisplayName: Bladehone Scale Decoration 2
 				Tooltip:
 					'''
-					Increase the Bladehone Scale Skill by 2.
+					{$CommonItemTooltip.BladehoneScale}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -1879,7 +1880,7 @@ Mods: {
 				DisplayName: Blood Rite Decoration 1
 				Tooltip:
 					'''
-					Increase the Blood Rite Skill by 1.
+					{$CommonItemTooltip.BloodRite}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -1889,7 +1890,7 @@ Mods: {
 				DisplayName: Carving Decoration 1
 				Tooltip:
 					'''
-					Increase the Carving Skill by 1.
+					{$CommonItemTooltip.Carving}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -1899,7 +1900,7 @@ Mods: {
 				DisplayName: Constitution Decoration 1
 				Tooltip:
 					'''
-					Increase the Constitution Skill by 1.
+					{$CommonItemTooltip.Constitution}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -1909,7 +1910,7 @@ Mods: {
 				DisplayName: Constitution Decoration 2
 				Tooltip:
 					'''
-					Increase the Constitution Skill by 2.
+					{$CommonItemTooltip.Constitution}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -1919,7 +1920,7 @@ Mods: {
 				DisplayName: Counterstrike Decoration 1
 				Tooltip:
 					'''
-					Increase the Counterstrike Skill by 1.
+					{$CommonItemTooltip.CounterStrike}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -1929,7 +1930,7 @@ Mods: {
 				DisplayName: Counterstrike Decoration 2
 				Tooltip:
 					'''
-					Increase the Counterstrike Skill by 2.
+					{$CommonItemTooltip.CounterStrike}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -1939,7 +1940,7 @@ Mods: {
 				DisplayName: Critical Boost Decoration 1
 				Tooltip:
 					'''
-					Increase the Critical Boost Skill by 1.
+					{$CommonItemTooltip.CriticalBoost}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -1949,7 +1950,7 @@ Mods: {
 				DisplayName: Critical Draw Decoration 1
 				Tooltip:
 					'''
-					Increase the Critical Draw Skill by 1.
+					{$CommonItemTooltip.CritDraw}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -1959,7 +1960,7 @@ Mods: {
 				DisplayName: Critical Draw Decoration 2
 				Tooltip:
 					'''
-					Increase the Critical Draw Skill by 2.
+					{$CommonItemTooltip.CritDraw}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -1999,7 +2000,7 @@ Mods: {
 				DisplayName: Defiance Decoration 1
 				Tooltip:
 					'''
-					Increase the Defiance Skill by 1.
+					{$CommonItemTooltip.Defiance}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2009,7 +2010,7 @@ Mods: {
 				DisplayName: Defiance Decoration 3
 				Tooltip:
 					'''
-					Increase the Defiance Skill by 3.
+					{$CommonItemTooltip.Defiance}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -2019,7 +2020,7 @@ Mods: {
 				DisplayName: Embolden Decoration 1
 				Tooltip:
 					'''
-					Increase the Embolden Skill by 1.
+					{$CommonItemTooltip.Embolden}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2029,7 +2030,7 @@ Mods: {
 				DisplayName: Embolden Decoration 2
 				Tooltip:
 					'''
-					Increase the Embolden Skill by 2.
+					{$CommonItemTooltip.Embolden}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -2039,7 +2040,7 @@ Mods: {
 				DisplayName: Fire Attack Decoration 1
 				Tooltip:
 					'''
-					Increase the Fire Attack Skill by 1.
+					{$CommonItemTooltip.FireAttack}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2049,7 +2050,7 @@ Mods: {
 				DisplayName: Fire Attack Decoration 3
 				Tooltip:
 					'''
-					Increase the Fire Attack Skill by 3.
+					{$CommonItemTooltip.FireAttack}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -2059,7 +2060,7 @@ Mods: {
 				DisplayName: Fire Res Decoration 1
 				Tooltip:
 					'''
-					Increase the Fire Res Skill by 1.
+					{$CommonItemTooltip.FireRes}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2069,7 +2070,7 @@ Mods: {
 				DisplayName: Foray Decoration 1
 				Tooltip:
 					'''
-					Increase the Foray Skill by 1.
+					{$CommonItemTooltip.Foray}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2079,7 +2080,7 @@ Mods: {
 				DisplayName: Foray Decoration 2
 				Tooltip:
 					'''
-					Increase the Foray Skill by 2.
+					{$CommonItemTooltip.Foray}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -2089,7 +2090,7 @@ Mods: {
 				DisplayName: Fortified Decoration 1
 				Tooltip:
 					'''
-					Increase the Fortified Skill by 1.
+					{$CommonItemTooltip.Fortified}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2099,7 +2100,7 @@ Mods: {
 				DisplayName: Gathering Decoration 1
 				Tooltip:
 					'''
-					Increase the Gathering Skill by 1.
+					{$CommonItemTooltip.Gathering}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2109,7 +2110,7 @@ Mods: {
 				DisplayName: Gluttony Decoration 1
 				Tooltip:
 					'''
-					Increase the Gluttony Skill by 1.
+					{$CommonItemTooltip.Gluttony}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2119,7 +2120,7 @@ Mods: {
 				DisplayName: Grinder Decoration 1
 				Tooltip:
 					'''
-					Increase the Grinder Skill by 1.
+					{$CommonItemTooltip.Grinder}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2129,7 +2130,7 @@ Mods: {
 				DisplayName: Hasten Recovery Decoration 1
 				Tooltip:
 					'''
-					Increase the Hasten Recovery Skill by 1.
+					{$CommonItemTooltip.HastenRecovery}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2139,7 +2140,7 @@ Mods: {
 				DisplayName: Hasten Recovery Decoration 2
 				Tooltip:
 					'''
-					Increase the Hasten Recovery Skill by 2.
+					{$CommonItemTooltip.HastenRecovery}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -2149,7 +2150,7 @@ Mods: {
 				DisplayName: Health Decoration 1
 				Tooltip:
 					'''
-					Increase the Healthy Skill by 1.
+					{$CommonItemTooltip.Health}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2159,7 +2160,7 @@ Mods: {
 				DisplayName: Health Decoration 2
 				Tooltip:
 					'''
-					Increase the Health Skill by 2.
+					{$CommonItemTooltip.Health}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -2169,7 +2170,7 @@ Mods: {
 				DisplayName: Heat Res Decoration 1
 				Tooltip:
 					'''
-					Increase the Heat Res Skill by 1.
+					{$CommonItemTooltip.HeatRes}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2179,7 +2180,7 @@ Mods: {
 				DisplayName: Heroics Decoration 1
 				Tooltip:
 					'''
-					Increase the Heroics Skill by 1.
+					{$CommonItemTooltip.Heroics}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2189,7 +2190,7 @@ Mods: {
 				DisplayName: Heroics Decoration 2
 				Tooltip:
 					'''
-					Increase the Heroics Skill by 2.
+					{$CommonItemTooltip.Heroics}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -2199,7 +2200,7 @@ Mods: {
 				DisplayName: Hero Shield Decoration 1
 				Tooltip:
 					'''
-					Increase the Hero Shield Skill by 1.
+					{$CommonItemTooltip.HeroShield}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2209,7 +2210,7 @@ Mods: {
 				DisplayName: Honey Hunter Decoration 1
 				Tooltip:
 					'''
-					Increase the Honey Hunter Skill by 1.
+					{$CommonItemTooltip.HoneyHunter}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2219,7 +2220,7 @@ Mods: {
 				DisplayName: Protective Polish Decoration 1
 				Tooltip:
 					'''
-					Increase the Protective Polish Skill by 1.
+					{$CommonItemTooltip.ProtectivePolish}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2229,7 +2230,7 @@ Mods: {
 				DisplayName: Protective Polish Decoration 3
 				Tooltip:
 					'''
-					Increase the Protective Polish Skill by 3.
+					{$CommonItemTooltip.ProtectivePolish}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -2239,7 +2240,7 @@ Mods: {
 				DisplayName: Quick Sheath Decoration 1
 				Tooltip:
 					'''
-					Increase the Quick Sheath Skill by 1.
+					{$CommonItemTooltip.QuickSheath}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2249,7 +2250,7 @@ Mods: {
 				DisplayName: Quick Sheath Decoration 3
 				Tooltip:
 					'''
-					Increase the Quick Sheath Skill by 3.
+					{$CommonItemTooltip.QuickSheath}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -2259,7 +2260,7 @@ Mods: {
 				DisplayName: Razor Sharp Decoration 1
 				Tooltip:
 					'''
-					Increase the Razor Sharp Skill by 1.
+					{$CommonItemTooltip.RazorSharp}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2269,7 +2270,7 @@ Mods: {
 				DisplayName: Razor Sharp Decoration 3
 				Tooltip:
 					'''
-					Increase the Razor Sharp Skill by 3.
+					{$CommonItemTooltip.RazorSharp}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -2279,7 +2280,7 @@ Mods: {
 				DisplayName: Recovery Speed Decoration 1
 				Tooltip:
 					'''
-					Increase the Recovery Speed Skill by 1.
+					{$CommonItemTooltip.RecoverySpd}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2289,7 +2290,7 @@ Mods: {
 				DisplayName: Recovery Speed Decoration 3
 				Tooltip:
 					'''
-					Increase the Recovery Speed Skill by 3.
+					{$CommonItemTooltip.RecoverySpd}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -2299,7 +2300,7 @@ Mods: {
 				DisplayName: Recovery Up Decoration 1
 				Tooltip:
 					'''
-					Increase the Recovery Up Skill by 1.
+					{$CommonItemTooltip.RecUp}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2309,7 +2310,7 @@ Mods: {
 				DisplayName: Recovery Up Decoration 3
 				Tooltip:
 					'''
-					Increase the Recovery Up Skill by 3.
+					{$CommonItemTooltip.RecUp}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -2319,7 +2320,7 @@ Mods: {
 				DisplayName: Resentment Decoration 1
 				Tooltip:
 					'''
-					Increase the Resentment Skill by 1.
+					{$CommonItemTooltip.Resentment}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2329,7 +2330,7 @@ Mods: {
 				DisplayName: Resentment Decoration 2
 				Tooltip:
 					'''
-					Increase the Resentment Skill by 2.
+					{$CommonItemTooltip.Resentment}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -2339,7 +2340,7 @@ Mods: {
 				DisplayName: Resusitate Decoration 1
 				Tooltip:
 					'''
-					Increase the Resusitate Skill by 1.
+					{$CommonItemTooltip.Resuscitate}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2349,7 +2350,7 @@ Mods: {
 				DisplayName: Resusitate Decoration 2
 				Tooltip:
 					'''
-					Increase the Resusitate Skill by 2.
+					{$CommonItemTooltip.Resuscitate}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -2359,7 +2360,7 @@ Mods: {
 				DisplayName: Sneak Attack Decoration 1
 				Tooltip:
 					'''
-					Increase the Sneak Attack Skill by 1.
+					{$CommonItemTooltip.SneakAttack}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2369,7 +2370,7 @@ Mods: {
 				DisplayName: Spare Shot Decoration 1
 				Tooltip:
 					'''
-					Increase the Spare Shot Skill by 1.
+					{$CommonItemTooltip.SpareShot}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2379,7 +2380,7 @@ Mods: {
 				DisplayName: Spare Shot Decoration 3
 				Tooltip:
 					'''
-					Increase the Spare Shot Skill by 3.
+					{$CommonItemTooltip.SpareShot}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -2389,7 +2390,7 @@ Mods: {
 				DisplayName: Speed Sharpening Decoration 1
 				Tooltip:
 					'''
-					Increase the Speed Sharpening Skill by 1.
+					{$CommonItemTooltip.QuickSharpening}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2399,7 +2400,7 @@ Mods: {
 				DisplayName: Speed Sharpening Decoration 3
 				Tooltip:
 					'''
-					Increase the Speed Sharpening Skill by 3.
+					{$CommonItemTooltip.QuickSharpening}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -2409,7 +2410,7 @@ Mods: {
 				DisplayName: Tenderizer Decoration 1
 				Tooltip:
 					'''
-					Increase the Tenderizer Skill by 1.
+					{$CommonItemTooltip.Tenderizer}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2419,7 +2420,7 @@ Mods: {
 				DisplayName: Thunder Attack Decoration 1
 				Tooltip:
 					'''
-					Increase the Thunder Attack Skill by 1.
+					{$CommonItemTooltip.ThunderAttack}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2429,7 +2430,7 @@ Mods: {
 				DisplayName: Thunder Attack Decoration 3
 				Tooltip:
 					'''
-					Increase the Thunder Attack Skill by 3.
+					{$CommonItemTooltip.ThunderAttack}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -2439,7 +2440,7 @@ Mods: {
 				DisplayName: Thunder Res Decoration 1
 				Tooltip:
 					'''
-					Increase the Thunder Res Skill by 1.
+					{$CommonItemTooltip.ThunderRes}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2449,7 +2450,7 @@ Mods: {
 				DisplayName: Affinity Sliding Decoration 1
 				Tooltip:
 					'''
-					Increase the Affinity Sliding Skill by 1.
+					{$CommonItemTooltip.AffinitySliding}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2459,7 +2460,7 @@ Mods: {
 				DisplayName: Artillery Decoration 1
 				Tooltip:
 					'''
-					Increase the Artillery Skill by 1.
+					{$CommonItemTooltip.Artillery}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2469,7 +2470,7 @@ Mods: {
 				DisplayName: Auto Reload Decoration 1
 				Tooltip:
 					'''
-					Increase the Autoreload Skill by 1.
+					{$CommonItemTooltip.AutoReload}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2479,7 +2480,7 @@ Mods: {
 				DisplayName: Auto Tracker Decoration 1
 				Tooltip:
 					'''
-					Increase the Autotracker Skill by 1.
+					{$CommonItemTooltip.AutoTracker}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2489,7 +2490,7 @@ Mods: {
 				DisplayName: Bleeding Decoration 1
 				Tooltip:
 					'''
-					Increase the Bleeding Skill by 1.
+					{$CommonItemTooltip.Bleeding}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2499,7 +2500,7 @@ Mods: {
 				DisplayName: Blightproof Decoration 1
 				Tooltip:
 					'''
-					Increase the Blightproof Skill by 1.
+					{$CommonItemTooltip.Blightproof}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2509,7 +2510,7 @@ Mods: {
 				DisplayName: Bloodlust Decoration 1
 				Tooltip:
 					'''
-					Increase the Bloodlust Skill by 1.
+					{$CommonItemTooltip.Bloodlust}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2519,7 +2520,7 @@ Mods: {
 				DisplayName: Bomb Boost Decoration 1
 				Tooltip:
 					'''
-					Increase the Bomb Boost Skill by 1.
+					{$CommonItemTooltip.BombBoost}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2529,7 +2530,7 @@ Mods: {
 				DisplayName: Bubble Dance Decoration 1
 				Tooltip:
 					'''
-					Increase the Bubble Dance Skill by 1.
+					{$CommonItemTooltip.BubbleDance}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2539,7 +2540,7 @@ Mods: {
 				DisplayName: Bubble Dance Decoration 2
 				Tooltip:
 					'''
-					Increase the Bubble Dance Skill by 2.
+					{$CommonItemTooltip.BubbleDance}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2549,7 +2550,7 @@ Mods: {
 				DisplayName: Challenge Sheath Decoration 1
 				Tooltip:
 					'''
-					Increase the Challenge Sheath Skill by 1.
+					{$CommonItemTooltip.ChallengeSheath}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2559,7 +2560,7 @@ Mods: {
 				DisplayName: Challenge Sheath Decoration 2
 				Tooltip:
 					'''
-					Increase the Challenge Sheath Skill by 2.
+					{$CommonItemTooltip.ChallengeSheath}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -2569,7 +2570,7 @@ Mods: {
 				DisplayName: Cliffhanger Decoration 1
 				Tooltip:
 					'''
-					Increase the Cliffhanger Skill by 1.
+					{$CommonItemTooltip.Cliffhanger}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2579,7 +2580,7 @@ Mods: {
 				DisplayName: Close Range Plus Decoration 1
 				Tooltip:
 					'''
-					Increase the Close Range Plus Skill by 1.
+					{$CommonItemTooltip.CRangePlus}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2589,7 +2590,7 @@ Mods: {
 				DisplayName: Coalescence Decoration 1
 				Tooltip:
 					'''
-					Increase the Coalescence Skill by 1.
+					{$CommonItemTooltip.Coalescence}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2599,7 +2600,7 @@ Mods: {
 				DisplayName: Coalescence Decoration 2
 				Tooltip:
 					'''
-					Increase the Coalescence Skill by 2.
+					{$CommonItemTooltip.Coalescence}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -2609,7 +2610,7 @@ Mods: {
 				DisplayName: Cold Res Decoration 1
 				Tooltip:
 					'''
-					Increase the Cold Res Skill by 1.
+					{$CommonItemTooltip.ColdRes}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2619,7 +2620,7 @@ Mods: {
 				DisplayName: Critical Element Decoration 1
 				Tooltip:
 					'''
-					Increase the Critical Element Skill by 1.
+					{$CommonItemTooltip.CritElement}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2629,7 +2630,7 @@ Mods: {
 				DisplayName: Critical Element Decoration 2
 				Tooltip:
 					'''
-					Increase the Critical Element Skill by 2.
+					{$CommonItemTooltip.CritElement}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -2639,7 +2640,7 @@ Mods: {
 				DisplayName: Critical Eye Decoration 1
 				Tooltip:
 					'''
-					Increase the Critical Eye Skill by 1.
+					{$CommonItemTooltip.CritEye}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2649,7 +2650,7 @@ Mods: {
 				DisplayName: Critical Eye Decoration 2
 				Tooltip:
 					'''
-					Increase the Critical Eye Skill by 2.
+					{$CommonItemTooltip.CritEye}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -2659,7 +2660,7 @@ Mods: {
 				DisplayName: Dead Eye Decoration 1
 				Tooltip:
 					'''
-					Increase the Deadeye Skill by 1.
+					{$CommonItemTooltip.DeadEye}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2669,7 +2670,7 @@ Mods: {
 				DisplayName: Def Lock Decoration 1
 				Tooltip:
 					'''
-					Increase the Def Lock Skill by 1.
+					{$CommonItemTooltip.DefLock}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2679,7 +2680,7 @@ Mods: {
 				DisplayName: Diversion Decoration 1
 				Tooltip:
 					'''
-					Increase the Diversion Skill by 1.
+					{$CommonItemTooltip.Diversion}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2689,7 +2690,7 @@ Mods: {
 				DisplayName: Diversion Decoration 3
 				Tooltip:
 					'''
-					Increase the Diversion Skill by 2.
+					{$CommonItemTooltip.Diversion}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -2699,7 +2700,7 @@ Mods: {
 				DisplayName: Elemental Decoration 1
 				Tooltip:
 					'''
-					Increase the Elemental Skill by 1.
+					{$CommonItemTooltip.Elemental}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2709,7 +2710,7 @@ Mods: {
 				DisplayName: Evade Distance Decoration 1
 				Tooltip:
 					'''
-					Increase the Evade Distance Skill by 1.
+					{$CommonItemTooltip.EvadeDistance}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2719,7 +2720,7 @@ Mods: {
 				DisplayName: Evade Distance Decoration 2
 				Tooltip:
 					'''
-					Increase the Evade Distance Skill by 2.
+					{$CommonItemTooltip.EvadeDistance}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -2729,7 +2730,7 @@ Mods: {
 				DisplayName: Evasion Decoration 1
 				Tooltip:
 					'''
-					Increase the Evasion Skill by 1.
+					{$CommonItemTooltip.Evasion}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2739,7 +2740,7 @@ Mods: {
 				DisplayName: Evasion Decoration 2
 				Tooltip:
 					'''
-					Increase the Evasion Skill by 2.
+					{$CommonItemTooltip.Evasion}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -2749,7 +2750,7 @@ Mods: {
 				DisplayName: Fate Decoration 1
 				Tooltip:
 					'''
-					Increase the Fate Skill by 1.
+					{$CommonItemTooltip.Fate}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2759,7 +2760,7 @@ Mods: {
 				DisplayName: Fencing Decoration 1
 				Tooltip:
 					'''
-					Increase the Fencing Skill by 1.
+					{$CommonItemTooltip.Fencing}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2769,7 +2770,7 @@ Mods: {
 				DisplayName: Fishing Expert Decoration 1
 				Tooltip:
 					'''
-					Increase the Fishing Expert Skill by 1.
+					{$CommonItemTooltip.FishingExpert}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2779,7 +2780,7 @@ Mods: {
 				DisplayName: Free Meal Decoration 1
 				Tooltip:
 					'''
-					Increase the Free Meal Skill by 1.
+					{$CommonItemTooltip.FreeMeal}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2789,7 +2790,7 @@ Mods: {
 				DisplayName: Geologist Decoration 1
 				Tooltip:
 					'''
-					Increase the Geologist Skill by 1.
+					{$CommonItemTooltip.Geologist}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2819,7 +2820,7 @@ Mods: {
 				DisplayName: Guard Up Decoration 1
 				Tooltip:
 					'''
-					Increase the Guard Up Skill by 1.
+					{$CommonItemTooltip.GuardUp}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2829,7 +2830,7 @@ Mods: {
 				DisplayName: Guard Up Decoration 2
 				Tooltip:
 					'''
-					Increase the Guard Up Skill by 2.
+					{$CommonItemTooltip.GuardUp}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -2839,7 +2840,7 @@ Mods: {
 				DisplayName: Ice Attack Decoration 1
 				Tooltip:
 					'''
-					Increase the Ice Attack Skill by 1.
+					{$CommonItemTooltip.IceAttack}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2849,7 +2850,7 @@ Mods: {
 				DisplayName: Ice Attack Decoration 2
 				Tooltip:
 					'''
-					Increase the Ice Attack Skill by 2.
+					{$CommonItemTooltip.IceAttack}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2859,7 +2860,7 @@ Mods: {
 				DisplayName: Ice Attack Decoration 3
 				Tooltip:
 					'''
-					Increase the Ice Attack Skill by 3.
+					{$CommonItemTooltip.IceAttack}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -2869,7 +2870,7 @@ Mods: {
 				DisplayName: Ice Res Decoration 1
 				Tooltip:
 					'''
-					Increase the Ice Res Skill by 1.
+					{$CommonItemTooltip.IceRes}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2879,7 +2880,7 @@ Mods: {
 				DisplayName: Intrepid Heart Decoration 1
 				Tooltip:
 					'''
-					Increase the Intrepid Heart Skill by 1.
+					{$CommonItemTooltip.IntrepidHeart}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2889,7 +2890,7 @@ Mods: {
 				DisplayName: Jump Master Decoration 1
 				Tooltip:
 					'''
-					Increase the Jump Master Skill by 1.
+					{$CommonItemTooltip.JumpMaster}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2899,7 +2900,7 @@ Mods: {
 				DisplayName: Lasting Power Decoration 1
 				Tooltip:
 					'''
-					Increase the Lasting Power Skill by 1.
+					{$CommonItemTooltip.LastingPower}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2909,7 +2910,7 @@ Mods: {
 				DisplayName: Latent Power Decoration 1
 				Tooltip:
 					'''
-					Increase the Latent Power Skill by 1.
+					{$CommonItemTooltip.LatentPower}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2919,7 +2920,7 @@ Mods: {
 				DisplayName: Latent Power Decoration 2
 				Tooltip:
 					'''
-					Increase the Latent Power Skill by 2.
+					{$CommonItemTooltip.LatentPower}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -2929,7 +2930,7 @@ Mods: {
 				DisplayName: Masters Touch Decoration 1
 				Tooltip:
 					'''
-					Increase the Masters Touch Skill by 1.
+					{$CommonItemTooltip.MastersTouch}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2939,7 +2940,7 @@ Mods: {
 				DisplayName: Masters Touch Decoration 2
 				Tooltip:
 					'''
-					Increase the Masters Touch Skill by 1.
+					{$CommonItemTooltip.MastersTouch}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -2949,7 +2950,7 @@ Mods: {
 				DisplayName: Mushroomancer Decoration 1
 				Tooltip:
 					'''
-					Increase the Mushroomancer Skill by 1.
+					{$CommonItemTooltip.Mushroomancer}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -2959,7 +2960,7 @@ Mods: {
 				DisplayName: Normal Up Decoration 1
 				Tooltip:
 					'''
-					Increase the Normal Up Skill by 1.
+					{$CommonItemTooltip.NormalUp}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2969,7 +2970,7 @@ Mods: {
 				DisplayName: Offensive Guard Decoration 1
 				Tooltip:
 					'''
-					Increase the Offensive Guard Skill by 1.
+					{$CommonItemTooltip.OffensiveGuard}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2979,7 +2980,7 @@ Mods: {
 				DisplayName: Pellet Up Decoration 1
 				Tooltip:
 					'''
-					Increase the Pellet Up Skill by 1.
+					{$CommonItemTooltip.PelletUp}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2989,7 +2990,7 @@ Mods: {
 				DisplayName: Pierce Up Decoration 1
 				Tooltip:
 					'''
-					Increase the Pierce Up Skill by 1.
+					{$CommonItemTooltip.PierceUp}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -2999,7 +3000,7 @@ Mods: {
 				DisplayName: Anti-Poison Decoration 1
 				Tooltip:
 					'''
-					Increase the Anti-Poison Skill by 1.
+					{$CommonItemTooltip.Poison}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -3009,7 +3010,7 @@ Mods: {
 				DisplayName: Poison Coating Plus Decoration 1
 				Tooltip:
 					'''
-					Increase the Poison Coating Plus Skill by 1.
+					{$CommonItemTooltip.PoisonCoatingPlus}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -3019,7 +3020,7 @@ Mods: {
 				DisplayName: Polar Hunter Decoration 1
 				Tooltip:
 					'''
-					Increase the Polar Hunter Skill by 1.
+					{$CommonItemTooltip.PolarHunter}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3029,7 +3030,7 @@ Mods: {
 				DisplayName: Polar Hunter Decoration 2
 				Tooltip:
 					'''
-					Increase the Polar Hunter Skill by 2.
+					{$CommonItemTooltip.PolarHunter}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3039,7 +3040,7 @@ Mods: {
 				DisplayName: Protection Decoration 1
 				Tooltip:
 					'''
-					Increase the Protection Skill by 1.
+					{$CommonItemTooltip.Protection}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3049,7 +3050,7 @@ Mods: {
 				DisplayName: Protection Decoration 2
 				Tooltip:
 					'''
-					Increase the Protection Skill by 2.
+					{$CommonItemTooltip.Protection}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3059,7 +3060,7 @@ Mods: {
 				DisplayName: Punish Draw Decoration 1
 				Tooltip:
 					'''
-					Increase the Punish Draw Skill by 1.
+					{$CommonItemTooltip.PunishDraw}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3069,7 +3070,7 @@ Mods: {
 				DisplayName: Punish Draw Decoration 2
 				Tooltip:
 					'''
-					Increase the Punish Draw Skill by 2.
+					{$CommonItemTooltip.PunishDraw}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3079,7 +3080,7 @@ Mods: {
 				DisplayName: Scholar Decoration 1
 				Tooltip:
 					'''
-					Increase the Scholar Skill by 1.
+					{$CommonItemTooltip.Scholar}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -3089,7 +3090,7 @@ Mods: {
 				DisplayName: Sneak Decoration 1
 				Tooltip:
 					'''
-					Increase the Sneak Skill by 1.
+					{$CommonItemTooltip.Sneak}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -3099,7 +3100,7 @@ Mods: {
 				DisplayName: Sneak Decoration 3
 				Tooltip:
 					'''
-					Increase the Sneak Skill by 3.
+					{$CommonItemTooltip.Sneak}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3109,7 +3110,7 @@ Mods: {
 				DisplayName: Speed Eating Decoration 1
 				Tooltip:
 					'''
-					Increase the Speed Eating Skill by 1.
+					{$CommonItemTooltip.SpeedEating}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -3119,7 +3120,7 @@ Mods: {
 				DisplayName: Speed Setup Decoration 1
 				Tooltip:
 					'''
-					Increase the Speed Setup Skill by 1.
+					{$CommonItemTooltip.SpeedSetup}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -3129,7 +3130,7 @@ Mods: {
 				DisplayName: Spirit Birds Call Decoration 1
 				Tooltip:
 					'''
-					Increase the Spirit Bird's Call Skill by 1.
+					{$CommonItemTooltip.SpiritbirdsCall}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -3139,7 +3140,7 @@ Mods: {
 				DisplayName: Stamina Recovery Decoration 1
 				Tooltip:
 					'''
-					Increase the Stamina Recovery Skill by 1.
+					{$CommonItemTooltip.StamRecovery}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -3149,7 +3150,7 @@ Mods: {
 				DisplayName: Stamina Recovery Decoration 3
 				Tooltip:
 					'''
-					Increase the Stamina Recovery Skill by 3.
+					{$CommonItemTooltip.StamRecovery}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3159,7 +3160,7 @@ Mods: {
 				DisplayName: Strife Decoration 1
 				Tooltip:
 					'''
-					Increase the Strife Skill by 1.
+					{$CommonItemTooltip.Strife}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3169,7 +3170,7 @@ Mods: {
 				DisplayName: Unscathed Decoration 1
 				Tooltip:
 					'''
-					Increase the Unscathed Skill by 1.
+					{$CommonItemTooltip.Unscathed}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3179,7 +3180,7 @@ Mods: {
 				DisplayName: Unscathed Decoration 2
 				Tooltip:
 					'''
-					Increase the Unscathed Skill by 2.
+					{$CommonItemTooltip.Unscathed}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3189,7 +3190,7 @@ Mods: {
 				DisplayName: Vault Decoration 1
 				Tooltip:
 					'''
-					Increase the Vault Skill by 1.
+					{$CommonItemTooltip.Vault}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3199,7 +3200,7 @@ Mods: {
 				DisplayName: Water Attack Decoration 1
 				Tooltip:
 					'''
-					Increase the Water Attack Skill by 1.
+					{$CommonItemTooltip.WaterAttack}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -3209,7 +3210,7 @@ Mods: {
 				DisplayName: Water Attack Decoration 3
 				Tooltip:
 					'''
-					Increase the Water Attack Skill by 3.
+					{$CommonItemTooltip.WaterAttack}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3219,7 +3220,7 @@ Mods: {
 				DisplayName: Water Res Decoration 1
 				Tooltip:
 					'''
-					Increase the Water Res Skill by 1.
+					{$CommonItemTooltip.WaterRes}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -3229,7 +3230,7 @@ Mods: {
 				DisplayName: Aquatic Mobility Decoration 1
 				Tooltip:
 					'''
-					Increase the Aquatic Mobility Skill by 1.
+					{$CommonItemTooltip.AquaticMobility}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -3239,7 +3240,7 @@ Mods: {
 				DisplayName: Spirit Decoration 1
 				Tooltip:
 					'''
-					Increase the Spirit Skill by 1.
+					{$CommonItemTooltip.Spirit}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3249,7 +3250,7 @@ Mods: {
 				DisplayName: Spirit Decoration 2
 				Tooltip:
 					'''
-					Increase the Spirit Skill by 2.
+					{$CommonItemTooltip.Spirit}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3259,7 +3260,7 @@ Mods: {
 				DisplayName: Affinity Sliding Decoration 2
 				Tooltip:
 					'''
-					Increase the Affinity Sliding Skill by 2.
+					{$CommonItemTooltip.AffinitySliding}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3269,7 +3270,7 @@ Mods: {
 				DisplayName: Aquatic Mobility Decoration 2
 				Tooltip:
 					'''
-					Increase the Aquatic Mobility Skill by 2.
+					{$CommonItemTooltip.AquaticMobility}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3279,7 +3280,7 @@ Mods: {
 				DisplayName: Aquatic Mobility Decoration 3
 				Tooltip:
 					'''
-					Increase the Aquatic Mobility Skill by 3.
+					{$CommonItemTooltip.AquaticMobility}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3289,7 +3290,7 @@ Mods: {
 				DisplayName: Artillery Decoration 2
 				Tooltip:
 					'''
-					Increase the Artillery Skill by 2.
+					{$CommonItemTooltip.Artillery}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3299,7 +3300,7 @@ Mods: {
 				DisplayName: Auto Tracker Decoration 2
 				Tooltip:
 					'''
-					Increase the Auto Tracker Skill by 2.
+					{$CommonItemTooltip.AutoTracker}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3309,7 +3310,7 @@ Mods: {
 				DisplayName: Blightproof Decoration 2
 				Tooltip:
 					'''
-					Increase the Blightproof Skill by 2.
+					{$CommonItemTooltip.Blightproof}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3319,7 +3320,7 @@ Mods: {
 				DisplayName: Bloodlust Decoration 2
 				Tooltip:
 					'''
-					Increase the Bloodlust Skill by 2.
+					{$CommonItemTooltip.Bloodlust}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3329,7 +3330,7 @@ Mods: {
 				DisplayName: Blood Rite Decoration 2
 				Tooltip:
 					'''
-					Increase the Blood Rite Skill by 2.
+					{$CommonItemTooltip.BloodRite}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3339,7 +3340,7 @@ Mods: {
 				DisplayName: Bomb Boost Decoration 2
 				Tooltip:
 					'''
-					Increase the Bomb Boost Skill by 2.
+					{$CommonItemTooltip.BombBoost}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3349,7 +3350,7 @@ Mods: {
 				DisplayName: Bubble Dance Decoration 3
 				Tooltip:
 					'''
-					Increase the Bubble Dance Skill by 3.
+					{$CommonItemTooltip.BubbleDance}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3359,7 +3360,7 @@ Mods: {
 				DisplayName: Cliffhanger Decoration 2
 				Tooltip:
 					'''
-					Increase the Cliffhanger Skill by 2.
+					{$CommonItemTooltip.Cliffhanger}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3369,7 +3370,7 @@ Mods: {
 				DisplayName: Cold Res Decoration 2
 				Tooltip:
 					'''
-					Increase the Cold Res Skill by 3.
+					{$CommonItemTooltip.ColdRes}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3379,7 +3380,7 @@ Mods: {
 				DisplayName: Critical Boost Decoration 2
 				Tooltip:
 					'''
-					Increase the Critical Boost Skill by 2.
+					{$CommonItemTooltip.CriticalBoost}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3389,7 +3390,7 @@ Mods: {
 				DisplayName: DeadEye Decoration 2
 				Tooltip:
 					'''
-					Increase the Deadeye Skill by 2.
+					{$CommonItemTooltip.DeadEye}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3399,7 +3400,7 @@ Mods: {
 				DisplayName: Fate Decoration 2
 				Tooltip:
 					'''
-					Increase the Fate Skill by 2.
+					{$CommonItemTooltip.Fate}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3409,7 +3410,7 @@ Mods: {
 				DisplayName: Fencing Decoration 2
 				Tooltip:
 					'''
-					Increase the Fencing Skill by 2.
+					{$CommonItemTooltip.Fencing}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3419,7 +3420,7 @@ Mods: {
 				DisplayName: Fire Attack Decoration 2
 				Tooltip:
 					'''
-					Increase the Fire Attack Skill by 2.
+					{$CommonItemTooltip.FireAttack}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3429,7 +3430,7 @@ Mods: {
 				DisplayName: Fire Res Decoration 2
 				Tooltip:
 					'''
-					Increase the Fire Res Skill by 3.
+					{$CommonItemTooltip.FireRes}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3439,7 +3440,7 @@ Mods: {
 				DisplayName: Fishing Expert Decoration 2
 				Tooltip:
 					'''
-					Increase the Fishing Expert Skill by 3.
+					{$CommonItemTooltip.FishingExpert}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3449,7 +3450,7 @@ Mods: {
 				DisplayName: Free Meal Decoration 2
 				Tooltip:
 					'''
-					Increase the Free Meal Skill by 2.
+					{$CommonItemTooltip.FreeMeal}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3459,7 +3460,7 @@ Mods: {
 				DisplayName: Free Meal Decoration 3
 				Tooltip:
 					'''
-					Increase the Free Meal Skill by 3.
+					{$CommonItemTooltip.FreeMeal}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3469,7 +3470,7 @@ Mods: {
 				DisplayName: Gathering Decoration 2
 				Tooltip:
 					'''
-					Increase the Gathering Skill by 3.
+					{$CommonItemTooltip.Gathering}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3479,7 +3480,7 @@ Mods: {
 				DisplayName: Geologist Decoration 2
 				Tooltip:
 					'''
-					Increase the Geologist Skill by 3.
+					{$CommonItemTooltip.Geologist}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3489,7 +3490,7 @@ Mods: {
 				DisplayName: Gluttony Decoration 2
 				Tooltip:
 					'''
-					Increase the Gluttony Skill by 2.
+					{$CommonItemTooltip.Gluttony}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3499,7 +3500,7 @@ Mods: {
 				DisplayName: Gluttony Decoration 3
 				Tooltip:
 					'''
-					Increase the Gluttony Skill by 3.
+					{$CommonItemTooltip.Gluttony}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3509,7 +3510,7 @@ Mods: {
 				DisplayName: Grinder Decoration 2
 				Tooltip:
 					'''
-					Increase the Grinder Skill by 2.
+					{$CommonItemTooltip.Grinder}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3519,7 +3520,7 @@ Mods: {
 				DisplayName: Handicraft Decoration 1
 				Tooltip:
 					'''
-					Increase the Handicraft Skill by 1.
+					{$CommonItemTooltip.Handicraft}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3529,7 +3530,7 @@ Mods: {
 				DisplayName: Handicraft Decoration 2
 				Tooltip:
 					'''
-					Increase the Handicraft Skill by 2.
+					{$CommonItemTooltip.Handicraft}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3539,7 +3540,7 @@ Mods: {
 				DisplayName: Heat Res Decoration 2
 				Tooltip:
 					'''
-					Increase the Heat Res Skill by 3.
+					{$CommonItemTooltip.HeatRes}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3549,7 +3550,7 @@ Mods: {
 				DisplayName: Hero Shield Decoration 2
 				Tooltip:
 					'''
-					Increase the Hero Shield Skill by 2.
+					{$CommonItemTooltip.HeroShield}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3559,7 +3560,7 @@ Mods: {
 				DisplayName: Honey Hunter Decoration 2
 				Tooltip:
 					'''
-					Increase the Honey Hunter Skill by 3.
+					{$CommonItemTooltip.HoneyHunter}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3569,7 +3570,7 @@ Mods: {
 				DisplayName: Ice Res Decoration 2
 				Tooltip:
 					'''
-					Increase the Ice Res Skill by 3.
+					{$CommonItemTooltip.IceRes}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3579,7 +3580,7 @@ Mods: {
 				DisplayName: Jump Master Decoration 2
 				Tooltip:
 					'''
-					Increase the Jump Master Skill by 2.
+					{$CommonItemTooltip.JumpMaster}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3589,7 +3590,7 @@ Mods: {
 				DisplayName: Jump Master Decoration 3
 				Tooltip:
 					'''
-					Increase the Jump Master Skill by 3.
+					{$CommonItemTooltip.JumpMaster}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3599,7 +3600,7 @@ Mods: {
 				DisplayName: Lasting Power Decoration 2
 				Tooltip:
 					'''
-					Increase the Lasting Power Skill by 2.
+					{$CommonItemTooltip.LastingPower}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3609,7 +3610,7 @@ Mods: {
 				DisplayName: Lasting Power Decoration 3
 				Tooltip:
 					'''
-					Increase the Lasting Power Skill by 3.
+					{$CommonItemTooltip.LatentPower}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3619,7 +3620,7 @@ Mods: {
 				DisplayName: Mushroomancer Decoration 2
 				Tooltip:
 					'''
-					Increase the Mushroomancer Skill by 2.
+					{$CommonItemTooltip.Mushroomancer}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3629,7 +3630,7 @@ Mods: {
 				DisplayName: Normal Up Decoration 2
 				Tooltip:
 					'''
-					Increase the Normal Up Skill by 2.
+					{$CommonItemTooltip.NormalUp}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3639,7 +3640,7 @@ Mods: {
 				DisplayName: Offensive Guard Decoration 2
 				Tooltip:
 					'''
-					Increase the Offensive Guard Skill by 2.
+					{$CommonItemTooltip.OffensiveGuard}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3649,7 +3650,7 @@ Mods: {
 				DisplayName: Pellet Up Decoration 2
 				Tooltip:
 					'''
-					Increase the Pellet Up Skill by 2.
+					{$CommonItemTooltip.PelletUp}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3659,7 +3660,7 @@ Mods: {
 				DisplayName: Pierce Up Decoration 2
 				Tooltip:
 					'''
-					Increase the Pierce Up Skill by 2.
+					{$CommonItemTooltip.PierceUp}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3669,7 +3670,7 @@ Mods: {
 				DisplayName: Anti-Poison Decoration 2
 				Tooltip:
 					'''
-					Increase the Poison Skill by 2.
+					{$CommonItemTooltip.Poison}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3679,7 +3680,7 @@ Mods: {
 				DisplayName: Rock Steady Decoration 1
 				Tooltip:
 					'''
-					Increase the Rock Steady Skill by 1.
+					{$CommonItemTooltip.RockSteady}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -3689,7 +3690,7 @@ Mods: {
 				DisplayName: Scholar Decoration 2
 				Tooltip:
 					'''
-					Increase the Scholar Skill by 3.
+					{$CommonItemTooltip.Scholar}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3699,7 +3700,7 @@ Mods: {
 				DisplayName: Sneak Attack Decoration 2
 				Tooltip:
 					'''
-					Increase the Sneak Attack Skill by 2.
+					{$CommonItemTooltip.SneakAttack}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3709,7 +3710,7 @@ Mods: {
 				DisplayName: Speed Eating Decoration 2
 				Tooltip:
 					'''
-					Increase the Speed Eating Skill by 3.
+					{$CommonItemTooltip.SpeedEating}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3719,7 +3720,7 @@ Mods: {
 				DisplayName: Speed SetUp Decoration 2
 				Tooltip:
 					'''
-					Increase the Speed SetUp Skill by 3.
+					{$CommonItemTooltip.SpeedSetup}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3729,7 +3730,7 @@ Mods: {
 				DisplayName: Strife Decoration 2
 				Tooltip:
 					'''
-					Increase the Strife Skill by 2.
+					{$CommonItemTooltip.Strife}.
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3739,7 +3740,7 @@ Mods: {
 				DisplayName: Tenderizer Decoration 2
 				Tooltip:
 					'''
-					Increase the Tenderizer Skill by 2.
+					{$CommonItemTooltip.Tenderizer}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3749,7 +3750,7 @@ Mods: {
 				DisplayName: Thunder Attack Decoration 2
 				Tooltip:
 					'''
-					Increase the Thunder Attack Skill by 2.
+					{$CommonItemTooltip.ThunderAttack}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3759,7 +3760,7 @@ Mods: {
 				DisplayName: Thunder Res Decoration 2
 				Tooltip:
 					'''
-					Increase the Thunder Res Skill by 3.
+					{$CommonItemTooltip.ThunderRes}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3769,7 +3770,7 @@ Mods: {
 				DisplayName: Tropics Hunter Decoration 1
 				Tooltip:
 					'''
-					Increase the Tropics Hunter Skill by 2.
+					{$CommonItemTooltip.TropicsHunter}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3779,7 +3780,7 @@ Mods: {
 				DisplayName: Tropics Hunter Decoration 2
 				Tooltip:
 					'''
-					Increase the Tropics Hunter Skill by 2.
+					{$CommonItemTooltip.TropicsHunter}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3789,7 +3790,7 @@ Mods: {
 				DisplayName: Vault Decoration 2
 				Tooltip:
 					'''
-					Increase the Vault Skill by 2.
+					{$CommonItemTooltip.Vault}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3799,7 +3800,7 @@ Mods: {
 				DisplayName: Water Attack Decoration 2
 				Tooltip:
 					'''
-					Increase the Water Attack Skill by 2.
+					{$CommonItemTooltip.WaterAttack}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3809,7 +3810,7 @@ Mods: {
 				DisplayName: Water Res Decoration 2
 				Tooltip:
 					'''
-					Increase the Water Res Skill by 3.
+					{$CommonItemTooltip.WaterRes}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3819,7 +3820,7 @@ Mods: {
 				DisplayName: Elemental Decoration 2
 				Tooltip:
 					'''
-					Increase the Elemental Skill by 2.
+					{$CommonItemTooltip.Elemental}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3829,7 +3830,7 @@ Mods: {
 				DisplayName: Adrenaline Rush Decoration 1
 				Tooltip:
 					'''
-					Increase the Adrenaline Rush Skill by 1.
+					{$CommonItemTooltip.AdrenalineRush}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3839,7 +3840,7 @@ Mods: {
 				DisplayName: Adrenaline Rush Decoration 2
 				Tooltip:
 					'''
-					Increase the Adrenaline Rush Skill by 2.
+					{$CommonItemTooltip.AdrenalineRush}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3849,7 +3850,7 @@ Mods: {
 				DisplayName: Status Trigger Decoration 1
 				Tooltip:
 					'''
-					Increase the Status Rush Skill by 1.
+					{$CommonItemTooltip.StatusTrigger}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3859,7 +3860,7 @@ Mods: {
 				DisplayName: Status Trigger Decoration 2
 				Tooltip:
 					'''
-					Increase the Status Trigger Skill by 2.
+					{$CommonItemTooltip.StatusTrigger}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3869,7 +3870,7 @@ Mods: {
 				DisplayName: Chameleos Blessing Decoration 1
 				Tooltip:
 					'''
-					Increase the Chameleos BLessing Skill by 1.
+					{$CommonItemTooltip.ChameleosBlessing}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -3879,7 +3880,7 @@ Mods: {
 				DisplayName: Kushala Blessing Decoration 1
 				Tooltip:
 					'''
-					Increase the Kushala Blessing Skill by 1.
+					{$CommonItemTooltip.KushalaBlessing}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -3889,7 +3890,7 @@ Mods: {
 				DisplayName: Teostra Blessing Decoration 1
 				Tooltip:
 					'''
-					Increase the Teostra Blessing Skill by 1.
+					{$CommonItemTooltip.TeostraBlessing}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -3899,7 +3900,7 @@ Mods: {
 				DisplayName: Tremor Res Decoration 1
 				Tooltip:
 					'''
-					Increase the Tremor Res Skill by 1.
+					{$CommonItemTooltip.TremorRes}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -3909,7 +3910,7 @@ Mods: {
 				DisplayName: Tremor Res Decoration 2
 				Tooltip:
 					'''
-					Increase the Tremor Res Skill by 2.
+					{$CommonItemTooltip.TremorRes}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3919,7 +3920,7 @@ Mods: {
 				DisplayName: Tremor Res Decoration 3
 				Tooltip:
 					'''
-					Increase the Tremor Res Skill by 3.
+					{$CommonItemTooltip.TremorRes}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3929,7 +3930,7 @@ Mods: {
 				DisplayName: Windproof Decoration 1
 				Tooltip:
 					'''
-					Increase the Windproof Skill by 1.
+					{$CommonItemTooltip.Windproof}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -3939,7 +3940,7 @@ Mods: {
 				DisplayName: Windproof Decoration 2
 				Tooltip:
 					'''
-					Increase the Windproof Skill by 2.
+					{$CommonItemTooltip.Windproof}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3949,7 +3950,7 @@ Mods: {
 				DisplayName: Windproof Decoration 3
 				Tooltip:
 					'''
-					Increase the Windproof Skill by 3.
+					{$CommonItemTooltip.Windproof}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
@@ -3959,7 +3960,7 @@ Mods: {
 				DisplayName: Negative Crit Decoration 1
 				Tooltip:
 					'''
-					Increase the Negative Crit Skill by 1.
+					{$CommonItemTooltip.NegativeCrit}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''
@@ -3969,7 +3970,7 @@ Mods: {
 				DisplayName: Negative Crit Decoration 2
 				Tooltip:
 					'''
-					Increase the Negative Skill by 2.
+					{$CommonItemTooltip.NegativeCrit}
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''

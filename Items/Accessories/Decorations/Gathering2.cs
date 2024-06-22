@@ -1,13 +1,16 @@
 ﻿using MHArmorSkills.MHPlayer;
 using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace MHArmorSkills.Items.Accessories.Decorations
 {
     public class Gathering2 : ModItem
     {
+        public static readonly int SkillPoint = 2;
 
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(SkillPoint);
         public override void SetDefaults()
         {
             Item.width = 32;
@@ -21,7 +24,7 @@ namespace MHArmorSkills.Items.Accessories.Decorations
         public override void UpdateEquip(Player player)
         {
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.Gathering += 3;
+            modPlayer.Gathering += 2;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
             SlotPlayer.DecorationTwoSlots -= 1;
         }

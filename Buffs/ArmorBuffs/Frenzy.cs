@@ -15,7 +15,15 @@ namespace MHArmorSkills.Buffs.ArmorBuffs
             Main.pvpBuff[Type] = true;
             Main.buffNoSave[Type] = true;
         }
-
+        public override void ModifyBuffText(ref string buffName, ref string tip, ref int rare)
+        {
+            buffName = "The Frenzy";
+            tip = "Reduce natural healing. \n" +
+                $"Increase damage by {Main.LocalPlayer.GetModPlayer<MHPlayerArmorSkill>().Bloodlust * 4}% \n" +
+                $"Reduce mana cost by {Main.LocalPlayer.GetModPlayer<MHPlayerArmorSkill>().Bloodlust * 3}% \n" +
+                "Keeping attacking enemies to overcome the frenzy."
+                ;
+        }
     }
 }
 

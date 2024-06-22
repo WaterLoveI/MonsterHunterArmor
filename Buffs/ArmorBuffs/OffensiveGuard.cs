@@ -14,6 +14,11 @@ namespace MHArmorSkills.Buffs.ArmorBuffs
             Main.pvpBuff[Type] = true;
             Main.buffNoSave[Type] = true;
         }
+        public override void ModifyBuffText(ref string buffName, ref string tip, ref int rare)
+        {
+            buffName = $"Offensive Guard Level: {Main.LocalPlayer.GetModPlayer<ArmorSkills>().OffensiveGuard} ";
+            tip = $"Increase damage by {Main.LocalPlayer.GetModPlayer<MHPlayerArmorSkill>().OffensiveGuardBoost}% after successfully guarding.";
+        }
     }
 }
 

@@ -1,13 +1,17 @@
-﻿using MHArmorSkills.MHPlayer;
+﻿using MHArmorSkills.Buffs.ArmorBuffs;
+using MHArmorSkills.MHPlayer;
 using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace MHArmorSkills.Items.Accessories.Decorations
 {
     public class AdrenalineRush1 : ModItem
     {
+        public static readonly int SkillPoint = 1;
 
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(SkillPoint);
         public override void SetDefaults()
         {
             Item.width = 32;

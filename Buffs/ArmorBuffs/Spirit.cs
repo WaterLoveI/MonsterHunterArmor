@@ -8,16 +8,18 @@ namespace MHArmorSkills.Buffs.ArmorBuffs
 {
     public class Spirit : ModBuff
     {
-        public static readonly int DamageIncrease = 3;
-        public static readonly int CritIncrease = 3;
-        public override LocalizedText Description => base.Description.WithFormatArgs(DamageIncrease, CritIncrease);
         public override void SetStaticDefaults()
         {
             
             Main.pvpBuff[Type] = true;
             Main.buffNoSave[Type] = true;
         }
-
+        public override void ModifyBuffText(ref string buffName, ref string tip, ref int rare)
+        {
+            buffName = $"Spirit Level: {Main.LocalPlayer.GetModPlayer<ArmorSkills>().Spirit} ";
+            tip = $"Increase damage by {Main.LocalPlayer.GetModPlayer<MHPlayerArmorSkill>().SpiritAttack}% \n" +
+                  $"Increase critical strike chance by {Main.LocalPlayer.GetModPlayer<MHPlayerArmorSkill>().SpiritCrit}%";
+        }
     }
 }
 

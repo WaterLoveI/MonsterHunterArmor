@@ -14,6 +14,11 @@ namespace MHArmorSkills.Buffs.ArmorBuffs
             Main.pvpBuff[Type] = true;
             Main.buffNoSave[Type] = true;
         }
+        public override void ModifyBuffText(ref string buffName, ref string tip, ref int rare)
+        {
+            buffName = $"Strife Level: {Main.LocalPlayer.GetModPlayer<ArmorSkills>().Strife} ";
+            tip = $"Increase critical strike chance by {Main.LocalPlayer.GetModPlayer<MHPlayerArmorSkill>().StrifeCrit}% while having potion sickness";
+        }
     }
 }
 

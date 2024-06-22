@@ -3,12 +3,15 @@ using Terraria.ModLoader;
 using Terraria.ID;
 using MHArmorSkills.MHPlayer;
 using MHArmorSkills.Buffs.ArmorBuffs;
+using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Accessories.Decorations
 {
     public class Bloodlust2 : ModItem
     {
+        public static readonly int SkillPoint = 2;
 
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(SkillPoint);
         public override void SetDefaults()
         {
             Item.width = 32;

@@ -4,7 +4,7 @@ using MHArmorSkills.Items.Armor.MonsterHunter.LowRank;
 using MHArmorSkills.Items.Crafting_Materials.ArmorSphere;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using MHArmorSkills.MHPlayer;
-using MHArmorSkills.MHPlayer.PKMItemDropRule;
+using MHArmorSkills.MHPlayer.MHItemDropRule;
 using System;
 using System.Linq;
 using Terraria;
@@ -20,12 +20,13 @@ namespace MHArmorSkills.Global
         public override void ModifyGlobalLoot(GlobalLoot globalLoot)
         {
             #region Gathering
-            globalLoot.Add(ItemDropRule.ByCondition(new GatheringDropRule(), ItemID.HerbBag, 12, 1, 2));
+            globalLoot.Add(ItemDropRule.ByCondition(new GatheringDropRule(), ItemID.HerbBag, 20, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new Gathering2DropRule(), ItemID.HerbBag, 15, 1, 2));
             #endregion
             #region Helmets
             ///globalLoot.Add(ItemDropRule.ByCondition(new DesertCondition(), ModContent.ItemType<BoneHelmet>(), 105, 1, 1));
-           /// globalLoot.Add(ItemDropRule.ByCondition(new ForestCondition(), ModContent.ItemType<JaggiMask>(), 105, 1, 1));
-           /// globalLoot.Add(ItemDropRule.ByCondition(new UndergroundCondition(), ModContent.ItemType<KonchuHelm>(), 105, 1, 1));
+            /// globalLoot.Add(ItemDropRule.ByCondition(new ForestCondition(), ModContent.ItemType<JaggiMask>(), 105, 1, 1));
+            /// globalLoot.Add(ItemDropRule.ByCondition(new UndergroundCondition(), ModContent.ItemType<KonchuHelm>(), 105, 1, 1));
             ///globalLoot.Add(ItemDropRule.ByCondition(new SnowCondition(), ModContent.ItemType<MoofahHead>(), 105, 1, 1));
             ///globalLoot.Add(ItemDropRule.ByCondition(new JungleCondition(), ModContent.ItemType<MossSwineHat>(), 105, 1, 1));
             ///globalLoot.Add(ItemDropRule.ByCondition(new ForestCondition(), ModContent.ItemType<YukumoKasa>(), 105, 1, 1));

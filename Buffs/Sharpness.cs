@@ -18,6 +18,15 @@ namespace MHArmorSkills.Buffs
             MHPlayerArmorSkill modPlayer = player.GetModPlayer<MHPlayerArmorSkill>();
             modPlayer.Sharpness = true;
         }
+        public override void ModifyBuffText(ref string buffName, ref string tip, ref int rare)
+        {
+            if (Main.LocalPlayer.GetModPlayer<ArmorSkills>().Grinder >= 1)
+            {
+                buffName = $"Sharpness";
+                tip = $"Increase melee damage based on weapon rarity.\n" +
+                $"Further increase damage by {Main.LocalPlayer.GetModPlayer<MHPlayerArmorSkill>().Grinder}% due to grinder.";
+            }
+        }
     }
 }
 

@@ -14,6 +14,11 @@ namespace MHArmorSkills.Buffs.ArmorBuffs
             Main.pvpBuff[Type] = true;
             Main.buffNoSave[Type] = true;
         }
+        public override void ModifyBuffText(ref string buffName, ref string tip, ref int rare)
+        {
+            buffName = $"Counterstrike Level: {Main.LocalPlayer.GetModPlayer<ArmorSkills>().CounterStrike} ";
+            tip = $"Increase damage by {Main.LocalPlayer.GetModPlayer<MHPlayerArmorSkill>().CounterStrike}% after being knocked back.";
+        }
     }
 }
 

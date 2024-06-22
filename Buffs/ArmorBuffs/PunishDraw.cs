@@ -17,6 +17,12 @@ namespace MHArmorSkills.Buffs.ArmorBuffs
             Main.pvpBuff[Type] = true;
             Main.buffNoSave[Type] = true;
         }
+        public override void ModifyBuffText(ref string buffName, ref string tip, ref int rare)
+        {
+            buffName = $"Punish Draw Level: {Main.LocalPlayer.GetModPlayer<ArmorSkills>().PunishDraw} ";
+            tip = $"Increase melee damage by {Main.LocalPlayer.GetModPlayer<MHPlayerArmorSkill>().PunishDraw}%\n" +
+                  $"Increase Knockback by {Main.LocalPlayer.GetModPlayer<MHPlayerArmorSkill>().PunishDraw * 10}%";
+        }
 
     }
 }

@@ -15,6 +15,15 @@ namespace MHArmorSkills.Buffs.ArmorBuffs
             Main.buffNoSave[Type] = true;
         }
 
+        public override void ModifyBuffText(ref string buffName, ref string tip, ref int rare)
+        {
+            if (Main.LocalPlayer.GetModPlayer<ArmorSkills>().Fortified >= 1)
+            {
+                buffName = $"Fortified Level: {Main.LocalPlayer.GetModPlayer<ArmorSkills>().Fortified} ";
+                tip = $"Increase damage and defense by {Main.LocalPlayer.GetModPlayer<MHPlayerArmorSkill>().FortifedAtk}%";
+            }
+        }
+
     }
 }
 
