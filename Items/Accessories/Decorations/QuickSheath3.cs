@@ -1,4 +1,4 @@
-﻿using Terraria;
+using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
 using MHArmorSkills.MHPlayer;
@@ -8,7 +8,10 @@ namespace MHArmorSkills.Items.Accessories.Decorations
 {
     public class QuickSheath3 : ModItem
     {
+public static readonly int SkillPoint = 3;
 
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(SkillPoint);
+        
         public override void SetDefaults()
         {
             Item.width = 32;
