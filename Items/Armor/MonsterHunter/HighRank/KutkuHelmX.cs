@@ -6,16 +6,20 @@ using Terraria;
 using Terraria.ID;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 {
     [AutoloadEquip(EquipType.Head)]
     public class KutkuHelmX : ModItem
     {
-        public static readonly int Skill1 = 1;
-        public static readonly int Skill2 = 1;
-
-        
+            
+        public static readonly int Damage = 12;
+        public static readonly int Move = 10;
+        public static readonly int FireAtk = 2;
+        public static readonly int Atk = 1;
+        public static readonly int Decor1 = 2;
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Move, FireAtk, Atk, Decor1);
 
         public override void SetDefaults()
         {
@@ -28,13 +32,13 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.GetDamage<GenericDamageClass>() += 0.12f;
-            player.moveSpeed += 0.1f;
+            player.GetDamage<GenericDamageClass>() += Damage/100f;
+            player.moveSpeed += Move/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.Attack += 1;
-            modPlayer.FireAttack += 2;
+            modPlayer.Attack += Atk;
+            modPlayer.FireAttack += FireAtk;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += 2;
+            SlotPlayer.DecorationOneSlots += Decor1;
         }
         public override void AddRecipes()
         {

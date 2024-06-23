@@ -6,12 +6,20 @@ using Terraria;
 using Terraria.ID;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 {
     [AutoloadEquip(EquipType.Head)]
     public class JaggiMaskX : ModItem
     {
+            
+        public static readonly int Crit = 10;
+        public static readonly int Move = 10;
+        public static readonly int Auto = 2;
+        public static readonly int SpeedEat = 1;
+        public static readonly int Decor1 = 1;
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Crit, Move, Auto, SpeedEat, Decor1);
 
         public override void SetDefaults()
         {
@@ -24,13 +32,13 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.moveSpeed += 0.1f;
-            player.GetCritChance<GenericDamageClass>() += 10;
+            player.moveSpeed += Move/100f;
+            player.GetCritChance<GenericDamageClass>() += Crit;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.AutoTracker += 2;
-            modPlayer.SpeedEating += 1;
+            modPlayer.AutoTracker += Auto;
+            modPlayer.SpeedEating += SpeedEat;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationThreeSlots += 1;
+            SlotPlayer.DecorationThreeSlots += Decor1;
         }
         public override void AddRecipes()
         {

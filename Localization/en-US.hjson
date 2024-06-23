@@ -92,6 +92,7 @@ Mods: {
 			Protection: Increases the Protection Skill by {0}
 			ProtectivePolish: Increases the Protective Polish Skill by {0}
 			PunishDraw: Increases the Punish Draw Skill by {0}
+			QuickGathering: Increases the Quick Gathering Skill by {0}
 			QuickSharpening: Increases the Quick Sharpening Skill by {0}
 			QuickSheath: Increases the Quick Sheath Skill by {0}
 			RapidFire: Increases the Rapid Fire Skill by {0}
@@ -157,7 +158,7 @@ Mods: {
 				DisplayName: Basarios Greaves X
 				Tooltip:
 					'''
-					{$CommonItemTooltip.IncreaseMovemennt}
+					{$CommonItemTooltip.IncreaseMovement}
 					{$CommonItemTooltip.DefenseBoost@1}
 					{$CommonItemTooltip.ThreeSlotDecor@2}
 					'''
@@ -1368,7 +1369,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
 					{$CommonItemTooltip.IncreaseCrit@1}
-					{$CommonItemTooltip.PieceUp@2}
+					{$CommonItemTooltip.PierceUp@2}
 					{$CommonItemTooltip.ThunderAttack@3}
 					{$CommonItemTooltip.Vault@4}
 					{$CommonItemTooltip.TwoSlotDecor@5}

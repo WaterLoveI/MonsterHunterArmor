@@ -6,12 +6,21 @@ using Terraria;
 using Terraria.ID;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 {
     [AutoloadEquip(EquipType.Head)]
     public class MizutsuneHelmX : ModItem
     {
+        public static readonly int Damage = 12;
+        public static readonly int Crit = 12;
+        public static readonly int Const = 1;
+        public static readonly int Evasion = 1;
+        public static readonly int WaterAtk = 1;
+        public static readonly int Decor1 = 2;
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Crit, Const, Evasion, WaterAtk, Decor1);
+
         public override void SetDefaults()
         {
             Item.width = 26;
@@ -24,14 +33,14 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.GetDamage<GenericDamageClass>() += 0.12f;
-            player.GetCritChance<GenericDamageClass>() += 12;
+            player.GetDamage<GenericDamageClass>() += Damage/100f;
+            player.GetCritChance<GenericDamageClass>() += Crit;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.WaterAttack += 1;
-            modPlayer.Constitution += 1;
-            modPlayer.Evasion += 1;
+            modPlayer.WaterAttack += WaterAtk;
+            modPlayer.Constitution += Const;
+            modPlayer.Evasion += Evasion;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationTwoSlots += 2;
+            SlotPlayer.DecorationTwoSlots += Decor1;
         }
 
         public override void AddRecipes()

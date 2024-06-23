@@ -19,7 +19,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
         public static readonly int SpareShot = 1;
         public static readonly int Decor = 1;
 
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Move, Normal, SpareShot, Decor);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Crit, Normal, SpareShot, Decor);
 
         public override void SetDefaults()
         {

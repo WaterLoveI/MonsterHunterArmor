@@ -5,6 +5,7 @@ using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using MHArmorSkills.MHPlayer;
 using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
@@ -12,6 +13,15 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
     [AutoloadEquip(EquipType.Legs)]
     public class LavasiothGreavesX : ModItem
     {
+            
+        public static readonly int Damage = 10;
+        public static readonly int Move = 7;
+        public static readonly int Fortified = 1;
+        public static readonly int RecUp = 1;
+        public static readonly int Resent = 1;
+        public static readonly int Decor1 = 1;
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Move, Fortified, RecUp, Resent, Decor1);
+
         public override void SetDefaults()
         {
             Item.width = 22;
@@ -24,15 +34,15 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.GetDamage<GenericDamageClass>() += 0.10f;
-            player.moveSpeed += 0.07f;
+            player.GetDamage<GenericDamageClass>() += Damage/100f;
+            player.moveSpeed += Move/100f;
             player.lifeRegen += 1;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.RecoveryUp += 1;
-            modPlayer.Resentment += 1;
-            modPlayer.Fortified += 1;
+            modPlayer.RecoveryUp += RecUp;
+            modPlayer.Resentment += Resent;
+            modPlayer.Fortified += Fortified;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationTwoSlots += 1;
+            SlotPlayer.DecorationTwoSlots += Decor1;
         }
 
         public override void AddRecipes()

@@ -13,10 +13,13 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
     [AutoloadEquip(EquipType.Head)]
     public class MoofahHeadX : ModItem
     {
-        public static readonly int Skill1 = 1;
-        public static readonly int Skill2 = 1;
-
-        
+        public static readonly int Damage = 12;
+        public static readonly int Move = 15;
+        public static readonly int Gather = 1;
+        public static readonly int IceRes = 1;
+        public static readonly int ThunderAtk = 1;
+        public static readonly int Decor1 = 1;
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Move, Gather, IceRes, ThunderAtk, Decor1);
 
         public override void SetDefaults()
         {
@@ -29,14 +32,14 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.GetDamage<GenericDamageClass>() += 0.12f;
-            player.moveSpeed += 0.15f;
+            player.GetDamage<GenericDamageClass>() += Damage/100f;
+            player.moveSpeed += Move/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.Gathering += 1;
-            modPlayer.ThunderAttack += 1;
-            modPlayer.IceRes += 1;
+            modPlayer.Gathering += Gather;
+            modPlayer.ThunderAttack += ThunderAtk;
+            modPlayer.IceRes += IceRes;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationTwoSlots += 1;
+            SlotPlayer.DecorationTwoSlots += Decor1;
         }
         public override void AddRecipes()
         {

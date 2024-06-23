@@ -6,12 +6,20 @@ using Terraria;
 using Terraria.ID;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 {
     [AutoloadEquip(EquipType.Body)]
     public class GlavenusMailX : ModItem
     {
+            
+        public static readonly int Damage = 15;
+        public static readonly int Melee = 15;
+        public static readonly int Grinder = 2;
+        public static readonly int Razor = 2;
+        public static readonly int Decor1 = 1;
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Melee, Grinder, Razor, Decor1);
 
         public override void SetDefaults()
         {
@@ -24,13 +32,13 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.GetDamage<GenericDamageClass>() += 0.15f;
-            player.GetAttackSpeed<MeleeDamageClass>() += 0.15f;
+            player.GetDamage<GenericDamageClass>() += Damage/100f;
+            player.GetAttackSpeed<MeleeDamageClass>() += Melee/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.RazorSharp += 2;
-            modPlayer.Grinder += 2;
+            modPlayer.RazorSharp += Razor;
+            modPlayer.Grinder += Grinder;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationThreeSlots += 1;
+            SlotPlayer.DecorationThreeSlots += Decor1;
         }
         public override void AddRecipes()
         {
