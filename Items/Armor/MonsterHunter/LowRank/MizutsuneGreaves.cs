@@ -6,16 +6,19 @@ using Terraria;
 using Terraria.ID;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 {
     [AutoloadEquip(EquipType.Legs)]
     public class MizutsuneGreaves : ModItem
     {
-        public static readonly int Skill1 = 1;
-        public static readonly int Skill2 = 2;
+        public static readonly int Move = 10;
+        public static readonly int water = 2;
+        public static readonly int con = 1;
+        public static readonly int Decor = 1;
 
-        
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Move, water, con, Decor);
 
         public override void SetDefaults()
         {
@@ -28,12 +31,12 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.moveSpeed += 0.1f;
+            player.moveSpeed += Move/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.WaterAttack += 2;
-            modPlayer.Constitution += 1;
+            modPlayer.WaterAttack += water;
+            modPlayer.Constitution += con;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationTwoSlots += 1;
+            SlotPlayer.DecorationTwoSlots += Decor;
         }
         public override void AddRecipes()
         {

@@ -1,17 +1,17 @@
-using Terraria;
-using Terraria.ModLoader;
-using Terraria.ID;
 using MHArmorSkills.MHPlayer;
-using MHArmorSkills.Buffs.ArmorBuffs;
+using Terraria;
+using Terraria.ID;
+using Terraria.Localization;
+using Terraria.ModLoader;
 
 namespace MHArmorSkills.Items.Accessories.Decorations
 {
     public class Protection2 : ModItem
     {
-public static readonly int SkillPoint = 2;
+        public static readonly int SkillPoint = 2;
 
         public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(SkillPoint);
-        
+
         public override void SetDefaults()
         {
             Item.width = 32;
@@ -37,12 +37,12 @@ public static readonly int SkillPoint = 2;
             {
                 SlotPlayer.DecorationThreeSlots -= 1;
                 return true;
-                
+
             }
             return false;
         }
     }
-    
+
 }
 
 

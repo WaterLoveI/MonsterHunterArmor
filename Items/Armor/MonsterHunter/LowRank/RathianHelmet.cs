@@ -5,16 +5,18 @@ using Terraria;
 using Terraria.ID;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 {
     [AutoloadEquip(EquipType.Head)]
     public class RathianHelmet : ModItem
     {
-        public static readonly int Skill1 = 1;
-        public static readonly int Skill2 = 2;
+        public static readonly int Damage = 5;
+        public static readonly int Health = 2;
+        public static readonly int Protect = 2;
 
-        
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Health, Protect);
 
         public override void SetDefaults()
         {
@@ -27,10 +29,10 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.GetDamage<GenericDamageClass>() += 0.05f;
+            player.GetDamage<GenericDamageClass>() += Damage/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.Health += 2;
-            modPlayer.Protection += 2;
+            modPlayer.Health += Health;
+            modPlayer.Protection += Protect;
         }
         public override void AddRecipes()
         {

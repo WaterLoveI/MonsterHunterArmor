@@ -6,12 +6,19 @@ using Terraria;
 using Terraria.ID;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 {
     [AutoloadEquip(EquipType.Body)]
     public class GammothMailX : ModItem
     {
+        public static readonly int Damage = 12;
+        public static readonly int Move = 5;
+        public static readonly int Atk = 3;
+        public static readonly int Tremor = 2;
+
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Move, Atk, Tremor);
 
         public override void SetDefaults()
         {
@@ -24,12 +31,11 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.GetDamage<GenericDamageClass>() += 0.12f;
-            player.moveSpeed += 0.05f;
+            player.GetDamage<GenericDamageClass>() += Damage/100f;
+            player.moveSpeed += Move/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.Attack += 3;
-            modPlayer.TremorRes += 2;
-            DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
+            modPlayer.Attack += Atk;
+            modPlayer.TremorRes += Tremor;
         }
         public override void AddRecipes()
         {

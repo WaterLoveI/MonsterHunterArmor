@@ -6,12 +6,20 @@ using Terraria;
 using Terraria.ID;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 {
     [AutoloadEquip(EquipType.Legs)]
     public class BasariosGreavesU : ModItem
     {
+        public static readonly int Damage = 5;
+        public static readonly int Move = 15;
+        public static readonly int Guard = 2;
+        public static readonly int Tremor = 2;
+        public static readonly int Decor = 1;
+
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Move, Guard, Tremor, Decor);
 
         public override void SetDefaults()
         {
@@ -24,13 +32,13 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.GetDamage<GenericDamageClass>() += 0.05f;
-            player.moveSpeed += 0.15f;
+            player.GetDamage<GenericDamageClass>() += Damage/100f;
+            player.moveSpeed += Move/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.TremorRes += 2;
-            modPlayer.Guard += 2;
+            modPlayer.TremorRes += Tremor;
+            modPlayer.Guard += Guard;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationThreeSlots += 1;
+            SlotPlayer.DecorationThreeSlots += Decor;
         }
         public override void AddRecipes()
         {

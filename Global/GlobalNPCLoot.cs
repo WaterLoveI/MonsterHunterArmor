@@ -108,7 +108,7 @@ namespace MHArmorSkills.Global
 
             globalLoot.Add(ItemDropRule.ByCondition(new HMJungleCondition(), ModContent.ItemType<Coalescence1>(), 215, 1, 1));
             globalLoot.Add(ItemDropRule.ByCondition(new HMJungleCondition(), ModContent.ItemType<IntrepidHeart1>(), 215, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new HMJungleCondition(), ModContent.ItemType<Resusitate1>(), 215, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMJungleCondition(), ModContent.ItemType<Resuscitate1>(), 215, 1, 1));
             globalLoot.Add(ItemDropRule.ByCondition(new HMJungleCondition(), ModContent.ItemType<HoneyHunter2>(), 215, 1, 1));
             globalLoot.Add(ItemDropRule.ByCondition(new HMJungleCondition(), ModContent.ItemType<ChameleosBless1>(), 215, 1, 1));
 

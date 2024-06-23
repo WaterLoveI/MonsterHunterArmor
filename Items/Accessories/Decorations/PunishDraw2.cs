@@ -2,15 +2,16 @@ using MHArmorSkills.MHPlayer;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Accessories.Decorations
 {
     public class PunishDraw2 : ModItem
     {
-public static readonly int SkillPoint = 2;
+        public static readonly int SkillPoint = 2;
 
         public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(SkillPoint);
-        
+
         public override void SetDefaults()
         {
             Item.width = 32;

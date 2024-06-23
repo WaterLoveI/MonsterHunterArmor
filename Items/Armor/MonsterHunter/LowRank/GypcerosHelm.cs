@@ -5,16 +5,18 @@ using Terraria;
 using Terraria.ID;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 {
     [AutoloadEquip(EquipType.Head)]
     public class GypcerosHelm : ModItem
     {
-        public static readonly int Skill1 = 1;
-        public static readonly int Skill2 = 2;
-
-        
+        public static readonly int Movement = 5;
+        public static readonly int FreeMeal = 2;
+        public static readonly int Poison = 1;
+        public static readonly int Decor = 1;
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Movement, FreeMeal, Poison, Decor);
 
         public override void SetDefaults()
         {
@@ -27,12 +29,12 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.moveSpeed += 0.05f;
+            player.moveSpeed += Movement/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.FreeMeal += 2;
-            modPlayer.AntiPoison += 1;
+            modPlayer.FreeMeal += FreeMeal;
+            modPlayer.AntiPoison += Poison;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationTwoSlots += 1;
+            SlotPlayer.DecorationTwoSlots += Decor;
         }
         public override void AddRecipes()
         {

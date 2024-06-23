@@ -5,16 +5,18 @@ using Terraria;
 using Terraria.ID;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 {
     [AutoloadEquip(EquipType.Head)]
     public class GoreMagalaHelm : ModItem
     {
-        public static readonly int Skill1 = 1;
-        public static readonly int Skill2 = 1;
-
-        
+        public static readonly int Damage = 5;
+        public static readonly int Resentment = 2;
+        public static readonly int Bloodlust = 1;
+        public static readonly int Decor = 1;
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Resentment, Bloodlust, Decor);
 
         public override void SetDefaults()
         {
@@ -27,12 +29,12 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.GetDamage<GenericDamageClass>() += 0.05f;
+            player.GetDamage<GenericDamageClass>() += Damage/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.Bloodlust += 1;
-            modPlayer.Resentment += 2;
+            modPlayer.Bloodlust += Bloodlust;
+            modPlayer.Resentment += Resentment;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += 1;
+            SlotPlayer.DecorationOneSlots += Decor;
         }
         public override void AddRecipes()
         {

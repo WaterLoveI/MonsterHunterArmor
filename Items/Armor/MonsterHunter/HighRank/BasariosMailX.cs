@@ -6,12 +6,20 @@ using Terraria;
 using Terraria.ID;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 {
     [AutoloadEquip(EquipType.Body)]
     public class BasariosMailX : ModItem
     {
+        public static readonly int Damage = 7;
+        public static readonly int Melee = 15;
+        public static readonly int Def = 2;
+        public static readonly int Guard = 2;
+        public static readonly int Decor = 1;
+
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Melee, Def, Guard, Decor);
 
         public override void SetDefaults()
         {
@@ -24,13 +32,13 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.GetAttackSpeed<MeleeDamageClass>() += 0.15f;
-            player.GetDamage<GenericDamageClass>() += 0.07f;
+            player.GetAttackSpeed<MeleeDamageClass>() += Melee/100f;
+            player.GetDamage<GenericDamageClass>() += Damage/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.DefenseBoost += 2;
-            modPlayer.Guard += 2;
+            modPlayer.DefenseBoost += Def;
+            modPlayer.Guard += Guard;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += 1;
+            SlotPlayer.DecorationOneSlots += Decor;
         }
         public override void AddRecipes()
         {

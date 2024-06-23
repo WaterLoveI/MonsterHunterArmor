@@ -6,12 +6,20 @@ using Terraria;
 using Terraria.ID;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 {
     [AutoloadEquip(EquipType.Head)]
     public class DamascusHelmX : ModItem
     {
+        public static readonly int Damage = 12;
+        public static readonly int Crit = 12;
+        public static readonly int Handicraft = 2;
+        public static readonly int Razor = 2;
+        public static readonly int Decor = 2;
+
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Crit, Handicraft, Razor, Decor);
 
         public override void SetDefaults()
         {
@@ -24,13 +32,13 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.GetDamage<GenericDamageClass>() += 0.12f;
-            player.GetCritChance<GenericDamageClass>() += 12;
+            player.GetDamage<GenericDamageClass>() += Damage/100f;
+            player.GetCritChance<GenericDamageClass>() += Crit;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.Handicraft += 2;
-            modPlayer.RazorSharp += 2;
+            modPlayer.Handicraft += Handicraft;
+            modPlayer.RazorSharp += Razor;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationThreeSlots += 2;
+            SlotPlayer.DecorationThreeSlots += Decor;
         }
         public override void AddRecipes()
         {

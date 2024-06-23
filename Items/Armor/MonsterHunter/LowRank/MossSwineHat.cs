@@ -4,16 +4,18 @@ using Terraria;
 using Terraria.ID;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 {
     [AutoloadEquip(EquipType.Head)]
     public class MossSwineHat : ModItem
     {
-        public static readonly int Skill1 = 1;
-        public static readonly int Skill2 = 1;
+        public static readonly int mushroomer = 1;
+        public static readonly int Decor = 1;
 
-        
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(mushroomer, Decor);
+
 
         public override void SetDefaults()
         {
@@ -27,9 +29,9 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         public override void UpdateEquip(Terraria.Player player)
         {
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.Mushroomancer += 1;
+            modPlayer.Mushroomancer += mushroomer;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += 1;
+            SlotPlayer.DecorationOneSlots += Decor;
         }
         public override void AddRecipes()
         {

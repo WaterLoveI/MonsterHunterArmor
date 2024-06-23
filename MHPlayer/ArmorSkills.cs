@@ -113,7 +113,7 @@ namespace MHArmorSkills.MHPlayer
         public int RecoveryUp;
         public int RecSpeed;
         public int Resentment;
-        public int Resusitate;
+        public int resuscitate;
         public int Scholar;
         public int SilverBullet;
         public int Slugger;
@@ -244,7 +244,7 @@ namespace MHArmorSkills.MHPlayer
             RecoveryUp = 0;
             RecSpeed = 0;
             Resentment = 0;
-            Resusitate = 0;
+            resuscitate = 0;
             RockSteady = false;
             Scholar = 0;
             SilverBullet = 0;
@@ -1970,20 +1970,20 @@ namespace MHArmorSkills.MHPlayer
                 }
             }
             #endregion
-            #region Resusitate
-            if (Resusitate >= 1)
+            #region resuscitate
+            if (resuscitate >= 1)
             {
-                if (Resusitate >= 1)
+                if (resuscitate >= 1)
                 {
-                    modPlayer.ResusitateBuff += 3;
+                    modPlayer.resuscitateBuff += 3;
                 }
-                if (Resusitate >= 2)
+                if (resuscitate >= 2)
                 {
-                    modPlayer.ResusitateBuff += 3;
+                    modPlayer.resuscitateBuff += 3;
                 }
-                if (Resusitate >= 3)
+                if (resuscitate >= 3)
                 {
-                    modPlayer.ResusitateBuff += 4;
+                    modPlayer.resuscitateBuff += 4;
                 }
             }
             #endregion

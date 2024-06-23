@@ -18,7 +18,7 @@ Mods: {
 			Artillery: Increases the Artillery Skill by {0}
 			AttackBoost: Increases the Attack Boost Skill by {0}
 			AutoTracker: Increases the Auto Tracker Skill by {0}
-			AutoReload: Increases the Auto Reload Skill by {0}
+			AutoReload: Activates the Auto Reload Skill
 			Berserk: Increases the Berserk Skill by {0}
 			BladehoneScale: Increases the Bladehone Scale Skill by {0}
 			Bleeding: Activates the Bleeding Resistance Skill
@@ -412,7 +412,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.IncreaseMelee} 
 					{$CommonItemTooltip.AquaticMobility@1}
-					{$CommonItemTooltip.RqzorSharp@2}
+					{$CommonItemTooltip.RazorSharp@2}
 					{$CommonItemTooltip.WaterAttack@3}
 					'''
 			}
@@ -422,7 +422,7 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseCrit}
-					{$CommonItemTooltip.Movement@1}
+					{$CommonItemTooltip.IncreaseMovement@1}
 					{$CommonItemTooltip.Blightproof@2}
 					{$CommonItemTooltip.LastingPower@3}
 					{$CommonItemTooltip.Protection@4}
@@ -508,8 +508,8 @@ Mods: {
 					'''
 					{$CommonItemTooltip.IncreaseCrit} 
 					{$CommonItemTooltip.BladehoneScale@1}
-					{$CommonItemTooltip.Bleeding@2}
-					{$CommonItemTooltip.TwoSlotDecor@3}
+					{$CommonItemTooltip.Bleeding}
+					{$CommonItemTooltip.TwoSlotDecor@2}
 					'''
 			}
 
@@ -720,8 +720,8 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseCrit}
-					{$CommonItemTooltip.FireAttack@1}
-					{$CommonItemTooltip.Guard@2}
+					{$CommonItemTooltip.Guard@1}
+					{$CommonItemTooltip.FireAttack@2}
 					{$CommonItemTooltip.RazorSharp@3}
 					'''
 			}
@@ -757,7 +757,7 @@ Mods: {
 					{$CommonItemTooltip.Guard@2}
 					{$CommonItemTooltip.PierceUp@3}
 					{$CommonItemTooltip.SpareShot@4}
-					{$CommonItemTooltip.OneShotDecor@5}
+					{$CommonItemTooltip.OneSlotDecor@5}
 					'''
 			}
 
@@ -770,7 +770,7 @@ Mods: {
 					{$CommonItemTooltip.Guard@2}
 					{$CommonItemTooltip.Resentment@3}
 					{$CommonItemTooltip.SpareShot4}
-					{$CommonItemTooltip.OneShotDecor@5}
+					{$CommonItemTooltip.OneSlotDecor@5}
 					'''
 			}
 
@@ -1149,7 +1149,7 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.IncreaseCrit@1}
 					{$CommonItemTooltip.NormalUp@2}
 					{$CommonItemTooltip.SpareShot@3}
 					{$CommonItemTooltip.OneSlotDecor@4}
@@ -1187,7 +1187,7 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.IncreaseCrit@1}
 					{$CommonItemTooltip.IceAttack@2}
 					{$CommonItemTooltip.CritEye@3}
 					{$CommonItemTooltip.TwoSlotDecor@4}
@@ -1389,7 +1389,7 @@ Mods: {
 			}
 
 			AstalosGreavesX: {
-				DisplayName: Astalos Mail X
+				DisplayName: Astalos Greaves X
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
@@ -1831,8 +1831,9 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					{$CommonItemTooltip.AttackBoost@1}
-					{$CommonItemTooltip.TremorRes@2}
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.AttackBoost@2}
+					{$CommonItemTooltip.TremorRes@3}
 					'''
 			}
 
@@ -2336,8 +2337,8 @@ Mods: {
 					'''
 			}
 
-			Resusitate1: {
-				DisplayName: Resusitate Decoration 1
+			Resuscitate1: {
+				DisplayName: resuscitate Decoration 1
 				Tooltip:
 					'''
 					{$CommonItemTooltip.Resuscitate}
@@ -2346,8 +2347,8 @@ Mods: {
 					'''
 			}
 
-			Resusitate2: {
-				DisplayName: Resusitate Decoration 2
+			Resuscitate2: {
+				DisplayName: resuscitate Decoration 2
 				Tooltip:
 					'''
 					{$CommonItemTooltip.Resuscitate}
@@ -2570,7 +2571,7 @@ Mods: {
 				DisplayName: Cliffhanger Decoration 1
 				Tooltip:
 					'''
-					{$CommonItemTooltip.Cliffhanger}
+					{$CommonItemTooltip.CliffHanger}
 					{$CommonItemTooltip.Vanity}
 					[○]
 					'''
@@ -3360,7 +3361,7 @@ Mods: {
 				DisplayName: Cliffhanger Decoration 2
 				Tooltip:
 					'''
-					{$CommonItemTooltip.Cliffhanger}
+					{$CommonItemTooltip.CliffHanger}
 					{$CommonItemTooltip.Vanity}
 					[○][○]
 					'''

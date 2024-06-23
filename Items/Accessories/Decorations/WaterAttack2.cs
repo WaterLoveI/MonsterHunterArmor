@@ -1,13 +1,16 @@
 ﻿using MHArmorSkills.MHPlayer;
 using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace MHArmorSkills.Items.Accessories.Decorations
 {
     public class WaterAttack2 : ModItem
     {
+        public static readonly int SkillPoint = 2;
 
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(SkillPoint);
         public override void SetDefaults()
         {
             Item.width = 32;

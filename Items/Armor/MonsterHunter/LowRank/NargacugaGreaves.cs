@@ -4,6 +4,7 @@ using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using MHArmorSkills.MHPlayer;
 using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
@@ -11,10 +12,12 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
     [AutoloadEquip(EquipType.Legs)]
     public class NargacugaGreaves : ModItem
     {
-        public static readonly int Skill1 = 3;
-        public static readonly int Skill2 = 2;
+        public static readonly int Move = 10;
+        public static readonly int crit = 1;
+        public static readonly int evade = 1;
+        public static readonly int Decor = 2;
 
-
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Move, crit, evade, Decor);
 
         public override void SetDefaults()
         {
@@ -27,12 +30,12 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.moveSpeed += 0.1f;
+            player.moveSpeed += Move/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.EvadeDistance += 1;
-            modPlayer.CritEye += 1; 
+            modPlayer.EvadeDistance += evade;
+            modPlayer.CritEye += crit; 
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += 2;
+            SlotPlayer.DecorationOneSlots += Decor;
         }
         public override void AddRecipes()
         {

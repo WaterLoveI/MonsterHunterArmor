@@ -6,12 +6,21 @@ using MHArmorSkills.MHPlayer;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 {
     [AutoloadEquip(EquipType.Head)]
     public class ArzurosHelmX : ModItem
     {
+        public static readonly int Damage = 10;
+        public static readonly int Move = 10;
+        public static readonly int Def = 1;
+        public static readonly int Honey = 1;
+        public static readonly int Prot = 1;
+        public static readonly int Decor = 1;
+
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Move, Def, Honey, Prot, Decor);
 
         public override void SetDefaults()
         {
@@ -24,14 +33,14 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.GetDamage<GenericDamageClass>() += 0.10f;
-            player.moveSpeed += 0.1f;
+            player.GetDamage<GenericDamageClass>() += Damage/100f;
+            player.moveSpeed += Move/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.DefenseBoost += 1;
-            modPlayer.HoneyHunter += 1;
-            modPlayer.Protection += 1;
+            modPlayer.DefenseBoost += Def;
+            modPlayer.HoneyHunter += Honey;
+            modPlayer.Protection += Prot;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationTwoSlots += 1;
+            SlotPlayer.DecorationTwoSlots += Decor;
         }
         public override void AddRecipes()
         {

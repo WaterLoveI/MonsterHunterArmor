@@ -5,16 +5,19 @@ using Terraria;
 using Terraria.ID;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 {
     [AutoloadEquip(EquipType.Head)]
     public class KutkuHelm : ModItem
     {
-        public static readonly int Skill1 = 1;
-        public static readonly int Skill2 = 2;
+        public static readonly int Crit = 3;
+        public static readonly int Attack = 1;
+        public static readonly int FAttack = 1;
+        public static readonly int Decor = 2;
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Crit, Attack, FAttack, Decor);
 
-        
 
         public override void SetDefaults()
         {
@@ -27,12 +30,12 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.GetCritChance<GenericDamageClass>() += 3;
+            player.GetCritChance<GenericDamageClass>() += Crit;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.FireAttack += 1;
-            modPlayer.Attack += 1;
+            modPlayer.FireAttack += FAttack;
+            modPlayer.Attack += Attack;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += 2;
+            SlotPlayer.DecorationOneSlots += Decor;
         }
         public override void AddRecipes()
         {

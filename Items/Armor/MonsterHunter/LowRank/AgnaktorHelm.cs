@@ -13,11 +13,11 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
     public class AgnaktorHelm : ModItem
     {
         public static readonly int CritChance = 5;
-        public static readonly int FireAttack = 1;
         public static readonly int Guard = 2;
+        public static readonly int FireAttack = 1;
         public static readonly int RazorSharp = 1;
 
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(CritChance, FireAttack, Guard, RazorSharp);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(CritChance, Guard, FireAttack, RazorSharp);
 
         public override void SetDefaults()
         {

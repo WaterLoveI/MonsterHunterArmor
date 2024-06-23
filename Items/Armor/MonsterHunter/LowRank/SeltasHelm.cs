@@ -5,12 +5,19 @@ using Terraria;
 using Terraria.ID;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 {
     [AutoloadEquip(EquipType.Head)]
     public class SeltasHelm : ModItem
     {
+        public static readonly int Crit = 5;
+        public static readonly int Auto = 2;
+        public static readonly int Guard = 2;
+        public static readonly int Decor = 1;
+
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Crit, Auto, Guard, Decor);
 
         public override void SetDefaults()
         {
@@ -23,12 +30,12 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.GetCritChance<GenericDamageClass>() += 5;
+            player.GetCritChance<GenericDamageClass>() += Crit;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.AutoTracker += 2;
-            modPlayer.Guard += 2;
+            modPlayer.AutoTracker += Auto;
+            modPlayer.Guard += Guard;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationTwoSlots += 1;
+            SlotPlayer.DecorationTwoSlots += Decor;
         }
         public override void AddRecipes()
         {

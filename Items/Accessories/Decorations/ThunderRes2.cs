@@ -3,12 +3,15 @@ using Terraria.ModLoader;
 using Terraria.ID;
 using MHArmorSkills.MHPlayer;
 using MHArmorSkills.Buffs.ArmorBuffs;
+using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Accessories.Decorations
 {
     public class ThunderRes2 : ModItem
     {
+        public static readonly int SkillPoint = 3;
 
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(SkillPoint);
         public override void SetDefaults()
         {
             Item.width = 32;
@@ -22,7 +25,7 @@ namespace MHArmorSkills.Items.Accessories.Decorations
         public override void UpdateEquip(Player player)
         {
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.ThunderAttack += 3;
+            modPlayer.ThunderRes += 3;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
             SlotPlayer.DecorationTwoSlots -= 1;
         }

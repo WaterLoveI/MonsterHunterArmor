@@ -6,12 +6,20 @@ using Terraria;
 using Terraria.ID;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 {
     [AutoloadEquip(EquipType.Head)]
     public class BasariosHelmetX : ModItem
     {
+        public static readonly int Damage = 12;
+        public static readonly int Poison = 2;
+        public static readonly int Guard = 1;
+        public static readonly int Def = 1;
+        public static readonly int Decor = 1;
+
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Poison, Guard, Def, Decor);
 
         public override void SetDefaults()
         {
@@ -24,13 +32,13 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.GetDamage<GenericDamageClass>() += 0.12f;
+            player.GetDamage<GenericDamageClass>() += Damage/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.AntiPoison += 2;
-            modPlayer.Guard += 1;
-            modPlayer.DefenseBoost += 1;
+            modPlayer.AntiPoison += Poison;
+            modPlayer.Guard += Guard;
+            modPlayer.DefenseBoost += Def;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += 1;
+            SlotPlayer.DecorationOneSlots += Decor;
         }
         public override void AddRecipes()
         {

@@ -140,7 +140,7 @@ namespace MHArmorSkills.MHPlayer
         public int RazorSharp;
         public int RecoverySpeed;
         public int ResentmentBuff;
-        public int ResusitateBuff;
+        public int resuscitateBuff;
         public int Scholar;
         public int Sneak;
         public int SpareShot;
@@ -266,7 +266,7 @@ namespace MHArmorSkills.MHPlayer
             RecoverySpeed = 0;
             RecoveryUp = 1f;
             ResentmentBuff = 0;
-            ResusitateBuff = 0;
+            resuscitateBuff = 0;
             Scholar = 0;
             Sharpness = false;
             Sneak = 0;
@@ -625,8 +625,8 @@ namespace MHArmorSkills.MHPlayer
                 ControlledAttack += CounterStrike;
             }
             #endregion
-            #region Resusitate
-            if (ResusitateBuff >= 1)
+            #region resuscitate
+            if (resuscitateBuff >= 1)
             {
                 for (int l = 0; l < Player.MaxBuffs; ++l)
                 {
@@ -636,7 +636,7 @@ namespace MHArmorSkills.MHPlayer
                     bool Statused = MHLists.debuffList.Contains(buffID);
                     if (Statused)
                     {
-                        ControlledAttack += ResusitateBuff;
+                        ControlledAttack += resuscitateBuff;
                     }
                 }
             }

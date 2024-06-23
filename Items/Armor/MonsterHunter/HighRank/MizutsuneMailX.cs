@@ -29,7 +29,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
             player.GetCritChance<GenericDamageClass>() += 12;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.BubbleDance += 2;
-            modPlayer.Resusitate += 2;
+            modPlayer.resuscitate += 2;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
             SlotPlayer.DecorationThreeSlots += 1;
         }

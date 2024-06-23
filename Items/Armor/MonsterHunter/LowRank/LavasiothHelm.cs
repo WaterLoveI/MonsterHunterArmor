@@ -5,16 +5,18 @@ using Terraria;
 using Terraria.ID;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 {
     [AutoloadEquip(EquipType.Head)]
     public class LavasiothHelm : ModItem
     {
-        public static readonly int Skill1 = 1;
-        public static readonly int Skill2 = 2;
+        public static readonly int melee = 5;
+        public static readonly int FAttack = 3;
+        public static readonly int Decor = 2;
 
-        
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(melee, FAttack, Decor);
 
         public override void SetDefaults()
         {
@@ -27,11 +29,11 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.GetAttackSpeed(DamageClass.Melee) += 0.05f;
+            player.GetAttackSpeed(DamageClass.Melee) += melee/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.FireAttack += 3;
+            modPlayer.FireAttack += FAttack;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += 2;
+            SlotPlayer.DecorationOneSlots += Decor;
         }
         public override void AddRecipes()
         {

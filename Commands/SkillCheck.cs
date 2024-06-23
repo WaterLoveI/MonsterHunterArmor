@@ -473,9 +473,9 @@ namespace MHArmorSkills.Commands
                 caller.Reply($"Resentment Level: {modPlayer.Resentment} (Cap: 3)");
                 SkillActive = true;
             }
-            if (modPlayer.Resusitate >= 1)
+            if (modPlayer.resuscitate >= 1)
             {
-                caller.Reply($"Resusitate Level: {modPlayer.Resusitate} (Cap: 3)");
+                caller.Reply($"resuscitate Level: {modPlayer.resuscitate} (Cap: 3)");
                 SkillActive = true;
             }
             if (modPlayer.RockSteady == true)

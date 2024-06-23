@@ -5,12 +5,20 @@ using Terraria;
 using Terraria.ID;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 {
     [AutoloadEquip(EquipType.Head)]
     public class UkanlosHelm : ModItem
     {
+        public static readonly int Damage = 15;
+        public static readonly int Crit = 10;
+        public static readonly int Attack = 2;
+        public static readonly int Handicraft = 2;
+        public static readonly int IceAttack = 1;
+
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Crit, Attack, Handicraft, IceAttack);
 
         public override void SetDefaults()
         {
@@ -23,12 +31,12 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.GetDamage<GenericDamageClass>() += 0.15f;
-            player.GetCritChance<GenericDamageClass>() += 10;
+            player.GetDamage<GenericDamageClass>() += Damage/100f;
+            player.GetCritChance<GenericDamageClass>() += Crit;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.Handicraft += 2;
-            modPlayer.Attack += 2;
-            modPlayer.IceAttack += 1;
+            modPlayer.Handicraft += Handicraft;
+            modPlayer.Attack += Attack;
+            modPlayer.IceAttack += IceAttack;
             
         }
         public override void AddRecipes()

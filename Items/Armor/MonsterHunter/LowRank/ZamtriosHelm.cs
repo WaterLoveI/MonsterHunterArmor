@@ -4,7 +4,7 @@ using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using MHArmorSkills.MHPlayer;
 using Terraria;
 using Terraria.ID;
-using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
@@ -12,10 +12,12 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
     [AutoloadEquip(EquipType.Head)]
     public class ZamtriosHelm : ModItem
     {
-        public static readonly int Skill1 = 1;
-        public static readonly int Skill2 = 2;
+        public static readonly int Move = 10;
+        public static readonly int RecSpd = 2;
+        public static readonly int Ice = 1;
+        public static readonly int Decor = 1;
 
-        
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Move, RecSpd, Ice, Decor);
 
         public override void SetDefaults()
         {
@@ -28,12 +30,12 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.moveSpeed += 0.1f;
+            player.moveSpeed += Move/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.RecSpeed += 2;
-            modPlayer.IceAttack += 1;
+            modPlayer.RecSpeed += RecSpd;
+            modPlayer.IceAttack += Ice;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += 1;
+            SlotPlayer.DecorationOneSlots += Decor;
         }
         public override void AddRecipes()
         {

@@ -5,17 +5,16 @@ using Terraria.ID;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using Terraria.ModLoader;
 using MHArmorSkills.Items.Crafting_Materials.ArmorSphere;
+using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 {
     [AutoloadEquip(EquipType.Head)]
     public class JaggiMask : ModItem
     {
-        public static readonly int Skill1 = 1;
-        public static readonly int Skill2 = 1;
-
-        
-
+        public static readonly int Attack = 1;
+        public static readonly int Crit = 1;
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Attack, Crit);
         public override void SetDefaults()
         {
             Item.width = 28;
@@ -28,8 +27,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         public override void UpdateEquip(Terraria.Player player)
         {
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.Attack += Skill1;
-            modPlayer.CritEye += Skill1;
+            modPlayer.Attack += Attack;
+            modPlayer.CritEye += Crit;
         }
         public override void AddRecipes()
         {

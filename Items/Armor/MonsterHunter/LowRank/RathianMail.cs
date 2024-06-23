@@ -5,12 +5,19 @@ using Terraria;
 using Terraria.ID;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 {
     [AutoloadEquip(EquipType.Body)]
     public class RathianMail : ModItem
     {
+        public static readonly int Damage = 6;
+        public static readonly int Health = 1;
+        public static readonly int RecSpd = 1;
+        public static readonly int Decor = 2;
+
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Health, RecSpd, Decor);
 
         public override void SetDefaults()
         {
@@ -23,12 +30,12 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.GetDamage<GenericDamageClass>() += 0.06f;
+            player.GetDamage<GenericDamageClass>() += Damage/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.Health += 1;
-            modPlayer.RecSpeed += 1;
+            modPlayer.Health += Health;
+            modPlayer.RecSpeed += RecSpd;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationTwoSlots += 2;
+            SlotPlayer.DecorationTwoSlots += Decor;
         }
         public override void AddRecipes()
         {
