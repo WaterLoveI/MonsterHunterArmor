@@ -15,32 +15,32 @@ WhetStone: {
 
 ArmorSphere: {
 	DisplayName: Armor Sphere
-	Tooltip: "Reacts uniquely to heat. Fuse this to equipment to increase its strength."
+	Tooltip: Reacts uniquely to heat. Fuse this to equipment to increase its strength.
 }
 
 ArmorSpherePlus: {
 	DisplayName: Armor Sphere Plus
-	Tooltip: "Fuse this high-quality Armor Sphere to existing equipment to increase its strength."
+	Tooltip: Fuse this high-quality Armor Sphere to existing equipment to increase its strength.
 }
 
 HardArmorSphere: {
 	DisplayName: Hard Armor Sphere
-	Tooltip: "A thick, dense Armor Sphere. Use this precious rarity to push equipment to the limit."
+	Tooltip: A thick, dense Armor Sphere. Use this precious rarity to push equipment to the limit.
 }
 
 HeavyArmorSphere: {
 	DisplayName: Heavy Armor Sphere
-	Tooltip: "A thick, dense Armor Sphere. Use this precious rarity to push armor to the limit."
+	Tooltip: A thick, dense Armor Sphere. Use this precious rarity to push armor to the limit.
 }
 
 KingArmorSphere: {
 	DisplayName: King Armor Sphere
-	Tooltip: "A brightly glowing Armor Sphere. Use this scarce commodity to take your armor to new heights."
+	Tooltip: A brightly glowing Armor Sphere. Use this scarce commodity to take your armor to new heights.
 }
 
 TrueArmorSphere: {
 	DisplayName: True Armor Sphere
-	Tooltip: "An Armor Sphere of near-perfect purity. Its abilities require advanced techniques to extract."
+	Tooltip: An Armor Sphere of near-perfect purity. Its abilities require advanced techniques to extract.
 }
 
 FrozenSpearTuna: {
@@ -50,27 +50,27 @@ FrozenSpearTuna: {
 
 AmberHardfang: {
 	DisplayName: Amber Hardfang
-	Tooltip: "A thick, heavy tusk found on select Barioth. Strong enough to shatter almost anything."
+	Tooltip: A thick, heavy tusk found on select Barioth. Strong enough to shatter almost anything.
 }
 
 AmberTusk: {
 	DisplayName: Amber Tusk
-	Tooltip: "Amber tusks sharpened by countless kills. They can smash through gigantic ice blocks."
+	Tooltip: Amber tusks sharpened by countless kills. They can smash through gigantic ice blocks.
 }
 
 AquaSac: {
 	DisplayName: Aqua Sac
-	Tooltip: "A monster organ designed to hold and preserve water."
+	Tooltip: A monster organ designed to hold and preserve water.
 }
 
 BeastGem: {
 	DisplayName: Beast Gem
-	Tooltip: "A valuable jewel formed from coagulated juices inside a monster. Glows wildly."
+	Tooltip: A valuable jewel formed from coagulated juices inside a monster. Glows wildly.
 }
 
 BirdWyvernGem: {
 	DisplayName: Bird Wyvern Gem
-	Tooltip: "A valuable gem that can be harvested from bird wyverns."
+	Tooltip: A valuable gem that can be harvested from bird wyverns.
 }
 
 BoltScale: {
@@ -80,17 +80,17 @@ BoltScale: {
 
 Bubblefoam: {
 	DisplayName: Bubblefoam
-	Tooltip: "Fluid secreted by a Mizutsune. Just a few drops can turn a swamp into a bubble bath."
+	Tooltip: Fluid secreted by a Mizutsune. Just a few drops can turn a swamp into a bubble bath.
 }
 
 CrabPearl: {
 	DisplayName: Crab Pearl
-	Tooltip: "A jewel formed inside the body over many, many years."
+	Tooltip: A jewel formed inside the body over many, many years.
 }
 
 DeathlyShocker: {
 	DisplayName: Deathly Shocker
-	Tooltip: "A thick shell found on a select few Lagiacrus. It releases huge bolts of electricity."
+	Tooltip: A thick shell found on a select few Lagiacrus. It releases huge bolts of electricity.
 }
 
 DistilledBubblefoam: {
@@ -100,22 +100,22 @@ DistilledBubblefoam: {
 
 DroneSubstance: {
 	DisplayName: Drone Substance
-	Tooltip: "A pheromone sometimes released by Neopterons and Temnocerans."
+	Tooltip: A pheromone sometimes released by Neopterons and Temnocerans.
 }
 
 EbonShell: {
 	DisplayName: Ebon Shell
-	Tooltip: "An obsidian Brachydios brace. Makes especially strong armor, perhaps due to the slime mold."
+	Tooltip: An obsidian Brachydios brace. Makes especially strong armor, perhaps due to the slime mold.
 }
 
 ElderDragonGem: {
 	DisplayName: Elder Dragon Gem
-	Tooltip: "A giant, ultra-rare stone that forms inside an Elder Dragon once in a millennium."
+	Tooltip: A giant, ultra-rare stone that forms inside an Elder Dragon once in a millennium.
 }
 
 ElectroSac: {
 	DisplayName: Electro Sac
-	Tooltip: "A monster organ that can store up electricity, which is released on impact."
+	Tooltip: A monster organ that can store up electricity, which is released on impact.
 }
 
 ElectroShocker: {
@@ -125,127 +125,127 @@ ElectroShocker: {
 
 FeyWyvernGem: {
 	DisplayName: Fey Wyvern Gem
-	Tooltip: "An exceptionally pure gem taken from a bird wyvern. Its fragility makes it difficult to carve."
+	Tooltip: An exceptionally pure gem taken from a bird wyvern. Its fragility makes it difficult to carve.
 }
 
 FineBlackPearl: {
 	DisplayName: Fine Black Pearl
-	Tooltip: "Largest and most beautiful of all black pearls. Very valuable and hard to find."
+	Tooltip: Largest and most beautiful of all black pearls. Very valuable and hard to find.
 }
 
 FineEbonShell: {
 	DisplayName: Fine Ebon Shell
-	Tooltip: "A premium Brachydios brace. The slime coating may contain weird bacteria, so be careful."
+	Tooltip: A premium Brachydios brace. The slime coating may contain weird bacteria, so be careful.
 }
 
 FlameSac: {
 	DisplayName: Flame Sac
-	Tooltip: "A monster organ filled with flammable powder. Handle with extreme care."
+	Tooltip: A monster organ filled with flammable powder. Handle with extreme care.
 }
 
 FlamingScale: {
 	DisplayName: Flaming Scale
-	Tooltip: "A Rathalos scale. Wyvern scales and shells such as this are fundamental forging materials."
+	Tooltip: A Rathalos scale. Wyvern scales and shells such as this are fundamental forging materials.
 }
 
 FlamingShard: {
 	DisplayName: Flaming Shard
-	Tooltip: "A Rathalos part made of several overlapping scales. Its strength is a natural wonder."
+	Tooltip: A Rathalos part made of several overlapping scales. Its strength is a natural wonder.
 }
 
 FreezerSac: {
 	DisplayName: Freezer Sac
-	Tooltip: "A monster organ with tremendous freezing power; turns its surroundings to ice."
+	Tooltip: A monster organ with tremendous freezing power; turns its surroundings to ice.
 }
 
 FrostSac: {
 	DisplayName: Frost Sac
-	Tooltip: "A monster internal organ, filled with extremely cold fluid. Handle with care."
+	Tooltip: A monster internal organ, filled with extremely cold fluid. Handle with care.
 }
 
 FulgurBug: {
 	DisplayName: Fulgur Bug
-	Tooltip: "Thunderbugs which have been stimulated by Zinogre. They emit a pale blue light."
+	Tooltip: Thunderbugs which have been stimulated by Zinogre. They emit a pale blue light.
 }
 
 GammothIceOrb: {
 	DisplayName: Gammoth Ice Orb
-	Tooltip: "A gem from inside a Gammoth. Named for its ice-like clarity and being as shiny as a jewel."
+	Tooltip: A gem from inside a Gammoth. Named for its ice-like clarity and being as shiny as a jewel.
 }
 
 GlowingSlime: {
 	DisplayName: Glowing Slime
-	Tooltip: "A highly volatile fluid used by especially savage Brachydios. Handle very carefully!"
+	Tooltip: A highly volatile fluid used by especially savage Brachydios. Handle very carefully!
 }
 
 InfernoSac: {
 	DisplayName: Inferno Sac
-	Tooltip: "A monster organ filled with powder that ignites if it so much as touches air. Danger!"
+	Tooltip: A monster organ filled with powder that ignites if it so much as touches air. Danger!
 }
 
 InsectCarapace: {
 	DisplayName: Insect Carapace
-	Tooltip: "The hardest part of the shell. Reveals curious properties when forged."
+	Tooltip: The hardest part of the shell. Reveals curious properties when forged.
 }
 
 InsectShell: {
 	DisplayName: Insect Shell
-	Tooltip: "Just as useful as sturdy wyvern shell in the hands of a clever craftsman."
+	Tooltip: Just as useful as sturdy wyvern shell in the hands of a clever craftsman.
 }
 
 LrgBeastGem: {
 	DisplayName: Lrg Beast Gem
-	Tooltip: "A rare and precious gem from a particular beast, produced in the body over a long period of time."
+	Tooltip: A rare and precious gem from a particular beast, produced in the body over a long period of time.
 }
 
 LrgSnowClod: {
 	DisplayName: Lrg Snowclod
-	Tooltip: "A large clump of snow stuck to a Gammoth's leg. It is very hard and doesn't melt easily."
+	Tooltip: A large clump of snow stuck to a Gammoth's leg. It is very hard and doesn't melt easily.
 }
 
 LrgWyvernGem: {
 	DisplayName: Lrg Wyvern Gem
-	Tooltip: "A Wyvern Gem grown especially large after years of collecting mass. Emits a peculiar glow."
+	Tooltip: A Wyvern Gem grown especially large after years of collecting mass. Emits a peculiar glow.
 }
 
 MizutsuneWaterOrb: {
 	DisplayName: Mizutsune Water Orb
-	Tooltip: "A multicolored orb formed from a crystalized Mizutsune scale and bubblefoam."
+	Tooltip: A multicolored orb formed from a crystalized Mizutsune scale and bubblefoam.
 }
 
 MysteriousSlime: {
 	DisplayName: Mystery Slime
-	Tooltip: "The explosive green substance found on Brachydios monsters. Handle with extreme care."
+	Tooltip: The explosive green substance found on Brachydios monsters. Handle with extreme care.
 }
 
 QueenSubstance: {
 	DisplayName: Queen Substance
-	Tooltip: "A potent pheromone sometimes released by Neopterons and Temnocerans."
+	Tooltip: A potent pheromone sometimes released by Neopterons and Temnocerans.
 }
 
 RathalosRuby: {
 	DisplayName: Rathalos Ruby
-	Tooltip: "A rare, precious gem from inside a wyvern. Almost too nice to use."
+	Tooltip: A rare, precious gem from inside a wyvern. Almost too nice to use.
 }
 
 SnowClod: {
 	DisplayName: Snowclod
-	Tooltip: "A clump of snow hardened by the material secreted from a Gammoth's leg."
+	Tooltip: A clump of snow hardened by the material secreted from a Gammoth's leg.
 }
 
 ThunderSac: {
 	DisplayName: Thunder Sac
-	Tooltip: "A monster organ that can store up large amounts of high voltage electricity."
+	Tooltip: A monster organ that can store up large amounts of high voltage electricity.
 }
 
 TorrentSac: {
 	DisplayName: Torrent Sac
-	Tooltip: "A monster organ designed to hold and preserve copious amounts of water."
+	Tooltip: A monster organ designed to hold and preserve copious amounts of water.
 }
 
 WyvernGem: {
 	DisplayName: Wyvern Gem
-	Tooltip: "Throughout a wyvern's life, impurities gather and form this peculiar gem."
+	Tooltip: Throughout a wyvern's life, impurities gather and form this peculiar gem.
 }
 
 ZinogreJasper: {
@@ -255,7 +255,7 @@ ZinogreJasper: {
 
 MonsterFluid: {
 	DisplayName: Monster Fluid
-	Tooltip: "A liquid bugs suck from monsters. Mixes with insect gastric fluids to form adhesive."
+	Tooltip: A liquid bugs suck from monsters. Mixes with insect gastric fluids to form adhesive.
 }
 
 Sushifish: {
@@ -294,7 +294,7 @@ GreatWhetfish: {
 
 MonsterBone: {
 	DisplayName: Monster Bone
-	Tooltip: "A very useful material; indispensable for both hunting and daily life."
+	Tooltip: A very useful material; indispensable for both hunting and daily life.
 }
 
 BoneClub: {
