@@ -6,12 +6,21 @@ using Terraria;
 using Terraria.ID;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 {
     [AutoloadEquip(EquipType.Head)]
     public class NargacugaHelmX : ModItem
     {
+        public static readonly int Damage = 5;
+        public static readonly int Crit = 10;
+        public static readonly int CritEye = 1;
+        public static readonly int Distance = 1;
+        public static readonly int Evasion = 1;
+        public static readonly int Unscathed = 1;
+        public static readonly int Decor1 = 1;
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Crit, CritEye,Distance, Evasion,Unscathed, Decor1);
 
         public override void SetDefaults()
         {
@@ -24,15 +33,15 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.GetDamage<GenericDamageClass>() += 0.1f;
-            player.GetCritChance<GenericDamageClass>() += 10;
+            player.GetDamage<GenericDamageClass>() += Damage/100f;
+            player.GetCritChance<GenericDamageClass>() += Crit;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.Evasion += 1;
-            modPlayer.CritEye += 1;
-            modPlayer.EvadeDistance += 1;
-            modPlayer.Unscathed += 1;
+            modPlayer.Evasion += Evasion;
+            modPlayer.CritEye += CritEye;
+            modPlayer.EvadeDistance += Distance;
+            modPlayer.Unscathed += Unscathed;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += 1;
+            SlotPlayer.DecorationOneSlots += Decor1;
         }
         public override void AddRecipes()
         {

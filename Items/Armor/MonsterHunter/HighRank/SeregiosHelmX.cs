@@ -6,12 +6,19 @@ using Terraria;
 using Terraria.ID;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 {
     [AutoloadEquip(EquipType.Head)]
     public class SeregiosHelmX : ModItem
     {
+        public static readonly int Damage = 12;
+        public static readonly int Crit = 12;
+        public static readonly int Cons = 2;
+        public static readonly int Blade = 1;
+        public static readonly int Decor1 = 2;
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Crit, Cons, Blade, Decor1);
 
         public override void SetDefaults()
         {
@@ -24,14 +31,14 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.GetDamage<GenericDamageClass>() += 0.12f;
-            player.GetCritChance<GenericDamageClass>() += 12;
+            player.GetDamage<GenericDamageClass>() += Damage/100f;
+            player.GetCritChance<GenericDamageClass>() += Crit;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.BladeScaleHone += 1;
-            modPlayer.Constitution += 2;
+            modPlayer.BladeScaleHone += Blade;
+            modPlayer.Constitution += Cons;
             modPlayer.AntiBleeding = true;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationTwoSlots += 2;
+            SlotPlayer.DecorationTwoSlots += Decor1;
         }
         public override void AddRecipes()
         {

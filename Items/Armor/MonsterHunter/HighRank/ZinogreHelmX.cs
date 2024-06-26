@@ -6,12 +6,20 @@ using Terraria;
 using Terraria.ID;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 {
     [AutoloadEquip(EquipType.Head)]
     public class ZinogreHelmX : ModItem
     {
+        public static readonly int Damage = 12;
+        public static readonly int Crit = 10;
+        public static readonly int Latent = 2;
+        public static readonly int Evasion = 1;
+        public static readonly int Sneak = 1;
+        public static readonly int Decor1 = 2;
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Crit, Latent, Evasion,Sneak, Decor1);
 
         public override void SetDefaults()
         {
@@ -24,15 +32,15 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.GetDamage<GenericDamageClass>() += 0.12f;
-            player.GetCritChance<GenericDamageClass>() += 10;
+            player.GetDamage<GenericDamageClass>() += Damage/100f;
+            player.GetCritChance<GenericDamageClass>() += Crit;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.ThunderAttack += 3;
-            modPlayer.Unscathed += 1;
-            modPlayer.Sneak += 1;
+            modPlayer.LatentPower += Latent;
+            modPlayer.Evasion += Evasion;
+            modPlayer.Sneak += Sneak;
             modPlayer.ZinogreEssence += 1;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationTwoSlots += 2;
+            SlotPlayer.DecorationTwoSlots += Decor1;
         }
         public override bool IsArmorSet(Item head, Item body, Item legs)
         {

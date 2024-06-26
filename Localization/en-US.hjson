@@ -1174,12 +1174,12 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.IncreaseCrit@1}
 					{$CommonItemTooltip.CritEye@2}
 					{$CommonItemTooltip.EvadeDistance@3}
 					{$CommonItemTooltip.Evasion@4}
 					{$CommonItemTooltip.Unscathed@5}
-					[○]x1
+					{$CommonItemTooltip.OneSlotDecor@6}
 					'''
 			}
 
@@ -1214,7 +1214,7 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.IncreaseCrit@1}
 					{$CommonItemTooltip.Evasion@2}
 					{$CommonItemTooltip.FreeMeal@3}
 					{$CommonItemTooltip.RecUp@4}
@@ -1260,8 +1260,8 @@ Mods: {
 					{$CommonItemTooltip.IncreaseCrit@1}
 					{$CommonItemTooltip.Constitution@2}
 					{$CommonItemTooltip.BladehoneScale@3}
-					{$CommonItemTooltip.Bleeding@4}
-					{$CommonItemTooltip.TwoSlotDecor@5}
+					{$CommonItemTooltip.Bleeding}
+					{$CommonItemTooltip.TwoSlotDecor@4}
 					'''
 			}
 
