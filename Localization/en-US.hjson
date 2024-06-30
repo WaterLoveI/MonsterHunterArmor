@@ -424,10 +424,9 @@ Mods: {
 					'''
 					{$CommonItemTooltip.IncreaseCrit}
 					{$CommonItemTooltip.IncreaseMovement@1}
-					{$CommonItemTooltip.Blightproof@2}
-					{$CommonItemTooltip.LastingPower@3}
-					{$CommonItemTooltip.Protection@4}
-					{$CommonItemTooltip.ThunderAttack@5}
+					{$CommonItemTooltip.LastingPower@2}
+					{$CommonItemTooltip.Protection@3}
+					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
 
@@ -705,14 +704,36 @@ Mods: {
 					'''
 			}
 
+			UkanlosMail: {
+				DisplayName: Ukanlos Mail
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.AttackBoost@2}
+					{$CommonItemTooltip.TwoSlotDecor@3}
+					'''
+			}
+
+			UkanlosGreaves: {
+				DisplayName: Ukanlos Greaves
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.AttackBoost@2}
+					{$CommonItemTooltip.IceAttack@3}
+					{$CommonItemTooltip.OneSlotDecor@4}
+					'''
+			}
+
 			AkantorHelm: {
 				DisplayName: Akantor Helm
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					{$CommonItemTooltip.IncreaseCrit@1}
-					{$CommonItemTooltip.CritEye@2}
-					{$CommonItemTooltip.FireAttack@3}
+					{$CommonItemTooltip.CritEye@1}
+					{$CommonItemTooltip.FireAttack@2}
 					'''
 			}
 
@@ -3976,46 +3997,6 @@ Mods: {
 					{$CommonItemTooltip.Vanity}
 					[○][○][○]
 					'''
-			}
-		}
-
-		NPCs: {
-			Bullfango.DisplayName: Bullfango
-			Bnahabra.DisplayName: Bnahabra
-			BnahabraBlue.DisplayName: Bnahabra
-			BnahabraBrown.DisplayName: Bnahabra
-			BnahabraGreen.DisplayName: Bnahabra
-			BnahabraRed.DisplayName: Bnahabra
-
-			Handler: {
-				DisplayName: Handler
-
-				TownNPCMood: {
-					Content: I am content.
-					NoHome: I hate not having a home.
-					FarFromHome: I am too far from home.
-					LoveSpace: I love having so much space.
-					DislikeCrowded: I dislike how crowded I am.
-					HateCrowded: I hate how crowded I am.
-					LikeNPC_Princess: I like {NPCName}.
-					Princess_LovesNPC: I like {NPCName}.
-				}
-			}
-		}
-
-		Projectiles: {
-			BnahabraSpit.DisplayName: Bnahabra's Spit
-			BlastExplosionHostile.DisplayName: Explosion
-		}
-
-		Configs: {
-			VanillaArmorSkills: {
-				DisplayName: Vanilla Armor Skills
-
-				VanillaArmorToggle: {
-					Label: Vanilla Armor Toggle
-					Tooltip: "{$Enable.to.give.vanilla.armors.armor.skills}"
-				}
 			}
 		}
 	}

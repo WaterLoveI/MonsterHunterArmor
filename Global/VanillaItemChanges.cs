@@ -8,6 +8,8 @@ using MHArmorSkills.Buffs;
 using Terraria.Audio;
 using System.Collections.Generic;
 using System;
+using Terraria.UI;
+using System.Reflection;
 
 
 namespace MHArmorSkills.Global
@@ -225,7 +227,7 @@ namespace MHArmorSkills.Global
                     break;
                 case ItemID.NinjaPants:
                     modPlayer.CritEye += 1;
-                    DecorPlayer.DecorationOneSlots += 1;
+                    DecorPlayer.DecorationTwoSlots += 1;
                     break;
                 case ItemID.BeeHeadgear:
                     modPlayer.Resentment += 1;
@@ -999,7 +1001,10 @@ namespace MHArmorSkills.Global
             }
 
         }
-        public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
+        
+
+
+         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {
             // Modify all vanilla tooltips before appending mod mechanics (if any). thanks calamity
             ModifyVanillaTooltips(item, tooltips);
@@ -1805,6 +1810,8 @@ namespace MHArmorSkills.Global
 
 
             #endregion
-        }
+        } 
+        
     }
+    
 }

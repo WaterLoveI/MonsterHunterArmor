@@ -13,13 +13,12 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
     [AutoloadEquip(EquipType.Head)]
     public class KirinHelm : ModItem
     {
-        public static readonly int Crit = 17;
-        public static readonly int Move = 15;
-        public static readonly int Blight = 2;
-        public static readonly int Lasting = 1;
+        public static readonly int Crit = 7;
+        public static readonly int Move = 7;
+        public static readonly int Lasting = 2;
         public static readonly int Prot = 1;
-        public static readonly int ThunderA = 1;
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Crit, Move,Blight, Lasting, Prot, ThunderA);
+        public static readonly int Decor1 = 3;
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Crit, Move, Lasting, Prot, Decor1);
 
         public override void SetDefaults()
         {
@@ -35,10 +34,10 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             player.GetCritChance<GenericDamageClass>() += Crit;
             player.moveSpeed += Move/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.ThunderAttack += ThunderA;
             modPlayer.Protection += Prot;
             modPlayer.LastingPower += Lasting;
-            modPlayer.BlightProof += Blight;
+            DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
+            SlotPlayer.DecorationOneSlots += Decor1;
         }
         public override void AddRecipes()
         {

@@ -1,3 +1,4 @@
+using MHArmorSkills.Global;
 using Terraria.ModLoader;
 
 namespace MHArmorSkills
@@ -17,8 +18,6 @@ namespace MHArmorSkills
             Instance = null;
 
             MHLists.UnloadLists();
-
-            
             base.Unload();
         }
         

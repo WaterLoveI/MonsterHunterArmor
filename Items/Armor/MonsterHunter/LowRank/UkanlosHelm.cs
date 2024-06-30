@@ -12,8 +12,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
     [AutoloadEquip(EquipType.Head)]
     public class UkanlosHelm : ModItem
     {
-        public static readonly int Damage = 15;
-        public static readonly int Crit = 10;
+        public static readonly int Damage = 5;
+        public static readonly int Crit = 5;
         public static readonly int Attack = 2;
         public static readonly int Handicraft = 2;
         public static readonly int IceAttack = 1;

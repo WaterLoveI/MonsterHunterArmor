@@ -9,18 +9,21 @@ using Terraria.Localization;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 {
-    [AutoloadEquip(EquipType.Head)]
-    public class AkantorHelm : ModItem
+    [AutoloadEquip(EquipType.Legs)]
+    public class UkanlosGreaves : ModItem
     {
-        public static readonly int Damage = 10;
-        public static readonly int CritEye = 3;
-        public static readonly int FireAttack = 2;
+        public static readonly int Crit = 3;
+        public static readonly int Move = 10;
+        public static readonly int Attack = 2;
+        public static readonly int IceAttack = 1;
+        public static readonly int Decor1 = 1;
 
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, CritEye, FireAttack);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Crit, Move, Attack, IceAttack, Decor1);
+
         public override void SetDefaults()
         {
-            Item.width = 26;
-            Item.height = 22;
+            Item.width = 22;
+            Item.height = 18;
             Item.value = MHGlobalItems.RarityLightRedBuyPrice;
             Item.rare = ItemRarityID.LightRed;
             Item.defense = 10;
@@ -28,17 +31,21 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.GetDamage<GenericDamageClass>() += Damage / 100f;
+            player.moveSpeed += Move/100f;
+            player.GetCritChance<GenericDamageClass>() += Crit;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.CritEye += CritEye;
-            modPlayer.FireAttack += FireAttack;
+            modPlayer.Attack += Attack;
+            modPlayer.IceAttack += IceAttack;
+            DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
+            SlotPlayer.DecorationOneSlots += Decor1;
+
         }
         public override void AddRecipes()
         {
             CreateRecipe().
-                AddIngredient<FlameSac>(3).
-                AddIngredient<FlamingScale>(4).
                 AddIngredient<ElderDragonGem>().
+                AddIngredient<SnowClod>(3).
+                AddIngredient<AmberTusk>(4).
                 AddIngredient<HardArmorSphere>(10).
                 AddTile(TileID.Anvils).
                 Register();

@@ -1,0 +1,8 @@
+VanillaArmorSkills: {
+	DisplayName: Vanilla Armor Skills
+
+	VanillaArmorToggle: {
+		Label: Enable
+		Tooltip: "{$Enable to give vanilla armors armor skills}"
+	}
+}
