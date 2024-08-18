@@ -44,7 +44,8 @@ namespace MHArmorSkills.NPCs.NormalNPC.Bnahabra
 
             bestiaryEntry.Info.AddRange(new List<IBestiaryInfoElement>
             {
-                new MoonLordPortraitBackgroundProviderBestiaryInfoElement(), //Plain black background
+                BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Jungle,
+                BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Snow,
                 new FlavorTextBestiaryInfoElement("Pervasive flying insects that attack invaders with paralyzing venom and lay eggs in carrion along with a fluid that hastens decomposition.")
             });
         }

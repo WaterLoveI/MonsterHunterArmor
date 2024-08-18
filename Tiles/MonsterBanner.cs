@@ -1,5 +1,7 @@
 ﻿using MHArmorSkills.NPCs.NormalNPC.Bnahabra;
 using MHArmorSkills.NPCs.NormalNPC.Bullfango;
+using MHArmorSkills.NPCs.NormalNPC.Bugs;
+using MHArmorSkills.NPCs.NormalNPC.Delex;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.DataStructures;
@@ -72,6 +74,21 @@ namespace MHArmorSkills.Tiles
 
                 case 1:
                     npc = ModContent.NPCType<BnahabraBlue>();
+                    break;
+                case 2:
+                    npc = ModContent.NPCType<BnahabraBrown>();
+                    break;
+                case 3:
+                    npc = ModContent.NPCType<BnahabraGreen>();
+                    break;
+                case 4:
+                    npc = ModContent.NPCType<BnahabraRed>();
+                    break;
+                case 5:
+                    npc = ModContent.NPCType<ThunderBugs>();
+                    break;
+                case 6:
+                    npc = ModContent.NPCType<Delex>();
                     break;
 
                 default:

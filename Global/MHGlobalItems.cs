@@ -1,5 +1,4 @@
-﻿using MHArmorSkills.Items.Accessories.Decorations;
-using Terraria;
+﻿using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -85,16 +84,15 @@ namespace MHArmorSkills.Global
             {
                 for (int i = 0; i < player.armor.Length; i++)
                 {
-
                     if (player.armor[i].type == incomingItem.type)
                     {
-
                         return true;
                     }
                 }
             }
             return false;
         }
+
         public override void SetDefaults(Item entity)
         {
             // got lazy to copy paste to all the decor .cs

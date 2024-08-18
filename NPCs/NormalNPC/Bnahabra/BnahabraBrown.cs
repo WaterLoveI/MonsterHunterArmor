@@ -34,8 +34,8 @@ namespace MHArmorSkills.NPCs.NormalNPC.Bnahabra
             NPC.value = Item.buyPrice(0, 0, 1, 80);
             NPC.HitSound = SoundID.NPCHit1;
             NPC.DeathSound = SoundID.NPCDeath1;
-            Banner = ModContent.NPCType<BnahabraBlue>();
-            BannerItem = Item.BannerToItem(Banner);
+            Banner = ModContent.NPCType<BnahabraBrown>();
+            BannerItem = ModContent.ItemType<BnahabraBrownBanner>();
         }
         public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
         {
@@ -43,7 +43,8 @@ namespace MHArmorSkills.NPCs.NormalNPC.Bnahabra
 
             bestiaryEntry.Info.AddRange(new List<IBestiaryInfoElement>
             {
-                new MoonLordPortraitBackgroundProviderBestiaryInfoElement(), //Plain black background
+                BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Jungle,
+                BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Desert,
                 new FlavorTextBestiaryInfoElement("Pervasive flying insects that attack invaders with paralyzing venom and lay eggs in carrion along with a fluid that hastens decomposition.")
             });
         }

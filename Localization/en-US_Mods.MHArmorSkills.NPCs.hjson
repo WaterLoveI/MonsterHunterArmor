@@ -18,3 +18,7 @@ Handler: {
 		Princess_LovesNPC: I like {NPCName}.
 	}
 }
+
+ThunderBugs.DisplayName: Thunder Bugs
+Delex.DisplayName: Delex
+Hornetaur.DisplayName: Hornetaur

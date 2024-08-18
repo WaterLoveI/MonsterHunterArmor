@@ -1,5 +1,7 @@
-﻿using Terraria;
+﻿using System.Collections.Generic;
+using Terraria;
 using Terraria.GameContent;
+using Terraria.GameContent.Bestiary;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -47,6 +49,16 @@ namespace MHArmorSkills.NPCs.TownNPCs
         public override ITownNPCProfile TownNPCProfile()
         {
             return NPCProfile;
+        }
+        public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
+        {
+            // Sets the description of this NPC that is listed in the bestiary
+
+            bestiaryEntry.Info.AddRange(new List<IBestiaryInfoElement>
+            {
+                BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Surface,
+                new FlavorTextBestiaryInfoElement("")
+            });
         }
         public override void HitEffect(NPC.HitInfo hit)
         {

@@ -43,7 +43,6 @@ namespace MHArmorSkills.Items.Accessories.Decorations
             return false;
         }
     }
-
 }
 
 

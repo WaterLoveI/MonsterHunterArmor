@@ -2,7 +2,17 @@ VanillaArmorSkills: {
 	DisplayName: Vanilla Armor Skills
 
 	VanillaArmorToggle: {
-		Label: Enable
-		Tooltip: "{$Enable to give vanilla armors armor skills}"
+		Label: Vanilla armor skills
+		Tooltip: "Enable to give vanilla armors armor skills"
 	}
+}
+
+MHAconfigs: {
+	OnEnterMessage: {
+		Tooltip: "Enable for the on enter world message"
+		Label: On world message.
+	}
+
+	Headers.On.Enter.Message: On. Enter. Message Header
+	DisplayName: Monster Hunter Armor Configs
 }

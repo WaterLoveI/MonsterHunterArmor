@@ -45,7 +45,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             CreateRecipe().
                 AddIngredient<ElderDragonGem>().
                 AddIngredient<SnowClod>(3).
-                AddIngredient<AmberTusk>(4).
+                AddIngredient<Bubblefoam>(4).
                 AddIngredient<HardArmorSphere>(10).
                 AddTile(TileID.Anvils).
                 Register();

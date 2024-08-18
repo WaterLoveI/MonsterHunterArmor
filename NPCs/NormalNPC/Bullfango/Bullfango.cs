@@ -1,18 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Terraria;
-using Terraria.Audio;
-using Terraria.GameContent.ItemDropRules;
-using Terraria.GameContent;
-using Terraria.ID;
-using Terraria.ModLoader;
-using MHArmorSkills.Items.Armor.MonsterHunter.LowRank;
+﻿using MHArmorSkills.Items.Armor.MonsterHunter.LowRank;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using MHArmorSkills.Items.Placeables.Banners;
+using MHArmorSkills.NPCs.NormalNPC.Bugs;
+using System.Collections.Generic;
+using Terraria;
+using Terraria.Audio;
+using Terraria.DataStructures;
 using Terraria.GameContent.Bestiary;
+using Terraria.GameContent.ItemDropRules;
+using Terraria.ID;
+using Terraria.ModLoader;
 
 namespace MHArmorSkills.NPCs.NormalNPC.Bullfango
 {
@@ -26,7 +23,7 @@ namespace MHArmorSkills.NPCs.NormalNPC.Bullfango
         public override void SetDefaults()
         {
             NPC.damage = 13;
-            NPC.aiStyle = NPCAIStyleID.Unicorn;
+            NPC.aiStyle = NPCAIStyleID.Passive;
             NPC.width = 50;
             NPC.height = 28;
             NPC.defense = 3;
@@ -46,14 +43,42 @@ namespace MHArmorSkills.NPCs.NormalNPC.Bullfango
 
             bestiaryEntry.Info.AddRange(new List<IBestiaryInfoElement>
             {
-                new MoonLordPortraitBackgroundProviderBestiaryInfoElement(), //Plain black background
+                BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Jungle,
                 new FlavorTextBestiaryInfoElement("Large, wild boars with a foul temper. Fertile and wide-ranging.")
             });
         }
+        public override void FindFrame(int frameHeight)
+        {
 
+            NPC.spriteDirection = NPC.direction;
+
+        }
         public override void AI()
         {
-            if (Main.rand.NextBool(600))
+
+            bool Hostile = false;
+
+            for (int i = 0; i < Main.maxPlayers; i++)
+            {
+                Player player = Main.player[i];
+                if (NPC.Distance(player.Center) < 200f)
+                {
+                    Hostile = true;
+                }
+            }
+
+            if (NPC.life < NPC.lifeMax || Hostile == true)
+            {
+                NPC.aiStyle = NPCAIStyleID.Unicorn;
+            }
+
+            int oinkrate = 500;
+            if (Hostile)
+            {
+                oinkrate = 200;
+            }
+
+            if (Main.rand.NextBool(oinkrate))
             {
 
                 int oinksound = Main.rand.Next(3);
@@ -99,6 +124,22 @@ namespace MHArmorSkills.NPCs.NormalNPC.Bullfango
                 !spawnInfo.Player.ZoneDungeon &&
                 !spawnInfo.Player.ZoneTowerVortex &&
                 !spawnInfo.PlayerInTown && !spawnInfo.Player.ZoneOldOneArmy && !Main.snowMoon && !Main.pumpkinMoon) ? 0.06f : 0f;
+        }
+        public override void OnSpawn(IEntitySource source)
+        {
+
+            for (int k = 0; k < 3; k++)
+            {
+                if (Main.rand.NextBool(2))
+                {
+                    if (NPC.CountNPCS(ModContent.NPCType<Bullfango>()) < 4)
+                    {
+                        int n = NPC.NewNPC(NPC.GetSource_FromAI(), (int)NPC.Center.X, (int)NPC.Center.Y, ModContent.NPCType<Bullfango>(), 0, NPC.whoAmI);
+                        Main.npc[n].velocity.X = Main.rand.NextFloat(-0.7f, 0.6f);
+                        Main.npc[n].velocity.Y = Main.rand.NextFloat(-0.7f, -0.07f);
+                    }
+                }
+            }
         }
         public override void ModifyNPCLoot(NPCLoot npcLoot)
         {

@@ -626,6 +626,8 @@ namespace MHArmorSkills
                 ItemType<ThunderAttack3>(),
                 ItemType<ThunderRes1>(),
                 ItemType<ThunderRes2>(),
+                ItemType<TropicsHunter1>(),
+                ItemType<TropicsHunter2>(),
                 ItemType<TremorRes1>(),
                 ItemType<TremorRes2>(),
                 ItemType<TremorRes3>(),
@@ -881,6 +883,9 @@ namespace MHArmorSkills
             thunderresprojList = null;
             iceresprojList = null;
             ArmorDecorations = null;
+            OneSlotDecorations = null;
+            TwoSlotDecorations = null;
+            ThreeSlotDecorations = null;
         }
     }
     

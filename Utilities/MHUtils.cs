@@ -1,12 +1,22 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Microsoft.Xna.Framework;
 
 namespace MHArmorSkills.Utilities
 {
     public static partial class MHUtils
     {
         // yea pretty much all from calamity
+        public static Vector2 SafeDirectionTo(this Entity entity, Vector2 destination, Vector2? fallback = null)
+        {
+            // Fall back to zero by default. default(Vector2) could be used in the parameter definition, but
+            // this is more clear.
+            if (!fallback.HasValue)
+                fallback = Vector2.Zero;
+
+            return (destination - entity.Center).SafeNormalize(fallback.Value);
+        }
         public static Item ActiveItem(this Player player) => Main.mouseItem.IsAir ? player.HeldItem : Main.mouseItem;
         public static int GetOreItemID(this Tile tile)
         {

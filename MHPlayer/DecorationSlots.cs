@@ -3,11 +3,11 @@ using Terraria;
 using Terraria.ModLoader;
 using Terraria.UI;
 
-public partial class DecorationSlots : ModPlayer
+public class DecorationSlots : ModPlayer
 {
-    public int DecorationOneSlots { get; set; }
-    public int DecorationTwoSlots { get; set; }
-    public int DecorationThreeSlots { get; set; }
+    public int DecorationOneSlots;
+    public int DecorationTwoSlots;
+    public int DecorationThreeSlots;
     public override void ResetEffects()
     {
         DecorationOneSlots = 1;

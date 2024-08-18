@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 
 namespace MHArmorSkills.Items.Placeables.Banners
 {
-    public class BnahabraBanner : ModItem
+    public class DelexBanner : ModItem
     {
         public override void SetDefaults()
         {
@@ -21,7 +21,7 @@ namespace MHArmorSkills.Items.Placeables.Banners
             Item.rare = ItemRarityID.Blue;
             Item.value = MHGlobalItems.RarityBlueBuyPrice;
             Item.createTile = ModContent.TileType<MonsterBanner>();
-            Item.placeStyle = 1;
+            Item.placeStyle = 6;
         }
     }
 }

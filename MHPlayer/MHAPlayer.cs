@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Terraria.ModLoader.Default;
-using Terraria.ModLoader;
-using Terraria;
+﻿using MHArmorSkills.Config;
 using MHArmorSkills.Items.Consumables;
+using Microsoft.Xna.Framework;
+using System.Collections.Generic;
+using Terraria;
+using Terraria.ID;
+using Terraria.Localization;
+using Terraria.ModLoader;
 
 namespace MHArmorSkills.MHPlayer
 {
@@ -27,5 +26,21 @@ namespace MHArmorSkills.MHPlayer
             yield return createItem(ModContent.ItemType<WhetStone>());
         }
         #endregion
+
+        public override bool IsLoadingEnabled(Mod mod)
+        {
+            return ModContent.GetInstance<MHAconfigs>().OnEnterMessage;
+        }
+        public override void OnEnterWorld()
+        {
+            // This data can only be checked in Single Player
+            if (Main.netMode != NetmodeID.SinglePlayer)
+            {
+                return;
+            }
+
+            Main.NewText(Language.GetTextValue(Mod.GetLocalizationKey("CheckTheDocs")), Color.Orange);
+            Main.NewText(Language.GetTextValue(Mod.GetLocalizationKey("Disable")), Color.Orange);
+        }
     }
 }

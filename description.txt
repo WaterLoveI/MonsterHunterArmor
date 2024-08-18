@@ -1,3 +1,43 @@
+Mod incompatibilities:
+Any mods that messes with accessory slots will break the decorations.
+
+Notable Bugs:
+Quick equipping accessories will always get sent to the last slot, need a little help fixing this one.
+
+
+
+This mod aims to add monster hunter armors into the game and adds a skill point system similar to MHW-Rise, even vanilla armors get skills.
+
+There's no wiki right now so feel free to join the discord to ask questions and let me know what you want to see added!
+
+Full Armor Set
+-Bone
+-Hornetaur
+-Basarios
+-Lavasioth
+-Sailor
+-Rathian
+-Nargacuga
+-Zinogre
+-Astalos
+-Glavenus
+-Mizutsune
+-Gammoth
+
+Enemies
+-Bullfango
+-Bnahabra
+
+Commands:
+- /skills - this command shows you what skills are active on the player currently.
+
+Discord: https://discord.gg/un9UAmhrcd
+
+Google Sheets that acts like a wiki and I'll try to keep it up to date.
+https://docs.google.com/spreadsheets/d/1roO5H1dL77ES_XkoLvXZgxPKBEAengKaJF6gw4HFGgA/edit?usp=sharing
+
+
+[quote=tModLoader]Developed By ILoveWater[/quote]
 This mod aims to add monster hunter armors into the game and adds a skill point system similar to MHW-Rise, even vanilla armors get skills.
 
 There's no wiki right now so feel free to join the discord to ask questions and let me know what you want to see added!

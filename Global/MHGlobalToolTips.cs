@@ -1,4 +1,5 @@
-﻿using MHArmorSkills.MHPlayer;
+﻿using Ionic.Zlib;
+using MHArmorSkills.MHPlayer;
 using System;
 using System.Collections.Generic;
 using Terraria;
@@ -83,7 +84,43 @@ namespace MHArmorSkills.Global
                 int healAmt = (int)(item.healLife * player.GetModPlayer<MHPlayerArmorSkill>().RecoveryUp);
                 EditTooltipByName("HealLife", (line) => line.Text = $"Restores {healAmt} life");
             }
-
+            DecorationSlots modPlayer = player.GetModPlayer<DecorationSlots>();
+            if (MHLists.OneSlotDecorations.Contains(item.type))
+            {
+                if (modPlayer.DecorationOneSlots > 1)
+                {
+                    EditTooltipByNum(0, (line) => line.Text = $"Currently {modPlayer.DecorationOneSlots - 1} [○] slots available.");
+                }
+                if (modPlayer.DecorationOneSlots <= 1)
+                {
+                    EditTooltipByNum(0, (line) => line.Text = $"Currently have no slots available.\n" +
+                "Use armors with decoration slots to equip.");
+                }
+            }
+            if (MHLists.TwoSlotDecorations.Contains(item.type))
+            {
+                if (modPlayer.DecorationTwoSlots > 1)
+                {
+                    EditTooltipByNum(0, (line) => line.Text = $"Currently {modPlayer.DecorationTwoSlots - 1} [○][○] slots available.");
+                }
+                if (modPlayer.DecorationTwoSlots <= 1)
+                {
+                    EditTooltipByNum(0, (line) => line.Text = $"Currently have no slots available.\n" +
+                "Use armors with decoration slots to equip.");
+                }
+            }
+            if (MHLists.ThreeSlotDecorations.Contains(item.type))
+            {
+                if (modPlayer.DecorationThreeSlots > 1)
+                {
+                    EditTooltipByNum(0, (line) => line.Text = $"Currently {modPlayer.DecorationThreeSlots - 1} [○][○][○] slots available.");
+                }
+                if (modPlayer.DecorationThreeSlots <= 1)
+                {
+                    EditTooltipByNum(0, (line) => line.Text = $"Currently have no slots available.\n" +
+                "Use armors with decoration slots to equip.");
+                }
+            }
 
         }
     }
