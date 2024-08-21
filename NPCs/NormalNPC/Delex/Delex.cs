@@ -240,17 +240,12 @@ namespace MHArmorSkills.NPCs.NormalNPC.Delex
                     if (NPC.CountNPCS(ModContent.NPCType<Delex>()) < 4)
                     {
                         int n = NPC.NewNPC(NPC.GetSource_FromAI(), (int)NPC.Center.X, (int)NPC.Center.Y, ModContent.NPCType<Delex>(), 0, NPC.whoAmI);
-                        Main.npc[n].velocity.X = Main.rand.NextFloat(-0.7f, 0.6f);
-                        Main.npc[n].velocity.Y = Main.rand.NextFloat(-0.7f, -0.07f);
+                        Main.npc[n].velocity.X = Main.rand.NextFloat(-1f, 1f);
+                        Main.npc[n].velocity.Y = Main.rand.NextFloat(-1f, -1f);
                     }
                 }
             }
         }
-        public override void ModifyNPCLoot(NPCLoot npcLoot)
-        {
-            npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<BullfangoMask>(), 50));
-            npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<MonsterBone>(), 4));
-            npcLoot.Add(ItemDropRule.Common(ItemID.Leather, 5));
-        }
+        
     }
 }

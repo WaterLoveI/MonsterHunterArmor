@@ -1868,6 +1868,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.AttackBoost}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -1877,6 +1878,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.AttackBoost}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -1886,6 +1888,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.BladehoneScale}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -1895,6 +1898,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.BladehoneScale}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -1904,6 +1908,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.BloodRite}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -1913,6 +1918,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Carving}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -1922,6 +1928,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Constitution}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -1931,6 +1938,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Constitution}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -1940,6 +1948,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.CounterStrike}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -1949,6 +1958,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.CounterStrike}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -1958,6 +1968,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.CriticalBoost}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -1967,6 +1978,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.CritDraw}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -1976,6 +1988,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.CritDraw}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -1985,6 +1998,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.DefenseBoost}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -1994,6 +2008,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.DefenseBoost}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2003,6 +2018,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.DefenseBoost}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2012,6 +2028,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Defiance}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2021,6 +2038,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Defiance}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2030,6 +2048,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Embolden}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2039,6 +2058,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Embolden}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2048,6 +2068,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.FireAttack}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2057,6 +2078,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.FireAttack}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2066,6 +2088,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.FireRes}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2075,6 +2098,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Foray}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2084,6 +2108,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Foray}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2093,6 +2118,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Fortified}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2102,6 +2128,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Gathering}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2111,6 +2138,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Gluttony}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2120,6 +2148,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Grinder}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2129,6 +2158,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.HastenRecovery}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2138,6 +2168,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.HastenRecovery}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2147,6 +2178,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Health}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2156,6 +2188,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Health}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2165,6 +2198,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.HeatRes}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2174,6 +2208,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Heroics}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2183,6 +2218,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Heroics}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2192,6 +2228,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.HeroShield}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2201,6 +2238,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.HoneyHunter}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2210,6 +2248,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.ProtectivePolish}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2219,6 +2258,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.ProtectivePolish}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2228,6 +2268,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.QuickSheath}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2237,6 +2278,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.QuickSheath}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2246,6 +2288,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.RazorSharp}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2255,6 +2298,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.RazorSharp}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2264,6 +2308,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.RecoverySpd}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2273,6 +2318,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.RecoverySpd}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2282,6 +2328,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.RecUp}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2291,6 +2338,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.RecUp}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2300,6 +2348,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Resentment}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2309,6 +2358,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Resentment}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2318,6 +2368,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Resuscitate}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2327,6 +2378,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Resuscitate}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2336,6 +2388,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.SneakAttack}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2345,6 +2398,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.SpareShot}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2354,6 +2408,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.SpareShot}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2363,6 +2418,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.QuickSharpening}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2372,6 +2428,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.QuickSharpening}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2381,6 +2438,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Tenderizer}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2390,6 +2448,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.ThunderAttack}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2399,6 +2458,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.ThunderAttack}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2408,6 +2468,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.ThunderRes}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2417,6 +2478,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.AffinitySliding}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2426,6 +2488,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Artillery}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2435,6 +2498,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.AutoReload}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2444,6 +2508,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.AutoTracker}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2453,6 +2518,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Bleeding}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2462,6 +2528,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Blightproof}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2471,6 +2538,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Bloodlust}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2480,6 +2548,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.BombBoost}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2489,6 +2558,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.BubbleDance}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2498,6 +2568,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.BubbleDance}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2507,6 +2578,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.ChallengeSheath}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2516,6 +2588,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.ChallengeSheath}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2525,6 +2598,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.CliffHanger}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2534,6 +2608,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.CRangePlus}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2543,6 +2618,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Coalescence}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2552,6 +2628,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Coalescence}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2561,6 +2638,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.ColdRes}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2570,6 +2648,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.CritElement}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2579,6 +2658,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.CritElement}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2588,6 +2668,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.CritEye}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2597,6 +2678,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.CritEye}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2606,6 +2688,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.DeadEye}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2615,6 +2698,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.DefLock}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2624,6 +2708,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Diversion}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2633,6 +2718,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Diversion}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2642,6 +2728,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Elemental}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2651,6 +2738,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.EvadeDistance}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2660,6 +2748,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.EvadeDistance}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2669,6 +2758,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Evasion}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2678,6 +2768,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Evasion}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2687,6 +2778,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Fate}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2696,6 +2788,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Fencing}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2705,6 +2798,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.FishingExpert}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2714,6 +2808,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.FreeMeal}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2723,6 +2818,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Geologist}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2732,6 +2828,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Guard}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2741,6 +2838,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Guard}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2750,6 +2848,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.GuardUp}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2759,6 +2858,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.GuardUp}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2768,6 +2868,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.IceAttack}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2777,6 +2878,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.IceAttack}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2786,6 +2888,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.IceAttack}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2795,6 +2898,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.IceRes}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2804,6 +2908,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.IntrepidHeart}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2813,6 +2918,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.JumpMaster}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2822,6 +2928,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.LastingPower}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2831,6 +2938,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.LatentPower}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2840,6 +2948,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.LatentPower}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2849,6 +2958,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.MastersTouch}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2858,6 +2968,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.MastersTouch}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2867,6 +2978,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Mushroomancer}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2876,6 +2988,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.NormalUp}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2885,6 +2998,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.OffensiveGuard}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2894,6 +3008,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.PelletUp}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2903,6 +3018,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.PierceUp}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2912,6 +3028,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Poison}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2921,6 +3038,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.PoisonCoatingPlus}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2930,6 +3048,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.PolarHunter}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2939,6 +3058,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.PolarHunter}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2948,6 +3068,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Protection}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2957,6 +3078,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Protection}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2966,6 +3088,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.PunishDraw}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2975,6 +3098,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.PunishDraw}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2984,6 +3108,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Scholar}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -2993,6 +3118,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Sneak}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3002,6 +3128,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Sneak}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3011,6 +3138,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.SpeedEating}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3020,6 +3148,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.SpeedSetup}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3029,6 +3158,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.SpiritbirdsCall}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3038,6 +3168,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.StamRecovery}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3047,6 +3178,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.StamRecovery}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3056,6 +3188,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Strife}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3065,6 +3198,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Unscathed}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3074,6 +3208,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Unscathed}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3083,6 +3218,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Vault}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3092,6 +3228,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.WaterAttack}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3101,6 +3238,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.WaterAttack}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3110,6 +3248,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.WaterRes}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3119,6 +3258,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.AquaticMobility}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3128,6 +3268,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Spirit}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3137,6 +3278,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Spirit}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3146,6 +3288,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.AffinitySliding}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3155,6 +3298,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.AquaticMobility}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3164,6 +3308,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.AquaticMobility}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3173,6 +3318,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Artillery}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3182,6 +3328,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.AutoTracker}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3191,6 +3338,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Blightproof}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3200,6 +3348,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Bloodlust}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3209,6 +3358,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.BloodRite}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3218,6 +3368,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.BombBoost}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3227,6 +3378,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.BubbleDance}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3236,6 +3388,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.CliffHanger}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3245,6 +3398,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.ColdRes}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3254,6 +3408,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.CriticalBoost}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3263,6 +3418,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.DeadEye}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3272,6 +3428,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Fate}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3281,6 +3438,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Fencing}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3290,6 +3448,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.FireAttack}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3299,6 +3458,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.FireRes}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3308,6 +3468,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.FishingExpert}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3317,6 +3478,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.FreeMeal}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3326,6 +3488,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.FreeMeal}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3335,6 +3498,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Gathering}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3344,6 +3508,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Geologist}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3353,6 +3518,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Gluttony}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3362,6 +3528,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Gluttony}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3371,6 +3538,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Grinder}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3380,6 +3548,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Handicraft}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3389,6 +3558,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Handicraft}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3398,6 +3568,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.HeatRes}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3407,6 +3578,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.HeroShield}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3416,6 +3588,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.HoneyHunter}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3425,6 +3598,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.IceRes}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3434,6 +3608,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.JumpMaster}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3443,6 +3618,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.JumpMaster}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3452,6 +3628,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.LastingPower}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3461,6 +3638,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.LatentPower}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3470,6 +3648,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Mushroomancer}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3479,6 +3658,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.NormalUp}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3488,6 +3668,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.OffensiveGuard}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3497,6 +3678,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.PelletUp}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3506,6 +3688,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.PierceUp}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3515,6 +3698,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Poison}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3524,6 +3708,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.RockSteady}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3533,6 +3718,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Scholar}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3542,6 +3728,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.SneakAttack}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3551,6 +3738,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.SpeedEating}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3560,6 +3748,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.SpeedSetup}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3569,6 +3758,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Strife}.
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3578,6 +3768,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Tenderizer}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3587,6 +3778,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.ThunderAttack}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3596,6 +3788,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.ThunderRes}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3605,6 +3798,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.TropicsHunter}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3614,6 +3808,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.TropicsHunter}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3623,6 +3818,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Vault}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3632,6 +3828,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.WaterAttack}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3641,6 +3838,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.WaterRes}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3650,6 +3848,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Elemental}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3659,6 +3858,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.AdrenalineRush}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3668,6 +3868,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.AdrenalineRush}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3677,6 +3878,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.StatusTrigger}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3686,6 +3888,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.StatusTrigger}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3695,6 +3898,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.ChameleosBlessing}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3704,6 +3908,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.KushalaBlessing}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3713,6 +3918,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.TeostraBlessing}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3722,6 +3928,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.TremorRes}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3731,6 +3938,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.TremorRes}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3740,6 +3948,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.TremorRes}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3749,6 +3958,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Windproof}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3758,6 +3968,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Windproof}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3767,6 +3978,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.Windproof}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3776,6 +3988,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.NegativeCrit}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3785,6 +3998,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.NegativeCrit}
 					{$CommonItemTooltip.Vanity}
+
 					'''
 			}
 
@@ -3815,6 +4029,16 @@ Mods: {
 
 			DelexBanner: {
 				DisplayName: Delex Banner
+				Tooltip: ""
+			}
+
+			HornetaurBanner: {
+				Tooltip: ""
+				DisplayName: Hornetaur Banner
+			}
+
+			RemobraBanner: {
+				DisplayName: Remobra Banner
 				Tooltip: ""
 			}
 		}

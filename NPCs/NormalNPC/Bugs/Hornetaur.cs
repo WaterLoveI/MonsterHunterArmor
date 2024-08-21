@@ -19,7 +19,7 @@ namespace MHArmorSkills.NPCs.NormalNPC.Bugs
 
         public override void SetDefaults()
         {
-            NPC.damage = 11;
+            NPC.damage = 21;
             NPC.aiStyle = NPCAIStyleID.Fighter;
             NPC.width = 60;
             NPC.height = 30;
@@ -32,7 +32,7 @@ namespace MHArmorSkills.NPCs.NormalNPC.Bugs
             NPC.HitSound = SoundID.NPCHit1;
             NPC.DeathSound = SoundID.NPCDeath1;
             Banner = NPC.type;
-            BannerItem = ModContent.ItemType<ThunderBugsBanner>();
+            BannerItem = ModContent.ItemType<HornetaurBanner>();
         }
         public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
         {
@@ -53,7 +53,7 @@ namespace MHArmorSkills.NPCs.NormalNPC.Bugs
         }
         public override void AI()
         {
-            if (NPC.life < (NPC.lifeMax / 2))
+            if (NPC.life < (NPC.lifeMax / 3))
             {
                 NPC.aiStyle = NPCAIStyleID.Unicorn;
             }
@@ -88,12 +88,7 @@ namespace MHArmorSkills.NPCs.NormalNPC.Bugs
             return 0.03f;
         }
 
-        public override void ModifyNPCLoot(NPCLoot npcLoot)
-        {
-            npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<BullfangoMask>(), 50));
-            npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<MonsterBone>(), 4));
-            npcLoot.Add(ItemDropRule.Common(ItemID.Leather, 5));
-        }
+        
     }
 }
 

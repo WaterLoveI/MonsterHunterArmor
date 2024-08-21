@@ -1,6 +1,4 @@
-﻿using MHArmorSkills.Items.Armor.MonsterHunter.LowRank;
-using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
-using MHArmorSkills.Items.Placeables.Banners;
+﻿using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using MHArmorSkills.Projectiles.Enemy;
 using Microsoft.Xna.Framework;
 using System.Collections.Generic;
@@ -86,7 +84,7 @@ namespace MHArmorSkills.NPCs.NormalNPC.Bnahabra
         {
             // Shoot a proj if within 20 tiles of its target and if its above the player
             Player player = Main.player[NPC.target];
-            if (Vector2.Distance(player.Center, NPC.Center) < 320f && NPC.Center.Y < player.Center.Y && Main.rand.NextBool(600)) 
+            if (Vector2.Distance(player.Center, NPC.Center) < 320f && NPC.Center.Y < player.Center.Y && Main.rand.NextBool(600))
             {
                 ShootSpit(player);
             }

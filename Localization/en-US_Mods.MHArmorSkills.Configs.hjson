@@ -3,13 +3,13 @@ VanillaArmorSkills: {
 
 	VanillaArmorToggle: {
 		Label: Vanilla armor skills
-		Tooltip: "Enable to give vanilla armors armor skills"
+		Tooltip: Enable to give vanilla armors armor skills
 	}
 }
 
 MHAconfigs: {
 	OnEnterMessage: {
-		Tooltip: "Enable for the on enter world message"
+		Tooltip: Enable for the on enter world message
 		Label: On world message.
 	}
 

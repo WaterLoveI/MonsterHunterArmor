@@ -92,7 +92,7 @@ namespace MHArmorSkills.NPCs.NormalNPC.Bugs
 
         public override void AI()
         {
-            Lighting.AddLight(NPC.Center, 0.15f, (255 - NPC.alpha) * 1f / 255f, (255 - NPC.alpha) * 1f / 255f);
+            Lighting.AddLight(NPC.Center, 0.2f, (255 - NPC.alpha) * 1f / 255f, (255 - NPC.alpha) * 1f / 255f);
             if (Main.rand.NextBool(60))
             {
                 for (int k = 0; k < 3; k++)
@@ -154,6 +154,7 @@ namespace MHArmorSkills.NPCs.NormalNPC.Bugs
                 }
             }
         }
+
         public override void ModifyNPCLoot(NPCLoot npcLoot)
         {
             npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<MonsterFluid>(), 12));

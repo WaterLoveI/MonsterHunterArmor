@@ -2,6 +2,7 @@
 using MHArmorSkills.NPCs.NormalNPC.Bullfango;
 using MHArmorSkills.NPCs.NormalNPC.Bugs;
 using MHArmorSkills.NPCs.NormalNPC.Delex;
+using MHArmorSkills.NPCs.NormalNPC.Remobra;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.DataStructures;
@@ -89,6 +90,12 @@ namespace MHArmorSkills.Tiles
                     break;
                 case 6:
                     npc = ModContent.NPCType<Delex>();
+                    break;
+                case 7:
+                    npc = ModContent.NPCType<Hornetaur>();
+                    break;
+                case 8:
+                    npc = ModContent.NPCType<Remobra>();
                     break;
 
                 default:

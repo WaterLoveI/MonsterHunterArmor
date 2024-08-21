@@ -864,6 +864,7 @@ namespace MHArmorSkills
                 ItemType<TremorRes3>(),
                 ItemType<TropicsHunter2>(),
                 ItemType<Unscathed2>(),
+                ItemType<Vault2>(),
                 ItemType<WaterAttack3>(),
                 ItemType<Windproof3>(),
             };

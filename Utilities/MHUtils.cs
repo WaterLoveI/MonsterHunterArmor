@@ -159,5 +159,13 @@ namespace MHArmorSkills.Utilities
             return ConditionMet;
 
         }
+        public static void HideFromBestiary(this ModNPC n)
+        {
+            NPCID.Sets.NPCBestiaryDrawModifiers value = new NPCID.Sets.NPCBestiaryDrawModifiers(0)
+            {
+                Hide = true
+            };
+            NPCID.Sets.NPCBestiaryDrawOffset.Add(n.Type, value);
+        }
     }
 }

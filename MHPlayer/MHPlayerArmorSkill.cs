@@ -1625,7 +1625,7 @@ namespace MHArmorSkills.MHPlayer
             #region Pierce Up
             if (PieceBuff >= 1)
             {
-                if (proj.type == ProjectileID.MeteorShot || proj.type == ProjectileID.BulletHighVelocity || proj.type == ProjectileID.MoonlordBullet || proj.type == ProjectileID.JestersArrow || proj.type == ProjectileID.UnholyArrow || proj.type == ProjectileID.BoneArrow)
+                if (proj.type == ProjectileID.MeteorShot || proj.type == ProjectileID.BulletHighVelocity || proj.type == ProjectileID.MoonlordBullet || proj.type == ProjectileID.JestersArrow || proj.type == ProjectileID.UnholyArrow || proj.type == ProjectileID.BoneArrow || proj.penetrate > 1)
                 {
                     proj.damage *= 1 + (PieceBuff / 100);
                 }

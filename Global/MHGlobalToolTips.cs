@@ -89,11 +89,11 @@ namespace MHArmorSkills.Global
             {
                 if (modPlayer.DecorationOneSlots > 1)
                 {
-                    EditTooltipByNum(0, (line) => line.Text = $"Currently {modPlayer.DecorationOneSlots - 1} [○] slots available.");
+                    EditTooltipByNum(2, (line) => line.Text = $"Currently {modPlayer.DecorationOneSlots - 1} [○] slots available.");
                 }
                 if (modPlayer.DecorationOneSlots <= 1)
                 {
-                    EditTooltipByNum(0, (line) => line.Text = $"Currently have no slots available.\n" +
+                    EditTooltipByNum(2, (line) => line.Text = $"Currently have no [○] slots available.\n" +
                 "Use armors with decoration slots to equip.");
                 }
             }
@@ -101,11 +101,11 @@ namespace MHArmorSkills.Global
             {
                 if (modPlayer.DecorationTwoSlots > 1)
                 {
-                    EditTooltipByNum(0, (line) => line.Text = $"Currently {modPlayer.DecorationTwoSlots - 1} [○][○] slots available.");
+                    EditTooltipByNum(2, (line) => line.Text = $"Currently {modPlayer.DecorationTwoSlots - 1} [○][○] slots available.");
                 }
                 if (modPlayer.DecorationTwoSlots <= 1)
                 {
-                    EditTooltipByNum(0, (line) => line.Text = $"Currently have no slots available.\n" +
+                    EditTooltipByNum(2, (line) => line.Text = $"Currently have no [○][○] slots available.\n" +
                 "Use armors with decoration slots to equip.");
                 }
             }
@@ -113,11 +113,11 @@ namespace MHArmorSkills.Global
             {
                 if (modPlayer.DecorationThreeSlots > 1)
                 {
-                    EditTooltipByNum(0, (line) => line.Text = $"Currently {modPlayer.DecorationThreeSlots - 1} [○][○][○] slots available.");
+                    EditTooltipByNum(2, (line) => line.Text = $"Currently {modPlayer.DecorationThreeSlots - 1} [○][○][○] slots available.");
                 }
                 if (modPlayer.DecorationThreeSlots <= 1)
                 {
-                    EditTooltipByNum(0, (line) => line.Text = $"Currently have no slots available.\n" +
+                    EditTooltipByNum(2, (line) => line.Text = $"Currently have no [○][○][○] slots available.\n" +
                 "Use armors with decoration slots to equip.");
                 }
             }
