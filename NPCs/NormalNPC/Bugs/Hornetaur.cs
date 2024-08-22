@@ -87,8 +87,15 @@ namespace MHArmorSkills.NPCs.NormalNPC.Bugs
             }
             return 0.03f;
         }
-
-        
+        public override void ModifyNPCLoot(NPCLoot npcLoot)
+        {
+            npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<MonsterFluid>(), 12));
+            npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<InsectShell>(), 12));
+            if (Main.hardMode)
+            {
+                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<InsectCarapace>(), 12));
+            }
+        }
     }
 }
 

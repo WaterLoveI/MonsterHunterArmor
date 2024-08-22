@@ -246,6 +246,11 @@ namespace MHArmorSkills.NPCs.NormalNPC.Delex
                 }
             }
         }
-        
+
+        public override void ModifyNPCLoot(NPCLoot npcLoot)
+        {
+            npcLoot.Add(ItemDropRule.Common(ItemID.SharkFin, 2));
+        }
+
     }
 }

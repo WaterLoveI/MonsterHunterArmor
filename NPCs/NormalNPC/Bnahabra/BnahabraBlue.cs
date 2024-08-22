@@ -124,5 +124,6 @@ namespace MHArmorSkills.NPCs.NormalNPC.Bnahabra
                 npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<InsectCarapace>(), 10));
             }
         }
+
     }
 }

@@ -2,11 +2,10 @@
 using MHArmorSkills.Buffs.ArmorBuffs;
 using MHArmorSkills.Items.Accessories.Decorations;
 using MHArmorSkills.Items.Weapons;
+using MHArmorSkills.NPCs.NormalNPC;
+using MHArmorSkills.NPCs.NormalNPC.Bugs;
 using System.Collections.Generic;
-using Terraria.Graphics;
 using Terraria.ID;
-using Terraria.ModLoader;
-using static System.Net.WebRequestMethods;
 using static Terraria.ModLoader.ModContent;
 
 namespace MHArmorSkills
@@ -194,7 +193,7 @@ namespace MHArmorSkills
                 ItemID.Xenopopper,
                 ItemID.PirateStaff,
                 ItemID.GoldenShower,
-                
+
             };
             thunderelementList = new List<int>()
             {
@@ -320,6 +319,8 @@ namespace MHArmorSkills
                 NPCID.CreatureFromTheDeep,
                 NPCID.SwampThing,
                 NPCID.DukeFishron,
+                NPCType<BubblesNPC>(),
+                NPCType<Hermitaur>(),
             };
             thunderresList = new List<int>()
             {
@@ -346,7 +347,7 @@ namespace MHArmorSkills
                 NPCID.ScutlixRider,
                 NPCID.MartianTurret,
                 NPCID.MartianSaucer,
-                
+                NPCType<ThunderBugs>(),
             };
             iceresList = new List<int>()
             {
@@ -868,7 +869,7 @@ namespace MHArmorSkills
                 ItemType<WaterAttack3>(),
                 ItemType<Windproof3>(),
             };
-            }
+        }
         public static void UnloadLists()
         {
             debuffList = null;
@@ -889,6 +890,6 @@ namespace MHArmorSkills
             ThreeSlotDecorations = null;
         }
     }
-    
+
 }
 

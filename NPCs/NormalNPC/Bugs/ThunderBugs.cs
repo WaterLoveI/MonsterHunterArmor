@@ -158,7 +158,6 @@ namespace MHArmorSkills.NPCs.NormalNPC.Bugs
         public override void ModifyNPCLoot(NPCLoot npcLoot)
         {
             npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<MonsterFluid>(), 12));
-
         }
         public override void PostDraw(SpriteBatch spriteBatch, Vector2 screenPos, Color drawColor)
         {

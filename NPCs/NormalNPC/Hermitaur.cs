@@ -1,7 +1,9 @@
-﻿using MHArmorSkills.Items.Placeables.Banners;
+﻿using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
+using MHArmorSkills.Items.Placeables.Banners;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.GameContent.Bestiary;
+using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -117,7 +119,12 @@ namespace MHArmorSkills.NPCs.NormalNPC
             }
             return 0.02f;
         }
-
+        public override void ModifyNPCLoot(NPCLoot npcLoot)
+        {
+            npcLoot.Add(ItemDropRule.Common(ItemID.WhitePearl, 5));
+            npcLoot.Add(ItemDropRule.Common(ItemID.BlackPearl, 10));
+            npcLoot.Add(ItemDropRule.Common(ItemID.PinkPearl, 20));
+        }
     }
 }
 
