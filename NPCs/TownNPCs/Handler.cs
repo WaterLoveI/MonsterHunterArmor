@@ -4,6 +4,7 @@ using Terraria.GameContent;
 using Terraria.GameContent.Bestiary;
 using Terraria.ID;
 using Terraria.ModLoader;
+using MHArmorSkills.Utilities;
 
 namespace MHArmorSkills.NPCs.TownNPCs
 {
@@ -23,7 +24,7 @@ namespace MHArmorSkills.NPCs.TownNPCs
             NPCID.Sets.AttackAverageChance[Type] = 30; // The denominator for the chance for a Town NPC to attack. Lower numbers make the Town NPC appear more aggressive.
             NPCID.Sets.HatOffsetY[Type] = 2; // For when a party is active, the party hat spawns at a Y offset.
             NPCID.Sets.ShimmerTownTransform[NPC.type] = true; // This set says that the Town NPC has a Shimmered form. Otherwise, the Town NPC will become transparent when touching Shimmer like other enemies.
-
+            this.HideFromBestiary();
 
         }
         public override void SetDefaults()

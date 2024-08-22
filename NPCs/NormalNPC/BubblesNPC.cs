@@ -1,17 +1,21 @@
-﻿using Microsoft.Xna.Framework;
+﻿using MHArmorSkills.Buffs;
+using MHArmorSkills.Utilities;
+using Microsoft.Xna.Framework;
+using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using Terraria;
+using Terraria.DataStructures;
 using Terraria.GameContent.Bestiary;
 using Terraria.ID;
 using Terraria.ModLoader;
-using MHArmorSkills.Utilities;
-using Terraria.DataStructures;
-using MHArmorSkills.Buffs;
 
 namespace MHArmorSkills.NPCs.NormalNPC
 {
     public class BubblesNPC : ModNPC
     {
+
         public override void SetStaticDefaults()
         {
             Main.npcFrameCount[NPC.type] = 2;
@@ -40,7 +44,6 @@ namespace MHArmorSkills.NPCs.NormalNPC
             NPC.noTileCollide = true;
             NPC.knockBackResist = 0f;
             NPC.alpha = 255;
-
         }
         public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
         {
@@ -52,19 +55,27 @@ namespace MHArmorSkills.NPCs.NormalNPC
                 new FlavorTextBestiaryInfoElement("Small hard-shelled Carapaceons. Their brains are regarded as a delicacy in some regions.")
             });
         }
+        public override void SendExtraAI(BinaryWriter writer)
+        {
+            writer.Write(NPC.dontTakeDamage);
+            writer.Write(NPC.Opacity);
+        }
+
+        public override void ReceiveExtraAI(BinaryReader reader)
+        {
+            NPC.dontTakeDamage = reader.ReadBoolean();
+            NPC.Opacity = reader.ReadSingle();
+        }
         public override void FindFrame(int frameHeight)
         {
 
             NPC.spriteDirection = NPC.direction;
 
         }
-
-        public override void OnSpawn(IEntitySource source)
-        {
-            NPC.immuneTime += 30;
-        }
+        
         public override void AI()
         {
+            // detonating bubble AI but made it slower
             if (NPC.target == 255)
             {
                 NPC.TargetClosest();
@@ -90,12 +101,12 @@ namespace MHArmorSkills.NPCs.NormalNPC
             }
             if (NPC.ai[0] == 0f)
             {
-                int num71 = 20;
+                int num71 = 8;
                 Rectangle rect = NPC.getRect();
                 rect.X -= num71 + NPC.width / 2;
                 rect.Y -= num71 + NPC.height / 2;
-                rect.Width += num71 * 2;
-                rect.Height += num71 * 2;
+                rect.Width += num71;
+                rect.Height += num71;
                 for (int num72 = 0; num72 < 255; num72++)
                 {
                     Player player8 = Main.player[num72];
@@ -111,7 +122,7 @@ namespace MHArmorSkills.NPCs.NormalNPC
             if (NPC.ai[0] == 0f)
             {
                 NPC.ai[1]++;
-                if (NPC.ai[1] >= 150f)
+                if (NPC.ai[1] >= 160f)
                 {
                     NPC.ai[0] = 1f;
                     NPC.ai[1] = 4f;
@@ -132,10 +143,13 @@ namespace MHArmorSkills.NPCs.NormalNPC
             {
                 NPC.dontTakeDamage = true;
                 NPC.position = NPC.Center;
-                NPC.width = (NPC.height = 100);
-                NPC.position = new Vector2(NPC.position.X - (float)(NPC.width / 2), NPC.position.Y - (float)(NPC.height / 2));
+                NPC.width = (NPC.height = 23);
+                NPC.position = new Vector2(NPC.position.X - (float)(NPC.width /2), NPC.position.Y - (float)(NPC.height/2));
                 NPC.EncourageDespawn(3);
             }
+            if (NPC.timeLeft < 180)
+                NPC.timeLeft = 180;
+
         }
         public override void HitEffect(NPC.HitInfo hit)
         {
@@ -146,8 +160,10 @@ namespace MHArmorSkills.NPCs.NormalNPC
         }
         public override void OnHitPlayer(Player target, Player.HurtInfo hurtInfo)
         {
-            if (hurtInfo.Damage > 0 && Main.rand.NextBool(2))
-                target.AddBuff(ModContent.BuffType<BubbleBlight>(), 5 * 60);
+            int debufftype = Main.expertMode ? ModContent.BuffType<BubbleBlight>() : BuffID.Wet;
+            int duration = Main.expertMode ? 5 * 60 : 10 * 60;
+            if (hurtInfo.Damage > 0)
+                target.AddBuff(debufftype, duration, true);
         }
     }
 }

@@ -9,6 +9,7 @@ using Terraria.DataStructures;
 using Terraria.Enums;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
+using MHArmorSkills.NPCs.NormalNPC;
 
 namespace MHArmorSkills.Tiles
 {
@@ -96,6 +97,9 @@ namespace MHArmorSkills.Tiles
                     break;
                 case 8:
                     npc = ModContent.NPCType<Remobra>();
+                    break;
+                case 9:
+                    npc = ModContent.NPCType<Hermitaur>();
                     break;
 
                 default:

@@ -77,7 +77,7 @@ namespace MHArmorSkills.NPCs.NormalNPC.Bugs
 
         public override float SpawnChance(NPCSpawnInfo spawnInfo)
         {
-            if (spawnInfo.PlayerSafe || !spawnInfo.Player.ZoneJungle || (!spawnInfo.Player.ZoneJungle && !spawnInfo.Player.ZoneDirtLayerHeight) || !NPC.downedBoss1)
+            if (spawnInfo.PlayerSafe || spawnInfo.Water || !spawnInfo.Player.ZoneJungle || (!spawnInfo.Player.ZoneJungle && !spawnInfo.Player.ZoneDirtLayerHeight) || !NPC.downedBoss1)
             {
                 return 0f;
             }

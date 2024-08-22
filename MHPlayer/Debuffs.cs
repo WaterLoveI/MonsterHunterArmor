@@ -1,4 +1,5 @@
 ﻿using MHArmorSkills.Buffs;
+using MHArmorSkills.NPCs.NormalNPC;
 using MHArmorSkills.Projectiles;
 using Microsoft.Xna.Framework;
 using Terraria;
@@ -107,7 +108,7 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
             #region BubbleBlight
-            if (Player.HasBuff(ModContent.BuffType<BubbleBlight>()))
+            if (Player.HasBuff(ModContent.BuffType<BubbleBlight>()) && !(npc.type == ModContent.NPCType<BubblesNPC>()))
             {
                 Player.ClearBuff(ModContent.BuffType<BubbleBlight>());
                 SoundEngine.PlaySound(SoundID.Item54, Player.Center);

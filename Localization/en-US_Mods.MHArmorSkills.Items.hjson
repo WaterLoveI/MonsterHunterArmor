@@ -301,3 +301,8 @@ BoneClub: {
 	DisplayName: Bone Club
 	Tooltip: Increase damage by 50% when hitting enemies from the front.
 }
+
+HermitaurBanner: {
+	DisplayName: Hermitaur Banner
+	Tooltip: ""
+}

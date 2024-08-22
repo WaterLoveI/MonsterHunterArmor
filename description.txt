@@ -1,7 +1,6 @@
 Mod incompatibilities:
 Any mods that messes with accessory slots will break the decorations.
 
-
 Notable Bugs:
 Quick equipping accessories will always get sent to the last slot, need a little help fixing this one.
 
@@ -31,6 +30,8 @@ Enemies
 -Thunderbugs
 -Hornetaur
 -Delex
+-Remobra
+-Hermitaur
 
 Commands:
 - /skills - this command shows you what skills are active on the player currently. Doesn't work in multiplayer.

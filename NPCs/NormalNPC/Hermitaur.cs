@@ -29,7 +29,7 @@ namespace MHArmorSkills.NPCs.NormalNPC
             NPC.HitSound = SoundID.NPCHit1;
             NPC.DeathSound = SoundID.NPCDeath1;
             Banner = NPC.type;
-            BannerItem = ModContent.ItemType<HornetaurBanner>();
+            BannerItem = ModContent.ItemType<HermitaurBanner>();
         }
         public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
         {
@@ -49,18 +49,22 @@ namespace MHArmorSkills.NPCs.NormalNPC
         }
         public override void OnKill()
         {
-            int bubblecount = 6;
-            if (Main.hardMode || Main.expertMode)
+            Player player = Main.LocalPlayer;
+            if (NPC.Distance(player.Center) > 240f)
             {
-                bubblecount = 12;
-            }
-            for (int k = 0; k < bubblecount; k++)
-            {
-                if (Main.rand.NextBool(2))
+                int bubblecount = 6;
+                if (Main.hardMode || Main.expertMode)
                 {
-                    int n = NPC.NewNPC(NPC.GetSource_FromAI(), (int)NPC.Center.X, (int)NPC.Center.Y, ModContent.NPCType<BubblesNPC>(), 0, NPC.whoAmI);
-                    Main.npc[n].velocity.X = Main.rand.NextFloat(-1f, 1f);
-                    Main.npc[n].velocity.Y = Main.rand.NextFloat(-1f, -1f);
+                    bubblecount = 12;
+                }
+                for (int k = 0; k < bubblecount; k++)
+                {
+                    if (Main.rand.NextBool(2))
+                    {
+                        int n = NPC.NewNPC(NPC.GetSource_FromAI(), (int)NPC.Center.X, (int)NPC.Center.Y, ModContent.NPCType<BubblesNPC>(), NPC.whoAmI);
+                        Main.npc[n].velocity.X = Main.rand.NextFloat(-1f, 1f);
+                        Main.npc[n].velocity.Y = Main.rand.NextFloat(-1f, -1f);
+                    }
                 }
             }
         }
@@ -70,21 +74,25 @@ namespace MHArmorSkills.NPCs.NormalNPC
             {
                 Dust.NewDust(NPC.position, NPC.width, NPC.height, DustID.Water, hit.HitDirection, -1f, 0, default, 1f);
             }
-            if (Main.hardMode || Main.expertMode)
+            Player player = Main.LocalPlayer;
+            if (NPC.Distance(player.Center) > 240f)
             {
-                if (!Main.rand.NextBool(3))
+                if (Main.hardMode || Main.expertMode)
                 {
-                    for (int k = 0; k < 4; k++)
+                    if (!Main.rand.NextBool(3))
                     {
-                        if (Main.rand.NextBool(2))
+                        for (int k = 0; k < 4; k++)
                         {
-                            int n = NPC.NewNPC(NPC.GetSource_FromAI(), (int)NPC.Center.X, (int)NPC.Center.Y, ModContent.NPCType<BubblesNPC>(), 0, NPC.whoAmI);
-                            Main.npc[n].velocity.X = Main.rand.NextFloat(-1f, 1f);
-                            Main.npc[n].velocity.Y = Main.rand.NextFloat(-1f, -1f);
+                            if (Main.rand.NextBool(2))
+                            {
+                                int n = NPC.NewNPC(NPC.GetSource_FromAI(), (int)NPC.Center.X, (int)NPC.Center.Y, ModContent.NPCType<BubblesNPC>(), 0, NPC.whoAmI);
+                                Main.npc[n].velocity.X = Main.rand.NextFloat(-1f, 1f);
+                                Main.npc[n].velocity.Y = Main.rand.NextFloat(-1f, -1f);
+                            }
                         }
                     }
+
                 }
-                    
             }
             if (NPC.life <= 0)
             {
@@ -103,13 +111,12 @@ namespace MHArmorSkills.NPCs.NormalNPC
         }
         public override float SpawnChance(NPCSpawnInfo spawnInfo)
         {
-            if (spawnInfo.PlayerSafe || !spawnInfo.Player.ZoneBeach)
+            if (spawnInfo.PlayerSafe || !spawnInfo.Player.ZoneBeach || (!spawnInfo.Player.ZoneDesert && spawnInfo.Water))
             {
                 return 0f;
             }
             return 0.02f;
         }
-
 
     }
 }
