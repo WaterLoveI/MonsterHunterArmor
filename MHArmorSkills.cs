@@ -6,8 +6,10 @@ namespace MHArmorSkills
     {
 
         internal static MHArmorSkills Instance;
+        public static ModKeybind ScrollSwap { get; private set; }
         public override void Load()
         {
+            ScrollSwap = KeybindLoader.RegisterKeybind(this, "Scroll Swap", "G");
             Instance = this;
             MHLists.LoadLists();
         }
@@ -15,6 +17,7 @@ namespace MHArmorSkills
         {
             Instance = null;
             MHLists.UnloadLists();
+            ScrollSwap = null;
             base.Unload();
         }
     }

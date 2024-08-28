@@ -1,4 +1,5 @@
 ﻿using MHArmorSkills.Buffs;
+using MHArmorSkills.Buffs.ArmorBuffs;
 using MHArmorSkills.NPCs.NormalNPC;
 using MHArmorSkills.Projectiles;
 using Microsoft.Xna.Framework;
@@ -6,17 +7,19 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace MHArmorSkills.MHPlayer
 {
-    public partial class Debuff : ModPlayer
+    public partial class Debuffs : ModPlayer
     {
         public bool BubbleBlight;
         public bool BlastBlight;
         public bool NearExplosion;
         public bool TriggerExplosion;
         public int BlastTimer;
+        public int StunnedHealthCheck;
 
         public override void ResetEffects()
         {
@@ -31,6 +34,9 @@ namespace MHArmorSkills.MHPlayer
             {
                 BlastTimer--;
             }
+            #endregion
+            #region Stunned
+            StunnedHealthCheck = Player.statLife;
             #endregion
         }
         public override void PostUpdateMiscEffects()
@@ -59,7 +65,19 @@ namespace MHArmorSkills.MHPlayer
                     }
                 }
             }
-
+            if (Player.active && !Player.dead)
+            {
+                if (Main.expertMode)
+                {
+                    if (StunnedHealthCheck >= (Player.statLife + Player.statLifeMax2*0.25f)) 
+                    {
+                        if (Main.rand.NextBool(5)) 
+                        {
+                            Player.AddBuff(ModContent.BuffType<Stunned>() , 120);
+                        }
+                    }
+                }
+            }
 
             Explosion();
 
@@ -87,10 +105,10 @@ namespace MHArmorSkills.MHPlayer
                     }
                     for (int i = 0; i < 9; i++)
                     {
-                        int dust = Dust.NewDust(Player.position, Player.width, Player.height, DustID.Torch, 0.3f, 0.3f, 0, Color.Yellow, 1.1f);
+                        int dust = Dust.NewDust(Player.position, Player.width, Player.height, DustID.Torch, 0.3f, 0.3f, 0, Color.Yellow, 1.5f);
                         Vector2 spread = new Vector2(Main.rand.NextFloat(-1f, 1f), Main.rand.NextFloat(-1f, 1f));
                         spread = spread.RotatedBy(Main.rand.NextFloat(0f, 360f));
-                        spread *= 1.1f;
+                        spread *= 0.7f;
                         Main.dust[dust].velocity = spread;
                     }
                 }
@@ -166,7 +184,7 @@ namespace MHArmorSkills.MHPlayer
                 }
                 for (int i = 0; i < 6; i++) // Adjust the number of dusts spawned
                 {
-                    int dust = Dust.NewDust(Player.position, Player.width, Player.height, DustID.Torch, 0f, 0f, 0, Color.Yellow, 1.1f);
+                    int dust = Dust.NewDust(Player.position, Player.width, Player.height, DustID.Torch, 0f, 0f, 0, Color.DarkRed, 1.2f);
                     Vector2 spread = new Vector2(Main.rand.NextFloat(-1f, 1f), Main.rand.NextFloat(-1f, 1f));
                     spread = spread.RotatedBy(Main.rand.NextFloat(0f, 360f)); // Random rotation for spread
                     spread *= 1.1f; // Adjust the spread distance
@@ -181,7 +199,6 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
         }
-
 
         public override void OnRespawn()
         {
@@ -234,7 +251,26 @@ namespace MHArmorSkills.MHPlayer
                 {
                     Player.lifeRegen = 0;
                 }
+                if (Player.sitting.isSitting)
+                {
+                    --Player.buffTime[BuffID.Bleeding];
+                }
             }
         }
+        public override bool PreKill(double damage, int hitDirection, bool pvp, ref bool playSound, ref bool genDust, ref PlayerDeathReason damageSource)
+        {
+            if (TriggerExplosion)
+            {
+                damageSource = PlayerDeathReason.ByCustomReason(Language.GetTextValue("Mods.MHArmorSkills.DeathMessage.Blastblight", Player.name));
+            }
+            if (Player.HasBuff(ModContent.BuffType<Beserk>()))
+            {
+                damageSource = PlayerDeathReason.ByCustomReason(Language.GetTextValue("Mods.MHArmorSkills.DeathMessage.Berserk", Player.name));
+            }
+            return base.PreKill(damage, hitDirection, pvp, ref playSound, ref genDust, ref damageSource);
+        }
+
+
     }
 }
+

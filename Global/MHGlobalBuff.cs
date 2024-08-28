@@ -1,5 +1,10 @@
-﻿using MHArmorSkills.MHPlayer;
+﻿using MHArmorSkills.Buffs;
+using MHArmorSkills.Buffs.ArmorBuffs;
+using MHArmorSkills.MHPlayer;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using Terraria;
+using Terraria.DataStructures;
 using Terraria.ModLoader;
 
 
@@ -17,6 +22,28 @@ namespace MHArmorSkills.Global
                 npc.buffTime[buffIndex] += extendedDuration;
             }
             return base.ReApply(type, npc, time, buffIndex);
+        }
+        
+        public override bool PreDraw(SpriteBatch spriteBatch, int type, int buffIndex, ref BuffDrawParams drawParams)
+        {
+            // make blastblight shake
+            Player player = Main.LocalPlayer;
+            if (type == ModContent.BuffType<BlastBlight>() && player.GetModPlayer<Debuffs>().BlastTimer == 3)
+            {
+                Vector2 shake = new Vector2(Main.rand.Next(-3, 4), Main.rand.Next(-3, 4));
+
+                drawParams.Position += shake;
+                drawParams.TextPosition += shake;
+            }
+            if (type == ModContent.BuffType<RedScroll>() && player.GetModPlayer<ScrollSwapPlayer>().FuriousCount >= 60)
+            {
+                Vector2 shake = new Vector2(Main.rand.Next(-1, 2), Main.rand.Next(-1, 2));
+
+                drawParams.Position += shake;
+                drawParams.TextPosition += shake;
+            }
+
+            return true;
         }
     }
 }

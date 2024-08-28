@@ -5,17 +5,22 @@ BnahabraRed.DisplayName: Bnahabra Red
 Bullfango.DisplayName: Bullfango
 
 Handler: {
-	DisplayName: Handler
+	DisplayName: Guildmarm
 
 	TownNPCMood: {
-		Content: I am content.
-		NoHome: I hate not having a home.
-		FarFromHome: I am too far from home.
-		LoveSpace: I love having so much space.
-		DislikeCrowded: I dislike how crowded I am.
-		HateCrowded: I hate how crowded I am.
-		LikeNPC_Princess: I like {NPCName}.
-		Princess_LovesNPC: I like {NPCName}.
+		Content: Not a bad place, got some work to do before I feel at home.
+		NoHome: No house? No problem! I'll just set up a campfire somewhere.
+		FarFromHome: Hey doodle, one moment I was investigaing some peculiar tracks and now I've strayed a bit far from home.
+		LoveSpace: Oh this place is HUGE, plenty of space to stash my research notes and dolls... The possibilities are endless!
+		DislikeCrowded: Though I am used to crowds, I do prefer the quieter moments.
+		HateCrowded: So many people, is there a festival going on? My reading time is going to take a hit with all this noise.
+		LikeNPC_Princess: "{NPCName} is adorable, I want to make a doll for her for the next time we meet."
+		Princess_LovesNPC: "{NPCName} is so sweet, she always has great stories and drawings to show me whenever we meet."
+		LikeBiome: Oh I like the {BiomeName}, it reminds me a place I've been to before.
+		DislikeBiome: I dislike {BiomeName}.
+		LikeNPC: "{NPCName} reminds me of someone I used to work with. Think we'll make good friends?"
+		DislikeNPC: I dislike {NPCName}.
+		HateNPC: I hate {NPCName}.
 	}
 }
 

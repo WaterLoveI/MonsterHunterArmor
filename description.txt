@@ -23,6 +23,7 @@ Full Armor Set
 -Glavenus
 -Mizutsune
 -Gammoth
+-Ukanlos
 
 Enemies
 -Bullfango

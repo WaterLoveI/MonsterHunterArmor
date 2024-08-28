@@ -120,10 +120,11 @@ Beserk: {
 	DisplayName: Beserk
 	Description:
 		'''
-		Set life regen to 0.
+		Slowly losing life.
 		Reduce damage taken by 75%
 		Rapidly lose life when hit.
 		'''
+	DeathMessage: "{0} was unable to overcome the berserk."
 }
 
 BladeHoneScale: {
@@ -194,4 +195,39 @@ AdrenalineRush: {
 BlastBlight: {
 	DisplayName: Blast Blight
 	Description: You will explode when the timer hits zero.
+}
+
+MaximumMight: {
+	DisplayName: Maximum Might
+	Description: Mods.MHArmorSkills.Buffs.MaximumMight.Description
+}
+
+BlueScroll: {
+	Description: You're currently on the Blue Scroll
+	DisplayName: Blue Scroll
+}
+
+RedScroll: {
+	DisplayName: Red Scroll
+	Description: You're currently on the Red Scroll
+}
+
+ScrollChange: {
+	DisplayName: Scroll Change
+	Description: Changing scrolls.
+}
+
+DeadEye: {
+	DisplayName: Dead Eye
+	Description: Mods.MHArmorSkills.Buffs.DeadEye.Description
+}
+
+Furious: {
+	DisplayName: Furious
+	Description: Mods.MHArmorSkills.Buffs.Furious.Description
+}
+
+Stunned: {
+	DisplayName: Stunned
+	Description: You're too stunned to move.
 }

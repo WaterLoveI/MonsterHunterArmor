@@ -159,6 +159,13 @@ namespace MHArmorSkills.NPCs.NormalNPC.Bugs
         {
             npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<MonsterFluid>(), 12));
         }
+        public override void OnKill()
+        {
+            if ((NPC.HasBuff(BuffID.Poisoned) || NPC.HasBuff(BuffID.Venom)) && Main.rand.NextBool(2))
+            {
+                Item.NewItem(NPC.GetSource_Loot(), (int)NPC.position.X, (int)NPC.position.Y, NPC.width, NPC.height, ModContent.ItemType<MonsterFluid>());
+            }
+        }
         public override void PostDraw(SpriteBatch spriteBatch, Vector2 screenPos, Color drawColor)
         {
             // Draw glowmask.

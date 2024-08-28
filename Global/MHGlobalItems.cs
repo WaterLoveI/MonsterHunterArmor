@@ -1,4 +1,5 @@
-﻿using Terraria;
+﻿using MHArmorSkills.MHPlayer;
+using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -76,7 +77,6 @@ namespace MHArmorSkills.Global
             return GetBuyPrice(item.rare);
         }
         #endregion
-
         public override bool CanAccessoryBeEquippedWith(Item equippedItem, Item incomingItem, Player player)
         {
             // quick equipping accessories sends it to the last slot, idk why
@@ -96,7 +96,6 @@ namespace MHArmorSkills.Global
         public override void SetDefaults(Item entity)
         {
             // got lazy to copy paste to all the decor .cs
-
             bool OneSlot = MHLists.OneSlotDecorations.Contains(entity.type);
             bool TwoSlot = MHLists.TwoSlotDecorations.Contains(entity.type);
             bool ThreeSlot = MHLists.ThreeSlotDecorations.Contains(entity.type);
@@ -118,7 +117,22 @@ namespace MHArmorSkills.Global
                 entity.maxStack = 9999;
                 entity.value = Item.sellPrice(0, 1, 0, 0);
             }
-        }
 
+        }
+        public override bool OnPickup(Item item, Player player)
+        {
+            ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
+            if (item.type == ItemID.Heart && modPlayer.SurvivalExpert >=1)
+            {
+                if (modPlayer.SurvivalExpert >= 2)
+                {
+                    modPlayer.SurvivalExpert = 2;
+                }
+                int healamt = 5 * modPlayer.SurvivalExpert;
+                player.Heal(healamt);
+                
+            }
+            return base.OnPickup(item, player);
+        }
     }
 }

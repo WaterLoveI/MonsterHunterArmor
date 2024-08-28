@@ -15,6 +15,11 @@ namespace MHArmorSkills.NPCs.NormalNPC.Bugs
         public override void SetStaticDefaults()
         {
             Main.npcFrameCount[NPC.type] = 3;
+            NPCID.Sets.NPCBestiaryDrawModifiers drawModifiers = new NPCID.Sets.NPCBestiaryDrawModifiers(0)
+            {
+                Velocity = 1f // Draws the NPC in the bestiary as if its walking +1 tiles in the x direction
+            };
+            NPCID.Sets.NPCBestiaryDrawOffset.Add(NPC.type, drawModifiers);
         }
 
         public override void SetDefaults()
@@ -94,6 +99,21 @@ namespace MHArmorSkills.NPCs.NormalNPC.Bugs
             if (Main.hardMode)
             {
                 npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<InsectCarapace>(), 12));
+            }
+        }
+        public override void OnKill()
+        {
+            if ((NPC.HasBuff(BuffID.Poisoned) || NPC.HasBuff(BuffID.Venom)) && Main.rand.NextBool(2))
+            {
+                Item.NewItem(NPC.GetSource_Loot(), (int)NPC.position.X, (int)NPC.position.Y, NPC.width, NPC.height, ModContent.ItemType<MonsterFluid>());
+            }
+            if ((NPC.HasBuff(BuffID.Poisoned) || NPC.HasBuff(BuffID.Venom)) && Main.rand.NextBool(2))
+            {
+                Item.NewItem(NPC.GetSource_Loot(), (int)NPC.position.X, (int)NPC.position.Y, NPC.width, NPC.height, ModContent.ItemType<InsectShell>());
+            }
+            if ((NPC.HasBuff(BuffID.Poisoned) || NPC.HasBuff(BuffID.Venom)) && Main.rand.NextBool(2) && Main.hardMode)
+            {
+                Item.NewItem(NPC.GetSource_Loot(), (int)NPC.position.X, (int)NPC.position.Y, NPC.width, NPC.height, ModContent.ItemType<InsectCarapace>());
             }
         }
     }

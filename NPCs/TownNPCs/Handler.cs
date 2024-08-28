@@ -5,6 +5,7 @@ using Terraria.GameContent.Bestiary;
 using Terraria.ID;
 using Terraria.ModLoader;
 using MHArmorSkills.Utilities;
+using Terraria.GameContent.Personalities;
 
 namespace MHArmorSkills.NPCs.TownNPCs
 {
@@ -22,17 +23,27 @@ namespace MHArmorSkills.NPCs.TownNPCs
             NPCID.Sets.AttackType[Type] = 0; // The type of attack the Town NPC performs. 0 = throwing, 1 = shooting, 2 = magic, 3 = melee
             NPCID.Sets.AttackTime[Type] = 90; // The amount of time it takes for the NPC's attack animation to be over once it starts.
             NPCID.Sets.AttackAverageChance[Type] = 30; // The denominator for the chance for a Town NPC to attack. Lower numbers make the Town NPC appear more aggressive.
-            NPCID.Sets.HatOffsetY[Type] = 2; // For when a party is active, the party hat spawns at a Y offset.
-            NPCID.Sets.ShimmerTownTransform[NPC.type] = true; // This set says that the Town NPC has a Shimmered form. Otherwise, the Town NPC will become transparent when touching Shimmer like other enemies.
-            this.HideFromBestiary();
-
+            NPCID.Sets.HatOffsetY[Type] = 8; // For when a party is active, the party hat spawns at a Y offset.
+            NPCID.Sets.ShimmerTownTransform[Type] = false;
+            NPC.Happiness
+                .SetBiomeAffection<OceanBiome>(AffectionLevel.Like)
+                .SetBiomeAffection<DesertBiome>(AffectionLevel.Like)
+                .SetBiomeAffection<UndergroundBiome>(AffectionLevel.Like)                
+                .SetNPCAffection(NPCID.Guide, AffectionLevel.Like)
+                .SetNPCAffection(NPCID.Merchant, AffectionLevel.Like)
+                .SetNPCAffection(NPCID.ArmsDealer, AffectionLevel.Like);
+            NPCID.Sets.NPCBestiaryDrawModifiers drawModifiers = new NPCID.Sets.NPCBestiaryDrawModifiers(0)
+            {
+                Velocity = 1f // Draws the NPC in the bestiary as if its walking +1 tiles in the x direction
+            };
+            NPCID.Sets.NPCBestiaryDrawOffset.Add(NPC.type, drawModifiers);
         }
         public override void SetDefaults()
         {
             NPC.townNPC = true; // Sets NPC to be a Town NPC
             NPC.friendly = true; // NPC Will not attack player
-            NPC.width = 18;
-            NPC.height = 40;
+            NPC.width = 26;
+            NPC.height = 46;
             NPC.aiStyle = 7;
             NPC.damage = 10;
             NPC.defense = 15;
@@ -58,7 +69,7 @@ namespace MHArmorSkills.NPCs.TownNPCs
             bestiaryEntry.Info.AddRange(new List<IBestiaryInfoElement>
             {
                 BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Surface,
-                new FlavorTextBestiaryInfoElement("")
+                new FlavorTextBestiaryInfoElement("Said to be part of a guild from another world. She needs someone to help her with her monster fascination.")
             });
         }
         public override void HitEffect(NPC.HitInfo hit)
@@ -81,6 +92,12 @@ namespace MHArmorSkills.NPCs.TownNPCs
                     Gore.NewGore(NPC.GetSource_Death(), NPC.position, NPC.velocity, Mod.Find<ModGore>("Handler3").Type, 1f);
                 }
             }
+        }
+        public override List<string> SetNPCNameList()
+        {
+            return new List<string>() {
+                "Sophia",
+            };
         }
     }
 }

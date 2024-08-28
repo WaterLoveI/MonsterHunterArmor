@@ -87,7 +87,7 @@ namespace MHArmorSkills.Global
                     loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 3, ModContent.ItemType<LrgBeastGem>(), ModContent.ItemType<FeyWyvernGem>(), ModContent.ItemType<FineBlackPearl>()));
                     loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 4, ModContent.ItemType<LrgBeastGem>(), ModContent.ItemType<FeyWyvernGem>(), ModContent.ItemType<FineBlackPearl>()));
                     int[] QSThreeSlotArray = MHLists.ThreeSlotDecorations.ToArray();
-                    loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, QSThreeSlotArray));
+                    loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(3, 1, QSThreeSlotArray));
 
                     break;
                 case ItemID.TwinsBossBag:
@@ -97,7 +97,7 @@ namespace MHArmorSkills.Global
                     loot.Add(new CommonDrop(ModContent.ItemType<FineBlackPearl>(), 2, 1, 3));
                     loot.Add(new CommonDrop(ModContent.ItemType<LrgWyvernGem>(), 5, 1, 1));
                     int[] TwinsThreeSlotArray = MHLists.ThreeSlotDecorations.ToArray();
-                    loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, TwinsThreeSlotArray)); break;
+                    loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(2, 1, TwinsThreeSlotArray)); break;
                 case ItemID.DestroyerBossBag:
                     loot.Add(new CommonDrop(ModContent.ItemType<HeavyArmorSphere>(), 1, 3, 5));
                     loot.Add(new CommonDrop(ModContent.ItemType<InfernoSac>(), 1, 1, 3));
@@ -105,7 +105,7 @@ namespace MHArmorSkills.Global
                     loot.Add(new CommonDrop(ModContent.ItemType<LrgBeastGem>(), 2, 1, 3));
                     loot.Add(new CommonDrop(ModContent.ItemType<LrgWyvernGem>(), 5, 1, 1));
                     int[] DThreeSlotArray = MHLists.ThreeSlotDecorations.ToArray();
-                    loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, DThreeSlotArray)); break;
+                    loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(2, 1, DThreeSlotArray)); break;
                 case ItemID.SkeletronPrimeBossBag:
                     loot.Add(new CommonDrop(ModContent.ItemType<HeavyArmorSphere>(), 1, 3, 5));
                     loot.Add(new CommonDrop(ModContent.ItemType<InfernoSac>(), 1, 1, 3));
@@ -113,21 +113,22 @@ namespace MHArmorSkills.Global
                     loot.Add(new CommonDrop(ModContent.ItemType<FeyWyvernGem>(), 2, 1, 1));
                     loot.Add(new CommonDrop(ModContent.ItemType<LrgWyvernGem>(), 5, 1, 1));
                     int[] SPThreeSlotArray = MHLists.ThreeSlotDecorations.ToArray();
-                    loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, SPThreeSlotArray)); break;
+                    loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(2, 1, SPThreeSlotArray)); break;
                 case ItemID.PlanteraBossBag:
                     loot.Add(new CommonDrop(ModContent.ItemType<HeavyArmorSphere>(), 2, 3, 5));
                     loot.Add(new CommonDrop(ModContent.ItemType<KingArmorSphere>(), 1, 3, 5));
                     loot.Add(new CommonDrop(ModContent.ItemType<TorrentSac>(), 1, 2, 3));
                     loot.Add(new CommonDrop(ModContent.ItemType<QueenSubstance>(), 1, 2, 3));
                     int[] PThreeSlotArray = MHLists.ThreeSlotDecorations.ToArray();
-                    loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, PThreeSlotArray)); break;
+                    loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 1, PThreeSlotArray)); break;
                 case ItemID.GolemBossBag:
                     loot.Add(new CommonDrop(ModContent.ItemType<KingArmorSphere>(), 1, 3, 5));
                     loot.Add(new CommonDrop(ModContent.ItemType<GlowingSlime>(), 1, 3, 5));
                     loot.Add(new CommonDrop(ModContent.ItemType<DeathlyShocker>(), 3, 1, 3));
                     loot.Add(new CommonDrop(ModContent.ItemType<EbonShell>(), 3, 2, 3));
                     int[] GThreeSlotArray = MHLists.ThreeSlotDecorations.ToArray();
-                    loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, GThreeSlotArray)); break;
+                    loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 1, GThreeSlotArray));
+                        loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(3, 1, GThreeSlotArray)); break;
                 case ItemID.FairyQueenBossBag:
                     loot.Add(new CommonDrop(ModContent.ItemType<KingArmorSphere>(), 1, 3, 5));
                     loot.Add(new CommonDrop(ModContent.ItemType<TrueArmorSphere>(), 2, 3, 5));
@@ -135,6 +136,7 @@ namespace MHArmorSkills.Global
                     loot.Add(new CommonDrop(ModContent.ItemType<BoltScale>(), 2, 1, 3));
                     loot.Add(new CommonDrop(ModContent.ItemType<GammothIceOrb>(), 5, 1, 1));
                     int[] EoLThreeSlotArray = MHLists.ThreeSlotDecorations.ToArray();
+                    loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(3, 1, EoLThreeSlotArray));
                     loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, EoLThreeSlotArray)); break;
                 case ItemID.FishronBossBag:
                     loot.Add(new CommonDrop(ModContent.ItemType<KingArmorSphere>(), 1, 3, 5));
@@ -143,6 +145,7 @@ namespace MHArmorSkills.Global
                     loot.Add(new CommonDrop(ModContent.ItemType<DistilledBubblefoam>(), 2, 1, 3));
                     loot.Add(new CommonDrop(ModContent.ItemType<MizutsuneWaterOrb>(), 5, 1, 1));
                     int[] FThreeSlotArray = MHLists.ThreeSlotDecorations.ToArray();
+                    loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(3, 1, FThreeSlotArray));
                     loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, FThreeSlotArray)); break;
                 case ItemID.BossBagBetsy:
                     loot.Add(new CommonDrop(ModContent.ItemType<KingArmorSphere>(), 1, 3, 5));
@@ -151,16 +154,20 @@ namespace MHArmorSkills.Global
                     loot.Add(new CommonDrop(ModContent.ItemType<FlamingShard>(), 2, 1, 3));
                     loot.Add(new CommonDrop(ModContent.ItemType<RathalosRuby>(), 5, 1, 1));
                     int[] BThreeSlotArray = MHLists.ThreeSlotDecorations.ToArray();
+                    loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(3, 1, BThreeSlotArray));
                     loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, BThreeSlotArray)); break;
                 case ItemID.CultistBossBag:
                     loot.Add(new CommonDrop(ModContent.ItemType<TrueArmorSphere>(), 1, 5, 10));
                     loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 5, ModContent.ItemType<RathalosRuby>(), ModContent.ItemType<GammothIceOrb>(), ModContent.ItemType<ZinogreJasper>(), ModContent.ItemType<MizutsuneWaterOrb>()));
                     int[] CThreeSlotArray = MHLists.ThreeSlotDecorations.ToArray();
+                    loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(3, 1, CThreeSlotArray));
                     loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, CThreeSlotArray)); break;
 
                 case ItemID.MoonLordBossBag:
                     loot.Add(new CommonDrop(ModContent.ItemType<TrueArmorSphere>(), 1, 10, 15));
                     int[] MLThreeSlotArray = MHLists.ThreeSlotDecorations.ToArray();
+                    loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(3, 1, MLThreeSlotArray));
+                    loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(2, 1, MLThreeSlotArray));
                     loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, MLThreeSlotArray)); break;
 
                     #endregion

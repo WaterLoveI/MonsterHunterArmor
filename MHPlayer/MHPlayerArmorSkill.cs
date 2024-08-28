@@ -22,7 +22,6 @@ namespace MHArmorSkills.MHPlayer
     {
         #region Skills
         public bool AquaMobility;
-        public bool Berserk;
         public bool BlightImmune;
         public bool BlightSpeedup;
         public bool CRangePlus;
@@ -61,8 +60,6 @@ namespace MHArmorSkills.MHPlayer
         public int ArtilleryBuff;
         public int aSlidingCrit;
         public int aSlidingTimer;
-        public int BerserkDot;
-        public int BerserkRegen;
         public int BladeHoneScale;
         public int Bloodlust;
         public int BloodlustCount;
@@ -85,6 +82,7 @@ namespace MHArmorSkills.MHPlayer
         public int DefianceDef;
         public int DefianceCooldown;
         public int Diversion;
+        public float DeadeyeDamage;
         public int Elemental;
         public int Embolden;
         public int EmboldenAggro;
@@ -119,9 +117,10 @@ namespace MHArmorSkills.MHPlayer
         public int LastingPower;
         public int LatentPowerAffinity;
         public int LatentPowerCounter;
-        public int MailofHellfire;
         public int MastersTouch;
         public int MastersTouchCooldown;
+        public int MaxMightTimer;
+        public int MaxMightCrit;
         public int Mushroomancer;
         public int NegCrit;
         public int NormalBuff;
@@ -174,9 +173,8 @@ namespace MHArmorSkills.MHPlayer
             AdrenalineRush = 0;
             AquaMobility = false;
             ArtilleryBuff = 0;
+            DeadeyeDamage = 0f;
             aSlidingCrit = 0;
-            Berserk = false;
-            BerserkRegen = 0;
             BladeHoneScale = 0;
             BlightImmune = false;
             BlightSpeedup = false;
@@ -242,7 +240,7 @@ namespace MHArmorSkills.MHPlayer
             LatentPowerAffinity = 0;
             LatentPowerHostile = false;
             LatentPowerManaCost = 0;
-            MailofHellfire = 0;
+            MaxMightCrit = 0;
             MastersTouch = 0;
             Mushroomancer = 0;
             NegCrit = 0;
@@ -345,26 +343,6 @@ namespace MHArmorSkills.MHPlayer
                 CoalescenceCount = Debuffcount;
             }
             #endregion
-            #region Quick Breath
-            if (qBreathHeal && PlayerInput.Triggers.Current.MouseRight)
-            {
-                bool hasDebuff = false;
-                foreach (int debuff in MHLists.debuffList)
-                {
-                    if (Player.HasBuff(debuff))
-                    {
-                        hasDebuff = true;
-                        break;
-                    }
-                }
-                if (hasDebuff)
-                {
-                    int DebuffHeal = Debuffcount * 20;
-                    Player.Heal(DebuffHeal);
-                    SoundEngine.PlaySound(SoundID.Item4);
-                }
-            }
-            #endregion
             #region Defiance
             if (DefianceCooldown > 0)
             {
@@ -375,12 +353,6 @@ namespace MHArmorSkills.MHPlayer
             if (BloodRiteTimer > 0)
             {
                 BloodRiteTimer--;
-            }
-            #endregion
-            #region Berserk
-            if (BerserkDot >= 0 && Main.rand.NextBool(3))
-            {
-                BerserkDot--;
             }
             #endregion
             #region Masters Touch
@@ -503,18 +475,21 @@ namespace MHArmorSkills.MHPlayer
                 EvadeDodgeCD--;
             }
             #endregion
+            #region Maximum Might
+            if (!Player.controlDown && !Player.controlLeft && !Player.controlRight && !Player.controlUp && MaxMightCrit > 0)
+            {
+                MaxMightTimer++;
+            }
+            else
+            {
+                MaxMightTimer = 0;
+            }
+            #endregion
         }
 
         public override void PostUpdateMiscEffects()
         {
-            #region Mail of Hellfire
-            if (MailofHellfire >= 1)
-            {
-                ControlledAttack += (MailofHellfire);
-                Player.statDefense /= 2;
-                Player.endurance /= 2;
-            }
-            #endregion
+            ArmorSkills modPlayer = Player.GetModPlayer<ArmorSkills>();
             #region Resentment/Strife
             if (Player.HasBuff(BuffID.PotionSickness))
             {
@@ -648,6 +623,23 @@ namespace MHArmorSkills.MHPlayer
                 ControlledCrit += CDraw;
             }
             #endregion
+            #region BBQ Expert
+            if (modPlayer.BBQExpert >= 2)
+            {
+                if (Player.HasBuff(BuffID.WellFed))
+                {
+                    Player.statLifeMax2 += 10;
+                }
+                if (Player.HasBuff(BuffID.WellFed2))
+                {
+                    Player.statLifeMax2 += 20;
+                }
+                if (Player.HasBuff(BuffID.WellFed3))
+                {
+                    Player.statLifeMax2 += 30;
+                }
+            }
+            #endregion
             #region Fortified
             if (Player.HasBuff(ModContent.BuffType<Fortified>()))
             {
@@ -774,26 +766,6 @@ namespace MHArmorSkills.MHPlayer
                 ControlledAttack += Coalescence;
             }
 
-            #endregion
-            #region Quick Breath
-            if (qBreathClear && PlayerInput.Triggers.Current.MouseRight)
-            {
-                bool hasDebuff = false;
-                foreach (int debuff in MHLists.debuffList)
-                {
-                    if (Player.HasBuff(debuff))
-                    {
-                        hasDebuff = true;
-                        break;
-                    }
-                }
-                if (hasDebuff)
-                {
-                    foreach (int debuff in MHLists.debuffList)
-                        Player.buffImmune[debuff] = true;
-                    SoundEngine.PlaySound(SoundID.Item4);
-                }
-            }
             #endregion
             #region Blight Immune
             if (BlightImmune || Defiance >= 3)
@@ -943,6 +915,34 @@ namespace MHArmorSkills.MHPlayer
                     }
                 }
             }
+            #endregion
+            #region
+            if (MaxMightTimer >= 120)
+            {
+
+                if (!Player.HasBuff(ModContent.BuffType<MaximumMight>()))
+                {
+                    Player.AddBuff(ModContent.BuffType<MaximumMight>(), 20 * 60);
+                    for (int i = 0; i < 5; i++)
+                    {
+                        int d = Dust.NewDust(Player.position, Player.width, Player.height, DustID.SpookyWood, 0, 0, 100, Color.Blue, 0.7f);
+                        Main.dust[d].noGravity = true;
+                        Main.dust[d].noLight = false;
+                        Main.dust[d].fadeIn = 1f;
+                        Main.dust[d].velocity *= 0.6f;
+                    }
+                }
+
+
+            }
+            if (Player.HasBuff(ModContent.BuffType<MaximumMight>()))
+            {
+                ControlledCrit += MaxMightCrit;
+                Player.manaSickTime =150;
+                Player.manaSickTimeMax = 300;
+
+            }
+
             #endregion
             #region NPC Check
             int hostileNPCs = 0;
@@ -1505,12 +1505,6 @@ namespace MHArmorSkills.MHPlayer
 
             }
             #endregion
-            #region Berserk
-            if (Berserk)
-            {
-                modifiers.FinalDamage *= 0.25f;
-            }
-            #endregion
             #region Element
             if (FireRes >= 1 && MHLists.fireresList.Contains(npc.type))
             {
@@ -1645,24 +1639,28 @@ namespace MHArmorSkills.MHPlayer
                 #endregion
             }
             #endregion
-
-        }
-        public override void ModifyHitNPCWithItem(Item item, NPC target, ref NPC.HitModifiers modifiers)
-        {
             #region Dead Eye
             if (DeadEye > 0)
             {
                 float DistanceInterpolant = Utils.GetLerpValue(300f, 800f, target.Distance(Main.player[Main.myPlayer].Center), true);
-                if (item.CountsAsClass<RangedDamageClass>())
+                float rangedBoost = MathHelper.Lerp(0f, DeadEye, DistanceInterpolant);
+                DeadeyeDamage = rangedBoost;
+                if (rangedBoost > 0f)
                 {
-                    float rangedBoost = MathHelper.Lerp(0f, DeadEye, DistanceInterpolant);
-                    modifiers.SourceDamage += rangedBoost;
+                    Player.AddBuff(ModContent.BuffType<DeadEye>(), 60);
+                }
+                if (rangedBoost < 0f)
+                {
+                    Player.ClearBuff(ModContent.BuffType<DeadEye>());
+                }
+                if (proj.CountsAsClass<RangedDamageClass>())
+                {
+                    modifiers.SourceDamage += rangedBoost;                    
                 }
             }
             #endregion
 
         }
-
         public override void OnHitByNPC(NPC npc, Terraria.Player.HurtInfo hurtInfo)
         {
             base.OnHitByNPC(npc, hurtInfo);
@@ -1688,12 +1686,6 @@ namespace MHArmorSkills.MHPlayer
             if (CounterStrike >= 1)
             {
                 Player.AddBuff(ModContent.BuffType<CounterStrike>(), 10 * 60);
-            }
-            #endregion
-            #region Berserk
-            if (Berserk)
-            {
-                BerserkDot += 35;
             }
             #endregion
             #region Honey Hunter
@@ -2059,18 +2051,6 @@ namespace MHArmorSkills.MHPlayer
                     if (shouldHalveDuration)
                         --Player.buffTime[l];
                 }
-            }
-            #endregion
-            #region Berserk
-            if (Berserk)
-            {
-                if (Player.lifeRegen >= -1)
-                    Player.lifeRegen = BerserkRegen - BerserkDot;
-
-                Player.lifeRegenTime = 0;
-
-                if (Player.lifeRegenCount > 0)
-                    Player.lifeRegenCount = -100;
             }
             #endregion
         }

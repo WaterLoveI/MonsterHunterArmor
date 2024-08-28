@@ -25,6 +25,7 @@ namespace MHArmorSkills.MHPlayer
         public int Artillery;
         public int Attack;
         public int AutoTracker;
+        public int BBQExpert;
         public int Berserk;
         public int BladeScaleHone;
         public int BlightProof;
@@ -48,6 +49,7 @@ namespace MHArmorSkills.MHPlayer
         public int DefenseBoost;
         public int Defiance;
         public int DefLock;
+        public int Dereliction;
         public int Diversion;
         public int DragonSpirit;
         public int EdgeLore;
@@ -70,6 +72,7 @@ namespace MHArmorSkills.MHPlayer
         public int FreeMeal;
         public int FrostCraft;
         public int Fury;
+        public int Furious;
         public int Gathering;
         public int Geologist;
         public int Gluttony;
@@ -93,10 +96,12 @@ namespace MHArmorSkills.MHPlayer
         public int LatentPower;
         public int MailofHellfire;
         public int MastersTouch;
+        public int MaximumMight;
         public int Mushroomancer;
         public int NegativeCrit;
         public int NormalUp;
         public int OffensiveGuard;
+        public int OutdoorsMan;
         public int PelletUp;
         public int PierceUp;
         public int PolarHunter;
@@ -112,6 +117,7 @@ namespace MHArmorSkills.MHPlayer
         public int RazorSharp;
         public int RecoveryUp;
         public int RecSpeed;
+        public int Redirection;
         public int Resentment;
         public int resuscitate;
         public int Scholar;
@@ -126,6 +132,7 @@ namespace MHArmorSkills.MHPlayer
         public int StamRec;
         public int StatusTrigger;
         public int Strife;
+        public int SurvivalExpert;
         public int TeamLeader;
         public int Tenderizer;
         public int TeostraBlessing;
@@ -156,6 +163,7 @@ namespace MHArmorSkills.MHPlayer
             Attack = 0;
             Autoreload = false;
             AutoTracker = 0;
+            BBQExpert = 0;
             Berserk = 0;
             BladeScaleHone = 0;
             BlightProof = 0;
@@ -180,6 +188,7 @@ namespace MHArmorSkills.MHPlayer
             DefenseBoost = 0;
             Defiance = 0;
             DefLock = 0;
+            Dereliction = 0;
             Diversion = 0;
             DragonSpirit = 0;
             EdgeLore = 0;
@@ -200,6 +209,7 @@ namespace MHArmorSkills.MHPlayer
             FreeMeal = 0;
             FrostCraft = 0;
             Fury = 0;
+            Furious = 0;
             Gathering = 0;
             Geologist = 0;
             Gluttony = 0;
@@ -223,10 +233,12 @@ namespace MHArmorSkills.MHPlayer
             LastingPower = 0;
             LatentPower = 0;
             MailofHellfire = 0;
+            MaximumMight = 0;
             Mushroomancer = 0;
             NegativeCrit = 0;
             NormalUp = 0;
             OffensiveGuard = 0;
+            OutdoorsMan = 0;
             PelletUp = 0;
             PierceUp = 0;
             PoisonCPlus = false;
@@ -243,6 +255,7 @@ namespace MHArmorSkills.MHPlayer
             RazorSharp = 0;
             RecoveryUp = 0;
             RecSpeed = 0;
+            Redirection = 0;
             Resentment = 0;
             resuscitate = 0;
             RockSteady = false;
@@ -259,6 +272,7 @@ namespace MHArmorSkills.MHPlayer
             StamRec = 0;
             StatusTrigger = 0;
             Strife = 0;
+            SurvivalExpert = 0;
             TeamLeader = 0;
             TeostraBlessing = 0;
             Tenderizer = 0;
@@ -283,6 +297,7 @@ namespace MHArmorSkills.MHPlayer
         public override void UpdateEquips()
         {
             MHPlayerArmorSkill modPlayer = Player.GetModPlayer<MHPlayerArmorSkill>();
+            ScrollSwapPlayer ScrollPlayer = Player.GetModPlayer<ScrollSwapPlayer>();
             #region Essence
             if (ZinogreEssence >= 3)
             {
@@ -430,16 +445,11 @@ namespace MHArmorSkills.MHPlayer
             #region Berserk
             if (Berserk >= 1)
             {
-                Player.AddBuff(ModContent.BuffType<Beserk>(), 2);
-                if (Berserk >= 1)
-                {
-                    modPlayer.Berserk = true;
-                    modPlayer.BerserkRegen = -3;
-
-                }
+                ScrollPlayer.ScrollActive = true;
+                ScrollPlayer.BerserkRegen = -5;
                 if (Berserk >= 2)
                 {
-                    modPlayer.BerserkRegen = 0;
+                    ScrollPlayer.BerserkRegen = -3;
                 }
             }
             #endregion
@@ -878,6 +888,21 @@ namespace MHArmorSkills.MHPlayer
                 }
             }
             #endregion
+            #region Dereliction
+            if (Dereliction >= 1)
+            {
+                ScrollPlayer.ScrollActive = true;
+                ScrollPlayer.DerelictionBoost += 3;
+                if (Dereliction >= 2)
+                {
+                    ScrollPlayer.DerelictionBoost += 1;
+                }
+                if (Dereliction >= 3)
+                {
+                    ScrollPlayer.DerelictionBoost += 1;
+                }
+            }
+            #endregion
             #region Diversion
             if (Diversion >= 1)
             {
@@ -1197,6 +1222,21 @@ namespace MHArmorSkills.MHPlayer
                 if (FreeMeal >= 3)
                 {
                     modPlayer.FreeMeal -= 1;
+                }
+            }
+            #endregion
+            #region Furious
+            if (Furious >= 1)
+            {
+                ScrollPlayer.ScrollActive = true;
+                ScrollPlayer.FuriousDef += 5;
+                if (Furious >= 2)
+                {
+                    ScrollPlayer.FuriousDef += 5;
+                }
+                if (Furious >= 3)
+                {
+                    ScrollPlayer.FuriousDef += 5;
                 }
             }
             #endregion
@@ -1608,17 +1648,24 @@ namespace MHArmorSkills.MHPlayer
             #region Mail of Hellfire
             if (MailofHellfire >= 1)
             {
-                if (MailofHellfire >= 1)
-                {
-                    modPlayer.MailofHellfire += 10;
-                }
+                ScrollPlayer.ScrollActive = true;
+                ScrollPlayer.MailofHellfireMelee += 0.2f;
+                ScrollPlayer.MailofHellfireDefDrop += 3;
+                ScrollPlayer.MailofHellfireShoot += 0.05f;
+                ScrollPlayer.MailofHellfireEndurance += 0.1f;
                 if (MailofHellfire >= 2)
                 {
-                    modPlayer.MailofHellfire += 5;
+                    ScrollPlayer.MailofHellfireMelee += 0.2f;
+                    ScrollPlayer.MailofHellfireDefDrop += 2;
+                    ScrollPlayer.MailofHellfireShoot += 0.05f;
+                    ScrollPlayer.MailofHellfireEndurance += 0.1f;
                 }
                 if (MailofHellfire >= 3)
                 {
-                    modPlayer.MailofHellfire += 5;
+                    ScrollPlayer.MailofHellfireMelee += 0.2f;
+                    ScrollPlayer.MailofHellfireDefDrop += 2;
+                    ScrollPlayer.MailofHellfireShoot += 0.05f;
+                    ScrollPlayer.MailofHellfireEndurance += 0.1f;
                 }
             }
             #endregion
@@ -1633,6 +1680,22 @@ namespace MHArmorSkills.MHPlayer
                 if (MastersTouch >= 3)
                 {
                     modPlayer.MastersTouch -= 1;
+                }
+            }
+            #endregion
+            #region Maximum Might
+            if (MaximumMight >= 1)
+            {
+                modPlayer.MaxMightCrit += 10;
+                if (MaximumMight >= 2)
+                {
+                    modPlayer.MaxMightCrit += 10;
+
+                }
+                if (MaximumMight >= 3)
+                {
+                    modPlayer.MaxMightCrit += 10;
+
                 }
             }
             #endregion
@@ -1839,14 +1902,7 @@ namespace MHArmorSkills.MHPlayer
             #region Quick Breath
             if (QuickBreath >= 1)
             {
-                if (QuickBreath >= 1)
-                {
-                    modPlayer.qBreathClear = true;
-                }
-                if (QuickBreath >= 2)
-                {
-                    modPlayer.qBreathHeal = true;
-                }
+                ScrollPlayer.ScrollActive = true;
             }
             #endregion
             #region Quick Gather
@@ -1951,6 +2007,14 @@ namespace MHArmorSkills.MHPlayer
                 {
                     modPlayer.RecoverySpeed += 1;
                 }
+            }
+            #endregion
+            #region Redirection
+            if (Redirection >= 1)
+            {
+                ScrollPlayer.ScrollActive = true;
+
+                
             }
             #endregion
             #region Resentment

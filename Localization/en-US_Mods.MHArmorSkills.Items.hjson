@@ -306,3 +306,8 @@ HermitaurBanner: {
 	DisplayName: Hermitaur Banner
 	Tooltip: ""
 }
+
+Dereliction1: {
+	DisplayName: Dereliction1
+	Tooltip: ""
+}

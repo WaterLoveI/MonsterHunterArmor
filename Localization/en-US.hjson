@@ -22,6 +22,7 @@ Mods: {
 			AttackBoost: Increases the Attack Boost Skill by {0}
 			AutoTracker: Increases the Auto Tracker Skill by {0}
 			AutoReload: Activates the Auto Reload Skill
+			BBQExpert: Increases the BBQ Expert Skill by {0}
 			Berserk: Increases the Berserk Skill by {0}
 			BladehoneScale: Increases the Bladehone Scale Skill by {0}
 			Bleeding: Activates the Bleeding Resistance Skill
@@ -60,6 +61,7 @@ Mods: {
 			Foray: Increases the Foray Skill by {0}
 			Fortified: Increases the Fortified Skill by {0}
 			FreeMeal: Increases the Free Meal Skill by {0}
+			Furious: Increases the Furious Skill by {0}
 			Gathering: Increases the Gathering Skill by {0}
 			Geologist: Increases the Geologist Skill by {0}
 			Gluttony: Increases the Gluttony Skill by {0}
@@ -83,10 +85,12 @@ Mods: {
 			LatentPower: Increases the Latent Power Skill by {0}
 			MailOfHellfire: Increases the Mail of Hellfire Skill by {0}
 			MastersTouch: Increases the Master's Touch Skill by {0}
+			MaximumMight: Increases the Maximum Might Skill by {0}
 			Mushroomancer: Increases the Mushroomancer Skill by {0}
 			NegativeCrit: Increases the Negative Critical Bonus Skill by {0}
 			NormalUp: Increases the Normal Up Skill by {0}
 			OffensiveGuard: Increases the Offensive Guard Skill by {0}
+			Outdoorsman: Increases the Outdoorsman Skill by {0}
 			PelletUp: Increases the Pellet Up Skill by {0}
 			PierceUp: Increases the Pierce Up Skill by {0}
 			Poison: Increases the Poison Resistance Skill by {0}
@@ -95,6 +99,7 @@ Mods: {
 			Protection: Increases the Protection Skill by {0}
 			ProtectivePolish: Increases the Protective Polish Skill by {0}
 			PunishDraw: Increases the Punish Draw Skill by {0}
+			QuickBreath: Increases the Quick Breath Skill by {0}
 			QuickGathering: Increases the Quick Gathering Skill by {0}
 			QuickSharpening: Increases the Quick Sharpening Skill by {0}
 			QuickSheath: Increases the Quick Sheath Skill by {0}
@@ -102,6 +107,7 @@ Mods: {
 			RazorSharp: Increases the Razor Sharp Skill by {0}
 			RecUp: Increases the Rec Up Skill by {0}
 			RecoverySpd: Increases the Recovery Speed Skill by {0}
+			Redirection: Increases the Redirection Skill by {0}
 			Resentment: Increases the Resentment Skill by {0}
 			Resuscitate: Increases the Resuscitate Skill by {0}
 			RockSteady: Activates the Rock Steady Skill
@@ -117,6 +123,7 @@ Mods: {
 			StamRecovery: Increases the Stamina Recovery Skill by {0}
 			StatusTrigger: Increases the Status Trigger Skill by {0}
 			Strife: Increases the Strife Skill by {0}
+			SurvivalExpert: Increases the Survival Expert Skill by {0}
 			Tenderizer: Increases the Tenderizer Skill by {0}
 			TeostraBlessing: Increases the Teostra Blessing Skill by {0}
 			ThunderAttack: Increases the Thunder Attack Skill by {0}
@@ -4002,34 +4009,149 @@ Mods: {
 					'''
 			}
 
-			ThunderBugsBanner: {
-				DisplayName: Thunder Bugs Banner
-				Tooltip: ""
+			Outdoorsman1: {
+				DisplayName: Outdoorsman Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Outdoorsman}
+					{$CommonItemTooltip.Vanity}
+
+					'''
 			}
 
-			BnahabraBlueBanner: {
-				DisplayName: Bnahabra Blue Banner
-				Tooltip: ""
+			Outdoorsman3: {
+				DisplayName: Outdoorsman Decoration 3
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Outdoorsman}
+					{$CommonItemTooltip.Vanity}
+
+					'''
 			}
 
-			BnahabraBrownBanner: {
-				DisplayName: Bnahabra Brown Banner
-				Tooltip: ""
+			MaximumMight1: {
+				DisplayName: Maximum Might Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.MaximumMight}
+					{$CommonItemTooltip.Vanity}
+
+					'''
 			}
 
-			BnahabraGreenBanner: {
-				DisplayName: Bnahabra Green Banner
-				Tooltip: ""
+			MaximumMight2: {
+				DisplayName: Maximum Might Decoration 2
+				Tooltip:
+					'''
+					{$CommonItemTooltip.MaximumMight}
+					{$CommonItemTooltip.Vanity}
+
+					'''
 			}
 
-			BnahabraRedBanner: {
-				DisplayName: Bnahabra Red Banner
-				Tooltip: ""
+			BBQExpert1: {
+				DisplayName: BBQ Expert Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.BBQExpert}
+					{$CommonItemTooltip.Vanity}
+
+					'''
 			}
 
-			DelexBanner: {
-				DisplayName: Delex Banner
+			BBQExpert2: {
+				DisplayName: BBQ Expert Decoration 2
+				Tooltip:
+					'''
+					{$CommonItemTooltip.BBQExpert}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			SurvivalExpert1: {
+				DisplayName: Survival Expert Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.SurvivalExpert}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			SurvivalExpert2: {
+				DisplayName: Survival Expert Decoration 2
+				Tooltip:
+					'''
+					{$CommonItemTooltip.SurvivalExpert}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			MailofHellfire1: {
+				DisplayName: Mail of Hellfire Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.MailOfHellfire}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			Redirection1: {
+				DisplayName: Redirection Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Redirection}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			QuickBreath1: {
+				DisplayName: Quick Breath Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.QuickBreath}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			Redirection2: {
+				DisplayName: Redirection Decoration 2
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Redirection}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			Furious1: {
+				DisplayName: Furious Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Furious}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			Berserk1: {
+				DisplayName: Berserk Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Berserk}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			RemobraBanner: {
 				Tooltip: ""
+				DisplayName: Remobra Banner
 			}
 
 			HornetaurBanner: {
@@ -4037,10 +4159,42 @@ Mods: {
 				DisplayName: Hornetaur Banner
 			}
 
-			RemobraBanner: {
-				DisplayName: Remobra Banner
+			DelexBanner: {
+				Tooltip: ""
+				DisplayName: Delex Banner
+			}
+
+			BnahabraRedBanner: {
+				Tooltip: ""
+				DisplayName: Bnahabra Red Banner
+			}
+
+			BnahabraGreenBanner: {
+				Tooltip: ""
+				DisplayName: Bnahabra Green Banner
+			}
+
+			BnahabraBrownBanner: {
+				Tooltip: ""
+				DisplayName: Bnahabra Brown Banner
+			}
+
+			BnahabraBlueBanner: {
+				Tooltip: ""
+				DisplayName: Bnahabra Blue Banner
+			}
+
+			ThunderBugsBanner: {
+				DisplayName: Thunder Bugs Banner
 				Tooltip: ""
 			}
+		}
+
+		"Keybinds.Scroll Swap.DisplayName": Scroll  Swap
+
+		DeathMessage: {
+			BlastBlight: "{0} was blown to bits."
+			Berserk: "{0} went berserk."
 		}
 	}
 }
