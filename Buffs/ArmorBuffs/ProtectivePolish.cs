@@ -6,9 +6,8 @@ using Terraria.Localization;
 
 namespace MHArmorSkills.Buffs.ArmorBuffs
 {
-    public class CritDraw : ModBuff
+    public class ProtectivePolish : ModBuff
     {
-        
         public override void SetStaticDefaults()
         {
             
@@ -17,9 +16,10 @@ namespace MHArmorSkills.Buffs.ArmorBuffs
         }
         public override void ModifyBuffText(ref string buffName, ref string tip, ref int rare)
         {
-            buffName = $"Critical Draw Level: {Main.LocalPlayer.GetModPlayer<ArmorSkills>().CritDraw} ";
-            tip = $"Increase critical strike chance by {Main.LocalPlayer.GetModPlayer<MHPlayerArmorSkill>().CritDraw}%";
+            buffName = $"Protective Polish Level: {Main.LocalPlayer.GetModPlayer<ArmorSkills>().ProtectivePolish} ";
+            tip = $"Prevents sharpness from being lost";
         }
     }
 }
+
 

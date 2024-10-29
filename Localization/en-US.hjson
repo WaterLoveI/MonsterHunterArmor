@@ -20,12 +20,14 @@ Mods: {
 			AquaticMobility: Increases the Aquatic Mobility Skill by {0}
 			Artillery: Increases the Artillery Skill by {0}
 			AttackBoost: Increases the Attack Boost Skill by {0}
+			AutoGuard: Activates the Auto-Guard Skill
 			AutoTracker: Increases the Auto Tracker Skill by {0}
 			AutoReload: Activates the Auto Reload Skill
 			BBQExpert: Increases the BBQ Expert Skill by {0}
 			Berserk: Increases the Berserk Skill by {0}
 			BladehoneScale: Increases the Bladehone Scale Skill by {0}
 			Bleeding: Activates the Bleeding Resistance Skill
+			BlastResist: Activates the Blast Resistance Skill
 			Blightproof: Increases the Blight Resistance Skill by {0}
 			Bloodlust: Increases the Bloodlust Skill by {0}
 			BloodRite: Increases the Blood Rite Skill by {0}
@@ -48,6 +50,7 @@ Mods: {
 			DefenseBoost: Increases the Defense Boost Skill by {0}
 			Defiance: Increases the Defiance Skill by {0}
 			DefLock: Increases the Defense Lock Skill by {0}
+			Dereliction: Increases the Dereliction Skill by {0}
 			Diversion: Increases the Diversion Skill by {0}
 			Elemental: Increases the Elemental Damage Skill by {0}
 			Embolden: Increases the Embolden Skill by {0}
@@ -96,6 +99,7 @@ Mods: {
 			Poison: Increases the Poison Resistance Skill by {0}
 			PoisonCoatingPlus: Activates the Poison Coating Plus Skill
 			PolarHunter: Increases the Polar Hunter Skill by {0}
+			PowerProlonger: Increases the Power Prolonger Skill by {0}
 			Protection: Increases the Protection Skill by {0}
 			ProtectivePolish: Increases the Protective Polish Skill by {0}
 			PunishDraw: Increases the Punish Draw Skill by {0}
@@ -139,6 +143,133 @@ Mods: {
 			OneSlotNoNumber: "[○]"
 			TwoSlotNoNumber: "[○][○]"
 			ThreeSlotNoNumber: "[○][○][○]"
+			# this is for localisation for vanilla armors.
+			
+			VanillaAffinitySliding: Increases the Affinity Sliding Skill by
+			VanillaAdrenalineRush: Increases the Adrenaline Rush Skill by
+			VanillaAquaticMobility: Increases the Aquatic Mobility Skill by
+			VanillaArtillery: Increases the Artillery Skill by
+			VanillaAttackBoost: Increases the Attack Boost Skill by
+			VanillaAutoTracker: Increases the Auto Tracker Skill by
+			VanillaAutoReload: Activates the Auto Reload Skill
+			VanillaBBQExpert: Increases the BBQ Expert Skill by
+			VanillaBerserk: Increases the Berserk Skill by
+			VanillaBladehoneScale: Increases the Bladehone Scale Skill by
+			VanillaBleeding: Activates the Bleeding Resistance Skill
+			VanillaBlightproof: Increases the Blight Resistance Skill by
+			VanillaBloodlust: Increases the Bloodlust Skill by
+			VanillaBloodRite: Increases the Blood Rite Skill by
+			VanillaBombBoost: Increases the Bomb Boost Skill by
+			VanillaBubbleDance: Increases the Bubble Dance Skill by
+			VanillaCarving: Increases the Carving Skill by
+			VanillaChallengeSheath: Increases the Challenge Sheath Skill by
+			VanillaChameleosBlessing: Increases the Chameleos Blessing Skill by
+			VanillaCliffHanger: Increases the Cliff Hanger Skill by
+			VanillaCoalescence: Increases the Coalescence Skill by
+			VanillaColdRes: Increases the Cold Resistance Skill by
+			VanillaConstitution: Increases the Constitution Skill by
+			VanillaCounterStrike: Increases the Counter Strike Skill by
+			VanillaCRangePlus: Activates the Close Range Plus Skill by
+			VanillaCritDraw: Increases the Critical Draw Skill by
+			VanillaCritElement: Increases the Critical Element Skill by
+			VanillaCritEye: Increases the Critical Eye Skill by
+			VanillaCriticalBoost: Increases the Critical Boost Skill by
+			VanillaDeadEye: Increases the Dead Eye Skill by
+			VanillaDefenseBoost: Increases the Defense Boost Skill by
+			VanillaDefiance: Increases the Defiance Skill by
+			VanillaDefLock: Increases the Defense Lock Skill by
+			VanillaDereliction: Increases the Dereliction Skill by
+			VanillaDiversion: Increases the Diversion Skill by
+			VanillaElemental: Increases the Elemental Damage Skill by
+			VanillaEmbolden: Increases the Embolden Skill by
+			VanillaEvadeDistance: Increases the Evade Distance Skill by
+			VanillaEvasion: Increases the Evasion Skill by
+			VanillaFate: Increases the Fate Skill by
+			VanillaFencing: Increases the Fencing Skill by
+			VanillaFireAttack: Increases the Fire Attack Skill by
+			VanillaFireRes: Increases the Fire Resistance Skill by
+			VanillaFishingExpert: Increases the Fishing Expert Skill by
+			VanillaForay: Increases the Foray Skill by
+			VanillaFortified: Increases the Fortified Skill by
+			VanillaFreeMeal: Increases the Free Meal Skill by
+			VanillaFurious: Increases the Furious Skill by
+			VanillaGathering: Increases the Gathering Skill by
+			VanillaGeologist: Increases the Geologist Skill by
+			VanillaGluttony: Increases the Gluttony Skill by
+			VanillaGrinder: Increases the Grinder Skill by
+			VanillaGuard: Increases the Guard Skill by
+			VanillaGuardUp: Increases the Guard Up Skill by
+			VanillaGuts: Increases the Guts Skill by
+			VanillaHandicraft: Increases the Handicraft Skill by
+			VanillaHastenRecovery: Increases the Hasten Recovery Skill by
+			VanillaHealth: Increases the Health Boost Skill by
+			VanillaHeatRes: Increases the Heat Resistance Skill by
+			VanillaHeroics: Increases the Heroics Skill by
+			VanillaHeroShield: Increases the Hero Shield Skill by
+			VanillaHoneyHunter: Increases the Honey Hunter Skill by
+			VanillaIceAttack: Increases the Ice Attack Skill by
+			VanillaIceRes: Increases the Ice Resistance Skill by
+			VanillaIntrepidHeart: Activates the Intrepid Heart Skill
+			VanillaJumpMaster: Increases the Jump Master Skill by
+			VanillaKushalaBlessing: Increases the Kushala Blessing Skill by
+			VanillaLastingPower: Increases the Lasting Power Skill by
+			VanillaLatentPower: Increases the Latent Power Skill by
+			VanillaMailOfHellfire: Increases the Mail of Hellfire Skill by
+			VanillaMastersTouch: Increases the Master's Touch Skill by
+			VanillaMaximumMight: Increases the Maximum Might Skill by
+			VanillaMushroomancer: Increases the Mushroomancer Skill by
+			VanillaNegativeCrit: Increases the Negative Critical Bonus Skill by
+			VanillaNormalUp: Increases the Normal Up Skill by
+			VanillaOffensiveGuard: Increases the Offensive Guard Skill by
+			VanillaOutdoorsman: Increases the Outdoorsman Skill by
+			VanillaPelletUp: Increases the Pellet Up Skill by
+			VanillaPierceUp: Increases the Pierce Up Skill by
+			VanillaPoison: Increases the Poison Resistance Skill by
+			VanillaPoisonCoatingPlus: Activates the Poison Coating Plus Skill
+			VanillaPolarHunter: Increases the Polar Hunter Skill by
+			VanillaPowerProlonger: Increases the Power Prolonger Skill by
+			VanillaProtection: Increases the Protection Skill by
+			VanillaProtectivePolish: Increases the Protective Polish Skill by
+			VanillaPunishDraw: Increases the Punish Draw Skill by
+			VanillaQuickBreath: Increases the Quick Breath Skill by
+			VanillaQuickGathering: Increases the Quick Gathering Skill by
+			VanillaQuickSharpening: Increases the Quick Sharpening Skill by
+			VanillaQuickSheath: Increases the Quick Sheath Skill by
+			VanillaRapidFire: Increases the Rapid Fire Skill by
+			VanillaRazorSharp: Increases the Razor Sharp Skill by
+			VanillaRecUp: Increases the Rec Up Skill by
+			VanillaRecoverySpd: Increases the Recovery Speed Skill by
+			VanillaRedirection: Increases the Redirection Skill by
+			VanillaResentment: Increases the Resentment Skill by
+			VanillaResuscitate: Increases the Resuscitate Skill by
+			VanillaRockSteady: Activates the Rock Steady Skill
+			VanillaScholar: Increases the Scholar Skill by
+			VanillaSlugger: Increases the Slugger Skill by
+			VanillaSneak: Increases the Sneak Skill by
+			VanillaSneakAttack: Increases the Sneak Attack Skill by
+			VanillaSpareShot: Increases the Spare Shot Skill by
+			VanillaSpeedEating: Increases the Speed Eating Skill by
+			VanillaSpeedSetup: Increases the Speed Setup Skill by
+			VanillaSpirit: Increases the Spirit Skill by
+			VanillaSpiritbirdsCall: Activates the Spiritbird's Call Skill
+			VanillaStamRecovery: Increases the Stamina Recovery Skill by
+			VanillaStatusTrigger: Increases the Status Trigger Skill by
+			VanillaStrife: Increases the Strife Skill by
+			VanillaSurvivalExpert: Increases the Survival Expert Skill by
+			VanillaTenderizer: Increases the Tenderizer Skill by
+			VanillaTeostraBlessing: Increases the Teostra Blessing Skill by
+			VanillaThunderAttack: Increases the Thunder Attack Skill by
+			VanillaThunderRes: Increases the Thunder Resistance Skill by
+			VanillaTremorRes: Increases the Tremor Resistance Skill by
+			VanillaTropicsHunter: Increases the Tropics Hunter Skill by
+			VanillaUnscathed: Increases the Unscathed Skill by
+			VanillaVault: Increases the Vault Skill by
+			VanillaWaterAttack: Increases the Water Attack Skill by
+			VanillaWaterRes: Increases the Water Resistance Skill by
+			VanillaWindproof: Increases the Windproof Skill by
+			VanillaOneSlotDecor: "[○]x"
+			VanillaTwoSlotDecor: "[○][○]x"
+			VanillaThreeSlotDecor: "[○][○][○]x"
 		}
 
 		Items: {
@@ -378,7 +509,7 @@ Mods: {
 				DisplayName: Seltas Helm
 				Tooltip:
 					'''
-					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.IncreaseDamage}
 					{$CommonItemTooltip.AutoTracker@1}
 					{$CommonItemTooltip.Guard@2}
 					{$CommonItemTooltip.TwoSlotDecor@3}
@@ -437,6 +568,30 @@ Mods: {
 					{$CommonItemTooltip.LastingPower@2}
 					{$CommonItemTooltip.Protection@3}
 					{$CommonItemTooltip.OneSlotDecor@4}
+					'''
+			}
+
+			KirinJacket: {
+				DisplayName: Kirin Jacket
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.IncreaseMana@1}
+					{$CommonItemTooltip.Protection@2}
+					{$CommonItemTooltip.Blightproof@3}
+					{$CommonItemTooltip.TwoSlotDecor@4}
+					'''
+			}
+
+			KirinLegGuards: {
+				DisplayName: Kirin Leg Guards
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseMovement}
+					{$CommonItemTooltip.IncreaseMana@1}
+					{$CommonItemTooltip.Blightproof@2}
+					{$CommonItemTooltip.LastingPower@3}
+					{$CommonItemTooltip.TwoSlotDecor@4}
 					'''
 			}
 
@@ -1841,7 +1996,7 @@ Mods: {
 					{$CommonItemTooltip.IncreaseCrit}
 					{$CommonItemTooltip.IncreaseMovement@1}
 					{$CommonItemTooltip.Evasion@2}
-					{$CommonItemTooltip.AdrenalineRush@3}
+					{$CommonItemTooltip.Sneak@3}
 					{$CommonItemTooltip.OneSlotDecor@4}
 					{$CommonItemTooltip.ThreeSlotDecor@5}
 					'''
@@ -4149,6 +4304,36 @@ Mods: {
 					'''
 			}
 
+			Dereliction1: {
+				DisplayName: Dereliction Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Dereliction}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			PowerProlonger1: {
+				DisplayName: Power Prolonger Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PowerProlonger}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			AutoGuard1: {
+				DisplayName: Auto-Guard Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.AutoGuard}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
 			RemobraBanner: {
 				Tooltip: ""
 				DisplayName: Remobra Banner
@@ -4188,6 +4373,11 @@ Mods: {
 				DisplayName: Thunder Bugs Banner
 				Tooltip: ""
 			}
+
+			SeltasSummon: {
+				DisplayName: Seltas Summon
+				Tooltip: ""
+			}
 		}
 
 		"Keybinds.Scroll Swap.DisplayName": Scroll  Swap
@@ -4195,6 +4385,18 @@ Mods: {
 		DeathMessage: {
 			BlastBlight: "{0} was blown to bits."
 			Berserk: "{0} went berserk."
+		}
+
+		Dialogue: {
+			Handler: {
+				BestiaryGirlDialogue: Oh, hey doodle! Do you know if {0} is free? I need to borrow her bestiary again.
+				AnglerDialogue: Oh! Doodle. {0} dropped by earlier to bother me. Again.
+				StandardDialogue1: So many monsters that I haven't seen before... Thats a lot of work ahead of me.
+				StandardDialogue2: Oh! Doodle. I don't suppose you have time for my quests? It's not urgent though.
+				StandardDialogue3: I wonder what Slimes taste like? Just have to taste it myself later. Oh. Ahem. Hey doodle, didn't notice you there.
+				StandardDialogue4: Seen any cool monsters lately? Wait, let me get my notebook before you begin.
+				StandardDialogue5: Wait, you're telling me you've crafted that weapon yourself? You're even more amazing that I thought!
+			}
 		}
 	}
 }

@@ -12,6 +12,7 @@ namespace MHArmorSkills
             ScrollSwap = KeybindLoader.RegisterKeybind(this, "Scroll Swap", "G");
             Instance = this;
             MHLists.LoadLists();
+            TooltipChanges.EditTooltips();
         }
         public override void Unload()
         {
@@ -19,6 +20,7 @@ namespace MHArmorSkills
             MHLists.UnloadLists();
             ScrollSwap = null;
             base.Unload();
+            TooltipChanges.ResetTooltips();
         }
     }
 }

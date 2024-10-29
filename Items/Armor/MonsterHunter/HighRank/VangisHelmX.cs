@@ -28,11 +28,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
             player.GetDamage<GenericDamageClass>() += 0.1f;
             player.GetCritChance<GenericDamageClass>() += 10;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.Evasion += 3;
-            modPlayer.CritEye += 3;
-            modPlayer.EvadeDistance += 3;
-            modPlayer.Unscathed += 1;
-            player.AddBuff(BuffID.Bleeding, 15 * 60);
+            modPlayer.AutoGuard = true;
+            player.AddBuff(ModContent.BuffType<FireBlight>(), 2);
         }
         
     }

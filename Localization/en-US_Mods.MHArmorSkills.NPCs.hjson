@@ -8,13 +8,13 @@ Handler: {
 	DisplayName: Guildmarm
 
 	TownNPCMood: {
-		Content: Not a bad place, got some work to do before I feel at home.
-		NoHome: No house? No problem! I'll just set up a campfire somewhere.
+		Content: This is a great place to curl up with a hot drink and a hefty tome on Brachydios. Er I mean do some cleaning. Ahem.
+		NoHome: Oh! Doodle, my legs are killing me! Do you have a place for me to rest?
 		FarFromHome: Hey doodle, one moment I was investigaing some peculiar tracks and now I've strayed a bit far from home.
-		LoveSpace: Oh this place is HUGE, plenty of space to stash my research notes and dolls... The possibilities are endless!
+		LoveSpace: Oh wow, this place is fit for a Seltas Queen. Just without the drones, not that I mind.
 		DislikeCrowded: Though I am used to crowds, I do prefer the quieter moments.
 		HateCrowded: So many people, is there a festival going on? My reading time is going to take a hit with all this noise.
-		LikeNPC_Princess: "{NPCName} is adorable, I want to make a doll for her for the next time we meet."
+		LikeNPC_Princess: "{NPCName} is so adorable, I want to make a doll for her for the next time we meet."
 		Princess_LovesNPC: "{NPCName} is so sweet, she always has great stories and drawings to show me whenever we meet."
 		LikeBiome: Oh I like the {BiomeName}, it reminds me a place I've been to before.
 		DislikeBiome: I dislike {BiomeName}.
@@ -30,3 +30,5 @@ Hornetaur.DisplayName: Hornetaur
 Remobra.DisplayName: Remobra
 Hermitaur.DisplayName: Hermitaur
 BubblesNPC.DisplayName: Bubbles
+Seltas.DisplayName: Seltas
+DesertSeltas.DisplayName: Desert Seltas

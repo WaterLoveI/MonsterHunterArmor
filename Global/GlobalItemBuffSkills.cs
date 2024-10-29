@@ -18,6 +18,14 @@ namespace MHArmorSkills.Global
             {
                 healValue = (int)(healValue * (player.GetModPlayer<MHPlayerArmorSkill>().RecoveryUp));
             }
+            if (item.type == ItemID.Mushroom)
+            {
+                if (player.GetModPlayer<MHPlayerArmorSkill>().Mushroomancer >= 1)
+                {
+                    healValue = (int)(player.statLifeMax2 * 0.33f);
+                }
+                
+            }
         }
         public override bool ConsumeItem(Item item, Terraria.Player player)
         {
@@ -76,23 +84,24 @@ namespace MHArmorSkills.Global
             }
 
         }
+
         public override void OnHitNPC(Item item, Player player, NPC target, NPC.HitInfo hit, int damageDone)
         {
-            #region Sharpness
-            if (player.GetModPlayer<MHPlayerArmorSkill>().Sharpness)
-            {
-                int SharpnessDust = item.rare + player.GetModPlayer<MHPlayerArmorSkill>().Handicraft;
-                if (SharpnessDust > 11)
-                {
-                    SharpnessDust = 11;
-                }
-                int dustCount = 5; 
-                switch (SharpnessDust)
-                {
-                    case 0:
-                        for (int i = 0; i < dustCount; i++)
-                        {
-                            Dust.NewDust(target.position, target.width, target.height, DustID.Cloud, target.velocity.X, target.velocity.Y);
+          //  #region Sharpness
+ //           if (player.GetModPlayer<MHPlayerArmorSkill>().Sharpness)
+ //           {
+ //               int SharpnessDust = item.rare + player.GetModPlayer<MHPlayerArmorSkill>().Handicraft;
+ //               if (SharpnessDust > 11)
+ //               {
+ //                   SharpnessDust = 11;
+ //               }
+ //               int dustCount = 5; 
+ //               switch (SharpnessDust)
+ //               {
+ //                   case 0:
+ //                       for (int i = 0; i < dustCount; i++)
+ //                       {
+ /*                           Dust.NewDust(target.position, target.width, target.height, DustID.Cloud, target.velocity.X, target.velocity.Y);
                         }
                         break;
                     case 1:
@@ -164,7 +173,7 @@ namespace MHArmorSkills.Global
                 }
             }
             #endregion
-            // dust effects to indicate sharpness level
+ */           // dust effects to indicate sharpness level
         }
     }
 }

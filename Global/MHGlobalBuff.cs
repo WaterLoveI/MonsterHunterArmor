@@ -1,10 +1,12 @@
 ﻿using MHArmorSkills.Buffs;
 using MHArmorSkills.Buffs.ArmorBuffs;
+using MHArmorSkills.Buffs.SharpnessBuff;
 using MHArmorSkills.MHPlayer;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.DataStructures;
+using Terraria.ID;
 using Terraria.ModLoader;
 
 
@@ -23,7 +25,7 @@ namespace MHArmorSkills.Global
             }
             return base.ReApply(type, npc, time, buffIndex);
         }
-        
+
         public override bool PreDraw(SpriteBatch spriteBatch, int type, int buffIndex, ref BuffDrawParams drawParams)
         {
             // make blastblight shake
@@ -41,6 +43,17 @@ namespace MHArmorSkills.Global
 
                 drawParams.Position += shake;
                 drawParams.TextPosition += shake;
+            }
+            if (type == ModContent.BuffType<SharpnessRed>() || type == ModContent.BuffType<SharpnessYellow>() || type == ModContent.BuffType<SharpnessGreen>() || type == ModContent.BuffType<SharpnessBlue>() || type == ModContent.BuffType<SharpnessWhite>() || type == ModContent.BuffType<SharpnessPurple>())
+            {
+                if (player.GetModPlayer<SharpnessPlayer>().SharpnessLossAnimation)
+                {
+                    Vector2 shake = new Vector2(Main.rand.Next(-3, 4), Main.rand.Next(-3, 4));
+
+                    drawParams.Position += shake;
+                    drawParams.TextPosition += shake;
+                }
+                
             }
 
             return true;

@@ -1,0 +1,1311 @@
+# Pre Boss
+
+MiningHelmet:
+	'''
+	{$CommonItemTooltip.VanillaAutoTracker} 1.
+	{$CommonItemTooltip.VanillaGeologist} 1.
+	'''
+MiningChest:
+	'''
+	{$CommonItemTooltip.VanillaCliffHanger} 1.
+	{$CommonItemTooltip.VanillaGeologist} 1.
+	'''
+MiningLeg:
+	'''
+	{$CommonItemTooltip.VanillaCliffHanger} 1.
+	{$CommonItemTooltip.VanillaQuickGathering} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+WoodHelmet: "{$CommonItemTooltip.VanillaDefenseBoost} 1."
+WoodChest: "{$CommonItemTooltip.VanillaProtection} 1."
+WoodLegs:
+	'''
+	{$CommonItemTooltip.VanillaOutdoorsman} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+AnglerHelmet:
+	'''
+	{$CommonItemTooltip.VanillaAutoTracker} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+AnglerChest: "{$CommonItemTooltip.VanillaFreeMeal} 1."
+AnglerLegs: "{$CommonItemTooltip.VanillaAquaticMobility} 1."
+CactusHelmet: "{$CommonItemTooltip.VanillaSneak} 1."
+CactusChest:
+	'''
+	{$CommonItemTooltip.VanillaRecoverySpd} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+CactusLegs:
+	'''
+	{$CommonItemTooltip.VanillaStamRecovery} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+CopperHelmet: "{$CommonItemTooltip.VanillaSpeedEating} 1."
+CopperChest: "{$CommonItemTooltip.VanillaDefenseBoost} 2."
+CopperLegs:
+	'''
+	{$CommonItemTooltip.VanillaPoison} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+TinHelmet:
+	'''
+	{$CommonItemTooltip.VanillaDefenseBoost} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+TinChest:
+	'''
+	{$CommonItemTooltip.VanillaStamRecovery} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+TinLegs:
+	'''
+	{$CommonItemTooltip.VanillaCliffHanger} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+PumpkinHelmet:
+	'''
+	{$CommonItemTooltip.VanillaFreeMeal} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+PumpkinChest:
+	'''
+	{$CommonItemTooltip.VanillaGluttony} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+PumpkinLegs:
+	'''
+	{$CommonItemTooltip.VanillaSpeedEating} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+IronHelmet: "{$CommonItemTooltip.VanillaDefenseBoost} 2."
+AncientIronHelmet: "{$CommonItemTooltip.VanillaRazorSharp} 1."
+IronChest:
+	'''
+	{$CommonItemTooltip.VanillaDiversion} 1.
+	{$CommonItemTooltip.VanillaPoison} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+IronLegs: "{$CommonItemTooltip.VanillaRecoverySpd} 1."
+LeadHelmet:
+	'''
+	{$CommonItemTooltip.VanillaPoison} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 2.
+	'''
+LeadChest: "{$CommonItemTooltip.VanillaDefenseBoost} 2."
+LeadLegs:
+	'''
+	{$CommonItemTooltip.VanillaDefenseBoost} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+SilverHelmet:
+	'''
+	{$CommonItemTooltip.VanillaStamRecovery} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+SilverChest: "{$CommonItemTooltip.VanillaAttackBoost} 2."
+SilverLegs:
+	'''
+	{$CommonItemTooltip.VanillaFreeMeal} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+TungstenHelmet:
+	'''
+	{$CommonItemTooltip.VanillaRecoverySpd} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+TungstenChest: "{$CommonItemTooltip.VanillaCritEye} 2."
+TungstenLegs:
+	'''
+	{$CommonItemTooltip.VanillaDiversion} 1.
+	{$CommonItemTooltip.VanillaRazorSharp} 1.
+	'''
+GoldHelmet: "{$CommonItemTooltip.VanillaDiversion} 1."
+AncientGoldHelmet: "{$CommonItemTooltip.VanillaFate} 1."
+GoldChest:
+	'''
+	{$CommonItemTooltip.VanillaProtection} 1.
+	{$CommonItemTooltip.VanillaQuickSharpening} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+GoldLegs:
+	'''
+	{$CommonItemTooltip.VanillaFate} 1.
+	{$CommonItemTooltip.VanillaQuickSharpening} 1.
+	'''
+PlatinumHelmet:
+	'''
+	{$CommonItemTooltip.VanillaFortified} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+PlatinumChest:
+	'''
+	{$CommonItemTooltip.VanillaProtection} 1.
+	{$CommonItemTooltip.VanillaRazorSharp} 1.
+	'''
+PlatinumLegs:
+	'''
+	{$CommonItemTooltip.VanillaFortified} 1.
+	{$CommonItemTooltip.VanillaRazorSharp} 1.
+	'''
+FossilHelmet:
+	'''
+	{$CommonItemTooltip.VanillaJumpMaster} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+FossilChest:
+	'''
+	{$CommonItemTooltip.VanillaCounterStrike} 1.
+	{$CommonItemTooltip.VanillaFireRes} 1.
+	'''
+FossilLegs:
+	'''
+	{$CommonItemTooltip.VanillaFireRes} 1.
+	{$CommonItemTooltip.VanillaFortified} 1.
+	'''
+GladiatorHelmet:
+	'''
+	{$CommonItemTooltip.VanillaCritEye} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+GladiatorChest:
+	'''
+	{$CommonItemTooltip.VanillaIceRes} 1.
+	{$CommonItemTooltip.VanillaSpeedSetup} 1.
+	'''
+GladiatorLegs:
+	'''
+	{$CommonItemTooltip.VanillaAttackBoost} 1.
+	{$CommonItemTooltip.VanillaIceRes} 1.
+	'''
+# Post Boss
+NinjaHelmet:
+	'''
+	{$CommonItemTooltip.VanillaCritEye} 1.
+	{$CommonItemTooltip.VanillaSneak} 1.
+	'''
+NinjaChest:
+	'''
+	{$CommonItemTooltip.VanillaCritEye} 1.
+	{$CommonItemTooltip.VanillaSpeedSetup} 1.
+	'''
+NinjaLegs:
+	'''
+	{$CommonItemTooltip.VanillaCritEye} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+BeeHelmet:
+	'''
+	{$ItemTooltip.BeeHeadgear}
+	{$CommonItemTooltip.VanillaLastingPower} 1.
+	{$CommonItemTooltip.VanillaResentment} 1.
+	'''
+BeeChest:
+	'''
+	{$ItemTooltip.BeeBreastplate}
+	{$CommonItemTooltip.VanillaAutoTracker} 1.
+	{$CommonItemTooltip.VanillaHoneyHunter} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+BeeLegs:
+	'''
+	{$ItemTooltip.BeeGreaves}
+	{$CommonItemTooltip.VanillaHoneyHunter} 1.
+	{$CommonItemTooltip.VanillaResentment} 1.
+	'''
+ObsidianHelmet:
+	'''
+	{$ItemTooltip.ObsidianHelm}
+	{$CommonItemTooltip.VanillaAttackBoost} 2.
+	{$CommonItemTooltip.BlastResist}.
+	'''
+ObsidianChest:
+	'''
+	{$ItemTooltip.ObsidianShirt}
+	{$CommonItemTooltip.VanillaCounterStrike} 1.
+	{$CommonItemTooltip.VanillaPunishDraw} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+ObsidianLegs:
+	'''
+	{$ItemTooltip.ObsidianPants}
+	{$CommonItemTooltip.VanillaAttackBoost} 2.
+	{$CommonItemTooltip.VanillaEvasion} 1.
+	'''
+MeteorHelmet:
+	'''
+	{$ItemTooltip.MeteorHelmet}
+	{$CommonItemTooltip.VanillaAttackBoost} 2.
+	{$CommonItemTooltip.BlastResist}.
+	'''
+MeteorChest:
+	'''
+	{$ItemTooltip.MeteorSuit}
+	{$CommonItemTooltip.VanillaLatentPower} 1.
+	{$CommonItemTooltip.VanillaFireAttack} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+MeteorLegs:
+	'''
+	{$ItemTooltip.MeteorLeggings}
+	{$CommonItemTooltip.VanillaHeatRes} 2.
+	{$CommonItemTooltip.VanillaStamRecovery} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+JungleHelmet:
+	'''
+	{$ItemTooltip.JungleHat}
+	{$CommonItemTooltip.VanillaAffinitySliding} 1.
+	{$CommonItemTooltip.VanillaLastingPower} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+JungleChest:
+	'''
+	{$ItemTooltip.JungleShirt}
+	{$CommonItemTooltip.VanillaMushroomancer} 1.
+	{$CommonItemTooltip.VanillaWaterRes} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+JungleLegs:
+	'''
+	{$ItemTooltip.JunglePants}
+	{$CommonItemTooltip.VanillaCliffHanger} 2.
+	{$CommonItemTooltip.VanillaFreeMeal} 1.
+	{$CommonItemTooltip.VanillaTropicsHunter} 1.
+	'''
+AncientCobaltHelmet:
+	'''
+	{$ItemTooltip.JungleHat}
+	{$CommonItemTooltip.VanillaStamRecovery} 1.
+	{$CommonItemTooltip.VanillaPoison} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+AncientCobaltChest:
+	'''
+	{$ItemTooltip.JungleShirt}
+	{$CommonItemTooltip.VanillaForay} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+AncientCobaltLegs:
+	'''
+	{$ItemTooltip.JunglePants}
+	{$CommonItemTooltip.VanillaForay} 1.
+	{$CommonItemTooltip.VanillaMushroomancer} 1.
+	'''
+NecroHelmet:
+	'''
+	{$ItemTooltip.NecroHelmet}
+	{$CommonItemTooltip.VanillaBleeding} 1.
+	{$CommonItemTooltip.VanillaUnscathed} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+NecroChest:
+	'''
+	{$ItemTooltip.NecroBreastplate}
+	{$CommonItemTooltip.VanillaColdRes} 1.
+	{$CommonItemTooltip.VanillaUnscathed} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+NecroLegs:
+	'''
+	{$ItemTooltip.NecroGreaves}
+	{$CommonItemTooltip.VanillaAffinitySliding} 1.
+	{$CommonItemTooltip.VanillaAquaticMobility} 2.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+ShadowHelmet:
+	'''
+	{$ItemTooltip.ShadowHelmet}
+	{$CommonItemTooltip.VanillaEvasion} 1.
+	{$CommonItemTooltip.VanillaRazorSharp} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+ShadowChest:
+	'''
+	{$ItemTooltip.ShadowScalemail}
+	{$CommonItemTooltip.VanillaCritEye} 1.
+	{$CommonItemTooltip.VanillaEvasion} 1.
+	{$CommonItemTooltip.VanillaQuickSheath} 1.
+	'''
+ShadowLegs:
+	'''
+	{$ItemTooltip.ShadowScalemail}
+	{$CommonItemTooltip.VanillaCritEye} 1.
+	{$CommonItemTooltip.VanillaRazorSharp} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+AncientShadowHelmet:
+	'''
+	{$ItemTooltip.ShadowHelmet}
+	{$CommonItemTooltip.VanillaCritEye} 1.
+	{$CommonItemTooltip.VanillaEvasion} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+AncientShadowHelmetChest:
+	'''
+	{$ItemTooltip.ShadowScalemail}
+	{$CommonItemTooltip.VanillaConstitution} 1.
+	{$CommonItemTooltip.VanillaEvadeDistance} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+AncientShadowHelmetLegs:
+	'''
+	{$ItemTooltip.ShadowScalemail}
+	{$CommonItemTooltip.VanillaCritEye} 2.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+CrimsonHelmet:
+	'''
+	{$ItemTooltip.CrimsonHelmet}
+	{$CommonItemTooltip.VanillaHastenRecovery} 1.
+	{$CommonItemTooltip.VanillaQuickSharpening} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+CrimsonChest:
+	'''
+	{$ItemTooltip.CrimsonScalemail}
+	{$CommonItemTooltip.VanillaHastenRecovery} 1.
+	{$CommonItemTooltip.VanillaRecUp} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+CrimsonLegs:
+	'''
+	{$ItemTooltip.CrimsonGreaves}
+	{$CommonItemTooltip.VanillaAttackBoost} 2.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+MoltenHelmet:
+	'''
+	{$ItemTooltip.MoltenHelmet}
+	{$CommonItemTooltip.VanillaHeatRes} 2.
+	{$CommonItemTooltip.VanillaHandicraft} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+MoltenChest:
+	'''
+	{$ItemTooltip.MoltenBreastplate}
+	{$CommonItemTooltip.VanillaGuard} 2.
+	{$CommonItemTooltip.BlastResist}.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+MoltenLegs:
+	'''
+	{$ItemTooltip.MoltenGreaves}
+	{$CommonItemTooltip.VanillaGuard} 1.
+	{$CommonItemTooltip.VanillaHeatRes} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+SpiderMask:
+	'''
+	{$ItemTooltip.SpiderMask}
+	{$CommonItemTooltip.VanillaAttackBoost} 2.
+	{$CommonItemTooltip.VanillaCliffHanger} 2.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+SpiderBreastplate:
+	'''
+	{$ItemTooltip.SpiderBreastplate}
+	{$CommonItemTooltip.VanillaForay} 2.
+	{$CommonItemTooltip.VanillaPoison} 2.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+SpiderGreaves:
+	'''
+	{$ItemTooltip.SpiderGreaves}
+	{$CommonItemTooltip.VanillaConstitution} 1.
+	{$CommonItemTooltip.VanillaEvasion} 1.
+	{$CommonItemTooltip.VanillaForay} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+CobaltHat:
+	'''
+	{$ItemTooltip.CobaltHat}
+	{$CommonItemTooltip.VanillaAttackBoost} 2.
+	{$CommonItemTooltip.VanillaCritEye} 2.
+	{$CommonItemTooltip.VanillaStamRecovery} 1.
+	'''
+CobaltHelmet:
+	'''
+	{$ItemTooltip.CobaltHelmet}
+	{$CommonItemTooltip.VanillaAttackBoost} 2.
+	{$CommonItemTooltip.VanillaCritEye} 2.
+	{$CommonItemTooltip.VanillaRazorSharp} 1.
+	'''
+CobaltMask:
+	'''
+	{$ItemTooltip.CobaltMask}
+	{$CommonItemTooltip.VanillaAttackBoost} 2.
+	{$CommonItemTooltip.VanillaCritEye} 2.
+	{$CommonItemTooltip.VanillaNormalUp} 1.
+	'''
+CobaltBreastplate:
+	'''
+	{$ItemTooltip.CobaltBreastplate}
+	{$CommonItemTooltip.VanillaCritEye} 2.
+	{$CommonItemTooltip.VanillaDefLock} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 2.
+	'''
+CobaltLeggings:
+	'''
+	{$ItemTooltip.CobaltLeggings}
+	{$CommonItemTooltip.VanillaThunderRes} 3.
+	{$CommonItemTooltip.VanillaAttackBoost} 1.
+	{$CommonItemTooltip.VanillaFencing} 1.
+	'''
+PalladiumMask:
+	'''
+	{$ItemTooltip.PalladiumMask}
+	{$CommonItemTooltip.VanillaProtection} 2.
+	{$CommonItemTooltip.VanillaRecoverySpd} 1.
+	{$CommonItemTooltip.VanillaProtectivePolish} 1.
+	'''
+PalladiumHelmet:
+	'''
+	{$ItemTooltip.PalladiumHelmet}
+	{$CommonItemTooltip.VanillaProtection} 2.
+	{$CommonItemTooltip.VanillaNormalUp} 1.
+	{$CommonItemTooltip.VanillaRecoverySpd} 1.
+	'''
+PalladiumHeadgear:
+	'''
+	{$ItemTooltip.PalladiumHeadgear}
+	{$CommonItemTooltip.VanillaProtection} 2.
+	{$CommonItemTooltip.VanillaLastingPower} 1.
+	{$CommonItemTooltip.VanillaRecoverySpd} 1.
+	'''
+PalladiumBreastplate:
+	'''
+	{$ItemTooltip.PalladiumBreastplate}
+	{$CommonItemTooltip.VanillaGuard} 2.
+	{$CommonItemTooltip.VanillaResentment} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+PalladiumLeggings:
+	'''
+	{$ItemTooltip.PalladiumLeggings}
+	{$CommonItemTooltip.VanillaAttackBoost} 2.
+	{$CommonItemTooltip.VanillaFireRes} 2.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+MythrilHood:
+	'''
+	{$ItemTooltip.MythrilHood}
+	{$CommonItemTooltip.VanillaFreeMeal} 2.
+	{$CommonItemTooltip.VanillaSpeedEating} 2.
+	{$CommonItemTooltip.VanillaRecUp} 1.
+	'''
+MythrilHelmet:
+	'''
+	{$ItemTooltip.MythrilHelmet}
+	{$CommonItemTooltip.VanillaFreeMeal} 2.
+	{$CommonItemTooltip.VanillaSpeedEating} 2.
+	{$CommonItemTooltip.VanillaRazorSharp} 2.
+	'''
+MythrilHat:
+	'''
+	{$ItemTooltip.MythrilHat}
+	{$CommonItemTooltip.VanillaFreeMeal} 2.
+	{$CommonItemTooltip.VanillaSpeedEating} 2.
+	{$CommonItemTooltip.VanillaPierceUp} 1.
+	'''
+MythrilChainmail:
+	'''
+	{$ItemTooltip.MythrilChainmail}
+	{$CommonItemTooltip.VanillaFreeMeal} 1.
+	{$CommonItemTooltip.VanillaProtection} 1.
+	{$CommonItemTooltip.VanillaRecUp} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+MythrilGreaves:
+	'''
+	{$ItemTooltip.MythrilGreaves}
+	{$CommonItemTooltip.VanillaConstitution} 2.
+	{$CommonItemTooltip.VanillaAffinitySliding} 1.
+	{$CommonItemTooltip.VanillaLastingPower} 1.
+	'''
+OrichalumMask:
+	'''
+	{$ItemTooltip.OrichalumMask}
+	{$CommonItemTooltip.VanillaCritEye} 2.
+	{$CommonItemTooltip.VanillaProtectivePolish} 2.
+	{$CommonItemTooltip.VanillaFencing} 1.
+	'''
+OrichalumHelmet:
+	'''
+	{$ItemTooltip.OrichalumHelmet}
+	{$CommonItemTooltip.VanillaCritEye} 2.
+	{$CommonItemTooltip.VanillaFencing} 1.
+	{$CommonItemTooltip.VanillaPierceUp} 1.
+	'''
+OrichalumHeadgear:
+	'''
+	{$ItemTooltip.OrichalumHeadgear}
+	{$CommonItemTooltip.VanillaCritEye} 3.
+	{$CommonItemTooltip.VanillaFencing} 1.
+	'''
+OrichalumBreastplate:
+	'''
+	{$ItemTooltip.OrichalumBreastplate}
+	{$CommonItemTooltip.VanillaIceRes} 2.
+	{$CommonItemTooltip.VanillaCritEye} 1.
+	{$CommonItemTooltip.VanillaLastingPower} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+OrichalumLeggings:
+	'''
+	{$ItemTooltip.OrichalumLeggings}
+	{$CommonItemTooltip.VanillaLastingPower} 2.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 2.
+	'''
+AdamantiteMask:
+	'''
+	{$ItemTooltip.AdamantiteMask}
+	{$CommonItemTooltip.VanillaGuard} 2.
+	{$CommonItemTooltip.VanillaPelletUp} 1.
+	{$CommonItemTooltip.VanillaTenderizer} 1.
+	'''
+AdamantiteHelmet:
+	'''
+	{$ItemTooltip.AdamantiteHelmet}
+	{$CommonItemTooltip.VanillaGuard} 2.
+	{$CommonItemTooltip.VanillaProtectivePolish} 1.
+	{$CommonItemTooltip.VanillaTenderizer} 1.
+	'''
+AdamantiteHeadgear:
+	'''
+	{$ItemTooltip.AdamantiteHeadgear}
+	{$CommonItemTooltip.VanillaGuard} 2.
+	{$CommonItemTooltip.VanillaTenderizer} 2.
+	'''
+AdamantiteBreastplate:
+	'''
+	{$ItemTooltip.AdamantiteBreastplate}
+	{$CommonItemTooltip.VanillaGuard} 2.
+	{$CommonItemTooltip.VanillaDefLock} 1.
+	{$CommonItemTooltip.VanillaSpirit} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+AdamantiteLeggings:
+	'''
+	{$ItemTooltip.AdamantiteLeggings}
+	{$CommonItemTooltip.VanillaDefenseBoost} 2.
+	{$CommonItemTooltip.VanillaGuard} 1.
+	{$CommonItemTooltip.VanillaRazorSharp} 1.
+	{$CommonItemTooltip.VanillaThreeSlotDecor} 1.
+	'''
+TitaniumMask:
+	'''
+	{$ItemTooltip.TitaniumMask}
+	{$CommonItemTooltip.VanillaDiversion} 2.
+	{$CommonItemTooltip.VanillaRazorSharp} 2.
+	{$CommonItemTooltip.VanillaLatentPower} 1.
+	'''
+TitaniumHelmet:
+	'''
+	{$ItemTooltip.TitaniumHelmet}
+	{$CommonItemTooltip.VanillaDiversion} 2.
+	{$CommonItemTooltip.VanillaLatentPower} 1.
+	{$CommonItemTooltip.VanillaPelletUp} 1.
+	'''
+TitaniumHeadgear:
+	'''
+	{$ItemTooltip.TitaniumHeadgear}
+	{$CommonItemTooltip.VanillaDiversion} 2.
+	{$CommonItemTooltip.VanillaLatentPower} 1.
+	{$CommonItemTooltip.VanillaProtection} 1.
+	'''
+TitaniumBreastplate:
+	'''
+	{$ItemTooltip.TitaniumBreastplate}
+	{$CommonItemTooltip.VanillaGuard} 1.
+	{$CommonItemTooltip.VanillaLatentPower} 1.
+	{$CommonItemTooltip.VanillaRockSteady} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+TitaniumLeggings:
+	'''
+	{$ItemTooltip.TitaniumLeggings}
+	{$CommonItemTooltip.VanillaDiversion} 1.
+	{$CommonItemTooltip.VanillaEvasion} 1.
+	{$CommonItemTooltip.VanillaIceAttack} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+CrystalAssassinHood:
+	'''
+	{$ItemTooltip.CrystalNinjaHelmet}
+	{$CommonItemTooltip.VanillaAffinitySliding} 1.
+	{$CommonItemTooltip.VanillaJumpMaster} 1.
+	{$CommonItemTooltip.VanillaSpeedSetup} 1.
+	{$CommonItemTooltip.VanillaThreeSlotDecor} 1.
+	'''
+CrystalAssassinShirt:
+	'''
+	{$ItemTooltip.CrystalNinjaChestplate}
+	{$CommonItemTooltip.VanillaAttackBoost} 2.
+	{$CommonItemTooltip.VanillaBubbleDance} 2.
+	{$CommonItemTooltip.VanillaAffinitySliding} 1.
+	'''
+CrystalAssassinPants:
+	'''
+	{$ItemTooltip.CrystalNinjaLeggings}
+	{$CommonItemTooltip.VanillaAffinitySliding} 1.
+	{$CommonItemTooltip.VanillaBubbleDance} 1.
+	{$CommonItemTooltip.VanillaSpeedSetup} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+FrostHelmet:
+	'''
+	{$ItemTooltip.FrostHelmet}
+	{$CommonItemTooltip.VanillaColdRes} 3.
+	{$CommonItemTooltip.VanillaHastenRecovery} 1.
+	{$CommonItemTooltip.VanillaPolarHunter} 1.
+	'''
+FrostBreastplate:
+	'''
+	{$ItemTooltip.FrostBreastplate}
+	{$CommonItemTooltip.VanillaIceAttack} 1.
+	{$CommonItemTooltip.VanillaPolarHunter} 1.
+	{$CommonItemTooltip.VanillaProtection} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+FrostLeggings:
+	'''
+	{$ItemTooltip.FrostLeggings}
+	{$CommonItemTooltip.VanillaAquaticMobility} 2.
+	{$CommonItemTooltip.VanillaIceAttack} 2.
+	{$CommonItemTooltip.VanillaPolarHunter} 1.
+	'''
+ForbiddenMask:
+	'''
+	{$ItemTooltip.AncientBattleArmorHat}
+	{$CommonItemTooltip.VanillaHeatRes} 3.
+	{$CommonItemTooltip.VanillaGuts} 1.
+	{$CommonItemTooltip.VanillaTropicsHunter} 1.
+	'''
+ForbiddenRobes:
+	'''
+	{$ItemTooltip.AncientBattleArmorShirt}
+	{$CommonItemTooltip.VanillaLatentPower} 1.
+	{$CommonItemTooltip.VanillaTropicsHunter} 1.
+	{$CommonItemTooltip.VanillaUnscathed} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+ForbiddenTreads:
+	'''
+	{$ItemTooltip.AncientBattleArmorPants}
+	{$CommonItemTooltip.VanillaEvasion} 1.
+	{$CommonItemTooltip.VanillaFate} 1.
+	{$CommonItemTooltip.VanillaTropicsHunter} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+SquiresGreatHelm:
+	'''
+	{$ItemTooltip.SquiresGreatHelm}
+	{$CommonItemTooltip.VanillaDiversion} 1.
+	{$CommonItemTooltip.VanillaGuard} 1.
+	{$CommonItemTooltip.VanillaGuardUp} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+SquiresPlating:
+	'''
+	{$ItemTooltip.SquiresPlating}
+	{$CommonItemTooltip.VanillaDiversion} 1.
+	{$CommonItemTooltip.VanillaGuard} 1.
+	{$CommonItemTooltip.VanillaSlugger} 1.
+	{$CommonItemTooltip.VanillaThreeSlotDecor} 1.
+	'''
+SquiresGreaves:
+	'''
+	{$ItemTooltip.SquiresGreaves}
+	{$CommonItemTooltip.VanillaCritDraw} 1.
+	{$CommonItemTooltip.VanillaConstitution} 1.
+	{$CommonItemTooltip.VanillaHastenRecovery} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+MonkBrows:
+	'''
+	{$ItemTooltip.MonkBrows}
+	{$CommonItemTooltip.VanillaAttackBoost} 2.
+	{$CommonItemTooltip.VanillaDefenseBoost} 2.
+	{$CommonItemTooltip.VanillaRazorSharp} 1.
+	'''
+MonkShirt:
+	'''
+	{$ItemTooltip.MonkShirt}
+	{$CommonItemTooltip.VanillaAttackBoost} 1.
+	{$CommonItemTooltip.VanillaFocus} 1.
+	{$CommonItemTooltip.VanillaSpeedEating} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 2.
+	'''
+MonkPants:
+	'''
+	{$ItemTooltip.MonkPants}
+	{$CommonItemTooltip.VanillaHealth} 2.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 2.
+	'''
+HuntressWig:
+	'''
+	{$ItemTooltip.HuntressWig}
+	{$CommonItemTooltip.VanillaEvadeDistance} 1.
+	{$CommonItemTooltip.VanillaForay} 1.
+	{$CommonItemTooltip.VanillaSpareShot} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 2.
+	'''
+HuntressJerkin:
+	'''
+	{$ItemTooltip.HuntressJerkin}
+	{$CommonItemTooltip.VanillaEvadeDistance} 1.
+	{$CommonItemTooltip.VanillaForay} 1.
+	{$CommonItemTooltip.VanillaTropicsHunter} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+HuntressPants:
+	'''
+	{$ItemTooltip.HuntressPants}
+	{$CommonItemTooltip.VanillaPierceUp} 1.
+	{$CommonItemTooltip.VanillaSpareShot} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+ApprenticeHat:
+	'''
+	{$ItemTooltip.ApprenticeHat}
+	{$CommonItemTooltip.VanillaUnscathed} 2.
+	{$CommonItemTooltip.VanillaHastenRecovery} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 2.
+	'''
+ApprenticeRobe:
+	'''
+	{$ItemTooltip.ApprenticeRobe}
+	{$CommonItemTooltip.VanillaLatentPower} 2.
+	{$CommonItemTooltip.VanillaHastenRecovery} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+ApprenticeTrousers:
+	'''
+	{$ItemTooltip.ApprenticeTrousers}
+	{$CommonItemTooltip.VanillaLatentPower} 2.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 2.
+	'''
+HallowedHelmet:
+	'''
+	{$ItemTooltip.HallowedHelmet}
+	{$CommonItemTooltip.VanillaSpareShot} 2.
+	{$CommonItemTooltip.VanillaAttackBoost} 1.
+	{$CommonItemTooltip.VanillaSpirit} 1.
+	'''
+HallowedMask:
+	'''
+	{$ItemTooltip.HallowedMask}
+	{$CommonItemTooltip.VanillaQuickSharpening} 2.
+	{$CommonItemTooltip.VanillaAttackBoost} 1.
+	{$CommonItemTooltip.VanillaSpirit} 1.
+	'''
+HallowedHeadgear:
+	'''
+	{$ItemTooltip.HallowedHeadgear}
+	{$CommonItemTooltip.VanillaLatentPower} 2.
+	{$CommonItemTooltip.VanillaAttackBoost} 1.
+	{$CommonItemTooltip.VanillaSpirit} 1.
+	'''
+HallowedHood:
+	'''
+	{$ItemTooltip.HallowedHood}
+	{$CommonItemTooltip.VanillaUnscathed} 2.
+	{$CommonItemTooltip.VanillaAttackBoost} 1.
+	{$CommonItemTooltip.VanillaSpirit} 1.
+	'''
+HallowedPlateMail:
+	'''
+	{$ItemTooltip.HallowedPlateMail}
+	{$CommonItemTooltip.VanillaCriticalBoost} 1.
+	{$CommonItemTooltip.VanillaRecoverySpd} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+HallowedGreaves:
+	'''
+	{$ItemTooltip.HallowedGreaves}
+	{$CommonItemTooltip.VanillaAffinitySlide} 1.
+	{$CommonItemTooltip.VanillaThreeSlotDecor} 2.
+	'''
+AncientHallowedHelmet:
+	'''
+	{$ItemTooltip.AncientHallowedHelmet}
+	{$CommonItemTooltip.VanillaArtillery} 1.
+	{$CommonItemTooltip.VanillaAttackBoost} 1.
+	{$CommonItemTooltip.VanillaCritEye} 1.
+	'''
+AncientHallowedMask:
+	'''
+	{$ItemTooltip.AncientHallowedMask}
+	{$CommonItemTooltip.VanillaAttackBoost} 1.
+	{$CommonItemTooltip.VanillaCritEye} 1.
+	{$CommonItemTooltip.VanillaProtectivePolish} 1.
+	{$CommonItemTooltip.VanillaRazorSharp} 1.
+	'''
+AncientHallowedHeadgear:
+	'''
+	{$ItemTooltip.AncientHallowedHeadgear}
+	{$CommonItemTooltip.VanillaAffinitySliding} 1.
+	{$CommonItemTooltip.VanillaAttackBoost} 1.
+	{$CommonItemTooltip.VanillaCritEye} 1.
+	'''
+AncientHallowedHood:
+	'''
+	{$ItemTooltip.AncientHallowedHood}
+	{$CommonItemTooltip.VanillaAttackBoost} 1.
+	{$CommonItemTooltip.VanillaCritEye} 1.
+	{$CommonItemTooltip.VanillaHastenRecovery} 1.
+	'''
+AncientHallowedPlateMail:
+	'''
+	{$ItemTooltip.AncientHallowedPlateMail}
+	{$CommonItemTooltip.VanillaRecoverySpd} 2.
+	{$CommonItemTooltip.VanillaThreeSlotDecor} 2.
+	'''
+AncientHallowedGreaves:
+	'''
+	{$ItemTooltip.AncientHallowedGreaves}
+	{$CommonItemTooltip.VanillaAffinitySlide} 1.
+	{$CommonItemTooltip.VanillaHandicraft} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+ChlorophyteMask:
+	'''
+	{$ItemTooltip.ChlorophyteMask}
+	{$CommonItemTooltip.VanillaRedirection} 2.
+	{$CommonItemTooltip.VanillaHealth} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 2.
+	'''
+ChlorophyteHelmet:
+	'''
+	{$ItemTooltip.ChlorophyteHelmet}
+	{$CommonItemTooltip.VanillaRedirection} 2.
+	{$CommonItemTooltip.VanillaHealth} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 2.
+	'''
+ChlorophyteHeadgear:
+	'''
+	{$ItemTooltip.ChlorophyteHeadgear}
+	{$CommonItemTooltip.VanillaRedirection} 2.
+	{$CommonItemTooltip.VanillaHealth} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 2.
+	'''
+ChlorophytePlateMail:
+	'''
+	{$ItemTooltip.ChlorophytePlateMail}
+	{$CommonItemTooltip.VanillaHealth} 2.
+	{$CommonItemTooltip.VanillaQuickBreath} 2.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+ChlorophyteGreaves:
+	'''
+	{$ItemTooltip.ChlorophyteGreaves}
+	{$CommonItemTooltip.VanillaProtection} 2.
+	{$CommonItemTooltip.VanillaWaterRes} 2.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 2.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+TurtleHelmet:
+	'''
+	{$ItemTooltip.TurtleHelmet}
+	{$CommonItemTooltip.VanillaDefiance} 1.
+	{$CommonItemTooltip.VanillaDefenseBoost} 1.
+	{$CommonItemTooltip.VanillaGuard} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+TurtleScaleMail:
+	'''
+	{$ItemTooltip.TurtleScaleMail}
+	{$CommonItemTooltip.VanillaDefiance} 2.
+	{$CommonItemTooltip.VanillaResentment} 2.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+TurtleLeggings:
+	'''
+	{$ItemTooltip.TurtleLeggings}
+	{$CommonItemTooltip.VanillaDefiance} 2.	
+	{$CommonItemTooltip.VanillaGuard} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 2.
+	'''
+TikiMask:
+	'''
+	{$ItemTooltip.TikiMask}
+	{$CommonItemTooltip.VanillaForay} 2.
+	{$CommonItemTooltip.VanillaSneak} 1.
+	{$CommonItemTooltip.VanillaThreeSlotDecor} 1.
+	'''
+TikiShirt:
+	'''
+	{$ItemTooltip.TikiShirt}
+	{$CommonItemTooltip.VanillaWaterRes} 2.
+	{$CommonItemTooltip.VanillaRecUp} 1.
+	{$CommonItemTooltip.VanillaThreeSlotDecor} 2.
+	'''
+TikiPants:
+	'''
+	{$ItemTooltip.TikiPants}
+	{$CommonItemTooltip.VanillaAttackBoost} 1.	
+	{$CommonItemTooltip.VanillaFencing} 1.
+	{$CommonItemTooltip.VanillaRecUp} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+BeetleHelmet:
+	'''
+	{$ItemTooltip.BeetleHelmet}
+	{$CommonItemTooltip.VanillaGuard} 2.
+	{$CommonItemTooltip.VanillaSpirit} 2.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+BeetleScaleMail:
+	'''
+	{$ItemTooltip.BeetleScaleMail}
+	{$CommonItemTooltip.VanillaOffensiveGuard} 2.
+	{$CommonItemTooltip.VanillaGuard} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+BeetleShell:
+	'''
+	{$ItemTooltip.BeetleShell}
+	{$CommonItemTooltip.VanillaGuardUp} 2.
+	{$CommonItemTooltip.VanillaGuard} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+BeetleLeggings:
+	'''
+	{$ItemTooltip.BeetleLeggings}
+	{$CommonItemTooltip.VanillaAffinitySliding} 1.	
+	{$CommonItemTooltip.VanillaConstitution} 1.
+	{$CommonItemTooltip.VanillaThreeSlotDecor} 1.
+	'''
+ShroomiteHeadgear:
+	'''
+	{$ItemTooltip.ShroomiteHeadgear}
+	{$CommonItemTooltip.VanillaDeadEye} 1.
+	{$CommonItemTooltip.VanillaMushroomancer} 1.
+	{$CommonItemTooltip.VanillaSneak} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 2.
+	'''
+ShroomiteMask:
+	'''
+	{$ItemTooltip.ShroomiteMask}
+	{$CommonItemTooltip.VanillaDeadEye} 1.
+	{$CommonItemTooltip.VanillaMushroomancer} 1.
+	{$CommonItemTooltip.VanillaSneak} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 2.
+	'''
+ShroomiteHelmet:
+	'''
+	{$ItemTooltip.ShroomiteHelmet}
+	{$CommonItemTooltip.VanillaDeadEye} 1.
+	{$CommonItemTooltip.VanillaMushroomancer} 1.
+	{$CommonItemTooltip.VanillaSneak} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 2.
+	'''
+ShroomiteBreastplate:
+	'''
+	{$ItemTooltip.ShroomiteBreastplate}
+	{$CommonItemTooltip.VanillaDeadEye} 1.	
+	{$CommonItemTooltip.VanillaUnscathed} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 2.
+	'''
+ShroomiteLeggings:
+	'''
+	{$ItemTooltip.ShroomiteLeggings}
+	{$CommonItemTooltip.VanillaSpareShot} 1.	
+	{$CommonItemTooltip.VanillaRecoverySpd} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+SpectreMask:
+	'''
+	{$ItemTooltip.SpectreMask}
+	{$CommonItemTooltip.VanillaBlightproof} 1.
+	{$CommonItemTooltip.VanillaHeroics} 1.
+	{$CommonItemTooltip.VanillaGuts} 1.
+	'''
+SpectreHood:
+	'''
+	{$ItemTooltip.SpectreHood}
+	{$CommonItemTooltip.VanillaBlightproof} 1.
+	{$CommonItemTooltip.VanillaHeroics} 1.
+	{$CommonItemTooltip.VanillaGuts} 1.
+	'''
+SpectreRobe:
+	'''
+	{$ItemTooltip.SpectreRobe}
+	{$CommonItemTooltip.VanillaCriticalBoost} 1.	
+	{$CommonItemTooltip.VanillaLatentPower} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+SpectrePants:
+	'''
+	{$ItemTooltip.SpectrePants}
+	{$CommonItemTooltip.VanillaHeroics} 2.	
+	{$CommonItemTooltip.VanillaThunderAttack} 2.
+	{$CommonItemTooltip.VanillaThreeSlotDecor} 1.
+	'''
+SpookyHelmet:
+	'''
+	{$ItemTooltip.SpookyHelmet}
+	{$CommonItemTooltip.VanillaSpiritbirdsCall} 1.
+	{$CommonItemTooltip.VanillaTenderizer} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 2.
+	'''
+SpookyBreastplate:
+	'''
+	{$ItemTooltip.SpookyBreastplate}
+	{$CommonItemTooltip.VanillaProtection} 2.	
+	{$CommonItemTooltip.VanillaResentment} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 2.
+	'''
+SpookyLeggings:
+	'''
+	{$ItemTooltip.SpookyLeggings}
+	{$CommonItemTooltip.VanillaFireAttack} 3.	
+	{$CommonItemTooltip.VanillaRecUp} 1.
+	{$CommonItemTooltip.VanillaTenderizer} 1.
+	'''
+SquireAltHead:
+	'''
+	{$ItemTooltip.SquireAltHead}
+	{$CommonItemTooltip.VanillaEmbolden} 2.
+	{$CommonItemTooltip.VanillaGuardUp} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+SquireAltShirt:
+	'''
+	{$ItemTooltip.SquireAltShirt}
+	{$CommonItemTooltip.VanillaEmbolden} 2.	
+	{$CommonItemTooltip.VanillaThreeSlotDecor} 2.
+	'''
+SquireAltPants:
+	'''
+	{$ItemTooltip.SquireAltPants}
+	{$CommonItemTooltip.VanillaConstitution} 2.	
+	{$CommonItemTooltip.VanillaEmbolden} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+MonkAltHead:
+	'''
+	{$ItemTooltip.MonkAltHead}
+	{$CommonItemTooltip.VanillaAffinitySliding} 1.
+	{$CommonItemTooltip.VanillaEvasion} 1.
+	{$CommonItemTooltip.VanillaSneak} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 2.
+	'''
+MonkAltShirt:
+	'''
+	{$ItemTooltip.MonkAltShirt}
+	{$CommonItemTooltip.VanillaEvasion} 3.	
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 2.
+	'''
+MonkAltPants:
+	'''
+	{$ItemTooltip.MonkAltPants}
+	{$CommonItemTooltip.VanillaCriticalBoost} 1.	
+	{$CommonItemTooltip.VanillaResentment} 1.
+	{$CommonItemTooltip.VanillaThreeSlotDecor} 1.
+	'''
+HuntressAltHead:
+	'''
+	{$ItemTooltip.HuntressAltHead}
+	{$CommonItemTooltip.VanillaCriticalBoost} 1.
+	{$CommonItemTooltip.VanillaSpareShot} 1.
+	{$CommonItemTooltip.VanillaSpiritbirdsCall} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 2.
+	'''
+HuntressAltShirt:
+	'''
+	{$ItemTooltip.HuntressAltShirt}
+	{$CommonItemTooltip.VanillaEvasion} 1.	
+	{$CommonItemTooltip.VanillaFate} 1.	
+	{$CommonItemTooltip.VanillaQuickBreath} 1.	
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+HuntressAltPants:
+	'''
+	{$ItemTooltip.HuntressAltPants}
+	{$CommonItemTooltip.VanillaDeadEye} 1.	
+	{$CommonItemTooltip.VanillaJumpMaster} 1.
+	{$CommonItemTooltip.VanillaUnscathed} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+ApprenticeAltHead:
+	'''
+	{$ItemTooltip.ApprenticeAltHead}
+	{$CommonItemTooltip.VanillaCounterStrike} 1.
+	{$CommonItemTooltip.VanillaCritElement} 1.
+	{$CommonItemTooltip.VanillaResentment} 1.
+	{$CommonItemTooltip.VanillaStrife} 1.
+	'''
+ApprenticeAltShirt:
+	'''
+	{$ItemTooltip.ApprenticeAltShirt}
+	{$CommonItemTooltip.VanillaCritElement} 1.	
+	{$CommonItemTooltip.VanillaResentment} 1.	
+	{$CommonItemTooltip.VanillaStrife} 1.	
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	'''
+ApprenticeAltPants:
+	'''
+	{$ItemTooltip.ApprenticeAltPants}
+	{$CommonItemTooltip.VanillaProtection} 2.	
+	{$CommonItemTooltip.VanillaStamRecovery} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+SolarFlareHelmet:
+	'''
+	{$ItemTooltip.SolarFlareHelmet}
+	{$CommonItemTooltip.VanillaCriticalBoost} 1.
+	{$CommonItemTooltip.VanillaMailofHellfire} 1.
+	{$CommonItemTooltip.VanillaSpirit} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+SolarFlareBreastplate:
+	'''
+	{$ItemTooltip.SolarFlareBreastplate}
+	{$CommonItemTooltip.VanillaCriticalBoost} 1.
+	{$CommonItemTooltip.VanillaMailofHellfire} 1.
+	{$CommonItemTooltip.VanillaSpirit} 1.
+	{$CommonItemTooltip.VanillaThreeSlotDecor} 1.
+	'''
+SolarFlareLeggings:
+	'''
+	{$ItemTooltip.SolarFlareLeggings}
+	{$CommonItemTooltip.VanillaCriticalBoost} 1.
+	{$CommonItemTooltip.VanillaMailofHellfire} 1.
+	{$CommonItemTooltip.VanillaSpirit} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 2.
+	'''
+VortexHelmet:
+	'''
+	{$ItemTooltip.VortexHelmet}
+	{$CommonItemTooltip.VanillaDeadEye} 1.
+	{$CommonItemTooltip.VanillaEvadeDistance} 1.
+	{$CommonItemTooltip.VanillaMailofHellfire} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+VortexBreastplate:
+	'''
+	{$ItemTooltip.VortexBreastplate}
+	{$CommonItemTooltip.VanillaEvadeDistance} 2.
+	{$CommonItemTooltip.VanillaMailofHellfire} 2.
+	{$CommonItemTooltip.VanillaThreeSlotDecor} 1.
+	'''
+VortexLeggings:
+	'''
+	{$ItemTooltip.VortexLeggings}
+	{$CommonItemTooltip.VanillaCriticalBoost} 2.
+	{$CommonItemTooltip.VanillaThreeSlotDecor} 2.
+	'''
+NebulaHelmet:
+	'''
+	{$ItemTooltip.NebulaHelmet}
+	{$CommonItemTooltip.VanillaCriticalBoost} 1.
+	{$CommonItemTooltip.VanillaEvadeDistance} 1.
+	{$CommonItemTooltip.VanillaGuts} 1.
+	{$CommonItemTooltip.VanillaThreeSlotDecor} 1.
+	'''
+NebulaBreastplate:
+	'''
+	{$ItemTooltip.NebulaBreastplate}
+	{$CommonItemTooltip.VanillaMailofHellfire} 2.
+	{$CommonItemTooltip.VanillaGuts} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	'''
+NebulaLeggings:
+	'''
+	{$ItemTooltip.NebulaLeggings}
+	{$CommonItemTooltip.VanillaEvadeDistance} 2.
+	{$CommonItemTooltip.VanillaMailofHellfire} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 2.
+	'''
+StardustHelmet:
+	'''
+	{$ItemTooltip.StardustHelmet}
+	{$CommonItemTooltip.VanillaEvasion} 2.
+	{$CommonItemTooltip.VanillaHealth} 2.
+	{$CommonItemTooltip.VanillaThreeSlotDecor} 1.
+	'''
+StardustBreastplate:
+	'''
+	{$ItemTooltip.StardustBreastplate}
+	{$CommonItemTooltip.VanillaBloodRite} 2.
+	{$CommonItemTooltip.VanillaThreeSlotDecor} 2.
+	'''
+StardustLeggings:
+	'''
+	{$ItemTooltip.StardustLeggings}
+	{$CommonItemTooltip.VanillaRecUp} 2.
+	{$CommonItemTooltip.VanillaBloodRite} 1.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
+	{$CommonItemTooltip.VanillaThreeSlotDecor} 1.
+	'''
+MagicHat:
+	'''
+	{$ItemTooltip.MagicHat}
+	{$CommonItemTooltip.VanillaScholar} 1.
+	{$CommonItemTooltip.VanillaOneSlotDecor} 2.
+	'''
+WizardHat:
+	'''
+	{$ItemTooltip.WizardHat}
+	{$CommonItemTooltip.VanillaScholar} 2.
+	{$CommonItemTooltip.VanillaTwoSlotDecor} 2.
+	'''
+AmethystRobe:
+	'''
+	{$ItemTooltip.AmethystRobe}
+	{$CommonItemTooltip.VanillaStamRecovery} 2.
+	'''
+TopazRobe:
+	'''
+	{$ItemTooltip.TopazRobe}
+	{$CommonItemTooltip.VanillaStamRecovery} 2.
+	'''
+SapphireRobe:
+	'''
+	{$ItemTooltip.SapphireRobe}
+	{$CommonItemTooltip.VanillaStamRecovery} 2.
+	'''
+EmeraldRobe:
+	'''
+	{$ItemTooltip.EmeraldRobe}
+	{$CommonItemTooltip.VanillaStamRecovery} 2.
+	'''
+RubyRobe:
+	'''
+	{$ItemTooltip.RubyRobe}
+	{$CommonItemTooltip.VanillaStamRecovery} 2.
+	'''
+DiamondRobe:
+	'''
+	{$ItemTooltip.DiamondRobe}
+	{$CommonItemTooltip.VanillaStamRecovery} 2.
+	'''
+AmberRobe:
+	'''
+	{$ItemTooltip.AmberRobe}
+	{$CommonItemTooltip.VanillaStamRecovery} 2.
+	'''
+GypsyRobe:
+	'''
+	{$ItemTooltip.GypsyRobe}
+	{$CommonItemTooltip.VanillaStamRecovery} 2.
+	'''
+DivingHelmet:
+	'''
+	{$ItemTooltip.DivingHelmet}
+	{$CommonItemTooltip.VanillaAquaticMobility} 2.
+	'''
+Gi:
+	'''
+	{$ItemTooltip.Gi}
+	{$CommonItemTooltip.VanillaEvadeDistance} 2.
+	'''
+FlinxFurCoat:
+	'''
+	{$ItemTooltip.FlinxFurCoat}
+	{$CommonItemTooltip.VanillaIceAttack} 3.
+	'''

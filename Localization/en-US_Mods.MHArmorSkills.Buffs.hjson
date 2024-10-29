@@ -34,9 +34,9 @@ FrenzyFail: {
 	Description: You've failed to overcome the frenzy. You are rapidly losing health.
 }
 
-Guard: {
-	DisplayName: Guarding
-	Description: Reduce damage taken while your shield is up.
+GuardCooldown: {
+	DisplayName: Guard Cooldown
+	Description: You cannot guard right now.
 }
 
 HeavenSent: {
@@ -229,5 +229,70 @@ Furious: {
 
 Stunned: {
 	DisplayName: Stunned
-	Description: You're too stunned to move.
+	Description: You're stunned! You can't move!
+}
+
+Bleed: {
+	DisplayName: Bleed
+	Description: Mods.MHArmorSkills.Buffs.Bleed.Description
+}
+
+ProtectivePolish: {
+	DisplayName: Protective Polish
+	Description: Mods.MHArmorSkills.Buffs.ProtectivePolish.Description
+}
+
+SharpnessBlue: {
+	DisplayName: Sharpness: Blue
+	Description: Mods.MHArmorSkills.Buffs.SharpnessBlue.Description
+}
+
+SharpnessGreen: {
+	DisplayName: Sharpness: Green
+	Description: Mods.MHArmorSkills.Buffs.SharpnessGreen.Description
+}
+
+SharpnessPurple: {
+	DisplayName: Sharpness: Purple
+	Description: Mods.MHArmorSkills.Buffs.SharpnessPurple.Description
+}
+
+SharpnessRed: {
+	DisplayName: Sharpness: Red
+	Description: Mods.MHArmorSkills.Buffs.SharpnessRed.Description
+}
+
+SharpnessWhite: {
+	DisplayName: Sharpness: White
+	Description: Mods.MHArmorSkills.Buffs.SharpnessWhite.Description
+}
+
+SharpnessYellow: {
+	DisplayName: Sharpness: Yellow
+	Description: Mods.MHArmorSkills.Buffs.SharpnessYellow.Description
+}
+
+FireBlight: {
+	DisplayName: Fire Blight
+	Description: Afflicted by fire blight, you take extra damage over time.
+}
+
+IceBlight: {
+	DisplayName: Ice Blight
+	Description: Afflicted by ice blight, your attack speed is slowed.
+}
+
+ThunderBlight: {
+	DisplayName: Thunder Blight
+	Description: Afflicted by thunder blight, you're more likely to get stunned.
+}
+
+WaterBlight: {
+	DisplayName: Water Blight
+	Description: Afflicted by water blight, your movement speed is slowed.
+}
+
+AttackSpeedUp: {
+	DisplayName: Quick sheath up!
+	Description: Combining both challenge sheath and quick sheath, your attack speed increased even further.
 }

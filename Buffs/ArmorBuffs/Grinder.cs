@@ -16,7 +16,7 @@ namespace MHArmorSkills.Buffs.ArmorBuffs
         {
             buffName = $"Grinder Level: {Main.LocalPlayer.GetModPlayer<ArmorSkills>().Grinder} ";
             tip = $"Increase melee damage based on weapon rarity.\n" +
-                $"Further increase damage by {Main.LocalPlayer.GetModPlayer<MHPlayerArmorSkill>().Grinder}% due to grinder.";
+                $"Further increase damage by 10% due to grinder.";
         }
     }
 }

@@ -2,6 +2,7 @@
 using MHArmorSkills.Buffs.ArmorBuffs;
 using MHArmorSkills.Items.Armor.MonsterHunter.HighRank;
 using MHArmorSkills.Items.Consumables;
+using MHArmorSkills.Projectiles.Weapon;
 using MHArmorSkills.Utilities;
 using Microsoft.CodeAnalysis;
 using Microsoft.Xna.Framework;
@@ -35,10 +36,8 @@ namespace MHArmorSkills.MHPlayer
         public bool LatentPowerHostile;
         public bool PCoatingUp;
         public bool PowderMantle;
-        public bool qBreathClear;
-        public bool qBreathHeal;
         public bool RapidFire;
-        public bool Sharpness;
+        // public bool Sharpness;
         public bool SpiritBirdCall;
         public double Tenderizer;
         public float CritEle;
@@ -58,18 +57,22 @@ namespace MHArmorSkills.MHPlayer
         public float WaterRes;
         public int AdrenalineRush;
         public int ArtilleryBuff;
+        public int ArtilleryCooldown;
         public int aSlidingCrit;
         public int aSlidingTimer;
         public int BladeHoneScale;
+        public int DashCount;
+        public int Shoottimer;
         public int Bloodlust;
         public int BloodlustCount;
         public int BloodlustHeal;
+        public int BloodlustCD;
         public int BloodRite;
         public int BloodRiteTimer;
         public int BombBoostBuff;
         public int BubbleDance;
         public int CarvingChance;
-        public int ChallengeSheathe;
+        //  public int ChallengeSheathe;
         public int ChamBlessing;
         public int CliffHanger;
         public int Coalescence;
@@ -77,7 +80,7 @@ namespace MHArmorSkills.MHPlayer
         public int Constitution;
         public int CounterStrike;
         public int CritBoost;
-        public int CritDraw;
+        // public int CritDraw;
         public int Defiance;
         public int DefianceDef;
         public int DefianceCooldown;
@@ -99,14 +102,14 @@ namespace MHArmorSkills.MHPlayer
         public int FreeElement;
         public int FreeMeal;
         public int Geologist;
-        public int Grinder;
+        //    public int Grinder;
         public int GuardCooldown;
         public int GuardMovement;
         public int GuardReduction;
         public int Guardup;
         public int Guts;
         public int GutsTimer;
-        public int Handicraft;
+        //     public int Handicraft;
         public int HastenRec;
         public int HeroicsAttack;
         public int HeroicsDefence;
@@ -117,8 +120,8 @@ namespace MHArmorSkills.MHPlayer
         public int LastingPower;
         public int LatentPowerAffinity;
         public int LatentPowerCounter;
-        public int MastersTouch;
-        public int MastersTouchCooldown;
+        //      public int MastersTouch;
+        //     public int MastersTouchCooldown;
         public int MaxMightTimer;
         public int MaxMightCrit;
         public int Mushroomancer;
@@ -131,12 +134,13 @@ namespace MHArmorSkills.MHPlayer
         public int PolarHunterDef;
         public int PolarHunterMovement;
         public int PowderMantleCount;
+        public float ProlongerTime;
         public int Protection;
-        public int ProtectivePolish;
-        public int PunishDraw;
-        public int QuickSheath;
+        //       public int ProtectivePolish;
+        //       public int PunishDraw;
+        //       public int QuickSheath;
         public int RapidFireReuse;
-        public int RazorSharp;
+        //       public int RazorSharp;
         public int RecoverySpeed;
         public int ResentmentBuff;
         public int resuscitateBuff;
@@ -163,6 +167,7 @@ namespace MHArmorSkills.MHPlayer
 
         private int lastWeaponType = -1;
         private float cooldownTimer = 0;
+        public int AutoGuardCD;
 
         public int ControlledAttack;
         public int ControlledCrit;
@@ -185,7 +190,7 @@ namespace MHArmorSkills.MHPlayer
             BombBoostBuff = 0;
             BubbleDance = 0;
             CarvingChance = 0;
-            ChallengeSheathe = 0;
+            //           ChallengeSheathe = 0;
             ChamBlessing = 0;
             CliffHanger = 0;
             Coalescence = 0;
@@ -193,7 +198,7 @@ namespace MHArmorSkills.MHPlayer
             CounterStrike = 0;
             CRangePlus = false;
             CritBoost = 0;
-            CritDraw = 0;
+            //            CritDraw = 0;
             CritEle = 0f;
             CritELeTrue = false;
             DeadEye = 0;
@@ -218,7 +223,7 @@ namespace MHArmorSkills.MHPlayer
             FreeElement = 0;
             FreeMeal = 0;
             Geologist = 0;
-            Grinder = 0;
+            //            Grinder = 0;
             Guard = false;
             GuardMovement = 0;
             GuardReduction = 0;
@@ -226,7 +231,7 @@ namespace MHArmorSkills.MHPlayer
             Guts = 0;
             GutsActive = false;
             GutsTimer = 0;
-            Handicraft = 0;
+            //            Handicraft = 0;
             HastenRec = 0;
             HeroicsAttack = 0;
             HeroicsDefence = 0;
@@ -241,7 +246,7 @@ namespace MHArmorSkills.MHPlayer
             LatentPowerHostile = false;
             LatentPowerManaCost = 0;
             MaxMightCrit = 0;
-            MastersTouch = 0;
+            //            MastersTouch = 0;
             Mushroomancer = 0;
             NegCrit = 0;
             NormalBuff = 0;
@@ -253,20 +258,21 @@ namespace MHArmorSkills.MHPlayer
             PolarHunterDef = 0;
             PolarHunterMovement = 0;
             Protection = 0;
-            ProtectivePolish = 0;
-            PunishDraw = 0;
+            //           ProtectivePolish = 0;
+            ProlongerTime = 1f;
+            //            PunishDraw = 0;
             QuickGather = 0;
-            QuickSheath = 0;
+            //            QuickSheath = 0;
             RapidFire = false;
             RapidFireDamage = 0.25f;
             RapidFireReuse = 35;
-            RazorSharp = 0;
+            //           RazorSharp = 0;
             RecoverySpeed = 0;
             RecoveryUp = 1f;
             ResentmentBuff = 0;
             resuscitateBuff = 0;
             Scholar = 0;
-            Sharpness = false;
+            //            Sharpness = false;
             Sneak = 0;
             SneakAttack = 1f;
             SpareShot = 0;
@@ -336,6 +342,10 @@ namespace MHArmorSkills.MHPlayer
             {
                 GuardCooldown--;
             }
+            if (GuardCooldown < 0)
+            {
+                GuardCooldown = 0;
+            }
             #endregion
             #region Coalescence
             if (Coalescence >= 1)
@@ -356,10 +366,11 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
             #region Masters Touch
-            if (MastersTouchCooldown > 0)
-            {
-                MastersTouchCooldown--;
-            }
+            /*            if (MastersTouchCooldown > 0)
+                        {
+                            MastersTouchCooldown--;
+                        }
+            */
             #endregion
             #region Guts
             if (GutsTimer > 0)
@@ -377,7 +388,7 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
             #region Sheath
-            int currentWeaponType = Player.HeldItem.type;
+            /*int currentWeaponType = Player.HeldItem.type;
 
             if (currentWeaponType != lastWeaponType)
             {
@@ -387,16 +398,18 @@ namespace MHArmorSkills.MHPlayer
                 {
                     if (PunishDraw >= 1 && !Player.HasBuff(ModContent.BuffType<PunishDraw>()))
                     {
-                        Player.AddBuff(ModContent.BuffType<PunishDraw>(), 15 * 60);
+                        int Duration = (int)(15 * 60 * ProlongerTime);
+                        Player.AddBuff(ModContent.BuffType<PunishDraw>(), Duration);
                     }
                     if (CritDraw >= 1 && !Player.HasBuff(ModContent.BuffType<CritDraw>()))
                     {
-                        Player.AddBuff(ModContent.BuffType<CritDraw>(), 7 * 60);
+                        int Duration = (int)(7 * 60 * ProlongerTime);
+                        Player.AddBuff(ModContent.BuffType<CritDraw>(), Duration);
                     }
                     if (ChallengeSheathe >= 1)
                     {
                         int SharpnessBuffIndex = Player.FindBuffIndex((ModContent.BuffType<Sharpness>()));
-                        int CSheath = 3 + (ChallengeSheathe * 2);
+                        int CSheath = 3 + (ChallengeSheathe * 5);
                         // Check if the player has the Sharpness buff
                         if (SharpnessBuffIndex != -1)
                         {
@@ -423,7 +436,7 @@ namespace MHArmorSkills.MHPlayer
                 cooldownTimer--;
             }
 
-            lastWeaponType = currentWeaponType;
+            lastWeaponType = currentWeaponType;*/
             #endregion
             #region Constitution
             if (Constitution >= 1 && Player.dashDelay >= 4)
@@ -485,52 +498,36 @@ namespace MHArmorSkills.MHPlayer
                 MaxMightTimer = 0;
             }
             #endregion
+            #region Bloodlust
+            if (BloodlustCD > 0)
+            {
+                BloodlustCD--;
+            }
+            #endregion
+            if (Shoottimer > 0)
+            {
+                Shoottimer--;
+            }
+            if (AutoGuardCD > 0)
+            {
+                AutoGuardCD--;
+            }
+            if (ArtilleryCooldown > 0)
+            {
+                ArtilleryCooldown--;
+            }
         }
 
         public override void PostUpdateMiscEffects()
         {
             ArmorSkills modPlayer = Player.GetModPlayer<ArmorSkills>();
-            #region Resentment/Strife
-            if (Player.HasBuff(BuffID.PotionSickness))
-            {
-                if (StrifeCrit >= 1)
-                {
-                    if (Main.rand.NextBool(5))
-                    {
-                        for (int i = 0; i < 2; i++)
-                        {
-                            int d = Dust.NewDust(Player.position, Player.width, Player.height, DustID.BlueTorch, 0f, -1f, 100, default(Color), 1.5f);
-                            Main.dust[d].noGravity = true;
-                            Main.dust[d].noLight = false;
-                            Main.dust[d].fadeIn = 0.2f;
-                            Main.dust[d].velocity *= 0.3f;
-                        }
-                    }
-                    ControlledCrit += StrifeCrit;
-                }
-                if (ResentmentBuff >= 1)
-                {
+            SharpnessPlayer SharpPlayer = Player.GetModPlayer<SharpnessPlayer>();
 
-                    if (Main.rand.NextBool(5))
-                    {
-                        for (int i = 0; i < 2; i++)
-                        {
-                            int d = Dust.NewDust(Player.position, Player.width, Player.height, DustID.RedTorch, 0f, -1f, 100, default(Color), 1.5f);
-                            Main.dust[d].noGravity = true;
-                            Main.dust[d].noLight = false;
-                            Main.dust[d].fadeIn = 0.2f;
-                            Main.dust[d].velocity *= 0.3f;
-                        }
-                    }
-                    ControlledAttack += ResentmentBuff;
-                }
-            }
-            #endregion
             #region Grinder
-            if (Grinder >= 1 && Player.HasBuff(ModContent.BuffType<Sharpness>()))
+            /*if (Grinder >= 1 && Player.HasBuff(ModContent.BuffType<Sharpness>()))
             {
                 ControlledAttack += Grinder;
-            }
+            }*/
             #endregion
             #region Affinity Sliding
             if (Player.HasBuff(ModContent.BuffType<AffinitySliding>()))
@@ -553,31 +550,37 @@ namespace MHArmorSkills.MHPlayer
             #region Speed Sharpening
             if (SpeedSharpening >= 3)
             {
-                if (Player.ActiveItem().type == ModContent.ItemType<WhetStone>() && !Player.HasBuff(ModContent.BuffType<Sharpness>()))
+                if (Player.ActiveItem().type == ModContent.ItemType<WhetStone>() && SharpPlayer.CurrentSharpness < SharpPlayer.MaxSharpness)
                 {
-                    int Timer = 45;
+                    /*int Timer = 45;
                     if (RazorSharp >= 1)
                     {
                         Timer += 45 * RazorSharp;
-                    }
-                    Player.AddBuff(ModContent.BuffType<Sharpness>(), Timer * 60);
+                    }*/
+                    SharpPlayer.CurrentSharpness += 50;
                     SoundEngine.PlaySound(SoundID.Item37);
+                    if (modPlayer.ProtectivePolish >= 1)
+                    {
+                        int Duration = (int)(modPlayer.ProtectivePolish * 15 * 60 * ProlongerTime);
+                        Player.AddBuff(ModContent.BuffType<ProtectivePolish>(), Duration);
+                    }
                 }
             }
             #endregion
             #region Protective Polish
-            if (ProtectivePolish >= 1)
-            {
-                for (int l = 0; l < Player.MaxBuffs; l++)
-                {
-                    int hasBuff = Player.buffType[l];
-                    if (hasBuff == ModContent.BuffType<Sharpness>())
-                    {
-                        if (Player.miscCounter % ProtectivePolish == 0)
-                            Player.buffTime[l] += 1;
-                    }
-                }
-            }
+            /*            if (ProtectivePolish >= 1)
+                        {
+                            for (int l = 0; l < Player.MaxBuffs; l++)
+                            {
+                                int hasBuff = Player.buffType[l];
+                                if (hasBuff == ModContent.BuffType<Sharpness>())
+                                {
+                                    if (Player.miscCounter % ProtectivePolish == 0)
+                                        Player.buffTime[l] += 1;
+                                }
+                            }
+                        }
+            */
             #endregion
             #region Lasting Power
             if (LastingPower >= 1)
@@ -617,11 +620,12 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
             #region Crit Draw
-            if (Player.HasBuff(ModContent.BuffType<CritDraw>()))
-            {
-                int CDraw = CritDraw * 7;
-                ControlledCrit += CDraw;
-            }
+            /*            if (Player.HasBuff(ModContent.BuffType<CritDraw>()))
+                        {
+                            int CDraw = CritDraw * 7;
+                            ControlledCrit += CDraw;
+                        }
+            */
             #endregion
             #region BBQ Expert
             if (modPlayer.BBQExpert >= 2)
@@ -648,12 +652,13 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
             #region Punish Draw
-            if (Player.HasBuff(ModContent.BuffType<PunishDraw>()))
-            {
-                int pDraw = PunishDraw * 10;
-                Player.GetKnockback(DamageClass.Generic) += pDraw / 100f;
-                Player.GetDamage(DamageClass.Melee) += PunishDraw / 100f;
-            }
+            /*            if (Player.HasBuff(ModContent.BuffType<PunishDraw>()))
+                        {
+                            int pDraw = PunishDraw * 10;
+                            Player.GetKnockback(DamageClass.Generic) += pDraw / 100f;
+                            Player.GetDamage(DamageClass.Melee) += PunishDraw / 100f;
+                        }
+            */
             #endregion
             #region Intrepid Heart
             if (IHeartCountdown >= 100 && !Player.HasBuff(ModContent.BuffType<IntrepidHeart>()))
@@ -666,7 +671,8 @@ namespace MHArmorSkills.MHPlayer
             #region Latent Power
             if (LatentPowerCounter >= 30 * 60)
             {
-                Player.AddBuff(ModContent.BuffType<LatentPower>(), 30 * 60);
+                int Duration = (int)(30 * 60 * ProlongerTime);
+                Player.AddBuff(ModContent.BuffType<LatentPower>(), Duration);
                 SoundEngine.PlaySound(SoundID.Item4);
             }
 
@@ -713,6 +719,7 @@ namespace MHArmorSkills.MHPlayer
             if (Player.HasBuff(ModContent.BuffType<AdrenalineRush>()))
             {
                 ControlledAttack += AdrenalineRush;
+                ControlledCrit += AdrenalineRush;
             }
             #endregion
             #region Polar Hunter
@@ -750,7 +757,8 @@ namespace MHArmorSkills.MHPlayer
 
             if (postUpdateDebuffCount < CoalescenceCount)
             {
-                Player.AddBuff(ModContent.BuffType<Coalescence>(), 600);
+                int Duration = (int)(10 * 60 * ProlongerTime);
+                Player.AddBuff(ModContent.BuffType<Coalescence>(), Duration);
                 SoundEngine.PlaySound(SoundID.Item8);
                 for (int i = 0; i < 7; i++)
                 {
@@ -916,13 +924,14 @@ namespace MHArmorSkills.MHPlayer
                 }
             }
             #endregion
-            #region
+            #region Maximum Might
             if (MaxMightTimer >= 120)
             {
 
                 if (!Player.HasBuff(ModContent.BuffType<MaximumMight>()))
                 {
-                    Player.AddBuff(ModContent.BuffType<MaximumMight>(), 20 * 60);
+                    int Duration = (int)(15 * 60 * ProlongerTime);
+                    Player.AddBuff(ModContent.BuffType<MaximumMight>(), Duration);
                     for (int i = 0; i < 5; i++)
                     {
                         int d = Dust.NewDust(Player.position, Player.width, Player.height, DustID.SpookyWood, 0, 0, 100, Color.Blue, 0.7f);
@@ -938,7 +947,7 @@ namespace MHArmorSkills.MHPlayer
             if (Player.HasBuff(ModContent.BuffType<MaximumMight>()))
             {
                 ControlledCrit += MaxMightCrit;
-                Player.manaSickTime =150;
+                Player.manaSickTime = 150;
                 Player.manaSickTimeMax = 300;
 
             }
@@ -992,34 +1001,43 @@ namespace MHArmorSkills.MHPlayer
                 #region Affinity Sliding
                 if (aSlidingCrit >= 1 && aSlidingTimer == 0)
                 {
-                    Player.AddBuff(ModContent.BuffType<AffinitySliding>(), 5 * 60);
+                    int Duration = (int)(5 * 60 * ProlongerTime);
+                    Player.AddBuff(ModContent.BuffType<AffinitySliding>(), Duration);
                     aSlidingTimer = 7 * 60;
                 }
                 #endregion
                 #region Bladehone Scale
-                if (BladeHoneScale >= 1 && aSlidingTimer == 0)
+                DashCount += 1;
+                if (BladeHoneScale >= 1 && aSlidingTimer == 0 && DashCount >= 3)
                 {
-                    Player.AddBuff(ModContent.BuffType<BladeHoneScale>(), 7 * 60);
-                    aSlidingTimer = 7 * 60;
+                    int Duration = (int)(7 * 60 * ProlongerTime);
+                    DashCount = 0;
+                    Player.AddBuff(ModContent.BuffType<BladeHoneScale>(), Duration);
+                    aSlidingTimer = 10 * 60;
                     if (Player.HasBuff(ModContent.BuffType<BladeHoneScale>()))
                     {
                         Player.manaCost *= (100 - BladeHoneScale * 3) / 100;
 
-                        if (Player.HasBuff(ModContent.BuffType<Sharpness>()))
-                        {
-                            int SharpnessBuffIndex = Player.FindBuffIndex((ModContent.BuffType<Sharpness>()));
-                            Player.buffTime[SharpnessBuffIndex] += 60;
-                        }
+                        /*                        if (Player.HasBuff(ModContent.BuffType<Sharpness>()))
+                                                {
+                                                    int SharpnessBuffIndex = Player.FindBuffIndex((ModContent.BuffType<Sharpness>()));
+                                                    Player.buffTime[SharpnessBuffIndex] += 60;
+                                                }
 
-                        if (!Player.HasBuff(ModContent.BuffType<Sharpness>()))
+                                                if (!Player.HasBuff(ModContent.BuffType<Sharpness>()))
+                                                {
+                                                    Player.AddBuff(ModContent.BuffType<Sharpness>(), 7 * 60);
+                                                }
+                        */
+                        if (SharpPlayer.CurrentSharpness < SharpPlayer.MaxSharpness)
                         {
-                            Player.AddBuff(ModContent.BuffType<Sharpness>(), 7 * 60);
+                            SharpPlayer.CurrentSharpness += 3;
                         }
-
                         if (BladeHoneScale >= SpareShot)
                         {
                             SpareShot = BladeHoneScale;
                         }
+
                     }
                 }
                 #endregion
@@ -1061,6 +1079,7 @@ namespace MHArmorSkills.MHPlayer
             {
                 NPC npc = Main.npc[i];
 
+
                 if (npc.active && !npc.friendly)
                 {
                     float distance = Vector2.Distance(Player.Center, npc.Center);
@@ -1071,8 +1090,14 @@ namespace MHArmorSkills.MHPlayer
                         {
                             if (AdrenalineRush > 0 && !Player.HasBuff(ModContent.BuffType<AdrenalineRush>()))
                             {
-                                Player.AddBuff(ModContent.BuffType<AdrenalineRush>(), 7 * 60);
+                                int Duration = (int)(7 * 60 * ProlongerTime);
+                                Player.AddBuff(ModContent.BuffType<AdrenalineRush>(), Duration);
                                 EvadeDodgeCD = 60;
+                            }
+                            if (BladeHoneScale >= 1)
+                            {
+                                int Duration = (int)(45 * 60 * ProlongerTime);
+                                Player.AddBuff(ModContent.BuffType<BladeHoneScale>(), Duration);
                             }
                             if (StatusTrigger == 1)
                             {
@@ -1085,6 +1110,64 @@ namespace MHArmorSkills.MHPlayer
                                 EvadeDodgeCD = 60;
                             }
                         }
+                        
+                    }
+                    if (distance < Player.Hitbox.Width + npc.Hitbox.Width)
+                    {
+                        if (modPlayer.AutoGuard && Player.itemAnimation == 0)
+                        {
+                            if (!Player.controlDown && !Player.controlLeft && !Player.controlRight && !Player.controlUp)
+                            {
+                                Player.shieldRaised = true;
+                                AutoGuardCD = 3 * 60;
+                            }
+                            
+                        }
+                        
+                    }
+                }
+            }
+
+            for (int i = 0; i < Main.projectile.Length; i++)
+            {
+                Projectile proj = Main.projectile[i];
+
+
+                if (proj.active && !proj.friendly)
+                {
+                    float distance = Vector2.Distance(Player.Center, proj.Center);
+
+                    if (distance < Player.Hitbox.Width / 2 + proj.Hitbox.Width / 2)
+                    {
+                        if (Player.immune && EvadeDodgeCD == 0)
+                        {
+                            if (AdrenalineRush > 0 && !Player.HasBuff(ModContent.BuffType<AdrenalineRush>()))
+                            {
+                                int Duration = (int)(7 * 60 * ProlongerTime);
+                                Player.AddBuff(ModContent.BuffType<AdrenalineRush>(), Duration);
+                                EvadeDodgeCD = 60;
+                            }
+                            if (BladeHoneScale >= 1)
+                            {
+                                int Duration = (int)(45 * 60 * ProlongerTime);
+                                Player.AddBuff(ModContent.BuffType<BladeHoneScale>(), Duration);
+                            }
+                            
+                        }
+
+                    }
+                    if (distance < Player.Hitbox.Width + proj.Hitbox.Width)
+                    {
+                        if (modPlayer.AutoGuard && Player.itemAnimation == 0 && Guardup > 0)
+                        {
+                            if (!Player.controlDown && !Player.controlLeft && !Player.controlRight && !Player.controlUp)
+                            {
+                                Player.shieldRaised = true;
+                                AutoGuardCD = 3 * 60;
+                            }
+
+                        }
+
                     }
                 }
             }
@@ -1095,11 +1178,19 @@ namespace MHArmorSkills.MHPlayer
             if (ControlledCrit >= 21)
             {
                 int newcrit = (ControlledCrit - 20) / 2;
+                if (newcrit >= 30)
+                {
+                    newcrit = 30;
+                }
                 Player.GetCritChance(DamageClass.Generic) += newcrit + 20;
             }
             if (ControlledAttack >= 21)
             {
                 int newattack = (ControlledAttack - 20) / 2;
+                if (newattack >= 30)
+                {
+                    newattack = 30;
+                }
                 Player.GetDamage(DamageClass.Generic) += (newattack + 20) / 100f;
             }
             #endregion
@@ -1122,7 +1213,6 @@ namespace MHArmorSkills.MHPlayer
             if (Player.shieldRaised)
             {
                 GuardRaised = true;
-                Player.AddBuff(ModContent.BuffType<Guard>(), 2);
                 Player.shieldRaised = true;
                 Player.moveSpeed += GuardMovement / 100f;
 
@@ -1156,18 +1246,20 @@ namespace MHArmorSkills.MHPlayer
             {
                 Player.AddBuff(ModContent.BuffType<FrenzyFail>(), 60 * 60);
             }
-            if (Player.HasBuff(ModContent.BuffType<Frenzy>()) && BloodlustCount >= 240)
+            if (Player.HasBuff(ModContent.BuffType<Frenzy>()) && BloodlustCount >= 60)
             {
                 Player.ClearBuff(ModContent.BuffType<Frenzy>());
                 BloodlustCount = 0;
                 if (BloodlustHeal == 0)
                 {
-                    Player.Heal(Bloodlust * 5);
+                    int healamt = (int)(Bloodlust * 5 * RecoveryUp);
+                    Player.Heal(healamt);
                     BloodlustHeal += 1;
                 }
                 if (Bloodlust >= 3)
                 {
-                    Player.AddBuff(ModContent.BuffType<FrenzyCure>(), 90 * 60);
+                    int Duration = (int)(90 * 60 * ProlongerTime);
+                    Player.AddBuff(ModContent.BuffType<FrenzyCure>(), Duration);
                 }
                 else
                 {
@@ -1290,19 +1382,20 @@ namespace MHArmorSkills.MHPlayer
         }
         #endregion
         #region Masters Touch
-        public void MastersTouchEffect(NPC target, int damage, bool crit)
-        {
-            if (crit && MastersTouch >= 1 && Main.rand.NextBool(MastersTouch) && MastersTouchCooldown == 0 && Player.HasBuff(ModContent.BuffType<Sharpness>()))
-            {
-                MastersTouchCooldown = 60;
-                int SharpnessBuffIndex = Player.FindBuffIndex((ModContent.BuffType<Sharpness>()));
-
-                if (SharpnessBuffIndex != -1)
+        /*        public void MastersTouchEffect(NPC target, int damage, bool crit)
                 {
-                    Player.buffTime[SharpnessBuffIndex] += 60;
+                    if (crit && MastersTouch >= 1 && Main.rand.NextBool(MastersTouch) && MastersTouchCooldown == 0 && Player.HasBuff(ModContent.BuffType<Sharpness>()))
+                    {
+                        MastersTouchCooldown = 60;
+                        int SharpnessBuffIndex = Player.FindBuffIndex((ModContent.BuffType<Sharpness>()));
+
+                        if (SharpnessBuffIndex != -1)
+                        {
+                            Player.buffTime[SharpnessBuffIndex] += 60;
+                        }
+                    }
                 }
-            }
-        }
+        */
         #endregion
         #region Diversion
         public void DiversionEffect()
@@ -1368,9 +1461,10 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
             #region Bloodlust
-            if (Bloodlust >= 1 && Player.HasBuff(ModContent.BuffType<Frenzy>()))
+            if (Bloodlust >= 1 && Player.HasBuff(ModContent.BuffType<Frenzy>()) && BloodlustCD == 0)
             {
-                BloodlustCount += 3;
+                BloodlustCount += 1;
+                BloodlustCD = 30;
             }
             #endregion
             #region Defiance
@@ -1395,7 +1489,8 @@ namespace MHArmorSkills.MHPlayer
             #region Hasten Recovery
             if (HastenRec >= 1 && !Player.HasBuff(ModContent.BuffType<HastenRecovery>()) && Main.rand.NextBool(3))
             {
-                Player.AddBuff(ModContent.BuffType<HastenRecovery>(), 5 * 60);
+                int Duration = (int)(5 * 60 * ProlongerTime);
+                Player.AddBuff(ModContent.BuffType<HastenRecovery>(), Duration);
             }
             #endregion
             #region Sneak 
@@ -1411,7 +1506,7 @@ namespace MHArmorSkills.MHPlayer
                 }
             }
             #endregion
-            MastersTouchEffect(target, damageDone, hit.Crit);
+            //           MastersTouchEffect(target, damageDone, hit.Crit);
         }
         public override void OnHitNPCWithProj(Projectile proj, NPC target, NPC.HitInfo hit, int damageDone)
         {
@@ -1426,16 +1521,17 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
             #region Bloodlust
-            if (Bloodlust >= 1 && Player.HasBuff(ModContent.BuffType<Frenzy>()))
+            if (Bloodlust >= 1 && Player.HasBuff(ModContent.BuffType<Frenzy>()) && BloodlustCD == 0)
             {
-
                 BloodlustCount += 1;
+                BloodlustCD = 30;
             }
             #endregion
             #region Hasten Recovery
             if (HastenRec >= 1 && !Player.HasBuff(ModContent.BuffType<HastenRecovery>()) && Main.rand.NextBool(5))
             {
-                Player.AddBuff(ModContent.BuffType<HastenRecovery>(), 3 * 60);
+                int Duration = (int)(3 * 60 * ProlongerTime);
+                Player.AddBuff(ModContent.BuffType<HastenRecovery>(), Duration);
             }
             #endregion
             #region Defiance
@@ -1460,7 +1556,7 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
             #region Poison Coating Up
-            if (PCoatingUp && proj.type == ProjectileID.WoodenArrowFriendly)
+            if (PCoatingUp && proj.DamageType == DamageClass.Ranged)
             {
                 int Timer = Main.rand.Next(360, 600);
                 if (Main.rand.NextBool(3))
@@ -1497,10 +1593,17 @@ namespace MHArmorSkills.MHPlayer
             {
                 modifiers.SourceDamage *= GuardReduction / 100;
                 SoundEngine.PlaySound(SoundID.NPCHit4);
-                GuardCooldown = 3 * 60;
+                int ConstCD = 0;
+                if (Constitution >= 1)
+                {
+                    ConstCD = 60 * Constitution;
+                }
+                GuardCooldown = 3 * 60 - ConstCD;
+                Player.AddBuff(ModContent.BuffType<GuardCooldown>(), GuardCooldown);
                 if (OffensiveGuardBoost > 0)
                 {
-                    Player.AddBuff(ModContent.BuffType<OffensiveGuard>(), 7 * 60);
+                    int Duration = (int)(7 * 60 * ProlongerTime);
+                    Player.AddBuff(ModContent.BuffType<OffensiveGuard>(), Duration);
                 }
 
             }
@@ -1561,6 +1664,44 @@ namespace MHArmorSkills.MHPlayer
                 IHeartCountdown = 0;
             }
             #endregion
+            #region Guard
+            if (Guard && Player.shieldRaised && GuardCooldown == 0)
+            {
+                modifiers.SourceDamage *= GuardReduction / 100;
+                SoundEngine.PlaySound(SoundID.NPCHit4);
+                int ConstCD = 0;
+                if (Constitution >= 1)
+                {
+                    ConstCD = 60 * Constitution;
+                }
+                GuardCooldown = 3 * 60 - ConstCD;
+                Player.AddBuff(ModContent.BuffType<GuardCooldown>(), GuardCooldown);
+                if (OffensiveGuardBoost > 0)
+                {
+                    int Duration = (int)(7 * 60 * ProlongerTime);
+                    Player.AddBuff(ModContent.BuffType<OffensiveGuard>(), Duration);
+                }
+
+            }
+            #endregion
+            #region Guard Up
+            if (Guardup >= 1)
+            {
+                bool projectileRight = (Player.Center.X - proj.Center.X) < 0f;
+                bool projectileLeft = (Player.Center.X - proj.Center.X) > 0f;
+                int GUMitigation = 100 - (Guardup * 5);
+                if (Player.direction == 1)
+                {
+                    if (projectileRight)
+                        modifiers.SourceDamage *= GUMitigation / 100;
+                }
+                else
+                {
+                    if (projectileLeft)
+                        modifiers.SourceDamage *= GUMitigation / 100;
+                }
+            }
+            #endregion
         }
         public override bool FreeDodge(Player.HurtInfo info)
         {
@@ -1584,7 +1725,7 @@ namespace MHArmorSkills.MHPlayer
                 if (proj.type >= ProjectileID.RocketFireworkRed && proj.type <= ProjectileID.RocketFireworkYellow || proj.type >= ProjectileID.GrenadeI && proj.type <= ProjectileID.ProximityMineIV || proj.type >= ProjectileID.RocketSnowmanI && proj.type <= ProjectileID.RocketSnowmanIV || proj.type >= ProjectileID.Celeb2Rocket && proj.type <= ProjectileID.Celeb2RocketLarge
                     || proj.type >= ProjectileID.ClusterRocketI && proj.type <= ProjectileID.DryMine || proj.type >= ProjectileID.ClusterSnowmanRocketI && proj.type <= ProjectileID.DrySnowmanRocket || proj.type >= ProjectileID.ClusterSnowmanFragmentsI && proj.type <= ProjectileID.ClusterSnowmanFragmentsII)
                 {
-                    proj.damage *= ArtilleryBuff + 100 / 100;
+                    proj.damage *= 1+(ArtilleryBuff / 100);
                 }
             }
             #endregion
@@ -1592,9 +1733,13 @@ namespace MHArmorSkills.MHPlayer
             if (BombBoostBuff >= 1)
             {
                 if (proj.type >= ProjectileID.Bomb && proj.type <= ProjectileID.Grenade || proj.type == ProjectileID.StickyBomb || proj.type == ProjectileID.Beenade || proj.type == ProjectileID.StickyGrenade || proj.type == ProjectileID.StickyDynamite || proj.type == ProjectileID.BouncyBomb || proj.type == ProjectileID.BouncyDynamite ||
-                    proj.type == ProjectileID.BouncyGrenade || proj.type == ProjectileID.ScarabBomb || proj.type >= ProjectileID.WetBomb && proj.type <= ProjectileID.DryBomb || proj.type == ProjectileID.DirtBomb || proj.type == ProjectileID.DirtStickyBomb)
+                    proj.type == ProjectileID.BouncyGrenade || proj.type == ProjectileID.ScarabBomb || proj.type >= ProjectileID.WetBomb && proj.type <= ProjectileID.DryBomb || proj.type == ProjectileID.DirtBomb || proj.type == ProjectileID.DirtStickyBomb || proj.type == ProjectileID.ExplosiveBullet || proj.type == ProjectileID.HellfireArrow || proj.type == ProjectileID.ExplosiveBunny)
                 {
                     proj.damage *= BombBoostBuff + 100 / 100;
+                    if (BombBoostBuff >= 3)
+                    {
+                        proj.ArmorPenetration += 10;
+                    }
                 }
             }
             #endregion
@@ -1626,7 +1771,7 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
             #region Ranged Arrow
-            if (proj.type == ProjectileID.WoodenArrowFriendly)
+            if (proj.DamageType == DamageClass.Ranged)
             {
                 #region Close Range
                 if (CRangePlus)
@@ -1655,7 +1800,7 @@ namespace MHArmorSkills.MHPlayer
                 }
                 if (proj.CountsAsClass<RangedDamageClass>())
                 {
-                    modifiers.SourceDamage += rangedBoost;                    
+                    modifiers.SourceDamage += rangedBoost;
                 }
             }
             #endregion
@@ -1685,7 +1830,8 @@ namespace MHArmorSkills.MHPlayer
             #region Counter Strike
             if (CounterStrike >= 1)
             {
-                Player.AddBuff(ModContent.BuffType<CounterStrike>(), 10 * 60);
+                int Duration = (int)(10 * 60 * ProlongerTime);
+                Player.AddBuff(ModContent.BuffType<CounterStrike>(), Duration);
             }
             #endregion
             #region Honey Hunter
@@ -1707,7 +1853,9 @@ namespace MHArmorSkills.MHPlayer
             #region Fortified
             if (Fortified)
             {
-                Player.AddBuff(ModContent.BuffType<Fortified>(), FortifedTimer * 60 * 60);
+                int Duration = (int)(FortifedTimer * 60 * 60 * ProlongerTime);
+                Player.AddBuff(ModContent.BuffType<Fortified>(), Duration);
+                Player.statLife = Player.statLifeMax2;
             }
             #endregion
             BloodlustCount = 0;
@@ -1788,7 +1936,7 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
             #region Sharpness Element buff
-            if (Sharpness && item.CountsAsClass<MeleeDamageClass>())
+            /*if (Sharpness && item.CountsAsClass<MeleeDamageClass>())
             {
                 float SharpnessBoost = item.rare + Handicraft;
                 if (SharpnessBoost > 11)
@@ -1800,7 +1948,7 @@ namespace MHArmorSkills.MHPlayer
                 {
                     damage.Base += SharpnessBoost;
                 }
-            }
+            }*/
             #endregion
             #region Kushalas Blessing
             if (KushBless >= 1 && (MHLists.iceelementList.Contains(item.type) || MHLists.waterelementList.Contains(item.type)))
@@ -1858,16 +2006,17 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
             #region Sharpness
-            if (Sharpness && item.CountsAsClass<MeleeDamageClass>() && item.rare >= ItemRarityID.LightPurple)
-            {
-                int Handicraftboost = item.rare + Handicraft;
-                if (Handicraftboost > 11)
-                {
-                    Handicraftboost = 11;
-                }
-                int Sharpness = (Handicraftboost) / 2;
-                knockback.Flat += item.knockBack * (Sharpness / 10) + 1;
-            }
+            /*            if (Sharpness && item.CountsAsClass<MeleeDamageClass>() && item.rare >= ItemRarityID.LightPurple)
+                        {
+                            int Handicraftboost = item.rare + Handicraft;
+                            if (Handicraftboost > 11)
+                            {
+                                Handicraftboost = 11;
+                            }
+                            int Sharpness = (Handicraftboost) / 2;
+                            knockback.Flat += item.knockBack * (Sharpness / 10) + 1;
+                        }
+            */
             #endregion
         }
 
@@ -1993,6 +2142,40 @@ namespace MHArmorSkills.MHPlayer
                 }
             }
             #endregion
+            #region Bladehone Scale
+            if (Player.HasBuff(ModContent.BuffType<BladeHoneScale>()) && Shoottimer == 0)
+            {
+                for (int index = 0; index < BladeHoneScale; ++index)
+                {
+                    switch (Main.rand.Next(4))
+                    {
+                        case 0:
+                            type = ModContent.ProjectileType<BladeScale1>();
+                            break;
+                        case 1:
+                            type = ModContent.ProjectileType<BladeScale2>();
+                            break;
+                        case 2:
+                            type = ModContent.ProjectileType<BladeScale3>();
+                            break;
+                        case 3:
+                            type = ModContent.ProjectileType<BladeScale4>();
+                            break;
+                    }
+                    float SpeedX = velocity.X + Main.rand.NextFloat(-3.75f, 3.75f);
+                    float SpeedY = velocity.Y + Main.rand.NextFloat(-3.75f, 3.75f);
+                    Projectile.NewProjectile(source, position.X, position.Y, SpeedX, SpeedY, type, damage / 3, knockback, Player.whoAmI);
+                    Shoottimer = 30;
+                }
+            }
+            #endregion
+            #region Artillery
+            //if (ArtilleryBuff >= 15 && item.useAmmo == AmmoID.Rocket && ArtilleryCooldown == 0)
+            //{
+            //    Projectile.NewProjectile(source, position.X, position.Y, velocity.X, velocity.Y, type, damage / 2, knockback / 2, Player.whoAmI);
+            //    ArtilleryCooldown = 90;
+            //}
+            #endregion
             return base.Shoot(item, source, position, velocity, type, damage, knockback);
         }
         public override bool PreKill(double damage, int hitDirection, bool pvp, ref bool playSound, ref bool genDust, ref PlayerDeathReason damageSource)
@@ -2019,6 +2202,7 @@ namespace MHArmorSkills.MHPlayer
             #region Recovery Speed
             Player.lifeRegenCount += RecoverySpeed;
             Player.lifeRegenTime += RecoverySpeed;
+            Player.lifeRegen += RecoverySpeed;
             #endregion
             #region Hasten Recovery
             if (Player.HasBuff(ModContent.BuffType<HastenRecovery>()))
@@ -2030,13 +2214,18 @@ namespace MHArmorSkills.MHPlayer
         }
         public override void UpdateBadLifeRegen()
         {
-            base.UpdateBadLifeRegen();
+            ArmorSkills modPlayer = Player.GetModPlayer<ArmorSkills>();
             #region Frenzy Fail
             if (Player.HasBuff(ModContent.BuffType<FrenzyFail>()))
             {
                 Player.lifeRegen -= 3;
                 Player.lifeRegenTime += 10;
                 Player.lifeRegenCount -= 20;
+            }
+
+            if (Player.HasBuff(ModContent.BuffType<Frenzy>()))
+            {
+                Player.lifeRegen -= 1;
             }
             #endregion
             #region BlightProof
@@ -2053,6 +2242,100 @@ namespace MHArmorSkills.MHPlayer
                 }
             }
             #endregion
+            #region Resentment/Strife
+            if (Player.lifeRegen < 0)
+            {
+                if (StrifeCrit >= 1)
+                {
+                    if (Main.rand.NextBool(5))
+                    {
+                        for (int T = 0; T < 2; T++)
+                        {
+                            const int dustCount = 36; // Number of dust particles to spawn
+                            const float radius = 32f; // Radius of the circle
+
+                            for (int i = 0; i < dustCount; i++)
+                            {
+                                float angle = MathHelper.ToRadians(90 * 360f / dustCount); // Calculate angle for each particle
+
+                                // Calculate position for each particle
+                                float offsetX = radius * (float)Math.Cos(angle);
+                                float offsetY = radius * (float)Math.Sin(angle);
+
+                                Vector2 position = Player.position + new Vector2(offsetX, offsetY);
+
+                                // Create dust particle
+                                int dustIndex = Dust.NewDust(
+                                    position,
+                                    0, 0,
+                                    DustID.BlueTorch,
+                                    0f, -1f,
+                                    100,
+                                    default(Color),
+                                    1.5f
+                                );
+
+                                // Set properties for the dust particle
+                                Main.dust[dustIndex].noGravity = true;
+                                Main.dust[dustIndex].noLight = false;
+                                Main.dust[dustIndex].fadeIn = 0.2f;
+                                Main.dust[dustIndex].velocity *= 0.3f;
+                            }
+
+                            // Optional: Add some random variation to the positions
+                        }
+                    }
+                    ControlledCrit += StrifeCrit;
+                }
+                if (ResentmentBuff >= 1)
+                {
+
+                    if (Main.rand.NextBool(5))
+                    {
+                        for (int i = 0; i < 2; i++)
+                        {
+                            const int dustCount = 36; // Number of dust particles to spawn
+                            const float radius = 32f; // Radius of the circle
+
+                            for (int d = 0; d < dustCount; d++)
+                            {
+                                float angle = MathHelper.ToRadians(180 * 360f / dustCount); // Calculate angle for each particle
+
+                                // Calculate position for each particle
+                                float offsetX = radius * (float)Math.Cos(angle);
+                                float offsetY = radius * (float)Math.Sin(angle);
+
+                                Vector2 position = Player.position + new Vector2(offsetX, offsetY);
+
+                                // Create dust particle
+                                int dustIndex = Dust.NewDust(
+                                    position,
+                                    0, 0,
+                                    DustID.RedTorch,
+                                    0f, -1f,
+                                    100,
+                                    default(Color),
+                                    1.5f
+                                );
+
+                                // Set properties for the dust particle
+                                Main.dust[dustIndex].noGravity = true;
+                                Main.dust[dustIndex].noLight = false;
+                                Main.dust[dustIndex].fadeIn = 0.2f;
+                                Main.dust[dustIndex].velocity *= 0.3f;
+                            }
+
+                            // Optional: Add some random variation to the positions
+                        }
+                    }
+                    ControlledAttack += ResentmentBuff;
+                }
+            }
+            #endregion
+            if (modPlayer.Heroics >= 3 && Player.HasBuff(ModContent.BuffType<Heroics>()) && Player.lifeRegen > 0)
+            {
+                Player.lifeRegen = 0;
+            }
         }
         public override float UseSpeedMultiplier(Item item)
 

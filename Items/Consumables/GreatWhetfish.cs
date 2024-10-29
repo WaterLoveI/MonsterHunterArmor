@@ -1,4 +1,4 @@
-﻿using MHArmorSkills.Buffs;
+﻿using MHArmorSkills.Buffs.ArmorBuffs;
 using MHArmorSkills.Global;
 using MHArmorSkills.MHPlayer;
 using Terraria;
@@ -28,17 +28,32 @@ namespace MHArmorSkills.Items.Consumables
 
         public override void HoldItem(Player player)
         {
-            MHPlayerArmorSkill modPlayer = player.GetModPlayer<MHPlayerArmorSkill>();
-            if (!player.HasBuff(ModContent.BuffType<Sharpness>()))
+            /*           MHPlayerArmorSkill modPlayer = player.GetModPlayer<MHPlayerArmorSkill>();
+                       if (!player.HasBuff(ModContent.BuffType<Sharpness>()))
+                       {
+                           int Timer = 45;
+                           if (modPlayer.RazorSharp >= 1)
+                           {
+                               Timer += 45 * modPlayer.RazorSharp;
+                           }
+                           player.AddBuff(ModContent.BuffType<Sharpness>(), Timer * 60);
+                           SoundEngine.PlaySound(SoundID.Item37);
+                       }
+
+            */
+            SharpnessPlayer modPlayer = player.GetModPlayer<SharpnessPlayer>();
+            if (modPlayer.CurrentSharpness < modPlayer.MaxSharpness)
             {
-                int Timer = 45;
-                if (modPlayer.RazorSharp >= 1)
+                modPlayer.CurrentSharpness += 50;
+                ArmorSkills ModPlayer = player.GetModPlayer<ArmorSkills>();
+                MHPlayerArmorSkill SkillPlayer = player.GetModPlayer<MHPlayerArmorSkill>();
+                if (ModPlayer.ProtectivePolish >= 1)
                 {
-                    Timer += 45 * modPlayer.RazorSharp;
+                    int Duration = (int)(ModPlayer.ProtectivePolish * 15 * 60 * SkillPlayer.ProlongerTime);
+                    player.AddBuff(ModContent.BuffType<ProtectivePolish>(), Duration);
                 }
-                player.AddBuff(ModContent.BuffType<Sharpness>(), Timer * 60);
-                SoundEngine.PlaySound(SoundID.Item37);
             }
+
         }
     }
 }

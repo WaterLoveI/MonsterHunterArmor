@@ -11,9 +11,11 @@ namespace MHArmorSkills.MHPlayer
     {
         #region SKills
         public bool AntiBleeding;
+        public bool AntiBlast;
         public bool Autoreload;
+        public bool AutoGuard;
         public bool CRangePlus;
-        public bool HeavenSent;
+        public int HeavenSent;
         public bool IntrepidHeart;
         public bool PoisonCPlus;
         public bool RockSteady;
@@ -106,6 +108,7 @@ namespace MHArmorSkills.MHPlayer
         public int PierceUp;
         public int PolarHunter;
         public int PowderMantle;
+        public int PowerProlonger;
         public int Protection;
         public int ProtectivePolish;
         public int PunishDraw;
@@ -158,6 +161,8 @@ namespace MHArmorSkills.MHPlayer
             AffinitySliding = 0;
             AMobility = 0;
             AntiBleeding = false;
+            AntiBlast = false;
+            AutoGuard = false;
             AntiPoison = 0;
             Artillery = 0;
             Attack = 0;
@@ -220,7 +225,7 @@ namespace MHArmorSkills.MHPlayer
             Handicraft = 0;
             HastenRecovery = 0;
             Health = 0;
-            HeavenSent = false;
+            HeavenSent = 0;
             HeatRes = 0;
             Heroics = 0;
             HonedBlade = 0;
@@ -244,6 +249,7 @@ namespace MHArmorSkills.MHPlayer
             PoisonCPlus = false;
             PolarHunter = 0;
             PowderMantle = 0;
+            PowerProlonger = 0;
             Protection = 0;
             ProtectivePolish = 0;
             PunishDraw = 0;
@@ -298,6 +304,7 @@ namespace MHArmorSkills.MHPlayer
         {
             MHPlayerArmorSkill modPlayer = Player.GetModPlayer<MHPlayerArmorSkill>();
             ScrollSwapPlayer ScrollPlayer = Player.GetModPlayer<ScrollSwapPlayer>();
+            SharpnessPlayer SharpPlayer = Player.GetModPlayer<SharpnessPlayer>();
             #region Essence
             if (ZinogreEssence >= 3)
             {
@@ -329,7 +336,7 @@ namespace MHArmorSkills.MHPlayer
                 }
                 if (AffinitySliding >= 2)
                 {
-                    modPlayer.aSlidingCrit += 6;
+                    modPlayer.aSlidingCrit += 3;
                 }
                 if (AffinitySliding >= 3)
                 {
@@ -361,6 +368,12 @@ namespace MHArmorSkills.MHPlayer
             if (AntiBleeding == true)
             {
                 Player.buffImmune[BuffID.Bleeding] = true;
+            }
+            #endregion
+#region AntiBlast
+            if (AntiBlast)
+            {
+                Player.buffImmune[ModContent.BuffType<BlastBlight>()] = true;
             }
             #endregion
             #region Anti Poison
@@ -599,15 +612,15 @@ namespace MHArmorSkills.MHPlayer
             {
                 if (ChallengeSheathe >= 1)
                 {
-                    modPlayer.ChallengeSheathe += 1;
+                    SharpPlayer.ChallengeSheath += 1;
                 }
                 if (ChallengeSheathe >= 2)
                 {
-                    modPlayer.ChallengeSheathe += 1;
+                    SharpPlayer.ChallengeSheath += 1;
                 }
                 if (ChallengeSheathe >= 3)
                 {
-                    modPlayer.ChallengeSheathe += 1;
+                    SharpPlayer.ChallengeSheath += 1;
                 }
             }
             #endregion
@@ -687,15 +700,15 @@ namespace MHArmorSkills.MHPlayer
             #region CounterStrike
             if (CounterStrike >= 1)
             {
-                if (Coalescence >= 1)
+                if (CounterStrike >= 1)
                 {
                     modPlayer.CounterStrike += 5;
                 }
-                if (Coalescence >= 2)
+                if (CounterStrike >= 2)
                 {
                     modPlayer.CounterStrike += 5;
                 }
-                if (Coalescence >= 3)
+                if (CounterStrike >= 3)
                 {
                     modPlayer.CounterStrike += 5;
                 }
@@ -706,15 +719,16 @@ namespace MHArmorSkills.MHPlayer
             {
                 if (CritDraw >= 1)
                 {
-                    modPlayer.CritDraw += 1;
+                    SharpPlayer.CritDrawCrit += 10;
                 }
                 if (CritDraw >= 2)
                 {
-                    modPlayer.CritDraw += 1;
+                    SharpPlayer.CritDrawCrit += 10;
                 }
                 if (CritDraw >= 3)
                 {
-                    modPlayer.CritDraw += 1;
+                    SharpPlayer.CritDrawCrit += 5;
+                    SharpPlayer.CritDrawCritDmg += 10;
                 }
             }
             #endregion
@@ -1158,15 +1172,15 @@ namespace MHArmorSkills.MHPlayer
             {
                 if (Foray >= 1)
                 {
-                    modPlayer.Foray += 1.03f;
+                    modPlayer.Foray += 1.05f;
                 }
                 if (Foray >= 2)
                 {
-                    modPlayer.Foray += 0.03f;
+                    modPlayer.Foray += 0.05f;
                 }
                 if (Foray >= 3)
                 {
-                    modPlayer.Foray += 0.04f;
+                    modPlayer.Foray += 0.05f;
                 }
             }
             #endregion
@@ -1271,17 +1285,17 @@ namespace MHArmorSkills.MHPlayer
             #region Grinder
             if (Grinder >= 1)
             {
-                if (Grinder >= 1)
-                {
-                    modPlayer.Grinder += 5;
-                }
+                SharpPlayer.GrinderTime += 30;
+                SharpPlayer.GrinderDmg += 10;
+
                 if (Grinder >= 2)
                 {
-                    modPlayer.Grinder += 5;
+                    SharpPlayer.GrinderTime += 30;
                 }
                 if (Grinder >= 3)
                 {
-                    modPlayer.Grinder += 5;
+                    SharpPlayer.GrinderTime += 30;
+                    SharpPlayer.GrinderDmg += 5;
                 }
             }
             #endregion
@@ -1349,13 +1363,14 @@ namespace MHArmorSkills.MHPlayer
             #region Handicraft
             if (Handicraft >= 1)
             {
-                if (Handicraft >= 1)
-                {
-                    modPlayer.Handicraft += 1;
-                }
+                SharpPlayer.Handicraft += 10;
                 if (Handicraft >= 2)
                 {
-                    modPlayer.Handicraft += 2;
+                    SharpPlayer.Handicraft += 10;
+                }
+                if (Handicraft >= 3)
+                {
+                    SharpPlayer.Handicraft += 10;
                 }
             }
             #endregion
@@ -1413,6 +1428,18 @@ namespace MHArmorSkills.MHPlayer
                         RecSpeed += 1;
                     }
                 }
+            }
+            #endregion
+            #region HeavenSent
+            if (HeavenSent >= 1)
+            {
+                ScrollPlayer.ScrollActive =true;
+                ScrollPlayer.HeaventSentActivation += 20 * 60;
+                if (HeavenSent >= 2)
+                {
+                    ScrollPlayer.HeaventSentActivation -= 5 * 60;
+                }
+
             }
             #endregion
             #region Heroic
@@ -1652,34 +1679,34 @@ namespace MHArmorSkills.MHPlayer
                 ScrollPlayer.MailofHellfireMelee += 0.2f;
                 ScrollPlayer.MailofHellfireDefDrop += 3;
                 ScrollPlayer.MailofHellfireShoot += 0.05f;
-                ScrollPlayer.MailofHellfireEndurance += 0.1f;
+                ScrollPlayer.MailofHellfireEndurance += 0.05f;
                 if (MailofHellfire >= 2)
                 {
                     ScrollPlayer.MailofHellfireMelee += 0.2f;
                     ScrollPlayer.MailofHellfireDefDrop += 2;
                     ScrollPlayer.MailofHellfireShoot += 0.05f;
-                    ScrollPlayer.MailofHellfireEndurance += 0.1f;
+                    ScrollPlayer.MailofHellfireEndurance += 0.05f;
                 }
                 if (MailofHellfire >= 3)
                 {
                     ScrollPlayer.MailofHellfireMelee += 0.2f;
                     ScrollPlayer.MailofHellfireDefDrop += 2;
                     ScrollPlayer.MailofHellfireShoot += 0.05f;
-                    ScrollPlayer.MailofHellfireEndurance += 0.1f;
+                    ScrollPlayer.MailofHellfireEndurance += 0.05f;
                 }
             }
             #endregion
             #region Masters Touch
             if (MastersTouch >= 1)
             {
-                modPlayer.MastersTouch += 4;
+                SharpPlayer.MastersTouch += 1;
                 if (MastersTouch >= 2)
                 {
-                    modPlayer.MastersTouch -= 2;
+                    SharpPlayer.MastersTouch += 1;
                 }
                 if (MastersTouch >= 3)
                 {
-                    modPlayer.MastersTouch -= 1;
+                    SharpPlayer.MastersTouch += 1;
                 }
             }
             #endregion
@@ -1689,12 +1716,12 @@ namespace MHArmorSkills.MHPlayer
                 modPlayer.MaxMightCrit += 10;
                 if (MaximumMight >= 2)
                 {
-                    modPlayer.MaxMightCrit += 10;
+                    modPlayer.MaxMightCrit += 5;
 
                 }
                 if (MaximumMight >= 3)
                 {
-                    modPlayer.MaxMightCrit += 10;
+                    modPlayer.MaxMightCrit += 5;
 
                 }
             }
@@ -1828,6 +1855,12 @@ namespace MHArmorSkills.MHPlayer
                 }
             }
             #endregion
+            #region Power Prolonger
+            if (PowerProlonger >= 1)
+            {
+                modPlayer.ProlongerTime += 0.2f;
+            }
+            #endregion
             #region Protection
             if (Protection >= 1)
             {
@@ -1846,7 +1879,7 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
             #region Protective Polish
-            if (ProtectivePolish >= 1)
+            /*if (ProtectivePolish >= 1)
             {
                 if (ProtectivePolish >= 1)
                 {
@@ -1860,7 +1893,7 @@ namespace MHArmorSkills.MHPlayer
                 {
                     modPlayer.ProtectivePolish -= 1;
                 }
-            }
+            }*/
             #endregion
             #region Powder Mantle
             if (PowderMantle >= 1)
@@ -1885,17 +1918,17 @@ namespace MHArmorSkills.MHPlayer
             #region Punish Draw
             if (PunishDraw >= 1)
             {
-                if (PunishDraw >= 1)
-                {
-                    modPlayer.PunishDraw += 3;
-                }
+                SharpPlayer.PunishDrawDmg += 0.05f;
+                SharpPlayer.PunishDrawKB += 0.1f;
                 if (PunishDraw >= 2)
                 {
-                    modPlayer.PunishDraw += 2;
+                    SharpPlayer.PunishDrawDmg += 0.05f;
+                    SharpPlayer.PunishDrawKB += 0.2f;
                 }
                 if (PunishDraw >= 3)
                 {
-                    modPlayer.PunishDraw += 2;
+                    SharpPlayer.PunishDrawDmg += 0.05f;
+                    SharpPlayer.PunishDrawKB += 0.2f;
                 }
             }
             #endregion
@@ -1927,15 +1960,15 @@ namespace MHArmorSkills.MHPlayer
             {
                 if (QuickSheath >= 1)
                 {
-                    modPlayer.QuickSheath += 1;
+                    SharpPlayer.QuickSheath += 0.1f;
                 }
                 if (QuickSheath >= 2)
                 {
-                    modPlayer.QuickSheath += 1;
+                    SharpPlayer.QuickSheath += 0.2f;
                 }
                 if (QuickSheath >= 3)
                 {
-                    modPlayer.QuickSheath += 1;
+                    SharpPlayer.QuickSheath += 0.2f;
                 }
             }
             #endregion
@@ -1963,15 +1996,15 @@ namespace MHArmorSkills.MHPlayer
             {
                 if (RazorSharp >= 1)
                 {
-                    modPlayer.RazorSharp += 2;
+                    SharpPlayer.RazorSharp += 10;
                 }
                 if (RazorSharp >= 2)
                 {
-                    modPlayer.RazorSharp += 3;
+                    SharpPlayer.RazorSharp -= 6;
                 }
                 if (RazorSharp >= 3)
                 {
-                    modPlayer.RazorSharp += 4;
+                    SharpPlayer.RazorSharp -= 2;
                 }
             }
             #endregion
@@ -2022,32 +2055,32 @@ namespace MHArmorSkills.MHPlayer
             {
                 if (Resentment >= 1)
                 {
-                    modPlayer.ResentmentBuff += 3;
+                    modPlayer.ResentmentBuff += 5;
                 }
                 if (Resentment >= 2)
                 {
-                    modPlayer.ResentmentBuff += 3;
+                    modPlayer.ResentmentBuff += 5;
                 }
                 if (Resentment >= 3)
                 {
-                    modPlayer.ResentmentBuff += 4;
+                    modPlayer.ResentmentBuff += 5;
                 }
             }
             #endregion
-            #region resuscitate
+            #region Resuscitate
             if (resuscitate >= 1)
             {
                 if (resuscitate >= 1)
                 {
-                    modPlayer.resuscitateBuff += 3;
+                    modPlayer.resuscitateBuff += 5;
                 }
                 if (resuscitate >= 2)
                 {
-                    modPlayer.resuscitateBuff += 3;
+                    modPlayer.resuscitateBuff += 5;
                 }
                 if (resuscitate >= 3)
                 {
-                    modPlayer.resuscitateBuff += 4;
+                    modPlayer.resuscitateBuff += 5;
                 }
             }
             #endregion
@@ -2102,7 +2135,7 @@ namespace MHArmorSkills.MHPlayer
                 if (Sneak >= 3)
                 {
                     Player.aggro -= 200;
-                    Player.GetCritChance(DamageClass.Generic) += 3;
+                    Player.GetCritChance(DamageClass.Generic) += 5;
                 }
             }
             #endregion
@@ -2261,11 +2294,11 @@ namespace MHArmorSkills.MHPlayer
             {
                 if (Tenderizer >= 1)
                 {
-                    modPlayer.Tenderizer += 0.03f;
+                    modPlayer.Tenderizer += 0.1f;
                 }
                 if (Tenderizer >= 2)
                 {
-                    modPlayer.Tenderizer += 0.04f;
+                    modPlayer.Tenderizer += 0.05f;
                 }
                 if (Tenderizer >= 3)
                 {
@@ -2392,15 +2425,15 @@ namespace MHArmorSkills.MHPlayer
 
                 if (Vault >= 1)
                 {
-                    modPlayer.Vault += 3;
+                    modPlayer.Vault += 5;
                 }
                 if (Vault >= 2)
                 {
-                    modPlayer.Vault += 2;
+                    modPlayer.Vault += 10;
                 }
                 if (Vault >= 3)
                 {
-                    modPlayer.Vault += 2;
+                    modPlayer.Vault += 15;
                 }
             }
             #endregion

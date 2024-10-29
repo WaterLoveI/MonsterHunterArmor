@@ -12,12 +12,12 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
     [AutoloadEquip(EquipType.Head)]
     public class SeltasHelm : ModItem
     {
-        public static readonly int Crit = 5;
+        public static readonly int Damage = 5;
         public static readonly int Auto = 2;
         public static readonly int Guard = 2;
         public static readonly int Decor = 1;
 
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Crit, Auto, Guard, Decor);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Auto, Guard, Decor);
 
         public override void SetDefaults()
         {
@@ -30,7 +30,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.GetCritChance<GenericDamageClass>() += Crit;
+            player.GetDamage<GenericDamageClass>() += Damage / 100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.AutoTracker += Auto;
             modPlayer.Guard += Guard;

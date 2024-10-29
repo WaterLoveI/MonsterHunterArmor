@@ -36,7 +36,7 @@ namespace MHArmorSkills.Items.Accessories.Decorations
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
             if (SlotPlayer.DecorationThreeSlots >= 1)
             {
-                SlotPlayer.DecorationTwoSlots -= 1;
+                SlotPlayer.DecorationThreeSlots -= 1;
                 return true;
                 
             }

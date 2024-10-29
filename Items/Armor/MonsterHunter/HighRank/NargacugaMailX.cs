@@ -16,10 +16,10 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
         public static readonly int Crit = 10;
         public static readonly int Move = 5;
         public static readonly int Evasion = 2;
-        public static readonly int Adren = 1;
+        public static readonly int Sneak = 2;
         public static readonly int Decor1 = 1;
         public static readonly int Decor2 = 1;
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Crit, Move, Evasion, Adren, Decor1, Decor2);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Crit, Move, Evasion, Sneak, Decor1, Decor2);
 
         public override void SetDefaults()
         {
@@ -36,7 +36,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
             player.GetCritChance<GenericDamageClass>() += Crit;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.Evasion += Evasion;
-            modPlayer.AdrenalineRush += Adren;
+            modPlayer.Sneak += Sneak;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
             SlotPlayer.DecorationOneSlots += Decor1;
             SlotPlayer.DecorationThreeSlots += Decor2;

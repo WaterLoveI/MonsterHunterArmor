@@ -117,6 +117,7 @@ namespace MHArmorSkills.NPCs.NormalNPC.Bnahabra
         public override void ModifyNPCLoot(NPCLoot npcLoot)
         {
             npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<InsectShell>(), 10));
+            npcLoot.Add(ItemDropRule.Common(ItemID.Stinger, 3));
             npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<MonsterFluid>(), 10));
             if (Main.hardMode)
             {

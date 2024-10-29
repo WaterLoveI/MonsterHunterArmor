@@ -4,6 +4,7 @@ using MHArmorSkills.Items.Accessories.Decorations;
 using MHArmorSkills.Items.Weapons;
 using MHArmorSkills.NPCs.NormalNPC;
 using MHArmorSkills.NPCs.NormalNPC.Bugs;
+using MHArmorSkills.Projectiles.Enemy;
 using System.Collections.Generic;
 using Terraria.ID;
 using static Terraria.ModLoader.ModContent;
@@ -67,6 +68,10 @@ namespace MHArmorSkills
                 BuffType<FrenzyFail>(),
                 BuffType<BubbleBlight>(),
                 BuffType<BlastBlight>(),
+                BuffType<FireBlight>(),
+                BuffType<WaterBlight>(),
+                BuffType<IceBlight>(),
+                BuffType<ThunderBlight>(),
             };
             buffList = new List<int>()
             {
@@ -400,6 +405,7 @@ namespace MHArmorSkills
                 ProjectileID.SharknadoBolt,
                 ProjectileID.BloodShot,
                 ProjectileID.BloodNautilusShot,
+                ProjectileType<SeltasGoop>(),
             };
             thunderresprojList = new List<int>()
             {
@@ -418,6 +424,7 @@ namespace MHArmorSkills
                 ProjectileID.NebulaLaser,
                 ProjectileID.VortexLaser,
                 ProjectileID.VortexVortexLightning,
+                ProjectileType<DesertSeltasGoop>(),
             };
             iceresprojList = new List<int>()
             {
@@ -441,6 +448,7 @@ namespace MHArmorSkills
                 ItemType<Artillery2>(),
                 ItemType<Atk1>(),
                 ItemType<Atk2>(),
+                ItemType<AutoGuard1>(),
                 ItemType<AutoReload1>(),
                 ItemType<AutoTracker1>(),
                 ItemType<AutoTracker2>(),
@@ -587,6 +595,7 @@ namespace MHArmorSkills
                 ItemType<PoisonCoating1>(),
                 ItemType<PolarHunter1>(),
                 ItemType<PolarHunter2>(),
+                ItemType<PowerProlonger1>(),
                 ItemType<Protection1>(),
                 ItemType<Protection2>(),
                 ItemType<ProtectivePolish1>(),
@@ -726,6 +735,7 @@ namespace MHArmorSkills
                 ItemType<AquaticMobility2>(),
                 ItemType<Artillery1>(),
                 ItemType<Atk1>(),
+                ItemType<AutoGuard1>(),
                 ItemType<AutoTracker2>(),
                 ItemType<BBQExpert2>(),
                 ItemType<BladehoneScale1>(),
@@ -787,6 +797,7 @@ namespace MHArmorSkills
                 ItemType<PierceUp1>(),
                 ItemType<Poison2>(),
                 ItemType<PolarHunter1>(),
+                ItemType<PolarHunter2>(),
                 ItemType<Protection1>(),
                 ItemType<PunishDraw1>(),
                 ItemType<Redirection1>(),

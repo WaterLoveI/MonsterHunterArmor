@@ -9,8 +9,13 @@ LifePowder: {
 }
 
 WhetStone: {
-	DisplayName: Whet Stone
-	Tooltip: Sharpens your weapons and grants the Sharpness buff for 45 seconds.
+	DisplayName: Whetstone
+	Tooltip: Restores 50 sharpness.
+}
+
+GuideBook: {
+	DisplayName: Hunter's guidebook
+	Tooltip: ""
 }
 
 ArmorSphere: {
@@ -282,14 +287,14 @@ Whetfish: {
 	DisplayName: Whetfish
 	Tooltip:
 		'''
-		Grant the "Sharpness" buff for 30 seconds.
+		Restores 50 sharpness.
 		Faster usetime than the Whetstone.
 		'''
 }
 
 GreatWhetfish: {
 	DisplayName: Great Whetfish
-	Tooltip: Having this item in hand automatically grant the "Sharpness" buff for 45 seconds.
+	Tooltip: Having this item in hand automatically restores 50 sharpness.
 }
 
 MonsterBone: {
@@ -304,10 +309,5 @@ BoneClub: {
 
 HermitaurBanner: {
 	DisplayName: Hermitaur Banner
-	Tooltip: ""
-}
-
-Dereliction1: {
-	DisplayName: Dereliction1
 	Tooltip: ""
 }

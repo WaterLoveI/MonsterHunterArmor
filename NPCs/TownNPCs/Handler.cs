@@ -1,11 +1,18 @@
-﻿using System.Collections.Generic;
+﻿using MHArmorSkills.Items;
+using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
+using MHArmorSkills.MHPlayer;
+using MHArmorSkills.Projectiles;
+using System.Collections.Generic;
 using Terraria;
+using Terraria.DataStructures;
 using Terraria.GameContent;
 using Terraria.GameContent.Bestiary;
-using Terraria.ID;
-using Terraria.ModLoader;
-using MHArmorSkills.Utilities;
+using Terraria.GameContent.ItemDropRules;
 using Terraria.GameContent.Personalities;
+using Terraria.ID;
+using Terraria.Localization;
+using Terraria.ModLoader;
+using Terraria.Utilities;
 
 namespace MHArmorSkills.NPCs.TownNPCs
 {
@@ -19,7 +26,7 @@ namespace MHArmorSkills.NPCs.TownNPCs
 
             NPCID.Sets.ExtraFramesCount[Type] = 9; // Generally for Town NPCs, but this is how the NPC does extra things such as sitting in a chair and talking to other NPCs. This is the remaining frames after the walking frames.
             NPCID.Sets.AttackFrameCount[Type] = 4; // The amount of frames in the attacking animation.
-            NPCID.Sets.DangerDetectRange[Type] = 700; // The amount of pixels away from the center of the NPC that it tries to attack enemies.
+            NPCID.Sets.DangerDetectRange[Type] = 240; // The amount of pixels away from the center of the NPC that it tries to attack enemies.
             NPCID.Sets.AttackType[Type] = 0; // The type of attack the Town NPC performs. 0 = throwing, 1 = shooting, 2 = magic, 3 = melee
             NPCID.Sets.AttackTime[Type] = 90; // The amount of time it takes for the NPC's attack animation to be over once it starts.
             NPCID.Sets.AttackAverageChance[Type] = 30; // The denominator for the chance for a Town NPC to attack. Lower numbers make the Town NPC appear more aggressive.
@@ -28,7 +35,7 @@ namespace MHArmorSkills.NPCs.TownNPCs
             NPC.Happiness
                 .SetBiomeAffection<OceanBiome>(AffectionLevel.Like)
                 .SetBiomeAffection<DesertBiome>(AffectionLevel.Like)
-                .SetBiomeAffection<UndergroundBiome>(AffectionLevel.Like)                
+                .SetBiomeAffection<UndergroundBiome>(AffectionLevel.Like)
                 .SetNPCAffection(NPCID.Guide, AffectionLevel.Like)
                 .SetNPCAffection(NPCID.Merchant, AffectionLevel.Like)
                 .SetNPCAffection(NPCID.ArmsDealer, AffectionLevel.Like);
@@ -99,5 +106,114 @@ namespace MHArmorSkills.NPCs.TownNPCs
                 "Sophia",
             };
         }
+        public override string GetChat()
+        {
+            WeightedRandom<string> chat = new WeightedRandom<string>();
+
+            int BestiaryGirl = NPC.FindFirstNPC(NPCID.BestiaryGirl);
+            int Angler = NPC.FindFirstNPC(NPCID.Angler);
+            if (BestiaryGirl >= 0 && Main.rand.NextBool(4))
+            {
+                chat.Add(Language.GetTextValue("Mods.MHArmorSkills.Dialogue.Handler.BestiaryGirlDialogue", Main.npc[BestiaryGirl].GivenName));
+            }
+            if (Angler >= 0 && Main.rand.NextBool(4))
+            {
+                chat.Add(Language.GetTextValue("Mods.MHArmorSkills.Dialogue.Handler.AnglerDialogue", Main.npc[Angler].GivenName));
+            }
+            chat.Add(Language.GetTextValue("Mods.MHArmorSkills.Dialogue.Handler.StandardDialogue1"));
+            chat.Add(Language.GetTextValue("Mods.MHArmorSkills.Dialogue.Handler.StandardDialogue2"));
+            chat.Add(Language.GetTextValue("Mods.MHArmorSkills.Dialogue.Handler.StandardDialogue3"));
+            chat.Add(Language.GetTextValue("Mods.MHArmorSkills.Dialogue.Handler.StandardDialogue4"));
+            chat.Add(Language.GetTextValue("Mods.MHArmorSkills.Dialogue.Handler.StandardDialogue5"));
+            string chosenChat = chat;
+            return chosenChat;
+        }
+
+        public override void SetChatButtons(ref string button, ref string button2)
+        { // What the chat buttons are when you open up the chat UI
+            button = "Quests";
+            button2 = "Rewards";
+        }
+
+        public override void OnChatButtonClicked(bool firstButton, ref string shop)
+        {
+            Player player = Main.player[Main.myPlayer];
+            if (firstButton)
+            {
+                if (player.GetModPlayer<QuestPlayer>().QuestNumber == 0)
+                {
+                    Main.npcChatText = "Oh hey, doodle. What am I up to? Well that's the problem. What's the point of a guildmarm if there's no one to give quests to? The guide certainly isn't interested. Will you play along with me? I'll give you a guide book to get you started!";
+                    Main.npcChatCornerItem = ModContent.ItemType<GuideBook>();
+                    var entitySource = NPC.GetSource_GiftOrReward();
+                    Main.LocalPlayer.QuickSpawnItem(entitySource, ModContent.ItemType<GuideBook>());
+                    player.GetModPlayer<QuestPlayer>().QuestNumber += 1;
+                    return;
+                }
+                #region Mushroom Quest
+                if (player.GetModPlayer<QuestPlayer>().QuestNumber == 1)
+                {
+                    Main.npcChatText = "Oh! you're ready for your first quest? I wasn't expecting this so fast! Hmmm, one second... one second... Oh I got one! This one is actually a classic. Collect 5 mushrooms for me.";
+                    Main.npcChatCornerItem = ItemID.Mushroom;
+                    return;
+                }
+                else
+                {
+                    Main.npcChatText = "Don't have anything for you yet, come back a little later.";
+                }
+                #endregion
+
+            }
+            else
+            {
+                #region Mushroom Quest
+                if (player.GetModPlayer<QuestPlayer>().QuestNumber == 1)
+                {
+                    if (Main.LocalPlayer.CountItem(ItemID.Mushroom, 5) >= 5)
+                    {
+                        int Mushy = Main.LocalPlayer.FindItem(ItemID.Mushroom);
+                        for (int i = 0; i < 5; i++)
+                        {
+                            Main.LocalPlayer.inventory[Mushy].stack -= 1;
+                        }
+                        Main.npcChatText = "Congratulations, you've completed your first quest! And your reward is... gimme a second here.... Tada! I learnt this from the guide, made with extra love. Let me know how it tastes.";
+                        var entitySource = NPC.GetSource_GiftOrReward();
+                        Main.LocalPlayer.QuickSpawnItem(entitySource, ItemID.LesserHealingPotion, 3);
+                        player.GetModPlayer<QuestPlayer>().QuestNumber += 1;
+                        return;
+                    }
+                }
+                #endregion
+
+                return;
+            }
+        }
+        public override void ModifyNPCLoot(NPCLoot npcLoot)
+        {
+            npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<GuideBook>()));
+        }
+        public override void TownNPCAttackStrength(ref int damage, ref float knockback)
+        {
+            damage = 14;
+            knockback = 4f;
+        }
+
+        public override void TownNPCAttackCooldown(ref int cooldown, ref int randExtraCooldown)
+        {
+            cooldown = 30;
+            randExtraCooldown = 30;
+        }
+
+        public override void TownNPCAttackProj(ref int projType, ref int attackDelay)
+        {
+            projType = ModContent.ProjectileType<GuideBookProj>();
+            attackDelay = 1;
+        }
+        public override void TownNPCAttackProjSpeed(ref float multiplier, ref float gravityCorrection, ref float randomOffset)
+        {
+            multiplier = 9f;
+            randomOffset = 1f;
+            gravityCorrection = 1f;
+        }
     }
 }
+

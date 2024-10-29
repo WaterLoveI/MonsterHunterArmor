@@ -37,6 +37,10 @@ namespace MHArmorSkills.MHPlayer
         public int DerelictionTimer;
         public int DerelictionStage;
         public int DerelictionBoost;
+
+        public int HeaventSentTimer;
+        public int HeaventSentActivation;
+
         public override void ResetEffects()
         {
             MailofHellfireMelee = 1f;
@@ -47,6 +51,7 @@ namespace MHArmorSkills.MHPlayer
             QuickBreathHeal = 0;
             FuriousDef = 0;
             DerelictionBoost = 0;
+            HeaventSentActivation = 0;
         }
 
         #region hotkey
@@ -115,18 +120,21 @@ namespace MHArmorSkills.MHPlayer
                 FuriousTimer--;
             }
             #endregion
+            #region Berserk
             if (BerserkDot >= 0 && Main.rand.NextBool(3))
             {
                 BerserkDot--;
             }
+            #endregion
+            #region Dereliction
             if (modPlayer.Dereliction >= 1 && !(DerelictionStage == 3) && (Player.HasBuff(ModContent.BuffType<RedScroll>()) || Player.HasBuff(ModContent.BuffType<BlueScroll>())))
             {
                 DerelictionTimer++;
-                if (DerelictionTimer > 0 && DerelictionTimer <= 30 * 60)
+                if (DerelictionTimer > 0 && DerelictionTimer <= 60 * 60)
                 {
                     DerelictionStage = 1;
                 }
-                if (DerelictionTimer > 30 * 60 && DerelictionTimer <= 60 * 60)
+                if (DerelictionTimer > 30 * 60 && DerelictionTimer <= 120 * 60)
                 {
                     DerelictionStage = 2;
                 }
@@ -141,12 +149,14 @@ namespace MHArmorSkills.MHPlayer
                 DerelictionStage = 0;
                 DerelictionTimer = 0;
             }
+            #endregion
         }
 
 
         public override void PostUpdateMiscEffects()
         {
             ArmorSkills modPlayer = Player.GetModPlayer<ArmorSkills>();
+            MHPlayerArmorSkill RecUp = Player.GetModPlayer<MHPlayerArmorSkill>();
 
             #region Scroll buff change
             if (SkillScrolls && !Player.HasBuff(ModContent.BuffType<ScrollChange>()) && ScrollActive)
@@ -256,12 +266,14 @@ namespace MHArmorSkills.MHPlayer
                 }
                 #endregion
                 #region Quick Breath
-                if (modPlayer.QuickBreath >= 1)
+                if (modPlayer.QuickBreath >= 1 || modPlayer.QuickBreath >= 3)
                 {
                     int postUpdateDebuffCount = Player.buffType.Count(MHLists.debuffList.Contains);
-                    if (postUpdateDebuffCount > QuickBreathHeal && QuickBreathCooldown == 0)
+                    if (postUpdateDebuffCount > QuickBreathHeal && QuickBreathCooldown == 0 && modPlayer.QuickBreath >= 1)
                     {
-                        Player.Heal((postUpdateDebuffCount - QuickBreathHeal) * 20);
+                        
+                        int healamt = (int)((postUpdateDebuffCount - QuickBreathHeal) * 20 * RecUp.RecoveryUp);
+                        Player.Heal(healamt);
                         QuickBreathCooldown = 60;
                         SoundEngine.PlaySound(SoundID.Item4);
                     }
@@ -298,11 +310,59 @@ namespace MHArmorSkills.MHPlayer
                 if (DerelictionStage >= 2)
                 {
                     
-                    int derehealamt = DerelictionStage * Player.statLifeMax2 / 10;
+                    int derehealamt = (int)(DerelictionStage * Player.statLifeMax2 / 10 * RecUp.RecoveryUp);
                     Player.Heal(derehealamt);
                     DerelictionTimer = 0;
+                    DerelictionStage = 0;
                 }
             }
+            #endregion
+            #region Heavensent
+            if (modPlayer.HeavenSent >= 1)
+            {
+                int hostileNPCs = 0;
+                for (int i = 0; i < Main.maxNPCs; i++)
+                {
+                    NPC npc = Main.npc[i];
+                    if (npc.active && npc.boss && npc.friendly == false && npc.chaseable && !npc.immortal)
+                    {
+                        // Count the number of active hostile NPCs nearby
+                        if (npc.Distance(Player.Center) < 1200f)
+                        {
+                            hostileNPCs++;
+                        }
+                    }
+                }
+                if (hostileNPCs >= 1 && !Player.HasBuff(ModContent.BuffType<HeavenSent>()))
+                {
+                    HeaventSentTimer++;
+                }
+                if (HeaventSentTimer >= HeaventSentActivation)
+                {
+                    Player.AddBuff(ModContent.BuffType<HeavenSent>(), 2);
+                }
+                if (Player.HasBuff(ModContent.BuffType<HeavenSent>()))
+                {
+                    float Endure = 0.1f;
+                    if (modPlayer.HeavenSent >= 2)
+                    {
+                        Endure = 0.2f;
+                    }
+                    float Speed = 0.05f;
+                    if (modPlayer.HeavenSent >= 2)
+                    {
+                        Speed = 0.1f;
+                    }
+                    if (modPlayer.HeavenSent >= 3)
+                    {
+                        Player.wingTimeMax += 50;
+                    }
+
+                    Player.endurance += Endure;
+                    Player.moveSpeed += Speed;
+                }
+            }
+
             #endregion
 
         }
@@ -311,7 +371,7 @@ namespace MHArmorSkills.MHPlayer
         {
             if (Player.HasBuff(ModContent.BuffType<RedScroll>()))
             {
-                if (FuriousTimer == 0 && FuriousDef >= 0)
+                if (FuriousTimer == 0 && FuriousDef > 0)
                 {
                     FuriousCount++;
                     FuriousTimer = 30;
@@ -322,7 +382,7 @@ namespace MHArmorSkills.MHPlayer
         {
             if (Player.HasBuff(ModContent.BuffType<RedScroll>()))
             {
-                if (FuriousTimer == 0 && FuriousDef >= 0)
+                if (FuriousTimer == 0 && FuriousDef > 0)
                 {
                     FuriousCount++;
                     FuriousTimer = 30;
@@ -380,7 +440,7 @@ namespace MHArmorSkills.MHPlayer
         }
         public override void UpdateBadLifeRegen()
         {
-            if (Player.HasBuff(ModContent.BuffType<Beserk>()))
+            if (Player.HasBuff(ModContent.BuffType<Beserk>()) && Player.statLife > 1)
             {
                 Player.lifeRegen = BerserkRegen - BerserkDot;
 

@@ -14,7 +14,7 @@ namespace MHArmorSkills.Buffs.ArmorBuffs
         public override void ModifyBuffText(ref string buffName, ref string tip, ref int rare)
         {
             buffName = $"Adrenaline Rush Level: {Main.LocalPlayer.GetModPlayer<ArmorSkills>().AdrenalineRush} ";
-            tip = $"Increase damage by {Main.LocalPlayer.GetModPlayer<MHPlayerArmorSkill>().AdrenalineRush}% after successfully evading.";
+            tip = $"Increase damage and critical strike chance by {Main.LocalPlayer.GetModPlayer<MHPlayerArmorSkill>().AdrenalineRush}% after successfully evading.";
         }
     }
 }
