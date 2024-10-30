@@ -1,5 +1,6 @@
 ﻿using MHArmorSkills.Buffs.ArmorBuffs;
 using MHArmorSkills.Buffs.SharpnessBuff;
+using MHArmorSkills.Utilities;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
@@ -16,6 +17,8 @@ namespace MHArmorSkills.MHPlayer
 
 
         public bool TrueMelee;
+        public bool TrueWhip;
+        public bool EitherTrue;
 
         public int RazorSharp;
 
@@ -60,7 +63,7 @@ namespace MHArmorSkills.MHPlayer
 
             SharpnessLossAnimation = false;
 
-            
+
         }
         public override void PreUpdate()
         {
@@ -98,8 +101,26 @@ namespace MHArmorSkills.MHPlayer
                 }
 
             }
-            
-            if (TrueMelee)
+            TrueWhip = false;
+            if (Player.HeldItem != null)
+            {
+                if (Player.HeldItem.IsWhip())
+                {
+                    TrueWhip = true;
+                }
+                else
+                {
+                    TrueWhip = false;
+                }
+
+            }
+            EitherTrue = false;
+            if (TrueMelee || TrueWhip)
+            {
+                EitherTrue = true;
+            }
+
+            if (EitherTrue)
             {
                 #region Challenge Sheath
                 int hostileNPCs = 0;
@@ -174,6 +195,13 @@ namespace MHArmorSkills.MHPlayer
             }
 
         }
+        public override void OnHitNPCWithProj(Projectile proj, NPC target, NPC.HitInfo hit, int damageDone)
+        {
+            if (TrueWhip && ProjectileID.Sets.IsAWhip[proj.type])
+            {
+                SharpnessDecrease(target, damageDone, hit.Crit);
+            }
+        }
         #region Sharpness Loss
         public void SharpnessDecrease(NPC target, int damage, bool crit)
         {
@@ -233,13 +261,21 @@ namespace MHArmorSkills.MHPlayer
         public override void PostUpdateMiscEffects()
         {
 
-            if (TrueMelee)
+            if (EitherTrue)
             {
                 #region Sharpness Colour
                 if (CurrentSharpness == 0)
                 {
                     Player.AddBuff(ModContent.BuffType<SharpnessRed>(), 2);
-                    Player.GetDamage(DamageClass.Melee) -= 0.25f;
+                    if (TrueMelee)
+                    {
+                        Player.GetDamage(DamageClass.Melee) -= 0.25f;
+                    }
+                    if (TrueWhip)
+                    {
+                        Player.GetDamage(DamageClass.SummonMeleeSpeed) -= 0.25f;
+                    }
+                   
                 }
                 if (CurrentSharpness > 0 && CurrentSharpness <= 50)
                 {
@@ -248,22 +284,52 @@ namespace MHArmorSkills.MHPlayer
                 if (CurrentSharpness > 50 && CurrentSharpness <= 100)
                 {
                     Player.AddBuff(ModContent.BuffType<SharpnessGreen>(), 2);
-                    Player.GetDamage(DamageClass.Melee) += 0.05f;
+                    if (TrueMelee)
+                    {
+                        Player.GetDamage(DamageClass.Melee) += 0.05f;
+                    }
+                    if (TrueWhip)
+                    {
+                        Player.GetDamage(DamageClass.SummonMeleeSpeed) += 0.05f;
+                    }
                 }
                 if (CurrentSharpness > 100 && CurrentSharpness <= 135)
                 {
                     Player.AddBuff(ModContent.BuffType<SharpnessBlue>(), 2);
-                    Player.GetDamage(DamageClass.Melee) += 0.2f;
+                    if (TrueMelee)
+                    {
+                        Player.GetDamage(DamageClass.Melee) += 0.2f;
+                    }
+                    if (TrueWhip)
+                    {
+                        Player.GetDamage(DamageClass.SummonMeleeSpeed) += 0.2f;
+                        Player.whipRangeMultiplier *= 1.15f;
+                    }
                 }
                 if (CurrentSharpness > 135 && CurrentSharpness <= 160)
                 {
                     Player.AddBuff(ModContent.BuffType<SharpnessWhite>(), 2);
-                    Player.GetDamage(DamageClass.Melee) += 0.32f;
+                    if (TrueMelee)
+                    {
+                        Player.GetDamage(DamageClass.Melee) += 0.32f;
+                    }
+                    if (TrueWhip)
+                    {
+                        Player.GetDamage(DamageClass.SummonMeleeSpeed) += 0.32f;
+                    }
                 }
-                if (CurrentSharpness > 160 && CurrentSharpness <= 180)
+                if (CurrentSharpness > 160 )
                 {
                     Player.AddBuff(ModContent.BuffType<SharpnessPurple>(), 2);
-                    Player.GetDamage(DamageClass.Melee) += 0.45f;
+                    if (TrueMelee)
+                    {
+                        Player.GetDamage(DamageClass.Melee) += 0.45f; ;
+                    }
+                    if (TrueWhip)
+                    {
+                        Player.GetDamage(DamageClass.SummonMeleeSpeed) += 0.45f;
+                        Player.whipRangeMultiplier *= 1.3f;
+                    }
                 }
                 #endregion
 
@@ -273,6 +339,7 @@ namespace MHArmorSkills.MHPlayer
                 if (Player.HasBuff(ModContent.BuffType<Grinder>()))
                 {
                     Player.GetDamage(DamageClass.Melee) += GrinderDmg / 100f;
+                    Player.GetDamage(DamageClass.SummonMeleeSpeed) += GrinderDmg / 100f;
                 }
                 if (Player.HasBuff(ModContent.BuffType<AttackSpeedUp>()) && QuickSheath > 0)
                 {
@@ -293,7 +360,7 @@ namespace MHArmorSkills.MHPlayer
         public override float UseSpeedMultiplier(Item item)
 
         {
-            if (TrueMelee)
+            if (EitherTrue)
             {
                 return QuickSheath;
             }

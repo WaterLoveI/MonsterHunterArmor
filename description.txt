@@ -1,14 +1,7 @@
-Mod incompatibilities:
-Any mods that messes with accessory slots will break the decorations.
 
-Notable Bugs:
-Quick equipping accessories will always get sent to the last slot, need a little help fixing this one.
+This mod aims to add monster hunter armors into the game and has a skill point system similar to MHW-Rise, even vanilla armors get skills but you can turn that off in mod config if you wish.
 
-The mod has not been tested in multiplayer.
-
-This mod aims to add monster hunter armors into the game and adds a skill point system similar to MHW-Rise, even vanilla armors get skills.
-
-There's no wiki right now so feel free to join the discord to ask questions and let me know what you want to see added!
+There's no wiki right now so feel free to join the discord to ask questions, give suggestions or report issues and let me know what you want to see added!
 
 Full Armor Set
 -Bone
@@ -23,6 +16,7 @@ Full Armor Set
 -Glavenus
 -Mizutsune
 -Gammoth
+-Kirin
 -Ukanlos
 
 Enemies
@@ -34,14 +28,20 @@ Enemies
 -Remobra
 -Hermitaur
 
-Commands:
-- /skills - this command shows you what skills are active on the player currently. Doesn't work in multiplayer.
+Bosses
+-Seltas + Desert Seltas
+
+Mod incompatibilities:
+Any mods that messes with accessory slots will break the decorations.
+
+Notable Bugs:
+Quick equipping accessories will always get sent to the last slot.
+
+The mod has not been tested in multiplayer.
 
 Discord: https://discord.gg/un9UAmhrcd
 
 Google Sheets that acts like a wiki and I'll try to keep it up to date.
 https://docs.google.com/spreadsheets/d/1roO5H1dL77ES_XkoLvXZgxPKBEAengKaJF6gw4HFGgA/edit?usp=sharing
 
-
-[quote=tModLoader]Developed By ILoveWater[/quote]
 

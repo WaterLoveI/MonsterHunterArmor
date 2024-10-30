@@ -28,11 +28,7 @@ namespace MHArmorSkills.Projectiles.Enemy
         {
             Projectile.rotation = (float)Math.Atan2((double)Projectile.velocity.Y, (double)Projectile.velocity.X) + MathHelper.ToRadians(45f);
 
-            Projectile.velocity.Y += 0.03f;
-            if (Projectile.velocity.Y > 12f)
-            {
-                Projectile.velocity.Y = 12f;
-            }
+            
             if (Main.rand.NextBool(3))
             {
                 int dust = Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, DustID.JungleSpore, 0f, 0f, 0, Color.Green, 0.5f);

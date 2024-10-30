@@ -361,6 +361,22 @@ namespace MHArmorSkills.Global
                     }
                     SkillsActive = true;
                 }
+                if (player.GetModPlayer<ArmorSkills>().Stunresist >= 1)
+                {
+                    if (player.GetModPlayer<ArmorSkills>().Stunresist == 1)
+                    {
+                        AddTooltip($"Stun resist Level {player.GetModPlayer<ArmorSkills>().Stunresist} / 2: \n" +
+                    $"Increase defense by 10 when stunned.");
+
+                    }
+                    if (player.GetModPlayer<ArmorSkills>().Stunresist >= 2)
+                    {
+                        AddTooltip($"Stun resist Level {player.GetModPlayer<ArmorSkills>().Stunresist} / 2: \n" +
+                    $"Immune to being stunned.");
+
+                    }
+                    SkillsActive = true;
+                }
                 if (player.GetModPlayer<ArmorSkills>().Strife >= 1)
                 {
                     AddTooltip($"Strife Level {player.GetModPlayer<ArmorSkills>().Strife} / 3: \n" +
@@ -1035,7 +1051,15 @@ namespace MHArmorSkills.Global
                     {
                         Variable = 30;
                     }
-                    AddTooltip($"Handicraft Level {player.GetModPlayer<ArmorSkills>().Handicraft} / 3: \n" +
+                    if (player.GetModPlayer<ArmorSkills>().Handicraft >= 4)
+                    {
+                        Variable = 40;
+                    }
+                    if (player.GetModPlayer<ArmorSkills>().Handicraft >= 5)
+                    {
+                        Variable = 50;
+                    }
+                    AddTooltip($"Handicraft Level {player.GetModPlayer<ArmorSkills>().Handicraft} / 5: \n" +
                          $"Increase maximum sharpness by {Variable}.");
                     SkillsActive = true;
                 }
@@ -1061,7 +1085,7 @@ namespace MHArmorSkills.Global
                 if (player.GetModPlayer<ArmorSkills>().GuardUp >= 1)
                 {
                     AddTooltip($"Guard Up Level {player.GetModPlayer<ArmorSkills>().GuardUp} / 3: \n" +
-                         $"Grants invincibility after guard.");
+                         $"Requires guard to work. Reduce front facing projectile damage.");
                     SkillsActive = true;
                 }
                 if (player.GetModPlayer<ArmorSkills>().Guard >= 1)
@@ -1156,6 +1180,12 @@ namespace MHArmorSkills.Global
                 {
                     AddTooltip($"Foray Level {player.GetModPlayer<ArmorSkills>().Foray} / 3: \n" +
                          $"Increase damage by {player.GetModPlayer<ArmorSkills>().Foray * 100 - 100}% if the target is afflicted with a debuff.");
+                    SkillsActive = true;
+                }
+                if (player.GetModPlayer<ArmorSkills>().Focus >= 1)
+                {
+                    AddTooltip($"Focus Level {player.GetModPlayer<ArmorSkills>().Focus} / 3: \n" +
+                         $"If the weapon is able to channel, increase attack speed by {5 + (player.GetModPlayer<ArmorSkills>().Focus * 5)}% and +{player.GetModPlayer<ArmorSkills>().Focus} armor penetration. ");
                     SkillsActive = true;
                 }
                 if (player.GetModPlayer<ArmorSkills>().FishingExpert >= 1)
@@ -1549,7 +1579,7 @@ namespace MHArmorSkills.Global
                          $"Increase ranged damage by 10% if target is within 15 tiles.");
                     SkillsActive = true;
                 }
-                if (player.GetModPlayer<ArmorSkills>().CounterStrike >=1)
+                if (player.GetModPlayer<ArmorSkills>().CounterStrike >= 1)
                 {
                     AddTooltip($"Counterstrike Level {player.GetModPlayer<ArmorSkills>().CounterStrike} / 3: \n" +
                          $"Increase damage by {player.GetModPlayer<MHPlayerArmorSkill>().CounterStrike}% after getting knocked back.");
@@ -1833,7 +1863,7 @@ namespace MHArmorSkills.Global
                 }
                 if (player.GetModPlayer<ArmorSkills>().Artillery >= 1)
                 {
-                    
+
                     AddTooltip($"Artillery Level {player.GetModPlayer<ArmorSkills>().Artillery} / 3: \n" +
                          $"Increase rocket damage by {player.GetModPlayer<MHPlayerArmorSkill>().ArtilleryBuff}%.");
                     SkillsActive = true;
@@ -1860,7 +1890,7 @@ namespace MHArmorSkills.Global
                 }
                 if (player.GetModPlayer<ArmorSkills>().AntiPoison >= 1)
                 {
-                    
+
                     if (player.GetModPlayer<ArmorSkills>().AntiPoison == 1)
                     {
                         AddTooltip($"Anti-Poison Level {player.GetModPlayer<ArmorSkills>().AntiPoison} / 2: \n" +
@@ -1894,7 +1924,7 @@ namespace MHArmorSkills.Global
                          $"Increase damage and critical strike chance by {player.GetModPlayer<MHPlayerArmorSkill>().AdrenalineRush}% after evading through enemies.");
                     SkillsActive = true;
                 }
-                
+
                 if (!SkillsActive)
                 {
                     AddTooltip($"Currently no skills active.");

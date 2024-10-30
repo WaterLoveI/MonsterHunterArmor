@@ -1,4 +1,7 @@
-﻿using MHArmorSkills.Buffs;
+﻿using MHArmorSkills.Items.Consumables.TreasureBag;
+using MHArmorSkills.Items.Crafting_Materials.ArmorSphere;
+using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
+using MHArmorSkills.MHSystem;
 using MHArmorSkills.Projectiles.Enemy;
 using Microsoft.Xna.Framework;
 using System;
@@ -7,7 +10,7 @@ using System.IO;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent.Bestiary;
-using Terraria.Graphics.CameraModifiers;
+using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -23,9 +26,10 @@ namespace MHArmorSkills.NPCs.Seltas
         }
         private const int FirstStageTimerMax = 300;
         public ref float FirstStageTimer => ref NPC.localAI[1];
-        public  int AttackCooldown = 0;
+        public int AttackCooldown = 0;
         private const int CooldownCap = 90;
         private bool exhaust = false;
+        private bool playchargesound = false;
 
         public int stamina = 50;
         public int exhausttimer = 0;
@@ -42,6 +46,8 @@ namespace MHArmorSkills.NPCs.Seltas
         public Vector2 LastFirstStageDestination { get; set; } = Vector2.Zero;
         public override void SetStaticDefaults()
         {
+            NPCID.Sets.TrailingMode[NPC.type] = 3;
+            NPCID.Sets.TrailCacheLength[NPC.type] = 15;
             Main.npcFrameCount[NPC.type] = 4;
             // Add this in for bosses that have a summon item, requires corresponding code in the item (See MinionBossSummonItem.cs)
             NPCID.Sets.MPAllowedEnemies[Type] = true;
@@ -52,7 +58,7 @@ namespace MHArmorSkills.NPCs.Seltas
 
         public override void SetDefaults()
         {
-            NPC.damage = 28;
+            NPC.damage = 27;
             NPC.width = 50;
             NPC.height = 28;
             NPC.defense = 7;
@@ -60,11 +66,13 @@ namespace MHArmorSkills.NPCs.Seltas
             NPC.knockBackResist = 0f;
             NPC.noGravity = true;
             NPC.noTileCollide = true;
-            NPC.value = Item.buyPrice(0, 0, 1, 80);
+            NPC.value = Item.buyPrice(0, 3, 2, 80);
             NPC.HitSound = SoundID.NPCHit1;
             NPC.DeathSound = SoundID.NPCDeath1;
-            NPC.aiStyle = -1;
+            NPC.aiStyle = 0;
+            NPC.SpawnWithHigherTime(30);
             NPC.boss = true;
+            NPC.npcSlots = 10f; // Take up open spawn slots, preventing random NPCs from spawning during the fight
         }
         public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
         {
@@ -73,8 +81,7 @@ namespace MHArmorSkills.NPCs.Seltas
             bestiaryEntry.Info.AddRange(new List<IBestiaryInfoElement>
             {
                 BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Jungle,
-                BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Snow,
-                new FlavorTextBestiaryInfoElement("Pervasive flying insects that attack invaders with paralyzing venom and lay eggs in carrion along with a fluid that hastens decomposition.")
+                new FlavorTextBestiaryInfoElement("A medium-sized Neopteron that use swift aerial movements to attack invaders on the ground. It can also store a corrosive liquid inside itself, which it can shoot from its stinger-shaped abdomen.")
             });
         }
 
@@ -84,6 +91,8 @@ namespace MHArmorSkills.NPCs.Seltas
             writer.Write(stamina);
             writer.Write(exhausttimer);
             writer.Write(AttackCooldown);
+            writer.Write(exhaust);
+            writer.Write(playchargesound);
         }
 
         public override void ReceiveExtraAI(BinaryReader reader)
@@ -92,6 +101,8 @@ namespace MHArmorSkills.NPCs.Seltas
             stamina = reader.ReadInt32();
             exhausttimer = reader.ReadInt32();
             AttackCooldown = reader.ReadInt32();
+            exhaust = reader.ReadBoolean();
+            playchargesound = reader.ReadBoolean();
         }
         public override void FindFrame(int frameHeight)
         {
@@ -123,8 +134,68 @@ namespace MHArmorSkills.NPCs.Seltas
         }
 
 
+        public override void OnKill()
+        {
+            bool seltasalive = false;
+            for (int i = 0; i < Main.maxNPCs; i++)
+            {
+                if (Main.npc[i].active && Main.npc[i].type == ModContent.NPCType<DesertSeltas>())
+                {
+                    seltasalive = true;
+                }
+            }
+            if (!seltasalive)
+            {
+                NPC.SetEventFlagCleared(ref DownedBossSystem.downedSeltas, -1);
+            }
+
+        }
+        public override void ModifyNPCLoot(NPCLoot npcLoot)
+        {
+
+            bool seltasalive = false;
+            for (int i = 0; i < Main.maxNPCs; i++)
+            {
+                if (Main.npc[i].active && Main.npc[i].type == ModContent.NPCType<Seltas>())
+                {
+                    seltasalive = true;
+                }
+            }
+            if (!seltasalive)
+            {
+                LeadingConditionRule notExpertRule = new LeadingConditionRule(new Conditions.NotExpert());
 
 
+
+                if (!Main.GameModeInfo.IsExpertMode && !Main.GameModeInfo.IsMasterMode || !Main.GameModeInfo.IsExpertMode && !Main.GameModeInfo.IsMasterMode && !Main.GameModeInfo.IsJourneyMode)
+                {
+                    npcLoot.Add(new CommonDrop(ModContent.ItemType<HardArmorSphere>(), 1, 2, 5));
+                    npcLoot.Add(new CommonDrop(ModContent.ItemType<InsectShell>(), 1, 2, 4));
+                    npcLoot.Add(new CommonDrop(ModContent.ItemType<SeltasShell>(), 1, 2, 4));
+                    npcLoot.Add(new CommonDrop(ModContent.ItemType<MonsterFluid>(), 1, 2, 4));
+                    npcLoot.Add(new CommonDrop(ModContent.ItemType<AquaSac>(), 1, 2, 4));
+                }
+
+                // Finally add the leading rule
+                npcLoot.Add(notExpertRule);
+
+                // Add the treasure bag using ItemDropRule.BossBag (automatically checks for expert mode)
+                npcLoot.Add(ItemDropRule.BossBag(ModContent.ItemType<SeltasTreasureBag>()));
+            }
+
+
+
+        }
+
+        public override void BossLoot(ref string name, ref int potionType)
+        {
+            potionType = ItemID.HealingPotion;
+        }
+        public override bool CanHitPlayer(Player target, ref int cooldownSlot)
+        {
+            cooldownSlot = ImmunityCooldownID.Bosses;
+            return true;
+        }
         public override void AI()
         {
             if (NPC.target < 0 || NPC.target == 255 || Main.player[NPC.target].dead || !Main.player[NPC.target].active)
@@ -142,6 +213,7 @@ namespace MHArmorSkills.NPCs.Seltas
                 NPC.EncourageDespawn(10);
                 return;
             }
+            NPC.aiStyle = -1;
             if (exhausttimer > 0)
             {
                 exhausttimer--;
@@ -163,11 +235,11 @@ namespace MHArmorSkills.NPCs.Seltas
             {
                 Exhausted(player);
             }
-            
+
         }
         private void DoFirstStage(Player player)
         {
-            
+
             float offsetX = 150f;
 
             Vector2 abovePlayer = player.Top + new Vector2(NPC.direction * offsetX, -NPC.height);
@@ -198,17 +270,13 @@ namespace MHArmorSkills.NPCs.Seltas
                 }
 
             }
-            else
+            float timerMax = Utils.Clamp((float)NPC.life / NPC.lifeMax, 0.33f, 1f) * 90;
+
+            SecondStageTimer_SpawnEyes++;
+            if (SecondStageTimer_SpawnEyes > timerMax && AttackCooldown == 0)
             {
-                float timerMax = Utils.Clamp((float)NPC.life / NPC.lifeMax, 0.33f, 1f) * 90;
-
-                SecondStageTimer_SpawnEyes++;
-                if (SecondStageTimer_SpawnEyes > timerMax && AttackCooldown == 0)
-                {
-                    SecondStageTimer_SpawnEyes = 0;
-                    DoSecondStage_SpawnEyes(player);
-                }
-
+                SecondStageTimer_SpawnEyes = 0;
+                DoSecondStage_SpawnEyes(player);
             }
 
             Vector2 moveTo = toAbovePlayerNormalized * speed;
@@ -232,17 +300,23 @@ namespace MHArmorSkills.NPCs.Seltas
                         spread *= 2f; // Adjust the spread distance
                         Main.dust[dust].velocity = spread;
                     }
-                    SoundEngine.PlaySound(SoundID.Zombie125, NPC.Center);
+                    playchargesound = true;
+                    if (playchargesound)
+                    {
+                        SoundEngine.PlaySound(SoundID.Zombie125, NPC.Center);
+                        playchargesound = false;
+                    }
+
                 }
                 if (FirstStageTimer > FirstStageTimerMax)
                 {
                     FirstStageTimer = 0;
-                    
+
                     DashAttack(player);
 
                 }
             }
-            
+
 
         }
         private void Exhausted(Player player)
@@ -274,7 +348,7 @@ namespace MHArmorSkills.NPCs.Seltas
                 speed = 10f;
 
             }
-            
+
 
             Vector2 moveTo = toAbovePlayerNormalized * speed;
             NPC.velocity = (NPC.velocity * (inertia - 1) + moveTo) / inertia;
@@ -283,7 +357,7 @@ namespace MHArmorSkills.NPCs.Seltas
             NPC.damage = NPC.defDamage;
 
             NPC.alpha = 0;
-            
+
         }
         private void DashAttack(Player player)
         {
@@ -334,8 +408,7 @@ namespace MHArmorSkills.NPCs.Seltas
                     // For visuals regarding NPC position, netOffset has to be concidered to make visuals align properly
                     NPC.position += NPC.netOffset;
 
-                    // Draw a line between the NPC and its destination, represented as dusts every 20 pixels
-                    Dust.QuickDustLine(NPC.Center + toDestinationNormalized * NPC.width, FirstStageDestination, toDestination.Length() / 20f, Color.Yellow);
+
 
                     NPC.position -= NPC.netOffset;
                 }
@@ -351,10 +424,24 @@ namespace MHArmorSkills.NPCs.Seltas
                     if (!Main.rand.NextBool(3))
                     {
                         FirstStageTimer = FirstStageTimerMax - 90;
+                        for (int i = 0; i < 12; i++) // Adjust the number of dusts spawned
+                        {
+
+                            int dust = Dust.NewDust(NPC.position, NPC.width, NPC.height, DustID.YellowStarDust, 0f, 0f, 0, default, 1.1f);
+                            Vector2 spread = new Vector2(Main.rand.NextFloat(-1f, 1f), Main.rand.NextFloat(-1f, 1f));
+                            spread = spread.RotatedBy(Main.rand.NextFloat(0f, 360f)); // Random rotation for spread
+                            spread *= 2f; // Adjust the spread distance
+                            Main.dust[dust].velocity = spread;
+                        }
+                        if (playchargesound)
+                        {
+                            SoundEngine.PlaySound(SoundID.Zombie125, NPC.Center);
+                            playchargesound = false;
+                        }
                     }
                     NPC.netUpdate = true;
                 }
-                
+
             }
             float lifeRatio2 = NPC.life / (float)NPC.lifeMax;
             if (lifeRatio2 > 0.15f)
@@ -375,11 +462,8 @@ namespace MHArmorSkills.NPCs.Seltas
                 // (The projectiles accelerate from their initial velocity)
                 float angles = 0f;
                 float angel = 12f;
-                int count = 1;
-                if (lifeRatio < 0.75f)
-                {
-                    count = 2;
-                }
+                int count = 2;
+
                 if (lifeRatio < 0.5f)
                 {
                     count = 3;
@@ -409,14 +493,14 @@ namespace MHArmorSkills.NPCs.Seltas
                 angles = 0f;
                 angel = 12;
                 SoundEngine.PlaySound(SoundID.Item17, NPC.Center);
-                
+
                 if (lifeRatio > 0.15f)
                 {
                     stamina -= 5;
                 }
                 NPC.netUpdate = true;
             }
-            
+
         }
         public override void OnHitPlayer(Player target, Player.HurtInfo hurtInfo)
         {
@@ -447,7 +531,12 @@ namespace MHArmorSkills.NPCs.Seltas
                     Gore.NewGore(entitySource, NPC.position, new Vector2(Main.rand.Next(-6, 7), Main.rand.Next(-6, 7)), Mod.Find<ModGore>("Seltas3").Type, 1f);
                 }
                 Gore.NewGore(NPC.GetSource_Death(), NPC.position, NPC.velocity, Mod.Find<ModGore>("Seltas4").Type, 1f);
-
+                for (int i = 0; i < 8; i++)
+                {
+                    int Goop = Dust.NewDust(new Vector2(NPC.Bottom.X, NPC.Bottom.Y), NPC.width, NPC.height, DustID.Poisoned, 0f, 0f, 100, default, 0.6f);
+                    Main.dust[Goop].velocity *= 2f;
+                    Main.dust[Goop].noGravity = false;
+                }
             }
         }
 

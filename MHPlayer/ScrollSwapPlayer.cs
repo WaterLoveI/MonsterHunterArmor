@@ -87,10 +87,11 @@ namespace MHArmorSkills.MHPlayer
                 }
 
                 int d = Dust.NewDust(Player.position, Player.width, Player.height, colour, 0f, -1f, 100, default(Color), 1.5f);
+                Vector2 spread = new Vector2(Main.rand.NextFloat(-1f, 1f), Main.rand.NextFloat(-1f, 1f));
+                spread = spread.RotatedBy(Main.rand.NextFloat(0f, 360f)); // Random rotation for spread
+                spread *= 0.5f; // Adjust the spread distance
+                Main.dust[d].velocity = spread;
                 Main.dust[d].noGravity = true;
-                Main.dust[d].noLight = false;
-                Main.dust[d].fadeIn = 0.2f;
-                Main.dust[d].velocity *= 0.3f;
             }
         }
         #endregion

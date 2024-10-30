@@ -1,6 +1,5 @@
 ﻿using MHArmorSkills.Buffs;
 using MHArmorSkills.Items.Accessories.Decorations;
-using MHArmorSkills.Items.Armor.MonsterHunter.LowRank;
 using MHArmorSkills.Items.Crafting_Materials.ArmorSphere;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using MHArmorSkills.MHPlayer;
@@ -122,6 +121,7 @@ namespace MHArmorSkills.Global
             globalLoot.Add(ItemDropRule.ByCondition(new DungeonCondition(), ModContent.ItemType<PoisonCoating1>(), 220, 1, 1));
             globalLoot.Add(ItemDropRule.ByCondition(new DungeonCondition(), ModContent.ItemType<StaminaRecovery1>(), 220, 1, 1));
             globalLoot.Add(ItemDropRule.ByCondition(new DungeonCondition(), ModContent.ItemType<SurvivalExpert1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new DungeonCondition(), ModContent.ItemType<Focus1>(), 220, 1, 1));
 
             globalLoot.Add(ItemDropRule.ByCondition(new HMDungeonCondition(), ModContent.ItemType<BloodRite1>(), 220, 1, 1));
             globalLoot.Add(ItemDropRule.ByCondition(new HMDungeonCondition(), ModContent.ItemType<NormalUp1>(), 220, 1, 1));
@@ -156,6 +156,7 @@ namespace MHArmorSkills.Global
             globalLoot.Add(ItemDropRule.ByCondition(new GlowingMushroomCondition(), ModContent.ItemType<LatentPower1>(), 220, 1, 1));
             globalLoot.Add(ItemDropRule.ByCondition(new GlowingMushroomCondition(), ModContent.ItemType<Mushroomancer1>(), 220, 1, 1));
             globalLoot.Add(ItemDropRule.ByCondition(new GlowingMushroomCondition(), ModContent.ItemType<PowerProlonger1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new GlowingMushroomCondition(), ModContent.ItemType<StunResist1>(), 220, 1, 1));
 
             globalLoot.Add(ItemDropRule.ByCondition(new HMGlowingMushroomCondition(), ModContent.ItemType<CritEye1>(), 220, 1, 1));
             globalLoot.Add(ItemDropRule.ByCondition(new HMGlowingMushroomCondition(), ModContent.ItemType<Unscathed1>(), 220, 1, 1));
@@ -200,6 +201,7 @@ namespace MHArmorSkills.Global
             globalLoot.Add(ItemDropRule.ByCondition(new CavernCondition(), ModContent.ItemType<PunishDraw1>(), 220, 1, 1));
             globalLoot.Add(ItemDropRule.ByCondition(new CavernCondition(), ModContent.ItemType<TremorRes1>(), 220, 1, 1));
             globalLoot.Add(ItemDropRule.ByCondition(new CavernCondition(), ModContent.ItemType<BBQExpert2>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new CavernCondition(), ModContent.ItemType<StunResist2>(), 220, 1, 1));
 
 
             globalLoot.Add(ItemDropRule.ByCondition(new HMCavernCondition(), ModContent.ItemType<Embolden1>(), 220, 1, 1));
@@ -498,7 +500,7 @@ namespace MHArmorSkills.Global
                         npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, CThreeSlotArray));
                     }
 
-                        break;
+                    break;
                 case NPCID.MoonLordCore:
                     if (!Main.GameModeInfo.IsExpertMode && !Main.GameModeInfo.IsMasterMode || !Main.GameModeInfo.IsExpertMode && !Main.GameModeInfo.IsMasterMode && !Main.GameModeInfo.IsJourneyMode)
                     {

@@ -183,6 +183,11 @@ GlowingSlime: {
 	Tooltip: A highly volatile fluid used by especially savage Brachydios. Handle very carefully!
 }
 
+SeltasShell: {
+	DisplayName: Seltas Shell
+	Tooltip: A feather-light piece of exoskeleton well suited for high-speed flight.
+}
+
 InfernoSac: {
 	DisplayName: Inferno Sac
 	Tooltip: A monster organ filled with powder that ignites if it so much as touches air. Danger!

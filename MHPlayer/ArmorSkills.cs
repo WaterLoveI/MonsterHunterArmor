@@ -135,6 +135,7 @@ namespace MHArmorSkills.MHPlayer
         public int StamRec;
         public int StatusTrigger;
         public int Strife;
+        public int Stunresist;
         public int SurvivalExpert;
         public int TeamLeader;
         public int Tenderizer;
@@ -208,6 +209,7 @@ namespace MHArmorSkills.MHPlayer
             FireRes = 0;
             FishingExpert = 0;
             FleetFeet = 0;
+            Focus = 0;
             Foray = 0;
             Fortified = 0;
             FreeElement = 0;
@@ -278,6 +280,7 @@ namespace MHArmorSkills.MHPlayer
             StamRec = 0;
             StatusTrigger = 0;
             Strife = 0;
+            Stunresist = 0;
             SurvivalExpert = 0;
             TeamLeader = 0;
             TeostraBlessing = 0;
@@ -370,7 +373,7 @@ namespace MHArmorSkills.MHPlayer
                 Player.buffImmune[BuffID.Bleeding] = true;
             }
             #endregion
-#region AntiBlast
+            #region AntiBlast
             if (AntiBlast)
             {
                 Player.buffImmune[ModContent.BuffType<BlastBlight>()] = true;
@@ -1154,16 +1157,18 @@ namespace MHArmorSkills.MHPlayer
             {
                 if (Focus >= 1)
                 {
-                    Player.GetAttackSpeed<MeleeDamageClass>() += 0.05f;
+                    modPlayer.FocusSpd += 1.1f;
+                    Player.GetArmorPenetration(DamageClass.Generic) += 1;
                 }
                 if (Focus >= 2)
                 {
-                    Player.magicQuiver = true;
-                    Player.GetAttackSpeed<MeleeDamageClass>() += 0.05f;
+                    modPlayer.FocusSpd += 0.05f;
+                    Player.GetArmorPenetration(DamageClass.Generic) += 1;
                 }
                 if (Focus >= 3)
                 {
-                    Player.GetAttackSpeed<MeleeDamageClass>() += 0.05f;
+                    modPlayer.FocusSpd += 0.05f;
+                    Player.GetArmorPenetration(DamageClass.Generic) += 1;
                 }
             }
             #endregion
@@ -1185,7 +1190,7 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
             #region Fortified
-            if (Fortified >=1)
+            if (Fortified >= 1)
             {
                 modPlayer.Fortified = true;
                 modPlayer.FortifedAtk += 5;
@@ -1372,6 +1377,14 @@ namespace MHArmorSkills.MHPlayer
                 {
                     SharpPlayer.Handicraft += 10;
                 }
+                if (Handicraft >= 4)
+                {
+                    SharpPlayer.Handicraft += 10;
+                }
+                if (Handicraft >= 5)
+                {
+                    SharpPlayer.Handicraft += 10;
+                }
             }
             #endregion
             #region Hasten Recovery
@@ -1433,7 +1446,7 @@ namespace MHArmorSkills.MHPlayer
             #region HeavenSent
             if (HeavenSent >= 1)
             {
-                ScrollPlayer.ScrollActive =true;
+                ScrollPlayer.ScrollActive = true;
                 ScrollPlayer.HeaventSentActivation += 20 * 60;
                 if (HeavenSent >= 2)
                 {
@@ -2047,7 +2060,7 @@ namespace MHArmorSkills.MHPlayer
             {
                 ScrollPlayer.ScrollActive = true;
 
-                
+
             }
             #endregion
             #region Resentment
@@ -2289,6 +2302,16 @@ namespace MHArmorSkills.MHPlayer
                 }
             }
             #endregion
+            #region
+            if (Stunresist >= 1 && Player.HasBuff(ModContent.BuffType<Stunned>()))
+            {
+                Player.statDefense += 10;
+            }
+            if (Stunresist >= 2)
+            {
+                Player.buffImmune[ModContent.BuffType<Stunned>()] = true;
+            }
+            #endregion
             #region Tenderizer
             if (Tenderizer >= 1)
             {
@@ -2367,7 +2390,7 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
             #region Tremor Res
-            if (TremorRes >= 1 && Player.CheckSolidGround(1,3))
+            if (TremorRes >= 1 && Player.CheckSolidGround(1, 3))
             {
                 Player.statDefense += 2;
 

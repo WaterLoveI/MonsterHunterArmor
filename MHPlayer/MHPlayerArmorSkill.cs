@@ -45,6 +45,7 @@ namespace MHArmorSkills.MHPlayer
         public float ElementalRes;
         public float FireRes;
         public float Foray;
+        public float FocusSpd;
         public float IceRes;
         public float LatentPowerManaCost;
         public float QuickGather;
@@ -216,6 +217,7 @@ namespace MHArmorSkills.MHPlayer
             FireAttack = 0;
             FireRes = 0;
             Foray = 0;
+            FocusSpd = 0f;
             FortifedAtk = 0;
             FortifedDef = 0;
             FortifedTimer = 0;
@@ -313,7 +315,7 @@ namespace MHArmorSkills.MHPlayer
             {
                 LatentPowerCounter++;
             }
-            if (LatentPowerCounter >= 1)
+            if (LatentPowerCounter >= 1 && !Player.dead)
             {
                 LatentPowerCounter++;
                 if (Main.rand.NextBool(5))
@@ -739,10 +741,7 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
             #region Guard
-            if (Guard)
-            {
-                GuardEffect();
-            }
+
             #endregion
             #region Aqua Mobility
             if (AquaMobility)
@@ -1110,7 +1109,7 @@ namespace MHArmorSkills.MHPlayer
                                 EvadeDodgeCD = 60;
                             }
                         }
-                        
+
                     }
                     if (distance < Player.Hitbox.Width + npc.Hitbox.Width)
                     {
@@ -1121,9 +1120,9 @@ namespace MHArmorSkills.MHPlayer
                                 Player.shieldRaised = true;
                                 AutoGuardCD = 3 * 60;
                             }
-                            
+
                         }
-                        
+
                     }
                 }
             }
@@ -1152,7 +1151,7 @@ namespace MHArmorSkills.MHPlayer
                                 int Duration = (int)(45 * 60 * ProlongerTime);
                                 Player.AddBuff(ModContent.BuffType<BladeHoneScale>(), Duration);
                             }
-                            
+
                         }
 
                     }
@@ -1197,41 +1196,44 @@ namespace MHArmorSkills.MHPlayer
 
         }
         #region Guard
-        public void GuardEffect()
+        public override void ProcessTriggers(TriggersSet triggersSet)
         {
 
-            GuardRaised = false;
-            if (Player.inventory[Player.selectedItem].type == ItemID.DD2SquireDemonSword || Player.inventory[Player.selectedItem].type == ItemID.BouncingShield)
+            if (Guard)
             {
-                return;
-            }
-            Player.shieldRaised = Player.selectedItem != 58 && Player.controlUseTile && !Player.tileInteractionHappened && Player.releaseUseItem
-                && !Player.controlUseItem && !Player.mouseInterface && !CaptureManager.Instance.Active && !Main.HoveringOverAnNPC
-                && !Main.SmartInteractShowingGenuine &&
-                Player.itemAnimation == 0 && Player.itemTime == 0 && Player.reuseDelay == 0 && PlayerInput.Triggers.Current.MouseRight && Player.hasRaisableShield && GuardCooldown == 0;
-
-            if (Player.shieldRaised)
-            {
-                GuardRaised = true;
-                Player.shieldRaised = true;
-                Player.moveSpeed += GuardMovement / 100f;
-
-                ArmorSkills modPlayer = Player.GetModPlayer<ArmorSkills>();
-                int GDef = 5 + modPlayer.Guard + (Guardup * 3);
-
-                Player.statDefense += GDef;
-                Player.moveSpeed /= 3;
-                if (Player.velocity.Y == 0f && Math.Abs(Player.velocity.X) > 3f)
+                GuardRaised = false;
+                if (Player.inventory[Player.selectedItem].type == ItemID.DD2SquireDemonSword || Player.inventory[Player.selectedItem].type == ItemID.BouncingShield)
                 {
-                    Player.velocity.X /= 2f;
+                    return;
                 }
+                Player.shieldRaised = Player.selectedItem != 58 &&
+                    Player.itemAnimation == 0 && Player.itemTime == 0 && Player.reuseDelay == 0 && MHArmorSkills.GuardButton.Current && Player.hasRaisableShield && GuardCooldown == 0;
 
+                if (Player.shieldRaised)
+                {
+                    GuardRaised = true;
+                    Player.shieldRaised = true;
+                    Player.moveSpeed += GuardMovement / 100f;
+
+                    ArmorSkills modPlayer = Player.GetModPlayer<ArmorSkills>();
+                    int GDef = 5 + modPlayer.Guard + (Guardup * 3);
+
+                    Player.statDefense += GDef;
+                    Player.moveSpeed /= 3;
+                    if (Player.velocity.Y == 0f && Math.Abs(Player.velocity.X) > 3f)
+                    {
+                        Player.velocity.X /= 2f;
+                    }
+
+                }
+                else
+                {
+                    Player.shield_parry_cooldown = 0;
+                }
             }
-            else
-            {
-                Player.shield_parry_cooldown = 0;
-            }
+
         }
+
         #endregion
         #region BloodLust
         public void BloodLustEffect()
@@ -1378,7 +1380,7 @@ namespace MHArmorSkills.MHPlayer
                 }
             }
 
-            GuardEffect();
+            Guard = true;
         }
         #endregion
         #region Masters Touch
@@ -1725,7 +1727,7 @@ namespace MHArmorSkills.MHPlayer
                 if (proj.type >= ProjectileID.RocketFireworkRed && proj.type <= ProjectileID.RocketFireworkYellow || proj.type >= ProjectileID.GrenadeI && proj.type <= ProjectileID.ProximityMineIV || proj.type >= ProjectileID.RocketSnowmanI && proj.type <= ProjectileID.RocketSnowmanIV || proj.type >= ProjectileID.Celeb2Rocket && proj.type <= ProjectileID.Celeb2RocketLarge
                     || proj.type >= ProjectileID.ClusterRocketI && proj.type <= ProjectileID.DryMine || proj.type >= ProjectileID.ClusterSnowmanRocketI && proj.type <= ProjectileID.DrySnowmanRocket || proj.type >= ProjectileID.ClusterSnowmanFragmentsI && proj.type <= ProjectileID.ClusterSnowmanFragmentsII)
                 {
-                    proj.damage *= 1+(ArtilleryBuff / 100);
+                    proj.damage *= 1 + (ArtilleryBuff / 100);
                 }
             }
             #endregion
@@ -2372,7 +2374,12 @@ namespace MHArmorSkills.MHPlayer
                 return SpeedSharpening;
             }
             #endregion
-
+            #region Focus
+            if (Player.HeldItem != null && Player.HeldItem.channel && FocusSpd > 0)
+            {
+                return FocusSpd;
+            }
+            #endregion
 
             return base.UseSpeedMultiplier(item);
         }

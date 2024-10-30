@@ -17,6 +17,7 @@ namespace MHArmorSkills.Utilities
 
             return (destination - entity.Center).SafeNormalize(fallback.Value);
         }
+        public static bool IsWhip(this Item item) => item.shoot > ProjectileID.None && ProjectileID.Sets.IsAWhip[item.shoot];
         public static Item ActiveItem(this Player player) => Main.mouseItem.IsAir ? player.HeldItem : Main.mouseItem;
         public static int GetOreItemID(this Tile tile)
         {

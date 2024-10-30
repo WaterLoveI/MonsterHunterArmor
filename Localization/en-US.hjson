@@ -46,7 +46,7 @@ Mods: {
 			CritElement: Increases the Critical Element Skill by {0}
 			CritEye: Increases the Critical Eye Skill by {0}
 			CriticalBoost: Increases the Critical Boost Skill by {0}
-			DeadEye: Increases the Dead Eye Skill by {0}
+			DeadEye: Increases the Deadeye Skill by {0}
 			DefenseBoost: Increases the Defense Boost Skill by {0}
 			Defiance: Increases the Defiance Skill by {0}
 			DefLock: Increases the Defense Lock Skill by {0}
@@ -64,6 +64,7 @@ Mods: {
 			Foray: Increases the Foray Skill by {0}
 			Fortified: Increases the Fortified Skill by {0}
 			FreeMeal: Increases the Free Meal Skill by {0}
+			Focus: Increases the Focus Skill by {0}
 			Furious: Increases the Furious Skill by {0}
 			Gathering: Increases the Gathering Skill by {0}
 			Geologist: Increases the Geologist Skill by {0}
@@ -127,6 +128,7 @@ Mods: {
 			StamRecovery: Increases the Stamina Recovery Skill by {0}
 			StatusTrigger: Increases the Status Trigger Skill by {0}
 			Strife: Increases the Strife Skill by {0}
+			StunResist: Increases the Stun Resist Skill by {0}
 			SurvivalExpert: Increases the Survival Expert Skill by {0}
 			Tenderizer: Increases the Tenderizer Skill by {0}
 			TeostraBlessing: Increases the Teostra Blessing Skill by {0}
@@ -174,7 +176,7 @@ Mods: {
 			VanillaCritElement: Increases the Critical Element Skill by
 			VanillaCritEye: Increases the Critical Eye Skill by
 			VanillaCriticalBoost: Increases the Critical Boost Skill by
-			VanillaDeadEye: Increases the Dead Eye Skill by
+			VanillaDeadEye: Increases the Deadeye Skill by
 			VanillaDefenseBoost: Increases the Defense Boost Skill by
 			VanillaDefiance: Increases the Defiance Skill by
 			VanillaDefLock: Increases the Defense Lock Skill by
@@ -192,6 +194,7 @@ Mods: {
 			VanillaForay: Increases the Foray Skill by
 			VanillaFortified: Increases the Fortified Skill by
 			VanillaFreeMeal: Increases the Free Meal Skill by
+			VanillaFocus: Increases the Focus Skill by
 			VanillaFurious: Increases the Furious Skill by
 			VanillaGathering: Increases the Gathering Skill by
 			VanillaGeologist: Increases the Geologist Skill by
@@ -255,6 +258,7 @@ Mods: {
 			VanillaStamRecovery: Increases the Stamina Recovery Skill by
 			VanillaStatusTrigger: Increases the Status Trigger Skill by
 			VanillaStrife: Increases the Strife Skill by
+			VanillaStunResist: Increases the Stun Resist Skill by
 			VanillaSurvivalExpert: Increases the Survival Expert Skill by
 			VanillaTenderizer: Increases the Tenderizer Skill by
 			VanillaTeostraBlessing: Increases the Teostra Blessing Skill by
@@ -510,9 +514,33 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					{$CommonItemTooltip.AutoTracker@1}
-					{$CommonItemTooltip.Guard@2}
-					{$CommonItemTooltip.TwoSlotDecor@3}
+					{$CommonItemTooltip.IncreaseSummon@1}
+					{$CommonItemTooltip.HeroShield@2}
+					{$CommonItemTooltip.Guard@3}
+					{$CommonItemTooltip.TwoSlotDecor@4}
+					'''
+			}
+
+			SeltasMail: {
+				DisplayName: Seltas Mail
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.IncreaseSummon@1}
+					{$CommonItemTooltip.HeroShield@2}
+					{$CommonItemTooltip.Guard@3}
+					'''
+			}
+
+			SeltasGreaves: {
+				DisplayName: Seltas Greaves
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseMovement}
+					{$CommonItemTooltip.IncreaseSummon@1}
+					{$CommonItemTooltip.HeroShield@2}
+					{$CommonItemTooltip.Guard@3}
+					{$CommonItemTooltip.TwoSlotDecor@4}
 					'''
 			}
 
@@ -2845,7 +2873,7 @@ Mods: {
 			}
 
 			DeadEye1: {
-				DisplayName: Dead Eye Decoration 1
+				DisplayName: Deadeye Decoration 1
 				Tooltip:
 					'''
 					{$CommonItemTooltip.DeadEye}
@@ -3575,7 +3603,7 @@ Mods: {
 			}
 
 			DeadEye2: {
-				DisplayName: DeadEye Decoration 2
+				DisplayName: Deadeye Decoration 2
 				Tooltip:
 					'''
 					{$CommonItemTooltip.DeadEye}
@@ -4254,6 +4282,26 @@ Mods: {
 					'''
 			}
 
+			Focus1: {
+				DisplayName: Focus Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Focus}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			Focus2: {
+				DisplayName: Focus Decoration 2
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Focus}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
 			Redirection1: {
 				DisplayName: Redirection Decoration 1
 				Tooltip:
@@ -4375,12 +4423,40 @@ Mods: {
 			}
 
 			SeltasSummon: {
-				DisplayName: Seltas Summon
+				DisplayName: Quest: Bugs be gone
+				Tooltip: Hunt a Seltas and a Desert Seltas.
+			}
+
+			StunResist1: {
+				DisplayName: Stun Resistance Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.StunResist}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			StunResist2: {
+				DisplayName: Stun Resistance Decoration 2
+				Tooltip:
+					'''
+					{$CommonItemTooltip.StunResist}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			SeltasTreasureBag: {
+				DisplayName: Seltas Treasure Bag
 				Tooltip: ""
 			}
 		}
 
-		"Keybinds.Scroll Swap.DisplayName": Scroll  Swap
+		Keybinds: {
+			"Scroll Swap.DisplayName": Scroll  Swap
+			Guard.DisplayName: Guard
+		}
 
 		DeathMessage: {
 			BlastBlight: "{0} was blown to bits."

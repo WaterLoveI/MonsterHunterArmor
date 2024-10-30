@@ -1,9 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
@@ -15,24 +11,20 @@ namespace MHArmorSkills.Projectiles.Enemy
     {
         public override void SetDefaults()
         {
-            Projectile.width = 14;
-            Projectile.height = 14;
+            Projectile.width = 10;
+            Projectile.height = 10;
             Projectile.penetrate = -1;
             Projectile.hostile = true;
             Projectile.timeLeft = 240;
             Projectile.tileCollide = true;
             Projectile.ignoreWater = false;
-            
+
         }
         public override void AI()
         {
             Projectile.rotation = (float)Math.Atan2((double)Projectile.velocity.Y, (double)Projectile.velocity.X) + MathHelper.ToRadians(45f);
 
-            Projectile.velocity.Y += 0.03f;
-            if (Projectile.velocity.Y > 12f)
-            {
-                Projectile.velocity.Y = 12f;
-            }
+
             if (Main.rand.NextBool(3))
             {
                 int dust = Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, DustID.JungleSpore, 0f, 0f, 0, Color.Green, 0.5f);
@@ -41,7 +33,7 @@ namespace MHArmorSkills.Projectiles.Enemy
                 spread *= 2f; // Adjust the spread distance
                 Main.dust[dust].velocity = spread;
             }
-            
+
         }
 
         public override void OnHitPlayer(Player target, Player.HurtInfo info)
@@ -49,7 +41,7 @@ namespace MHArmorSkills.Projectiles.Enemy
             if (info.Damage <= 0)
                 return;
 
-            target.AddBuff(BuffID.Slow, 60*10);
+            target.AddBuff(BuffID.Slow, 60 * 10);
         }
         public override bool OnTileCollide(Vector2 oldVelocity)
         {
@@ -62,7 +54,7 @@ namespace MHArmorSkills.Projectiles.Enemy
         {
             for (int i = 0; i < 7; i++)
             {
-                Dust.NewDust(Projectile.Center, 1, 1, DustID.JungleSpore, Projectile.velocity.X, Projectile.velocity.Y,0,Color.Green);
+                Dust.NewDust(Projectile.Center, 1, 1, DustID.JungleSpore, Projectile.velocity.X, Projectile.velocity.Y, 0, Color.Green);
             }
         }
     }

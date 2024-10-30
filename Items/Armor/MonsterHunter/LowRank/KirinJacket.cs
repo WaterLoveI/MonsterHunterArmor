@@ -1,20 +1,19 @@
 ﻿using MHArmorSkills.Global;
-
 using MHArmorSkills.Items.Crafting_Materials.ArmorSphere;
+using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using MHArmorSkills.MHPlayer;
 using Terraria;
 using Terraria.ID;
-using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
-using Terraria.ModLoader;
 using Terraria.Localization;
+using Terraria.ModLoader;
 
 namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 {
     [AutoloadEquip(EquipType.Body)]
     public class KirinJacket : ModItem
     {
-        public static readonly int Crit = 7;
-        public static readonly int Mana = 7;
+        public static readonly int Crit = 10;
+        public static readonly int Mana = 20;
         public static readonly int Protect = 2;
         public static readonly int BlightProof = 1;
         public static readonly int Decor1 = 2;

@@ -523,37 +523,37 @@ MythrilGreaves:
 	{$CommonItemTooltip.VanillaAffinitySliding} 1.
 	{$CommonItemTooltip.VanillaLastingPower} 1.
 	'''
-OrichalumMask:
+OrichalcumMask:
 	'''
-	{$ItemTooltip.OrichalumMask}
+	{$ItemTooltip.OrichalcumMask}
 	{$CommonItemTooltip.VanillaCritEye} 2.
 	{$CommonItemTooltip.VanillaProtectivePolish} 2.
 	{$CommonItemTooltip.VanillaFencing} 1.
 	'''
-OrichalumHelmet:
+OrichalcumHelmet:
 	'''
-	{$ItemTooltip.OrichalumHelmet}
+	{$ItemTooltip.OrichalcumHelmet}
 	{$CommonItemTooltip.VanillaCritEye} 2.
 	{$CommonItemTooltip.VanillaFencing} 1.
 	{$CommonItemTooltip.VanillaPierceUp} 1.
 	'''
-OrichalumHeadgear:
+OrichalcumHeadgear:
 	'''
-	{$ItemTooltip.OrichalumHeadgear}
+	{$ItemTooltip.OrichalcumHeadgear}
 	{$CommonItemTooltip.VanillaCritEye} 3.
 	{$CommonItemTooltip.VanillaFencing} 1.
 	'''
-OrichalumBreastplate:
+OrichalcumBreastplate:
 	'''
-	{$ItemTooltip.OrichalumBreastplate}
+	{$ItemTooltip.OrichalcumBreastplate}
 	{$CommonItemTooltip.VanillaIceRes} 2.
 	{$CommonItemTooltip.VanillaCritEye} 1.
 	{$CommonItemTooltip.VanillaLastingPower} 1.
 	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
 	'''
-OrichalumLeggings:
+OrichalcumLeggings:
 	'''
-	{$ItemTooltip.OrichalumLeggings}
+	{$ItemTooltip.OrichalcumLeggings}
 	{$CommonItemTooltip.VanillaLastingPower} 2.
 	{$CommonItemTooltip.VanillaTwoSlotDecor} 2.
 	'''
@@ -944,7 +944,7 @@ TikiShirt:
 TikiPants:
 	'''
 	{$ItemTooltip.TikiPants}
-	{$CommonItemTooltip.VanillaAttackBoost} 1.	
+	{$CommonItemTooltip.VanillaAttackBoost} 1.
 	{$CommonItemTooltip.VanillaFencing} 1.
 	{$CommonItemTooltip.VanillaRecUp} 1.
 	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
@@ -973,7 +973,7 @@ BeetleShell:
 BeetleLeggings:
 	'''
 	{$ItemTooltip.BeetleLeggings}
-	{$CommonItemTooltip.VanillaAffinitySliding} 1.	
+	{$CommonItemTooltip.VanillaAffinitySliding} 1.
 	{$CommonItemTooltip.VanillaConstitution} 1.
 	{$CommonItemTooltip.VanillaThreeSlotDecor} 1.
 	'''
@@ -1004,14 +1004,14 @@ ShroomiteHelmet:
 ShroomiteBreastplate:
 	'''
 	{$ItemTooltip.ShroomiteBreastplate}
-	{$CommonItemTooltip.VanillaDeadEye} 1.	
+	{$CommonItemTooltip.VanillaDeadEye} 1.
 	{$CommonItemTooltip.VanillaUnscathed} 1.
 	{$CommonItemTooltip.VanillaTwoSlotDecor} 2.
 	'''
 ShroomiteLeggings:
 	'''
 	{$ItemTooltip.ShroomiteLeggings}
-	{$CommonItemTooltip.VanillaSpareShot} 1.	
+	{$CommonItemTooltip.VanillaSpareShot} 1.
 	{$CommonItemTooltip.VanillaRecoverySpd} 1.
 	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
 	'''
@@ -1032,14 +1032,14 @@ SpectreHood:
 SpectreRobe:
 	'''
 	{$ItemTooltip.SpectreRobe}
-	{$CommonItemTooltip.VanillaCriticalBoost} 1.	
+	{$CommonItemTooltip.VanillaCriticalBoost} 1.
 	{$CommonItemTooltip.VanillaLatentPower} 1.
 	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
 	'''
 SpectrePants:
 	'''
 	{$ItemTooltip.SpectrePants}
-	{$CommonItemTooltip.VanillaHeroics} 2.	
+	{$CommonItemTooltip.VanillaHeroics} 2.
 	{$CommonItemTooltip.VanillaThunderAttack} 2.
 	{$CommonItemTooltip.VanillaThreeSlotDecor} 1.
 	'''
@@ -1053,14 +1053,14 @@ SpookyHelmet:
 SpookyBreastplate:
 	'''
 	{$ItemTooltip.SpookyBreastplate}
-	{$CommonItemTooltip.VanillaProtection} 2.	
+	{$CommonItemTooltip.VanillaProtection} 2.
 	{$CommonItemTooltip.VanillaResentment} 1.
 	{$CommonItemTooltip.VanillaOneSlotDecor} 2.
 	'''
 SpookyLeggings:
 	'''
 	{$ItemTooltip.SpookyLeggings}
-	{$CommonItemTooltip.VanillaFireAttack} 3.	
+	{$CommonItemTooltip.VanillaFireAttack} 3.
 	{$CommonItemTooltip.VanillaRecUp} 1.
 	{$CommonItemTooltip.VanillaTenderizer} 1.
 	'''
@@ -1074,13 +1074,13 @@ SquireAltHead:
 SquireAltShirt:
 	'''
 	{$ItemTooltip.SquireAltShirt}
-	{$CommonItemTooltip.VanillaEmbolden} 2.	
+	{$CommonItemTooltip.VanillaEmbolden} 2.
 	{$CommonItemTooltip.VanillaThreeSlotDecor} 2.
 	'''
 SquireAltPants:
 	'''
 	{$ItemTooltip.SquireAltPants}
-	{$CommonItemTooltip.VanillaConstitution} 2.	
+	{$CommonItemTooltip.VanillaConstitution} 2.
 	{$CommonItemTooltip.VanillaEmbolden} 1.
 	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
 	'''
@@ -1095,13 +1095,13 @@ MonkAltHead:
 MonkAltShirt:
 	'''
 	{$ItemTooltip.MonkAltShirt}
-	{$CommonItemTooltip.VanillaEvasion} 3.	
+	{$CommonItemTooltip.VanillaEvasion} 3.
 	{$CommonItemTooltip.VanillaTwoSlotDecor} 2.
 	'''
 MonkAltPants:
 	'''
 	{$ItemTooltip.MonkAltPants}
-	{$CommonItemTooltip.VanillaCriticalBoost} 1.	
+	{$CommonItemTooltip.VanillaCriticalBoost} 1.
 	{$CommonItemTooltip.VanillaResentment} 1.
 	{$CommonItemTooltip.VanillaThreeSlotDecor} 1.
 	'''
@@ -1116,16 +1116,16 @@ HuntressAltHead:
 HuntressAltShirt:
 	'''
 	{$ItemTooltip.HuntressAltShirt}
-	{$CommonItemTooltip.VanillaEvasion} 1.	
-	{$CommonItemTooltip.VanillaFate} 1.	
-	{$CommonItemTooltip.VanillaQuickBreath} 1.	
+	{$CommonItemTooltip.VanillaEvasion} 1.
+	{$CommonItemTooltip.VanillaFate} 1.
+	{$CommonItemTooltip.VanillaQuickBreath} 1.
 	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
 	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
 	'''
 HuntressAltPants:
 	'''
 	{$ItemTooltip.HuntressAltPants}
-	{$CommonItemTooltip.VanillaDeadEye} 1.	
+	{$CommonItemTooltip.VanillaDeadEye} 1.
 	{$CommonItemTooltip.VanillaJumpMaster} 1.
 	{$CommonItemTooltip.VanillaUnscathed} 1.
 	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
@@ -1141,15 +1141,15 @@ ApprenticeAltHead:
 ApprenticeAltShirt:
 	'''
 	{$ItemTooltip.ApprenticeAltShirt}
-	{$CommonItemTooltip.VanillaCritElement} 1.	
-	{$CommonItemTooltip.VanillaResentment} 1.	
-	{$CommonItemTooltip.VanillaStrife} 1.	
+	{$CommonItemTooltip.VanillaCritElement} 1.
+	{$CommonItemTooltip.VanillaResentment} 1.
+	{$CommonItemTooltip.VanillaStrife} 1.
 	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
 	'''
 ApprenticeAltPants:
 	'''
 	{$ItemTooltip.ApprenticeAltPants}
-	{$CommonItemTooltip.VanillaProtection} 2.	
+	{$CommonItemTooltip.VanillaProtection} 2.
 	{$CommonItemTooltip.VanillaStamRecovery} 1.
 	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
 	'''
@@ -1157,7 +1157,7 @@ SolarFlareHelmet:
 	'''
 	{$ItemTooltip.SolarFlareHelmet}
 	{$CommonItemTooltip.VanillaCriticalBoost} 1.
-	{$CommonItemTooltip.VanillaMailofHellfire} 1.
+	{$CommonItemTooltip.VanillaMailOfHellfire} 1.
 	{$CommonItemTooltip.VanillaSpirit} 1.
 	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
 	'''
@@ -1165,7 +1165,7 @@ SolarFlareBreastplate:
 	'''
 	{$ItemTooltip.SolarFlareBreastplate}
 	{$CommonItemTooltip.VanillaCriticalBoost} 1.
-	{$CommonItemTooltip.VanillaMailofHellfire} 1.
+	{$CommonItemTooltip.VanillaMailOfHellfire} 1.
 	{$CommonItemTooltip.VanillaSpirit} 1.
 	{$CommonItemTooltip.VanillaThreeSlotDecor} 1.
 	'''
@@ -1173,7 +1173,7 @@ SolarFlareLeggings:
 	'''
 	{$ItemTooltip.SolarFlareLeggings}
 	{$CommonItemTooltip.VanillaCriticalBoost} 1.
-	{$CommonItemTooltip.VanillaMailofHellfire} 1.
+	{$CommonItemTooltip.VanillaMailOfHellfire} 1.
 	{$CommonItemTooltip.VanillaSpirit} 1.
 	{$CommonItemTooltip.VanillaTwoSlotDecor} 2.
 	'''
@@ -1182,14 +1182,14 @@ VortexHelmet:
 	{$ItemTooltip.VortexHelmet}
 	{$CommonItemTooltip.VanillaDeadEye} 1.
 	{$CommonItemTooltip.VanillaEvadeDistance} 1.
-	{$CommonItemTooltip.VanillaMailofHellfire} 1.
+	{$CommonItemTooltip.VanillaMailOfHellfire} 1.
 	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
 	'''
 VortexBreastplate:
 	'''
 	{$ItemTooltip.VortexBreastplate}
 	{$CommonItemTooltip.VanillaEvadeDistance} 2.
-	{$CommonItemTooltip.VanillaMailofHellfire} 2.
+	{$CommonItemTooltip.VanillaMailOfHellfire} 2.
 	{$CommonItemTooltip.VanillaThreeSlotDecor} 1.
 	'''
 VortexLeggings:
@@ -1209,7 +1209,7 @@ NebulaHelmet:
 NebulaBreastplate:
 	'''
 	{$ItemTooltip.NebulaBreastplate}
-	{$CommonItemTooltip.VanillaMailofHellfire} 2.
+	{$CommonItemTooltip.VanillaMailOfHellfire} 2.
 	{$CommonItemTooltip.VanillaGuts} 1.
 	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
 	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
@@ -1218,7 +1218,7 @@ NebulaLeggings:
 	'''
 	{$ItemTooltip.NebulaLeggings}
 	{$CommonItemTooltip.VanillaEvadeDistance} 2.
-	{$CommonItemTooltip.VanillaMailofHellfire} 1.
+	{$CommonItemTooltip.VanillaMailOfHellfire} 1.
 	{$CommonItemTooltip.VanillaTwoSlotDecor} 2.
 	'''
 StardustHelmet:

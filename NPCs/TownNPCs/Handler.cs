@@ -1,10 +1,11 @@
 ﻿using MHArmorSkills.Items;
-using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
+using MHArmorSkills.Items.Accessories.Decorations;
+using MHArmorSkills.Items.Consumables;
 using MHArmorSkills.MHPlayer;
+using MHArmorSkills.MHSystem;
 using MHArmorSkills.Projectiles;
 using System.Collections.Generic;
 using Terraria;
-using Terraria.DataStructures;
 using Terraria.GameContent;
 using Terraria.GameContent.Bestiary;
 using Terraria.GameContent.ItemDropRules;
@@ -140,11 +141,11 @@ namespace MHArmorSkills.NPCs.TownNPCs
             Player player = Main.player[Main.myPlayer];
             if (firstButton)
             {
+                var entitySource = NPC.GetSource_GiftOrReward();
                 if (player.GetModPlayer<QuestPlayer>().QuestNumber == 0)
                 {
                     Main.npcChatText = "Oh hey, doodle. What am I up to? Well that's the problem. What's the point of a guildmarm if there's no one to give quests to? The guide certainly isn't interested. Will you play along with me? I'll give you a guide book to get you started!";
                     Main.npcChatCornerItem = ModContent.ItemType<GuideBook>();
-                    var entitySource = NPC.GetSource_GiftOrReward();
                     Main.LocalPlayer.QuickSpawnItem(entitySource, ModContent.ItemType<GuideBook>());
                     player.GetModPlayer<QuestPlayer>().QuestNumber += 1;
                     return;
@@ -156,15 +157,26 @@ namespace MHArmorSkills.NPCs.TownNPCs
                     Main.npcChatCornerItem = ItemID.Mushroom;
                     return;
                 }
+                #endregion
+                #region Seltas
+                if (player.GetModPlayer<QuestPlayer>().QuestNumber == 2 && NPC.downedBoss1)
+                {
+                    Main.npcChatText = "Oh! Just the hunter I wanted to see. I've heard reports that a bunch of bugs are terrorizing the jungle, shoo them away and there's a special reward waiting for you.";
+                    Main.LocalPlayer.QuickSpawnItem(entitySource, ModContent.ItemType<SeltasSummon>());
+                    Main.npcChatCornerItem = ItemID.WoodenSword;
+                    return;
+                }
+                #endregion
                 else
                 {
                     Main.npcChatText = "Don't have anything for you yet, come back a little later.";
                 }
-                #endregion
+
 
             }
             else
             {
+                var entitySource = NPC.GetSource_GiftOrReward();
                 #region Mushroom Quest
                 if (player.GetModPlayer<QuestPlayer>().QuestNumber == 1)
                 {
@@ -176,14 +188,24 @@ namespace MHArmorSkills.NPCs.TownNPCs
                             Main.LocalPlayer.inventory[Mushy].stack -= 1;
                         }
                         Main.npcChatText = "Congratulations, you've completed your first quest! And your reward is... gimme a second here.... Tada! I learnt this from the guide, made with extra love. Let me know how it tastes.";
-                        var entitySource = NPC.GetSource_GiftOrReward();
                         Main.LocalPlayer.QuickSpawnItem(entitySource, ItemID.LesserHealingPotion, 3);
                         player.GetModPlayer<QuestPlayer>().QuestNumber += 1;
                         return;
                     }
                 }
                 #endregion
-
+                #region Seltas Quest
+                if (player.GetModPlayer<QuestPlayer>().QuestNumber == 2)
+                {
+                    if (DownedBossSystem.downedSeltas)
+                    {
+                        Main.npcChatText = "That's my hunter. As promised, a special decoration for you, use it wisely.";
+                        Main.LocalPlayer.QuickSpawnItem(entitySource, ModContent.ItemType<AutoGuard1>());
+                        player.GetModPlayer<QuestPlayer>().QuestNumber += 1;
+                        return;
+                    }
+                }
+                #endregion
                 return;
             }
         }
