@@ -52,6 +52,7 @@ Mods: {
 			DefLock: Increases the Defense Lock Skill by {0}
 			Dereliction: Increases the Dereliction Skill by {0}
 			Diversion: Increases the Diversion Skill by {0}
+			DragonConversion: Increases the Dragon Conversion Skill by {0}
 			Elemental: Increases the Elemental Damage Skill by {0}
 			Embolden: Increases the Embolden Skill by {0}
 			EvadeDistance: Increases the Evade Distance Skill by {0}
@@ -77,6 +78,7 @@ Mods: {
 			HastenRecovery: Increases the Hasten Recovery Skill by {0}
 			Health: Increases the Health Boost Skill by {0}
 			HeatRes: Increases the Heat Resistance Skill by {0}
+			HeavenSent: Increases the Heaven-Sent Skill by {0}
 			Heroics: Increases the Heroics Skill by {0}
 			HeroShield: Increases the Hero Shield Skill by {0}
 			HoneyHunter: Increases the Honey Hunter Skill by {0}
@@ -1101,7 +1103,7 @@ Mods: {
 			}
 
 			BoneGreavesX: {
-				DisplayName: Bone Helmet X
+				DisplayName: Bone Greaves X
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseMelee}
@@ -1438,7 +1440,14 @@ Mods: {
 
 			VangisHelmX: {
 				DisplayName: Vangis Helm X
-				Tooltip: ""
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.Handicraft@2}
+					{$CommonItemTooltip.Tenderizer@3}
+					{$CommonItemTooltip.ThreeSlotDecor@4}
+					'''
 			}
 
 			BrachydiosHelmX: {
@@ -1481,6 +1490,19 @@ Mods: {
 
 			SeltasHelmX: {
 				DisplayName: Seltas Helm X
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.IncreaseSummon@1}
+					{$CommonItemTooltip.Guard@2}
+					{$CommonItemTooltip.Handicraft@3}
+					{$CommonItemTooltip.HeroShield@4}
+					{$CommonItemTooltip.ThreeSlotDecor@5}
+					'''
+			}
+
+			SeltasHelmXR: {
+				DisplayName: Seltas Helm XR
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
@@ -2049,6 +2071,79 @@ Mods: {
 					{$CommonItemTooltip.IncreaseMovement@1}
 					{$CommonItemTooltip.AttackBoost@2}
 					{$CommonItemTooltip.TremorRes@3}
+					'''
+			}
+
+			ValstraxHelm: {
+				DisplayName: Valstrax Helm - Epoch
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.AttackBoost@2}
+					{$CommonItemTooltip.DragonConversion@3}
+					{$CommonItemTooltip.ThreeSlotDecor@4}
+					'''
+			}
+
+			ValstraxMail: {
+				DisplayName: Valstrax Mail - Epoch
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.DragonConversion@2}
+					{$CommonItemTooltip.StunResist@3}
+					{$CommonItemTooltip.CriticalBoost@4}
+					{$CommonItemTooltip.ThreeSlotDecor@5}
+					'''
+			}
+
+			ValstraxGreaves: {
+				DisplayName: Valstrax Greaves - Epoch
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.AttackBoost@2}
+					{$CommonItemTooltip.CriticalBoost@3}
+					{$CommonItemTooltip.TwoSlotDecor@4}
+					'''
+			}
+
+			TempestCrown: {
+				DisplayName: Tempest Crown X
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.Evasion@2}
+					{$CommonItemTooltip.HeavenSent@3}
+					{$CommonItemTooltip.ThreeSlotDecor@4}
+					'''
+			}
+
+			TempestRobe: {
+				DisplayName: Tempest Robe X
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.LatentPower@2}
+					{$CommonItemTooltip.HeavenSent@3}
+					{$CommonItemTooltip.ThreeSlotDecor@4}
+					'''
+			}
+
+			TempestHakama: {
+				DisplayName: Tempest Hakama X
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.CriticalBoost@2}
+					{$CommonItemTooltip.HeavenSent@3}
+					{$CommonItemTooltip.ThreeSlotDecor@4}
 					'''
 			}
 

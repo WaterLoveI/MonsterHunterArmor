@@ -72,7 +72,7 @@ public class DecorationSlots : ModPlayer
     {
 
         int start = 13;
-        int end = 19;
+        int end = 20;
 
         for (int k = start; k < end; k++)
         {

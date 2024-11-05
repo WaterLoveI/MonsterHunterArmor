@@ -11,19 +11,18 @@ using Terraria.Localization;
 namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 {
     [AutoloadEquip(EquipType.Head)]
-    public class SeltasHelmX : ModItem
+    public class SeltasHelmXR : ModItem
     {
         public static readonly int Damage = 15;
-        public static readonly int Minion = 1;
         public static readonly int Guard = 1;
-        public static readonly int Handicraft = 1;
+        public static readonly int Art = 1;
         public static readonly int Hero = 1;
-        public static readonly int Decor1 = 1;
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage,Minion, Guard, Handicraft, Hero, Decor1);
+        public static readonly int Decor1 = 3;
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Guard, Art, Hero, Decor1);
 
         public override void SetDefaults()
         {
-            Item.width = 28;
+            Item.width = 22;
             Item.height = 24;
             Item.value = MHGlobalItems.RarityLimeBuyPrice;
             Item.rare = ItemRarityID.Lime;
@@ -32,14 +31,14 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            player.GetDamage<GenericDamageClass>() += Damage/100f;
-            player.maxMinions += Minion;
+            player.GetDamage<GenericDamageClass>() += Damage / 100f;
+            player.ammoCost80 = true;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.HeroShield += Hero;
             modPlayer.Guard += Guard;
-            modPlayer.Handicraft += Handicraft;
+            modPlayer.Artillery += Art;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationThreeSlots += Decor1;
+            SlotPlayer.DecorationOneSlots += Decor1;
         }
         public override void AddRecipes()
         {

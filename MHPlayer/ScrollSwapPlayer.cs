@@ -3,6 +3,7 @@ using MHArmorSkills.Buffs.ArmorBuffs;
 using Microsoft.CodeAnalysis;
 using Microsoft.Xna.Framework;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameInput;
@@ -41,6 +42,11 @@ namespace MHArmorSkills.MHPlayer
         public int HeaventSentTimer;
         public int HeaventSentActivation;
 
+        public float DragonConversionRate;
+        public int DragConvCount;
+        public int DragConvCritCount;
+        public int DragonConvLimit = 100;
+
         public override void ResetEffects()
         {
             MailofHellfireMelee = 1f;
@@ -52,6 +58,8 @@ namespace MHArmorSkills.MHPlayer
             FuriousDef = 0;
             DerelictionBoost = 0;
             HeaventSentActivation = 0;
+
+            DragonConversionRate = 0f;
         }
 
         #region hotkey
@@ -63,6 +71,8 @@ namespace MHArmorSkills.MHPlayer
                 {
                     SkillScrolls = true;
                     Player.AddBuff(ModContent.BuffType<ScrollChange>(), 60);
+                    DragConvCritCount = 0;
+                    DragConvCount = 0;
                     ScrollswapDust();
                 }
                 else
@@ -188,6 +198,7 @@ namespace MHArmorSkills.MHPlayer
                     int Derecrit = DerelictionBoost * DerelictionStage;
                     Player.GetCritChance(DamageClass.Generic) += Derecrit;
                 }
+                
             }
             #endregion
             #region Blue Scroll
@@ -316,6 +327,13 @@ namespace MHArmorSkills.MHPlayer
                     DerelictionTimer = 0;
                     DerelictionStage = 0;
                 }
+                #region Dragon Conversion
+                if (DragConvCount >= DragonConvLimit)
+                {
+                    int Duration = (int)(60 * 60 * RecUp.ProlongerTime);
+                    Player.AddBuff(ModContent.BuffType<DragonConversion>(), Duration);
+                }
+                #endregion
             }
             #endregion
             #region Heavensent
@@ -345,26 +363,36 @@ namespace MHArmorSkills.MHPlayer
                 if (Player.HasBuff(ModContent.BuffType<HeavenSent>()))
                 {
                     float Endure = 0.1f;
-                    if (modPlayer.HeavenSent >= 2)
-                    {
-                        Endure = 0.2f;
-                    }
                     float Speed = 0.05f;
                     if (modPlayer.HeavenSent >= 2)
                     {
+                        Endure = 0.2f;
                         Speed = 0.1f;
                     }
                     if (modPlayer.HeavenSent >= 3)
                     {
-                        Player.wingTimeMax += 50;
+                        Player.wingTime = Player.wingTimeMax;
+                        Endure = 0.3f;
+                        Speed = 0.15f;
                     }
 
                     Player.endurance += Endure;
                     Player.moveSpeed += Speed;
+                    Player.manaCost = 0;
                 }
+
             }
 
             #endregion
+            if (Player.HasBuff(ModContent.BuffType<DragonConversion>()))
+            {
+                int totaldamage = (int)(DragConvCritCount * DragonConversionRate);
+                Player.GetDamage(DamageClass.Generic) += totaldamage / 100f;
+            }
+            if (DragConvCritCount == 0)
+            {
+                Player.ClearBuff(ModContent.BuffType<DragonConversion>());
+            }
 
         }
 
@@ -378,6 +406,19 @@ namespace MHArmorSkills.MHPlayer
                     FuriousTimer = 30;
                 }
             }
+            if (Player.HasBuff(ModContent.BuffType<BlueScroll>()))
+            {
+                if (DragonConversionRate > 0 && DragConvCount <= DragonConvLimit)
+                {
+                    DragConvCount++;
+                    if (hit.Crit)
+                    {
+                        DragConvCritCount++;
+                    }
+                }
+            }
+            AdvancedPopupRequest popup = new AdvancedPopupRequest { Text = damageDone + " damage!!", Color = Color.Blue, DurationInFrames = 180, Velocity = new Vector2(0f, 1f) };
+            PopupText.NewText(popup, Player.Top + new Vector2(0, -70));
         }
         public override void OnHitNPCWithProj(Projectile proj, NPC target, NPC.HitInfo hit, int damageDone)
         {
@@ -389,7 +430,19 @@ namespace MHArmorSkills.MHPlayer
                     FuriousTimer = 30;
                 }
             }
+            if (Player.HasBuff(ModContent.BuffType<BlueScroll>()))
+            {
+                if (DragonConversionRate > 0 && DragConvCount <= DragonConvLimit)
+                {
+                    DragConvCount++;
+                    if (hit.Crit)
+                    {
+                        DragConvCritCount++;
+                    }
+                }
+            }
         }
+
         public override void ModifyHitByNPC(NPC npc, ref Player.HurtModifiers modifiers)
         {
             #region Blue Scroll
@@ -458,6 +511,15 @@ namespace MHArmorSkills.MHPlayer
                     Player.lifeRegen = -11;
                 }
             }
+             
+        }
+        public override bool CanConsumeAmmo(Item weapon, Item ammo)
+        {
+            if (Player.HasBuff(ModContent.BuffType<HeavenSent>()))
+            {
+                return false;
+            }
+            return base.CanConsumeAmmo(weapon, ammo);
         }
     }
 }

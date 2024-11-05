@@ -236,6 +236,7 @@ namespace MHArmorSkills.NPCs.TownNPCs
             randomOffset = 1f;
             gravityCorrection = 1f;
         }
+        public override bool CanTownNPCSpawn(int numTownNPCs) => true;
     }
 }
 

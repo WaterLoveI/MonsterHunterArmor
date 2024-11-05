@@ -44,6 +44,13 @@ namespace MHArmorSkills.Global
                 drawParams.Position += shake;
                 drawParams.TextPosition += shake;
             }
+            if (type == ModContent.BuffType<BlueScroll>() && player.GetModPlayer<ScrollSwapPlayer>().DragConvCount >= player.GetModPlayer<ScrollSwapPlayer>().DragonConvLimit)
+            {
+                Vector2 shake = new Vector2(Main.rand.Next(-1, 2), Main.rand.Next(-1, 2));
+
+                drawParams.Position += shake;
+                drawParams.TextPosition += shake;
+            }
             if (type == ModContent.BuffType<SharpnessRed>() || type == ModContent.BuffType<SharpnessYellow>() || type == ModContent.BuffType<SharpnessGreen>() || type == ModContent.BuffType<SharpnessBlue>() || type == ModContent.BuffType<SharpnessWhite>() || type == ModContent.BuffType<SharpnessPurple>())
             {
                 if (player.GetModPlayer<SharpnessPlayer>().SharpnessLossAnimation)

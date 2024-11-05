@@ -118,6 +118,10 @@ namespace MHArmorSkills.Global
                 entity.value = Item.sellPrice(0, 1, 0, 0);
             }
 
+            if (entity.DamageType == DamageClass.Ranged && entity.damage >0 && entity.shoot > ProjectileID.None)
+            {
+                entity.useTime = (int)(entity.useAnimation/3);
+            }
         }
         public override bool OnPickup(Item item, Player player)
         {

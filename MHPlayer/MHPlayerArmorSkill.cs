@@ -1604,7 +1604,7 @@ namespace MHArmorSkills.MHPlayer
                 Player.AddBuff(ModContent.BuffType<GuardCooldown>(), GuardCooldown);
                 if (OffensiveGuardBoost > 0)
                 {
-                    int Duration = (int)(7 * 60 * ProlongerTime);
+                    int Duration = (int)(12 * 60 * ProlongerTime);
                     Player.AddBuff(ModContent.BuffType<OffensiveGuard>(), Duration);
                 }
 
@@ -2433,6 +2433,10 @@ namespace MHArmorSkills.MHPlayer
             #endregion
             #region Draw Hair
             if ((Player.armor[0].type == ModContent.ItemType<MizutsuneHelmX>()) && (Player.armor[10].headSlot == -1) || (Player.armor[10].type == ModContent.ItemType<MizutsuneHelmX>()))
+            {
+                drawInfo.fullHair = true;
+            }
+            if ((Player.armor[0].type == ModContent.ItemType<VangisHelmX>()) && (Player.armor[10].headSlot == -1) || (Player.armor[10].type == ModContent.ItemType<VangisHelmX>()))
             {
                 drawInfo.fullHair = true;
             }

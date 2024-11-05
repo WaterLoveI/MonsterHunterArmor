@@ -248,6 +248,11 @@ namespace MHArmorSkills.MHPlayer
             }
 
             #endregion
+
+            if (Player.HasBuff(ModContent.BuffType<HeavenSent>()))
+            {
+                LoseSharpness = false;
+            }
             if (LoseSharpness && CurrentSharpness > 0)
             {
                 CurrentSharpness -= 1;

@@ -296,3 +296,8 @@ AttackSpeedUp: {
 	DisplayName: Quick sheath up!
 	Description: Combining both challenge sheath and quick sheath, your attack speed increased even further.
 }
+
+DragonConversion: {
+	DisplayName: Dragon Conversion
+	Description: Mods.MHArmorSkills.Buffs.DragonConversion.Description
+}

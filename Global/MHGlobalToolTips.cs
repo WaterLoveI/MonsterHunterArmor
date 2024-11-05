@@ -604,7 +604,7 @@ namespace MHArmorSkills.Global
                         Usetime = 50;
                     }
                     AddTooltip($"Quick Sheath Level {player.GetModPlayer<ArmorSkills>().QuickSheath} / 3: \n" +
-                     $"Increase usetime for true melee weapons by {Usetime}%.");
+                     $"Increase usetime for true melee weapons and whips by {Usetime}%. Can combo with challenge sheath for a bigger boost.");
                     SkillsActive = true;
                 }
                 if (player.GetModPlayer<ArmorSkills>().QuickSharpening >= 1)
@@ -758,7 +758,7 @@ namespace MHArmorSkills.Global
                 if (player.GetModPlayer<ArmorSkills>().OffensiveGuard >= 1)
                 {
                     AddTooltip($"Pellet Up Level {player.GetModPlayer<ArmorSkills>().OffensiveGuard} / 3:: \n" +
-                         $"Increase damage by {player.GetModPlayer<MHPlayerArmorSkill>().OffensiveGuardBoost}% after guarding a hit.");
+                         $"Increase damage by {player.GetModPlayer<MHPlayerArmorSkill>().OffensiveGuardBoost}% after guarding a hit for 12 seconds.");
                     SkillsActive = true;
                 }
                 if (player.GetModPlayer<ArmorSkills>().NormalUp >= 1)
@@ -984,28 +984,59 @@ namespace MHArmorSkills.Global
                         AddTooltip($"Heroics Level {player.GetModPlayer<ArmorSkills>().Heroics} / 5: \n" +
                 $"Increase damage by {player.GetModPlayer<MHPlayerArmorSkill>().HeroicsAttack}% when health falls below 35%.");
                     }
-                    if (player.GetModPlayer<ArmorSkills>().IceRes >= 2)
+                    if (player.GetModPlayer<ArmorSkills>().Heroics == 2)
                     {
                         AddTooltip($"Heroics Level {player.GetModPlayer<ArmorSkills>().Heroics} / 5: \n" +
                 $"Increase damage by % {player.GetModPlayer<MHPlayerArmorSkill>().HeroicsAttack}% and defense by {player.GetModPlayer<MHPlayerArmorSkill>().HeroicsDefence} when health falls below 35%.");
                     }
+                    if (player.GetModPlayer<ArmorSkills>().Heroics >= 3)
+                    {
+                        AddTooltip($"Heroics Level {player.GetModPlayer<ArmorSkills>().Heroics} / 5: \n" +
+                $"Increase damage by % {player.GetModPlayer<MHPlayerArmorSkill>().HeroicsAttack}%, defense by {player.GetModPlayer<MHPlayerArmorSkill>().HeroicsDefence} and stops health regen when health falls below 35%.");
+                    }
+                    SkillsActive = true;
+                }
+                if (player.GetModPlayer<ArmorSkills>().HeavenSent >= 1)
+                {
+                    if (player.GetModPlayer<ArmorSkills>().HeavenSent == 1)
+                    {
+                        AddTooltip($"Heaven-Sent Level {player.GetModPlayer<ArmorSkills>().HeavenSent} / 3: \n" +
+                         $"When an boss is nearby, not getting hit for 20 seconds grants the Heaven-Sent buff. \n" +
+                         $"The buff increases movement speed by 5%, prevents sharpness loss and stops ammo/mana consumption. \n" +
+                         $"Reduce the next hit's damage by 10% but removes the Heaven-Sent buff.");
+                    }
+                    if (player.GetModPlayer<ArmorSkills>().HeavenSent == 2)
+                    {
+                        AddTooltip($"Heaven-Sent Level {player.GetModPlayer<ArmorSkills>().HeavenSent} / 3: \n" +
+                         $"When an boss is nearby, not getting hit for 15 seconds grants the Heaven-Sent buff. \n" +
+                         $"The buff increases movement speed by 10%, prevents sharpness loss and stops ammo/mana consumption. \n" +
+                         $"Reduce the next hit's damage by 20% but removes the Heaven-Sent buff.");
+                    }
+                    if (player.GetModPlayer<ArmorSkills>().HeavenSent >= 3)
+                    {
+                        AddTooltip($"Heaven-Sent Level {player.GetModPlayer<ArmorSkills>().HeavenSent} / 3: \n" +
+                         $"When an boss is nearby, not getting hit for 15 seconds grants the Heaven-Sent buff. \n" +
+                         $"The buff increases movement speed by 15%, grants infinite flight, prevents sharpness loss and stops ammo/mana consumption. \n" +
+                         $"Reduce the next hit's damage by 30% but removes the Heaven-Sent buff.");
+                    }
+
                     SkillsActive = true;
                 }
                 if (player.GetModPlayer<ArmorSkills>().HeatRes >= 1)
                 {
                     if (player.GetModPlayer<ArmorSkills>().HeatRes == 1)
                     {
-                        AddTooltip($"Heat Res Level {player.GetModPlayer<ArmorSkills>().HeatRes} / 3:: \n" +
+                        AddTooltip($"Heat Res Level {player.GetModPlayer<ArmorSkills>().HeatRes} / 3: \n" +
                          $"Grant immunity to fire blocks.");
                     }
                     if (player.GetModPlayer<ArmorSkills>().HeatRes == 2)
                     {
-                        AddTooltip($"Heat Res Level {player.GetModPlayer<ArmorSkills>().HeatRes} / 3:: \n" +
+                        AddTooltip($"Heat Res Level {player.GetModPlayer<ArmorSkills>().HeatRes} / 3: \n" +
                          $"Grant immunity to on fire,hell fire and fire blocks.");
                     }
                     if (player.GetModPlayer<ArmorSkills>().HeatRes >= 3)
                     {
-                        AddTooltip($"Heat Res Level {player.GetModPlayer<ArmorSkills>().HeatRes} / 3:: \n" +
+                        AddTooltip($"Heat Res Level {player.GetModPlayer<ArmorSkills>().HeatRes} / 3: \n" +
                          $"Grant immunity to on fire,hell fire and fire blocks. Immunity to lava for 7 seconds. Grant recovery speed skill +1 when in the jungle,desert or the underworld biome.");
                     }
 
@@ -1091,7 +1122,7 @@ namespace MHArmorSkills.Global
                 if (player.GetModPlayer<ArmorSkills>().Guard >= 1)
                 {
                     AddTooltip($"Guard Level {player.GetModPlayer<ArmorSkills>().Guard} / 5: \n" +
-                         $"Allows the ability to guard if you have a shield. Right click to guard. Increase guarding capabilities as skill level increase.");
+                         $"Allows the ability to guard if you have a shield. Press guard hotkey to activate. Increase guarding capabilities as skill level increase.");
                     SkillsActive = true;
                 }
                 if (player.GetModPlayer<ArmorSkills>().Grinder >= 1)
@@ -1299,8 +1330,8 @@ namespace MHArmorSkills.Global
                 }
                 if (player.GetModPlayer<ArmorSkills>().Evasion >= 1)
                 {
-                    AddTooltip($"Evasion Level {player.GetModPlayer<ArmorSkills>().Evasion} / 3: \n" +
-                         $"Grant ifames when dashing, grant more iframes as level increases.");
+                    AddTooltip($"Evasion Level {player.GetModPlayer<ArmorSkills>().Evasion} / 5: \n" +
+                         $"Grant iframes when dashing, grant more iframes as level increases.");
                     SkillsActive = true;
                 }
                 if (player.GetModPlayer<ArmorSkills>().EvadeDistance >= 1)
@@ -1339,6 +1370,28 @@ namespace MHArmorSkills.Global
 
                     AddTooltip($"Elemental Level {player.GetModPlayer<ArmorSkills>().Elemental} / 3: \n" +
                          $"Increase elemental damage by {player.GetModPlayer<ArmorSkills>().Elemental * 4}");
+                    SkillsActive = true;
+                }
+                if (player.GetModPlayer<ArmorSkills>().DragonConversion >= 1)
+                {
+                    if (player.GetModPlayer<ArmorSkills>().DragonConversion == 1)
+                    {
+                        AddTooltip($"Dragon Conversion Level {player.GetModPlayer<ArmorSkills>().DragonConversion} / 3: \n" +
+                "Increase critical strike chance by 3%. In the blue scroll, critical hits count will be stored. \n" +
+                "After 100 hits and switching to the red scroll, 30% of the critical hit counts will be converted to extra damage.");
+                    }
+                    if (player.GetModPlayer<ArmorSkills>().DragonConversion == 2)
+                    {
+                        AddTooltip($"Dragon Conversion Level {player.GetModPlayer<ArmorSkills>().DragonConversion} / 3: \n" +
+                "Increase critical strike chance by 6%. In the blue scroll, critical hits count will be stored. \n" +
+                "After 100 hits and switching to the red scroll, 35% of the critical hit counts will be converted to extra damage.");
+                    }
+                    if (player.GetModPlayer<ArmorSkills>().DragonConversion >= 3)
+                    {
+                        AddTooltip($"Dragon Conversion Level {player.GetModPlayer<ArmorSkills>().DragonConversion} / 3: \n" +
+                "Increase critical strike chance by 10%. In the blue scroll, critical hits count will be stored. \n" +
+                "After 100 hits and switching to the red scroll, 40% of the critical hit counts will be converted to extra damage.");
+                    }
                     SkillsActive = true;
                 }
                 if (player.GetModPlayer<ArmorSkills>().Diversion >= 1)
@@ -1582,7 +1635,7 @@ namespace MHArmorSkills.Global
                 if (player.GetModPlayer<ArmorSkills>().CounterStrike >= 1)
                 {
                     AddTooltip($"Counterstrike Level {player.GetModPlayer<ArmorSkills>().CounterStrike} / 3: \n" +
-                         $"Increase damage by {player.GetModPlayer<MHPlayerArmorSkill>().CounterStrike}% after getting knocked back.");
+                         $"Increase damage by {player.GetModPlayer<MHPlayerArmorSkill>().CounterStrike}% for 10 seconds after getting knocked back.");
                     SkillsActive = true;
                 }
                 if (player.GetModPlayer<ArmorSkills>().Constitution >= 1)
@@ -1614,20 +1667,20 @@ namespace MHArmorSkills.Global
                 if (player.GetModPlayer<ArmorSkills>().Coalescence >= 1)
                 {
                     int Variable = 0;
-                    if (player.GetModPlayer<ArmorSkills>().CritElement == 1)
+                    if (player.GetModPlayer<ArmorSkills>().Coalescence == 1)
                     {
                         Variable = 5;
                     }
-                    if (player.GetModPlayer<ArmorSkills>().CritElement == 2)
+                    if (player.GetModPlayer<ArmorSkills>().Coalescence == 2)
                     {
                         Variable = 10;
                     }
-                    if (player.GetModPlayer<ArmorSkills>().CritElement >= 3)
+                    if (player.GetModPlayer<ArmorSkills>().Coalescence >= 3)
                     {
                         Variable = 15;
                     }
                     AddTooltip($"Coalescence Level {player.GetModPlayer<ArmorSkills>().Coalescence} / 3: \n" +
-                         $"Increase damage by {Variable}% when a debuff wears off.");
+                         $"Increase damage by {Variable}% for 10 seconds when a debuff wears off.");
                     SkillsActive = true;
                 }
                 if (player.GetModPlayer<ArmorSkills>().CliffHanger >= 1)
@@ -1747,7 +1800,7 @@ namespace MHArmorSkills.Global
                 }
                 if (player.GetModPlayer<ArmorSkills>().Bloodlust >= 1)
                 {
-                    AddTooltip($"Bloodlust Level {player.GetModPlayer<ArmorSkills>().Bloodlust} / 1: \n" +
+                    AddTooltip($"Bloodlust Level {player.GetModPlayer<ArmorSkills>().Bloodlust} / 3: \n" +
                          $"If there's an boss nearby, inflict the frenzy debuff. Hit enemies to cure it and get a boost.");
                     SkillsActive = true;
                 }

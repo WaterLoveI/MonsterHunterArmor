@@ -54,6 +54,7 @@ namespace MHArmorSkills.MHPlayer
         public int Dereliction;
         public int Diversion;
         public int DragonSpirit;
+        public int DragonConversion;
         public int EdgeLore;
         public int Elemental;
         public int ElementalAtk;
@@ -197,6 +198,7 @@ namespace MHArmorSkills.MHPlayer
             Dereliction = 0;
             Diversion = 0;
             DragonSpirit = 0;
+            DragonConversion = 0;
             EdgeLore = 0;
             Elemental = 0;
             ElementalRes = 0;
@@ -937,6 +939,27 @@ namespace MHArmorSkills.MHPlayer
                 {
                     modPlayer.Diversion += 1;
                     Player.aggro += 100;
+                }
+            }
+            #endregion
+            #region Dragon Conversion
+            if (DragonConversion >= 1)
+            {
+                ScrollPlayer.ScrollActive = true;
+                if (DragonConversion >= 1)
+                {
+                    ScrollPlayer.DragonConversionRate += 0.3f;
+                    Player.GetCritChance(DamageClass.Generic) += 3;
+                }
+                if (DragonConversion >= 2)
+                {
+                    ScrollPlayer.DragonConversionRate += 0.05f;
+                    Player.GetCritChance(DamageClass.Generic) += 3;
+                }
+                if (DragonConversion >= 3)
+                {
+                    ScrollPlayer.DragonConversionRate += 0.05f;
+                    Player.GetCritChance(DamageClass.Generic) += 4;
                 }
             }
             #endregion
