@@ -15,8 +15,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         public static readonly int Crit = 3;
         public static readonly int Attack = 1;
         public static readonly int FAttack = 1;
-        public static readonly int Decor = 2;
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Crit, Attack, FAttack, Decor);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Crit, Attack, FAttack);
 
 
         public override void SetDefaults()
@@ -34,8 +33,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.FireAttack += FAttack;
             modPlayer.Attack += Attack;
-            DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += Decor;
         }
         public override void AddRecipes()
         {

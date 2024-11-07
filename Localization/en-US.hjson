@@ -18,7 +18,7 @@ Mods: {
 			AffinitySliding: Increases the Affinity Sliding Skill by {0}
 			AdrenalineRush: Increases the Adrenaline Rush Skill by {0}
 			AquaticMobility: Increases the Aquatic Mobility Skill by {0}
-			Artillery: Increases the Artillery Skill by {0}
+			Artillery: Increases the Artillery / Bomb Boost Skill by {0}
 			AttackBoost: Increases the Attack Boost Skill by {0}
 			AutoGuard: Activates the Auto-Guard Skill
 			AutoTracker: Increases the Auto Tracker Skill by {0}
@@ -31,22 +31,22 @@ Mods: {
 			Blightproof: Increases the Blight Resistance Skill by {0}
 			Bloodlust: Increases the Bloodlust Skill by {0}
 			BloodRite: Increases the Blood Rite Skill by {0}
-			BombBoost: Increases the Bomb Boost Skill by {0}
+			BombBoost: Increases the Artillery / Bomb Boost Skill by {0}
 			BubbleDance: Increases the Bubble Dance Skill by {0}
 			Carving: Increases the Carving Skill by {0}
-			ChallengeSheath: Increases the Challenge Sheath Skill by {0}
+			ChallengeSheath: Increases the Challenge Sheath / Close Range Up Skill by {0}
 			ChameleosBlessing: Increases the Chameleos Blessing Skill by {0}
 			CliffHanger: Increases the Cliff Hanger Skill by {0}
 			Coalescence: Increases the Coalescence Skill by {0}
 			ColdRes: Increases the Cold Resistance Skill by {0}
 			Constitution: Increases the Constitution Skill by {0}
 			CounterStrike: Increases the Counter Strike Skill by {0}
-			CRangePlus: Activates the Close Range Plus Skill by {0}
-			CritDraw: Increases the Critical Draw Skill by {0}
+			CRangePlus: Increases the Challenge Sheath / Close Range Up Skill by {0}
+			CritDraw: Increases the Critical Draw / Pierce Up Skill by {0}
 			CritElement: Increases the Critical Element Skill by {0}
 			CritEye: Increases the Critical Eye Skill by {0}
 			CriticalBoost: Increases the Critical Boost Skill by {0}
-			DeadEye: Increases the Deadeye Skill by {0}
+			DeadEye: Increases the Master's Touch / Deadeye Skill by {0}
 			DefenseBoost: Increases the Defense Boost Skill by {0}
 			Defiance: Increases the Defiance Skill by {0}
 			DefLock: Increases the Defense Lock Skill by {0}
@@ -74,7 +74,7 @@ Mods: {
 			Guard: Increases the Guard Skill by {0}
 			GuardUp: Increases the Guard Up Skill by {0}
 			Guts: Increases the Guts Skill by {0}
-			Handicraft: Increases the Handicraft Skill by {0}
+			Handicraft: Increases the Handicraft / Rapid Fire Skill by {0}
 			HastenRecovery: Increases the Hasten Recovery Skill by {0}
 			Health: Increases the Health Boost Skill by {0}
 			HeatRes: Increases the Heat Resistance Skill by {0}
@@ -90,28 +90,28 @@ Mods: {
 			LastingPower: Increases the Lasting Power Skill by {0}
 			LatentPower: Increases the Latent Power Skill by {0}
 			MailOfHellfire: Increases the Mail of Hellfire Skill by {0}
-			MastersTouch: Increases the Master's Touch Skill by {0}
+			MastersTouch: Increases the Master's Touch / Deadeye Skill by {0}
 			MaximumMight: Increases the Maximum Might Skill by {0}
 			Mushroomancer: Increases the Mushroomancer Skill by {0}
 			NegativeCrit: Increases the Negative Critical Bonus Skill by {0}
-			NormalUp: Increases the Normal Up Skill by {0}
+			NormalUp: Increases the Quick Sheath / Normal Up Skill by {0}
 			OffensiveGuard: Increases the Offensive Guard Skill by {0}
 			Outdoorsman: Increases the Outdoorsman Skill by {0}
-			PelletUp: Increases the Pellet Up Skill by {0}
-			PierceUp: Increases the Pierce Up Skill by {0}
+			PelletUp: Increases the Punish Draw / Pellet Up Skill by {0}
+			PierceUp: Increases the Crit Draw / Pierce Up Skill by {0}
 			Poison: Increases the Poison Resistance Skill by {0}
 			PoisonCoatingPlus: Activates the Poison Coating Plus Skill
 			PolarHunter: Increases the Polar Hunter Skill by {0}
 			PowerProlonger: Increases the Power Prolonger Skill by {0}
 			Protection: Increases the Protection Skill by {0}
 			ProtectivePolish: Increases the Protective Polish Skill by {0}
-			PunishDraw: Increases the Punish Draw Skill by {0}
+			PunishDraw: Increases the Punish Draw / Pellet Up Skill by {0}
 			QuickBreath: Increases the Quick Breath Skill by {0}
 			QuickGathering: Increases the Quick Gathering Skill by {0}
 			QuickSharpening: Increases the Quick Sharpening Skill by {0}
-			QuickSheath: Increases the Quick Sheath Skill by {0}
-			RapidFire: Increases the Rapid Fire Skill by {0}
-			RazorSharp: Increases the Razor Sharp Skill by {0}
+			QuickSheath: Increases the Quick Sheath / Normal Up Skill by {0}
+			RapidFire: Increases the Handicraft / Rapid Fire Skill by {0}
+			RazorSharp: Increases the Razor Sharp / Spare Shot Skill by {0}
 			RecUp: Increases the Rec Up Skill by {0}
 			RecoverySpd: Increases the Recovery Speed Skill by {0}
 			Redirection: Increases the Redirection Skill by {0}
@@ -122,7 +122,7 @@ Mods: {
 			Slugger: Increases the Slugger Skill by {0}
 			Sneak: Increases the Sneak Skill by {0}
 			SneakAttack: Increases the Sneak Attack Skill by {0}
-			SpareShot: Increases the Spare Shot Skill by {0}
+			SpareShot: Increases the Razor Sharp / Spare Shot Skill by {0}
 			SpeedEating: Increases the Speed Eating Skill by {0}
 			SpeedSetup: Increases the Speed Setup Skill by {0}
 			Spirit: Increases the Spirit Skill by {0}
@@ -152,7 +152,7 @@ Mods: {
 			VanillaAffinitySliding: Increases the Affinity Sliding Skill by
 			VanillaAdrenalineRush: Increases the Adrenaline Rush Skill by
 			VanillaAquaticMobility: Increases the Aquatic Mobility Skill by
-			VanillaArtillery: Increases the Artillery Skill by
+			VanillaArtillery: Increases the Artillery / Bomb Boost Skill by
 			VanillaAttackBoost: Increases the Attack Boost Skill by
 			VanillaAutoTracker: Increases the Auto Tracker Skill by
 			VanillaAutoReload: Activates the Auto Reload Skill
@@ -163,22 +163,22 @@ Mods: {
 			VanillaBlightproof: Increases the Blight Resistance Skill by
 			VanillaBloodlust: Increases the Bloodlust Skill by
 			VanillaBloodRite: Increases the Blood Rite Skill by
-			VanillaBombBoost: Increases the Bomb Boost Skill by
+			VanillaBombBoost: Increases the Artillery / Bomb Boost Skill by
 			VanillaBubbleDance: Increases the Bubble Dance Skill by
 			VanillaCarving: Increases the Carving Skill by
-			VanillaChallengeSheath: Increases the Challenge Sheath Skill by
+			VanillaChallengeSheath: Increases the Challenge Sheath / Close Range Up Skill by
 			VanillaChameleosBlessing: Increases the Chameleos Blessing Skill by
 			VanillaCliffHanger: Increases the Cliff Hanger Skill by
 			VanillaCoalescence: Increases the Coalescence Skill by
 			VanillaColdRes: Increases the Cold Resistance Skill by
 			VanillaConstitution: Increases the Constitution Skill by
 			VanillaCounterStrike: Increases the Counter Strike Skill by
-			VanillaCRangePlus: Activates the Close Range Plus Skill by
+			VanillaCRangePlus: Increases the Challenge Sheath / Close Range Up Skill by
 			VanillaCritDraw: Increases the Critical Draw Skill by
 			VanillaCritElement: Increases the Critical Element Skill by
 			VanillaCritEye: Increases the Critical Eye Skill by
 			VanillaCriticalBoost: Increases the Critical Boost Skill by
-			VanillaDeadEye: Increases the Deadeye Skill by
+			VanillaDeadEye: Increases the Master's Touch / Deadeye Skill by
 			VanillaDefenseBoost: Increases the Defense Boost Skill by
 			VanillaDefiance: Increases the Defiance Skill by
 			VanillaDefLock: Increases the Defense Lock Skill by
@@ -205,7 +205,7 @@ Mods: {
 			VanillaGuard: Increases the Guard Skill by
 			VanillaGuardUp: Increases the Guard Up Skill by
 			VanillaGuts: Increases the Guts Skill by
-			VanillaHandicraft: Increases the Handicraft Skill by
+			VanillaHandicraft: Increases the Handicraft / Rapid Fire Skill by
 			VanillaHastenRecovery: Increases the Hasten Recovery Skill by
 			VanillaHealth: Increases the Health Boost Skill by
 			VanillaHeatRes: Increases the Heat Resistance Skill by
@@ -220,28 +220,28 @@ Mods: {
 			VanillaLastingPower: Increases the Lasting Power Skill by
 			VanillaLatentPower: Increases the Latent Power Skill by
 			VanillaMailOfHellfire: Increases the Mail of Hellfire Skill by
-			VanillaMastersTouch: Increases the Master's Touch Skill by
+			VanillaMastersTouch: Increases the Master's Touch / Deadeye Skill by
 			VanillaMaximumMight: Increases the Maximum Might Skill by
 			VanillaMushroomancer: Increases the Mushroomancer Skill by
 			VanillaNegativeCrit: Increases the Negative Critical Bonus Skill by
 			VanillaNormalUp: Increases the Normal Up Skill by
 			VanillaOffensiveGuard: Increases the Offensive Guard Skill by
 			VanillaOutdoorsman: Increases the Outdoorsman Skill by
-			VanillaPelletUp: Increases the Pellet Up Skill by
-			VanillaPierceUp: Increases the Pierce Up Skill by
+			VanillaPelletUp: Increases the Punish Draw / Pellet Up Skill by
+			VanillaPierceUp: Increases the Crit Draw / Pierce Up Skill by
 			VanillaPoison: Increases the Poison Resistance Skill by
 			VanillaPoisonCoatingPlus: Activates the Poison Coating Plus Skill
 			VanillaPolarHunter: Increases the Polar Hunter Skill by
 			VanillaPowerProlonger: Increases the Power Prolonger Skill by
 			VanillaProtection: Increases the Protection Skill by
 			VanillaProtectivePolish: Increases the Protective Polish Skill by
-			VanillaPunishDraw: Increases the Punish Draw Skill by
+			VanillaPunishDraw: Increases the Punish Draw / Pellet Up Skill by
 			VanillaQuickBreath: Increases the Quick Breath Skill by
 			VanillaQuickGathering: Increases the Quick Gathering Skill by
 			VanillaQuickSharpening: Increases the Quick Sharpening Skill by
 			VanillaQuickSheath: Increases the Quick Sheath Skill by
-			VanillaRapidFire: Increases the Rapid Fire Skill by
-			VanillaRazorSharp: Increases the Razor Sharp Skill by
+			VanillaRapidFire: Increases the Handicraft / Rapid Fire Skill by
+			VanillaRazorSharp: Increases the Razor Sharp / Spare Shot Skill by
 			VanillaRecUp: Increases the Rec Up Skill by
 			VanillaRecoverySpd: Increases the Recovery Speed Skill by
 			VanillaRedirection: Increases the Redirection Skill by
@@ -252,7 +252,7 @@ Mods: {
 			VanillaSlugger: Increases the Slugger Skill by
 			VanillaSneak: Increases the Sneak Skill by
 			VanillaSneakAttack: Increases the Sneak Attack Skill by
-			VanillaSpareShot: Increases the Spare Shot Skill by
+			VanillaSpareShot: Increases the Razor Sharp / Spare Shot Skill by
 			VanillaSpeedEating: Increases the Speed Eating Skill by
 			VanillaSpeedSetup: Increases the Speed Setup Skill by
 			VanillaSpirit: Increases the Spirit Skill by
@@ -286,7 +286,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseMelee}
 					{$CommonItemTooltip.HoneyHunter@1}
 					{$CommonItemTooltip.DefenseBoost@2}
-					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -297,7 +296,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseDamage}
 					{$CommonItemTooltip.Guard@1}
 					{$CommonItemTooltip.Poison@2}
-					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -330,31 +328,22 @@ Mods: {
 					{$CommonItemTooltip.IncreaseMovement}
 					{$CommonItemTooltip.Guard@1}
 					{$CommonItemTooltip.HeatRes@2}
-					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
 			BoneHelmet: {
 				DisplayName: Bone Helmet
-				Tooltip:
-					'''
-					{$CommonItemTooltip.Fortified}
-					{$CommonItemTooltip.OneSlotDecor@1}
-					'''
+				Tooltip: "{$CommonItemTooltip.Fortified}"
 			}
 
 			BoneMail: {
 				DisplayName: Bone Mail
-				Tooltip:
-					'''
-					{$CommonItemTooltip.TropicsHunter}
-					{$CommonItemTooltip.OneSlotDecor@1}
-					'''
+				Tooltip: "{$CommonItemTooltip.TropicsHunter}"
 			}
 
 			BoneGreaves: {
 				DisplayName: Bone Helmet
-				Tooltip: "{$CommonItemTooltip.OneSlotDecor}"
+				Tooltip: ""
 			}
 
 			BullfangoMask: {
@@ -369,7 +358,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseMovement}
 					{$CommonItemTooltip.FreeMeal@1}
 					{$CommonItemTooltip.Poison@2}
-					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -426,18 +414,14 @@ Mods: {
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
 					{$CommonItemTooltip.IncreaseMovement@1}
-					{$CommonItemTooltip.BombBoost@2}
-					{$CommonItemTooltip.Artillery@3}
+					{$CommonItemTooltip.Artillery@2}
+					{$CommonItemTooltip.ThreeSlotDecor@3}
 					'''
 			}
 
 			YukumoKasa: {
 				DisplayName: Yukumo Kasa
-				Tooltip:
-					'''
-					{$CommonItemTooltip.CritEye}
-					{$CommonItemTooltip.OneSlotDecor@1}
-					'''
+				Tooltip: "{$CommonItemTooltip.CritEye}"
 			}
 
 			BlangoHelm: {
@@ -457,7 +441,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseCrit}
 					{$CommonItemTooltip.CritEye@1}
 					{$CommonItemTooltip.RazorSharp@2}
-					{$CommonItemTooltip.OneSlotDecor@3}
 
 					'''
 			}
@@ -469,7 +452,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseCrit}
 					{$CommonItemTooltip.AttackBoost@1}
 					{$CommonItemTooltip.FireAttack@2}
-					{$CommonItemTooltip.OneSlotDecor@3}
 					'''
 			}
 
@@ -479,8 +461,6 @@ Mods: {
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
 					{$CommonItemTooltip.PolarHunter@1}
-					{$CommonItemTooltip.OneSlotDecor@2}
-					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -491,7 +471,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseCrit}
 					{$CommonItemTooltip.LatentPower@1}
 					{$CommonItemTooltip.ThunderAttack@2}.
-					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -519,7 +498,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseSummon@1}
 					{$CommonItemTooltip.HeroShield@2}
 					{$CommonItemTooltip.Guard@3}
-					{$CommonItemTooltip.TwoSlotDecor@4}
 					'''
 			}
 
@@ -542,7 +520,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseSummon@1}
 					{$CommonItemTooltip.HeroShield@2}
 					{$CommonItemTooltip.Guard@3}
-					{$CommonItemTooltip.TwoSlotDecor@4}
 					'''
 			}
 
@@ -563,7 +540,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseCrit}
 					{$CommonItemTooltip.CritEye@1}
 					{$CommonItemTooltip.FireAttack@2}
-					{$CommonItemTooltip.OneSlotDecor@3}
 					'''
 			}
 
@@ -574,7 +550,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseDamage}
 					{$CommonItemTooltip.Tenderizer@1}
 					{$CommonItemTooltip.AttackBoost@2}
-					{$CommonItemTooltip.OneSlotDecor@3}
 					'''
 			}
 
@@ -597,7 +572,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseMovement@1}
 					{$CommonItemTooltip.LastingPower@2}
 					{$CommonItemTooltip.Protection@3}
-					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
 
@@ -609,7 +583,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseMana@1}
 					{$CommonItemTooltip.Protection@2}
 					{$CommonItemTooltip.Blightproof@3}
-					{$CommonItemTooltip.TwoSlotDecor@4}
 					'''
 			}
 
@@ -621,7 +594,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseMana@1}
 					{$CommonItemTooltip.Blightproof@2}
 					{$CommonItemTooltip.LastingPower@3}
-					{$CommonItemTooltip.TwoSlotDecor@4}
 					'''
 			}
 
@@ -632,7 +604,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseMovement}
 					{$CommonItemTooltip.Evasion@1}
 					{$CommonItemTooltip.Fate@2}
-					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -649,11 +620,7 @@ Mods: {
 
 			MossSwineHat: {
 				DisplayName: Moss Swine Hat
-				Tooltip:
-					'''
-					{$CommonItemTooltip.Mushroomancer}
-					{$CommonItemTooltip.OneSlotDecor@1}
-					'''
+				Tooltip: "{$CommonItemTooltip.Mushroomancer}"
 			}
 
 			HornetaurHelm: {
@@ -671,7 +638,6 @@ Mods: {
 					'''
 					{$CommonItemTooltip.IncreaseMelee}
 					{$CommonItemTooltip.FireAttack@1}
-					{$CommonItemTooltip.OneSlotDecor@2}
 					'''
 			}
 
@@ -682,7 +648,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseMovement} 
 					{$CommonItemTooltip.RecoverySpd@1}.
 					{$CommonItemTooltip.IceAttack@2}
-					{$CommonItemTooltip.OneSlotDecor@3}
 					'''
 			}
 
@@ -693,18 +658,37 @@ Mods: {
 					{$CommonItemTooltip.IncreaseDamage}
 					{$CommonItemTooltip.Spirit@1}
 					{$CommonItemTooltip.BombBoost@2}
-					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
 			SeregiosHelm: {
-				DisplayName: Seregios Helm
+				DisplayName: Regios Helm
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseCrit} 
 					{$CommonItemTooltip.BladehoneScale@1}
 					{$CommonItemTooltip.Bleeding}
-					{$CommonItemTooltip.TwoSlotDecor@2}
+					'''
+			}
+
+			SeregiosMail: {
+				DisplayName: Regios Mail
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseCrit} 
+					{$CommonItemTooltip.Evasion@1}
+					{$CommonItemTooltip.BladehoneScale}
+					'''
+			}
+
+			SeregiosGreaves: {
+				DisplayName: Regios Greaves
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseCrit} 
+					{$CommonItemTooltip.BladehoneScale@1}
+					{$CommonItemTooltip.Constitution@2}
+					{$CommonItemTooltip.Evasion@3}
 					'''
 			}
 
@@ -714,8 +698,6 @@ Mods: {
 					'''
 					{$CommonItemTooltip.IncreaseMovement}
 					{$CommonItemTooltip.BubbleDance@1}
-					{$CommonItemTooltip.OneSlotDecor@2}
-					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -738,7 +720,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseMovement}
 					{$CommonItemTooltip.WaterAttack@1}
 					{$CommonItemTooltip.BubbleDance@2}
-					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -749,7 +730,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseMovement}
 					{$CommonItemTooltip.WaterAttack@1}
 					{$CommonItemTooltip.Constitution@2}
-					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -773,7 +753,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseDamage}
 					{$CommonItemTooltip.Handicraft@1}
 					{$CommonItemTooltip.RazorSharp@2}
-					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -784,7 +763,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseCrit}
 					{$CommonItemTooltip.AttackBoost@1}
 					{$CommonItemTooltip.RazorSharp@2}
-					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -796,7 +774,6 @@ Mods: {
 					{$CommonItemTooltip.FireAttack@1}
 					{$CommonItemTooltip.Handicraft@2}
 					{$CommonItemTooltip.RazorSharp@3}
-					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
 
@@ -819,7 +796,6 @@ Mods: {
 					'''
 					{$CommonItemTooltip.IncreaseMovement}
 					{$CommonItemTooltip.ThunderAttack@1}
-					{$CommonItemTooltip.OneSlotDecor@2}
 					'''
 			}
 
@@ -830,7 +806,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseCrit}
 					{$CommonItemTooltip.Windproof@1}
 					{$CommonItemTooltip.ThunderAttack@2}
-					{$CommonItemTooltip.TwoSlotDecor@2}
 					'''
 			}
 
@@ -840,9 +815,6 @@ Mods: {
 					'''
 					{$CommonItemTooltip.IncreaseCrit}
 					{$CommonItemTooltip.Vault@1}
-					{$CommonItemTooltip.OneSlotDecor@2}
-					{$CommonItemTooltip.TwoSlotDecor@3}
-
 					'''
 			}
 
@@ -853,7 +825,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseDamage}
 					{$CommonItemTooltip.Bloodlust@1}
 					{$CommonItemTooltip.Resentment@2}
-					{$CommonItemTooltip.OneSlotDecor@3}
 					'''
 			}
 
@@ -864,7 +835,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseDamage}
 					{$CommonItemTooltip.ProtectivePolish@1}
 					{$CommonItemTooltip.RazorSharp@2}
-					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -906,7 +876,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseDamage}
 					{$CommonItemTooltip.IncreaseCrit@1}
 					{$CommonItemTooltip.AttackBoost@2}
-					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -918,7 +887,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseMovement@1}
 					{$CommonItemTooltip.AttackBoost@2}
 					{$CommonItemTooltip.IceAttack@3}
-					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
 
@@ -950,7 +918,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseMovement}
 					{$CommonItemTooltip.AttackBoost@1}
 					{$CommonItemTooltip.Gluttony@2}
-					{$CommonItemTooltip.OneSlotDecor@3}
 					'''
 			}
 
@@ -1476,7 +1443,7 @@ Mods: {
 			}
 
 			SeregiosHelmX: {
-				DisplayName: Seregios Helm X
+				DisplayName: Regios Helm X
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
@@ -1485,6 +1452,30 @@ Mods: {
 					{$CommonItemTooltip.BladehoneScale@3}
 					{$CommonItemTooltip.Bleeding}
 					{$CommonItemTooltip.TwoSlotDecor@4}
+					'''
+			}
+
+			SeregiosMailX: {
+				DisplayName: Regios Mail X
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.Handicraft@2}
+					{$CommonItemTooltip.BladehoneScale@3}
+					{$CommonItemTooltip.ThreeSlotDecor@4}
+					'''
+			}
+
+			SeregiosGreavesX: {
+				DisplayName: Regios Mail X
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.Evasion@2}
+					{$CommonItemTooltip.BladehoneScale@3}
+					{$CommonItemTooltip.ThreeSlotDecor@4}
 					'''
 			}
 
@@ -1595,7 +1586,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseMovement}
 					{$CommonItemTooltip.AttackBoost@1}
 					{$CommonItemTooltip.PolarHunter@2}
-					{$CommonItemTooltip.OneSlotDecor@3}
 					'''
 			}
 
@@ -1677,7 +1667,7 @@ Mods: {
 			}
 
 			BanbaroHelm: {
-				DisplayName: Banbaro Helm
+				DisplayName: Banbaro Helm X
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
@@ -1696,7 +1686,6 @@ Mods: {
 					{$CommonItemTooltip.CritEye@1}
 					{$CommonItemTooltip.LatentPower@2}
 					{$CommonItemTooltip.ThunderAttack@3}
-					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
 
@@ -1707,7 +1696,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseCrit}
 					{$CommonItemTooltip.LatentPower@1}
 					{$CommonItemTooltip.ThunderAttack@2}
-					{$CommonItemTooltip.OneSlotDecor@3}
 					'''
 			}
 
@@ -1780,7 +1768,6 @@ Mods: {
 					'''
 					{$CommonItemTooltip.IncreaseCrit}
 					{$CommonItemTooltip.LatentPower@1}
-					{$CommonItemTooltip.TwoSlotDecor@2}
 					'''
 			}
 
@@ -1815,7 +1802,6 @@ Mods: {
 					'''
 					{$CommonItemTooltip.IncreaseMovement}
 					{$CommonItemTooltip.WaterRes@1}
-					{$CommonItemTooltip.TwoSlotDecor@2}
 					'''
 			}
 
@@ -1849,7 +1835,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseMovement}
 					{$CommonItemTooltip.AquaticMobility@1}
 					{$CommonItemTooltip.WaterAttack@2}
-					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -1871,7 +1856,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseMovement}
 					{$CommonItemTooltip.WaterAttack@1}
 					{$CommonItemTooltip.Evasion@2}
-					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -1894,7 +1878,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseMelee}
 					{$CommonItemTooltip.Guard@1}
 					{$CommonItemTooltip.Resentment@2}
-					{$CommonItemTooltip.OneSlotDecor@3}
 					'''
 			}
 
@@ -1905,7 +1888,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseMovement}
 					{$CommonItemTooltip.RecUp@1}
 					{$CommonItemTooltip.Resentment@2}
-					{$CommonItemTooltip.OneSlotDecor@3}
 					'''
 			}
 
@@ -1954,8 +1936,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseMelee}
 					{$CommonItemTooltip.DefenseBoost@1}
 					{$CommonItemTooltip.Diversion@2}
-					{$CommonItemTooltip.OneSlotDecor@3}
-
 					'''
 			}
 
@@ -1978,7 +1958,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseDamage}
 					{$CommonItemTooltip.Health@1}
 					{$CommonItemTooltip.RecoverySpd@2}
-					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -1989,7 +1968,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseDamage}
 					{$CommonItemTooltip.RecoverySpd@1}
 					{$CommonItemTooltip.Poison@2}
-					{$CommonItemTooltip.TwoSlotDecor@3}
 					'''
 			}
 
@@ -2012,7 +1990,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseCrit}
 					{$CommonItemTooltip.Sneak@1}
 					{$CommonItemTooltip.CritEye@2}
-					{$CommonItemTooltip.OneSlotDecor@3}
 					'''
 			}
 
@@ -2023,7 +2000,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseMovement}
 					{$CommonItemTooltip.CritEye@1}
 					{$CommonItemTooltip.EvadeDistance@2}
-					{$CommonItemTooltip.OneSlotDecor@3}
 					'''
 			}
 
@@ -2059,7 +2035,6 @@ Mods: {
 					{$CommonItemTooltip.IncreaseDamage}
 					{$CommonItemTooltip.AttackBoost@1}
 					{$CommonItemTooltip.TremorRes@2}
-					{$CommonItemTooltip.OneSlotDecor@3}
 					'''
 			}
 
@@ -2144,6 +2119,22 @@ Mods: {
 					{$CommonItemTooltip.CriticalBoost@2}
 					{$CommonItemTooltip.HeavenSent@3}
 					{$CommonItemTooltip.ThreeSlotDecor@4}
+					'''
+			}
+
+			RemobraHeadgear: {
+				DisplayName: Remobra Headgear
+				Tooltip: "{$CommonItemTooltip.PowerProlonger}"
+			}
+
+			RemobraHeadgearX: {
+				DisplayName: Remobra Headgear X
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.CriticalBoost@1}
+					{$CommonItemTooltip.PowerProlonger@2}
+					{$CommonItemTooltip.ThreeSlotDecor@3}
 					'''
 			}
 
@@ -2258,7 +2249,7 @@ Mods: {
 			}
 
 			CritDraw1: {
-				DisplayName: Critical Draw Decoration 1
+				DisplayName: Critical Draw / Pierce Up Decoration 1
 				Tooltip:
 					'''
 					{$CommonItemTooltip.CritDraw}
@@ -2268,7 +2259,7 @@ Mods: {
 			}
 
 			CritDraw2: {
-				DisplayName: Critical Draw Decoration 2
+				DisplayName: Critical Draw / Pierce Up Decoration 2
 				Tooltip:
 					'''
 					{$CommonItemTooltip.CritDraw}
@@ -2548,7 +2539,7 @@ Mods: {
 			}
 
 			QuickSheath1: {
-				DisplayName: Quick Sheath Decoration 1
+				DisplayName: Quick Sheath / Normal upDecoration 1
 				Tooltip:
 					'''
 					{$CommonItemTooltip.QuickSheath}
@@ -2558,7 +2549,7 @@ Mods: {
 			}
 
 			QuickSheath3: {
-				DisplayName: Quick Sheath Decoration 3
+				DisplayName: Quick Sheath / Normal Up Decoration 3
 				Tooltip:
 					'''
 					{$CommonItemTooltip.QuickSheath}
@@ -2568,7 +2559,7 @@ Mods: {
 			}
 
 			RazorSharp1: {
-				DisplayName: Razor Sharp Decoration 1
+				DisplayName: Razor Sharp / Spare Shot Decoration 1
 				Tooltip:
 					'''
 					{$CommonItemTooltip.RazorSharp}
@@ -2578,7 +2569,7 @@ Mods: {
 			}
 
 			RazorSharp3: {
-				DisplayName: Razor Sharp Decoration 3
+				DisplayName: Razor Sharp / Spare Shot Decoration 3
 				Tooltip:
 					'''
 					{$CommonItemTooltip.RazorSharp}
@@ -2648,7 +2639,7 @@ Mods: {
 			}
 
 			Resuscitate1: {
-				DisplayName: resuscitate Decoration 1
+				DisplayName: Resuscitate Decoration 1
 				Tooltip:
 					'''
 					{$CommonItemTooltip.Resuscitate}
@@ -2658,7 +2649,7 @@ Mods: {
 			}
 
 			Resuscitate2: {
-				DisplayName: resuscitate Decoration 2
+				DisplayName: Resuscitate Decoration 2
 				Tooltip:
 					'''
 					{$CommonItemTooltip.Resuscitate}
@@ -2768,7 +2759,7 @@ Mods: {
 			}
 
 			Artillery1: {
-				DisplayName: Artillery Decoration 1
+				DisplayName: Artillery / Bomb Boost Decoration 1
 				Tooltip:
 					'''
 					{$CommonItemTooltip.Artillery}
@@ -3238,7 +3229,7 @@ Mods: {
 			}
 
 			MastersTouch1: {
-				DisplayName: Masters Touch Decoration 1
+				DisplayName: Master's Touch / Deadeye Decoration 1
 				Tooltip:
 					'''
 					{$CommonItemTooltip.MastersTouch}
@@ -3248,7 +3239,7 @@ Mods: {
 			}
 
 			MastersTouch2: {
-				DisplayName: Masters Touch Decoration 2
+				DisplayName: Master's Touch / Deadeye Decoration 2
 				Tooltip:
 					'''
 					{$CommonItemTooltip.MastersTouch}
@@ -3368,7 +3359,7 @@ Mods: {
 			}
 
 			PunishDraw1: {
-				DisplayName: Punish Draw Decoration 1
+				DisplayName: Punish Draw / Pellet Up Decoration 1
 				Tooltip:
 					'''
 					{$CommonItemTooltip.PunishDraw}
@@ -3378,7 +3369,7 @@ Mods: {
 			}
 
 			PunishDraw2: {
-				DisplayName: Punish Draw Decoration 2
+				DisplayName: Punish Draw / Pellet Up Decoration 2
 				Tooltip:
 					'''
 					{$CommonItemTooltip.PunishDraw}
@@ -3598,7 +3589,7 @@ Mods: {
 			}
 
 			Artillery2: {
-				DisplayName: Artillery Decoration 2
+				DisplayName: Artillery / Bomb Boost Decoration 2
 				Tooltip:
 					'''
 					{$CommonItemTooltip.Artillery}
@@ -3828,7 +3819,7 @@ Mods: {
 			}
 
 			Handicraft1: {
-				DisplayName: Handicraft Decoration 1
+				DisplayName: Handicraft / Rapid Fire Decoration 1
 				Tooltip:
 					'''
 					{$CommonItemTooltip.Handicraft}
@@ -3838,7 +3829,7 @@ Mods: {
 			}
 
 			Handicraft2: {
-				DisplayName: Handicraft Decoration 2
+				DisplayName: Handicraft / Rapid Fire Decoration 2
 				Tooltip:
 					'''
 					{$CommonItemTooltip.Handicraft}

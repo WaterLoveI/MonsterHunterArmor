@@ -15,9 +15,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         public static readonly int Crit = 10;
         public static readonly int Mana = 20;
         public static readonly int Protect = 2;
-        public static readonly int BlightProof = 1;
-        public static readonly int Decor1 = 2;
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Crit, Mana, Protect, BlightProof, Decor1);
+        public static readonly int Blightproof = 1;
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Crit, Mana, Protect, Blightproof);
 
         public override void SetDefaults()
         {
@@ -34,9 +33,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             player.statManaMax2 += Mana;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.Protection += Protect;
-            modPlayer.BlightProof += BlightProof;
-            DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationTwoSlots += Decor1;
+            modPlayer.Blightproof += Blightproof;
         }
         public override void AddRecipes()
         {

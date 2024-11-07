@@ -40,11 +40,9 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
         public override void AddRecipes()
         {
             CreateRecipe().
-                AddIngredient(ItemID.GreenCap).
-                AddIngredient<RathalosRuby>().
-                AddIngredient<ZinogreJasper>().
-                AddIngredient<KingArmorSphere>(10).
-                AddTile(TileID.MythrilAnvil).
+                AddIngredient<LrgElderDragonGem>().
+                AddIngredient<TrueArmorSphere>(12).
+                AddTile(TileID.LunarCraftingStation).
                 Register();
         }
     }

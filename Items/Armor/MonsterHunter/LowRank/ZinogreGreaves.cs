@@ -16,9 +16,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         public static readonly int CritEye = 1;
         public static readonly int Latent = 1;
         public static readonly int Thunder = 1;
-        public static readonly int Decor = 1;
 
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Crit, CritEye, Latent,Thunder, Decor);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Crit, CritEye, Latent,Thunder);
 
         public override void SetDefaults()
         {
@@ -37,8 +36,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             modPlayer.CritEye += CritEye;
             modPlayer.ThunderAttack += Thunder;
             modPlayer.ZinogreEssence += 1;
-            DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += Decor;
         }
         public override void AddRecipes()
         {

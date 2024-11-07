@@ -15,9 +15,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         public static readonly int CritChance = 5;
         public static readonly int FireAttack = 4;
         public static readonly int CritEye = 2;
-        public static readonly int Decor1 = 1;
 
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(CritChance, FireAttack, CritEye, Decor1);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(CritChance, FireAttack, CritEye);
 
 
         public override void SetDefaults()
@@ -36,7 +35,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             modPlayer.FireAttack += FireAttack;
             modPlayer.CritEye += CritEye;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += Decor1;
         }
         public override void AddRecipes()
         {

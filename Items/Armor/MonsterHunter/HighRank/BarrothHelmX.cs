@@ -27,7 +27,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
             Item.height = 26;
             Item.value = MHGlobalItems.RarityPinkBuyPrice;
             Item.rare = ItemRarityID.Pink;
-            Item.defense = 18;
+            Item.defense = 15;
         }
 
         public override void UpdateEquip(Terraria.Player player)

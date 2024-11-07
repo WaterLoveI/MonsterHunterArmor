@@ -31,14 +31,14 @@ namespace MHArmorSkills.Global
             ///globalLoot.Add(ItemDropRule.ByCondition(new ForestCondition(), ModContent.ItemType<YukumoKasa>(), 105, 1, 1));
             #endregion
             #region Forest
-            globalLoot.Add(ItemDropRule.ByCondition(new ForestCondition(), ModContent.ItemType<AffinitySliding1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new ForestCondition(), ModContent.ItemType<BubbleDance1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new ForestCondition(), ModContent.ItemType<Fortified1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new ForestCondition(), ModContent.ItemType<Gathering1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new ForestCondition(), ModContent.ItemType<QuickSheath1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new ForestCondition(), ModContent.ItemType<Scholar1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new ForestCondition(), ModContent.ItemType<SpeedSetUp1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new ForestCondition(), ModContent.ItemType<Outdoorsman1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMForestCondition(), ModContent.ItemType<AffinitySliding1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMForestCondition(), ModContent.ItemType<BubbleDance1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMForestCondition(), ModContent.ItemType<Fortified1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMForestCondition(), ModContent.ItemType<Gathering1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMForestCondition(), ModContent.ItemType<QuickSheath1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMForestCondition(), ModContent.ItemType<Scholar1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMForestCondition(), ModContent.ItemType<SpeedSetUp1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMForestCondition(), ModContent.ItemType<Outdoorsman1>(), 220, 1, 1));
 
             globalLoot.Add(ItemDropRule.ByCondition(new HMForestCondition(), ModContent.ItemType<Health1>(), 220, 1, 1));
             globalLoot.Add(ItemDropRule.ByCondition(new HMForestCondition(), ModContent.ItemType<SpiritBirdsCall1>(), 220, 1, 1));
@@ -47,32 +47,30 @@ namespace MHArmorSkills.Global
             globalLoot.Add(ItemDropRule.ByCondition(new HMForestCondition(), ModContent.ItemType<Poison2>(), 220, 1, 1));
             #endregion
             #region Snow
-            globalLoot.Add(ItemDropRule.ByCondition(new SnowCondition(), ModContent.ItemType<AutoReload1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new SnowCondition(), ModContent.ItemType<ColdRes1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new SnowCondition(), ModContent.ItemType<FreeMeal1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new SnowCondition(), ModContent.ItemType<Guard1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new SnowCondition(), ModContent.ItemType<IceAttack1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new SnowCondition(), ModContent.ItemType<IceAttack2>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new SnowCondition(), ModContent.ItemType<IceRes1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new SnowCondition(), ModContent.ItemType<PolarHunter1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMSnowCondition(), ModContent.ItemType<AutoReload1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMSnowCondition(), ModContent.ItemType<ColdRes1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMSnowCondition(), ModContent.ItemType<FreeMeal1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMSnowCondition(), ModContent.ItemType<Guard1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMSnowCondition(), ModContent.ItemType<IceAttack1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMSnowCondition(), ModContent.ItemType<IceAttack2>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMSnowCondition(), ModContent.ItemType<IceRes1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMSnowCondition(), ModContent.ItemType<PolarHunter1>(), 220, 1, 1));
 
-            globalLoot.Add(ItemDropRule.ByCondition(new HMSnowCondition(), ModContent.ItemType<DeadEye1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new HMSnowCondition(), ModContent.ItemType<SpareShot1>(), 220, 1, 1));
             globalLoot.Add(ItemDropRule.ByCondition(new HMSnowCondition(), ModContent.ItemType<ColdRes2>(), 220, 1, 1));
             globalLoot.Add(ItemDropRule.ByCondition(new HMSnowCondition(), ModContent.ItemType<IceRes2>(), 220, 1, 1));
             globalLoot.Add(ItemDropRule.ByCondition(new HMSnowCondition(), ModContent.ItemType<KushalaBless1>(), 220, 1, 1));
             #endregion
             #region Desert
-            globalLoot.Add(ItemDropRule.ByCondition(new DesertCondition(), ModContent.ItemType<AquaticMobility1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new DesertCondition(), ModContent.ItemType<Sneak1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new DesertCondition(), ModContent.ItemType<BladehoneScale1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new DesertCondition(), ModContent.ItemType<FreeMeal1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new DesertCondition(), ModContent.ItemType<Defense1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new DesertCondition(), ModContent.ItemType<ProtectivePolish1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new DesertCondition(), ModContent.ItemType<SpeedEating1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new DesertCondition(), ModContent.ItemType<ThunderAttack1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new DesertCondition(), ModContent.ItemType<ThunderAttack2>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new DesertCondition(), ModContent.ItemType<ThunderRes1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMDesertCondition(), ModContent.ItemType<AquaticMobility1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMDesertCondition(), ModContent.ItemType<Sneak1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMDesertCondition(), ModContent.ItemType<BladehoneScale1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMDesertCondition(), ModContent.ItemType<FreeMeal1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMDesertCondition(), ModContent.ItemType<Defense1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMDesertCondition(), ModContent.ItemType<ProtectivePolish1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMDesertCondition(), ModContent.ItemType<SpeedEating1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMDesertCondition(), ModContent.ItemType<ThunderAttack1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMDesertCondition(), ModContent.ItemType<ThunderAttack2>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMDesertCondition(), ModContent.ItemType<ThunderRes1>(), 220, 1, 1));
 
             globalLoot.Add(ItemDropRule.ByCondition(new HMDesertCondition(), ModContent.ItemType<Defiance1>(), 220, 1, 1));
             globalLoot.Add(ItemDropRule.ByCondition(new HMDesertCondition(), ModContent.ItemType<MastersTouch1>(), 220, 1, 1));
@@ -82,13 +80,13 @@ namespace MHArmorSkills.Global
 
             #endregion
             #region Evil Biome
-            globalLoot.Add(ItemDropRule.ByCondition(new EvilCondition(), ModContent.ItemType<Carving1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new EvilCondition(), ModContent.ItemType<CritDraw1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new EvilCondition(), ModContent.ItemType<Gluttony1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new EvilCondition(), ModContent.ItemType<Heroics1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new EvilCondition(), ModContent.ItemType<OffensiveGuard1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new EvilCondition(), ModContent.ItemType<RecoverySpd1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new EvilCondition(), ModContent.ItemType<Windproof1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMEvilCondition(), ModContent.ItemType<Carving1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMEvilCondition(), ModContent.ItemType<CritDraw1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMEvilCondition(), ModContent.ItemType<Gluttony1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMEvilCondition(), ModContent.ItemType<Heroics1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMEvilCondition(), ModContent.ItemType<OffensiveGuard1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMEvilCondition(), ModContent.ItemType<RecoverySpd1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMEvilCondition(), ModContent.ItemType<Windproof1>(), 220, 1, 1));
 
             globalLoot.Add(ItemDropRule.ByCondition(new HMEvilCondition(), ModContent.ItemType<Atk1>(), 220, 1, 1));
             globalLoot.Add(ItemDropRule.ByCondition(new HMEvilCondition(), ModContent.ItemType<Resentment1>(), 220, 1, 1));
@@ -98,13 +96,13 @@ namespace MHArmorSkills.Global
 
             #endregion
             #region Jungle
-            globalLoot.Add(ItemDropRule.ByCondition(new JungleCondition(), ModContent.ItemType<AutoTracker1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new JungleCondition(), ModContent.ItemType<Cliffhanger1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new JungleCondition(), ModContent.ItemType<Diversion1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new JungleCondition(), ModContent.ItemType<Foray1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new JungleCondition(), ModContent.ItemType<HoneyHunter1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new JungleCondition(), ModContent.ItemType<RazorSharp1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new JungleCondition(), ModContent.ItemType<TropicsHunter1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMJungleCondition(), ModContent.ItemType<AutoTracker1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMJungleCondition(), ModContent.ItemType<Cliffhanger1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMJungleCondition(), ModContent.ItemType<Diversion1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMJungleCondition(), ModContent.ItemType<Foray1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMJungleCondition(), ModContent.ItemType<HoneyHunter1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMJungleCondition(), ModContent.ItemType<RazorSharp1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMJungleCondition(), ModContent.ItemType<TropicsHunter1>(), 220, 1, 1));
 
             globalLoot.Add(ItemDropRule.ByCondition(new HMJungleCondition(), ModContent.ItemType<Coalescence1>(), 220, 1, 1));
             globalLoot.Add(ItemDropRule.ByCondition(new HMJungleCondition(), ModContent.ItemType<IntrepidHeart1>(), 220, 1, 1));
@@ -114,32 +112,29 @@ namespace MHArmorSkills.Global
 
             #endregion
             #region Dungeon
-            globalLoot.Add(ItemDropRule.ByCondition(new DungeonCondition(), ModContent.ItemType<Artillery1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new DungeonCondition(), ModContent.ItemType<Defense2>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new DungeonCondition(), ModContent.ItemType<Grinder1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new DungeonCondition(), ModContent.ItemType<HeroShield1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new DungeonCondition(), ModContent.ItemType<PoisonCoating1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new DungeonCondition(), ModContent.ItemType<StaminaRecovery1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new DungeonCondition(), ModContent.ItemType<SurvivalExpert1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new DungeonCondition(), ModContent.ItemType<Focus1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMDungeonCondition(), ModContent.ItemType<Artillery1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMDungeonCondition(), ModContent.ItemType<Defense2>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMDungeonCondition(), ModContent.ItemType<Grinder1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMDungeonCondition(), ModContent.ItemType<HeroShield1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMDungeonCondition(), ModContent.ItemType<PoisonCoating1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMDungeonCondition(), ModContent.ItemType<StaminaRecovery1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMDungeonCondition(), ModContent.ItemType<SurvivalExpert1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMDungeonCondition(), ModContent.ItemType<Focus1>(), 220, 1, 1));
 
             globalLoot.Add(ItemDropRule.ByCondition(new HMDungeonCondition(), ModContent.ItemType<BloodRite1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new HMDungeonCondition(), ModContent.ItemType<NormalUp1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new HMDungeonCondition(), ModContent.ItemType<PelletUp1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new HMDungeonCondition(), ModContent.ItemType<PierceUp1>(), 220, 1, 1));
             globalLoot.Add(ItemDropRule.ByCondition(new HMDungeonCondition(), ModContent.ItemType<AdrenalineRush1>(), 220, 1, 1));
 
             #endregion
             #region Ocean
-            globalLoot.Add(ItemDropRule.ByCondition(new OceanCondition(), ModContent.ItemType<AffinitySliding1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new OceanCondition(), ModContent.ItemType<AquaticMobility1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new OceanCondition(), ModContent.ItemType<Evasion1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new OceanCondition(), ModContent.ItemType<FishingExpert1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new OceanCondition(), ModContent.ItemType<Protection1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new OceanCondition(), ModContent.ItemType<RecUp1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new OceanCondition(), ModContent.ItemType<WaterAttack1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new OceanCondition(), ModContent.ItemType<WaterAttack2>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new OceanCondition(), ModContent.ItemType<WaterRes1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMOceanCondition(), ModContent.ItemType<AffinitySliding1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMOceanCondition(), ModContent.ItemType<AquaticMobility1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMOceanCondition(), ModContent.ItemType<Evasion1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMOceanCondition(), ModContent.ItemType<FishingExpert1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMOceanCondition(), ModContent.ItemType<Protection1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMOceanCondition(), ModContent.ItemType<RecUp1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMOceanCondition(), ModContent.ItemType<WaterAttack1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMOceanCondition(), ModContent.ItemType<WaterAttack2>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMOceanCondition(), ModContent.ItemType<WaterRes1>(), 220, 1, 1));
 
             globalLoot.Add(ItemDropRule.ByCondition(new HMOceanCondition(), ModContent.ItemType<SneakAttack1>(), 220, 1, 1));
             globalLoot.Add(ItemDropRule.ByCondition(new HMOceanCondition(), ModContent.ItemType<Counterstrike1>(), 220, 1, 1));
@@ -149,14 +144,14 @@ namespace MHArmorSkills.Global
 
             #endregion
             #region Glushroom
-            globalLoot.Add(ItemDropRule.ByCondition(new GlowingMushroomCondition(), ModContent.ItemType<AffinitySliding1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new GlowingMushroomCondition(), ModContent.ItemType<Constitution1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new GlowingMushroomCondition(), ModContent.ItemType<EvadeDistance1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new GlowingMushroomCondition(), ModContent.ItemType<JumpMaster1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new GlowingMushroomCondition(), ModContent.ItemType<LatentPower1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new GlowingMushroomCondition(), ModContent.ItemType<Mushroomancer1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new GlowingMushroomCondition(), ModContent.ItemType<PowerProlonger1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new GlowingMushroomCondition(), ModContent.ItemType<StunResist1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMGlowingMushroomCondition(), ModContent.ItemType<AffinitySliding1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMGlowingMushroomCondition(), ModContent.ItemType<Constitution1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMGlowingMushroomCondition(), ModContent.ItemType<EvadeDistance1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMGlowingMushroomCondition(), ModContent.ItemType<JumpMaster1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMGlowingMushroomCondition(), ModContent.ItemType<LatentPower1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMGlowingMushroomCondition(), ModContent.ItemType<Mushroomancer1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMGlowingMushroomCondition(), ModContent.ItemType<PowerProlonger1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMGlowingMushroomCondition(), ModContent.ItemType<StunResist1>(), 220, 1, 1));
 
             globalLoot.Add(ItemDropRule.ByCondition(new HMGlowingMushroomCondition(), ModContent.ItemType<CritEye1>(), 220, 1, 1));
             globalLoot.Add(ItemDropRule.ByCondition(new HMGlowingMushroomCondition(), ModContent.ItemType<Unscathed1>(), 220, 1, 1));
@@ -171,19 +166,18 @@ namespace MHArmorSkills.Global
             globalLoot.Add(ItemDropRule.ByCondition(new HallowedCondition(), ModContent.ItemType<Blightproof1>(), 220, 1, 1));
             globalLoot.Add(ItemDropRule.ByCondition(new HallowedCondition(), ModContent.ItemType<BubbleDance2>(), 220, 1, 1));
             globalLoot.Add(ItemDropRule.ByCondition(new HallowedCondition(), ModContent.ItemType<CritElement1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new HallowedCondition(), ModContent.ItemType<CloseRangePlus1>(), 220, 1, 1));
             globalLoot.Add(ItemDropRule.ByCondition(new HallowedCondition(), ModContent.ItemType<HastenRecovery1>(), 220, 1, 1));
             #endregion
 
             #region Underground
-            globalLoot.Add(ItemDropRule.ByCondition(new UndergroundCondition(), ModContent.ItemType<AutoTracker1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new UndergroundCondition(), ModContent.ItemType<Fate1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new UndergroundCondition(), ModContent.ItemType<Geologist1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new UndergroundCondition(), ModContent.ItemType<GuardUp1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new UndergroundCondition(), ModContent.ItemType<LastingPower1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new UndergroundCondition(), ModContent.ItemType<Poison1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new UndergroundCondition(), ModContent.ItemType<SpeedSharpening1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new UndergroundCondition(), ModContent.ItemType<BBQExpert1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMUndergroundCondition(), ModContent.ItemType<AutoTracker1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMUndergroundCondition(), ModContent.ItemType<Fate1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMUndergroundCondition(), ModContent.ItemType<Geologist1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMUndergroundCondition(), ModContent.ItemType<GuardUp1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMUndergroundCondition(), ModContent.ItemType<LastingPower1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMUndergroundCondition(), ModContent.ItemType<Poison1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMUndergroundCondition(), ModContent.ItemType<SpeedSharpening1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMUndergroundCondition(), ModContent.ItemType<BBQExpert1>(), 220, 1, 1));
 
             globalLoot.Add(ItemDropRule.ByCondition(new HMUndergroundCondition(), ModContent.ItemType<Fencing1>(), 220, 1, 1));
             globalLoot.Add(ItemDropRule.ByCondition(new HMUndergroundCondition(), ModContent.ItemType<Tenderizer1>(), 220, 1, 1));
@@ -193,15 +187,14 @@ namespace MHArmorSkills.Global
 
             #endregion
             #region Cavern
-            globalLoot.Add(ItemDropRule.ByCondition(new CavernCondition(), ModContent.ItemType<Artillery1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new CavernCondition(), ModContent.ItemType<Bleeding1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new CavernCondition(), ModContent.ItemType<BombBoost1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new CavernCondition(), ModContent.ItemType<FireRes1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new CavernCondition(), ModContent.ItemType<Geologist1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new CavernCondition(), ModContent.ItemType<PunishDraw1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new CavernCondition(), ModContent.ItemType<TremorRes1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new CavernCondition(), ModContent.ItemType<BBQExpert2>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new CavernCondition(), ModContent.ItemType<StunResist2>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMCavernCondition(), ModContent.ItemType<Artillery1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMCavernCondition(), ModContent.ItemType<Bleeding1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMCavernCondition(), ModContent.ItemType<FireRes1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMCavernCondition(), ModContent.ItemType<Geologist1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMCavernCondition(), ModContent.ItemType<PunishDraw1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMCavernCondition(), ModContent.ItemType<TremorRes1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMCavernCondition(), ModContent.ItemType<BBQExpert2>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMCavernCondition(), ModContent.ItemType<StunResist2>(), 220, 1, 1));
 
 
             globalLoot.Add(ItemDropRule.ByCondition(new HMCavernCondition(), ModContent.ItemType<Embolden1>(), 220, 1, 1));
@@ -212,13 +205,13 @@ namespace MHArmorSkills.Global
 
             #endregion
             #region Underworld
-            globalLoot.Add(ItemDropRule.ByCondition(new UnderworldCondition(), ModContent.ItemType<ChallengeSheath1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new UnderworldCondition(), ModContent.ItemType<Elemental1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new UnderworldCondition(), ModContent.ItemType<FireAttack1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new UnderworldCondition(), ModContent.ItemType<FireAttack2>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new UnderworldCondition(), ModContent.ItemType<FireRes1>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new UnderworldCondition(), ModContent.ItemType<SpeedEating2>(), 220, 1, 1));
-            globalLoot.Add(ItemDropRule.ByCondition(new UnderworldCondition(), ModContent.ItemType<SpeedSetUp2>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMUnderworldCondition(), ModContent.ItemType<ChallengeSheath1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMUnderworldCondition(), ModContent.ItemType<Elemental1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMUnderworldCondition(), ModContent.ItemType<FireAttack1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMUnderworldCondition(), ModContent.ItemType<FireAttack2>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMUnderworldCondition(), ModContent.ItemType<FireRes1>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMUnderworldCondition(), ModContent.ItemType<SpeedEating2>(), 220, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new HMUnderworldCondition(), ModContent.ItemType<SpeedSetUp2>(), 220, 1, 1));
 
             globalLoot.Add(ItemDropRule.ByCondition(new HMUnderworldCondition(), ModContent.ItemType<Vault1>(), 220, 1, 1));
             globalLoot.Add(ItemDropRule.ByCondition(new HMUnderworldCondition(), ModContent.ItemType<Spirit1>(), 220, 1, 1));
@@ -505,6 +498,7 @@ namespace MHArmorSkills.Global
                     if (!Main.GameModeInfo.IsExpertMode && !Main.GameModeInfo.IsMasterMode || !Main.GameModeInfo.IsExpertMode && !Main.GameModeInfo.IsMasterMode && !Main.GameModeInfo.IsJourneyMode)
                     {
                         npcLoot.Add(new CommonDrop(ModContent.ItemType<TrueArmorSphere>(), 1, 10, 15));
+                        npcLoot.Add(new CommonDrop(ModContent.ItemType<LrgElderDragonGem>(), 10, 1, 2));
                         int[] MLThreeSlotArray = MHLists.ThreeSlotDecorations.ToArray();
                         npcLoot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, MLThreeSlotArray));
                     }

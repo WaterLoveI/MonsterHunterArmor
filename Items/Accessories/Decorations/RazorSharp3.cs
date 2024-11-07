@@ -24,7 +24,7 @@ namespace MHArmorSkills.Items.Accessories.Decorations
         public override void UpdateEquip(Player player)
         {
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.RazorSharp += 3;
+            modPlayer.RazorSharpSpareShot += 3;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
             SlotPlayer.DecorationThreeSlots -= 1;
         }

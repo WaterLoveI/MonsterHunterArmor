@@ -14,9 +14,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
     {
         public static readonly int Crit = 5;
         public static readonly int Latent = 3;
-        public static readonly int Decor = 1;
 
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Crit, Latent, Decor);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Crit, Latent);
 
         public override void SetDefaults()
         {
@@ -33,8 +32,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.LatentPower += Latent;
             modPlayer.ZinogreEssence += 1;
-            DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationTwoSlots += Decor;
         }
 
         public override bool IsArmorSet(Item head, Item body, Item legs)

@@ -15,9 +15,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         public static readonly int Crit = 5;
         public static readonly int sneak = 2;
         public static readonly int criteye = 1;
-        public static readonly int Decor = 1;
 
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Crit, sneak, criteye, Decor);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Crit, sneak, criteye);
 
         public override void SetDefaults()
         {
@@ -34,8 +33,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.Sneak += 2;
             modPlayer.CritEye += 1; 
-            DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += 1;
         }
         public override void AddRecipes()
         {

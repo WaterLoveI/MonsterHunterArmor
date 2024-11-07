@@ -27,7 +27,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
             Item.height = 18;
             Item.value = MHGlobalItems.RarityPinkBuyPrice;
             Item.rare = ItemRarityID.Pink;
-            Item.defense = 22;
+            Item.defense = 15;
         }
 
         public override void UpdateEquip(Terraria.Player player)
@@ -35,7 +35,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
             player.GetCritChance<GenericDamageClass>() += Crit;
             player.GetAttackSpeed<MeleeDamageClass>() += Melee/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.PunishDraw += Punish;
+            modPlayer.PunishDrawPelletUp += Punish;
             modPlayer.OffensiveGuard += OGuard;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
             SlotPlayer.DecorationOneSlots += Decor;

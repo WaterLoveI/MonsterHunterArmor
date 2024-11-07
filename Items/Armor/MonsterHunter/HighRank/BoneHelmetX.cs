@@ -38,7 +38,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.Fortified += Fortified;
             modPlayer.Slugger += Slugger;
-            modPlayer.PunishDraw += Punish;
+            modPlayer.PunishDrawPelletUp += Punish;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
             SlotPlayer.DecorationThreeSlots += Decor;
         }

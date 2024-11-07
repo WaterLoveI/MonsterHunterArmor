@@ -13,9 +13,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
     public class BoneHelmet : ModItem
     {
         public static readonly int Fortified = 1;
-        public static readonly int Decor1 = 1;
 
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Fortified,Decor1);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Fortified);
 
         public override void SetDefaults()
         {
@@ -30,8 +29,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         {
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.Fortified += Fortified;
-            DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += Decor1;
         }
 
         public override void AddRecipes()

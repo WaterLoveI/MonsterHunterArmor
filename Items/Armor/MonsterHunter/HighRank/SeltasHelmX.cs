@@ -37,7 +37,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.HeroShield += Hero;
             modPlayer.Guard += Guard;
-            modPlayer.Handicraft += Handicraft;
+            modPlayer.HandicraftRapidFire += Handicraft;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
             SlotPlayer.DecorationThreeSlots += Decor1;
         }

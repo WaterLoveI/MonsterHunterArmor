@@ -417,8 +417,6 @@ namespace MHArmorSkills.MHPlayer
                     }
                 }
             }
-            AdvancedPopupRequest popup = new AdvancedPopupRequest { Text = damageDone + " damage!!", Color = Color.Blue, DurationInFrames = 180, Velocity = new Vector2(0f, 1f) };
-            PopupText.NewText(popup, Player.Top + new Vector2(0, -70));
         }
         public override void OnHitNPCWithProj(Projectile proj, NPC target, NPC.HitInfo hit, int damageDone)
         {

@@ -16,9 +16,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         public static readonly int CritChance = 5;
         public static readonly int Windproof = 2;
         public static readonly int ThunderAttack = 1;
-        public static readonly int Decor1 = 2;
 
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(CritChance, Windproof, ThunderAttack, Decor1);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(CritChance, Windproof, ThunderAttack);
 
 
 
@@ -38,7 +37,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             modPlayer.ThunderAttack += ThunderAttack;
             modPlayer.Windproof += Windproof;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationTwoSlots += Decor1;
         }
         public override void AddRecipes()
         {

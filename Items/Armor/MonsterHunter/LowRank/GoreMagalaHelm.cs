@@ -15,8 +15,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         public static readonly int Damage = 5;
         public static readonly int Resentment = 2;
         public static readonly int Bloodlust = 1;
-        public static readonly int Decor = 1;
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Resentment, Bloodlust, Decor);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Resentment, Bloodlust);
 
         public override void SetDefaults()
         {
@@ -33,8 +32,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.Bloodlust += Bloodlust;
             modPlayer.Resentment += Resentment;
-            DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += Decor;
         }
         public override void AddRecipes()
         {

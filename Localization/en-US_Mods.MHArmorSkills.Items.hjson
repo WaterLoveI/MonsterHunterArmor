@@ -118,6 +118,11 @@ ElderDragonGem: {
 	Tooltip: A giant, ultra-rare stone that forms inside an Elder Dragon once in a millennium.
 }
 
+LrgElderDragonGem: {
+	DisplayName: Lrg Elder Dragon Gem
+	Tooltip: A giant, ultra-rare stone that forms inside an Elder Dragon once in a millennium.
+}
+
 ElectroSac: {
 	DisplayName: Electro Sac
 	Tooltip: A monster organ that can store up electricity, which is released on impact.
@@ -314,5 +319,1205 @@ BoneClub: {
 
 HermitaurBanner: {
 	DisplayName: Hermitaur Banner
+	Tooltip: ""
+}
+
+PunishDrawHandicraft: {
+	DisplayName: Punish Draw Handicraft
+	Tooltip: ""
+}
+
+PunishDrawEvasion: {
+	Tooltip: ""
+	DisplayName: Punish Draw Evasion
+}
+
+PunishDrawEvadeDistance: {
+	Tooltip: ""
+	DisplayName: Punish Draw Evade Distance
+}
+
+PunishDrawDefenseBoost: {
+	Tooltip: ""
+	DisplayName: Punish Draw Defense Boost
+}
+
+PunishDrawCrit: {
+	Tooltip: ""
+	DisplayName: Punish Draw Crit
+}
+
+PunishDrawConstitution: {
+	Tooltip: ""
+	DisplayName: Punish Draw Constitution
+}
+
+PunishDrawAttack: {
+	Tooltip: ""
+	DisplayName: Punish Draw Attack
+}
+
+PolarHunterRecUp: {
+	Tooltip: ""
+	DisplayName: Polar Hunter Rec Up
+}
+
+PolarHunterRecSpd: {
+	Tooltip: ""
+	DisplayName: Polar Hunter Rec Spd
+}
+
+PolarHunterProtection: {
+	Tooltip: ""
+	DisplayName: Polar Hunter Protection
+}
+
+PolarHunterHandi: {
+	Tooltip: ""
+	DisplayName: Polar Hunter Handi
+}
+
+PolarHunterCrit: {
+	Tooltip: ""
+	DisplayName: Polar Hunter Crit
+}
+
+PolarHunterAttack: {
+	Tooltip: ""
+	DisplayName: Polar Hunter Attack
+}
+
+OffensiveGuardRecUp: {
+	Tooltip: ""
+	DisplayName: Offensive Guard Rec Up
+}
+
+OffensiveGuardMushroomancer: {
+	Tooltip: ""
+	DisplayName: Offensive Guard Mushroomancer
+}
+
+OffensiveGuardHandicraft: {
+	Tooltip: ""
+	DisplayName: Offensive Guard Handicraft
+}
+
+OffensiveGuardFortified: {
+	Tooltip: ""
+	DisplayName: Offensive Guard Fortified
+}
+
+OffensiveGuardDiversion: {
+	Tooltip: ""
+	DisplayName: Offensive Guard Diversion
+}
+
+OffensiveGuardCrit: {
+	Tooltip: ""
+	DisplayName: Offensive Guard Crit
+}
+
+OffensiveGuardAttack: {
+	Tooltip: ""
+	DisplayName: Offensive Guard Attack
+}
+
+MushroomancerRecUp: {
+	Tooltip: ""
+	DisplayName: Mushroomancer Rec Up
+}
+
+MushroomancerRecSpd: {
+	Tooltip: ""
+	DisplayName: Mushroomancer Rec Spd
+}
+
+MushroomancerProtection: {
+	Tooltip: ""
+	DisplayName: Mushroomancer Protection
+}
+
+MushroomancerHandicraft: {
+	Tooltip: ""
+	DisplayName: Mushroomancer Handicraft
+}
+
+MushroomancerEvasion: {
+	Tooltip: ""
+	DisplayName: Mushroomancer Evasion
+}
+
+MushroomancerEvadeDistance: {
+	Tooltip: ""
+	DisplayName: Mushroomancer Evade Distance
+}
+
+MushroomancerDefenseBoost: {
+	Tooltip: ""
+	DisplayName: Mushroomancer Defense Boost
+}
+
+MushroomancerCrit: {
+	Tooltip: ""
+	DisplayName: Mushroomancer Crit
+}
+
+MushroomancerConstitution: {
+	Tooltip: ""
+	DisplayName: Mushroomancer Constitution
+}
+
+MushroomancerAttack: {
+	Tooltip: ""
+	DisplayName: Mushroomancer Attack
+}
+
+MastersTouchRecUp: {
+	Tooltip: ""
+	DisplayName: Masters Touch Rec Up
+}
+
+MastersTouchRecSpd: {
+	Tooltip: ""
+	DisplayName: Masters Touch Rec Spd
+}
+
+MastersTouchProtection: {
+	Tooltip: ""
+	DisplayName: Masters Touch Protection
+}
+
+MastersTouchHandicraft: {
+	Tooltip: ""
+	DisplayName: Masters Touch Handicraft
+}
+
+MastersTouchEvasion: {
+	Tooltip: ""
+	DisplayName: Masters Touch Evasion
+}
+
+MastersTouchEvadeDistance: {
+	Tooltip: ""
+	DisplayName: Masters Touch Evade Distance
+}
+
+MastersTouchDefenseBoost: {
+	Tooltip: ""
+	DisplayName: Masters Touch Defense Boost
+}
+
+MastersTouchCrit: {
+	Tooltip: ""
+	DisplayName: Masters Touch Crit
+}
+
+MastersTouchConstitution: {
+	Tooltip: ""
+	DisplayName: Masters Touch Constitution
+}
+
+MastersTouchAttack: {
+	Tooltip: ""
+	DisplayName: Masters Touch Attack
+}
+
+LatentPowerRecUp: {
+	Tooltip: ""
+	DisplayName: Latent Power Rec Up
+}
+
+LatentPowerRecSpd: {
+	Tooltip: ""
+	DisplayName: Latent Power Rec Spd
+}
+
+LatentPowerProtection: {
+	Tooltip: ""
+	DisplayName: Latent Power Protection
+}
+
+LatentPowerHandicraft: {
+	Tooltip: ""
+	DisplayName: Latent Power Handicraft
+}
+
+LatentPowerEvasion: {
+	Tooltip: ""
+	DisplayName: Latent Power Evasion
+}
+
+LatentPowerEvadeDistance: {
+	Tooltip: ""
+	DisplayName: Latent Power Evade Distance
+}
+
+LatentPowerDefenseBoost: {
+	Tooltip: ""
+	DisplayName: Latent Power Defense Boost
+}
+
+LatentPowerCrit: {
+	Tooltip: ""
+	DisplayName: Latent Power Crit
+}
+
+LatentPowerConstitution: {
+	Tooltip: ""
+	DisplayName: Latent Power Constitution
+}
+
+LatentPowerAttack: {
+	Tooltip: ""
+	DisplayName: Latent Power Attack
+}
+
+HealthRecUp: {
+	Tooltip: ""
+	DisplayName: Health Rec Up
+}
+
+HealthRecSpd: {
+	Tooltip: ""
+	DisplayName: Health Rec Spd
+}
+
+HealthProtection: {
+	Tooltip: ""
+	DisplayName: Health Protection
+}
+
+HealthHandicraft: {
+	Tooltip: ""
+	DisplayName: Health Handicraft
+}
+
+HealthEvasion: {
+	Tooltip: ""
+	DisplayName: Health Evasion
+}
+
+HealthEvadeDistance: {
+	Tooltip: ""
+	DisplayName: Health Evade Distance
+}
+
+HealthDefenseBoost: {
+	Tooltip: ""
+	DisplayName: Health Defense Boost
+}
+
+HealthCrit: {
+	Tooltip: ""
+	DisplayName: Health Crit
+}
+
+HealthConstitution: {
+	Tooltip: ""
+	DisplayName: Health Constitution
+}
+
+HealthAttack: {
+	Tooltip: ""
+	DisplayName: Health Attack
+}
+
+HandicraftRecUp: {
+	Tooltip: ""
+	DisplayName: Handicraft Rec Up
+}
+
+HandicraftRecSpd: {
+	Tooltip: ""
+	DisplayName: Handicraft Rec Spd
+}
+
+HandicraftProtection: {
+	Tooltip: ""
+	DisplayName: Handicraft Protection
+}
+
+HandicraftEvasion: {
+	Tooltip: ""
+	DisplayName: Handicraft Evasion
+}
+
+HandicraftDefenseBoost: {
+	Tooltip: ""
+	DisplayName: Handicraft Defense Boost
+}
+
+HandicraftCrit: {
+	Tooltip: ""
+	DisplayName: Handicraft Crit
+}
+
+HandicraftAttack: {
+	Tooltip: ""
+	DisplayName: Handicraft Attack
+}
+
+GuardRecUp: {
+	Tooltip: ""
+	DisplayName: Guard Rec Up
+}
+
+GuardRecSpd: {
+	Tooltip: ""
+	DisplayName: Guard Rec Spd
+}
+
+GuardProtection: {
+	Tooltip: ""
+	DisplayName: Guard Protection
+}
+
+GuardHandi: {
+	Tooltip: ""
+	DisplayName: Guard Handi
+}
+
+GuardCrit: {
+	Tooltip: ""
+	DisplayName: Guard Crit
+}
+
+GuardAttack: {
+	Tooltip: ""
+	DisplayName: Guard Attack
+}
+
+FreeMealStamRec: {
+	Tooltip: ""
+	DisplayName: Free Meal Stam Rec
+}
+
+FreeMealProtection: {
+	Tooltip: ""
+	DisplayName: Free Meal Protection
+}
+
+FreeMealJumpMaster: {
+	Tooltip: ""
+	DisplayName: Free Meal Jump Master
+}
+
+FreeMealHealth: {
+	Tooltip: ""
+	DisplayName: Free Meal Health
+}
+
+FreeMealEvasion: {
+	Tooltip: ""
+	DisplayName: Free Meal Evasion
+}
+
+FreeMealAttack: {
+	Tooltip: ""
+	DisplayName: Free Meal Attack
+}
+
+FortifiedRecUp: {
+	Tooltip: ""
+	DisplayName: Fortified Rec Up
+}
+
+FortifiedRecSpd: {
+	Tooltip: ""
+	DisplayName: Fortified Rec Spd
+}
+
+FortifiedProtection: {
+	Tooltip: ""
+	DisplayName: Fortified Protection
+}
+
+FortifiedHandicraft: {
+	Tooltip: ""
+	DisplayName: Fortified Handicraft
+}
+
+FortifiedEvasion: {
+	Tooltip: ""
+	DisplayName: Fortified Evasion
+}
+
+FortifiedEvadeDistance: {
+	Tooltip: ""
+	DisplayName: Fortified Evade Distance
+}
+
+FortifiedDefenseBoost: {
+	Tooltip: ""
+	DisplayName: Fortified Defense Boost
+}
+
+FortifiedCrit: {
+	Tooltip: ""
+	DisplayName: Fortified Crit
+}
+
+FortifiedConstitution: {
+	Tooltip: ""
+	DisplayName: Fortified Constitution
+}
+
+FortifiedAttack: {
+	Tooltip: ""
+	DisplayName: Fortified Attack
+}
+
+ForayRecUp: {
+	Tooltip: ""
+	DisplayName: Foray Rec Up
+}
+
+ForayRecSpd: {
+	Tooltip: ""
+	DisplayName: Foray Rec Spd
+}
+
+ForayProtection: {
+	Tooltip: ""
+	DisplayName: Foray Protection
+}
+
+ForayHandicraft: {
+	Tooltip: ""
+	DisplayName: Foray Handicraft
+}
+
+ForayEvasion: {
+	Tooltip: ""
+	DisplayName: Foray Evasion
+}
+
+ForayEvadeDistance: {
+	Tooltip: ""
+	DisplayName: Foray Evade Distance
+}
+
+ForayDefenseBoost: {
+	Tooltip: ""
+	DisplayName: Foray Defense Boost
+}
+
+ForayCrit: {
+	Tooltip: ""
+	DisplayName: Foray Crit
+}
+
+ForayConstitution: {
+	Tooltip: ""
+	DisplayName: Foray Constitution
+}
+
+ForayAttack: {
+	Tooltip: ""
+	DisplayName: Foray Attack
+}
+
+FateTenderizer: {
+	Tooltip: ""
+	DisplayName: Fate Tenderizer
+}
+
+FateSpdEating: {
+	Tooltip: ""
+	DisplayName: Fate Spd Eating
+}
+
+FateSneak: {
+	Tooltip: ""
+	DisplayName: Fate Sneak
+}
+
+FateRecUp: {
+	Tooltip: ""
+	DisplayName: Fate Rec Up
+}
+
+FateProtection: {
+	Tooltip: ""
+	DisplayName: Fate Protection
+}
+
+FateHealth: {
+	Tooltip: ""
+	DisplayName: Fate Health
+}
+
+FateAttack: {
+	Tooltip: ""
+	DisplayName: Fate Attack
+}
+
+CriticalBoostStamRec: {
+	Tooltip: ""
+	DisplayName: Critical Boost Stam Rec
+}
+
+CriticalBoostRecUp: {
+	Tooltip: ""
+	DisplayName: Critical Boost Rec Up
+}
+
+CriticalBoostProtection: {
+	Tooltip: ""
+	DisplayName: Critical Boost Protection
+}
+
+CriticalBoostEvasion: {
+	Tooltip: ""
+	DisplayName: Critical Boost Evasion
+}
+
+CriticalBoostConstitution: {
+	Tooltip: ""
+	DisplayName: Critical Boost Constitution
+}
+
+CritDrawHoneyHunter: {
+	Tooltip: ""
+	DisplayName: Crit Draw Honey Hunter
+}
+
+CritDrawHandicraft: {
+	Tooltip: ""
+	DisplayName: Crit Draw Handicraft
+}
+
+CritDrawFencing: {
+	Tooltip: ""
+	DisplayName: Crit Draw Fencing
+}
+
+CritDrawEvasion: {
+	Tooltip: ""
+	DisplayName: Crit Draw Evasion
+}
+
+CritDrawCrit: {
+	Tooltip: ""
+	DisplayName: Crit Draw Crit
+}
+
+CritDrawAttack: {
+	Tooltip: ""
+	DisplayName: Crit Draw Attack
+}
+
+CounterStrikeRecUp: {
+	Tooltip: ""
+	DisplayName: Counter Strike Rec Up
+}
+
+CounterStrikeRecSpd: {
+	Tooltip: ""
+	DisplayName: Counter Strike Rec Spd
+}
+
+CounterStrikeProtection: {
+	Tooltip: ""
+	DisplayName: Counter Strike Protection
+}
+
+CounterStrikeHandicraft: {
+	Tooltip: ""
+	DisplayName: Counter Strike Handicraft
+}
+
+CounterStrikeEvasion: {
+	Tooltip: ""
+	DisplayName: Counter Strike Evasion
+}
+
+CounterStrikeEvadeDistance: {
+	Tooltip: ""
+	DisplayName: Counter Strike Evade Distance
+}
+
+CounterStrikeDefenseBoost: {
+	Tooltip: ""
+	DisplayName: Counter Strike Defense Boost
+}
+
+CounterStrikeCrit: {
+	Tooltip: ""
+	DisplayName: Counter Strike Crit
+}
+
+CounterStrikeConstitution: {
+	Tooltip: ""
+	DisplayName: Counter Strike Constitution
+}
+
+CounterStrikeAttack: {
+	Tooltip: ""
+	DisplayName: Counter Strike Attack
+}
+
+CoalescenceStamRec: {
+	Tooltip: ""
+	DisplayName: Coalescence Stam Rec
+}
+
+CoalescenceRazorSharp: {
+	Tooltip: ""
+	DisplayName: Coalescence Razor Sharp
+}
+
+CoalescenceHealth: {
+	Tooltip: ""
+	DisplayName: Coalescence Health
+}
+
+CoalescenceCrit: {
+	Tooltip: ""
+	DisplayName: Coalescence Crit
+}
+
+CoalescenceAttack: {
+	Tooltip: ""
+	DisplayName: Coalescence Attack
+}
+
+ChallengeSheathRecUp: {
+	Tooltip: ""
+	DisplayName: Challenge Sheath Rec Up
+}
+
+ChallengeSheathRecSpd: {
+	Tooltip: ""
+	DisplayName: Challenge Sheath Rec Spd
+}
+
+ChallengeSheathProtection: {
+	Tooltip: ""
+	DisplayName: Challenge Sheath Protection
+}
+
+ChallengeSheathHandicraft: {
+	Tooltip: ""
+	DisplayName: Challenge Sheath Handicraft
+}
+
+ChallengeSheathEvasion: {
+	Tooltip: ""
+	DisplayName: Challenge Sheath Evasion
+}
+
+ChallengeSheathEvadeDistance: {
+	Tooltip: ""
+	DisplayName: Challenge Sheath Evade Distance
+}
+
+ChallengeSheathDefenseBoost: {
+	Tooltip: ""
+	DisplayName: Challenge Sheath Defense Boost
+}
+
+ChallengeSheathCrit: {
+	Tooltip: ""
+	DisplayName: Challenge Sheath Crit
+}
+
+ChallengeSheathConstitution: {
+	Tooltip: ""
+	DisplayName: Challenge Sheath Constitution
+}
+
+ChallengeSheathAttack: {
+	Tooltip: ""
+	DisplayName: Challenge Sheath Attack
+}
+
+BubbleDanceStamRec: {
+	Tooltip: ""
+	DisplayName: Bubble Dance Stam Rec
+}
+
+BubbleDanceHealth: {
+	Tooltip: ""
+	DisplayName: Bubble Dance Health
+}
+
+BubbleDanceCriticalBoost: {
+	Tooltip: ""
+	DisplayName: Bubble Dance Critical Boost
+}
+
+BubbleDanceCrit: {
+	Tooltip: ""
+	DisplayName: Bubble Dance Crit
+}
+
+BubbleDanceConstitution: {
+	Tooltip: ""
+	DisplayName: Bubble Dance Constitution
+}
+
+BubbleDanceAttack: {
+	Tooltip: ""
+	DisplayName: Bubble Dance Attack
+}
+
+BlightproofRecUp: {
+	Tooltip: ""
+	DisplayName: Blightproof Rec Up
+}
+
+BlightproofRecSpd: {
+	Tooltip: ""
+	DisplayName: Blightproof Rec Spd
+}
+
+BlightproofProtection: {
+	Tooltip: ""
+	DisplayName: Blightproof Protection
+}
+
+BlightproofHandicraft: {
+	Tooltip: ""
+	DisplayName: Blightproof Handicraft
+}
+
+BlightproofEvasion: {
+	Tooltip: ""
+	DisplayName: Blightproof Evasion
+}
+
+BlightproofEvadeDistance: {
+	Tooltip: ""
+	DisplayName: Blightproof Evade Distance
+}
+
+BlightproofDefenseBoost: {
+	Tooltip: ""
+	DisplayName: Blightproof Defense Boost
+}
+
+BlightproofCrit: {
+	Tooltip: ""
+	DisplayName: Blightproof Crit
+}
+
+BlightproofConstitution: {
+	Tooltip: ""
+	DisplayName: Blightproof Constitution
+}
+
+BlightproofAttack: {
+	Tooltip: ""
+	DisplayName: Blightproof Attack
+}
+
+ArtilleryWindproof: {
+	Tooltip: ""
+	DisplayName: Artillery Windproof
+}
+
+ArtillerySpdSetUp: {
+	Tooltip: ""
+	DisplayName: Artillery Spd Set Up
+}
+
+ArtilleryEvasion: {
+	Tooltip: ""
+	DisplayName: Artillery Evasion
+}
+
+ArtilleryEvadeDistance: {
+	Tooltip: ""
+	DisplayName: Artillery Evade Distance
+}
+
+ArtilleryDefenseBoost: {
+	Tooltip: ""
+	DisplayName: Artillery Defense Boost
+}
+
+ArtilleryAttack: {
+	Tooltip: ""
+	DisplayName: Artillery Attack
+}
+
+AffinitySlidingUnscathed: {
+	Tooltip: ""
+	DisplayName: Affinity Sliding Unscathed
+}
+
+AffinitySlidingSneak: {
+	Tooltip: ""
+	DisplayName: Affinity Sliding Sneak
+}
+
+AffinitySlidingHeroics: {
+	Tooltip: ""
+	DisplayName: Affinity Sliding Heroics
+}
+
+AffinitySlidingFocus: {
+	Tooltip: ""
+	DisplayName: Affinity Sliding Focus
+}
+
+AffinitySlidingEvasion: {
+	Tooltip: ""
+	DisplayName: Affinity Sliding Evasion
+}
+
+AffinitySlidingAttack: {
+	Tooltip: ""
+	DisplayName: Affinity Sliding Attack
+}
+
+AdrenalineProtection: {
+	Tooltip: ""
+	DisplayName: Adrenaline Protection
+}
+
+AdrenalineHandi: {
+	Tooltip: ""
+	DisplayName: Adrenaline Handi
+}
+
+AdrenalineEvasion: {
+	Tooltip: ""
+	DisplayName: Adrenaline Evasion
+}
+
+AdrenalineEvadeDist: {
+	Tooltip: ""
+	DisplayName: Adrenaline Evade Dist
+}
+
+AdrenalineCrit: {
+	Tooltip: ""
+	DisplayName: Adrenaline Crit
+}
+
+AdrenalineConstitution: {
+	Tooltip: ""
+	DisplayName: Adrenaline Constitution
+}
+
+AdrenalineAttack: {
+	Tooltip: ""
+	DisplayName: Adrenaline Attack
+}
+
+PunishDrawProtection: {
+	DisplayName: Punish Draw Protection
+	Tooltip: ""
+}
+
+PunishDrawRecSpd: {
+	DisplayName: Punish Draw Rec Spd
+	Tooltip: ""
+}
+
+PunishDrawRecUp: {
+	DisplayName: Punish Draw Rec Up
+	Tooltip: ""
+}
+
+QuickSheathAttack: {
+	DisplayName: Quick Sheath Attack
+	Tooltip: ""
+}
+
+QuickSheathConstitution: {
+	DisplayName: Quick Sheath Constitution
+	Tooltip: ""
+}
+
+QuickSheathCrit: {
+	DisplayName: Quick Sheath Crit
+	Tooltip: ""
+}
+
+QuickSheathDefenseBoost: {
+	DisplayName: Quick Sheath Defense Boost
+	Tooltip: ""
+}
+
+QuickSheathEvadeDistance: {
+	DisplayName: Quick Sheath Evade Distance
+	Tooltip: ""
+}
+
+QuickSheathEvasion: {
+	DisplayName: Quick Sheath Evasion
+	Tooltip: ""
+}
+
+QuickSheathHandicraft: {
+	DisplayName: Quick Sheath Handicraft
+	Tooltip: ""
+}
+
+QuickSheathProtection: {
+	DisplayName: Quick Sheath Protection
+	Tooltip: ""
+}
+
+QuickSheathRecSpd: {
+	DisplayName: Quick Sheath Rec Spd
+	Tooltip: ""
+}
+
+QuickSheathRecUp: {
+	DisplayName: Quick Sheath Rec Up
+	Tooltip: ""
+}
+
+ResentmentAttack: {
+	DisplayName: Resentment Attack
+	Tooltip: ""
+}
+
+ResentmentConstitution: {
+	DisplayName: Resentment Constitution
+	Tooltip: ""
+}
+
+ResentmentCrit: {
+	DisplayName: Resentment Crit
+	Tooltip: ""
+}
+
+ResentmentDefenseBoost: {
+	DisplayName: Resentment Defense Boost
+	Tooltip: ""
+}
+
+ResentmentEvadeDistance: {
+	DisplayName: Resentment Evade Distance
+	Tooltip: ""
+}
+
+ResentmentEvasion: {
+	DisplayName: Resentment Evasion
+	Tooltip: ""
+}
+
+ResentmentHandicraft: {
+	DisplayName: Resentment Handicraft
+	Tooltip: ""
+}
+
+ResentmentProtection: {
+	DisplayName: Resentment Protection
+	Tooltip: ""
+}
+
+ResentmentRecSpd: {
+	DisplayName: Resentment Rec Spd
+	Tooltip: ""
+}
+
+ResentmentRecUp: {
+	DisplayName: Resentment Rec Up
+	Tooltip: ""
+}
+
+ResuscitateAttack: {
+	DisplayName: Resuscitate Attack
+	Tooltip: ""
+}
+
+ResuscitateConstitution: {
+	DisplayName: Resuscitate Constitution
+	Tooltip: ""
+}
+
+ResuscitateCrit: {
+	DisplayName: Resuscitate Crit
+	Tooltip: ""
+}
+
+ResuscitateDefenseBoost: {
+	DisplayName: Resuscitate Defense Boost
+	Tooltip: ""
+}
+
+ResuscitateEvadeDistance: {
+	DisplayName: Resuscitate Evade Distance
+	Tooltip: ""
+}
+
+ResuscitateEvasion: {
+	DisplayName: Resuscitate Evasion
+	Tooltip: ""
+}
+
+ResuscitateHandicraft: {
+	DisplayName: Resuscitate Handicraft
+	Tooltip: ""
+}
+
+ResuscitateProtection: {
+	DisplayName: Resuscitate Protection
+	Tooltip: ""
+}
+
+ResuscitateRecSpd: {
+	DisplayName: Resuscitate Rec Spd
+	Tooltip: ""
+}
+
+ResuscitateRecUp: {
+	DisplayName: Resuscitate Rec Up
+	Tooltip: ""
+}
+
+SpiritAttack: {
+	DisplayName: Spirit Attack
+	Tooltip: ""
+}
+
+SpiritConstitution: {
+	DisplayName: Spirit Constitution
+	Tooltip: ""
+}
+
+SpiritCrit: {
+	DisplayName: Spirit Crit
+	Tooltip: ""
+}
+
+SpiritDefenseBoost: {
+	DisplayName: Spirit Defense Boost
+	Tooltip: ""
+}
+
+SpiritEvadeDistance: {
+	DisplayName: Spirit Evade Distance
+	Tooltip: ""
+}
+
+SpiritEvasion: {
+	DisplayName: Spirit Evasion
+	Tooltip: ""
+}
+
+SpiritHandicraft: {
+	DisplayName: Spirit Handicraft
+	Tooltip: ""
+}
+
+SpiritProtection: {
+	DisplayName: Spirit Protection
+	Tooltip: ""
+}
+
+SpiritRecSpd: {
+	DisplayName: Spirit Rec Spd
+	Tooltip: ""
+}
+
+SpiritRecUp: {
+	DisplayName: Spirit Rec Up
+	Tooltip: ""
+}
+
+TropicsHunterAttack: {
+	DisplayName: Tropics Hunter Attack
+	Tooltip: ""
+}
+
+TropicsHunterConstitution: {
+	DisplayName: Tropics Hunter Constitution
+	Tooltip: ""
+}
+
+TropicsHunterCrit: {
+	DisplayName: Tropics Hunter Crit
+	Tooltip: ""
+}
+
+TropicsHunterDefenseBoost: {
+	DisplayName: Tropics Hunter Defense Boost
+	Tooltip: ""
+}
+
+TropicsHunterEvadeDistance: {
+	DisplayName: Tropics Hunter Evade Distance
+	Tooltip: ""
+}
+
+TropicsHunterEvasion: {
+	DisplayName: Tropics Hunter Evasion
+	Tooltip: ""
+}
+
+TropicsHunterHandicraft: {
+	DisplayName: Tropics Hunter Handicraft
+	Tooltip: ""
+}
+
+TropicsHunterProtection: {
+	DisplayName: Tropics Hunter Protection
+	Tooltip: ""
+}
+
+TropicsHunterRecSpd: {
+	DisplayName: Tropics Hunter Rec Spd
+	Tooltip: ""
+}
+
+TropicsHunterRecUp: {
+	DisplayName: Tropics Hunter Rec Up
+	Tooltip: ""
+}
+
+UnscathedAttack: {
+	DisplayName: Unscathed Attack
+	Tooltip: ""
+}
+
+UnscathedConstitution: {
+	DisplayName: Unscathed Constitution
+	Tooltip: ""
+}
+
+UnscathedCrit: {
+	DisplayName: Unscathed Crit
+	Tooltip: ""
+}
+
+UnscathedDefenseBoost: {
+	DisplayName: Unscathed Defense Boost
+	Tooltip: ""
+}
+
+UnscathedEvadeDistance: {
+	DisplayName: Unscathed Evade Distance
+	Tooltip: ""
+}
+
+UnscathedEvasion: {
+	DisplayName: Unscathed Evasion
+	Tooltip: ""
+}
+
+UnscathedHandicraft: {
+	DisplayName: Unscathed Handicraft
+	Tooltip: ""
+}
+
+UnscathedProtection: {
+	DisplayName: Unscathed Protection
+	Tooltip: ""
+}
+
+UnscathedRecSpd: {
+	DisplayName: Unscathed Rec Spd
+	Tooltip: ""
+}
+
+UnscathedRecUp: {
+	DisplayName: Unscathed Rec Up
 	Tooltip: ""
 }

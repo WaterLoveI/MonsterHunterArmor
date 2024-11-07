@@ -17,8 +17,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         public static readonly int Move = 7;
         public static readonly int Lasting = 2;
         public static readonly int Prot = 1;
-        public static readonly int Decor1 = 3;
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Crit, Move, Lasting, Prot, Decor1);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Crit, Move, Lasting, Prot);
 
         public override void SetDefaults()
         {
@@ -36,8 +35,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.Protection += Prot;
             modPlayer.LastingPower += Lasting;
-            DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += Decor1;
         }
         public override void AddRecipes()
         {

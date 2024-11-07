@@ -15,8 +15,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         public static readonly int Damage = 5;
         public static readonly int Attack = 2;
         public static readonly int Tremor = 2;
-        public static readonly int Decor1 = 1;
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Attack, Tremor,Decor1);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Attack, Tremor);
 
         public override void SetDefaults()
         {
@@ -33,8 +32,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.TremorRes += Tremor;
             modPlayer.Attack += Attack;
-            DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += Decor1;
         }
         public override void AddRecipes()
         {

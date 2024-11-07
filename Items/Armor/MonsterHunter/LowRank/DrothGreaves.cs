@@ -14,8 +14,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
     {
         public static readonly int movespeed = 7;
         public static readonly int WaterRes = 2;
-        public static readonly int Decor = 1;
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(movespeed, WaterRes, Decor);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(movespeed, WaterRes);
         public override void SetDefaults()
         {
             Item.width = 22;
@@ -31,7 +30,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.WaterRes += WaterRes;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationTwoSlots += Decor;
         }
         public override void AddRecipes()
         {

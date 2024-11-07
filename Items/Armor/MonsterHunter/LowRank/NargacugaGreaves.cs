@@ -15,9 +15,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         public static readonly int Move = 10;
         public static readonly int crit = 1;
         public static readonly int evade = 1;
-        public static readonly int Decor = 2;
 
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Move, crit, evade, Decor);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Move, crit, evade);
 
         public override void SetDefaults()
         {
@@ -34,8 +33,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.EvadeDistance += evade;
             modPlayer.CritEye += crit; 
-            DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += Decor;
         }
         public override void AddRecipes()
         {

@@ -16,9 +16,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         public static readonly int Move = 10;
         public static readonly int water = 2;
         public static readonly int bubble = 1;
-        public static readonly int Decor = 1;
 
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Move, water, bubble, Decor);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Move, water, bubble);
 
         public override void SetDefaults()
         {
@@ -35,8 +34,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.BubbleDance += bubble;
             modPlayer.WaterAttack += water;
-            DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationTwoSlots += Decor;
         }
         public override void AddRecipes()
         {

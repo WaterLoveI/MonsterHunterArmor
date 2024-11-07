@@ -35,7 +35,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
             player.GetDamage<GenericDamageClass>() += Damage/100f;
             player.GetCritChance<GenericDamageClass>() += Crit;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.Handicraft += Handicraft;
+            modPlayer.HandicraftRapidFire += Handicraft;
             modPlayer.Grinder += Grinder;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
             SlotPlayer.DecorationThreeSlots += Decor1;

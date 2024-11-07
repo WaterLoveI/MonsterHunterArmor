@@ -95,7 +95,6 @@ namespace MHArmorSkills.Global
 
         public override void SetDefaults(Item entity)
         {
-            // got lazy to copy paste to all the decor .cs
             bool OneSlot = MHLists.OneSlotDecorations.Contains(entity.type);
             bool TwoSlot = MHLists.TwoSlotDecorations.Contains(entity.type);
             bool ThreeSlot = MHLists.ThreeSlotDecorations.Contains(entity.type);
@@ -117,16 +116,28 @@ namespace MHArmorSkills.Global
                 entity.maxStack = 9999;
                 entity.value = Item.sellPrice(0, 1, 0, 0);
             }
+        }
 
-            if (entity.DamageType == DamageClass.Ranged && entity.damage >0 && entity.shoot > ProjectileID.None)
+        public override float UseTimeMultiplier(Item item, Player player)
+        {
+            if (player.GetModPlayer<ArmorSkills>().HandicraftRapidFire >= 3 && item.DamageType == DamageClass.Ranged && item.damage > 0 && item.shoot > ProjectileID.None)
             {
-                entity.useTime = (int)(entity.useAnimation/3);
+                float Rapidfireshot = 0.1f;
+                
+                return 1-Rapidfireshot;
             }
+            if (player.GetModPlayer<ArmorSkills>().QuickSheathNormalUp >= 3 && item.DamageType == DamageClass.Ranged && item.damage > 0 && (item.shoot == ProjectileID.WoodenArrowFriendly || item.shoot == ProjectileID.Bullet))
+            {
+                float Rapidfireshot = 0.1f;
+
+                return 1 - Rapidfireshot;
+            }
+            return base.UseTimeMultiplier(item, player);
         }
         public override bool OnPickup(Item item, Player player)
         {
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            if (item.type == ItemID.Heart && modPlayer.SurvivalExpert >=1)
+            if (item.type == ItemID.Heart && modPlayer.SurvivalExpert >= 1)
             {
                 if (modPlayer.SurvivalExpert >= 2)
                 {
@@ -134,7 +145,7 @@ namespace MHArmorSkills.Global
                 }
                 int healamt = 5 * modPlayer.SurvivalExpert;
                 player.Heal(healamt);
-                
+
             }
             return base.OnPickup(item, player);
         }

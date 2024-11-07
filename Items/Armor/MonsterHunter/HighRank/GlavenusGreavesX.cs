@@ -36,7 +36,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
             player.moveSpeed += Move/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.Spirit += Spirit;
-            modPlayer.RazorSharp += Razor;
+            modPlayer.RazorSharpSpareShot += Razor;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
             SlotPlayer.DecorationOneSlots += Decor1;
             SlotPlayer.DecorationTwoSlots += Decor2;

@@ -144,7 +144,7 @@ namespace MHArmorSkills.MHPlayer
                     {
                         if (ChallengeSheathCD == 0)
                         {
-                            if (modPlayer.ChallengeSheathe >= 1 && CurrentSharpness < MaxSharpness)
+                            if (modPlayer.ChallengeSheatheCloseRangeUp >= 1 && CurrentSharpness < MaxSharpness)
                             {
                                 int Restored = 5 * ChallengeSheath;
                                 ChallengeSheathCD = 5 * 60;

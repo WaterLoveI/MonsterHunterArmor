@@ -15,8 +15,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         public static readonly int Movement = 5;
         public static readonly int FreeMeal = 2;
         public static readonly int Poison = 1;
-        public static readonly int Decor = 1;
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Movement, FreeMeal, Poison, Decor);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Movement, FreeMeal, Poison);
 
         public override void SetDefaults()
         {
@@ -33,8 +32,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.FreeMeal += FreeMeal;
             modPlayer.AntiPoison += Poison;
-            DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationTwoSlots += Decor;
         }
         public override void AddRecipes()
         {

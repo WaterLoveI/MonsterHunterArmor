@@ -144,7 +144,7 @@ namespace MHArmorSkills.NPCs.NormalNPC.Remobra
 
         public override void ModifyNPCLoot(NPCLoot npcLoot)
         {
-            
+            npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<RemobraHeadgear>(), 5));
         }
     }
 }

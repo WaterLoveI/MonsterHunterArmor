@@ -15,9 +15,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         public static readonly int Damage = 5;
         public static readonly int Spirit = 2;
         public static readonly int BombBoost = 1;
-        public static readonly int Decor1 = 1;
 
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage,Spirit, BombBoost,Decor1);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage,Spirit, BombBoost);
 
 
 
@@ -35,9 +34,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             player.GetDamage<GenericDamageClass>() += Damage/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.Spirit += Spirit;
-            modPlayer.BombBoost += BombBoost;
+            modPlayer.ArtilleryBombBoost += BombBoost;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationTwoSlots += Decor1;
         }
         public override void AddRecipes()
         {

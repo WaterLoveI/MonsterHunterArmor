@@ -28,7 +28,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         public override void UpdateEquip(Terraria.Player player)
         {
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.BombBoost += Bomb;
+            modPlayer.ArtilleryBombBoost += Bomb;
             modPlayer.DefenseBoost += Def;
         }
         public override void AddRecipes()

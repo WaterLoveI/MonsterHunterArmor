@@ -24,7 +24,7 @@ namespace MHArmorSkills.Items.Accessories.Decorations
         public override void UpdateEquip(Player player)
         {
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.ChallengeSheathe += 1;
+            modPlayer.ChallengeSheatheCloseRangeUp += 1;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
             SlotPlayer.DecorationTwoSlots -= 1;
         }

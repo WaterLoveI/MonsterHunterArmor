@@ -38,7 +38,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
             player.moveSpeed += Move/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.Guts += Guts;
-            modPlayer.CritDraw += CritDraw;
+            modPlayer.CritDrawPierceUp += CritDraw;
             modPlayer.Guard += Guard;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
             SlotPlayer.DecorationOneSlots += Decor1;

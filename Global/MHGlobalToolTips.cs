@@ -216,22 +216,22 @@ namespace MHArmorSkills.Global
                 $"Increase damage by {player.GetModPlayer<MHPlayerArmorSkill>().Unscathed}% when health is full");
                     SkillsActive = true;
                 }
-                if (player.GetModPlayer<ArmorSkills>().TropicHunter >= 1)
+                if (player.GetModPlayer<ArmorSkills>().TropicsHunter >= 1)
                 {
-                    if (player.GetModPlayer<ArmorSkills>().TropicHunter == 1)
+                    if (player.GetModPlayer<ArmorSkills>().TropicsHunter == 1)
                     {
-                        AddTooltip($"Tropics Hunter Level {player.GetModPlayer<ArmorSkills>().TropicHunter} / 3: \n" +
+                        AddTooltip($"Tropics Hunter Level {player.GetModPlayer<ArmorSkills>().TropicsHunter} / 3: \n" +
                     $"Increase defense by {player.GetModPlayer<MHPlayerArmorSkill>().TropicHunterDef}% when in the jungle/desert or underworld biome");
                     }
-                    if (player.GetModPlayer<ArmorSkills>().TropicHunter == 2)
+                    if (player.GetModPlayer<ArmorSkills>().TropicsHunter == 2)
                     {
-                        AddTooltip($"Tropics Hunter Level {player.GetModPlayer<ArmorSkills>().TropicHunter} / 3: \n" +
+                        AddTooltip($"Tropics Hunter Level {player.GetModPlayer<ArmorSkills>().TropicsHunter} / 3: \n" +
                     $"Increase defense by {player.GetModPlayer<MHPlayerArmorSkill>().TropicHunterDef}% and movement speed by {player.GetModPlayer<MHPlayerArmorSkill>().TropicHunterMovement}% when in the jungle/desert or underworld biome");
                         SkillsActive = true;
                     }
-                    if (player.GetModPlayer<ArmorSkills>().TropicHunter >= 3)
+                    if (player.GetModPlayer<ArmorSkills>().TropicsHunter >= 3)
                     {
-                        AddTooltip($"Tropics Hunter Level {player.GetModPlayer<ArmorSkills>().TropicHunter} / 3: \n" +
+                        AddTooltip($"Tropics Hunter Level {player.GetModPlayer<ArmorSkills>().TropicsHunter} / 3: \n" +
                     $"Increase defense by {player.GetModPlayer<MHPlayerArmorSkill>().TropicHunterDef}%, movement speed by {player.GetModPlayer<MHPlayerArmorSkill>().TropicHunterMovement}% and damage by {player.GetModPlayer<MHPlayerArmorSkill>().TropicHunterAtk}% \n" +
                     $"when in the jungle,desert or underworld biome");
                         SkillsActive = true;
@@ -455,21 +455,21 @@ namespace MHArmorSkills.Global
                     }
                     SkillsActive = true;
                 }
-                if (player.GetModPlayer<ArmorSkills>().SpareShot >= 1)
+                if (player.GetModPlayer<ArmorSkills>().RazorSharpSpareShot >= 1)
                 {
-                    if (player.GetModPlayer<ArmorSkills>().SpareShot == 1)
+                    if (player.GetModPlayer<ArmorSkills>().RazorSharpSpareShot == 1)
                     {
-                        AddTooltip($"Spare Shot Level {player.GetModPlayer<ArmorSkills>().SpareShot} / 3: \n" +
+                        AddTooltip($"Spare Shot Level {player.GetModPlayer<ArmorSkills>().RazorSharpSpareShot} / 3: \n" +
                     $"16% chance to not consume ammo");
                     }
-                    if (player.GetModPlayer<ArmorSkills>().SpareShot == 2)
+                    if (player.GetModPlayer<ArmorSkills>().RazorSharpSpareShot == 2)
                     {
-                        AddTooltip($"Spare Shot Level {player.GetModPlayer<ArmorSkills>().SpareShot} / 3: \n" +
+                        AddTooltip($"Spare Shot Level {player.GetModPlayer<ArmorSkills>().RazorSharpSpareShot} / 3: \n" +
                     $"20% chance to not consume ammo");
                     }
-                    if (player.GetModPlayer<ArmorSkills>().SpareShot >= 3)
+                    if (player.GetModPlayer<ArmorSkills>().RazorSharpSpareShot >= 3)
                     {
-                        AddTooltip($"Spare Shot Level {player.GetModPlayer<ArmorSkills>().SpareShot} / 3: \n" +
+                        AddTooltip($"Spare Shot Level {player.GetModPlayer<ArmorSkills>().RazorSharpSpareShot} / 3: \n" +
                     $"25% chance to not consume ammo");
                     }
                     SkillsActive = true;
@@ -511,9 +511,9 @@ namespace MHArmorSkills.Global
                      $"Grant immunity to knockback and the mighty wind debuff.");
                     SkillsActive = true;
                 }
-                if (player.GetModPlayer<ArmorSkills>().resuscitate >= 1)
+                if (player.GetModPlayer<ArmorSkills>().Resuscitate >= 1)
                 {
-                    AddTooltip($"Resuscitate Level {player.GetModPlayer<ArmorSkills>().resuscitate} / 3: \n" +
+                    AddTooltip($"Resuscitate Level {player.GetModPlayer<ArmorSkills>().Resuscitate} / 3: \n" +
                      $"Increase damage by {player.GetModPlayer<MHPlayerArmorSkill>().resuscitateBuff}% when suffering from a debuff.");
                     SkillsActive = true;
                 }
@@ -550,60 +550,55 @@ namespace MHArmorSkills.Global
                      $"Increase healing potency by {player.GetModPlayer<ArmorSkills>().RecoveryUp * 25}%.");
                     SkillsActive = true;
                 }
-                if (player.GetModPlayer<ArmorSkills>().RazorSharp >= 1)
+                if (player.GetModPlayer<ArmorSkills>().RazorSharpSpareShot >= 1)
                 {
                     int sharpness = 0;
-                    if (player.GetModPlayer<ArmorSkills>().RazorSharp == 1)
+                    if (player.GetModPlayer<ArmorSkills>().RazorSharpSpareShot == 1)
                     {
                         sharpness = 10;
                     }
-                    if (player.GetModPlayer<ArmorSkills>().RazorSharp == 2)
+                    if (player.GetModPlayer<ArmorSkills>().RazorSharpSpareShot == 2)
                     {
                         sharpness = 25;
                     }
-                    if (player.GetModPlayer<ArmorSkills>().RazorSharp >= 3)
+                    if (player.GetModPlayer<ArmorSkills>().RazorSharpSpareShot >= 3)
                     {
                         sharpness = 50;
                     }
-                    AddTooltip($"Razor Sharp Level {player.GetModPlayer<ArmorSkills>().RazorSharp} / 3: \n" +
+                    AddTooltip($"Razor Sharp Level {player.GetModPlayer<ArmorSkills>().RazorSharpSpareShot} / 3: \n" +
                      $"{sharpness}% to not lose sharpness.");
                     SkillsActive = true;
                 }
-                if (player.GetModPlayer<ArmorSkills>().RapidFire >= 1)
+                if (player.GetModPlayer<ArmorSkills>().HandicraftRapidFire >= 1)
                 {
-                    int Usetime = 0;
-                    if (player.GetModPlayer<ArmorSkills>().RapidFire == 1)
+                    if (player.GetModPlayer<ArmorSkills>().HandicraftRapidFire < 3)
                     {
-                        Usetime = 35;
+                        AddTooltip($"Rapid Fire Level {player.GetModPlayer<ArmorSkills>().HandicraftRapidFire} / 3: \n" +
+                     $"Requires at least 3 levels for an effect.");
                     }
-                    if (player.GetModPlayer<ArmorSkills>().RapidFire == 2)
+                    if (player.GetModPlayer<ArmorSkills>().HandicraftRapidFire >= 3)
                     {
-                        Usetime = 25;
+                        AddTooltip($"Rapid Fire Level {player.GetModPlayer<ArmorSkills>().HandicraftRapidFire} / 3: \n" +
+                     $"Shoot an additional projectile per use.");
                     }
-                    if (player.GetModPlayer<ArmorSkills>().RapidFire >= 3)
-                    {
-                        Usetime = 20;
-                    }
-                    AddTooltip($"Rapid Fire Level {player.GetModPlayer<ArmorSkills>().RapidFire} / 3: \n" +
-                     $"Decrease damage, range weapons shoots 2 extra projectiles and disable autofire for Weapons with usetime less than {Usetime}.");
                     SkillsActive = true;
                 }
-                if (player.GetModPlayer<ArmorSkills>().QuickSheath >= 1)
+                if (player.GetModPlayer<ArmorSkills>().QuickSheathNormalUp >= 1)
                 {
                     int Usetime = 0;
-                    if (player.GetModPlayer<ArmorSkills>().QuickSheath == 1)
+                    if (player.GetModPlayer<ArmorSkills>().QuickSheathNormalUp == 1)
                     {
                         Usetime = 10;
                     }
-                    if (player.GetModPlayer<ArmorSkills>().QuickSheath == 2)
+                    if (player.GetModPlayer<ArmorSkills>().QuickSheathNormalUp == 2)
                     {
                         Usetime = 30;
                     }
-                    if (player.GetModPlayer<ArmorSkills>().QuickSheath >= 3)
+                    if (player.GetModPlayer<ArmorSkills>().QuickSheathNormalUp >= 3)
                     {
                         Usetime = 50;
                     }
-                    AddTooltip($"Quick Sheath Level {player.GetModPlayer<ArmorSkills>().QuickSheath} / 3: \n" +
+                    AddTooltip($"Quick Sheath Level {player.GetModPlayer<ArmorSkills>().QuickSheathNormalUp} / 3: \n" +
                      $"Increase usetime for true melee weapons and whips by {Usetime}%. Can combo with challenge sheath for a bigger boost.");
                     SkillsActive = true;
                 }
@@ -646,9 +641,9 @@ namespace MHArmorSkills.Global
                      $"Scroll swapping while you have a debuff, cleanses it and heals you.");
                     SkillsActive = true;
                 }
-                if (player.GetModPlayer<ArmorSkills>().PunishDraw >= 1)
+                if (player.GetModPlayer<ArmorSkills>().PunishDrawPelletUp >= 1)
                 {
-                    AddTooltip($"Punish Draw Level {player.GetModPlayer<ArmorSkills>().PunishDraw} / 3: \n" +
+                    AddTooltip($"Punish Draw Level {player.GetModPlayer<ArmorSkills>().PunishDrawPelletUp} / 3: \n" +
                      $"Increase true melee damage by {player.GetModPlayer<SharpnessPlayer>().PunishDrawDmg * 100}% and knockback by {player.GetModPlayer<SharpnessPlayer>().PunishDrawKB * 100}%");
                     SkillsActive = true;
                 }
@@ -724,15 +719,15 @@ namespace MHArmorSkills.Global
                     SkillsActive = true;
                 }
 
-                if (player.GetModPlayer<ArmorSkills>().PierceUp >= 1)
+                if (player.GetModPlayer<ArmorSkills>().CritDrawPierceUp >= 1)
                 {
-                    AddTooltip($"Pierce Up Level {player.GetModPlayer<ArmorSkills>().PierceUp} / 3:: \n" +
+                    AddTooltip($"Pierce Up Level {player.GetModPlayer<ArmorSkills>().CritDrawPierceUp} / 3:: \n" +
                          $"Increase piercing ammo damage by {player.GetModPlayer<MHPlayerArmorSkill>().PieceBuff}%.");
                     SkillsActive = true;
                 }
-                if (player.GetModPlayer<ArmorSkills>().PelletUp >= 1)
+                if (player.GetModPlayer<ArmorSkills>().PunishDrawPelletUp >= 1)
                 {
-                    AddTooltip($"Pellet Up Level {player.GetModPlayer<ArmorSkills>().PelletUp} / 3:: \n" +
+                    AddTooltip($"Pellet Up Level {player.GetModPlayer<ArmorSkills>().PunishDrawPelletUp} / 3:: \n" +
                          $"Increase crystal bullet and holy arrow damage by {player.GetModPlayer<MHPlayerArmorSkill>().PelletBuff}%.");
                     SkillsActive = true;
                 }
@@ -757,13 +752,13 @@ namespace MHArmorSkills.Global
                 }
                 if (player.GetModPlayer<ArmorSkills>().OffensiveGuard >= 1)
                 {
-                    AddTooltip($"Pellet Up Level {player.GetModPlayer<ArmorSkills>().OffensiveGuard} / 3:: \n" +
+                    AddTooltip($"Offensive Guard Level {player.GetModPlayer<ArmorSkills>().OffensiveGuard} / 3:: \n" +
                          $"Increase damage by {player.GetModPlayer<MHPlayerArmorSkill>().OffensiveGuardBoost}% after guarding a hit for 12 seconds.");
                     SkillsActive = true;
                 }
-                if (player.GetModPlayer<ArmorSkills>().NormalUp >= 1)
+                if (player.GetModPlayer<ArmorSkills>().QuickSheathNormalUp >= 1)
                 {
-                    AddTooltip($"Normal Up Level {player.GetModPlayer<ArmorSkills>().PelletUp} / 3:: \n" +
+                    AddTooltip($"Normal Up Level {player.GetModPlayer<ArmorSkills>().QuickSheathNormalUp} / 3:: \n" +
                          $"Increase musket bullet and wooden arrow damage by {player.GetModPlayer<MHPlayerArmorSkill>().NormalBuff}%.");
                     SkillsActive = true;
                 }
@@ -798,22 +793,22 @@ namespace MHArmorSkills.Global
                          $"No movement inputs for 2 seconds increases critical strike chance by {player.GetModPlayer<MHPlayerArmorSkill>().MaxMightCrit}%");
                     SkillsActive = true;
                 }
-                if (player.GetModPlayer<ArmorSkills>().MastersTouch >= 1)
+                if (player.GetModPlayer<ArmorSkills>().MastersTouchDeadeye >= 1)
                 {
                     int Variable = 0;
-                    if (player.GetModPlayer<ArmorSkills>().MastersTouch == 1)
+                    if (player.GetModPlayer<ArmorSkills>().MastersTouchDeadeye == 1)
                     {
                         Variable = 25;
                     }
-                    if (player.GetModPlayer<ArmorSkills>().MastersTouch == 2)
+                    if (player.GetModPlayer<ArmorSkills>().MastersTouchDeadeye == 2)
                     {
                         Variable = 50;
                     }
-                    if (player.GetModPlayer<ArmorSkills>().MastersTouch >= 3)
+                    if (player.GetModPlayer<ArmorSkills>().MastersTouchDeadeye >= 3)
                     {
                         Variable = 75;
                     }
-                    AddTooltip($"Masters Touch Level {player.GetModPlayer<ArmorSkills>().MastersTouch} / 3: \n" +
+                    AddTooltip($"Masters Touch Level {player.GetModPlayer<ArmorSkills>().MastersTouchDeadeye} / 3: \n" +
                      $"{Variable}% chance to not lose sharpness if the attack crits.");
                     SkillsActive = true;
                 }
@@ -1067,30 +1062,30 @@ namespace MHArmorSkills.Global
                          $"Increase life regen as you hit enemies.");
                     SkillsActive = true;
                 }
-                if (player.GetModPlayer<ArmorSkills>().Handicraft >= 1)
+                if (player.GetModPlayer<ArmorSkills>().HandicraftRapidFire >= 1)
                 {
                     int Variable = 0;
-                    if (player.GetModPlayer<ArmorSkills>().Handicraft == 1)
+                    if (player.GetModPlayer<ArmorSkills>().HandicraftRapidFire == 1)
                     {
                         Variable = 10;
                     }
-                    if (player.GetModPlayer<ArmorSkills>().Handicraft == 2)
+                    if (player.GetModPlayer<ArmorSkills>().HandicraftRapidFire == 2)
                     {
-                        Variable = 20;
+                        Variable = 25;
                     }
-                    if (player.GetModPlayer<ArmorSkills>().Handicraft >= 3)
-                    {
-                        Variable = 30;
-                    }
-                    if (player.GetModPlayer<ArmorSkills>().Handicraft >= 4)
+                    if (player.GetModPlayer<ArmorSkills>().HandicraftRapidFire >= 3)
                     {
                         Variable = 40;
                     }
-                    if (player.GetModPlayer<ArmorSkills>().Handicraft >= 5)
+                    if (player.GetModPlayer<ArmorSkills>().HandicraftRapidFire >= 4)
                     {
-                        Variable = 50;
+                        Variable = 60;
                     }
-                    AddTooltip($"Handicraft Level {player.GetModPlayer<ArmorSkills>().Handicraft} / 5: \n" +
+                    if (player.GetModPlayer<ArmorSkills>().HandicraftRapidFire >= 5)
+                    {
+                        Variable = 80;
+                    }
+                    AddTooltip($"Handicraft Level {player.GetModPlayer<ArmorSkills>().HandicraftRapidFire} / 5: \n" +
                          $"Increase maximum sharpness by {Variable}.");
                     SkillsActive = true;
                 }
@@ -1511,22 +1506,22 @@ namespace MHArmorSkills.Global
                     }
                     SkillsActive = true;
                 }
-                if (player.GetModPlayer<ArmorSkills>().DeadEye >= 1)
+                if (player.GetModPlayer<ArmorSkills>().MastersTouchDeadeye >= 1)
                 {
                     int Variable = 0;
-                    if (player.GetModPlayer<ArmorSkills>().DeadEye == 1)
+                    if (player.GetModPlayer<ArmorSkills>().MastersTouchDeadeye == 1)
                     {
                         Variable = 5;
                     }
-                    if (player.GetModPlayer<ArmorSkills>().DeadEye == 2)
+                    if (player.GetModPlayer<ArmorSkills>().MastersTouchDeadeye == 2)
                     {
                         Variable = 10;
                     }
-                    if (player.GetModPlayer<ArmorSkills>().DeadEye >= 3)
+                    if (player.GetModPlayer<ArmorSkills>().MastersTouchDeadeye >= 3)
                     {
                         Variable = 15;
                     }
-                    AddTooltip($"Deadeye Level {player.GetModPlayer<ArmorSkills>().DeadEye} / 3: \n" +
+                    AddTooltip($"Deadeye Level {player.GetModPlayer<ArmorSkills>().MastersTouchDeadeye} / 3: \n" +
                          $"Increase range damage by {Variable}% if target is within 50 tiles.");
                     SkillsActive = true;
                 }
@@ -1607,29 +1602,42 @@ namespace MHArmorSkills.Global
                          $"Increase critical damage of elemental weapons by {Variable}%.");
                     SkillsActive = true;
                 }
-                if (player.GetModPlayer<ArmorSkills>().CritDraw >= 1)
+                if (player.GetModPlayer<ArmorSkills>().CritDrawPierceUp >= 1)
                 {
-                    if (player.GetModPlayer<ArmorSkills>().CritDraw == 1)
+                    if (player.GetModPlayer<ArmorSkills>().CritDrawPierceUp == 1)
                     {
-                        AddTooltip($"Crit Draw Level {player.GetModPlayer<ArmorSkills>().CritDraw} / 3: \n" +
+                        AddTooltip($"Crit Draw Level {player.GetModPlayer<ArmorSkills>().CritDrawPierceUp} / 3: \n" +
                 "Increase critical strike chance of true melee weapons by 10%.");
                     }
-                    if (player.GetModPlayer<ArmorSkills>().CritDraw == 2)
+                    if (player.GetModPlayer<ArmorSkills>().CritDrawPierceUp == 2)
                     {
-                        AddTooltip($"Crit Draw Level {player.GetModPlayer<ArmorSkills>().CritDraw} / 3: \n" +
+                        AddTooltip($"Crit Draw Level {player.GetModPlayer<ArmorSkills>().CritDrawPierceUp} / 3: \n" +
                 "Increase critical strike chance of true melee weapons by 20%..");
                     }
-                    if (player.GetModPlayer<ArmorSkills>().CritDraw >= 3)
+                    if (player.GetModPlayer<ArmorSkills>().CritDrawPierceUp >= 3)
                     {
-                        AddTooltip($"Crit Draw Level {player.GetModPlayer<ArmorSkills>().CritDraw} / 3: \n" +
+                        AddTooltip($"Crit Draw Level {player.GetModPlayer<ArmorSkills>().CritDrawPierceUp} / 3: \n" +
                 "Increase critical strike chance of true melee weapons by 20% and critical damage by 10%");
                     }
                     SkillsActive = true;
                 }
-                if (player.GetModPlayer<ArmorSkills>().CRangePlus)
+                if (player.GetModPlayer<ArmorSkills>().ChallengeSheatheCloseRangeUp >= 1)
                 {
-                    AddTooltip($"Close Range+ Level 1 / 1:: \n" +
-                         $"Increase ranged damage by 10% if target is within 15 tiles.");
+                    int Variable = 0;
+                    if (player.GetModPlayer<ArmorSkills>().ChallengeSheatheCloseRangeUp == 1)
+                    {
+                        Variable = 5;
+                    }
+                    if (player.GetModPlayer<ArmorSkills>().ChallengeSheatheCloseRangeUp == 2)
+                    {
+                        Variable = 10;
+                    }
+                    if (player.GetModPlayer<ArmorSkills>().ChallengeSheatheCloseRangeUp >= 3)
+                    {
+                        Variable = 15;
+                    }
+                    AddTooltip($"Close Range Up Level {player.GetModPlayer<ArmorSkills>().ChallengeSheatheCloseRangeUp} / 3: \n" +
+                         $"Increase range damage by {Variable}% if target is within 15 tiles.");
                     SkillsActive = true;
                 }
                 if (player.GetModPlayer<ArmorSkills>().CounterStrike >= 1)
@@ -1716,22 +1724,22 @@ namespace MHArmorSkills.Global
                     }
                     SkillsActive = true;
                 }
-                if (player.GetModPlayer<ArmorSkills>().ChallengeSheathe >= 1)
+                if (player.GetModPlayer<ArmorSkills>().ChallengeSheatheCloseRangeUp >= 1)
                 {
                     int Variable = 0;
-                    if (player.GetModPlayer<ArmorSkills>().ChallengeSheathe == 1)
+                    if (player.GetModPlayer<ArmorSkills>().ChallengeSheatheCloseRangeUp == 1)
                     {
                         Variable = 5;
                     }
-                    if (player.GetModPlayer<ArmorSkills>().ChallengeSheathe == 2)
+                    if (player.GetModPlayer<ArmorSkills>().ChallengeSheatheCloseRangeUp == 2)
                     {
                         Variable = 10;
                     }
-                    if (player.GetModPlayer<ArmorSkills>().ChallengeSheathe >= 3)
+                    if (player.GetModPlayer<ArmorSkills>().ChallengeSheatheCloseRangeUp >= 3)
                     {
                         Variable = 15;
                     }
-                    AddTooltip($"Challenge Sheath Level {player.GetModPlayer<ArmorSkills>().ChallengeSheathe} / 3: \n" +
+                    AddTooltip($"Challenge Sheath Level {player.GetModPlayer<ArmorSkills>().ChallengeSheatheCloseRangeUp} / 3: \n" +
                          $"If there's an boss nearby, switching weapons restores {Variable} sharpness, cooldown 5 seconds.");
                     SkillsActive = true;
                 }
@@ -1760,22 +1768,22 @@ namespace MHArmorSkills.Global
                     }
                     SkillsActive = true;
                 }
-                if (player.GetModPlayer<ArmorSkills>().BombBoost >= 1)
+                if (player.GetModPlayer<ArmorSkills>().ArtilleryBombBoost >= 1)
                 {
                     int Variable = 0;
-                    if (player.GetModPlayer<ArmorSkills>().BombBoost == 1)
+                    if (player.GetModPlayer<ArmorSkills>().ArtilleryBombBoost == 1)
                     {
                         Variable = 10;
                     }
-                    if (player.GetModPlayer<ArmorSkills>().BombBoost == 2)
+                    if (player.GetModPlayer<ArmorSkills>().ArtilleryBombBoost == 2)
                     {
                         Variable = 20;
                     }
-                    if (player.GetModPlayer<ArmorSkills>().BombBoost >= 3)
+                    if (player.GetModPlayer<ArmorSkills>().ArtilleryBombBoost >= 3)
                     {
                         Variable = 30;
                     }
-                    AddTooltip($"Bomb Boost Level {player.GetModPlayer<ArmorSkills>().BombBoost} / 3: \n" +
+                    AddTooltip($"Bomb Boost Level {player.GetModPlayer<ArmorSkills>().ArtilleryBombBoost} / 3: \n" +
                          $"Increase bomb damage by {Variable}%.");
                     SkillsActive = true;
                 }
@@ -1804,17 +1812,17 @@ namespace MHArmorSkills.Global
                          $"If there's an boss nearby, inflict the frenzy debuff. Hit enemies to cure it and get a boost.");
                     SkillsActive = true;
                 }
-                if (player.GetModPlayer<ArmorSkills>().BlightProof >= 1)
+                if (player.GetModPlayer<ArmorSkills>().Blightproof >= 1)
                 {
 
-                    if (player.GetModPlayer<ArmorSkills>().BlightProof == 1)
+                    if (player.GetModPlayer<ArmorSkills>().Blightproof == 1)
                     {
-                        AddTooltip($"Blightproof Level {player.GetModPlayer<ArmorSkills>().BlightProof} / 2: \n" +
+                        AddTooltip($"Blightproof Level {player.GetModPlayer<ArmorSkills>().Blightproof} / 2: \n" +
                          $"Blight debuffs lasts halve as long.");
                     }
-                    if (player.GetModPlayer<ArmorSkills>().BlightProof >= 2)
+                    if (player.GetModPlayer<ArmorSkills>().Blightproof >= 2)
                     {
-                        AddTooltip($"Blightproof Level {player.GetModPlayer<ArmorSkills>().BlightProof} / 2: \n" +
+                        AddTooltip($"Blightproof Level {player.GetModPlayer<ArmorSkills>().Blightproof} / 2: \n" +
                          $"Grant immunity to blights.");
                     }
                     SkillsActive = true;
@@ -1914,10 +1922,10 @@ namespace MHArmorSkills.Global
                     }
                     SkillsActive = true;
                 }
-                if (player.GetModPlayer<ArmorSkills>().Artillery >= 1)
+                if (player.GetModPlayer<ArmorSkills>().ArtilleryBombBoost >= 1)
                 {
 
-                    AddTooltip($"Artillery Level {player.GetModPlayer<ArmorSkills>().Artillery} / 3: \n" +
+                    AddTooltip($"Artillery Level {player.GetModPlayer<ArmorSkills>().ArtilleryBombBoost} / 3: \n" +
                          $"Increase rocket damage by {player.GetModPlayer<MHPlayerArmorSkill>().ArtilleryBuff}%.");
                     SkillsActive = true;
                 }

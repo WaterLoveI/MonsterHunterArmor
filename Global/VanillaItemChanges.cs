@@ -32,7 +32,6 @@ namespace MHArmorSkills.Global
                 case ItemID.MiningPants:
                     modPlayer.CliffHanger += 1;
                     modPlayer.QuickGather += 1;
-                    DecorPlayer.DecorationOneSlots += 1;
                     break;
                 case ItemID.WoodHelmet:
                 case ItemID.EbonwoodHelmet:
@@ -60,11 +59,9 @@ namespace MHArmorSkills.Global
                 case ItemID.BorealWoodGreaves:
                 case ItemID.RichMahoganyGreaves:
                     modPlayer.OutdoorsMan += 1;
-                    DecorPlayer.DecorationOneSlots += 1;
                     break;
                 case ItemID.AnglerHat:
                     modPlayer.AutoTracker += 1;
-                    DecorPlayer.DecorationTwoSlots += 1;
                     break;
                 case ItemID.AnglerVest:
                     modPlayer.FreeMeal += 1;
@@ -77,11 +74,9 @@ namespace MHArmorSkills.Global
                     break;
                 case ItemID.CactusBreastplate:
                     modPlayer.RecSpeed += 1;
-                    DecorPlayer.DecorationOneSlots += 1;
                     break;
                 case ItemID.CactusLeggings:
                     modPlayer.StamRec += 1;
-                    DecorPlayer.DecorationOneSlots += 1;
                     break;
                 case ItemID.CopperHelmet:
                     modPlayer.SpeedEating += 1;
@@ -91,71 +86,58 @@ namespace MHArmorSkills.Global
                     break;
                 case ItemID.CopperGreaves:
                     modPlayer.AntiPoison += 1;
-                    DecorPlayer.DecorationOneSlots += 1;
                     break;
                 case ItemID.TinHelmet:
                     modPlayer.DefenseBoost += 1;
-                    DecorPlayer.DecorationOneSlots += 1;
                     break;
                 case ItemID.TinChainmail:
                     modPlayer.StamRec += 1;
-                    DecorPlayer.DecorationOneSlots += 1;
                     break;
                 case ItemID.TinGreaves:
                     modPlayer.CliffHanger += 1;
-                    DecorPlayer.DecorationTwoSlots += 1;
                     break;
                 case ItemID.PumpkinHelmet:
                     modPlayer.FreeMeal += 1;
-                    DecorPlayer.DecorationOneSlots += 1;
                     break;
                 case ItemID.PumpkinBreastplate:
                     modPlayer.Gluttony += 1;
-                    DecorPlayer.DecorationOneSlots += 1;
                     break;
                 case ItemID.PumpkinLeggings:
                     modPlayer.SpeedEating += 1;
-                    DecorPlayer.DecorationOneSlots += 1;
                     break;
                 case ItemID.IronHelmet:
                     modPlayer.DefenseBoost += 2;
                     break;
                 case ItemID.AncientIronHelmet:
-                    modPlayer.RazorSharp += 1;
+                    modPlayer.RazorSharpSpareShot += 1;
                     break;
                 case ItemID.IronChainmail:
                     modPlayer.Diversion += 1;
                     modPlayer.AntiPoison += 1;
-                    DecorPlayer.DecorationOneSlots += 1;
                     break;
                 case ItemID.IronGreaves:
                     modPlayer.RecSpeed += 1;
                     break;
                 case ItemID.LeadHelmet:
                     modPlayer.AntiPoison += 1;
-                    DecorPlayer.DecorationOneSlots += 2;
                     break;
                 case ItemID.LeadChainmail:
                     modPlayer.DefenseBoost += 2;
                     break;
                 case ItemID.LeadGreaves:
                     modPlayer.DefenseBoost += 1;
-                    DecorPlayer.DecorationOneSlots += 1;
                     break;
                 case ItemID.SilverHelmet:
                     modPlayer.StamRec += 1;
-                    DecorPlayer.DecorationTwoSlots += 1;
                     break;
                 case ItemID.SilverChainmail:
                     modPlayer.Attack += 2;
                     break;
                 case ItemID.SilverGreaves:
                     modPlayer.FreeMeal += 1;
-                    DecorPlayer.DecorationOneSlots += 1;
                     break;
                 case ItemID.TungstenHelmet:
                     modPlayer.RecSpeed += 1;
-                    DecorPlayer.DecorationOneSlots += 1;
                     break;
                 case ItemID.TungstenChainmail:
                     modPlayer.CritEye += 2;
@@ -179,19 +161,17 @@ namespace MHArmorSkills.Global
                     break;
                 case ItemID.PlatinumHelmet:
                     modPlayer.Fortified += 1;
-                    DecorPlayer.DecorationTwoSlots += 1;
                     break;
                 case ItemID.PlatinumChainmail:
                     modPlayer.Protection += 1;
-                    modPlayer.RazorSharp += 1;
+                    modPlayer.RazorSharpSpareShot += 1;
                     break;
                 case ItemID.PlatinumGreaves:
-                    modPlayer.RazorSharp += 1;
+                    modPlayer.RazorSharpSpareShot += 1;
                     modPlayer.Fortified += 1;
                     break;
                 case ItemID.FossilHelm:
                     modPlayer.JumpMaster += 1;
-                    DecorPlayer.DecorationTwoSlots += 1;
                     break;
                 case ItemID.FossilShirt:
                     modPlayer.CounterStrike += 1;
@@ -203,7 +183,6 @@ namespace MHArmorSkills.Global
                     break;
                 case ItemID.GladiatorHelmet:
                     modPlayer.CritEye += 1;
-                    DecorPlayer.DecorationTwoSlots += 1;
                     break;
                 case ItemID.GladiatorBreastplate:
                     modPlayer.SpeedSetup += 1;
@@ -225,14 +204,12 @@ namespace MHArmorSkills.Global
                     break;
                 case ItemID.NinjaPants:
                     modPlayer.CritEye += 1;
-                    DecorPlayer.DecorationTwoSlots += 1;
                     break;
                 case ItemID.BeeHeadgear:
                     modPlayer.Resentment += 1;
                     modPlayer.LastingPower += 1;
                     break;
                 case ItemID.BeeBreastplate:
-                    DecorPlayer.DecorationTwoSlots += 1;
                     modPlayer.HoneyHunter += 1;
                     modPlayer.AutoTracker += 1;
                     break;
@@ -246,8 +223,7 @@ namespace MHArmorSkills.Global
                     break;
                 case ItemID.ObsidianShirt:
                     modPlayer.CounterStrike += 1;
-                    modPlayer.PunishDraw += 1;
-                    DecorPlayer.DecorationOneSlots += 1;
+                    modPlayer.PunishDrawPelletUp += 1;
                     break;
                 case ItemID.ObsidianPants:
                     modPlayer.Attack += 2;
@@ -260,20 +236,16 @@ namespace MHArmorSkills.Global
                 case ItemID.MeteorSuit:
                     modPlayer.LatentPower += 1;
                     modPlayer.FireAttack += 1;
-                    DecorPlayer.DecorationOneSlots += 1;
                     break;
                 case ItemID.MeteorLeggings:
                     modPlayer.StamRec += 1;
                     modPlayer.HeatRes += 2;
-                    DecorPlayer.DecorationOneSlots += 1;
                     break;
                 case ItemID.JungleHat:
                     modPlayer.AffinitySliding += 1;
                     modPlayer.LastingPower += 1;
-                    DecorPlayer.DecorationTwoSlots += 1;
                     break;
                 case ItemID.JungleShirt:
-                    DecorPlayer.DecorationOneSlots += 1;
                     modPlayer.Mushroomancer += 1;
                     modPlayer.WaterRes += 1;
                     break;
@@ -285,11 +257,9 @@ namespace MHArmorSkills.Global
                 case ItemID.AncientCobaltHelmet:
                     modPlayer.StamRec += 1;
                     modPlayer.AntiPoison += 1;
-                    DecorPlayer.DecorationTwoSlots += 1;
                     break;
                 case ItemID.AncientCobaltBreastplate:
                     modPlayer.Foray += 1;
-                    DecorPlayer.DecorationTwoSlots += 1;
                     break;
                 case ItemID.AncientCobaltLeggings:
                     modPlayer.Foray += 1;
@@ -298,77 +268,61 @@ namespace MHArmorSkills.Global
                 case ItemID.NecroHelmet:
                     modPlayer.Unscathed += 1;
                     modPlayer.AntiBleeding = true;
-                    DecorPlayer.DecorationTwoSlots += 1;
                     break;
                 case ItemID.NecroBreastplate:
                     modPlayer.Unscathed += 1;
-                    DecorPlayer.DecorationTwoSlots += 1;
                     modPlayer.ColdRes += 1;
                     break;
                 case ItemID.NecroGreaves:
                     modPlayer.AffinitySliding += 1;
                     modPlayer.AMobility += 2;
-                    DecorPlayer.DecorationOneSlots += 1;
                     break;
                 case ItemID.ShadowHelmet:
                     modPlayer.Evasion += 1;
-                    modPlayer.RazorSharp += 1;
-                    DecorPlayer.DecorationTwoSlots += 1;
+                    modPlayer.RazorSharpSpareShot += 1;
                     break;
                 case ItemID.ShadowScalemail:
                     modPlayer.Evasion += 1;
                     modPlayer.CritEye += 1;
-                    modPlayer.QuickSheath += 1;
+                    modPlayer.QuickSheathNormalUp += 1;
                     break;
                 case ItemID.ShadowGreaves:
                     modPlayer.CritEye += 1;
-                    modPlayer.RazorSharp += 1;
-                    DecorPlayer.DecorationOneSlots += 1;
+                    modPlayer.RazorSharpSpareShot += 1;
                     break;
                 case ItemID.AncientShadowHelmet:
                     modPlayer.Evasion += 1;
                     modPlayer.CritEye += 1;
-                    DecorPlayer.DecorationTwoSlots += 1;
                     break;
                 case ItemID.AncientShadowScalemail:
-                    DecorPlayer.DecorationOneSlots += 1;
                     modPlayer.EvadeDistance += 1;
                     modPlayer.Constitution += 1;
                     break;
                 case ItemID.AncientShadowGreaves:
-                    DecorPlayer.DecorationTwoSlots += 1;
                     modPlayer.CritEye += 2;
                     break;
                 case ItemID.CrimsonHelmet:
                     modPlayer.HastenRecovery += 1;
                     modPlayer.QuickSharpening += 1;
-                    DecorPlayer.DecorationTwoSlots += 1;
                     break;
                 case ItemID.CrimsonScalemail:
                     modPlayer.HastenRecovery += 1;
-                    DecorPlayer.DecorationOneSlots += 1;
                     modPlayer.RecoveryUp += 1;
                     break;
                 case ItemID.CrimsonGreaves:
                     modPlayer.Attack += 2;
-                    DecorPlayer.DecorationTwoSlots += 1;
                     break;
                 case ItemID.MoltenHelmet:
-                    DecorPlayer.DecorationTwoSlots += 1;
                     modPlayer.HeatRes += 2;
-                    modPlayer.Handicraft += 1;
-                    DecorPlayer.DecorationTwoSlots += 1;
+                    modPlayer.HandicraftRapidFire += 1;
                     break;
                 case ItemID.MoltenBreastplate:
                     modPlayer.Guard += 2;
                     modPlayer.AntiBlast = true;
-                    DecorPlayer.DecorationTwoSlots += 1;
                     break;
                 case ItemID.MoltenGreaves:
-                    DecorPlayer.DecorationTwoSlots += 1;
                     modPlayer.Guard += 1;
                     modPlayer.HeatRes += 1;
-                    DecorPlayer.DecorationTwoSlots += 1;
                     break;
                 #endregion
                 #endregion
@@ -393,7 +347,7 @@ namespace MHArmorSkills.Global
                 case ItemID.CobaltHelmet:
                     modPlayer.Attack += 2;
                     modPlayer.CritEye += 2;
-                    modPlayer.RazorSharp += 1;
+                    modPlayer.RazorSharpSpareShot += 1;
                     break;
                 case ItemID.CobaltHat:
                     modPlayer.Attack += 2;
@@ -403,7 +357,7 @@ namespace MHArmorSkills.Global
                 case ItemID.CobaltMask:
                     modPlayer.Attack += 2;
                     modPlayer.CritEye += 2;
-                    modPlayer.NormalUp += 1;
+                    modPlayer.QuickSheathNormalUp += 1;
                     break;
                 case ItemID.CobaltBreastplate:
                     modPlayer.CritEye += 2;
@@ -418,7 +372,7 @@ namespace MHArmorSkills.Global
                 case ItemID.PalladiumHelmet:
                     modPlayer.Protection += 2;
                     modPlayer.RecSpeed += 1;
-                    modPlayer.NormalUp += 1;
+                    modPlayer.QuickSheathNormalUp += 1;
                     break;
                 case ItemID.PalladiumMask:
                     modPlayer.Protection += 2;
@@ -443,7 +397,7 @@ namespace MHArmorSkills.Global
                 case ItemID.MythrilHat:
                     modPlayer.SpeedEating += 2;
                     modPlayer.FreeMeal += 2;
-                    modPlayer.PierceUp += 1;
+                    modPlayer.CritDrawPierceUp += 1;
                     break;
                 case ItemID.MythrilHood:
                     modPlayer.SpeedEating += 2;
@@ -453,7 +407,7 @@ namespace MHArmorSkills.Global
                 case ItemID.MythrilHelmet:
                     modPlayer.SpeedEating += 2;
                     modPlayer.FreeMeal += 2;
-                    modPlayer.RazorSharp += 2;
+                    modPlayer.RazorSharpSpareShot += 2;
                     break;
                 case ItemID.MythrilChainmail:
                     modPlayer.Protection += 1;
@@ -469,7 +423,7 @@ namespace MHArmorSkills.Global
                 case ItemID.OrichalcumHelmet:
                     modPlayer.Fencing += 1;
                     modPlayer.CritEye += 2;
-                    modPlayer.PierceUp += 1;
+                    modPlayer.CritDrawPierceUp += 1;
                     break;
                 case ItemID.OrichalcumHeadgear:
                     modPlayer.Fencing += 1;
@@ -506,7 +460,7 @@ namespace MHArmorSkills.Global
                     modPlayer.Guard += 2;
                     modPlayer.Tenderizer += 1;
                     modPlayer.DefenseBoost += 1;
-                    modPlayer.PelletUp += 1;
+                    modPlayer.PunishDrawPelletUp += 1;
                     break;
                 case ItemID.AdamantiteBreastplate:
                     modPlayer.Guard += 2;
@@ -516,7 +470,7 @@ namespace MHArmorSkills.Global
                     break;
                 case ItemID.AdamantiteLeggings:
                     modPlayer.Guard += 1;
-                    modPlayer.RazorSharp += 1;
+                    modPlayer.RazorSharpSpareShot += 1;
                     modPlayer.DefenseBoost += 2;
                     DecorPlayer.DecorationThreeSlots += 1;
                     break;
@@ -528,12 +482,12 @@ namespace MHArmorSkills.Global
                 case ItemID.TitaniumHelmet:
                     modPlayer.Diversion += 2;
                     modPlayer.LatentPower += 1;
-                    modPlayer.PelletUp += 1;
+                    modPlayer.PunishDrawPelletUp += 1;
                     break;
                 case ItemID.TitaniumMask:
                     modPlayer.Diversion += 2;
                     modPlayer.LatentPower += 1;
-                    modPlayer.RazorSharp += 2;
+                    modPlayer.RazorSharpSpareShot += 2;
                     break;
                 case ItemID.TitaniumBreastplate:
                     modPlayer.Guard += 1;
@@ -581,18 +535,18 @@ namespace MHArmorSkills.Global
                     modPlayer.IceAttack += 2;
                     break;
                 case ItemID.AncientBattleArmorHat:
-                    modPlayer.TropicHunter += 1;
+                    modPlayer.TropicsHunter += 1;
                     modPlayer.HeatRes += 3;
                     modPlayer.Guts += 1;
                     break;
                 case ItemID.AncientBattleArmorShirt:
-                    modPlayer.TropicHunter += 1;
+                    modPlayer.TropicsHunter += 1;
                     modPlayer.LatentPower += 1;
                     modPlayer.Unscathed += 1;
                     DecorPlayer.DecorationTwoSlots += 1;
                     break;
                 case ItemID.AncientBattleArmorPants:
-                    modPlayer.TropicHunter += 1;
+                    modPlayer.TropicsHunter += 1;
                     modPlayer.Fate += 1;
                     modPlayer.Evasion += 1;
                     DecorPlayer.DecorationTwoSlots += 1;
@@ -612,13 +566,13 @@ namespace MHArmorSkills.Global
                 case ItemID.SquireGreaves:
                     modPlayer.Constitution += 1;
                     modPlayer.HastenRecovery += 1;
-                    modPlayer.CritDraw += 1;
+                    modPlayer.CritDrawPierceUp += 1;
                     DecorPlayer.DecorationOneSlots += 1;
                     break;
                 case ItemID.MonkBrows:
                     modPlayer.Attack += 2;
                     modPlayer.DefenseBoost += 2;
-                    modPlayer.RazorSharp += 1;
+                    modPlayer.RazorSharpSpareShot += 1;
                     break;
                 case ItemID.MonkShirt:
                     modPlayer.Attack += 1;
@@ -632,20 +586,20 @@ namespace MHArmorSkills.Global
 
                     break;
                 case ItemID.HuntressWig:
-                    modPlayer.SpareShot += 1;
+                    modPlayer.RazorSharpSpareShot += 1;
                     modPlayer.Foray += 1;
                     modPlayer.EvadeDistance += 1;
                     DecorPlayer.DecorationTwoSlots += 1;
                     break;
                 case ItemID.HuntressJerkin:
-                    modPlayer.TropicHunter += 1;
+                    modPlayer.TropicsHunter += 1;
                     modPlayer.Foray += 1;
                     modPlayer.EvadeDistance += 1;
                     DecorPlayer.DecorationOneSlots += 1;
                     break;
                 case ItemID.HuntressPants:
-                    modPlayer.SpareShot += 1;
-                    modPlayer.PierceUp += 1;
+                    modPlayer.RazorSharpSpareShot += 1;
+                    modPlayer.CritDrawPierceUp += 1;
                     DecorPlayer.DecorationTwoSlots += 1;
                     break;
                 case ItemID.ApprenticeHat:
@@ -672,7 +626,7 @@ namespace MHArmorSkills.Global
                 case ItemID.HallowedHelmet:
                     modPlayer.Attack += 1;
                     modPlayer.Spirit += 1;
-                    modPlayer.SpareShot += 2;
+                    modPlayer.RazorSharpSpareShot += 2;
                     break;
                 case ItemID.HallowedHeadgear:
                     modPlayer.Attack += 1;
@@ -696,7 +650,7 @@ namespace MHArmorSkills.Global
                 case ItemID.AncientHallowedHelmet:
                     modPlayer.Attack += 1;
                     modPlayer.CritEye += 1;
-                    modPlayer.Artillery += 1;
+                    modPlayer.ArtilleryBombBoost += 1;
                     break;
                 case ItemID.AncientHallowedHeadgear:
                     modPlayer.Attack += 1;
@@ -711,7 +665,7 @@ namespace MHArmorSkills.Global
                 case ItemID.AncientHallowedMask:
                     modPlayer.Attack += 1;
                     modPlayer.CritEye += 1;
-                    modPlayer.RazorSharp += 1;
+                    modPlayer.RazorSharpSpareShot += 1;
                     modPlayer.ProtectivePolish += 1;
                     break;
                 case ItemID.AncientHallowedPlateMail:
@@ -720,7 +674,7 @@ namespace MHArmorSkills.Global
                     break;
                 case ItemID.AncientHallowedGreaves:
                     modPlayer.AffinitySliding += 1;
-                    modPlayer.Handicraft += 1;
+                    modPlayer.HandicraftRapidFire += 1;
                     DecorPlayer.DecorationTwoSlots += 1;
                     break;
                 case ItemID.ChlorophyteHeadgear:
@@ -799,23 +753,23 @@ namespace MHArmorSkills.Global
                 case ItemID.ShroomiteMask:
                 case ItemID.ShroomiteHelmet:
                     modPlayer.Sneak += 1;
-                    modPlayer.DeadEye += 1;
+                    modPlayer.MastersTouchDeadeye += 1;
                     modPlayer.Mushroomancer += 1;
                     DecorPlayer.DecorationOneSlots += 2;
                     break;
                 case ItemID.ShroomiteBreastplate:
                     modPlayer.Unscathed += 1;
                     DecorPlayer.DecorationTwoSlots += 2;
-                    modPlayer.DeadEye += 1;
+                    modPlayer.MastersTouchDeadeye += 1;
                     break;
                 case ItemID.ShroomiteLeggings:
                     DecorPlayer.DecorationTwoSlots += 1;
-                    modPlayer.SpareShot += 1;
+                    modPlayer.RazorSharpSpareShot += 1;
                     modPlayer.RecSpeed += 1;
                     break;
                 case ItemID.SpectreMask:
                 case ItemID.SpectreHood:
-                    modPlayer.BlightProof += 2;
+                    modPlayer.Blightproof += 2;
                     modPlayer.Guts += 1;
                     modPlayer.Heroics += 1;
                     break;
@@ -874,7 +828,7 @@ namespace MHArmorSkills.Global
                     DecorPlayer.DecorationThreeSlots += 1;
                     break;
                 case ItemID.HuntressAltHead:
-                    modPlayer.SpareShot += 1;
+                    modPlayer.RazorSharpSpareShot += 1;
                     modPlayer.CriticalBoost += 1;
                     modPlayer.SpiritBirdsCall = true;
                     DecorPlayer.DecorationOneSlots += 1;
@@ -888,7 +842,7 @@ namespace MHArmorSkills.Global
                     break;
                 case ItemID.HuntressAltPants:
                     modPlayer.JumpMaster += 1;
-                    modPlayer.DeadEye += 1;
+                    modPlayer.MastersTouchDeadeye += 1;
                     modPlayer.Unscathed += 1;
                     DecorPlayer.DecorationTwoSlots += 1;
                     break;
@@ -931,7 +885,7 @@ namespace MHArmorSkills.Global
                     break;
                 case ItemID.VortexHelmet:
                     modPlayer.MailofHellfire += 1;
-                    modPlayer.DeadEye += 1;
+                    modPlayer.MastersTouchDeadeye += 1;
                     modPlayer.EvadeDistance += 1;
                     DecorPlayer.DecorationTwoSlots += 1;
                     break;

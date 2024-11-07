@@ -38,7 +38,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.ThunderAttack += Thunder;
             modPlayer.Vault += Vault;
-            modPlayer.PierceUp += Pierce;
+            modPlayer.CritDrawPierceUp += Pierce;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
             SlotPlayer.DecorationTwoSlots += Decor;
         }

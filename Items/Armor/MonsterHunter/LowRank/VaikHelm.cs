@@ -34,7 +34,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             player.GetAttackSpeed<MeleeDamageClass>() += Melee/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.WaterAttack += Water;
-            modPlayer.RazorSharp += Razor;
+            modPlayer.RazorSharpSpareShot += Razor;
             modPlayer.AMobility += Amob;
         }
         public override void AddRecipes()

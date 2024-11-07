@@ -16,8 +16,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         public static readonly int FireAttack = 1;
         public static readonly int Handicraft = 1;
         public static readonly int RazorSharp = 1;
-        public static readonly int Decor = 1;
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Movement, FireAttack, Handicraft, RazorSharp, Decor);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Movement, FireAttack, Handicraft, RazorSharp);
         public override void SetDefaults()
         {
             Item.width = 22;
@@ -31,11 +30,9 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         {
             player.moveSpeed += Movement/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.Handicraft += Handicraft;
-            modPlayer.RazorSharp += RazorSharp;
+            modPlayer.HandicraftRapidFire += Handicraft;
+            modPlayer.RazorSharpSpareShot += RazorSharp;
             modPlayer.FireAttack += FireAttack;
-            DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += Decor;
         }
         public override void AddRecipes()
         {

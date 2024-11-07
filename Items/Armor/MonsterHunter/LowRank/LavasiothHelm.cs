@@ -14,9 +14,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
     {
         public static readonly int melee = 5;
         public static readonly int FAttack = 3;
-        public static readonly int Decor = 2;
 
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(melee, FAttack, Decor);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(melee, FAttack);
 
         public override void SetDefaults()
         {
@@ -32,8 +31,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             player.GetAttackSpeed(DamageClass.Melee) += melee/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.FireAttack += FAttack;
-            DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += Decor;
         }
         public override void AddRecipes()
         {

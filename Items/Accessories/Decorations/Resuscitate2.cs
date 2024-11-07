@@ -25,7 +25,7 @@ namespace MHArmorSkills.Items.Accessories.Decorations
         public override void UpdateEquip(Player player)
         {
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.resuscitate += 2;
+            modPlayer.Resuscitate += 2;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
             SlotPlayer.DecorationThreeSlots -= 1;
         }

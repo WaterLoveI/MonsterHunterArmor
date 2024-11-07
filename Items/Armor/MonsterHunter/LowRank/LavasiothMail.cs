@@ -15,9 +15,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         public static readonly int melee = 5;
         public static readonly int guard = 1;
         public static readonly int Resent = 1;
-        public static readonly int Decor = 1;
 
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(melee, guard, Resent, Decor);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(melee, guard, Resent);
 
         public override void SetDefaults()
         {
@@ -34,8 +33,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.Guard += guard;
             modPlayer.Resentment += Resent;
-            DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += Decor;
         }
         public override void AddRecipes()
         {

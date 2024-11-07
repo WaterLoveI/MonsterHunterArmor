@@ -15,9 +15,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
     {
         public static readonly int Crit = 5;
         public static readonly int Blade = 1;
-        public static readonly int Decor = 2;
 
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Crit, Blade, Decor);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Crit, Blade);
 
         public override void SetDefaults()
         {
@@ -34,8 +33,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.BladeScaleHone += Blade;
             modPlayer.AntiBleeding = true;
-            DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationTwoSlots += Decor;
         }
         public override void AddRecipes()
         {

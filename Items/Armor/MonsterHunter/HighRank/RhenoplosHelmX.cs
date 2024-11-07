@@ -15,8 +15,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
         public static readonly int Damage = 12;
         public static readonly int Move = 15;
         public static readonly int Bomb = 3;
-        public static readonly int Art = 1;
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Move, Bomb, Art);
+        public static readonly int Decor1 = 1;
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Move, Bomb, Decor1);
         public override void SetDefaults()
         {
             Item.width = 26;
@@ -31,8 +31,9 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
             player.moveSpeed += Move/100f;
             player.GetDamage<GenericDamageClass>() += Damage/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.BombBoost += Bomb;
-            modPlayer.Artillery += Art;
+            modPlayer.ArtilleryBombBoost += Bomb;
+            DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
+            SlotPlayer.DecorationThreeSlots += Decor1;
         }
         public override void AddRecipes()
         {

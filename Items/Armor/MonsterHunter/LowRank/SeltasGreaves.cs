@@ -16,9 +16,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         public static readonly int Minion = 1;
         public static readonly int Hero = 1;
         public static readonly int GuardUp = 1;
-        public static readonly int Decor = 2;
 
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Movement, Minion, Hero, GuardUp, Decor);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Movement, Minion, Hero, GuardUp);
 
         public override void SetDefaults()
         {
@@ -36,8 +35,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.HeroShield += Hero;
             modPlayer.GuardUp += GuardUp;
-            DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationTwoSlots += Decor;
         }
         public override void AddRecipes()
         {

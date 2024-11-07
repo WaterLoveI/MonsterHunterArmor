@@ -15,9 +15,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         public static readonly int MeleeSpeed = 5;
         public static readonly int HoneyHunter = 1;
         public static readonly int DefenseBoost = 1;
-        public static readonly int Decoration = 1;
 
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(MeleeSpeed,HoneyHunter, DefenseBoost, Decoration);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(MeleeSpeed,HoneyHunter, DefenseBoost);
 
         public override void SetDefaults()
         {
@@ -35,7 +34,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             modPlayer.HoneyHunter += HoneyHunter;
             modPlayer.DefenseBoost += DefenseBoost;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationTwoSlots += Decoration;
         }
         public override void AddRecipes()
         {

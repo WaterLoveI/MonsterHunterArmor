@@ -25,7 +25,7 @@ namespace MHArmorSkills.MHPlayer
         public bool AquaMobility;
         public bool BlightImmune;
         public bool BlightSpeedup;
-        public bool CRangePlus;
+        public float CRangePlus;
         public bool CritELeTrue;
         public bool Fortified;
         public bool Guard;
@@ -197,7 +197,7 @@ namespace MHArmorSkills.MHPlayer
             Coalescence = 0;
             Constitution = 0;
             CounterStrike = 0;
-            CRangePlus = false;
+            CRangePlus = 0f;
             CritBoost = 0;
             //            CritDraw = 0;
             CritEle = 0f;
@@ -605,7 +605,7 @@ namespace MHArmorSkills.MHPlayer
                 ControlledAttack += CounterStrike;
             }
             #endregion
-            #region resuscitate
+            #region Resuscitate
             if (resuscitateBuff >= 1)
             {
                 for (int l = 0; l < Player.MaxBuffs; ++l)
@@ -1776,10 +1776,10 @@ namespace MHArmorSkills.MHPlayer
             if (proj.DamageType == DamageClass.Ranged)
             {
                 #region Close Range
-                if (CRangePlus)
+                if (CRangePlus > 0)
                 {
                     float DistanceInterpolant = Utils.GetLerpValue(240f, 1f, target.Distance(Main.player[Main.myPlayer].Center), true);
-                    float rangedBoost = MathHelper.Lerp(0f, 1.1f, DistanceInterpolant);
+                    float rangedBoost = MathHelper.Lerp(0f, CRangePlus, DistanceInterpolant);
                     modifiers.SourceDamage += rangedBoost;
                 }
 
@@ -1974,10 +1974,10 @@ namespace MHArmorSkills.MHPlayer
             #endregion
 
             #region Rapid Fire
-            if (RapidFire && item.CountsAsClass<RangedDamageClass>())
+            /*if (RapidFire && item.CountsAsClass<RangedDamageClass>())
             {
                 damage -= RapidFireDamage;
-            }
+            }*/
             #endregion
         }
 
@@ -2091,14 +2091,14 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
             #region Rapid Fire
-            if (RapidFire && item.CountsAsClass<RangedDamageClass>())
+            /*if (RapidFire && item.CountsAsClass<RangedDamageClass>())
             {
                 if (item.useTime >= RapidFireReuse)
                 {
                     return true;
                 }
                 return false;
-            }
+            }*/
             #endregion
             #region Speed Setup
             if (SpeedSetup >= 1)
@@ -2119,7 +2119,7 @@ namespace MHArmorSkills.MHPlayer
         }
         public override bool Shoot(Item item, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {
-            #region Rapid Fire
+            /*#region Rapid Fire
             if (RapidFire && item.CountsAsClass<RangedDamageClass>())
             {
                 float speedX = velocity.X;
@@ -2143,7 +2143,7 @@ namespace MHArmorSkills.MHPlayer
                     Projectile.NewProjectile(source, position.X, position.Y, perturbedSpeed.X, perturbedSpeed.Y, type, damage / 3, knockback / 2, Player.whoAmI);
                 }
             }
-            #endregion
+            #endregion*/
             #region Bladehone Scale
             if (Player.HasBuff(ModContent.BuffType<BladeHoneScale>()) && Shoottimer == 0)
             {
@@ -2164,8 +2164,8 @@ namespace MHArmorSkills.MHPlayer
                             type = ModContent.ProjectileType<BladeScale4>();
                             break;
                     }
-                    float SpeedX = velocity.X + Main.rand.NextFloat(-3.75f, 3.75f);
-                    float SpeedY = velocity.Y + Main.rand.NextFloat(-3.75f, 3.75f);
+                    float SpeedX = velocity.X*2 + Main.rand.NextFloat(-3f, 3f);
+                    float SpeedY = velocity.Y*2 + Main.rand.NextFloat(-3f, 3f);
                     Projectile.NewProjectile(source, position.X, position.Y, SpeedX, SpeedY, type, damage / 3, knockback, Player.whoAmI);
                     Shoottimer = 30;
                 }
@@ -2230,7 +2230,7 @@ namespace MHArmorSkills.MHPlayer
                 Player.lifeRegen -= 1;
             }
             #endregion
-            #region BlightProof
+            #region Blightproof
             if (BlightSpeedup || Defiance >= 3)
             {
                 for (int l = 0; l < Player.MaxBuffs; ++l)

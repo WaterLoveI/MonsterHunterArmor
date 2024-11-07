@@ -15,8 +15,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         public static readonly int Critical = 5;
         public static readonly int Attack = 1;
         public static readonly int RazorSharp = 1;
-        public static readonly int Decor = 2;
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Critical, Attack, RazorSharp, Decor);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Critical, Attack, RazorSharp);
         public override void SetDefaults()
         {
             Item.width = 26;
@@ -30,10 +29,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         {
             player.GetCritChance<GenericDamageClass>() += Critical;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.RazorSharp += RazorSharp;
+            modPlayer.RazorSharpSpareShot += RazorSharp;
             modPlayer.Attack += Attack;
-            DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationTwoSlots += Decor;
         }
         public override void AddRecipes()
         {

@@ -15,10 +15,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
     {
         public static readonly int CritChance = 5;
         public static readonly int Vault = 2;
-        public static readonly int Decor1 = 1;
-        public static readonly int Decor2 = 1;
 
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(CritChance, Vault, Decor1, Decor2);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(CritChance, Vault);
 
 
 
@@ -37,8 +35,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.Vault += Vault;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationTwoSlots += Decor1;
-            SlotPlayer.DecorationOneSlots += Decor2;
         }
         public override void AddRecipes()
         {

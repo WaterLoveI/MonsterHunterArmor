@@ -34,7 +34,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.FireAttack += FireAttack;
             modPlayer.Guard += Guard;
-            modPlayer.RazorSharp += RazorSharp;
+            modPlayer.RazorSharpSpareShot += RazorSharp;
         }
         public override void AddRecipes()
         {

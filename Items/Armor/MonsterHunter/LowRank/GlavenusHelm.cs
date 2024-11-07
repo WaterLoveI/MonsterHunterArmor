@@ -15,8 +15,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         public static readonly int Damage = 5;
         public static readonly int Handicraft = 2;
         public static readonly int RazorSharp = 1;
-        public static readonly int Decor = 1;
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Handicraft, RazorSharp, Decor);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Handicraft, RazorSharp);
         public override void SetDefaults()
         {
             Item.width = 22;
@@ -30,10 +29,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         {
             player.GetDamage<GenericDamageClass>() += Damage/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.Handicraft += Handicraft;
-            modPlayer.RazorSharp += RazorSharp;
-            DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationTwoSlots += Decor;
+            modPlayer.HandicraftRapidFire += Handicraft;
+            modPlayer.RazorSharpSpareShot += RazorSharp;
         }
         public override void AddRecipes()
         {

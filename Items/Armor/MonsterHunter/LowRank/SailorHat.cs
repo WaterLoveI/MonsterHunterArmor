@@ -16,9 +16,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         public static readonly int Move = 5;
         public static readonly int Evasion = 1;
         public static readonly int Fate = 1;
-        public static readonly int Decor = 1;
 
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Move, Evasion, Fate, Decor);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Move, Evasion, Fate);
 
         public override void SetDefaults()
         {
@@ -35,8 +34,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.Evasion += Evasion;
             modPlayer.Fate += Fate;
-            DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationTwoSlots += Decor;
         }
         public override void AddRecipes()
         {

@@ -27,7 +27,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         public override void UpdateEquip(Terraria.Player player)
         {
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.SpareShot += SpareShot;
+            modPlayer.RazorSharpSpareShot += SpareShot;
             modPlayer.Protection += Protection;
         }
         public override void AddRecipes()

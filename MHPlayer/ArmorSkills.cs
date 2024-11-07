@@ -24,30 +24,28 @@ namespace MHArmorSkills.MHPlayer
         public int AffinitySliding;
         public int AMobility;
         public int AntiPoison;
-        public int Artillery;
+        public int ArtilleryBombBoost;
         public int Attack;
         public int AutoTracker;
         public int BBQExpert;
         public int Berserk;
         public int BladeScaleHone;
-        public int BlightProof;
+        public int Blightproof;
         public int Bloodlust;
         public int BloodRite;
-        public int BombBoost;
         public int BubbleDance;
         public int Carving;
-        public int ChallengeSheathe;
+        public int ChallengeSheatheCloseRangeUp;
         public int ChameleosBlessing;
         public int CliffHanger;
         public int Coalescence;
         public int ColdRes;
         public int Constitution;
         public int CounterStrike;
-        public int CritDraw;
+        public int CritDrawPierceUp;
         public int CritElement;
         public int CritEye;
         public int CriticalBoost;
-        public int DeadEye;
         public int DefenseBoost;
         public int Defiance;
         public int DefLock;
@@ -83,7 +81,7 @@ namespace MHArmorSkills.MHPlayer
         public int Guard;
         public int GuardUp;
         public int Guts;
-        public int Handicraft;
+        public int HandicraftRapidFire;
         public int HastenRecovery;
         public int Health;
         public int HeatRes;
@@ -98,38 +96,33 @@ namespace MHArmorSkills.MHPlayer
         public int LastingPower;
         public int LatentPower;
         public int MailofHellfire;
-        public int MastersTouch;
+        public int MastersTouchDeadeye;
         public int MaximumMight;
         public int Mushroomancer;
         public int NegativeCrit;
-        public int NormalUp;
         public int OffensiveGuard;
         public int OutdoorsMan;
-        public int PelletUp;
-        public int PierceUp;
         public int PolarHunter;
         public int PowderMantle;
         public int PowerProlonger;
         public int Protection;
         public int ProtectivePolish;
-        public int PunishDraw;
+        public int PunishDrawPelletUp;
         public int QuickBreath;
         public int QuickGather;
         public int QuickSharpening;
-        public int QuickSheath;
-        public int RapidFire;
-        public int RazorSharp;
+        public int QuickSheathNormalUp;
+        public int RazorSharpSpareShot;
         public int RecoveryUp;
         public int RecSpeed;
         public int Redirection;
         public int Resentment;
-        public int resuscitate;
+        public int Resuscitate;
         public int Scholar;
         public int SilverBullet;
         public int Slugger;
         public int Sneak;
         public int SneakAttack;
-        public int SpareShot;
         public int SpeedEating;
         public int SpeedSetup;
         public int Spirit;
@@ -144,7 +137,7 @@ namespace MHArmorSkills.MHPlayer
         public int ThunderAttack;
         public int ThunderRes;
         public int TremorRes;
-        public int TropicHunter;
+        public int TropicsHunter;
         public int Unscathed;
         public int Vault;
         public int WaterAttack;
@@ -166,32 +159,30 @@ namespace MHArmorSkills.MHPlayer
             AntiBlast = false;
             AutoGuard = false;
             AntiPoison = 0;
-            Artillery = 0;
+            ArtilleryBombBoost = 0;
             Attack = 0;
             Autoreload = false;
             AutoTracker = 0;
             BBQExpert = 0;
             Berserk = 0;
             BladeScaleHone = 0;
-            BlightProof = 0;
+            Blightproof = 0;
             Bloodlust = 0;
             BloodRite = 0;
-            BombBoost = 0;
             BubbleDance = 0;
             Carving = 0;
             ChameleosBlessing = 0;
-            ChallengeSheathe = 0;
+            ChallengeSheatheCloseRangeUp = 0;
             CliffHanger = 0;
             Coalescence = 0;
             ColdRes = 0;
             Constitution = 0;
             CounterStrike = 0;
             CRangePlus = false;
-            CritDraw = 0;
+            CritDrawPierceUp = 0;
             CritElement = 0;
             CritEye = 0;
             CriticalBoost = 0;
-            DeadEye = 0;
             DefenseBoost = 0;
             Defiance = 0;
             DefLock = 0;
@@ -226,7 +217,7 @@ namespace MHArmorSkills.MHPlayer
             Guard = 0;
             GuardUp = 0;
             Guts = 0;
-            Handicraft = 0;
+            HandicraftRapidFire = 0;
             HastenRecovery = 0;
             Health = 0;
             HeavenSent = 0;
@@ -245,36 +236,31 @@ namespace MHArmorSkills.MHPlayer
             MaximumMight = 0;
             Mushroomancer = 0;
             NegativeCrit = 0;
-            NormalUp = 0;
             OffensiveGuard = 0;
             OutdoorsMan = 0;
-            PelletUp = 0;
-            PierceUp = 0;
             PoisonCPlus = false;
             PolarHunter = 0;
             PowderMantle = 0;
             PowerProlonger = 0;
             Protection = 0;
             ProtectivePolish = 0;
-            PunishDraw = 0;
+            PunishDrawPelletUp = 0;
             QuickBreath = 0;
             QuickGather = 0;
             QuickSharpening = 0;
-            QuickSheath = 0;
-            RapidFire = 0;
-            RazorSharp = 0;
+            QuickSheathNormalUp = 0;
+            RazorSharpSpareShot = 0;
             RecoveryUp = 0;
             RecSpeed = 0;
             Redirection = 0;
             Resentment = 0;
-            resuscitate = 0;
+            Resuscitate = 0;
             RockSteady = false;
             Scholar = 0;
             SilverBullet = 0;
             Slugger = 0;
             Sneak = 0;
             SneakAttack = 0;
-            SpareShot = 0;
             SpeedEating = 0;
             SpeedSetup = 0;
             Spirit = 0;
@@ -290,7 +276,7 @@ namespace MHArmorSkills.MHPlayer
             ThunderAttack = 0;
             ThunderRes = 0;
             TremorRes = 0;
-            TropicHunter = 0;
+            TropicsHunter = 0;
             Unscathed = 0;
             Vault = 0;
             WaterAttack = 0;
@@ -395,19 +381,22 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
             #region Artillery
-            if (Artillery >= 1)
+            if (ArtilleryBombBoost >= 1)
             {
-                if (Artillery >= 1)
+                if (ArtilleryBombBoost >= 1)
                 {
                     modPlayer.ArtilleryBuff += 5;
+                    modPlayer.BombBoostBuff += 10;
                 }
-                if (Artillery >= 2)
+                if (ArtilleryBombBoost >= 2)
                 {
                     modPlayer.ArtilleryBuff += 5;
+                    modPlayer.BombBoostBuff += 10;
                 }
-                if (Artillery >= 3)
+                if (ArtilleryBombBoost >= 3)
                 {
                     modPlayer.ArtilleryBuff += 5;
+                    modPlayer.BombBoostBuff += 10;
                 }
             }
             #endregion
@@ -527,33 +516,16 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
             #region Blightproof
-            if (BlightProof >= 1)
+            if (Blightproof >= 1)
             {
-                if (BlightProof >= 1)
+                if (Blightproof >= 1)
                 {
                     modPlayer.BlightSpeedup = true;
 
                 }
-                if (BlightProof >= 2)
+                if (Blightproof >= 2)
                 {
                     modPlayer.BlightImmune = true;
-                }
-            }
-            #endregion
-            #region Bomb Boost
-            if (BombBoost >= 1)
-            {
-                if (BombBoost >= 1)
-                {
-                    modPlayer.BombBoostBuff += 10;
-                }
-                if (BombBoost >= 2)
-                {
-                    modPlayer.BombBoostBuff += 10;
-                }
-                if (BombBoost >= 3)
-                {
-                    modPlayer.BombBoostBuff += 10;
                 }
             }
             #endregion
@@ -574,12 +546,6 @@ namespace MHArmorSkills.MHPlayer
                 {
                     modPlayer.BubbleDance += 1;
                 }
-            }
-            #endregion
-            #region Close Range Up
-            if (CRangePlus)
-            {
-                modPlayer.CRangePlus = true;
             }
             #endregion
             #region Carving
@@ -613,19 +579,22 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
             #region Challenge Sheath
-            if (ChallengeSheathe >= 1)
+            if (ChallengeSheatheCloseRangeUp >= 1)
             {
-                if (ChallengeSheathe >= 1)
+                if (ChallengeSheatheCloseRangeUp >= 1)
                 {
                     SharpPlayer.ChallengeSheath += 1;
+                    modPlayer.CRangePlus += 0.5f;
                 }
-                if (ChallengeSheathe >= 2)
+                if (ChallengeSheatheCloseRangeUp >= 2)
                 {
                     SharpPlayer.ChallengeSheath += 1;
+                    modPlayer.CRangePlus += 0.5f;
                 }
-                if (ChallengeSheathe >= 3)
+                if (ChallengeSheatheCloseRangeUp >= 3)
                 {
                     SharpPlayer.ChallengeSheath += 1;
+                    modPlayer.CRangePlus += 0.5f;
                 }
             }
             #endregion
@@ -720,20 +689,23 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
             #region Crit Draw
-            if (CritDraw >= 1)
+            if (CritDrawPierceUp >= 1)
             {
-                if (CritDraw >= 1)
+                if (CritDrawPierceUp >= 1)
                 {
                     SharpPlayer.CritDrawCrit += 10;
+                    modPlayer.PieceBuff += 5;
                 }
-                if (CritDraw >= 2)
+                if (CritDrawPierceUp >= 2)
                 {
                     SharpPlayer.CritDrawCrit += 10;
+                    modPlayer.PieceBuff += 5;
                 }
-                if (CritDraw >= 3)
+                if (CritDrawPierceUp >= 3)
                 {
                     SharpPlayer.CritDrawCrit += 5;
                     SharpPlayer.CritDrawCritDmg += 10;
+                    modPlayer.PieceBuff += 5;
                 }
             }
             #endregion
@@ -803,23 +775,6 @@ namespace MHArmorSkills.MHPlayer
                 if (CriticalBoost >= 3)
                 {
                     modPlayer.CritBoost += 5;
-                }
-            }
-            #endregion
-            #region Dead Eye
-            if (DeadEye >= 1)
-            {
-                if (DeadEye >= 1)
-                {
-                    modPlayer.DeadEye += 0.5f;
-                }
-                if (DeadEye >= 2)
-                {
-                    modPlayer.DeadEye += 0.5f;
-                }
-                if (DeadEye >= 3)
-                {
-                    modPlayer.DeadEye += 0.5f;
                 }
             }
             #endregion
@@ -1389,24 +1344,25 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
             #region Handicraft
-            if (Handicraft >= 1)
+            if (HandicraftRapidFire >= 1)
             {
                 SharpPlayer.Handicraft += 10;
-                if (Handicraft >= 2)
+                if (HandicraftRapidFire >= 2)
                 {
-                    SharpPlayer.Handicraft += 10;
+                    SharpPlayer.Handicraft += 15;
                 }
-                if (Handicraft >= 3)
+                if (HandicraftRapidFire >= 3)
                 {
-                    SharpPlayer.Handicraft += 10;
+                    SharpPlayer.Handicraft += 15;
+                    Player.GetDamage(DamageClass.Ranged) -= 20 / 100f;
                 }
-                if (Handicraft >= 4)
+                if (HandicraftRapidFire >= 4)
                 {
-                    SharpPlayer.Handicraft += 10;
+                    SharpPlayer.Handicraft += 20;
                 }
-                if (Handicraft >= 5)
+                if (HandicraftRapidFire >= 5)
                 {
-                    SharpPlayer.Handicraft += 10;
+                    SharpPlayer.Handicraft += 20;
                 }
             }
             #endregion
@@ -1733,16 +1689,19 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
             #region Masters Touch
-            if (MastersTouch >= 1)
+            if (MastersTouchDeadeye >= 1)
             {
                 SharpPlayer.MastersTouch += 1;
-                if (MastersTouch >= 2)
+                modPlayer.DeadEye += 0.5f;
+                if (MastersTouchDeadeye >= 2)
                 {
                     SharpPlayer.MastersTouch += 1;
+                    modPlayer.DeadEye += 0.5f;
                 }
-                if (MastersTouch >= 3)
+                if (MastersTouchDeadeye >= 3)
                 {
                     SharpPlayer.MastersTouch += 1;
+                    modPlayer.DeadEye += 0.5f;
                 }
             }
             #endregion
@@ -1793,23 +1752,6 @@ namespace MHArmorSkills.MHPlayer
                 }
             }
             #endregion
-            #region Normal Up
-            if (NormalUp >= 1)
-            {
-                if (NormalUp >= 1)
-                {
-                    modPlayer.NormalBuff += 20;
-                }
-                if (NormalUp >= 2)
-                {
-                    modPlayer.NormalBuff += 20;
-                }
-                if (NormalUp >= 3)
-                {
-                    modPlayer.NormalBuff += 20;
-                }
-            }
-            #endregion
             #region Offensive Guard
             if (OffensiveGuard >= 1)
             {
@@ -1824,40 +1766,6 @@ namespace MHArmorSkills.MHPlayer
                 if (OffensiveGuard >= 3)
                 {
                     modPlayer.OffensiveGuardBoost += 5;
-                }
-            }
-            #endregion
-            #region Pellet Up
-            if (PelletUp >= 1)
-            {
-                if (PelletUp >= 1)
-                {
-                    modPlayer.PelletBuff += 5;
-                }
-                if (PelletUp >= 2)
-                {
-                    modPlayer.PelletBuff += 5;
-                }
-                if (PelletUp >= 3)
-                {
-                    modPlayer.PelletBuff += 5;
-                }
-            }
-            #endregion
-            #region Pierce Up
-            if (PierceUp >= 1)
-            {
-                if (PierceUp >= 1)
-                {
-                    modPlayer.PieceBuff += 5;
-                }
-                if (PierceUp >= 2)
-                {
-                    modPlayer.PieceBuff += 5;
-                }
-                if (PierceUp >= 3)
-                {
-                    modPlayer.PieceBuff += 5;
                 }
             }
             #endregion
@@ -1952,19 +1860,22 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
             #region Punish Draw
-            if (PunishDraw >= 1)
+            if (PunishDrawPelletUp >= 1)
             {
                 SharpPlayer.PunishDrawDmg += 0.05f;
                 SharpPlayer.PunishDrawKB += 0.1f;
-                if (PunishDraw >= 2)
+                modPlayer.PelletBuff += 5;
+                if (PunishDrawPelletUp >= 2)
                 {
                     SharpPlayer.PunishDrawDmg += 0.05f;
                     SharpPlayer.PunishDrawKB += 0.2f;
+                    modPlayer.PelletBuff += 5;
                 }
-                if (PunishDraw >= 3)
+                if (PunishDrawPelletUp >= 3)
                 {
                     SharpPlayer.PunishDrawDmg += 0.05f;
                     SharpPlayer.PunishDrawKB += 0.2f;
+                    modPlayer.PelletBuff += 5;
                 }
             }
             #endregion
@@ -1992,55 +1903,42 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
             #region Quick Sheathe
-            if (QuickSheath >= 1)
+            if (QuickSheathNormalUp >= 1)
             {
-                if (QuickSheath >= 1)
+                if (QuickSheathNormalUp >= 1)
                 {
                     SharpPlayer.QuickSheath += 0.1f;
+                    modPlayer.NormalBuff += 20;
                 }
-                if (QuickSheath >= 2)
+                if (QuickSheathNormalUp >= 2)
                 {
                     SharpPlayer.QuickSheath += 0.2f;
+                    modPlayer.NormalBuff += 20;
                 }
-                if (QuickSheath >= 3)
+                if (QuickSheathNormalUp >= 3)
                 {
                     SharpPlayer.QuickSheath += 0.2f;
+                    modPlayer.NormalBuff += 20;
                 }
-            }
-            #endregion
-            #region Rapid Fire
-            if (RapidFire >= 1)
-            {
-                if (RapidFire >= 1)
-                {
-                    modPlayer.RapidFire = true;
-                }
-                if (RapidFire >= 1)
-                {
-                    modPlayer.RapidFireReuse -= 10;
-                }
-                if (RapidFire >= 1)
-                {
-                    modPlayer.RapidFireDamage = 0.2f;
-                    modPlayer.RapidFireReuse -= 5;
-                }
-
             }
             #endregion
             #region Razor Sharp
-            if (RazorSharp >= 1)
+            if (RazorSharpSpareShot >= 1)
             {
-                if (RazorSharp >= 1)
+                if (RazorSharpSpareShot >= 1)
                 {
                     SharpPlayer.RazorSharp += 10;
+                    modPlayer.SpareShot += 6;
                 }
-                if (RazorSharp >= 2)
+                if (RazorSharpSpareShot >= 2)
                 {
                     SharpPlayer.RazorSharp -= 6;
+                    modPlayer.SpareShot -= 1;
                 }
-                if (RazorSharp >= 3)
+                if (RazorSharpSpareShot >= 3)
                 {
                     SharpPlayer.RazorSharp -= 2;
+                    modPlayer.SpareShot -= 1;
                 }
             }
             #endregion
@@ -2104,17 +2002,17 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
             #region Resuscitate
-            if (resuscitate >= 1)
+            if (Resuscitate >= 1)
             {
-                if (resuscitate >= 1)
+                if (Resuscitate >= 1)
                 {
                     modPlayer.resuscitateBuff += 5;
                 }
-                if (resuscitate >= 2)
+                if (Resuscitate >= 2)
                 {
                     modPlayer.resuscitateBuff += 5;
                 }
-                if (resuscitate >= 3)
+                if (Resuscitate >= 3)
                 {
                     modPlayer.resuscitateBuff += 5;
                 }
@@ -2189,23 +2087,6 @@ namespace MHArmorSkills.MHPlayer
                 if (SneakAttack >= 3)
                 {
                     modPlayer.SneakAttack += 0.05f;
-                }
-            }
-            #endregion
-            #region Spare Shot
-            if (SpareShot >= 1)
-            {
-                if (SpareShot >= 1)
-                {
-                    modPlayer.SpareShot += 6;
-                }
-                if (SpareShot >= 2)
-                {
-                    modPlayer.SpareShot -= 1;
-                }
-                if (SpareShot >= 3)
-                {
-                    modPlayer.SpareShot -= 1;
                 }
             }
             #endregion
@@ -2429,18 +2310,18 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
             #region Tropic Hunter
-            if (TropicHunter >= 1)
+            if (TropicsHunter >= 1)
             {
-                if (TropicHunter >= 1)
+                if (TropicsHunter >= 1)
                 {
                     modPlayer.TropicHunterDef += 5;
                 }
-                if (TropicHunter >= 2)
+                if (TropicsHunter >= 2)
                 {
                     modPlayer.TropicHunterDef += 1;
                     modPlayer.TropicHunterMovement += 5;
                 }
-                if (TropicHunter >= 3)
+                if (TropicsHunter >= 3)
                 {
                     modPlayer.TropicHunterDef += 1;
                     modPlayer.TropicHunterMovement += 5;

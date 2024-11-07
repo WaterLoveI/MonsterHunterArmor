@@ -11,10 +11,9 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
     [AutoloadEquip(EquipType.Body)]
     public class BoneMail : ModItem
     {
-        public static readonly int TropicHunter = 1;
-        public static readonly int Decor1 = 1;
+        public static readonly int TropicsHunter = 1;
 
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(TropicHunter, Decor1);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(TropicsHunter);
 
         public override void SetDefaults()
         {
@@ -28,9 +27,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         public override void UpdateEquip(Terraria.Player player)
         {
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.TropicHunter += TropicHunter;
-            DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += Decor1;
+            modPlayer.TropicsHunter += TropicsHunter;
         }
         public override void AddRecipes()
         {

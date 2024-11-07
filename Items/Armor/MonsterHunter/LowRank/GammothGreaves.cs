@@ -15,8 +15,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         public static readonly int MoveSpeed = 7;
         public static readonly int Attack = 1;
         public static readonly int Polar = 1;
-        public static readonly int Decor = 1;
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(MoveSpeed, Attack, Polar, Decor);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(MoveSpeed, Attack, Polar);
 
         public override void SetDefaults()
         {
@@ -33,8 +32,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.PolarHunter += Polar;
             modPlayer.Attack += Attack;
-            DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += Decor;
         }
         public override void AddRecipes()
         {

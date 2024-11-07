@@ -11,9 +11,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
     [AutoloadEquip(EquipType.Legs)]
     public class BoneGreaves : ModItem
     {
-        public static readonly int Decor1 = 2;
 
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Decor1);
 
         public override void SetDefaults()
         {
@@ -26,8 +24,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
 
         public override void UpdateEquip(Terraria.Player player)
         {
-            DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += Decor1;
         }
         public override void AddRecipes()
         {

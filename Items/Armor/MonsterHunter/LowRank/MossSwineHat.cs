@@ -12,9 +12,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
     public class MossSwineHat : ModItem
     {
         public static readonly int mushroomer = 1;
-        public static readonly int Decor = 1;
 
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(mushroomer, Decor);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(mushroomer);
 
 
         public override void SetDefaults()
@@ -30,8 +29,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         {
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.Mushroomancer += mushroomer;
-            DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots += Decor;
         }
         public override void AddRecipes()
         {

@@ -14,106 +14,40 @@ MiningLeg:
 	'''
 	{$CommonItemTooltip.VanillaCliffHanger} 1.
 	{$CommonItemTooltip.VanillaQuickGathering} 1.
-	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
 	'''
 WoodHelmet: "{$CommonItemTooltip.VanillaDefenseBoost} 1."
 WoodChest: "{$CommonItemTooltip.VanillaProtection} 1."
-WoodLegs:
-	'''
-	{$CommonItemTooltip.VanillaOutdoorsman} 1.
-	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
-	'''
-AnglerHelmet:
-	'''
-	{$CommonItemTooltip.VanillaAutoTracker} 1.
-	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
-	'''
+WoodLegs: "{$CommonItemTooltip.VanillaOutdoorsman} 1."
+AnglerHelmet: "{$CommonItemTooltip.VanillaAutoTracker} 1."
 AnglerChest: "{$CommonItemTooltip.VanillaFreeMeal} 1."
 AnglerLegs: "{$CommonItemTooltip.VanillaAquaticMobility} 1."
 CactusHelmet: "{$CommonItemTooltip.VanillaSneak} 1."
-CactusChest:
-	'''
-	{$CommonItemTooltip.VanillaRecoverySpd} 1.
-	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
-	'''
-CactusLegs:
-	'''
-	{$CommonItemTooltip.VanillaStamRecovery} 1.
-	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
-	'''
+CactusChest: "{$CommonItemTooltip.VanillaRecoverySpd} 1."
+CactusLegs: "{$CommonItemTooltip.VanillaStamRecovery} 1."
 CopperHelmet: "{$CommonItemTooltip.VanillaSpeedEating} 1."
 CopperChest: "{$CommonItemTooltip.VanillaDefenseBoost} 2."
-CopperLegs:
-	'''
-	{$CommonItemTooltip.VanillaPoison} 1.
-	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
-	'''
-TinHelmet:
-	'''
-	{$CommonItemTooltip.VanillaDefenseBoost} 1.
-	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
-	'''
-TinChest:
-	'''
-	{$CommonItemTooltip.VanillaStamRecovery} 1.
-	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
-	'''
-TinLegs:
-	'''
-	{$CommonItemTooltip.VanillaCliffHanger} 1.
-	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
-	'''
-PumpkinHelmet:
-	'''
-	{$CommonItemTooltip.VanillaFreeMeal} 1.
-	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
-	'''
-PumpkinChest:
-	'''
-	{$CommonItemTooltip.VanillaGluttony} 1.
-	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
-	'''
-PumpkinLegs:
-	'''
-	{$CommonItemTooltip.VanillaSpeedEating} 1.
-	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
-	'''
+CopperLegs: "{$CommonItemTooltip.VanillaPoison} 1."
+TinHelmet: "{$CommonItemTooltip.VanillaDefenseBoost} 1."
+TinChest: "{$CommonItemTooltip.VanillaStamRecovery} 1."
+TinLegs: "{$CommonItemTooltip.VanillaCliffHanger} 1."
+PumpkinHelmet: "{$CommonItemTooltip.VanillaFreeMeal} 1."
+PumpkinChest: "{$CommonItemTooltip.VanillaGluttony} 1."
+PumpkinLegs: "{$CommonItemTooltip.VanillaSpeedEating} 1."
 IronHelmet: "{$CommonItemTooltip.VanillaDefenseBoost} 2."
 AncientIronHelmet: "{$CommonItemTooltip.VanillaRazorSharp} 1."
 IronChest:
 	'''
 	{$CommonItemTooltip.VanillaDiversion} 1.
 	{$CommonItemTooltip.VanillaPoison} 1.
-	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
 	'''
 IronLegs: "{$CommonItemTooltip.VanillaRecoverySpd} 1."
-LeadHelmet:
-	'''
-	{$CommonItemTooltip.VanillaPoison} 1.
-	{$CommonItemTooltip.VanillaOneSlotDecor} 2.
-	'''
+LeadHelmet: "{$CommonItemTooltip.VanillaPoison} 1."
 LeadChest: "{$CommonItemTooltip.VanillaDefenseBoost} 2."
-LeadLegs:
-	'''
-	{$CommonItemTooltip.VanillaDefenseBoost} 1.
-	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
-	'''
-SilverHelmet:
-	'''
-	{$CommonItemTooltip.VanillaStamRecovery} 1.
-	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
-	'''
+LeadLegs: "{$CommonItemTooltip.VanillaDefenseBoost} 1."
+SilverHelmet: "{$CommonItemTooltip.VanillaStamRecovery} 1."
 SilverChest: "{$CommonItemTooltip.VanillaAttackBoost} 2."
-SilverLegs:
-	'''
-	{$CommonItemTooltip.VanillaFreeMeal} 1.
-	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
-	'''
-TungstenHelmet:
-	'''
-	{$CommonItemTooltip.VanillaRecoverySpd} 1.
-	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
-	'''
+SilverLegs: "{$CommonItemTooltip.VanillaFreeMeal} 1."
+TungstenHelmet: "{$CommonItemTooltip.VanillaRecoverySpd} 1."
 TungstenChest: "{$CommonItemTooltip.VanillaCritEye} 2."
 TungstenLegs:
 	'''
@@ -126,18 +60,13 @@ GoldChest:
 	'''
 	{$CommonItemTooltip.VanillaProtection} 1.
 	{$CommonItemTooltip.VanillaQuickSharpening} 1.
-	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
 	'''
 GoldLegs:
 	'''
 	{$CommonItemTooltip.VanillaFate} 1.
 	{$CommonItemTooltip.VanillaQuickSharpening} 1.
 	'''
-PlatinumHelmet:
-	'''
-	{$CommonItemTooltip.VanillaFortified} 1.
-	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
-	'''
+PlatinumHelmet: "{$CommonItemTooltip.VanillaFortified} 1."
 PlatinumChest:
 	'''
 	{$CommonItemTooltip.VanillaProtection} 1.
@@ -148,11 +77,7 @@ PlatinumLegs:
 	{$CommonItemTooltip.VanillaFortified} 1.
 	{$CommonItemTooltip.VanillaRazorSharp} 1.
 	'''
-FossilHelmet:
-	'''
-	{$CommonItemTooltip.VanillaJumpMaster} 1.
-	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
-	'''
+FossilHelmet: "{$CommonItemTooltip.VanillaJumpMaster} 1."
 FossilChest:
 	'''
 	{$CommonItemTooltip.VanillaCounterStrike} 1.
@@ -163,11 +88,7 @@ FossilLegs:
 	{$CommonItemTooltip.VanillaFireRes} 1.
 	{$CommonItemTooltip.VanillaFortified} 1.
 	'''
-GladiatorHelmet:
-	'''
-	{$CommonItemTooltip.VanillaCritEye} 1.
-	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
-	'''
+GladiatorHelmet: "{$CommonItemTooltip.VanillaCritEye} 1."
 GladiatorChest:
 	'''
 	{$CommonItemTooltip.VanillaIceRes} 1.
@@ -189,11 +110,7 @@ NinjaChest:
 	{$CommonItemTooltip.VanillaCritEye} 1.
 	{$CommonItemTooltip.VanillaSpeedSetup} 1.
 	'''
-NinjaLegs:
-	'''
-	{$CommonItemTooltip.VanillaCritEye} 1.
-	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
-	'''
+NinjaLegs: "{$CommonItemTooltip.VanillaCritEye} 1."
 BeeHelmet:
 	'''
 	{$ItemTooltip.BeeHeadgear}
@@ -205,7 +122,6 @@ BeeChest:
 	{$ItemTooltip.BeeBreastplate}
 	{$CommonItemTooltip.VanillaAutoTracker} 1.
 	{$CommonItemTooltip.VanillaHoneyHunter} 1.
-	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
 	'''
 BeeLegs:
 	'''
@@ -224,7 +140,6 @@ ObsidianChest:
 	{$ItemTooltip.ObsidianShirt}
 	{$CommonItemTooltip.VanillaCounterStrike} 1.
 	{$CommonItemTooltip.VanillaPunishDraw} 1.
-	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
 	'''
 ObsidianLegs:
 	'''
@@ -243,28 +158,24 @@ MeteorChest:
 	{$ItemTooltip.MeteorSuit}
 	{$CommonItemTooltip.VanillaLatentPower} 1.
 	{$CommonItemTooltip.VanillaFireAttack} 1.
-	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
 	'''
 MeteorLegs:
 	'''
 	{$ItemTooltip.MeteorLeggings}
 	{$CommonItemTooltip.VanillaHeatRes} 2.
 	{$CommonItemTooltip.VanillaStamRecovery} 1.
-	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
 	'''
 JungleHelmet:
 	'''
 	{$ItemTooltip.JungleHat}
 	{$CommonItemTooltip.VanillaAffinitySliding} 1.
 	{$CommonItemTooltip.VanillaLastingPower} 1.
-	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
 	'''
 JungleChest:
 	'''
 	{$ItemTooltip.JungleShirt}
 	{$CommonItemTooltip.VanillaMushroomancer} 1.
 	{$CommonItemTooltip.VanillaWaterRes} 1.
-	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
 	'''
 JungleLegs:
 	'''
@@ -278,13 +189,11 @@ AncientCobaltHelmet:
 	{$ItemTooltip.JungleHat}
 	{$CommonItemTooltip.VanillaStamRecovery} 1.
 	{$CommonItemTooltip.VanillaPoison} 1.
-	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
 	'''
 AncientCobaltChest:
 	'''
 	{$ItemTooltip.JungleShirt}
 	{$CommonItemTooltip.VanillaForay} 1.
-	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
 	'''
 AncientCobaltLegs:
 	'''
@@ -297,28 +206,24 @@ NecroHelmet:
 	{$ItemTooltip.NecroHelmet}
 	{$CommonItemTooltip.VanillaBleeding} 1.
 	{$CommonItemTooltip.VanillaUnscathed} 1.
-	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
 	'''
 NecroChest:
 	'''
 	{$ItemTooltip.NecroBreastplate}
 	{$CommonItemTooltip.VanillaColdRes} 1.
 	{$CommonItemTooltip.VanillaUnscathed} 1.
-	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
 	'''
 NecroLegs:
 	'''
 	{$ItemTooltip.NecroGreaves}
 	{$CommonItemTooltip.VanillaAffinitySliding} 1.
 	{$CommonItemTooltip.VanillaAquaticMobility} 2.
-	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
 	'''
 ShadowHelmet:
 	'''
 	{$ItemTooltip.ShadowHelmet}
 	{$CommonItemTooltip.VanillaEvasion} 1.
 	{$CommonItemTooltip.VanillaRazorSharp} 1.
-	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
 	'''
 ShadowChest:
 	'''
@@ -332,68 +237,58 @@ ShadowLegs:
 	{$ItemTooltip.ShadowScalemail}
 	{$CommonItemTooltip.VanillaCritEye} 1.
 	{$CommonItemTooltip.VanillaRazorSharp} 1.
-	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
 	'''
 AncientShadowHelmet:
 	'''
 	{$ItemTooltip.ShadowHelmet}
 	{$CommonItemTooltip.VanillaCritEye} 1.
 	{$CommonItemTooltip.VanillaEvasion} 1.
-	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
 	'''
 AncientShadowHelmetChest:
 	'''
 	{$ItemTooltip.ShadowScalemail}
 	{$CommonItemTooltip.VanillaConstitution} 1.
 	{$CommonItemTooltip.VanillaEvadeDistance} 1.
-	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
 	'''
 AncientShadowHelmetLegs:
 	'''
 	{$ItemTooltip.ShadowScalemail}
 	{$CommonItemTooltip.VanillaCritEye} 2.
-	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
 	'''
 CrimsonHelmet:
 	'''
 	{$ItemTooltip.CrimsonHelmet}
 	{$CommonItemTooltip.VanillaHastenRecovery} 1.
 	{$CommonItemTooltip.VanillaQuickSharpening} 1.
-	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
 	'''
 CrimsonChest:
 	'''
 	{$ItemTooltip.CrimsonScalemail}
 	{$CommonItemTooltip.VanillaHastenRecovery} 1.
 	{$CommonItemTooltip.VanillaRecUp} 1.
-	{$CommonItemTooltip.VanillaOneSlotDecor} 1.
 	'''
 CrimsonLegs:
 	'''
 	{$ItemTooltip.CrimsonGreaves}
 	{$CommonItemTooltip.VanillaAttackBoost} 2.
-	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
 	'''
 MoltenHelmet:
 	'''
 	{$ItemTooltip.MoltenHelmet}
 	{$CommonItemTooltip.VanillaHeatRes} 2.
 	{$CommonItemTooltip.VanillaHandicraft} 1.
-	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
 	'''
 MoltenChest:
 	'''
 	{$ItemTooltip.MoltenBreastplate}
 	{$CommonItemTooltip.VanillaGuard} 2.
 	{$CommonItemTooltip.BlastResist}.
-	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
 	'''
 MoltenLegs:
 	'''
 	{$ItemTooltip.MoltenGreaves}
 	{$CommonItemTooltip.VanillaGuard} 1.
 	{$CommonItemTooltip.VanillaHeatRes} 1.
-	{$CommonItemTooltip.VanillaTwoSlotDecor} 1.
 	'''
 SpiderMask:
 	'''
