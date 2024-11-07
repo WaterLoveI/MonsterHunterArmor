@@ -207,261 +207,261 @@ Tooltip:
 		'''}
 
 BlightproofAttack: {
-	DisplayName: Blightproof Attack
+	DisplayName: Blightproof / Attack Boost Decoration 1
 Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.Blightproof}
 		{$CommonItemTooltip.AttackBoost}
 		{$CommonItemTooltip.Vanity}
 
 		'''}
 
 BlightproofConstitution: {
-	DisplayName: Blightproof Constitution
+	DisplayName: Blightproof / Constitution Decoration 1
 Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Blightproof}
+		{$CommonItemTooltip.Constitution}
 		{$CommonItemTooltip.Vanity}
 
 		'''}
 
 BlightproofCrit: {
-	DisplayName: Blightproof Crit
+	DisplayName: Blightproof / Critical Eye Decoration 1
 Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Blightproof}
+		{$CommonItemTooltip.CritEye}
 		{$CommonItemTooltip.Vanity}
 
 		'''}
 
 BlightproofDefenseBoost: {
-	DisplayName: Blightproof Defense Boost
+	DisplayName: Blightproof / Defense Boost Decoration 1
 Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Blightproof}
+		{$CommonItemTooltip.DefenseBoost}
 		{$CommonItemTooltip.Vanity}
 
 		'''}
 
 BlightproofEvadeDistance: {
-	DisplayName: Blightproof Evade Distance
+	DisplayName: Blightproof / Evade Distance Decoration 1
 Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Blightproof}
+		{$CommonItemTooltip.EvadeDistance}
 		{$CommonItemTooltip.Vanity}
 
 		'''}
 
 BlightproofEvasion: {
-	DisplayName: Blightproof Evasion
+	DisplayName: Blightproof / Evasion Decoration 1
 Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Blightproof}
+		{$CommonItemTooltip.Evasion}
 		{$CommonItemTooltip.Vanity}
 
 		'''}
 
 BlightproofHandicraft: {
-	DisplayName: Blightproof Handicraft
+	DisplayName: Blightproof / Handicraft Decoration 1
 Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Blightproof}
+		{$CommonItemTooltip.Handicraft}
 		{$CommonItemTooltip.Vanity}
 
 		'''}
 
 BlightproofProtection: {
-	DisplayName: Blightproof Protection
+	DisplayName: Blightproof / Protection Decoration 1
 Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Blightproof}
+		{$CommonItemTooltip.Protection}
 		{$CommonItemTooltip.Vanity}
 
 		'''}
 
 BlightproofRecSpd: {
-	DisplayName: Blightproof Rec Spd
+	DisplayName: Blightproof / Recovery Spd Decoration 1
 Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Blightproof}
+		{$CommonItemTooltip.RecoverySpd}
 		{$CommonItemTooltip.Vanity}
 
 		'''}
 
 BlightproofRecUp: {
-	DisplayName: Blightproof Rec Up
+	DisplayName: Blightproof / Recovery Up Decoration 1
 Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Blightproof}
+		{$CommonItemTooltip.RecUp}
 		{$CommonItemTooltip.Vanity}
 
 		'''}
 
 BubbleDanceAttack: {
-	DisplayName: Bubble Dance Attack
+	DisplayName: Bubble Dance / Attack Boost Decoration 1
 Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.BubbleDance}
 		{$CommonItemTooltip.AttackBoost}
 		{$CommonItemTooltip.Vanity}
 
 		'''}
 
 BubbleDanceConstitution: {
-	DisplayName: Bubble Dance Constitution
+	DisplayName: Bubble Dance / Constitution Decoration 1
 Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.BubbleDance}
+		{$CommonItemTooltip.Constitution}
 		{$CommonItemTooltip.Vanity}
 
 		'''}
 
 BubbleDanceCrit: {
-	DisplayName: Bubble Dance Crit
+	DisplayName: Bubble Dance / Critical Eye Decoration 1
 Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.BubbleDance}
+		{$CommonItemTooltip.CritEye}
 		{$CommonItemTooltip.Vanity}
 
 		'''}
 
 BubbleDanceCriticalBoost: {
-	DisplayName: Bubble Dance Critical Boost
+	DisplayName: Bubble Dance / Critical Boost Decoration 1
 Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.BubbleDance}
+		{$CommonItemTooltip.CriticalBoost}
 		{$CommonItemTooltip.Vanity}
 
 		'''}
 
 BubbleDanceHealth: {
-	DisplayName: Bubble Dance Health
+	DisplayName: Bubble Dance / Health Decoration 1
 Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.BubbleDance}
+		{$CommonItemTooltip.Health}
 		{$CommonItemTooltip.Vanity}
 
 		'''}
 
 BubbleDanceStamRec: {
-	DisplayName: Bubble Dance Stam Rec
+	DisplayName: Bubble Dance / Stamina Recovery Decoration 1
 Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.BubbleDance}
+		{$CommonItemTooltip.StamRecovery}
 		{$CommonItemTooltip.Vanity}
 
 		'''}
 
 ChallengeSheathAttack: {
-	DisplayName: Challenge Sheath Attack
+	DisplayName: Challenge Sheath / Attack Boost Decoration 1
 Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.ChallengeSheath}
 		{$CommonItemTooltip.AttackBoost}
 		{$CommonItemTooltip.Vanity}
 
 		'''}
 
 ChallengeSheathConstitution: {
-	DisplayName: Challenge Sheath Constitution
+	DisplayName: Challenge Sheath / Constitution Decoration 1
 Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.ChallengeSheath}
+		{$CommonItemTooltip.Constitution}
 		{$CommonItemTooltip.Vanity}
 
 		'''}
 
 ChallengeSheathCrit: {
-	DisplayName: Challenge Sheath Crit
+	DisplayName: Challenge Sheath / Critical Eye Decoration 1
 Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.ChallengeSheath}
+		{$CommonItemTooltip.CritEye}
 		{$CommonItemTooltip.Vanity}
 
 		'''}
 
 ChallengeSheathDefenseBoost: {
-	DisplayName: Challenge Sheath Defense Boost
+	DisplayName: Challenge Sheath / Defense Boost Decoration 1
 Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.ChallengeSheath}
+		{$CommonItemTooltip.DefenseBoost}
 		{$CommonItemTooltip.Vanity}
 
 		'''}
 
 ChallengeSheathEvadeDistance: {
-	DisplayName: Challenge Sheath Evade Distance
+	DisplayName: Challenge Sheath / Evade Distance Decoration 1
 Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.ChallengeSheath}
+		{$CommonItemTooltip.EvadeDistance}
 		{$CommonItemTooltip.Vanity}
 
 		'''}
 
 ChallengeSheathEvasion: {
-	DisplayName: Challenge Sheath Evasion
+	DisplayName: Challenge Sheath / Evasion Decoration 1
 Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.ChallengeSheath}
+		{$CommonItemTooltip.Evasion}
 		{$CommonItemTooltip.Vanity}
 
 		'''}
 
 ChallengeSheathHandicraft: {
-	DisplayName: Challenge Sheath Handicraft
+	DisplayName: Challenge Sheath / Handicraft Decoration 1
 Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.ChallengeSheath}
+		{$CommonItemTooltip.Handicraft}
 		{$CommonItemTooltip.Vanity}
 
 		'''}
 
 ChallengeSheathProtection: {
-	DisplayName: Challenge Sheath Protection
+	DisplayName: Challenge Sheath / Protection Decoration 1
 Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.ChallengeSheath}
+		{$CommonItemTooltip.Protection}
 		{$CommonItemTooltip.Vanity}
 
 		'''}
 
 ChallengeSheathRecSpd: {
-	DisplayName: Challenge Sheath Rec Spd
+	DisplayName: Challenge Sheath / Recovery Spd Decoration 1
 Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.ChallengeSheath}
+		{$CommonItemTooltip.RecoverySpd}
 		{$CommonItemTooltip.Vanity}
 
 		'''}
 
 ChallengeSheathRecUp: {
-	DisplayName: Challenge Sheath Rec Up
+	DisplayName: Challenge Sheath / Recovery Up Decoration 1
 Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.ChallengeSheath}
+		{$CommonItemTooltip.RecUp}
 		{$CommonItemTooltip.Vanity}
 
 		'''}
