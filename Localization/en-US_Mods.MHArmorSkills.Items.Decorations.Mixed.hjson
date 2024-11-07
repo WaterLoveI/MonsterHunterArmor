@@ -1,482 +1,980 @@
 AdrenalineAttack: {
-	DisplayName: Adrenaline Attack
-	Tooltip: ""
+	DisplayName: Adrenaline Rush / Attack Boost Decoration 1
+	Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''
 }
 
 AdrenalineConstitution: {
-	DisplayName: Adrenaline Constitution
-	Tooltip: ""
+	DisplayName: Adrenaline Rush / Attack Boost Decoration 1
+	Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''
 }
 
 AdrenalineCrit: {
 	DisplayName: Adrenaline Crit
-	Tooltip: ""
+	Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''
 }
 
 AdrenalineEvadeDist: {
 	DisplayName: Adrenaline Evade Dist
-	Tooltip: ""
+	Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''
 }
 
 AdrenalineEvasion: {
 	DisplayName: Adrenaline Evasion
-	Tooltip: ""
+	Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''
 }
 
 AdrenalineHandi: {
 	DisplayName: Adrenaline Handi
-	Tooltip: ""
+	Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''
 }
 
 AdrenalineProtection: {
 	DisplayName: Adrenaline Protection
-	Tooltip: ""
+	Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''
 }
 
 AffinitySlidingAttack: {
 	DisplayName: Affinity Sliding Attack
-	Tooltip: ""
+	Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''
 }
 
 AffinitySlidingEvasion: {
 	DisplayName: Affinity Sliding Evasion
-	Tooltip: ""
+	Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''
 }
 
 AffinitySlidingFocus: {
 	DisplayName: Affinity Sliding Focus
-	Tooltip: ""
+	Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''
 }
 
 AffinitySlidingHeroics: {
 	DisplayName: Affinity Sliding Heroics
-	Tooltip: ""
+	Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''
 }
 
 AffinitySlidingSneak: {
 	DisplayName: Affinity Sliding Sneak
-	Tooltip: ""
+	Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''
 }
 
 AffinitySlidingUnscathed: {
 	DisplayName: Affinity Sliding Unscathed
-	Tooltip: ""
+	Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''
 }
 
 ArtilleryAttack: {
 	DisplayName: Artillery Attack
-	Tooltip: ""
+	Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''
 }
 
 ArtilleryDefenseBoost: {
 	DisplayName: Artillery Defense Boost
-	Tooltip: ""
+	Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''
 }
 
 ArtilleryEvadeDistance: {
 	DisplayName: Artillery Evade Distance
-	Tooltip: ""
+	Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''
 }
 
 ArtilleryEvasion: {
 	DisplayName: Artillery Evasion
-	Tooltip: ""
+	Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''
 }
 
 ArtillerySpdSetUp: {
 	DisplayName: Artillery Spd Set Up
-	Tooltip: ""
+	Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''
 }
 
 ArtilleryWindproof: {
 	DisplayName: Artillery Windproof
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 BlightproofAttack: {
 	DisplayName: Blightproof Attack
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 BlightproofConstitution: {
 	DisplayName: Blightproof Constitution
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 BlightproofCrit: {
 	DisplayName: Blightproof Crit
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 BlightproofDefenseBoost: {
 	DisplayName: Blightproof Defense Boost
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 BlightproofEvadeDistance: {
 	DisplayName: Blightproof Evade Distance
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 BlightproofEvasion: {
 	DisplayName: Blightproof Evasion
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 BlightproofHandicraft: {
 	DisplayName: Blightproof Handicraft
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 BlightproofProtection: {
 	DisplayName: Blightproof Protection
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 BlightproofRecSpd: {
 	DisplayName: Blightproof Rec Spd
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 BlightproofRecUp: {
 	DisplayName: Blightproof Rec Up
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 BubbleDanceAttack: {
 	DisplayName: Bubble Dance Attack
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 BubbleDanceConstitution: {
 	DisplayName: Bubble Dance Constitution
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 BubbleDanceCrit: {
 	DisplayName: Bubble Dance Crit
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 BubbleDanceCriticalBoost: {
 	DisplayName: Bubble Dance Critical Boost
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 BubbleDanceHealth: {
 	DisplayName: Bubble Dance Health
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 BubbleDanceStamRec: {
 	DisplayName: Bubble Dance Stam Rec
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 ChallengeSheathAttack: {
 	DisplayName: Challenge Sheath Attack
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 ChallengeSheathConstitution: {
 	DisplayName: Challenge Sheath Constitution
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 ChallengeSheathCrit: {
 	DisplayName: Challenge Sheath Crit
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 ChallengeSheathDefenseBoost: {
 	DisplayName: Challenge Sheath Defense Boost
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 ChallengeSheathEvadeDistance: {
 	DisplayName: Challenge Sheath Evade Distance
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 ChallengeSheathEvasion: {
 	DisplayName: Challenge Sheath Evasion
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 ChallengeSheathHandicraft: {
 	DisplayName: Challenge Sheath Handicraft
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 ChallengeSheathProtection: {
 	DisplayName: Challenge Sheath Protection
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 ChallengeSheathRecSpd: {
 	DisplayName: Challenge Sheath Rec Spd
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 ChallengeSheathRecUp: {
 	DisplayName: Challenge Sheath Rec Up
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 CoalescenceAttack: {
 	DisplayName: Coalescence Attack
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 CoalescenceCrit: {
 	DisplayName: Coalescence Crit
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 CoalescenceHealth: {
 	DisplayName: Coalescence Health
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 CoalescenceRazorSharp: {
 	DisplayName: Coalescence Razor Sharp
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 CoalescenceStamRec: {
 	DisplayName: Coalescence Stam Rec
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 CounterStrikeAttack: {
 	DisplayName: Counter Strike Attack
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 CounterStrikeConstitution: {
 	DisplayName: Counter Strike Constitution
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 CounterStrikeCrit: {
 	DisplayName: Counter Strike Crit
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 CounterStrikeDefenseBoost: {
 	DisplayName: Counter Strike Defense Boost
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 CounterStrikeEvadeDistance: {
 	DisplayName: Counter Strike Evade Distance
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 CounterStrikeEvasion: {
 	DisplayName: Counter Strike Evasion
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 CounterStrikeHandicraft: {
 	DisplayName: Counter Strike Handicraft
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 CounterStrikeProtection: {
 	DisplayName: Counter Strike Protection
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 CounterStrikeRecSpd: {
 	DisplayName: Counter Strike Rec Spd
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 CounterStrikeRecUp: {
 	DisplayName: Counter Strike Rec Up
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 CritDrawAttack: {
 	DisplayName: Crit Draw Attack
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 CritDrawCrit: {
 	DisplayName: Crit Draw Crit
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 CritDrawEvasion: {
 	DisplayName: Crit Draw Evasion
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 CritDrawFencing: {
 	DisplayName: Crit Draw Fencing
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 CritDrawHandicraft: {
 	DisplayName: Crit Draw Handicraft
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 CritDrawHoneyHunter: {
 	DisplayName: Crit Draw Honey Hunter
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 CriticalBoostConstitution: {
 	DisplayName: Critical Boost Constitution
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 CriticalBoostEvasion: {
 	DisplayName: Critical Boost Evasion
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 CriticalBoostProtection: {
 	DisplayName: Critical Boost Protection
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 CriticalBoostRecUp: {
 	DisplayName: Critical Boost Rec Up
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 CriticalBoostStamRec: {
 	DisplayName: Critical Boost Stam Rec
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 FateAttack: {
 	DisplayName: Fate Attack
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 FateHealth: {
 	DisplayName: Fate Health
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 FateProtection: {
 	DisplayName: Fate Protection
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 FateRecUp: {
 	DisplayName: Fate Rec Up
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 FateSneak: {
 	DisplayName: Fate Sneak
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 FateSpdEating: {
 	DisplayName: Fate Spd Eating
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 FateTenderizer: {
 	DisplayName: Fate Tenderizer
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 ForayAttack: {
 	DisplayName: Foray Attack
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 ForayConstitution: {
 	DisplayName: Foray Constitution
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 ForayCrit: {
 	DisplayName: Foray Crit
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 ForayDefenseBoost: {
 	DisplayName: Foray Defense Boost
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 ForayEvadeDistance: {
 	DisplayName: Foray Evade Distance
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 ForayEvasion: {
 	DisplayName: Foray Evasion
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 ForayHandicraft: {
 	DisplayName: Foray Handicraft
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 ForayProtection: {
 	DisplayName: Foray Protection
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 ForayRecSpd: {
 	DisplayName: Foray Rec Spd
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 ForayRecUp: {
 	DisplayName: Foray Rec Up
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 FortifiedAttack: {
 	DisplayName: Fortified Attack
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 FortifiedConstitution: {
 	DisplayName: Fortified Constitution
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 FortifiedCrit: {
 	DisplayName: Fortified Crit
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 FortifiedDefenseBoost: {
 	DisplayName: Fortified Defense Boost
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 FortifiedEvadeDistance: {
 	DisplayName: Fortified Evade Distance
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 FortifiedEvasion: {
 	DisplayName: Fortified Evasion
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 FortifiedHandicraft: {
 	DisplayName: Fortified Handicraft
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 FortifiedProtection: {
 	DisplayName: Fortified Protection
-	Tooltip: ""
-}
+Tooltip:
+		'''
+		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Vanity}
+
+		'''}
 
 FortifiedRecSpd: {
 	DisplayName: Fortified Rec Spd
