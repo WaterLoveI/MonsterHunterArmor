@@ -14,72 +14,72 @@ AdrenalineConstitution: {
 	Tooltip:
 		'''
 		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Constitution}
 		{$CommonItemTooltip.Vanity}
 
 		'''
 }
 
 AdrenalineCrit: {
-	DisplayName: Adrenaline Crit
+	DisplayName: Adrenaline Rush / Critical Eye Decoration 1
 	Tooltip:
 		'''
 		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.CritEye}
 		{$CommonItemTooltip.Vanity}
 
 		'''
 }
 
 AdrenalineEvadeDist: {
-	DisplayName: Adrenaline Evade Dist
+	DisplayName: Adrenaline Rush / Evade Distance Decoration 1
 	Tooltip:
 		'''
 		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.EvadeDistance}
 		{$CommonItemTooltip.Vanity}
 
 		'''
 }
 
 AdrenalineEvasion: {
-	DisplayName: Adrenaline Evasion
+	DisplayName: Adrenaline Rush / Evasion Decoration 1
 	Tooltip:
 		'''
 		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Evasion}
 		{$CommonItemTooltip.Vanity}
 
 		'''
 }
 
 AdrenalineHandi: {
-	DisplayName: Adrenaline Handi
+	DisplayName: Adrenaline Rush / Handicraft Decoration 1
 	Tooltip:
 		'''
 		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Handicraft}
 		{$CommonItemTooltip.Vanity}
 
 		'''
 }
 
 AdrenalineProtection: {
-	DisplayName: Adrenaline Protection
+	DisplayName: Adrenaline Rush / Protection Decoration 1
 	Tooltip:
 		'''
 		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Protection}
 		{$CommonItemTooltip.Vanity}
 
 		'''
 }
 
 AffinitySlidingAttack: {
-	DisplayName: Affinity Sliding Attack
+	DisplayName: Affinity Sliding / Attack Boost Decoration 1
 	Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.AffinitySliding}
 		{$CommonItemTooltip.AttackBoost}
 		{$CommonItemTooltip.Vanity}
 
@@ -87,65 +87,65 @@ AffinitySlidingAttack: {
 }
 
 AffinitySlidingEvasion: {
-	DisplayName: Affinity Sliding Evasion
+	DisplayName: Affinity Sliding / Evasion Decoration 1
 	Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.AffinitySliding}
+		{$CommonItemTooltip.Evasion}
 		{$CommonItemTooltip.Vanity}
 
 		'''
 }
 
 AffinitySlidingFocus: {
-	DisplayName: Affinity Sliding Focus
+	DisplayName: Affinity Sliding / Focus Decoration 1
 	Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.AffinitySliding}
+		{$CommonItemTooltip.Focus}
 		{$CommonItemTooltip.Vanity}
 
 		'''
 }
 
 AffinitySlidingHeroics: {
-	DisplayName: Affinity Sliding Heroics
+	DisplayName: Affinity Sliding / Heroics  Decoration 1
 	Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.AffinitySliding}
+		{$CommonItemTooltip.Heroics}
 		{$CommonItemTooltip.Vanity}
 
 		'''
 }
 
 AffinitySlidingSneak: {
-	DisplayName: Affinity Sliding Sneak
+	DisplayName: Affinity Sliding / Sneak Decoration 1
 	Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.AffinitySliding}
+		{$CommonItemTooltip.Sneak}
 		{$CommonItemTooltip.Vanity}
 
 		'''
 }
 
 AffinitySlidingUnscathed: {
-	DisplayName: Affinity Sliding Unscathed
+	DisplayName: Affinity Sliding / Unscathed Decoration 1
 	Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.AffinitySliding}
+		{$CommonItemTooltip.Unscathed}
 		{$CommonItemTooltip.Vanity}
 
 		'''
 }
 
 ArtilleryAttack: {
-	DisplayName: Artillery Attack
+	DisplayName: Artillery / Attack Decoration 1
 	Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
+		{$CommonItemTooltip.Artillery}
 		{$CommonItemTooltip.AttackBoost}
 		{$CommonItemTooltip.Vanity}
 
@@ -153,55 +153,55 @@ ArtilleryAttack: {
 }
 
 ArtilleryDefenseBoost: {
-	DisplayName: Artillery Defense Boost
+	DisplayName: Artillery / Defense Boost Decoration 1
 	Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Artillery}
+		{$CommonItemTooltip.DefenseBoost}
 		{$CommonItemTooltip.Vanity}
 
 		'''
 }
 
 ArtilleryEvadeDistance: {
-	DisplayName: Artillery Evade Distance
+	DisplayName: Artillery / Evade Distance Decoration 1
 	Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Artillery}
+		{$CommonItemTooltip.EvadeDistance}
 		{$CommonItemTooltip.Vanity}
 
 		'''
 }
 
 ArtilleryEvasion: {
-	DisplayName: Artillery Evasion
+	DisplayName: Artillery / Evasion Decoration 1
 	Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Artillery}
+		{$CommonItemTooltip.Evasion}
 		{$CommonItemTooltip.Vanity}
 
 		'''
 }
 
 ArtillerySpdSetUp: {
-	DisplayName: Artillery Spd Set Up
+	DisplayName: Artillery / Speed Set Up Decoration 1
 	Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Artillery}
+		{$CommonItemTooltip.SpeedSetUp}
 		{$CommonItemTooltip.Vanity}
 
 		'''
 }
 
 ArtilleryWindproof: {
-	DisplayName: Artillery Windproof
+	DisplayName: Artillery / Windproof Decoration 1
 Tooltip:
 		'''
-		{$CommonItemTooltip.AdrenalineRush}
-		{$CommonItemTooltip.AttackBoost}
+		{$CommonItemTooltip.Artillery}
+		{$CommonItemTooltip.Windproof}
 		{$CommonItemTooltip.Vanity}
 
 		'''}
