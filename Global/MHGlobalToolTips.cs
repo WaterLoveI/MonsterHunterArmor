@@ -130,6 +130,18 @@ namespace MHArmorSkills.Global
                 "Use armors with decoration slots to equip.");
                 }
             }
+            if (MHLists.MixedSlotDecorations.Contains(item.type))
+            {
+                if (modPlayer.DecorationThreeSlots > 1)
+                {
+                    EditTooltipByNum(2, (line) => line.Text = $"Currently {modPlayer.DecorationThreeSlots - 1} [○][○][○] slots available.");
+                }
+                if (modPlayer.DecorationThreeSlots <= 1)
+                {
+                    EditTooltipByNum(2, (line) => line.Text = $"Currently have no [○][○][○] slots available.\n" +
+                "Use armors with decoration slots to equip.");
+                }
+            }
             if (item.type == ModContent.ItemType<GuideBook>())
             {
                 bool SkillsActive = false;
@@ -1926,7 +1938,7 @@ namespace MHArmorSkills.Global
                 {
 
                     AddTooltip($"Artillery Level {player.GetModPlayer<ArmorSkills>().ArtilleryBombBoost} / 3: \n" +
-                         $"Increase rocket damage by {player.GetModPlayer<MHPlayerArmorSkill>().ArtilleryBuff}%.");
+                         $"Increase rocket and sentry damage by {player.GetModPlayer<MHPlayerArmorSkill>().ArtilleryBuff}%.");
                     SkillsActive = true;
                 }
                 if (player.GetModPlayer<ArmorSkills>().AMobility >= 1)

@@ -1972,7 +1972,12 @@ namespace MHArmorSkills.MHPlayer
                 damage += 0.05f;
             }
             #endregion
-
+            #region Artillery
+            if (item.sentry && ArtilleryBuff >= 1)
+            {
+                damage += (float)(ArtilleryBuff / 100f);
+            }
+            #endregion
             #region Rapid Fire
             /*if (RapidFire && item.CountsAsClass<RangedDamageClass>())
             {

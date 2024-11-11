@@ -223,6 +223,7 @@ namespace MHArmorSkills.MHPlayer
             HeavenSent = 0;
             HeatRes = 0;
             Heroics = 0;
+            HeroShield = 0;
             HonedBlade = 0;
             HoneyHunter = 0;
             IceAttack = 0;

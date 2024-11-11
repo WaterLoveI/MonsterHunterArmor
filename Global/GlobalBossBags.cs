@@ -1,5 +1,4 @@
-﻿using MHArmorSkills.Items.Accessories.Decorations;
-using MHArmorSkills.Items.Crafting_Materials.ArmorSphere;
+﻿using MHArmorSkills.Items.Crafting_Materials.ArmorSphere;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using Terraria;
 using Terraria.GameContent.ItemDropRules;
@@ -15,7 +14,7 @@ namespace MHArmorSkills.Global
             switch (item.type)
             {
                 #region Boss Treasure Bags
-                
+
                 case ItemID.KingSlimeBossBag:
                     loot.Add(new CommonDrop(ModContent.ItemType<ArmorSphere>(), 1, 1, 3));
                     loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, ModContent.ItemType<BirdWyvernGem>(), ModContent.ItemType<WyvernGem>()));
@@ -80,7 +79,7 @@ namespace MHArmorSkills.Global
                     break;
 
                 case ItemID.QueenSlimeBossBag:
-                    
+
                     loot.Add(new CommonDrop(ModContent.ItemType<HeavyArmorSphere>(), 1, 3, 5));
                     loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 1, ModContent.ItemType<LrgBeastGem>(), ModContent.ItemType<FeyWyvernGem>(), ModContent.ItemType<FineBlackPearl>()));
                     loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, ModContent.ItemType<LrgBeastGem>(), ModContent.ItemType<FeyWyvernGem>(), ModContent.ItemType<FineBlackPearl>()));
@@ -126,16 +125,16 @@ namespace MHArmorSkills.Global
                     loot.Add(new CommonDrop(ModContent.ItemType<GlowingSlime>(), 1, 3, 5));
                     loot.Add(new CommonDrop(ModContent.ItemType<DeathlyShocker>(), 3, 1, 3));
                     loot.Add(new CommonDrop(ModContent.ItemType<EbonShell>(), 3, 2, 3));
-                    int[] GThreeSlotArray = MHLists.ThreeSlotDecorations.ToArray();
+                    int[] GThreeSlotArray = MHLists.MixedSlotDecorations.ToArray();
                     loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 1, GThreeSlotArray));
-                        loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(3, 1, GThreeSlotArray)); break;
+                    loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(3, 1, GThreeSlotArray)); break;
                 case ItemID.FairyQueenBossBag:
                     loot.Add(new CommonDrop(ModContent.ItemType<KingArmorSphere>(), 1, 3, 5));
                     loot.Add(new CommonDrop(ModContent.ItemType<TrueArmorSphere>(), 2, 3, 5));
                     loot.Add(new CommonDrop(ModContent.ItemType<ThunderSac>(), 2, 3, 5));
                     loot.Add(new CommonDrop(ModContent.ItemType<BoltScale>(), 2, 1, 3));
                     loot.Add(new CommonDrop(ModContent.ItemType<GammothIceOrb>(), 5, 1, 1));
-                    int[] EoLThreeSlotArray = MHLists.ThreeSlotDecorations.ToArray();
+                    int[] EoLThreeSlotArray = MHLists.MixedSlotDecorations.ToArray();
                     loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(3, 1, EoLThreeSlotArray));
                     loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, EoLThreeSlotArray)); break;
                 case ItemID.FishronBossBag:
@@ -144,7 +143,7 @@ namespace MHArmorSkills.Global
                     loot.Add(new CommonDrop(ModContent.ItemType<TorrentSac>(), 2, 3, 5));
                     loot.Add(new CommonDrop(ModContent.ItemType<DistilledBubblefoam>(), 2, 1, 3));
                     loot.Add(new CommonDrop(ModContent.ItemType<MizutsuneWaterOrb>(), 5, 1, 1));
-                    int[] FThreeSlotArray = MHLists.ThreeSlotDecorations.ToArray();
+                    int[] FThreeSlotArray = MHLists.MixedSlotDecorations.ToArray();
                     loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(3, 1, FThreeSlotArray));
                     loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, FThreeSlotArray)); break;
                 case ItemID.BossBagBetsy:
@@ -153,21 +152,23 @@ namespace MHArmorSkills.Global
                     loot.Add(new CommonDrop(ModContent.ItemType<InfernoSac>(), 2, 3, 5));
                     loot.Add(new CommonDrop(ModContent.ItemType<FlamingShard>(), 2, 1, 3));
                     loot.Add(new CommonDrop(ModContent.ItemType<RathalosRuby>(), 5, 1, 1));
-                    int[] BThreeSlotArray = MHLists.ThreeSlotDecorations.ToArray();
+                    int[] BThreeSlotArray = MHLists.MixedSlotDecorations.ToArray();
                     loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(3, 1, BThreeSlotArray));
                     loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, BThreeSlotArray)); break;
                 case ItemID.CultistBossBag:
                     loot.Add(new CommonDrop(ModContent.ItemType<TrueArmorSphere>(), 1, 5, 10));
                     loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 5, ModContent.ItemType<RathalosRuby>(), ModContent.ItemType<GammothIceOrb>(), ModContent.ItemType<ZinogreJasper>(), ModContent.ItemType<MizutsuneWaterOrb>()));
-                    int[] CThreeSlotArray = MHLists.ThreeSlotDecorations.ToArray();
+                    int[] CThreeSlotArray = MHLists.MixedSlotDecorations.ToArray();
                     loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(3, 1, CThreeSlotArray));
                     loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, CThreeSlotArray)); break;
 
                 case ItemID.MoonLordBossBag:
                     loot.Add(new CommonDrop(ModContent.ItemType<TrueArmorSphere>(), 1, 10, 15));
-                    int[] MLThreeSlotArray = MHLists.ThreeSlotDecorations.ToArray();
+                    loot.Add(new CommonDrop(ModContent.ItemType<LrgElderDragonGem>(), 10, 1, 2));
+                    int[] MLThreeSlotArray = MHLists.MixedSlotDecorations.ToArray();
+                    int[] MLThreeSlotArray1 = MHLists.ThreeSlotDecorations.ToArray();
                     loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(3, 1, MLThreeSlotArray));
-                    loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(2, 1, MLThreeSlotArray));
+                    loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(2, 1, MLThreeSlotArray1));
                     loot.Add(new OneFromOptionsNotScaledWithLuckDropRule(1, 2, MLThreeSlotArray)); break;
 
                     #endregion

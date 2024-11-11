@@ -596,7 +596,41 @@ Mods: {
 					{$CommonItemTooltip.LastingPower@3}
 					'''
 			}
+			KirinHeadX: {
+				DisplayName: Kirin Head X
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.ThunderAttack@2}
+					{$CommonItemTooltip.Blightproof@3}
+					{$CommonItemTooltip.ThreeSlotDecor@4}
+					'''
+			}
 
+			KirinJacketX: {
+				DisplayName: Kirin Jacket X
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.Protection@2}
+					{$CommonItemTooltip.Fate@3}
+					{$CommonItemTooltip.ThreeSlotDecor@4}
+					'''
+			}
+
+			KirinLegGuardsX: {
+				DisplayName: Kirin Leg Guards X
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.CritEye@2}
+					{$CommonItemTooltip.Fate@3}
+					{$CommonItemTooltip.TwoSlotDecor@4}
+					'''
+			}
 			SailorHat: {
 				DisplayName: Sailor Hat
 				Tooltip:
@@ -677,7 +711,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.IncreaseCrit} 
 					{$CommonItemTooltip.Evasion@1}
-					{$CommonItemTooltip.BladehoneScale}
+					{$CommonItemTooltip.BladehoneScale@2}
 					'''
 			}
 
@@ -823,7 +857,27 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					{$CommonItemTooltip.Bloodlust@1}
+					{$CommonItemTooltip.Resentment@1}
+					{$CommonItemTooltip.Bloodlust@2}
+					'''
+			}
+
+			GoreMagalaMail: {
+				DisplayName: Gore Magala Mail
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.Spirit@1}
+					{$CommonItemTooltip.Coalescence@2}
+					'''
+			}
+
+			GoreMagalaGreaves: {
+				DisplayName: Gore Magala Greaves
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.Spirit@1}
 					{$CommonItemTooltip.Resentment@2}
 					'''
 			}
@@ -887,6 +941,41 @@ Mods: {
 					{$CommonItemTooltip.IncreaseMovement@1}
 					{$CommonItemTooltip.AttackBoost@2}
 					{$CommonItemTooltip.IceAttack@3}
+					'''
+			}
+			UkanlosHelmX: {
+				DisplayName: Ukanlos Helm X
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.Handicraft@2}
+					{$CommonItemTooltip.MastersTouch@3}
+					{$CommonItemTooltip.TwoSlotDecor@4}
+					'''
+			}
+
+			UkanlosMailX: {
+				DisplayName: Ukanlos Mail X
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.CritDraw@2}
+					{$CommonItemTooltip.Handicraft@3}
+					{$CommonItemTooltip.TwoSlotDecor@4}
+					'''
+			}
+
+			UkanlosGreavesX: {
+				DisplayName: Ukanlos Greaves X
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.AttackBoost@2}
+					{$CommonItemTooltip.Handicraft@3}
+					{$CommonItemTooltip.ThreeSlotDecor@4}
 					'''
 			}
 
@@ -1497,11 +1586,37 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					{$ItemTooltip.AmmoReservationPotion}
-					{$CommonItemTooltip.Guard@1}
-					{$CommonItemTooltip.Artillery@1}
-					{$CommonItemTooltip.HeroShield@2}
-					{$CommonItemTooltip.OneSlotDecor@3}
+					{$CommonItemTooltip.IncreaseSentry@1}
+					{$CommonItemTooltip.Guard@2}
+					{$CommonItemTooltip.Artillery@3}
+					{$CommonItemTooltip.HeroShield@4}
+					{$CommonItemTooltip.OneSlotDecor@5}
+					'''
+			}
+
+			SeltasMailX: {
+				DisplayName: Seltas Mail X
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.IncreaseSentry@1}
+					{$CommonItemTooltip.Artillery@2}
+					{$CommonItemTooltip.RazorSharp@3}
+					{$CommonItemTooltip.ThreeSlotDecor@4}
+					'''
+			}
+
+			SeltasGreavesX: {
+				DisplayName: Seltas Greaves X
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.IncreaseSummon@1}
+					{$CommonItemTooltip.IncreaseMovement@2}
+					{$CommonItemTooltip.HeroShield@3}
+					{$CommonItemTooltip.Handicraft@4}
+					{$CommonItemTooltip.RazorSharp@5}
+					{$CommonItemTooltip.TwoSlotDecor@6}
 					'''
 			}
 
@@ -1527,6 +1642,42 @@ Mods: {
 					{$CommonItemTooltip.Spirit@3}
 					{$CommonItemTooltip.Bloodlust@4}
 					{$CommonItemTooltip.TwoSlotDecor@5}
+					'''
+			}
+
+			GoreMagalaHelmX: {
+				DisplayName: Gore Magala Helm X
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.Resentment@2}
+					{$CommonItemTooltip.Bloodlust@3}
+					{$CommonItemTooltip.ThreeSlotDecor@4}
+					'''
+			}
+
+			GoreMagalaMailX: {
+				DisplayName: Gore Magala Mail X
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.Coalescence@2}
+					{$CommonItemTooltip.Spirit@3}
+					{$CommonItemTooltip.TwoSlotDecor@4}
+					'''
+			}
+
+			GoreMagalaGreavesX: {
+				DisplayName: Gore Magala Greaves X
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.Evasion@2}
+					{$CommonItemTooltip.Spirit@3}
+					{$CommonItemTooltip.TwoSlotDecor@4}
 					'''
 			}
 
@@ -4536,6 +4687,2646 @@ Mods: {
 			SeltasTreasureBag: {
 				DisplayName: Seltas Treasure Bag
 				Tooltip: ""
+			}
+
+			AdrenalineAttack: {
+				DisplayName: Adrenaline Rush / Attack Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.AdrenalineRush}
+					{$CommonItemTooltip.AttackBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			AdrenalineConstitution: {
+				DisplayName: Adrenaline Rush / Attack Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.AdrenalineRush}
+					{$CommonItemTooltip.Constitution}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			AdrenalineCrit: {
+				DisplayName: Adrenaline Rush / Critical Eye Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.AdrenalineRush}
+					{$CommonItemTooltip.CritEye}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			AdrenalineEvadeDist: {
+				DisplayName: Adrenaline Rush / Evade Distance Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.AdrenalineRush}
+					{$CommonItemTooltip.EvadeDistance}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			AdrenalineEvasion: {
+				DisplayName: Adrenaline Rush / Evasion Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.AdrenalineRush}
+					{$CommonItemTooltip.Evasion}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			AdrenalineHandi: {
+				DisplayName: Adrenaline Rush / Handicraft Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.AdrenalineRush}
+					{$CommonItemTooltip.Handicraft}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			AdrenalineProtection: {
+				DisplayName: Adrenaline Rush / Protection Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.AdrenalineRush}
+					{$CommonItemTooltip.Protection}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			AffinitySlidingAttack: {
+				DisplayName: Affinity Sliding / Attack Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.AffinitySliding}
+					{$CommonItemTooltip.AttackBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			AffinitySlidingEvasion: {
+				DisplayName: Affinity Sliding / Evasion Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.AffinitySliding}
+					{$CommonItemTooltip.Evasion}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			AffinitySlidingFocus: {
+				DisplayName: Affinity Sliding / Focus Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.AffinitySliding}
+					{$CommonItemTooltip.Focus}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			AffinitySlidingHeroics: {
+				DisplayName: Affinity Sliding / Heroics  Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.AffinitySliding}
+					{$CommonItemTooltip.Heroics}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			AffinitySlidingSneak: {
+				DisplayName: Affinity Sliding / Sneak Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.AffinitySliding}
+					{$CommonItemTooltip.Sneak}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			AffinitySlidingUnscathed: {
+				DisplayName: Affinity Sliding / Unscathed Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.AffinitySliding}
+					{$CommonItemTooltip.Unscathed}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ArtilleryAttack: {
+				DisplayName: Artillery / Attack Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Artillery}
+					{$CommonItemTooltip.AttackBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ArtilleryDefenseBoost: {
+				DisplayName: Artillery / Defense Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Artillery}
+					{$CommonItemTooltip.DefenseBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ArtilleryEvadeDistance: {
+				DisplayName: Artillery / Evade Distance Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Artillery}
+					{$CommonItemTooltip.EvadeDistance}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ArtilleryEvasion: {
+				DisplayName: Artillery / Evasion Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Artillery}
+					{$CommonItemTooltip.Evasion}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ArtillerySpdSetUp: {
+				DisplayName: Artillery / Speed Set Up Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Artillery}
+					{$CommonItemTooltip.SpeedSetUp}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ArtilleryWindproof: {
+				DisplayName: Artillery / Windproof Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Artillery}
+					{$CommonItemTooltip.Windproof}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			BlightproofAttack: {
+				DisplayName: Blightproof / Attack Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Blightproof}
+					{$CommonItemTooltip.AttackBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			BlightproofConstitution: {
+				DisplayName: Blightproof / Constitution Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Blightproof}
+					{$CommonItemTooltip.Constitution}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			BlightproofCrit: {
+				DisplayName: Blightproof / Critical Eye Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Blightproof}
+					{$CommonItemTooltip.CritEye}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			BlightproofDefenseBoost: {
+				DisplayName: Blightproof / Defense Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Blightproof}
+					{$CommonItemTooltip.DefenseBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			BlightproofEvadeDistance: {
+				DisplayName: Blightproof / Evade Distance Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Blightproof}
+					{$CommonItemTooltip.EvadeDistance}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			BlightproofEvasion: {
+				DisplayName: Blightproof / Evasion Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Blightproof}
+					{$CommonItemTooltip.Evasion}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			BlightproofHandicraft: {
+				DisplayName: Blightproof / Handicraft Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Blightproof}
+					{$CommonItemTooltip.Handicraft}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			BlightproofProtection: {
+				DisplayName: Blightproof / Protection Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Blightproof}
+					{$CommonItemTooltip.Protection}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			BlightproofRecSpd: {
+				DisplayName: Blightproof / Recovery Spd Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Blightproof}
+					{$CommonItemTooltip.RecoverySpd}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			BlightproofRecUp: {
+				DisplayName: Blightproof / Recovery Up Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Blightproof}
+					{$CommonItemTooltip.RecUp}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			BubbleDanceAttack: {
+				DisplayName: Bubble Dance / Attack Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.BubbleDance}
+					{$CommonItemTooltip.AttackBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			BubbleDanceConstitution: {
+				DisplayName: Bubble Dance / Constitution Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.BubbleDance}
+					{$CommonItemTooltip.Constitution}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			BubbleDanceCrit: {
+				DisplayName: Bubble Dance / Critical Eye Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.BubbleDance}
+					{$CommonItemTooltip.CritEye}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			BubbleDanceCriticalBoost: {
+				DisplayName: Bubble Dance / Critical Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.BubbleDance}
+					{$CommonItemTooltip.CriticalBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			BubbleDanceHealth: {
+				DisplayName: Bubble Dance / Health Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.BubbleDance}
+					{$CommonItemTooltip.Health}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			BubbleDanceStamRec: {
+				DisplayName: Bubble Dance / Stamina Recovery Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.BubbleDance}
+					{$CommonItemTooltip.StamRecovery}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ChallengeSheathAttack: {
+				DisplayName: Challenge Sheath / Attack Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.ChallengeSheath}
+					{$CommonItemTooltip.AttackBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ChallengeSheathConstitution: {
+				DisplayName: Challenge Sheath / Constitution Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.ChallengeSheath}
+					{$CommonItemTooltip.Constitution}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ChallengeSheathCrit: {
+				DisplayName: Challenge Sheath / Critical Eye Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.ChallengeSheath}
+					{$CommonItemTooltip.CritEye}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ChallengeSheathDefenseBoost: {
+				DisplayName: Challenge Sheath / Defense Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.ChallengeSheath}
+					{$CommonItemTooltip.DefenseBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ChallengeSheathEvadeDistance: {
+				DisplayName: Challenge Sheath / Evade Distance Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.ChallengeSheath}
+					{$CommonItemTooltip.EvadeDistance}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ChallengeSheathEvasion: {
+				DisplayName: Challenge Sheath / Evasion Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.ChallengeSheath}
+					{$CommonItemTooltip.Evasion}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ChallengeSheathHandicraft: {
+				DisplayName: Challenge Sheath / Handicraft Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.ChallengeSheath}
+					{$CommonItemTooltip.Handicraft}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ChallengeSheathProtection: {
+				DisplayName: Challenge Sheath / Protection Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.ChallengeSheath}
+					{$CommonItemTooltip.Protection}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ChallengeSheathRecSpd: {
+				DisplayName: Challenge Sheath / Recovery Spd Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.ChallengeSheath}
+					{$CommonItemTooltip.RecoverySpd}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ChallengeSheathRecUp: {
+				DisplayName: Challenge Sheath / Recovery Up Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.ChallengeSheath}
+					{$CommonItemTooltip.RecUp}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			CoalescenceAttack: {
+				DisplayName: Coalescence / Attack Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Coalescence}
+					{$CommonItemTooltip.AttackBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			CoalescenceCrit: {
+				DisplayName: Coalescence / Critical Eye Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Coalescence}
+					{$CommonItemTooltip.CritEye}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			CoalescenceHealth: {
+				DisplayName: Coalescence / Health Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Coalescence}
+					{$CommonItemTooltip.Health}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			CoalescenceRazorSharp: {
+				DisplayName: Coalescence / Razor Sharp Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Coalescence}
+					{$CommonItemTooltip.RazorSharp}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			CoalescenceStamRec: {
+				DisplayName: Coalescence / Stamina Recovery Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Coalescence}
+					{$CommonItemTooltip.StamRecovery}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			CounterStrikeAttack: {
+				DisplayName: Counterstrike / Attack Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.CounterStrike}
+					{$CommonItemTooltip.AttackBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			CounterStrikeConstitution: {
+				DisplayName: Counterstrike / Constitution Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.CounterStrike}
+					{$CommonItemTooltip.Constitution}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			CounterStrikeCrit: {
+				DisplayName: Counterstrike / Critical Eye Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.CounterStrike}
+					{$CommonItemTooltip.CritEye}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			CounterStrikeDefenseBoost: {
+				DisplayName: Counterstrike / Defense Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.CounterStrike}
+					{$CommonItemTooltip.DefenseBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			CounterStrikeEvadeDistance: {
+				DisplayName: Counterstrike / Evade Distance Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.CounterStrike}
+					{$CommonItemTooltip.EvadeDistance}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			CounterStrikeEvasion: {
+				DisplayName: Counterstrike / Evasion Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.CounterStrike}
+					{$CommonItemTooltip.Evasion}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			CounterStrikeHandicraft: {
+				DisplayName: Counterstrike / Handicraft Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.CounterStrike}
+					{$CommonItemTooltip.Handicraft}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			CounterStrikeProtection: {
+				DisplayName: Counterstrike / Protection Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.CounterStrike}
+					{$CommonItemTooltip.Protection}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			CounterStrikeRecSpd: {
+				DisplayName: Counterstrike / Recovery Speed Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.CounterStrike}
+					{$CommonItemTooltip.RecoverySpd}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			CounterStrikeRecUp: {
+				DisplayName: Counterstrike / Recovery Up Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.CounterStrike}
+					{$CommonItemTooltip.RecUp}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			CritDrawAttack: {
+				DisplayName: Crit Draw / Attack Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.CritDraw}
+					{$CommonItemTooltip.AttackBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			CritDrawCrit: {
+				DisplayName: Crit Draw / Critical Eye Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.CritDraw}
+					{$CommonItemTooltip.CritEye}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			CritDrawEvasion: {
+				DisplayName: Crit Draw / Evasion Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.CritDraw}
+					{$CommonItemTooltip.Evasion}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			CritDrawFencing: {
+				DisplayName: Crit Draw / Fencing Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.CritDraw}
+					{$CommonItemTooltip.Fencing}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			CritDrawHandicraft: {
+				DisplayName: Crit Draw / Handicraft Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.CritDraw}
+					{$CommonItemTooltip.Handicraft}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			CritDrawHoneyHunter: {
+				DisplayName: Crit Draw / Honey Hunter Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.CritDraw}
+					{$CommonItemTooltip.HoneyHunter}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			CriticalBoostConstitution: {
+				DisplayName: Critical Boost / Constitution Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.CriticalBoost}
+					{$CommonItemTooltip.Constitution}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			CriticalBoostEvasion: {
+				DisplayName: Critical Boost / Evasion Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.CriticalBoost}
+					{$CommonItemTooltip.Evasion}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			CriticalBoostProtection: {
+				DisplayName: Critical Boost / Protection Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.CriticalBoost}
+					{$CommonItemTooltip.Protection}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			CriticalBoostRecUp: {
+				DisplayName: Critical Boost / Recovery Up Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.CriticalBoost}
+					{$CommonItemTooltip.RecUp}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			CriticalBoostStamRec: {
+				DisplayName: Critical Boost / Stamina Recovery Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.CriticalBoost}
+					{$CommonItemTooltip.StamRecovery}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			FateAttack: {
+				DisplayName: Fate / Attack Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Fate}
+					{$CommonItemTooltip.AttackBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			FateHealth: {
+				DisplayName: Fate / Health Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Fate}
+					{$CommonItemTooltip.Health}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			FateProtection: {
+				DisplayName: Fate / Protection Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Fate}
+					{$CommonItemTooltip.Protection}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			FateRecUp: {
+				DisplayName: Fate / Recovery Up Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Fate}
+					{$CommonItemTooltip.RecUp}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			FateSneak: {
+				DisplayName: Fate / Sneak Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Fate}
+					{$CommonItemTooltip.Sneak}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			FateSpdEating: {
+				DisplayName: Fate / Speed Eating Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Fate}
+					{$CommonItemTooltip.SpeedEating}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			FateTenderizer: {
+				DisplayName: Fate / Tenderizer Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Fate}
+					{$CommonItemTooltip.Tenderizer}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ForayAttack: {
+				DisplayName: Foray / Attack Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Foray}
+					{$CommonItemTooltip.AttackBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ForayConstitution: {
+				DisplayName: Foray / Constitution Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Foray}
+					{$CommonItemTooltip.Constitution}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ForayCrit: {
+				DisplayName: Foray / Critical Eye Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Foray}
+					{$CommonItemTooltip.CritEye}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ForayDefenseBoost: {
+				DisplayName: Foray / Defense Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Foray}
+					{$CommonItemTooltip.DefenseBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ForayEvadeDistance: {
+				DisplayName: Foray / Evade Distance Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Foray}
+					{$CommonItemTooltip.EvadeDistance}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ForayEvasion: {
+				DisplayName: Foray / Evasion Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Foray}
+					{$CommonItemTooltip.Evasion}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ForayHandicraft: {
+				DisplayName: Foray / Handicraft Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Foray}
+					{$CommonItemTooltip.Handicraft}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ForayProtection: {
+				DisplayName: Foray / Protection Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Foray}
+					{$CommonItemTooltip.Protection}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ForayRecSpd: {
+				DisplayName: Foray / Recovery Speed Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Foray}
+					{$CommonItemTooltip.RecoverySpd}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ForayRecUp: {
+				DisplayName: Foray / Recovery Up Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Foray}
+					{$CommonItemTooltip.RecUp}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			FortifiedAttack: {
+				DisplayName: Fortified / Attack Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Fortified}
+					{$CommonItemTooltip.AttackBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			FortifiedConstitution: {
+				DisplayName: Fortified / Constitution Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Fortified}
+					{$CommonItemTooltip.Constituion}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			FortifiedCrit: {
+				DisplayName: Fortified / Critical Eye Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Fortified}
+					{$CommonItemTooltip.CritEye}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			FortifiedDefenseBoost: {
+				DisplayName: Fortified / Defense Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Fortified}
+					{$CommonItemTooltip.DefenseBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			FortifiedEvadeDistance: {
+				DisplayName: Fortified / Evade Distance Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Fortified}
+					{$CommonItemTooltip.EvadeDistance}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			FortifiedEvasion: {
+				DisplayName: Fortified / Evasion Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Fortified}
+					{$CommonItemTooltip.Evasion}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			FortifiedHandicraft: {
+				DisplayName: Fortified / Handicraft Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Fortified}
+					{$CommonItemTooltip.Handicraft}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			FortifiedProtection: {
+				DisplayName: Fortified / Protection Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Fortified}
+					{$CommonItemTooltip.Protection}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			FortifiedRecSpd: {
+				DisplayName: Fortified / Recovery Speed Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Fortified}
+					{$CommonItemTooltip.RecoverySpd}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			FortifiedRecUp: {
+				DisplayName: Fortified / Recovery Up Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Fortified}
+					{$CommonItemTooltip.RecUp}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			FreeMealAttack: {
+				DisplayName: Free Meal / Attack Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.FreeMeal}
+					{$CommonItemTooltip.AttackBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			FreeMealEvasion: {
+				DisplayName: Free Meal / Evasion Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.FreeMeal}
+					{$CommonItemTooltip.Evasion}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			FreeMealHealth: {
+				DisplayName: Free Meal / Health Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.FreeMeal}
+					{$CommonItemTooltip.Health}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			FreeMealJumpMaster: {
+				DisplayName: Free Meal / Jump Master Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.FreeMeal}
+					{$CommonItemTooltip.JumpMaster}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			FreeMealProtection: {
+				DisplayName: Free Meal / Protection Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.FreeMeal}
+					{$CommonItemTooltip.Protection}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			FreeMealStamRec: {
+				DisplayName: Free Meal / Stamina Recovery Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.FreeMeal}
+					{$CommonItemTooltip.StamRecovery}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			GuardAttack: {
+				DisplayName: Guard / Attack Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Guard}
+					{$CommonItemTooltip.AttackBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			GuardCrit: {
+				DisplayName: Guard / Critical Eye Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Guard}
+					{$CommonItemTooltip.CritEye}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			GuardHandi: {
+				DisplayName: Guard / Handicraft Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Guard}
+					{$CommonItemTooltip.Handicraft}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			GuardProtection: {
+				DisplayName: Guard / Protection Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Guard}
+					{$CommonItemTooltip.Protection}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			GuardRecSpd: {
+				DisplayName: Guard / Recovery Speed Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Guard}
+					{$CommonItemTooltip.RecoverySpd}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			GuardRecUp: {
+				DisplayName: Guard / Recovery Up Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Guard}
+					{$CommonItemTooltip.RecUp}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			HandicraftAttack: {
+				DisplayName: Handicraft / Attack Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Handicraft}
+					{$CommonItemTooltip.AttackBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			HandicraftCrit: {
+				DisplayName: Handicraft / Critical Eye Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Handicraft}
+					{$CommonItemTooltip.CritEye}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			HandicraftDefenseBoost: {
+				DisplayName: Handicraft / Defense Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Handicraft}
+					{$CommonItemTooltip.DefenseBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			HandicraftEvasion: {
+				DisplayName: Handicraft / Evasion Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Handicraft}
+					{$CommonItemTooltip.Evasion}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			HandicraftProtection: {
+				DisplayName: Handicraft / Protection Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Handicraft}
+					{$CommonItemTooltip.Protection}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			HandicraftRecSpd: {
+				DisplayName: Handicraft / Recovery Speed Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Handicraft}
+					{$CommonItemTooltip.RecoverySpd}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			HandicraftRecUp: {
+				DisplayName: Handicraft / Recovery Up Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Handicraft}
+					{$CommonItemTooltip.RecUp}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			HealthAttack: {
+				DisplayName: Health / Attack Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Health}
+					{$CommonItemTooltip.AttackBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			HealthConstitution: {
+				DisplayName: Health / Constitution Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Health}
+					{$CommonItemTooltip.Constituion}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			HealthCrit: {
+				DisplayName: Health / Critical Eye Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Health}
+					{$CommonItemTooltip.CritEye}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			HealthDefenseBoost: {
+				DisplayName: Health / Defense Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Health}
+					{$CommonItemTooltip.DefenseBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			HealthEvadeDistance: {
+				DisplayName: Health / Evade Distance Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Health}
+					{$CommonItemTooltip.EvadeDistance}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			HealthEvasion: {
+				DisplayName: Health / Evasion Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Health}
+					{$CommonItemTooltip.Evasion}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			HealthHandicraft: {
+				DisplayName: Health / Handicraft Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Health}
+					{$CommonItemTooltip.Handicraft}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			HealthProtection: {
+				DisplayName: Health / Protection Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Health}
+					{$CommonItemTooltip.Protection}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			HealthRecSpd: {
+				DisplayName: Health / Recovery Speed Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Health}
+					{$CommonItemTooltip.RecoverySpd}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			HealthRecUp: {
+				DisplayName: Health / Recovery Up Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Health}
+					{$CommonItemTooltip.RecUp}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			LatentPowerAttack: {
+				DisplayName: Latent Power / Attack Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.LatentPower}
+					{$CommonItemTooltip.AttackBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			LatentPowerConstitution: {
+				DisplayName: Latent Power / Constitution Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.LatentPower}
+					{$CommonItemTooltip.Constitution}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			LatentPowerCrit: {
+				DisplayName: Latent Power / Critical Eye Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.LatentPower}
+					{$CommonItemTooltip.CritEye}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			LatentPowerDefenseBoost: {
+				DisplayName: Latent Power / Defense Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.LatentPower}
+					{$CommonItemTooltip.DefenseBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			LatentPowerEvadeDistance: {
+				DisplayName: Latent Power / Evade Distance Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.LatentPower}
+					{$CommonItemTooltip.EvadeDistance}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			LatentPowerEvasion: {
+				DisplayName: Latent Power / Evasion Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.LatentPower}
+					{$CommonItemTooltip.Evasion}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			LatentPowerHandicraft: {
+				DisplayName: Latent Power / Handicraft Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.LatentPower}
+					{$CommonItemTooltip.Handicraft}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			LatentPowerProtection: {
+				DisplayName: Latent Power / Protection Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.LatentPower}
+					{$CommonItemTooltip.Protection}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			LatentPowerRecSpd: {
+				DisplayName: Latent Power / Recovery Speed Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.LatentPower}
+					{$CommonItemTooltip.RecoverySpd}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			LatentPowerRecUp: {
+				DisplayName: Latent Power / Recovery Up Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.LatentPower}
+					{$CommonItemTooltip.RecUp}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			MastersTouchAttack: {
+				DisplayName: Master's Touch / Attack Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.MastersTouch}
+					{$CommonItemTooltip.AttackBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			MastersTouchConstitution: {
+				DisplayName: Master's Touch / Constitution Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.MastersTouch}
+					{$CommonItemTooltip.Constitution}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			MastersTouchCrit: {
+				DisplayName: Master's Touch / Critical Eye Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.MastersTouch}
+					{$CommonItemTooltip.CritEye}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			MastersTouchDefenseBoost: {
+				DisplayName: Master's Touch / Defense Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.MastersTouch}
+					{$CommonItemTooltip.DefenseBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			MastersTouchEvadeDistance: {
+				DisplayName: Master's Touch / Evade Distance Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.MastersTouch}
+					{$CommonItemTooltip.EvadeDistance}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			MastersTouchEvasion: {
+				DisplayName: Master's Touch / Evasion Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.MastersTouch}
+					{$CommonItemTooltip.Evasion}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			MastersTouchHandicraft: {
+				DisplayName: Master's Touch / Handicraft Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.MastersTouch}
+					{$CommonItemTooltip.Handicraft}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			MastersTouchProtection: {
+				DisplayName: Master's Touch / Protection Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.MastersTouch}
+					{$CommonItemTooltip.Protection}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			MastersTouchRecSpd: {
+				DisplayName: Master's Touch / Recovery Spd Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.MastersTouch}
+					{$CommonItemTooltip.RecoverySpd}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			MastersTouchRecUp: {
+				DisplayName: Master's Touch / Recovery Up Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.MastersTouch}
+					{$CommonItemTooltip.RecUp}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			MushroomancerAttack: {
+				DisplayName: Mushroomancer / Attack Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Mushroomancer}
+					{$CommonItemTooltip.AttackBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			MushroomancerConstitution: {
+				DisplayName: Mushroomancer / Constitution Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Mushroomancer}
+					{$CommonItemTooltip.Constitution}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			MushroomancerCrit: {
+				DisplayName: Mushroomancer / Critical Eye Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Mushroomancer}
+					{$CommonItemTooltip.CritEye}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			MushroomancerDefenseBoost: {
+				DisplayName: Mushroomancer / Defense Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Mushroomancer}
+					{$CommonItemTooltip.DefenseBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			MushroomancerEvadeDistance: {
+				DisplayName: Mushroomancer / Evade Distance Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Mushroomancer}
+					{$CommonItemTooltip.EvadeDistance}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			MushroomancerEvasion: {
+				DisplayName: Mushroomancer / Evasion Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Mushroomancer}
+					{$CommonItemTooltip.Evasion}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			MushroomancerHandicraft: {
+				DisplayName: Mushroomancer / Handicraft Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Mushroomancer}
+					{$CommonItemTooltip.Handicraft}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			MushroomancerProtection: {
+				DisplayName: Mushroomancer / Protection Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Mushroomancer}
+					{$CommonItemTooltip.Protection}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			MushroomancerRecSpd: {
+				DisplayName: Mushroomancer / Recovery Speed Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Mushroomancer}
+					{$CommonItemTooltip.RecoverySpd}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			MushroomancerRecUp: {
+				DisplayName: Mushroomancer / Recovery Up Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Mushroomancer}
+					{$CommonItemTooltip.RecUp}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			OffensiveGuardAttack: {
+				DisplayName: Offensive Guard / Attack Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.OffensiveGuard}
+					{$CommonItemTooltip.AttackBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			OffensiveGuardCrit: {
+				DisplayName: Offensive Guard / Critical Eye Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.OffensiveGuard}
+					{$CommonItemTooltip.CritEye}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			OffensiveGuardDiversion: {
+				DisplayName: Offensive Guard / Diversion Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.OffensiveGuard}
+					{$CommonItemTooltip.Diversion}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			OffensiveGuardFortified: {
+				DisplayName: Offensive Guard / Fortified Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.OffensiveGuard}
+					{$CommonItemTooltip.Fortified}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			OffensiveGuardHandicraft: {
+				DisplayName: Offensive Guard / Handicraft Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.OffensiveGuard}
+					{$CommonItemTooltip.Handicraft}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			OffensiveGuardMushroomancer: {
+				DisplayName: Offensive Guard / Mushroomancer Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.OffensiveGuard}
+					{$CommonItemTooltip.Mushroomancer}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			OffensiveGuardRecUp: {
+				DisplayName: Offensive Guard / Recovery Up Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.OffensiveGuard}
+					{$CommonItemTooltip.RecUp}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			PolarHunterAttack: {
+				DisplayName: Polar Hunter / Attack Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PolarHunter}
+					{$CommonItemTooltip.AttackBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			PolarHunterCrit: {
+				DisplayName: Polar Hunter / Critical Eye Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PolarHunter}
+					{$CommonItemTooltip.CritEye}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			PolarHunterHandi: {
+				DisplayName: Polar Hunter / Handicraft Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PolarHunter}
+					{$CommonItemTooltip.Handicraft}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			PolarHunterProtection: {
+				DisplayName: Polar Hunter / Protection Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PolarHunter}
+					{$CommonItemTooltip.Protection}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			PolarHunterRecSpd: {
+				DisplayName: Polar Hunter / Recovery Speed Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PolarHunter}
+					{$CommonItemTooltip.RecoverySpd}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			PolarHunterRecUp: {
+				DisplayName: Polar Hunter / Recovery Up Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PolarHunter}
+					{$CommonItemTooltip.RecUp}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			PunishDrawAttack: {
+				DisplayName: Punish Draw / Attack Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PunishDraw}
+					{$CommonItemTooltip.AttackBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			PunishDrawConstitution: {
+				DisplayName: Punish Draw / Constitution Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PunishDraw}
+					{$CommonItemTooltip.Constitution}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			PunishDrawCrit: {
+				DisplayName: Punish Draw / Critical Eye Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PunishDraw}
+					{$CommonItemTooltip.CritEye}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			PunishDrawDefenseBoost: {
+				DisplayName: Punish Draw / Defense Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PunishDraw}
+					{$CommonItemTooltip.DefenseBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			PunishDrawEvadeDistance: {
+				DisplayName: Punish Draw / Evade Distance Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PunishDraw}
+					{$CommonItemTooltip.EvadeDistance}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			PunishDrawEvasion: {
+				DisplayName: Punish Draw / Evasion Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PunishDraw}
+					{$CommonItemTooltip.Evasion}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			PunishDrawHandicraft: {
+				DisplayName: Punish Draw / Handicraft Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PunishDraw}
+					{$CommonItemTooltip.Handicraft}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			PunishDrawProtection: {
+				DisplayName: Punish Draw / Protection Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PunishDraw}
+					{$CommonItemTooltip.Protection}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			PunishDrawRecSpd: {
+				DisplayName: Punish Draw / Recovery Speed Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PunishDraw}
+					{$CommonItemTooltip.RecoverySpd}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			PunishDrawRecUp: {
+				DisplayName: Punish Draw / Recovery Up Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PunishDraw}
+					{$CommonItemTooltip.RecUp}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			QuickSheathAttack: {
+				DisplayName: Quick Sheath / Attack Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.QuickSheath}
+					{$CommonItemTooltip.AttackBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			QuickSheathConstitution: {
+				DisplayName: Quick Sheath / Constitution Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.QuickSheath}
+					{$CommonItemTooltip.Constitution}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			QuickSheathCrit: {
+				DisplayName: Quick Sheath / Critical Eye Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.QuickSheath}
+					{$CommonItemTooltip.CritEye}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			QuickSheathDefenseBoost: {
+				DisplayName: Quick Sheath / Defense Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.QuickSheath}
+					{$CommonItemTooltip.DefenseBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			QuickSheathEvadeDistance: {
+				DisplayName: Quick Sheath / Evade Distance Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.QuickSheath}
+					{$CommonItemTooltip.EvadeDistance}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			QuickSheathEvasion: {
+				DisplayName: Quick Sheath / Evasion Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.QuickSheath}
+					{$CommonItemTooltip.Evasion}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			QuickSheathHandicraft: {
+				DisplayName: Quick Sheath / Handicraft Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.QuickSheath}
+					{$CommonItemTooltip.Handicraft}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			QuickSheathProtection: {
+				DisplayName: Quick Sheath / Protection Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.QuickSheath}
+					{$CommonItemTooltip.Protection}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			QuickSheathRecSpd: {
+				DisplayName: Quick Sheath / Recovery Speed Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.QuickSheath}
+					{$CommonItemTooltip.RecoverySpd}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			QuickSheathRecUp: {
+				DisplayName: Quick Sheath / Recovery Up Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.QuickSheath}
+					{$CommonItemTooltip.RecUp}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ResentmentAttack: {
+				DisplayName: Resentment / Attack Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Resentment}
+					{$CommonItemTooltip.AttackBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ResentmentConstitution: {
+				DisplayName: Resentment / Constitution Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Resentment}
+					{$CommonItemTooltip.Constitiion}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ResentmentCrit: {
+				DisplayName: Resentment / Critical Eye Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Resentment}
+					{$CommonItemTooltip.CritEye}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ResentmentDefenseBoost: {
+				DisplayName: Resentment / Defense Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Resentment}
+					{$CommonItemTooltip.DefenseBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ResentmentEvadeDistance: {
+				DisplayName: Resentment / Evade Distance Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Resentment}
+					{$CommonItemTooltip.EvadeDistance}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ResentmentEvasion: {
+				DisplayName: Resentment / Evasion Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Resentment}
+					{$CommonItemTooltip.Evasion}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ResentmentHandicraft: {
+				DisplayName: Resentment / Handicraft Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Resentment}
+					{$CommonItemTooltip.Handicraft}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ResentmentProtection: {
+				DisplayName: Resentment / Protection Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Resentment}
+					{$CommonItemTooltip.Protection}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ResentmentRecSpd: {
+				DisplayName: Resentment / Recovery Speed Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Resentment}
+					{$CommonItemTooltip.RecoverySpd}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ResentmentRecUp: {
+				DisplayName: Resentment / Recovery Up Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Resentment}
+					{$CommonItemTooltip.RecUp}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ResuscitateAttack: {
+				DisplayName: Resuscitate / Attack Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Resuscitate}
+					{$CommonItemTooltip.AttackBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ResuscitateConstitution: {
+				DisplayName: Resuscitate / Constitution Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Resuscitate}
+					{$CommonItemTooltip.Constitution}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ResuscitateCrit: {
+				DisplayName: Resuscitate / Critical Eye Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Resuscitate}
+					{$CommonItemTooltip.CritEye}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ResuscitateDefenseBoost: {
+				DisplayName: Resuscitate / Defense Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Resuscitate}
+					{$CommonItemTooltip.DefenseBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ResuscitateEvadeDistance: {
+				DisplayName: Resuscitate / Evade Distance Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Resuscitate}
+					{$CommonItemTooltip.EvadeDistance}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ResuscitateEvasion: {
+				DisplayName: Resuscitate / Evasion Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Resuscitate}
+					{$CommonItemTooltip.Evasion}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ResuscitateHandicraft: {
+				DisplayName: Resuscitate / Handicraft Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Resuscitate}
+					{$CommonItemTooltip.Handicraft}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ResuscitateProtection: {
+				DisplayName: Resuscitate / Protection Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Resuscitate}
+					{$CommonItemTooltip.Protection}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ResuscitateRecSpd: {
+				DisplayName: Resuscitate / Recovery Speed Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Resuscitate}
+					{$CommonItemTooltip.RecoverySpd}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			ResuscitateRecUp: {
+				DisplayName: Resuscitate / Recovery Up Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Resuscitate}
+					{$CommonItemTooltip.RecUp}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			SpiritAttack: {
+				DisplayName: Spirit / Attack Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Spirit}
+					{$CommonItemTooltip.AttackBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			SpiritConstitution: {
+				DisplayName: Spirit / Constitution Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Spirit}
+					{$CommonItemTooltip.Constitution}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			SpiritCrit: {
+				DisplayName: Spirit / Critical Eye Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Spirit}
+					{$CommonItemTooltip.CritEye}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			SpiritDefenseBoost: {
+				DisplayName: Spirit / Defense Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Spirit}
+					{$CommonItemTooltip.DefenseBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			SpiritEvadeDistance: {
+				DisplayName: Spirit / Evade Distance Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Spirit}
+					{$CommonItemTooltip.EvadeDistance}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			SpiritEvasion: {
+				DisplayName: Spirit / Evasion Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Spirit}
+					{$CommonItemTooltip.Evasion}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			SpiritHandicraft: {
+				DisplayName: Spirit / Handicraft Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Spirit}
+					{$CommonItemTooltip.Handicraft}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			SpiritProtection: {
+				DisplayName: Spirit / Protection Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Spirit}
+					{$CommonItemTooltip.Protection}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			SpiritRecSpd: {
+				DisplayName: Spirit / Recovery Speed Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Spirit}
+					{$CommonItemTooltip.RecoverySpd}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			SpiritRecUp: {
+				DisplayName: Spirit / Recovery Up Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Spirit}
+					{$CommonItemTooltip.RecUp}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			TropicsHunterAttack: {
+				DisplayName: Tropics Hunter / Attack Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.TropicsHunter}
+					{$CommonItemTooltip.AttackBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			TropicsHunterConstitution: {
+				DisplayName: Tropics Hunter / Constitution Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.TropicsHunter}
+					{$CommonItemTooltip.Constitution}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			TropicsHunterCrit: {
+				DisplayName: Tropics Hunter / Critical Eye Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.TropicsHunter}
+					{$CommonItemTooltip.CritEye}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			TropicsHunterDefenseBoost: {
+				DisplayName: Tropics Hunter / Defense Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.TropicsHunter}
+					{$CommonItemTooltip.DefenseBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			TropicsHunterEvadeDistance: {
+				DisplayName: Tropics Hunter / Evade Distance Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.TropicsHunter}
+					{$CommonItemTooltip.EvadeDistance}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			TropicsHunterEvasion: {
+				DisplayName: Tropics Hunter / Evasion Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.TropicsHunter}
+					{$CommonItemTooltip.Evasion}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			TropicsHunterHandicraft: {
+				DisplayName: Tropics Hunter / Handicraft Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.TropicsHunter}
+					{$CommonItemTooltip.Handicraft}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			TropicsHunterProtection: {
+				DisplayName: Tropics Hunter / Protection Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.TropicsHunter}
+					{$CommonItemTooltip.Protection}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			TropicsHunterRecSpd: {
+				DisplayName: Tropics Hunter / Recovery Speed Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.TropicsHunter}
+					{$CommonItemTooltip.RecoverySpd}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			TropicsHunterRecUp: {
+				DisplayName: Tropics Hunter / Recovery Up Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.TropicsHunter}
+					{$CommonItemTooltip.RecUp}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			UnscathedAttack: {
+				DisplayName: Unscathed / Attack Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Unscathed}
+					{$CommonItemTooltip.AttackBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			UnscathedConstitution: {
+				DisplayName: Unscathed / Constitution Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Unscathed}
+					{$CommonItemTooltip.Constitution}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			UnscathedCrit: {
+				DisplayName: Unscathed / Critical Eye Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Unscathed}
+					{$CommonItemTooltip.CritEye}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			UnscathedDefenseBoost: {
+				DisplayName: Unscathed / Defense Boost Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Unscathed}
+					{$CommonItemTooltip.DefenseBoost}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			UnscathedEvadeDistance: {
+				DisplayName: Unscathed / Evade Distance Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Unscathed}
+					{$CommonItemTooltip.EvadeDistance}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			UnscathedEvasion: {
+				DisplayName: Unscathed / Evasion Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Unscathed}
+					{$CommonItemTooltip.Evasion}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			UnscathedHandicraft: {
+				DisplayName: Unscathed / Handicraft Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Unscathed}
+					{$CommonItemTooltip.Handicraft}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			UnscathedProtection: {
+				DisplayName: Unscathed / Protection Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Unscathed}
+					{$CommonItemTooltip.Protection}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			UnscathedRecSpd: {
+				DisplayName: Unscathed / Recovery Speed Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Unscathed}
+					{$CommonItemTooltip.RecoverySpd}
+					{$CommonItemTooltip.Vanity}
+
+					'''
+			}
+
+			UnscathedRecUp: {
+				DisplayName: Unscathed / Recovery Up Decoration 1
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Unscathed}
+					{$CommonItemTooltip.RecUp}
+					{$CommonItemTooltip.Vanity}
+
+					'''
 			}
 		}
 
