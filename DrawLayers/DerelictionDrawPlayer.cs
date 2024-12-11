@@ -6,7 +6,7 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.ModLoader;
 
-namespace MHArmorSkills.PlayerDrawLayers
+namespace MHArmorSkills.DrawLayers
 {
     public class DerelictionDrawLayer : PlayerDrawLayer
     {
@@ -26,7 +26,7 @@ namespace MHArmorSkills.PlayerDrawLayers
         {
             Player drawPlayer = drawInfo.drawPlayer;
 
-            Texture2D texture = ModContent.Request<Texture2D>("MHArmorSkills/PlayerDrawLayers/DerelictionStage1", ReLogic.Content.AssetRequestMode.ImmediateLoad).Value;
+            Texture2D texture = ModContent.Request<Texture2D>("MHArmorSkills/DrawLayers/DerelictionStage1", ReLogic.Content.AssetRequestMode.ImmediateLoad).Value;
             int num156 = texture.Height / 12; //ypos of lower right corner of sprite to draw
             int y3 = num156 * (int)(Main.GlobalTimeWrappedHourly % 0.5 * 24); //ypos of upper left corner of sprite to draw
             Rectangle rectangle = new(0, y3, texture.Width, num156);

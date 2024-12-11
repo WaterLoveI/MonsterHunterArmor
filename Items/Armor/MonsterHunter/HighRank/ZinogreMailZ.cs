@@ -14,10 +14,12 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
     public class ZinogreMailZ : ModItem
     {
         public static readonly int Damage = 15;
-        public static readonly int Latent = 3;
+        public static readonly int Minion = 1;
+        public static readonly int Windproof = 2;
+        public static readonly int Negative = 1;
         public static readonly int Unscathed = 1;
         public static readonly int Decor1 = 2;
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Latent, Unscathed, Decor1);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage,Minion, Windproof, Negative, Unscathed,Decor1);
 
         public override void SetDefaults()
         {
@@ -31,10 +33,11 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
         public override void UpdateEquip(Terraria.Player player)
         {
             player.GetDamage<GenericDamageClass>() += Damage/100f;
-            player.statManaMax2 += 20;
+            player.maxMinions += Minion;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.LatentPower += Latent;
+            modPlayer.Windproof += Windproof;
             modPlayer.Unscathed += Unscathed;
+            modPlayer.NegativeCrit += Negative;
             modPlayer.ZinogreEssence += 1;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
             SlotPlayer.DecorationTwoSlots += Decor1;

@@ -1,9 +1,11 @@
 ﻿using MHArmorSkills.Buffs;
 using MHArmorSkills.Buffs.ArmorBuffs;
+using MHArmorSkills.Items.Accessories.Decorations;
 using MHArmorSkills.Items.Armor.MonsterHunter.HighRank;
 using MHArmorSkills.Items.Consumables;
 using MHArmorSkills.Projectiles.Weapon;
 using MHArmorSkills.Utilities;
+using Microsoft.Build.Evaluation;
 using Microsoft.CodeAnalysis;
 using Microsoft.Xna.Framework;
 using System;
@@ -187,7 +189,7 @@ namespace MHArmorSkills.MHPlayer
             Bloodlust = 0;
             BloodlustHeal = 0;
             BloodRite = 0;
-            BloodRiteTimer = 0;
+            
             BombBoostBuff = 0;
             BubbleDance = 0;
             CarvingChance = 0;
@@ -524,6 +526,7 @@ namespace MHArmorSkills.MHPlayer
         {
             ArmorSkills modPlayer = Player.GetModPlayer<ArmorSkills>();
             SharpnessPlayer SharpPlayer = Player.GetModPlayer<SharpnessPlayer>();
+            ElementsPlayer elementsPlayer = Player.GetModPlayer<ElementsPlayer>();
 
             #region Grinder
             /*if (Grinder >= 1 && Player.HasBuff(ModContent.BuffType<Sharpness>()))
@@ -594,6 +597,21 @@ namespace MHArmorSkills.MHPlayer
                     {
                         // Every 3 frames, increase the buff timer by one frame. Thus, the buff lasts three times longer.
                         if (Player.miscCounter % LastingPower == 0)
+                            Player.buffTime[l] += 1;
+                    }
+                }
+            }
+            #endregion
+            #region Power Prolonger
+            if (ProlongerTime > 1)
+            {
+                for (int l = 0; l < Player.MaxBuffs; l++)
+                {
+                    int hasBuff = Player.buffType[l];
+                    if (MHLists.WhipbuffList.Contains(hasBuff))
+                    {
+                        // Every 4 frames, increase the buff timer by one frame. Thus, the buff lasts three times longer.
+                        if (Player.miscCounter % 4 == 0)
                             Player.buffTime[l] += 1;
                     }
                 }
@@ -771,6 +789,7 @@ namespace MHArmorSkills.MHPlayer
             if (Player.HasBuff(ModContent.BuffType<Coalescence>()))
             {
                 ControlledAttack += Coalescence;
+                elementsPlayer.CoalescenceElement += Coalescence;
             }
 
             #endregion
@@ -1238,6 +1257,7 @@ namespace MHArmorSkills.MHPlayer
         #region BloodLust
         public void BloodLustEffect()
         {
+            ElementsPlayer elementsPlayer = Player.GetModPlayer<ElementsPlayer>();
             if (!(Player.HasBuff(ModContent.BuffType<Frenzy>()) || Player.HasBuff(ModContent.BuffType<FrenzyCure>()) || Player.HasBuff(ModContent.BuffType<FrenzyFail>())) && BloodlustCount == 0)
             {
                 BloodlustCount += 1;
@@ -1274,7 +1294,7 @@ namespace MHArmorSkills.MHPlayer
                 Player.manaCost *= ((100 - (Bloodlust * 3))) / 100f;
                 ControlledAttack += (Bloodlust * 4);
                 Player.lifeRegen = 0;
-
+                elementsPlayer.BloodlustElement += Bloodlust * 3;
                 if (Main.rand.NextBool(5))
                 {
                     for (int i = 0; i < 2; i++)
@@ -1553,7 +1573,7 @@ namespace MHArmorSkills.MHPlayer
                     int i = Item.NewItem(Player.GetSource_OpenItem(58), (int)target.position.X, (int)target.position.Y, target.width, target.height, 58, 1, false, 0, false, false);
                     Main.item[i].velocity.Y = Main.rand.Next(-20, 1) * 0.2f;
                     Main.item[i].velocity.X = Main.rand.Next(10, 31) * 0.2f * (proj == null ? Player.direction : proj.direction);
-                    BloodRiteTimer = 7 * 60;
+                    BloodRiteTimer = 10 * 60;
                 }
             }
             #endregion
@@ -2124,12 +2144,17 @@ namespace MHArmorSkills.MHPlayer
         }
         public override bool Shoot(Item item, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {
-            /*#region Rapid Fire
-            if (RapidFire && item.CountsAsClass<RangedDamageClass>())
+            ArmorSkills modPlayer = Player.GetModPlayer<ArmorSkills>();
+            #region Normal Up
+            if (modPlayer.QuickSheathNormalUp >= 2 && item.CountsAsClass<RangedDamageClass>() && (type == ProjectileID.WoodenArrowFriendly || type == ProjectileID.Bullet))
             {
                 float speedX = velocity.X;
                 float speedY = velocity.Y;
                 int numberOfProjectiles = 2;
+                if (modPlayer.QuickSheathNormalUp >= 3)
+                {
+                    numberOfProjectiles = 3;
+                }
                 Random rand = new Random();
 
                 // Rotation angle for spreading the projectiles
@@ -2139,7 +2164,7 @@ namespace MHArmorSkills.MHPlayer
                 position += Vector2.Normalize(new Vector2(speedX, speedY)) * rand.Next(1, 5);
 
                 // Loop through the number of projectiles
-                for (int i = 0; i < numberOfProjectiles; i++)
+                for (int i = 0; i < (numberOfProjectiles-1); i++)
                 {
                     // Calculate the perturbed speed for spreading the projectiles
                     Vector2 perturbedSpeed = new Vector2(speedX, speedY).RotatedBy(MathHelper.Lerp(-rotation, rotation, i / (numberOfProjectiles - 1)));
@@ -2148,7 +2173,7 @@ namespace MHArmorSkills.MHPlayer
                     Projectile.NewProjectile(source, position.X, position.Y, perturbedSpeed.X, perturbedSpeed.Y, type, damage / 3, knockback / 2, Player.whoAmI);
                 }
             }
-            #endregion*/
+            #endregion
             #region Bladehone Scale
             if (Player.HasBuff(ModContent.BuffType<BladeHoneScale>()) && Shoottimer == 0)
             {
@@ -2222,6 +2247,7 @@ namespace MHArmorSkills.MHPlayer
         public override void UpdateBadLifeRegen()
         {
             ArmorSkills modPlayer = Player.GetModPlayer<ArmorSkills>();
+            ElementsPlayer ElementPlayer = Player.GetModPlayer<ElementsPlayer>();
             #region Frenzy Fail
             if (Player.HasBuff(ModContent.BuffType<FrenzyFail>()))
             {
@@ -2293,6 +2319,7 @@ namespace MHArmorSkills.MHPlayer
                         }
                     }
                     ControlledCrit += StrifeCrit;
+                    ElementPlayer.StrifeElement += 5 * StrifeCrit;
                 }
                 if (ResentmentBuff >= 1)
                 {
@@ -2437,11 +2464,9 @@ namespace MHArmorSkills.MHPlayer
             }
             #endregion
             #region Draw Hair
-            if ((Player.armor[0].type == ModContent.ItemType<MizutsuneHelmX>()) && (Player.armor[10].headSlot == -1) || (Player.armor[10].type == ModContent.ItemType<MizutsuneHelmX>()))
-            {
-                drawInfo.fullHair = true;
-            }
-            if ((Player.armor[0].type == ModContent.ItemType<VangisHelmX>()) && (Player.armor[10].headSlot == -1) || (Player.armor[10].type == ModContent.ItemType<VangisHelmX>()))
+            int ShowHair0 = Player.armor[0].type;
+            int ShowHair10 = Player.armor[10].type;
+            if (MHLists.ShowHairList.Contains(ShowHair0) && (Player.armor[10].headSlot == -1) || MHLists.ShowHairList.Contains(ShowHair10))
             {
                 drawInfo.fullHair = true;
             }

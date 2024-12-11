@@ -39,6 +39,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
             modPlayer.Diversion += Diversion;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
             SlotPlayer.DecorationTwoSlots += Decor;
+            SlotPlayer.DecorationOneSlots += Decor;
         }
         public override void AddRecipes()
         {

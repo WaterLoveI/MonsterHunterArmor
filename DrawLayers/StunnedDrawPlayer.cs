@@ -1,14 +1,13 @@
 ﻿using MHArmorSkills.Buffs;
-using MHArmorSkills.MHPlayer;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ModLoader;
 
-namespace MHArmorSkills.PlayerDrawLayers
+namespace MHArmorSkills.DrawLayers
 {
-    public class Dereliction2DrawLayer : PlayerDrawLayer
+    public class StunnedDrawLayer : PlayerDrawLayer
     {
         public override bool IsHeadLayer => false;
 
@@ -18,7 +17,7 @@ namespace MHArmorSkills.PlayerDrawLayers
             && !drawInfo.drawPlayer.dead
             && !drawInfo.drawPlayer.ghost
             && drawInfo.shadow == 0
-            && (drawInfo.drawPlayer.GetModPlayer<ScrollSwapPlayer>().DerelictionStage == 2);
+            && (drawInfo.drawPlayer.HasBuff(ModContent.BuffType<Stunned>()));
 
         public override Position GetDefaultPosition() => new Between();
 
@@ -26,9 +25,9 @@ namespace MHArmorSkills.PlayerDrawLayers
         {
             Player drawPlayer = drawInfo.drawPlayer;
 
-            Texture2D texture = ModContent.Request<Texture2D>("MHArmorSkills/PlayerDrawLayers/DerelictionStage2", ReLogic.Content.AssetRequestMode.ImmediateLoad).Value;
-            int num156 = texture.Height / 12; //ypos of lower right corner of sprite to draw
-            int y3 = num156 * (int)(Main.GlobalTimeWrappedHourly % 0.5 * 24); //ypos of upper left corner of sprite to draw
+            Texture2D texture = ModContent.Request<Texture2D>("MHArmorSkills/DrawLayers/DizzyStars", ReLogic.Content.AssetRequestMode.ImmediateLoad).Value;
+            int num156 = texture.Height / 6; //ypos of lower right corner of sprite to draw
+            int y3 = num156 * (int)(Main.GlobalTimeWrappedHourly % 0.5 * 12); //ypos of upper left corner of sprite to draw
             Rectangle rectangle = new(0, y3, texture.Width, num156);
 
             Vector2 drawPos = (drawPlayer.gravDir > 0 ? drawPlayer.Top : drawPlayer.Bottom) - Main.screenPosition;

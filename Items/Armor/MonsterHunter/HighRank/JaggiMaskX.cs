@@ -38,6 +38,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
             modPlayer.AutoTracker += Auto;
             modPlayer.SpeedEating += SpeedEat;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
+            SlotPlayer.DecorationOneSlots += Decor1;
             SlotPlayer.DecorationThreeSlots += Decor1;
         }
         public override void AddRecipes()

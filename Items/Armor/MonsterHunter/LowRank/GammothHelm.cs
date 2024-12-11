@@ -14,7 +14,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
     {
         public static readonly int Damage = 5;
         public static readonly int PolarHunter = 2;
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, PolarHunter);
+        public static readonly int IceRes = 1;
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, PolarHunter,IceRes);
 
 
 
@@ -32,6 +33,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             player.GetDamage<GenericDamageClass>() += Damage/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.PolarHunter += PolarHunter;
+            modPlayer.IceRes += IceRes;
         }
         public override void AddRecipes()
         {

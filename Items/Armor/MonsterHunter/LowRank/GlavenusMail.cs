@@ -13,7 +13,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
     public class GlavenusMail : ModItem
     {
         public static readonly int Critical = 5;
-        public static readonly int Attack = 1;
+        public static readonly int Attack = 2;
         public static readonly int RazorSharp = 1;
         public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Critical, Attack, RazorSharp);
         public override void SetDefaults()

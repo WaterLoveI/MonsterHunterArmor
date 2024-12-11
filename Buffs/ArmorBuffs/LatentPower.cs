@@ -18,7 +18,7 @@ namespace MHArmorSkills.Buffs.ArmorBuffs
         {
             buffName = $"Latent Power Level: {Main.LocalPlayer.GetModPlayer<ArmorSkills>().LatentPower} ";
             tip = $"Increase critical strike chance by {Main.LocalPlayer.GetModPlayer<MHPlayerArmorSkill>().LatentPowerAffinity}% \n" +
-                  $"Reduce mana cost by {Main.LocalPlayer.GetModPlayer<MHPlayerArmorSkill>().LatentPowerManaCost}%";
+                  $"Reduce mana cost by {100-Main.LocalPlayer.GetModPlayer<MHPlayerArmorSkill>().LatentPowerManaCost}%";
         }
     }
 }

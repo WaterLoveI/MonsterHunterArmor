@@ -53,7 +53,7 @@ Mods: {
 			Dereliction: Increases the Dereliction Skill by {0}
 			Diversion: Increases the Diversion Skill by {0}
 			DragonConversion: Increases the Dragon Conversion Skill by {0}
-			Elemental: Increases the Elemental Damage Skill by {0}
+			Elemental: Increases the Elemental Skill by {0}
 			Embolden: Increases the Embolden Skill by {0}
 			EvadeDistance: Increases the Evade Distance Skill by {0}
 			Evasion: Increases the Evasion Skill by {0}
@@ -184,7 +184,7 @@ Mods: {
 			VanillaDefLock: Increases the Defense Lock Skill by
 			VanillaDereliction: Increases the Dereliction Skill by
 			VanillaDiversion: Increases the Diversion Skill by
-			VanillaElemental: Increases the Elemental Damage Skill by
+			VanillaElemental: Increases the Elemental Skill by
 			VanillaEmbolden: Increases the Embolden Skill by
 			VanillaEvadeDistance: Increases the Evade Distance Skill by
 			VanillaEvasion: Increases the Evasion Skill by
@@ -289,6 +289,26 @@ Mods: {
 					'''
 			}
 
+			ArzurosMail: {
+				DisplayName: Arzuros Mail
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseMelee}
+					{$CommonItemTooltip.Constitution@1}
+					{$CommonItemTooltip.DefenseBoost@2}
+					'''
+			}
+
+			ArzurosGreaves: {
+				DisplayName: Arzuros Greaves
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseMelee}
+					{$CommonItemTooltip.HoneyHunter@1}
+					{$CommonItemTooltip.StunResist@2}
+					'''
+			}
+
 			BasariosHelmet: {
 				DisplayName: Basarios Helmet
 				Tooltip:
@@ -318,6 +338,7 @@ Mods: {
 					{$CommonItemTooltip.Guard@2}
 					{$CommonItemTooltip.TremorRes@3}
 					{$CommonItemTooltip.ThreeSlotDecor@4}
+					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
 
@@ -446,12 +467,12 @@ Mods: {
 			}
 
 			KutkuHelm: {
-				DisplayName: Kutku Helm
+				DisplayName: Kut-ku Helm
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseCrit}
-					{$CommonItemTooltip.AttackBoost@1}
-					{$CommonItemTooltip.FireAttack@2}
+					{$CommonItemTooltip.FireAttack@1}
+					{$CommonItemTooltip.AttackBoost@2}
 					'''
 			}
 
@@ -461,6 +482,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
 					{$CommonItemTooltip.PolarHunter@1}
+					{$CommonItemTooltip.IceRes@2}
 					'''
 			}
 
@@ -518,8 +540,8 @@ Mods: {
 					'''
 					{$CommonItemTooltip.IncreaseMovement}
 					{$CommonItemTooltip.IncreaseSummon@1}
-					{$CommonItemTooltip.HeroShield@2}
-					{$CommonItemTooltip.Guard@3}
+					{$CommonItemTooltip.GuardUp@2}
+					{$CommonItemTooltip.HeroShield@3}
 					'''
 			}
 
@@ -534,7 +556,7 @@ Mods: {
 			}
 
 			BlueKutkuHelm: {
-				DisplayName: Blue Kutku Helm
+				DisplayName: Blue Kut-ku Helm
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseCrit}
@@ -593,9 +615,11 @@ Mods: {
 					{$CommonItemTooltip.IncreaseMovement}
 					{$CommonItemTooltip.IncreaseMana@1}
 					{$CommonItemTooltip.Blightproof@2}
-					{$CommonItemTooltip.LastingPower@3}
+					{$CommonItemTooltip.Carving@2}
+					{$CommonItemTooltip.LastingPower@4}
 					'''
 			}
+
 			KirinHeadX: {
 				DisplayName: Kirin Head X
 				Tooltip:
@@ -605,6 +629,7 @@ Mods: {
 					{$CommonItemTooltip.ThunderAttack@2}
 					{$CommonItemTooltip.Blightproof@3}
 					{$CommonItemTooltip.ThreeSlotDecor@4}
+					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
 
@@ -631,6 +656,7 @@ Mods: {
 					{$CommonItemTooltip.TwoSlotDecor@4}
 					'''
 			}
+
 			SailorHat: {
 				DisplayName: Sailor Hat
 				Tooltip:
@@ -695,6 +721,26 @@ Mods: {
 					'''
 			}
 
+			BrachydiosMail: {
+				DisplayName: Brachydios Mail
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.ChallengeSheath@1}
+					{$CommonItemTooltip.Spirit@2}
+					'''
+			}
+
+			BrachydiosGreaves: {
+				DisplayName: Brachydios Greaves
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseMovement}
+					{$CommonItemTooltip.BombBoost@1}
+					{$CommonItemTooltip.Handicraft@2}
+					'''
+			}
+
 			SeregiosHelm: {
 				DisplayName: Regios Helm
 				Tooltip:
@@ -732,6 +778,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.IncreaseMovement}
 					{$CommonItemTooltip.BubbleDance@1}
+					{$CommonItemTooltip.WaterRes@2}
 					'''
 			}
 
@@ -744,6 +791,7 @@ Mods: {
 					{$CommonItemTooltip.BubbleDance@2}
 					{$CommonItemTooltip.Resuscitate@3}
 					{$CommonItemTooltip.ThreeSlotDecor@4}
+					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
 
@@ -762,8 +810,8 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseMovement}
-					{$CommonItemTooltip.WaterAttack@1}
-					{$CommonItemTooltip.Constitution@2}
+					{$CommonItemTooltip.Constitution@1}
+					{$CommonItemTooltip.WaterAttack@2}
 					'''
 			}
 
@@ -830,6 +878,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.IncreaseMovement}
 					{$CommonItemTooltip.ThunderAttack@1}
+					{$CommonItemTooltip.Vault@2}
 					'''
 			}
 
@@ -849,6 +898,7 @@ Mods: {
 					'''
 					{$CommonItemTooltip.IncreaseCrit}
 					{$CommonItemTooltip.Vault@1}
+					{$CommonItemTooltip.StunResist@2}
 					'''
 			}
 
@@ -918,8 +968,7 @@ Mods: {
 					{$CommonItemTooltip.IncreaseDamage}
 					{$CommonItemTooltip.IncreaseCrit@1}
 					{$CommonItemTooltip.AttackBoost@2}
-					{$CommonItemTooltip.IceAttack@3}
-					{$CommonItemTooltip.Handicraft@4}
+					{$CommonItemTooltip.Handicraft@3}
 					'''
 			}
 
@@ -930,6 +979,7 @@ Mods: {
 					{$CommonItemTooltip.IncreaseDamage}
 					{$CommonItemTooltip.IncreaseCrit@1}
 					{$CommonItemTooltip.AttackBoost@2}
+					{$CommonItemTooltip.StunResist@3}
 					'''
 			}
 
@@ -943,6 +993,7 @@ Mods: {
 					{$CommonItemTooltip.IceAttack@3}
 					'''
 			}
+
 			UkanlosHelmX: {
 				DisplayName: Ukanlos Helm X
 				Tooltip:
@@ -976,6 +1027,7 @@ Mods: {
 					{$CommonItemTooltip.AttackBoost@2}
 					{$CommonItemTooltip.Handicraft@3}
 					{$CommonItemTooltip.ThreeSlotDecor@4}
+					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
 
@@ -1000,6 +1052,26 @@ Mods: {
 					'''
 			}
 
+			AgnaktorMail: {
+				DisplayName: Agnaktor Mail
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.FireAttack@1}
+					{$CommonItemTooltip.QuickSharpening@2}
+					'''
+			}
+
+			AgnaktorGreaves: {
+				DisplayName: Agnaktor Greaves
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseMovement}
+					{$CommonItemTooltip.HeatRes@1}
+					{$CommonItemTooltip.QuickSharpening@2}
+					'''
+			}
+
 			GJaggiHelm: {
 				DisplayName: Great Jaggi Helm
 				Tooltip:
@@ -1018,6 +1090,7 @@ Mods: {
 					{$CommonItemTooltip.IncreaseMovement@1}
 					{$CommonItemTooltip.AttackBoost@2}
 					{$CommonItemTooltip.CritEye@3}
+					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
 
@@ -1054,14 +1127,14 @@ Mods: {
 					{$CommonItemTooltip.IncreaseDamage}
 					{$CommonItemTooltip.IncreaseMelee@1}
 					{$CommonItemTooltip.Guard@2}
-					{$CommonItemTooltip.RazorSharp@3}
+					{$CommonItemTooltip.Handicraft@3}
 					{$CommonItemTooltip.Resentment@4}
 					{$CommonItemTooltip.OneSlotDecor@5}
 					'''
 			}
 
 			KutkuHelmX: {
-				DisplayName: Kutku Helm X
+				DisplayName: Kut-ku Helm X
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
@@ -1095,11 +1168,12 @@ Mods: {
 					{$CommonItemTooltip.IceAttack@3}
 					{$CommonItemTooltip.PolarHunter@4}
 					{$CommonItemTooltip.ThreeSlotDecor@5}
+					{$CommonItemTooltip.OneSlotDecor@5}
 					'''
 			}
 
 			BlueKutkuHelmX: {
-				DisplayName: Blue Kutku Helm X
+				DisplayName: Blue Kut-ku Helm X
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
@@ -1191,6 +1265,7 @@ Mods: {
 					{$CommonItemTooltip.AutoTracker@2}
 					{$CommonItemTooltip.SpeedEating@3}
 					{$CommonItemTooltip.ThreeSlotDecor@4}
+					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
 
@@ -1227,6 +1302,7 @@ Mods: {
 					{$CommonItemTooltip.Fate@2}
 					{$CommonItemTooltip.Evasion@3}
 					{$CommonItemTooltip.ThreeSlotDecor@4}
+					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
 
@@ -1356,6 +1432,29 @@ Mods: {
 					'''
 			}
 
+			ArzurosMailX: {
+				DisplayName: Arzuros Mail X
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.DefenseBoost@1}
+					{$CommonItemTooltip.Protection@2}
+					{$CommonItemTooltip.OneSlotDecor@3}
+					'''
+			}
+
+			ArzurosGreavesX: {
+				DisplayName: Arzuros Greaves X
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseMovement}
+					{$CommonItemTooltip.HoneyHunter@1}
+					{$CommonItemTooltip.StunResist@2}
+					{$CommonItemTooltip.Protection@3}
+					{$CommonItemTooltip.TwoSlotDecor@4}
+					'''
+			}
+
 			VaikHelmX: {
 				DisplayName: Vaik Helm X
 				Tooltip:
@@ -1377,6 +1476,7 @@ Mods: {
 					{$CommonItemTooltip.AttackBoost@2}
 					{$CommonItemTooltip.Diversion@3}
 					{$CommonItemTooltip.TwoSlotDecor@4}
+					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
 
@@ -1402,6 +1502,7 @@ Mods: {
 					{$CommonItemTooltip.Protection@3}
 					{$CommonItemTooltip.RecUp@4}
 					{$CommonItemTooltip.TwoSlotDecor@5}
+					{$CommonItemTooltip.OneSlotDecor@5}
 					'''
 			}
 
@@ -1486,11 +1587,12 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.IncreaseSummon@1}
 					{$CommonItemTooltip.Evasion@2}
 					{$CommonItemTooltip.FreeMeal@3}
 					{$CommonItemTooltip.RecUp@4}
 					{$CommonItemTooltip.ThreeSlotDecor@5}
+					{$CommonItemTooltip.OneSlotDecor@5}
 					'''
 			}
 
@@ -1513,8 +1615,33 @@ Mods: {
 					{$CommonItemTooltip.IncreaseDamage}
 					{$CommonItemTooltip.IncreaseMelee@1}
 					{$CommonItemTooltip.Spirit@2}
-					{$CommonItemTooltip.Slugger@3}
+					{$CommonItemTooltip.StunResist@3}
 					{$CommonItemTooltip.TwoSlotDecor@4}
+					'''
+			}
+
+			BrachydiosMailX: {
+				DisplayName: Brachydios Mail X
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.IncreaseMelee@1}
+					{$CommonItemTooltip.BombBoost@2}
+					{$CommonItemTooltip.Handicraft@3}
+					{$CommonItemTooltip.TwoSlotDecor@4}
+					'''
+			}
+
+			BrachydiosGreavesX: {
+				DisplayName: Brachydios Greaves X
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.Spirit@2}
+					{$CommonItemTooltip.ChallengeSheath@3}
+					{$CommonItemTooltip.ThreeSlotDecor@4}
+					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
 
@@ -1528,6 +1655,32 @@ Mods: {
 					{$CommonItemTooltip.Guard@3}
 					{$CommonItemTooltip.RazorSharp@4}
 					{$CommonItemTooltip.ThreeSlotDecor@5}
+					{$CommonItemTooltip.OneSlotDecor@5}
+					'''
+			}
+
+			AgnaktorMailX: {
+				DisplayName: Agnaktor Mail X
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.Elemental@2}
+					{$CommonItemTooltip.Guard@3}
+					{$CommonItemTooltip.RazorSharp@4}
+					{$CommonItemTooltip.OneSlotDecor@5}
+					'''
+			}
+
+			AgnaktorGreavesX: {
+				DisplayName: Agnaktor Greaves X
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.IncreaseMovement@1}
+					{$CommonItemTooltip.FireAttack@2}
+					{$CommonItemTooltip.QuickSharpening@3}
+					{$CommonItemTooltip.ThreeSlotDecor@4}
 					'''
 			}
 
@@ -1557,7 +1710,7 @@ Mods: {
 			}
 
 			SeregiosGreavesX: {
-				DisplayName: Regios Mail X
+				DisplayName: Regios Greaves X
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
@@ -1565,6 +1718,7 @@ Mods: {
 					{$CommonItemTooltip.Evasion@2}
 					{$CommonItemTooltip.BladehoneScale@3}
 					{$CommonItemTooltip.ThreeSlotDecor@4}
+					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
 
@@ -1578,6 +1732,7 @@ Mods: {
 					{$CommonItemTooltip.Handicraft@3}
 					{$CommonItemTooltip.HeroShield@4}
 					{$CommonItemTooltip.ThreeSlotDecor@5}
+					{$CommonItemTooltip.OneSlotDecor@5}
 					'''
 			}
 
@@ -1603,6 +1758,7 @@ Mods: {
 					{$CommonItemTooltip.Artillery@2}
 					{$CommonItemTooltip.RazorSharp@3}
 					{$CommonItemTooltip.ThreeSlotDecor@4}
+					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
 
@@ -1629,6 +1785,51 @@ Mods: {
 					{$CommonItemTooltip.Handicraft@2}
 					{$CommonItemTooltip.RazorSharp@3}
 					{$CommonItemTooltip.ThreeSlotDecor@4}
+					'''
+			}
+
+			BnahabraHat: {
+				DisplayName: Bnahabra Hat
+				Tooltip:
+					'''
+					{$CommonItemTooltip.Fencing}
+					{$CommonItemTooltip.RazorSharp@1}
+					'''
+			}
+
+			BnahabraHatX: {
+				DisplayName: Bnahabra Hat X
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.Fencing@1}
+					{$CommonItemTooltip.RazorSharp@2}
+					{$CommonItemTooltip.OneSlotDecor@3}
+					'''
+			}
+
+			LagiacrusHelm: {
+				DisplayName: Lagiacrus Helm
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.IncreaseMana@1}
+					{$CommonItemTooltip.StamRecovery@2}
+					{$CommonItemTooltip.Guard@3}
+					'''
+			}
+
+			LagiacrusHelmX: {
+				DisplayName: Lagiacrus Helm X
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.IncreaseMana@1}
+					{$CommonItemTooltip.StamRecovery@2}
+					{$CommonItemTooltip.Elemental@3}
+					{$CommonItemTooltip.Guard@4}
+					{$CommonItemTooltip.TwoSlotDecor@5}
+					{$CommonItemTooltip.OneSlotDecor@5}
 					'''
 			}
 
@@ -1690,6 +1891,7 @@ Mods: {
 					{$CommonItemTooltip.Handicraft@2}
 					{$CommonItemTooltip.Grinder@3}
 					{$CommonItemTooltip.ThreeSlotDecor@4}
+					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
 
@@ -1702,6 +1904,7 @@ Mods: {
 					{$CommonItemTooltip.Grinder@2}
 					{$CommonItemTooltip.RazorSharp@3}
 					{$CommonItemTooltip.ThreeSlotDecor@4}
+					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
 
@@ -1711,8 +1914,8 @@ Mods: {
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
 					{$CommonItemTooltip.IncreaseCrit@1}
-					{$CommonItemTooltip.AttackBoost@2}
-					{$CommonItemTooltip.PolarHunter@3}
+					{$CommonItemTooltip.PolarHunter@2}
+					{$CommonItemTooltip.NegativeCrit@3}
 					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
@@ -1724,7 +1927,7 @@ Mods: {
 					{$CommonItemTooltip.IncreaseDamage}
 					{$CommonItemTooltip.IncreaseMovement@1}
 					{$CommonItemTooltip.AttackBoost@2}
-					{$CommonItemTooltip.PolarHunter@3}
+					{$CommonItemTooltip.IceAttack@3}
 					{$CommonItemTooltip.OneSlotDecor@4}
 					{$CommonItemTooltip.TwoSlotDecor@5}
 					'''
@@ -1746,8 +1949,8 @@ Mods: {
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
 					{$CommonItemTooltip.IncreaseCrit@1}
-					{$CommonItemTooltip.PierceUp@2}
-					{$CommonItemTooltip.ThunderAttack@3}
+					{$CommonItemTooltip.ThunderAttack@2}
+					{$CommonItemTooltip.PierceUp@3}
 					{$CommonItemTooltip.Vault@4}
 					{$CommonItemTooltip.TwoSlotDecor@5}
 					'''
@@ -1763,6 +1966,7 @@ Mods: {
 					{$CommonItemTooltip.PierceUp@3}
 					{$CommonItemTooltip.Vault@4}
 					{$CommonItemTooltip.TwoSlotDecor@5}
+					{$CommonItemTooltip.OneSlotDecor@5}
 					'''
 			}
 
@@ -1801,6 +2005,7 @@ Mods: {
 					{$CommonItemTooltip.AttackBoost@2}
 					{$CommonItemTooltip.FireAttack@3}
 					{$CommonItemTooltip.Tenderizer@4}
+					{$CommonItemTooltip.OneSlotDecor@5}
 					'''
 			}
 
@@ -1859,6 +2064,7 @@ Mods: {
 					{$CommonItemTooltip.Evasion@2}
 					{$CommonItemTooltip.LatentPower@3}
 					{$CommonItemTooltip.ThreeSlotDecor@4}
+					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
 
@@ -1879,11 +2085,12 @@ Mods: {
 				DisplayName: Zinogre Greaves Z
 				Tooltip:
 					'''
-					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.IncreaseSummon}
 					{$CommonItemTooltip.IncreaseMovement@1}
-					{$CommonItemTooltip.CritEye@2}
-					{$CommonItemTooltip.LatentPower@3}
+					{$CommonItemTooltip.Evasion@2}
+					{$CommonItemTooltip.TremorRes@3}
 					{$CommonItemTooltip.Unscathed@4}
+					{$CommonItemTooltip.ThreeSlotDecor@5}
 					{$CommonItemTooltip.OneSlotDecor@5}
 					'''
 			}
@@ -1893,11 +2100,11 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					{$CommonItemTooltip.IncreaseCrit@1}
+					{$CommonItemTooltip.IncreaseSummon@1}
 					{$CommonItemTooltip.Evasion@2}
-					{$CommonItemTooltip.LatentPower@3}
-					{$CommonItemTooltip.Unscathed@4}
-					{$CommonItemTooltip.ThreeSlotDecor@5}
+					{$CommonItemTooltip.NegativeCrit@3}
+					{$CommonItemTooltip.ThreeSlotDecor@4}
+					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
 
@@ -1906,10 +2113,11 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.IncreaseDamage}
-					{$ItemTooltip.BandofStarpower}
-					{$CommonItemTooltip.LatentPower@1}
-					{$CommonItemTooltip.Unscathed@2}
-					{$CommonItemTooltip.TwoSlotDecor@3}
+					{$CommonItemTooltip.IncreaseSummon@1}
+					{$CommonItemTooltip.Windproof@2}
+					{$CommonItemTooltip.NegativeCrit@3}
+					{$CommonItemTooltip.Unscathed@4}
+					{$CommonItemTooltip.TwoSlotDecor@5}
 					'''
 			}
 
@@ -1976,6 +2184,7 @@ Mods: {
 					{$CommonItemTooltip.AquaticMobility@1}
 					{$CommonItemTooltip.WaterAttack@2}
 					{$CommonItemTooltip.TwoSlotDecor@3}
+					{$CommonItemTooltip.OneSlotDecor@3}
 					'''
 			}
 
@@ -1997,6 +2206,7 @@ Mods: {
 					{$CommonItemTooltip.AquaticMobility@1}
 					{$CommonItemTooltip.WaterAttack@2}
 					{$CommonItemTooltip.TwoSlotDecor@3}
+					{$CommonItemTooltip.OneSlotDecor@3}
 					'''
 			}
 
@@ -2099,6 +2309,7 @@ Mods: {
 					{$CommonItemTooltip.AttackBoost@2}
 					{$CommonItemTooltip.Protection@3}
 					{$CommonItemTooltip.TwoSlotDecor@4}
+					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
 
@@ -2163,6 +2374,7 @@ Mods: {
 					{$CommonItemTooltip.EvadeDistance@2}
 					{$CommonItemTooltip.Evasion@3}
 					{$CommonItemTooltip.TwoSlotDecor@4}
+					{$CommonItemTooltip.OneSlotDecor@4}
 					'''
 			}
 
@@ -2174,8 +2386,8 @@ Mods: {
 					{$CommonItemTooltip.IncreaseMovement@1}
 					{$CommonItemTooltip.Evasion@2}
 					{$CommonItemTooltip.Sneak@3}
-					{$CommonItemTooltip.OneSlotDecor@4}
-					{$CommonItemTooltip.ThreeSlotDecor@5}
+					{$CommonItemTooltip.ThreeSlotDecor@4}
+					{$CommonItemTooltip.OneSlotDecor@5}
 					'''
 			}
 
@@ -2197,6 +2409,7 @@ Mods: {
 					{$CommonItemTooltip.IncreaseMovement@1}
 					{$CommonItemTooltip.AttackBoost@2}
 					{$CommonItemTooltip.TremorRes@3}
+					{$CommonItemTooltip.ThreeSlotDecor@4}
 					'''
 			}
 
@@ -2209,6 +2422,7 @@ Mods: {
 					{$CommonItemTooltip.AttackBoost@2}
 					{$CommonItemTooltip.DragonConversion@3}
 					{$CommonItemTooltip.ThreeSlotDecor@4}
+					{$CommonItemTooltip.OneSlotDecor@5}
 					'''
 			}
 
@@ -2222,6 +2436,7 @@ Mods: {
 					{$CommonItemTooltip.StunResist@3}
 					{$CommonItemTooltip.CriticalBoost@4}
 					{$CommonItemTooltip.ThreeSlotDecor@5}
+					{$CommonItemTooltip.OneSlotDecor@6}
 					'''
 			}
 
@@ -2233,7 +2448,8 @@ Mods: {
 					{$CommonItemTooltip.IncreaseMovement@1}
 					{$CommonItemTooltip.AttackBoost@2}
 					{$CommonItemTooltip.CriticalBoost@3}
-					{$CommonItemTooltip.TwoSlotDecor@4}
+					{$CommonItemTooltip.ThreeSlotDecor@4}
+					{$CommonItemTooltip.OneSlotDecor@5}
 					'''
 			}
 
@@ -2246,6 +2462,7 @@ Mods: {
 					{$CommonItemTooltip.Evasion@2}
 					{$CommonItemTooltip.HeavenSent@3}
 					{$CommonItemTooltip.ThreeSlotDecor@4}
+					{$CommonItemTooltip.OneSlotDecor@5}
 					'''
 			}
 
@@ -2258,6 +2475,7 @@ Mods: {
 					{$CommonItemTooltip.LatentPower@2}
 					{$CommonItemTooltip.HeavenSent@3}
 					{$CommonItemTooltip.ThreeSlotDecor@4}
+					{$CommonItemTooltip.OneSlotDecor@5}
 					'''
 			}
 
@@ -2270,6 +2488,70 @@ Mods: {
 					{$CommonItemTooltip.CriticalBoost@2}
 					{$CommonItemTooltip.HeavenSent@3}
 					{$CommonItemTooltip.ThreeSlotDecor@4}
+					{$CommonItemTooltip.OneSlotDecor@5}
+					'''
+			}
+
+			TetsucabraHelm: {
+				DisplayName: Tetsucabra Helm
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.StamRecovery@1}
+					{$CommonItemTooltip.PunishDraw@2}
+					'''
+			}
+
+			TetsucabraMail: {
+				DisplayName: Tetsucabra Mail
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseCrit}
+					{$CommonItemTooltip.HeatRes@1}
+					{$CommonItemTooltip.PunishDraw@2}
+					'''
+			}
+
+			TetsucabraGreaves: {
+				DisplayName: Tetsucabra Greaves
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.TremorRes@1}
+					'''
+			}
+
+			TetsucabraHelmX: {
+				DisplayName: Tetsucabra Helm X
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.StamRecovery@1}
+					{$CommonItemTooltip.TremorRes@2}
+					{$CommonItemTooltip.OneSlotDecor@3}
+					'''
+			}
+
+			TetsucabraMailX: {
+				DisplayName: Tetsucabra Mail X
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.HeatRes@1}
+					{$CommonItemTooltip.PunishDraw@2}
+					{$CommonItemTooltip.TwoSlotDecor@3}
+					{$CommonItemTooltip.OneSlotDecor@3}
+					'''
+			}
+
+			TetsucabraGreavesX: {
+				DisplayName: Tetsucabra Greaves X
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreaseDamage}
+					{$CommonItemTooltip.StunResist@1}
+					{$CommonItemTooltip.StamRecovery@2}
+					{$CommonItemTooltip.OneSlotDecor@3}
 					'''
 			}
 
@@ -5673,7 +5955,7 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.Fortified}
-					{$CommonItemTooltip.Constituion}
+					{$CommonItemTooltip.Constitution}
 					{$CommonItemTooltip.Vanity}
 
 					'''
@@ -5992,7 +6274,7 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.Health}
-					{$CommonItemTooltip.Constituion}
+					{$CommonItemTooltip.Constitution}
 					{$CommonItemTooltip.Vanity}
 
 					'''
@@ -6795,7 +7077,7 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemTooltip.Resentment}
-					{$CommonItemTooltip.Constitiion}
+					{$CommonItemTooltip.Constitution}
 					{$CommonItemTooltip.Vanity}
 
 					'''
@@ -7327,6 +7609,11 @@ Mods: {
 					{$CommonItemTooltip.Vanity}
 
 					'''
+			}
+
+			TestItem: {
+				DisplayName: Test Item
+				Tooltip: For testing the mod :)
 			}
 		}
 

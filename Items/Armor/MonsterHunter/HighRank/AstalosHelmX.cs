@@ -15,12 +15,12 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
     {
         public static readonly int Damage = 12;
         public static readonly int CritChance = 12;
+        public static readonly int Thunder = 2;
         public static readonly int Pierce = 1;
-        public static readonly int Thunder = 1;
         public static readonly int Vault = 1;
         public static readonly int Decor = 2;
 
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, CritChance, Pierce, Thunder, Vault, Decor);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, CritChance, Thunder, Pierce, Vault, Decor);
 
         public override void SetDefaults()
         {

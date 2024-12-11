@@ -15,11 +15,11 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
     {
         public static readonly int Damage = 12;
         public static readonly int Crit = 12;
-        public static readonly int Atk = 2;
-        public static readonly int Polar = 2;
-        public static readonly int Decor = 1;
+        public static readonly int Polar = 3;
+        public static readonly int Negative = 2;
+        public static readonly int Decor = 2;
 
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Crit, Atk, Polar, Decor);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Crit, Negative, Polar, Decor);
 
         public override void SetDefaults()
         {
@@ -36,7 +36,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
             player.GetCritChance<GenericDamageClass>() += Crit;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.PolarHunter += Polar;
-            modPlayer.Attack += Atk;
+            modPlayer.NegativeCrit += Negative;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
             SlotPlayer.DecorationOneSlots += Decor;
         }

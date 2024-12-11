@@ -18,7 +18,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
         public static readonly int Atk = 2;
         public static readonly int FireAtk = 2;
         public static readonly int Tender = 1;
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Move, Atk, FireAtk, Tender);
+        public static readonly int Decor = 1;
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Move, Atk, FireAtk, Tender,Decor);
 
         public override void SetDefaults()
         {
@@ -37,6 +38,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
             modPlayer.FireAttack += FireAtk;
             modPlayer.Attack += Atk;
             modPlayer.Tenderizer += Tender;
+            DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
+            SlotPlayer.DecorationOneSlots += Decor;
         }
         public override void AddRecipes()
         {

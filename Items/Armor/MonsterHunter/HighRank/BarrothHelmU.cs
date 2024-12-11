@@ -15,7 +15,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
     {
         public static readonly int Damage = 12;
         public static readonly int Move = 15;
-        public static readonly int Ice = 1;
+        public static readonly int Ice = 2;
         public static readonly int Guard = 1;
         public static readonly int Punish = 1;
         public static readonly int Decor = 3;

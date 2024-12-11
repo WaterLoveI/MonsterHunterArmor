@@ -12,12 +12,17 @@ Full Armor Set
 -Rathian
 -Nargacuga
 -Zinogre
+-Seltas Queen
+-Seregios
 -Astalos
 -Glavenus
 -Mizutsune
 -Gammoth
+-Gore Magala
 -Kirin
 -Ukanlos
+-Valstrax
+-Amatsu
 
 Enemies
 -Bullfango

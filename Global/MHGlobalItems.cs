@@ -98,6 +98,7 @@ namespace MHArmorSkills.Global
             bool OneSlot = MHLists.OneSlotDecorations.Contains(entity.type);
             bool TwoSlot = MHLists.TwoSlotDecorations.Contains(entity.type);
             bool ThreeSlot = MHLists.ThreeSlotDecorations.Contains(entity.type);
+            bool Mixed = MHLists.MixedSlotDecorations.Contains(entity.type);
             if (OneSlot)
             {
                 entity.rare = ItemRarityID.Green;
@@ -116,6 +117,12 @@ namespace MHArmorSkills.Global
                 entity.maxStack = 9999;
                 entity.value = Item.sellPrice(0, 1, 0, 0);
             }
+            if (Mixed)
+            {
+                entity.rare = ItemRarityID.Lime;
+                entity.maxStack = 9999;
+                entity.value = Item.sellPrice(0, 1, 0, 0);
+            }
         }
 
         public override float UseTimeMultiplier(Item item, Player player)
@@ -126,12 +133,7 @@ namespace MHArmorSkills.Global
                 
                 return 1-Rapidfireshot;
             }
-            if (player.GetModPlayer<ArmorSkills>().QuickSheathNormalUp >= 3 && item.DamageType == DamageClass.Ranged && item.damage > 0 && (item.shoot == ProjectileID.WoodenArrowFriendly || item.shoot == ProjectileID.Bullet))
-            {
-                float Rapidfireshot = 0.1f;
-
-                return 1 - Rapidfireshot;
-            }
+            
             return base.UseTimeMultiplier(item, player);
         }
         public override bool OnPickup(Item item, Player player)
@@ -149,5 +151,6 @@ namespace MHArmorSkills.Global
             }
             return base.OnPickup(item, player);
         }
+        
     }
 }

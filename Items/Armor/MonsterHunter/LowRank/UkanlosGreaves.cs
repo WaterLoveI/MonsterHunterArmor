@@ -15,7 +15,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         public static readonly int Crit = 3;
         public static readonly int Move = 10;
         public static readonly int Attack = 2;
-        public static readonly int IceAttack = 1;
+        public static readonly int IceAttack = 2;
 
         public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Crit, Move, Attack, IceAttack);
 

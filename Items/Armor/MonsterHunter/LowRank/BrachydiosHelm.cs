@@ -35,7 +35,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.Spirit += Spirit;
             modPlayer.ArtilleryBombBoost += BombBoost;
-            DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
         }
         public override void AddRecipes()
         {

@@ -41,7 +41,12 @@ GuardCooldown: {
 
 HeavenSent: {
 	DisplayName: Heaven Sent
-	Description: Mods.MHArmorSkills.Buffs.HeavenSent.Description
+	Description:
+		'''
+		Prevents sharpness, ammo and mana consumption.
+		Increase movement speed, grants infinite flight and reduce damage taken.
+		Getting hit removes this buff.
+		'''
 }
 
 Heroics: {

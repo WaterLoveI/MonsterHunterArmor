@@ -17,7 +17,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
         public static readonly int ThunderAtk = 3;
         public static readonly int Unscathed = 2;
         public static readonly int Latent = 1;
-        public static readonly int Decor1 = 1;
+        public static readonly int Decor1 = 2;
         public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, ThunderAtk, Unscathed, Latent, Decor1);
 
         public override void SetDefaults()

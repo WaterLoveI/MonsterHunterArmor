@@ -16,8 +16,9 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         public static readonly int Move = 12;
         public static readonly int Mana = 20;
         public static readonly int Blight = 1;
+        public static readonly int Carve = 1;
         public static readonly int Lasting = 1;
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Move, Mana, Blight, Lasting);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Move, Mana, Blight,Carve, Lasting);
 
         public override void SetDefaults()
         {
@@ -35,6 +36,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.Blightproof += Blight;
             modPlayer.LastingPower += Lasting;
+            modPlayer.Carving += Carve;
         }
         public override void AddRecipes()
         {

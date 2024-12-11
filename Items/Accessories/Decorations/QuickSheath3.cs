@@ -7,7 +7,7 @@ namespace MHArmorSkills.Items.Accessories.Decorations
 {
     public class QuickSheath3 : ModItem
     {
-        public static readonly int SkillPoint = 3;
+        public static readonly int SkillPoint = 2;
 
         public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(SkillPoint);
 
@@ -24,7 +24,7 @@ namespace MHArmorSkills.Items.Accessories.Decorations
         public override void UpdateEquip(Player player)
         {
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.QuickSheathNormalUp += 3;
+            modPlayer.QuickSheathNormalUp += 2;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
             SlotPlayer.DecorationThreeSlots -= 1;
         }

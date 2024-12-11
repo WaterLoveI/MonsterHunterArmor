@@ -13,13 +13,13 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
     [AutoloadEquip(EquipType.Legs)]
     public class ZinogreGreavesZ : ModItem
     {
-        public static readonly int Crit = 12;
-        public static readonly int Move = 10;
-        public static readonly int CritEye = 2;
-        public static readonly int Latent = 1;
+        public static readonly int Minion = 2;
+        public static readonly int Move = 15;
+        public static readonly int Evasion = 3;
+        public static readonly int TremorRes = 2;
         public static readonly int Unscathed = 1;
-        public static readonly int Decor1 = 2;
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Crit, Move, CritEye, Latent,Unscathed, Decor1);
+        public static readonly int Decor1 = 1;
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Minion, Move, Evasion, TremorRes, Unscathed, Decor1);
 
         public override void SetDefaults()
         {
@@ -33,13 +33,14 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
         public override void UpdateEquip(Terraria.Player player)
         {
             player.moveSpeed += Move/100f;
-            player.GetCritChance<GenericDamageClass>() += Crit;
+            player.maxMinions += Minion;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.CritEye += CritEye;
-            modPlayer.LatentPower += Latent;
+            modPlayer.Evasion += Evasion;
+            modPlayer.TremorRes += TremorRes;
             modPlayer.Unscathed += Unscathed;
             modPlayer.ZinogreEssence += 1;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
+            SlotPlayer.DecorationThreeSlots += Decor1;
             SlotPlayer.DecorationOneSlots += Decor1;
         }
         public override void AddRecipes()

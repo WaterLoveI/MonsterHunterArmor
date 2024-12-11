@@ -15,12 +15,12 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
     {
         public static readonly int Damage = 12;
         public static readonly int Move = 15;
-        public static readonly int Atk = 2;
-        public static readonly int Polar = 1;
+        public static readonly int Atk = 3;
+        public static readonly int Ice = 3;
         public static readonly int Decor1 = 1;
         public static readonly int Decor2 = 1;
 
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Move, Atk, Polar, Decor1, Decor2);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Move, Atk, Ice, Decor1, Decor2);
 
         public override void SetDefaults()
         {
@@ -36,7 +36,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
             player.GetDamage<GenericDamageClass>() += Damage/100f;
             player.moveSpeed += Move/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.PolarHunter += Polar;
+            modPlayer.IceAttack += Ice;
             modPlayer.Attack += Atk;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
             SlotPlayer.DecorationOneSlots += Decor1;

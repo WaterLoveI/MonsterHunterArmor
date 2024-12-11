@@ -16,7 +16,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
         public static readonly int Damage = 12;
         public static readonly int Crit = 10;
         public static readonly int Ice = 3;
-        public static readonly int CritEye = 1;
+        public static readonly int CritEye = 2;
         public static readonly int Decor = 2;
 
         public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Crit, Ice, CritEye, Decor);

@@ -14,9 +14,10 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
     public class AstalosHelm : ModItem
     {
         public static readonly int Movespeed = 10;
-        public static readonly int ThunderAttack = 3;
+        public static readonly int ThunderAttack = 2;
+        public static readonly int Vault = 1;
 
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Movespeed, ThunderAttack);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Movespeed, ThunderAttack, Vault);
 
         public override void SetDefaults()
         {
@@ -32,7 +33,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             player.moveSpeed += Movespeed/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.ThunderAttack += ThunderAttack;
-            DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
+            modPlayer.Vault += Vault;
         }
         public override void AddRecipes()
         {

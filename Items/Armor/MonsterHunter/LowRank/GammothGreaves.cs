@@ -13,7 +13,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
     public class GammothGreaves : ModItem
     {
         public static readonly int MoveSpeed = 7;
-        public static readonly int Attack = 1;
+        public static readonly int Attack = 2;
         public static readonly int Polar = 1;
         public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(MoveSpeed, Attack, Polar);
 

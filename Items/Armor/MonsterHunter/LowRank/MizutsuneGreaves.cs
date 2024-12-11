@@ -15,7 +15,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
     {
         public static readonly int Move = 10;
         public static readonly int water = 2;
-        public static readonly int con = 1;
+        public static readonly int con = 2;
 
         public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Move, water, con);
 

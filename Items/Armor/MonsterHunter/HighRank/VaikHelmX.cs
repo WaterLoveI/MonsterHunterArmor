@@ -15,7 +15,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
     {
         public static readonly int Damage = 12;
         public static readonly int Move = 10;
-        public static readonly int WaterAtk = 2;
+        public static readonly int WaterAtk = 4;
         public static readonly int Razor = 1;
         public static readonly int Decor1 = 1;
         public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Move, WaterAtk, Razor, Decor1);

@@ -60,21 +60,22 @@ namespace MHArmorSkills.Global
             Player player = Main.LocalPlayer;
 
             #region Weapons
+            ElementsPlayer elementsPlayer = player.GetModPlayer<ElementsPlayer>();
             if (MHLists.fireelementList.Contains(item.type))
             {
-                EditTooltipByNum(0, (line) => line.Text = "Fire Element Weapon.");
+                AddTooltip($"Fire Element: {elementsPlayer.FinalFireElement}.");
             }
             if (MHLists.iceelementList.Contains(item.type))
             {
-                EditTooltipByNum(0, (line) => line.Text = "Ice Element Weapon.");
+                AddTooltip($"Ice Element: {elementsPlayer.FinalIceElement}.");
             }
             if (MHLists.thunderelementList.Contains(item.type))
             {
-                EditTooltipByNum(0, (line) => line.Text = "Thunder Element Weapon.");
+                AddTooltip($"Thunder Element: {elementsPlayer.FinalThunderElement}.");
             }
             if (MHLists.waterelementList.Contains(item.type))
             {
-                EditTooltipByNum(0, (line) => line.Text = "Water Element Weapon.");
+                AddTooltip($"Water Element: {elementsPlayer.FinalWaterElement}.");
             }
             #endregion
 
@@ -188,29 +189,29 @@ namespace MHArmorSkills.Global
                 {
                     if (player.GetModPlayer<ArmorSkills>().WaterAttack == 1)
                     {
-                        AddTooltip($"Water Attack Level {player.GetModPlayer<ArmorSkills>().WaterAttack} / 5: \n" +
+                        AddTooltip($"Water Attack Level {player.GetModPlayer<ArmorSkills>().WaterAttack} / 6: \n" +
                 $"Increase base damage by {player.GetModPlayer<ArmorSkills>().WaterAttack} and slighty increase knockback.");
                     }
                     if (player.GetModPlayer<ArmorSkills>().WaterAttack == 2)
                     {
-                        AddTooltip($"Water Attack Level {player.GetModPlayer<ArmorSkills>().WaterAttack} / 5: \n" +
+                        AddTooltip($"Water Attack Level {player.GetModPlayer<ArmorSkills>().WaterAttack} / 6: \n" +
                 $"Increase base damage by {player.GetModPlayer<ArmorSkills>().WaterAttack} and slighty increase knockback.");
                     }
                     if (player.GetModPlayer<ArmorSkills>().WaterAttack == 3)
                     {
-                        AddTooltip($"Water Attack Level {player.GetModPlayer<ArmorSkills>().WaterAttack} / 5: \n" +
+                        AddTooltip($"Water Attack Level {player.GetModPlayer<ArmorSkills>().WaterAttack} / 6: \n" +
                 $"Increase base damage by {player.GetModPlayer<ArmorSkills>().WaterAttack} and increase knockback.\n" +
                 $"Increase critical strike chance by {player.GetModPlayer<ArmorSkills>().WaterAttack + 2} and allows autofire");
                     }
                     if (player.GetModPlayer<ArmorSkills>().WaterAttack == 4)
                     {
-                        AddTooltip($"Water Attack Level {player.GetModPlayer<ArmorSkills>().WaterAttack} / 5: \n" +
+                        AddTooltip($"Water Attack Level {player.GetModPlayer<ArmorSkills>().WaterAttack} / 6: \n" +
                 $"Increase base damage by {player.GetModPlayer<ArmorSkills>().WaterAttack} and increase knockback.\n" +
                 $"Increase critical strike chance by {player.GetModPlayer<ArmorSkills>().WaterAttack + 2} and allows autofire");
                     }
                     if (player.GetModPlayer<ArmorSkills>().WaterAttack >= 5)
                     {
-                        AddTooltip($"Water Attack Level {player.GetModPlayer<ArmorSkills>().WaterAttack} / 5: \n" +
+                        AddTooltip($"Water Attack Level {player.GetModPlayer<ArmorSkills>().WaterAttack} / 6: \n" +
                 $"Increase base damage by 10% and increase knockback.\n" +
                 $"Increase critical strike chance by {player.GetModPlayer<ArmorSkills>().WaterAttack + 2} and allows autofire");
                     }
@@ -291,29 +292,29 @@ namespace MHArmorSkills.Global
                 {
                     if (player.GetModPlayer<ArmorSkills>().ThunderAttack == 1)
                     {
-                        AddTooltip($"Thunder Attack Level {player.GetModPlayer<ArmorSkills>().ThunderAttack} / 5: \n" +
+                        AddTooltip($"Thunder Attack Level {player.GetModPlayer<ArmorSkills>().ThunderAttack} / 6: \n" +
                 $"Increase base damage by {player.GetModPlayer<ArmorSkills>().ThunderAttack} and slighty increase knockback.");
                     }
                     if (player.GetModPlayer<ArmorSkills>().ThunderAttack == 2)
                     {
-                        AddTooltip($"Thunder Attack Level {player.GetModPlayer<ArmorSkills>().ThunderAttack} / 5: \n" +
+                        AddTooltip($"Thunder Attack Level {player.GetModPlayer<ArmorSkills>().ThunderAttack} / 6: \n" +
                 $"Increase base damage by {player.GetModPlayer<ArmorSkills>().ThunderAttack} and slighty increase knockback.");
                     }
                     if (player.GetModPlayer<ArmorSkills>().ThunderAttack == 3)
                     {
-                        AddTooltip($"Thunder Attack Level {player.GetModPlayer<ArmorSkills>().ThunderAttack} / 5: \n" +
+                        AddTooltip($"Thunder Attack Level {player.GetModPlayer<ArmorSkills>().ThunderAttack} / 6: \n" +
                 $"Increase base damage by {player.GetModPlayer<ArmorSkills>().ThunderAttack} and increase knockback.\n" +
                 $"Increase critical strike chance by {player.GetModPlayer<ArmorSkills>().ThunderAttack + 2} and allows autofire");
                     }
                     if (player.GetModPlayer<ArmorSkills>().ThunderAttack == 4)
                     {
-                        AddTooltip($"Thunder Attack Level {player.GetModPlayer<ArmorSkills>().ThunderAttack} / 5: \n" +
+                        AddTooltip($"Thunder Attack Level {player.GetModPlayer<ArmorSkills>().ThunderAttack} / 6: \n" +
                 $"Increase base damage by {player.GetModPlayer<ArmorSkills>().ThunderAttack} and increase knockback.\n" +
                 $"Increase critical strike chance by {player.GetModPlayer<ArmorSkills>().ThunderAttack + 2} and allows autofire");
                     }
                     if (player.GetModPlayer<ArmorSkills>().ThunderAttack >= 5)
                     {
-                        AddTooltip($"Thunder Attack Level {player.GetModPlayer<ArmorSkills>().ThunderAttack} / 5: \n" +
+                        AddTooltip($"Thunder Attack Level {player.GetModPlayer<ArmorSkills>().ThunderAttack} / 6: \n" +
                 $"Increase base damage by 10% and increase knockback.\n" +
                 $"Increase critical strike chance by {player.GetModPlayer<ArmorSkills>().ThunderAttack + 2} and allows autofire");
                     }
@@ -923,29 +924,29 @@ namespace MHArmorSkills.Global
                 {
                     if (player.GetModPlayer<ArmorSkills>().IceAttack == 1)
                     {
-                        AddTooltip($"Ice Attack Level {player.GetModPlayer<ArmorSkills>().IceAttack} / 5: \n" +
+                        AddTooltip($"Ice Attack Level {player.GetModPlayer<ArmorSkills>().IceAttack} / 6: \n" +
                 $"Increase base damage by {player.GetModPlayer<ArmorSkills>().IceAttack} and slighty increase knockback.");
                     }
                     if (player.GetModPlayer<ArmorSkills>().IceAttack == 2)
                     {
-                        AddTooltip($"Ice Attack Level {player.GetModPlayer<ArmorSkills>().IceAttack} / 5: \n" +
+                        AddTooltip($"Ice Attack Level {player.GetModPlayer<ArmorSkills>().IceAttack} / 6: \n" +
                 $"Increase base damage by {player.GetModPlayer<ArmorSkills>().IceAttack} and slighty increase knockback.");
                     }
                     if (player.GetModPlayer<ArmorSkills>().IceAttack == 3)
                     {
-                        AddTooltip($"Ice Attack Level {player.GetModPlayer<ArmorSkills>().IceAttack} / 5: \n" +
+                        AddTooltip($"Ice Attack Level {player.GetModPlayer<ArmorSkills>().IceAttack} / 6: \n" +
                 $"Increase base damage by {player.GetModPlayer<ArmorSkills>().IceAttack} and increase knockback.\n" +
                 $"Increase critical strike chance by {player.GetModPlayer<ArmorSkills>().IceAttack + 2} and allows autofire");
                     }
                     if (player.GetModPlayer<ArmorSkills>().IceAttack == 4)
                     {
-                        AddTooltip($"Ice Attack Level {player.GetModPlayer<ArmorSkills>().IceAttack} / 5: \n" +
+                        AddTooltip($"Ice Attack Level {player.GetModPlayer<ArmorSkills>().IceAttack} / 6: \n" +
                 $"Increase base damage by {player.GetModPlayer<ArmorSkills>().IceAttack} and increase knockback.\n" +
                 $"Increase critical strike chance by {player.GetModPlayer<ArmorSkills>().IceAttack + 2} and allows autofire");
                     }
                     if (player.GetModPlayer<ArmorSkills>().IceAttack >= 5)
                     {
-                        AddTooltip($"Ice Attack Level {player.GetModPlayer<ArmorSkills>().IceAttack} / 5: \n" +
+                        AddTooltip($"Ice Attack Level {player.GetModPlayer<ArmorSkills>().IceAttack} / 6: \n" +
                 $"Increase base damage by 10% and increase knockback.\n" +
                 $"Increase critical strike chance by {player.GetModPlayer<ArmorSkills>().IceAttack + 2} and allows autofire");
                     }
@@ -1269,29 +1270,29 @@ namespace MHArmorSkills.Global
                 {
                     if (player.GetModPlayer<ArmorSkills>().FireAttack == 1)
                     {
-                        AddTooltip($"Fire Attack Level {player.GetModPlayer<ArmorSkills>().FireAttack} / 5: \n" +
+                        AddTooltip($"Fire Attack Level {player.GetModPlayer<ArmorSkills>().FireAttack} / 6: \n" +
                 $"Increase base damage by {player.GetModPlayer<ArmorSkills>().FireAttack} and slighty increase knockback.");
                     }
                     if (player.GetModPlayer<ArmorSkills>().FireAttack == 2)
                     {
-                        AddTooltip($"Fire Attack Level {player.GetModPlayer<ArmorSkills>().FireAttack} / 5: \n" +
+                        AddTooltip($"Fire Attack Level {player.GetModPlayer<ArmorSkills>().FireAttack} / 6: \n" +
                 $"Increase base damage by {player.GetModPlayer<ArmorSkills>().FireAttack} and slighty increase knockback.");
                     }
                     if (player.GetModPlayer<ArmorSkills>().FireAttack == 3)
                     {
-                        AddTooltip($"Fire Attack Level {player.GetModPlayer<ArmorSkills>().FireAttack} / 5: \n" +
+                        AddTooltip($"Fire Attack Level {player.GetModPlayer<ArmorSkills>().FireAttack} / 6: \n" +
                 $"Increase base damage by {player.GetModPlayer<ArmorSkills>().FireAttack} and increase knockback.\n" +
                 $"Increase critical strike chance by {player.GetModPlayer<ArmorSkills>().FireAttack + 2} and allows autofire");
                     }
                     if (player.GetModPlayer<ArmorSkills>().FireAttack == 4)
                     {
-                        AddTooltip($"Fire Attack Level {player.GetModPlayer<ArmorSkills>().FireAttack} / 5: \n" +
+                        AddTooltip($"Fire Attack Level {player.GetModPlayer<ArmorSkills>().FireAttack} / 6: \n" +
                 $"Increase base damage by {player.GetModPlayer<ArmorSkills>().FireAttack} and increase knockback.\n" +
                 $"Increase critical strike chance by {player.GetModPlayer<ArmorSkills>().FireAttack + 2} and allows autofire");
                     }
                     if (player.GetModPlayer<ArmorSkills>().FireAttack >= 5)
                     {
-                        AddTooltip($"Fire Attack Level {player.GetModPlayer<ArmorSkills>().FireAttack} / 5: \n" +
+                        AddTooltip($"Fire Attack Level {player.GetModPlayer<ArmorSkills>().FireAttack} / 6: \n" +
                 $"Increase base damage by 10% and increase knockback.\n" +
                 $"Increase critical strike chance by {player.GetModPlayer<ArmorSkills>().FireAttack + 2} and allows autofire");
                     }

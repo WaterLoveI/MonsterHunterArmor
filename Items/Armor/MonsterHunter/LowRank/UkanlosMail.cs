@@ -15,8 +15,9 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         public static readonly int Damage = 10;
         public static readonly int Crit = 10;
         public static readonly int Attack = 3;
+        public static readonly int Stunres = 3;
 
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Crit, Attack);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Crit, Attack,Stunres);
 
         public override void SetDefaults()
         {
@@ -33,7 +34,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             player.GetCritChance<GenericDamageClass>() += Crit;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.Attack += Attack;
-
+            modPlayer.Stunresist += Stunres;
         }
         public override void AddRecipes()
         {

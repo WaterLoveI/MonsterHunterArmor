@@ -30,6 +30,8 @@ using MHArmorSkills.Items.Accessories.Decorations.Mixed.Resuscitate;
 using MHArmorSkills.Items.Accessories.Decorations.Mixed.Spirit;
 using MHArmorSkills.Items.Accessories.Decorations.Mixed.TropicsHunter;
 using MHArmorSkills.Items.Accessories.Decorations.Mixed.Unscathed;
+using MHArmorSkills.Items.Armor.MonsterHunter.HighRank;
+using MHArmorSkills.Items.Armor.MonsterHunter.LowRank;
 using MHArmorSkills.Items.Weapons;
 using MHArmorSkills.NPCs.NormalNPC;
 using MHArmorSkills.NPCs.NormalNPC.Bugs;
@@ -42,8 +44,10 @@ namespace MHArmorSkills
 {
     public class MHLists
     {
+        public static List<int> TrueMeleeList;
         public static List<int> debuffList;
         public static List<int> buffList;
+        public static List<int> WhipbuffList;
         public static List<int> fireelementList;
         public static List<int> waterelementList;
         public static List<int> thunderelementList;
@@ -62,8 +66,72 @@ namespace MHArmorSkills
         public static List<int> ThreeSlotDecorations;
         public static List<int> MixedSlotDecorations;
         public static List<int> OutdoorsmanList;
+        public static List<int> ShowHairList;
         public static void LoadLists()
         {
+            TrueMeleeList = new List<int>()
+            {
+                ItemID.CopperShortsword,
+                ItemID.TinShortsword,
+                ItemID.IronShortsword,
+                ItemID.LeadShortsword,
+                ItemID.SilverShortsword,
+                ItemID.TungstenShortsword,
+                ItemID.GoldShortsword,
+                ItemID.PlatinumShortsword,
+                ItemID.Gladius,
+                ItemID.Spear,
+                ItemID.Trident,
+                ItemID.TheRottedFork,
+                ItemID.Swordfish,
+                ItemID.DarkLance,
+                ItemID.CobaltNaginata,
+                ItemID.PalladiumPike,
+                ItemID.MythrilHalberd,
+                ItemID.OrichalcumHalberd,
+                ItemID.AdamantiteGlaive,
+                ItemID.TitaniumTrident,
+                ItemID.Gungnir,
+                3836, // Ghastly Glaive
+                ItemID.ObsidianSwordfish,
+                ItemID.Terragrim,
+                ItemID.Arkhalis,
+                ItemID.JoustingLance,
+                ItemID.HallowJoustingLance,
+                ItemID.ShadowJoustingLance,
+                ItemID.PiercingStarlight,
+                ItemID.CobaltDrill,
+                ItemID.PalladiumDrill,
+                ItemID.MythrilDrill,
+                ItemID.OrichalcumDrill,
+                ItemID.AdamantiteDrill,
+                ItemID.TitaniumDrill,
+                ItemID.ChlorophyteDrill,
+                ItemID.Drax,
+                ItemID.VortexDrill,
+                ItemID.NebulaDrill,
+                ItemID.SolarFlareDrill,
+                ItemID.StardustDrill,
+                ItemID.CobaltChainsaw,
+                ItemID.SawtoothShark,
+                ItemID.PalladiumChainsaw,
+                ItemID.MythrilChainsaw,
+                ItemID.OrichalcumChainsaw,
+                ItemID.AdamantiteChainsaw,
+                ItemID.TitaniumChainsaw,
+                ItemID.ChlorophyteChainsaw,
+                ItemID.ButchersChainsaw,
+                ItemID.ChlorophyteJackhammer,
+                ItemID.Mace,
+                ItemID.FlamingMace,
+                ItemID.BallOHurt,
+                ItemID.TheMeatball,
+                ItemID.BlueMoon,
+                ItemID.Sunfury,
+                ItemID.DaoofPow,
+                ItemID.Anchor,
+            };
+
             debuffList = new List<int>()
             {
                 BuffID.Poisoned,
@@ -102,6 +170,33 @@ namespace MHArmorSkills
                 BuffType<WaterBlight>(),
                 BuffType<IceBlight>(),
                 BuffType<ThunderBlight>(),
+            };
+            WhipbuffList = new List<int>()
+            {
+                BuffID.CoolWhipPlayerBuff,
+                BuffID.ScytheWhipPlayerBuff,
+                BuffID.SwordWhipPlayerBuff,
+                BuffID.ThornWhipPlayerBuff,
+                BuffID.WeaponImbueConfetti,
+                BuffID.WeaponImbueCursedFlames,
+                BuffID.WeaponImbueFire,
+                BuffID.WeaponImbueGold,
+                BuffID.WeaponImbueIchor,
+                BuffID.WeaponImbueNanites,
+                BuffID.WeaponImbuePoison,
+                BuffID.WeaponImbueVenom,
+                BuffID.ParryDamageBuff,
+                BuffID.NebulaUpDmg1,
+                BuffID.NebulaUpDmg2,
+                BuffID.NebulaUpDmg3,
+                BuffID.NebulaUpLife1,
+                BuffID.NebulaUpLife2,
+                BuffID.NebulaUpLife3,
+                BuffID.NebulaUpMana1,
+                BuffID.NebulaUpMana2,
+                BuffID.NebulaUpMana3,
+                BuffID.ThornWhipPlayerBuff,
+                BuffID.ThornWhipPlayerBuff,
             };
             buffList = new List<int>()
             {
@@ -968,7 +1063,6 @@ ItemType<UnscathedRecUp>(),
                 ItemType<Poison1>(),
                 ItemType<PoisonCoating1>(),
                 ItemType<ProtectivePolish1>(),
-                ItemType<QuickSheath1>(),
                 ItemType<RazorSharp1>(),
                 ItemType<RecoverySpd1>(),
                 ItemType<RecUp1>(),
@@ -1057,6 +1151,7 @@ ItemType<UnscathedRecUp>(),
                 ItemType<PolarHunter2>(),
                 ItemType<Protection1>(),
                 ItemType<PunishDraw1>(),
+                ItemType<QuickSheath1>(),
                 ItemType<Redirection1>(),
                 ItemType<Resentment1>(),
                 ItemType<Resuscitate1>(),
@@ -1467,10 +1562,20 @@ ItemType<UnscathedRecUp>(),
                 ItemID.StrangePlant3,
                 ItemID.StrangePlant4,
             };
+            ShowHairList = new List<int>()
+            {
+               ItemType<VangisHelmX>(),
+               ItemType<MizutsuneHelmX>(),
+               ItemType<BnahabraHat>(),
+               ItemType<BnahabraHatX>(),
+            };
         }
         public static void UnloadLists()
         {
+            TrueMeleeList = null;
             debuffList = null;
+            WhipbuffList = null;
+            buffList = null;
             fireelementList = null;
             waterelementList = null;
             thunderelementList = null;
@@ -1488,6 +1593,7 @@ ItemType<UnscathedRecUp>(),
             ThreeSlotDecorations = null;
             MixedSlotDecorations = null;
             OutdoorsmanList = null;
+            ShowHairList = null;
         }
     }
 

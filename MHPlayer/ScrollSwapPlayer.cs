@@ -168,6 +168,7 @@ namespace MHArmorSkills.MHPlayer
         {
             ArmorSkills modPlayer = Player.GetModPlayer<ArmorSkills>();
             MHPlayerArmorSkill RecUp = Player.GetModPlayer<MHPlayerArmorSkill>();
+            ElementsPlayer elementsPlayer = Player.GetModPlayer<ElementsPlayer>();
 
             #region Scroll buff change
             if (SkillScrolls && !Player.HasBuff(ModContent.BuffType<ScrollChange>()) && ScrollActive)
@@ -197,6 +198,7 @@ namespace MHArmorSkills.MHPlayer
                 {
                     int Derecrit = DerelictionBoost * DerelictionStage;
                     Player.GetCritChance(DamageClass.Generic) += Derecrit;
+                    elementsPlayer.DerelictionElement += Derecrit;
                 }
                 
             }
@@ -204,6 +206,10 @@ namespace MHArmorSkills.MHPlayer
             #region Blue Scroll
             if (Player.HasBuff(ModContent.BuffType<BlueScroll>()))
             {
+                if (modPlayer.MailofHellfire >= 1)
+                {
+                    elementsPlayer.MailofHellfireElement += modPlayer.MailofHellfire * 0.1f;
+                }
                 if (FuriousCount >= 60)
                 {
                     FuriousCount = 0;
@@ -333,6 +339,7 @@ namespace MHArmorSkills.MHPlayer
                     int Duration = (int)(60 * 60 * RecUp.ProlongerTime);
                     Player.AddBuff(ModContent.BuffType<DragonConversion>(), Duration);
                 }
+                
                 #endregion
             }
             #endregion
@@ -388,8 +395,9 @@ namespace MHArmorSkills.MHPlayer
             {
                 int totaldamage = (int)(DragConvCritCount * DragonConversionRate);
                 Player.GetDamage(DamageClass.Generic) += totaldamage / 100f;
+                elementsPlayer.DragonConversion += (modPlayer.DragonConversion + 2)/10;
             }
-            if (DragConvCritCount == 0)
+            if (Player.HasBuff(ModContent.BuffType<DragonConversion>()) && (DragConvCritCount == 0 || modPlayer.DragonConversion == 0))
             {
                 Player.ClearBuff(ModContent.BuffType<DragonConversion>());
             }
@@ -488,6 +496,22 @@ namespace MHArmorSkills.MHPlayer
             if (Player.HasBuff(ModContent.BuffType<Beserk>()))
             {
                 BerserkDot += 35;
+            }
+            if (Player.HasBuff(ModContent.BuffType<HeavenSent>()))
+            {
+                HeaventSentTimer =0;
+            }
+        }
+
+        public override void OnHitByProjectile(Projectile proj, Player.HurtInfo hurtInfo)
+        {
+            if (Player.HasBuff(ModContent.BuffType<Beserk>()))
+            {
+                BerserkDot += 35;
+            }
+            if (Player.HasBuff(ModContent.BuffType<HeavenSent>()))
+            {
+                HeaventSentTimer = 0;
             }
         }
         public override void UpdateBadLifeRegen()

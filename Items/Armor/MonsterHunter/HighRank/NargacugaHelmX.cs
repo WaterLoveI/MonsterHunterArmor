@@ -13,7 +13,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
     [AutoloadEquip(EquipType.Head)]
     public class NargacugaHelmX : ModItem
     {
-        public static readonly int Damage = 5;
+        public static readonly int Damage = 10;
         public static readonly int Crit = 10;
         public static readonly int CritEye = 1;
         public static readonly int Distance = 1;

@@ -234,6 +234,7 @@ namespace MHArmorSkills.MHPlayer
             LastingPower = 0;
             LatentPower = 0;
             MailofHellfire = 0;
+            MastersTouchDeadeye = 0;
             MaximumMight = 0;
             Mushroomancer = 0;
             NegativeCrit = 0;
@@ -297,6 +298,7 @@ namespace MHArmorSkills.MHPlayer
             MHPlayerArmorSkill modPlayer = Player.GetModPlayer<MHPlayerArmorSkill>();
             ScrollSwapPlayer ScrollPlayer = Player.GetModPlayer<ScrollSwapPlayer>();
             SharpnessPlayer SharpPlayer = Player.GetModPlayer<SharpnessPlayer>();
+            ElementsPlayer elementsPlayer = Player.GetModPlayer<ElementsPlayer>();
             #region Essence
             if (ZinogreEssence >= 3)
             {
@@ -925,14 +927,17 @@ namespace MHArmorSkills.MHPlayer
                 if (ElementalAtk >= 1)
                 {
                     modPlayer.Elemental += 1;
+                    elementsPlayer.Elemental += 0.1f;
                 }
                 if (ElementalAtk >= 2)
                 {
                     modPlayer.Elemental += 1;
+                    elementsPlayer.Elemental += 0.1f;
                 }
                 if (ElementalAtk >= 3)
                 {
                     modPlayer.Elemental += 1;
+                    elementsPlayer.Elemental += 0.1f;
                 }
             }
             #endregion
@@ -1070,22 +1075,36 @@ namespace MHArmorSkills.MHPlayer
             if (FireAttack >= 1)
             {
                 modPlayer.FireAttack += 1;
+                elementsPlayer.FireElement += 3;
 
                 if (FireAttack >= 2)
                 {
                     modPlayer.FireAttack += 1;
+                    elementsPlayer.FireElement += 2;
                 }
                 if (FireAttack >= 3)
                 {
                     modPlayer.FireAttack += 1;
+                    elementsPlayer.FireElement += 2;
+                    elementsPlayer.FireElementBuff += 0.05f;
                 }
                 if (FireAttack >= 4)
                 {
                     modPlayer.FireAttack += 1;
+                    elementsPlayer.FireElement += 2;
+                    elementsPlayer.FireElementBuff += 0.05f;
                 }
                 if (FireAttack >= 5)
                 {
                     modPlayer.FireAttack += 1;
+                    elementsPlayer.FireElement += 2;
+                    elementsPlayer.FireElementBuff += 0.1f;
+                }
+                if (FireAttack >= 6)
+                {
+                    modPlayer.FireAttack += 1;
+                    elementsPlayer.FireElement += 2;
+                    elementsPlayer.FireElementBuff += 0.1f;
                 }
             }
             #endregion
@@ -1096,16 +1115,19 @@ namespace MHArmorSkills.MHPlayer
                 {
                     modPlayer.FireRes += 0.5f;
                     Player.statDefense += 1;
+                    elementsPlayer.FireElementDef += 3;
                 }
                 if (FireRes >= 2)
                 {
                     modPlayer.FireRes += 0.5f;
                     Player.statDefense += 2;
+                    elementsPlayer.FireElementDef += 3;
                 }
                 if (FireRes >= 3)
                 {
                     modPlayer.FireRes += 0.5f;
                     Player.statDefense += 3;
+                    elementsPlayer.FireElementDef += 3;
                 }
             }
             #endregion
@@ -1512,22 +1534,36 @@ namespace MHArmorSkills.MHPlayer
             if (IceAttack >= 1)
             {
                 modPlayer.IceAttack += 1;
+                elementsPlayer.IceElement += 3;
 
                 if (IceAttack >= 2)
                 {
                     modPlayer.IceAttack += 1;
+                    elementsPlayer.IceElement += 2;
                 }
                 if (IceAttack >= 3)
                 {
                     modPlayer.IceAttack += 1;
+                    elementsPlayer.IceElement += 2;
+                    elementsPlayer.IceElementBuff += 0.05f;
                 }
                 if (IceAttack >= 4)
                 {
                     modPlayer.IceAttack += 1;
+                    elementsPlayer.IceElement += 2;
+                    elementsPlayer.IceElementBuff += 0.05f;
                 }
                 if (IceAttack >= 5)
                 {
                     modPlayer.IceAttack += 1;
+                    elementsPlayer.IceElement += 2;
+                    elementsPlayer.IceElementBuff += 0.1f;
+                }
+                if (IceAttack >= 6)
+                {
+                    modPlayer.IceAttack += 1;
+                    elementsPlayer.IceElement += 2;
+                    elementsPlayer.IceElementBuff += 0.1f;
                 }
             }
             #endregion
@@ -1538,16 +1574,19 @@ namespace MHArmorSkills.MHPlayer
                 {
                     modPlayer.IceRes += 0.5f;
                     Player.statDefense += 1;
+                    elementsPlayer.IceElementDef += 3;
                 }
                 if (IceRes >= 2)
                 {
                     modPlayer.IceRes += 0.5f;
                     Player.statDefense += 2;
+                    elementsPlayer.IceElementDef += 3;
                 }
                 if (IceRes >= 3)
                 {
                     modPlayer.IceRes += 0.5f;
                     Player.statDefense += 3;
+                    elementsPlayer.IceElementDef += 3;
                 }
             }
             #endregion
@@ -1583,10 +1622,12 @@ namespace MHArmorSkills.MHPlayer
                 if (KushalaBlessing >= 1)
                 {
                     modPlayer.KushBless += 1;
+                    elementsPlayer.KushalaBuff += 0.1f;
                 }
                 if (KushalaBlessing >= 2)
                 {
                     modPlayer.KushBless += 1;
+                    elementsPlayer.KushalaBuff += 0.1f;
                 }
                 if (KushalaBlessing >= 3)
                 {
@@ -2207,7 +2248,7 @@ namespace MHArmorSkills.MHPlayer
                 }
             }
             #endregion
-            #region
+            #region Stun Resist
             if (Stunresist >= 1 && Player.HasBuff(ModContent.BuffType<Stunned>()))
             {
                 Player.statDefense += 10;
@@ -2240,10 +2281,12 @@ namespace MHArmorSkills.MHPlayer
                 if (TeostraBlessing >= 1)
                 {
                     modPlayer.TeosBless += 1;
+                    elementsPlayer.TeostraBuff += 0.1f;
                 }
                 if (TeostraBlessing >= 2)
                 {
                     modPlayer.TeosBless += 1;
+                    elementsPlayer.TeostraBuff += 0.1f;
                 }
                 if (TeostraBlessing >= 3)
                 {
@@ -2255,22 +2298,35 @@ namespace MHArmorSkills.MHPlayer
             if (ThunderAttack >= 1)
             {
                 modPlayer.ThunderAttack += 1;
-
+                elementsPlayer.ThunderElement += 3;
                 if (ThunderAttack >= 2)
                 {
                     modPlayer.ThunderAttack += 1;
+                    elementsPlayer.ThunderElement += 2;
                 }
                 if (ThunderAttack >= 3)
                 {
                     modPlayer.ThunderAttack += 1;
+                    elementsPlayer.ThunderElement += 2;
+                    elementsPlayer.ThunderElementBuff += 0.05f;
                 }
                 if (ThunderAttack >= 4)
                 {
                     modPlayer.ThunderAttack += 1;
+                    elementsPlayer.ThunderElement += 2;
+                    elementsPlayer.ThunderElementBuff += 0.05f;
                 }
                 if (ThunderAttack >= 5)
                 {
                     modPlayer.ThunderAttack += 1;
+                    elementsPlayer.ThunderElement += 2;
+                    elementsPlayer.ThunderElementBuff += 0.1f;
+                }
+                if (ThunderAttack >= 6)
+                {
+                    modPlayer.ThunderAttack += 1;
+                    elementsPlayer.ThunderElement += 2;
+                    elementsPlayer.ThunderElementBuff += 0.1f;
                 }
             }
             #endregion
@@ -2281,16 +2337,19 @@ namespace MHArmorSkills.MHPlayer
                 {
                     modPlayer.ThunderRes += 0.5f;
                     Player.statDefense += 1;
+                    elementsPlayer.ThunderElementDef += 3;
                 }
                 if (ThunderRes >= 2)
                 {
                     modPlayer.ThunderRes += 0.5f;
                     Player.statDefense += 2;
+                    elementsPlayer.ThunderElementDef += 3;
                 }
                 if (ThunderRes >= 3)
                 {
                     modPlayer.ThunderRes += 0.5f;
                     Player.statDefense += 3;
+                    elementsPlayer.ThunderElementDef += 3;
                 }
             }
             #endregion
@@ -2369,22 +2428,36 @@ namespace MHArmorSkills.MHPlayer
             if (WaterAttack >= 1)
             {
                 modPlayer.WaterAttack += 1;
+                elementsPlayer.WaterElement += 3;
 
                 if (WaterAttack >= 2)
                 {
                     modPlayer.WaterAttack += 1;
+                    elementsPlayer.WaterElement += 2;
                 }
                 if (WaterAttack >= 3)
                 {
                     modPlayer.WaterAttack += 1;
+                    elementsPlayer.WaterElement += 2;
+                    elementsPlayer.WaterElementBuff += 0.05f;
                 }
                 if (WaterAttack >= 4)
                 {
                     modPlayer.WaterAttack += 1;
+                    elementsPlayer.WaterElement += 2;
+                    elementsPlayer.WaterElementBuff += 0.05f;
                 }
                 if (WaterAttack >= 5)
                 {
                     modPlayer.WaterAttack += 1;
+                    elementsPlayer.WaterElement += 2;
+                    elementsPlayer.WaterElementBuff += 0.1f;
+                }
+                if (WaterAttack >= 6)
+                {
+                    modPlayer.WaterAttack += 1;
+                    elementsPlayer.WaterElement += 2;
+                    elementsPlayer.WaterElementBuff += 0.1f;
                 }
             }
             #endregion
@@ -2395,16 +2468,19 @@ namespace MHArmorSkills.MHPlayer
                 {
                     modPlayer.WaterRes += 0.5f;
                     Player.statDefense += 1;
+                    elementsPlayer.WaterElementDef += 3;
                 }
                 if (WaterRes >= 2)
                 {
                     modPlayer.WaterRes += 0.5f;
                     Player.statDefense += 2;
+                    elementsPlayer.WaterElementDef += 3;
                 }
                 if (WaterRes >= 3)
                 {
                     modPlayer.WaterRes += 0.5f;
                     Player.statDefense += 3;
+                    elementsPlayer.WaterElementDef += 3;
                 }
             }
             #endregion

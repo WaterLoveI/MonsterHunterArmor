@@ -15,8 +15,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
     {
         public static readonly int Crit = 10;
         public static readonly int Move = 5;
-        public static readonly int Evasion = 2;
-        public static readonly int Sneak = 2;
+        public static readonly int Evasion = 3;
+        public static readonly int Sneak = 3;
         public static readonly int Decor1 = 1;
         public static readonly int Decor2 = 1;
         public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Crit, Move, Evasion, Sneak, Decor1, Decor2);

@@ -11,7 +11,7 @@ using Terraria.ModLoader;
 namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 {
     [AutoloadEquip(EquipType.Legs)]
-    public class KiriLegGuardsX : ModItem
+    public class KirinLegGuardsX : ModItem
     {
         public static readonly int Crit = 12;
         public static readonly int Move = 20;

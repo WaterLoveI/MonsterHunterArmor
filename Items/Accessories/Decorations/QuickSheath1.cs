@@ -26,15 +26,15 @@ namespace MHArmorSkills.Items.Accessories.Decorations
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.QuickSheathNormalUp += 1;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationOneSlots -= 1;
+            SlotPlayer.DecorationTwoSlots -= 1;
         }
 
         public override bool CanEquipAccessory(Player player, int slot, bool modded)
         {
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            if (SlotPlayer.DecorationOneSlots >= 1)
+            if (SlotPlayer.DecorationTwoSlots >= 1)
             {
-                SlotPlayer.DecorationOneSlots -= 1;
+                SlotPlayer.DecorationTwoSlots -= 1;
                 return true;
 
             }

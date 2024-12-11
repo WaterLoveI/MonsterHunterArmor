@@ -129,6 +129,7 @@ namespace MHArmorSkills
                 ReplaceTooltip(tooltips, "Mods.MHArmorSkills.VanillaChanges.AncientCobaltChest", ItemID.AncientCobaltBreastplate);
                 ReplaceTooltip(tooltips, "Mods.MHArmorSkills.VanillaChanges.AncientCobaltLegs", ItemID.AncientCobaltLeggings);
                 ReplaceTooltip(tooltips, "Mods.MHArmorSkills.VanillaChanges.NecroHelmet", ItemID.NecroHelmet);
+                ReplaceTooltip(tooltips, "Mods.MHArmorSkills.VanillaChanges.NecroHelmet", ItemID.AncientNecroHelmet);
                 ReplaceTooltip(tooltips, "Mods.MHArmorSkills.VanillaChanges.NecroChest", ItemID.NecroBreastplate);
                 ReplaceTooltip(tooltips, "Mods.MHArmorSkills.VanillaChanges.NecroLegs", ItemID.NecroGreaves);
                 ReplaceTooltip(tooltips, "Mods.MHArmorSkills.VanillaChanges.ShadowHelmet", ItemID.ShadowHelmet);

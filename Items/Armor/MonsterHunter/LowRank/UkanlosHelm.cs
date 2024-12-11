@@ -16,9 +16,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         public static readonly int Crit = 5;
         public static readonly int Attack = 2;
         public static readonly int Handicraft = 2;
-        public static readonly int IceAttack = 1;
 
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Crit, Attack, Handicraft, IceAttack);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Crit, Attack, Handicraft);
 
         public override void SetDefaults()
         {
@@ -36,7 +35,6 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.HandicraftRapidFire += Handicraft;
             modPlayer.Attack += Attack;
-            modPlayer.IceAttack += IceAttack;
             
         }
         public override void AddRecipes()

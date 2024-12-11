@@ -17,7 +17,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
         public static readonly int Attack = 3;
         public static readonly int CritBoost = 2;
         public static readonly int Decor1 = 2;
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Crit, Move, Attack, CritBoost, Decor1);
+        public static readonly int Decor2 = 1;
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Crit, Move, Attack, CritBoost, Decor1, Decor2);
         public override void SetDefaults()
         {
             Item.width = 22;
@@ -35,7 +36,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
             modPlayer.CriticalBoost += CritBoost;
             modPlayer.Attack += Attack;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
-            SlotPlayer.DecorationTwoSlots += Decor1;
+            SlotPlayer.DecorationThreeSlots += Decor1;
+            SlotPlayer.DecorationOneSlots += Decor2;
         }
         public override void AddRecipes()
         {

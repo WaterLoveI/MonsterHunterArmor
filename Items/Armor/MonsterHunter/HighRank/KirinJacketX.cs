@@ -11,7 +11,7 @@ using Terraria.ModLoader;
 namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
 {
     [AutoloadEquip(EquipType.Body)]
-    public class KiriJacketX : ModItem
+    public class KirinJacketX : ModItem
     {
         public static readonly int Damage = 20;
         public static readonly int Crit = 10;

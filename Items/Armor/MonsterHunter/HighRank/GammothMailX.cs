@@ -15,10 +15,11 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
     {
         public static readonly int Damage = 12;
         public static readonly int Move = 5;
-        public static readonly int Atk = 3;
+        public static readonly int Atk = 4;
         public static readonly int Tremor = 2;
+        public static readonly int Decor1 = 1;
 
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Move, Atk, Tremor);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Move, Atk, Tremor, Decor1);
 
         public override void SetDefaults()
         {
@@ -36,6 +37,8 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.Attack += Atk;
             modPlayer.TremorRes += Tremor;
+            DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
+            SlotPlayer.DecorationThreeSlots += Decor1;
         }
         public override void AddRecipes()
         {

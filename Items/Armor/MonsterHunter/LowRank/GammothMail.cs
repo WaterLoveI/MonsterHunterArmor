@@ -13,7 +13,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
     public class GammothMail : ModItem
     {
         public static readonly int Damage = 5;
-        public static readonly int Attack = 2;
+        public static readonly int Attack = 3;
         public static readonly int Tremor = 2;
         public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Attack, Tremor);
 

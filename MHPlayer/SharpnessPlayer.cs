@@ -77,8 +77,10 @@ namespace MHArmorSkills.MHPlayer
             {
                 CurrentSharpness = 0;
             }
-
-            MaxSharpness = 80 + Handicraft;
+            int MiscSharpness = 0;
+            if (Main.hardMode) { MiscSharpness = 10; }
+            if (NPC.downedMoonlord) { MiscSharpness = 20; }
+            MaxSharpness = 80 + Handicraft + MiscSharpness;
 
             TrueMelee = false;
             if (Player.HeldItem != null && !Player.HeldItem.noMelee)
@@ -100,6 +102,11 @@ namespace MHArmorSkills.MHPlayer
 
                 }
 
+            }
+            int TrueMeleeMisc = Player.HeldItem.type;
+            if (MHLists.TrueMeleeList.Contains(TrueMeleeMisc))
+            {
+                TrueMelee = true;
             }
             TrueWhip = false;
             if (Player.HeldItem != null)
@@ -201,6 +208,11 @@ namespace MHArmorSkills.MHPlayer
             {
                 SharpnessDecrease(target, damageDone, hit.Crit);
             }
+            int TrueMeleeMisc = Player.HeldItem.type;
+            if (TrueMelee && MHLists.TrueMeleeList.Contains(TrueMeleeMisc))
+            {
+                SharpnessDecrease(target, damageDone, hit.Crit);
+            }
         }
         #region Sharpness Loss
         public void SharpnessDecrease(NPC target, int damage, bool crit)
@@ -265,7 +277,7 @@ namespace MHArmorSkills.MHPlayer
 
         public override void PostUpdateMiscEffects()
         {
-
+            ElementsPlayer elementsPlayer = Player.GetModPlayer<ElementsPlayer>();
             if (EitherTrue)
             {
                 #region Sharpness Colour
@@ -280,7 +292,7 @@ namespace MHArmorSkills.MHPlayer
                     {
                         Player.GetDamage(DamageClass.SummonMeleeSpeed) -= 0.25f;
                     }
-                   
+
                 }
                 if (CurrentSharpness > 0 && CurrentSharpness <= 50)
                 {
@@ -310,6 +322,7 @@ namespace MHArmorSkills.MHPlayer
                         Player.GetDamage(DamageClass.SummonMeleeSpeed) += 0.2f;
                         Player.whipRangeMultiplier *= 1.15f;
                     }
+                    elementsPlayer.SharpnessBuff += 0.06f;
                 }
                 if (CurrentSharpness > 135 && CurrentSharpness <= 160)
                 {
@@ -322,8 +335,9 @@ namespace MHArmorSkills.MHPlayer
                     {
                         Player.GetDamage(DamageClass.SummonMeleeSpeed) += 0.32f;
                     }
+                    elementsPlayer.SharpnessBuff += 0.15f;
                 }
-                if (CurrentSharpness > 160 )
+                if (CurrentSharpness > 160)
                 {
                     Player.AddBuff(ModContent.BuffType<SharpnessPurple>(), 2);
                     if (TrueMelee)
@@ -335,6 +349,7 @@ namespace MHArmorSkills.MHPlayer
                         Player.GetDamage(DamageClass.SummonMeleeSpeed) += 0.45f;
                         Player.whipRangeMultiplier *= 1.3f;
                     }
+                    elementsPlayer.SharpnessBuff += 0.25f;
                 }
                 #endregion
 

@@ -321,3 +321,123 @@ HermitaurBanner: {
 	DisplayName: Hermitaur Banner
 	Tooltip: ""
 }
+
+CoralBone1: {
+	DisplayName: Vivid Crimsonbone
+	Tooltip: Bone obtained in the Guiding Lands' coral region. Subterranean energy has altered its material properties.
+}
+
+CoralBone2: {
+	DisplayName: Coral Crimsonbone
+	Tooltip: Bone obtained in the Guiding Lands' coral region. Weathered as it is, its weight attests to its power.
+}
+
+CoralBone3: {
+	DisplayName: Vibrant Crimsonbone
+	Tooltip: Bone obtained in the Guiding Lands' coral region. Its curious form suggests untold potential.
+}
+
+CoralBone4: {
+	DisplayName: Guiding Reef Dragonbone
+	Tooltip: Bone obtained in the Guiding Lands' coral region. Trace of a bygone overlord, drawn by an unknown force.
+}
+
+ForestBone1: {
+	DisplayName: Mossy Greatbone
+	Tooltip: Bone obtained in the Guiding Lands' forest region. Subterranean energy has altered its material properties.
+}
+
+ForestBone2: {
+	DisplayName: Woodland Greatbone
+	Tooltip: Bone obtained in the Guiding Lands' forest region. Weathered as it is, its weight attests to its power.
+}
+
+ForestBone3: {
+	DisplayName: Slumbering Greatbone
+	Tooltip: Bone obtained in the Guiding Lands' forest region. Its curious form suggests untold potential.
+}
+
+ForestBone4: {
+	DisplayName: Guiding Forest Dragonbone
+	Tooltip: Bone obtained in the Guiding Lands' forest region. Traces of a bygone overlord, drawn by an unknown force.
+}
+
+RottedBone1: {
+	DisplayName: Malformed Frenzybone
+	Tooltip: Bone obtained in the Guiding Lands' rotten region. Subterranean energy has altered its material properties.
+}
+
+RottedBone2: {
+	DisplayName: Effluvial Frenzybone
+	Tooltip: Bone obtained in the Guiding Lands' rotted region. Weathered as it is, its weight attests to its power.
+}
+
+RottedBone3: {
+	DisplayName: Afflicted Frenzybone
+	Tooltip: A bone obtained in the Guiding Lands' rotted region. Its curious form suggests untold potential.
+}
+
+RottedBone4: {
+	DisplayName: Guiding Rotted Dragonbone
+	Tooltip: Bone obtained in the Guiding Lands' rotted region. Traces of a bygone overlord, drawn by an unknown force.
+}
+
+TundraBone1: {
+	DisplayName: Hoary Icebone
+	Tooltip: Bone obtained in the Guiding Lands' tundra region. Subterranean energy has alterered its material properties.
+}
+
+TundraBone2: {
+	DisplayName: Tundra Icebone
+	Tooltip: Bone obtained in the Guiding Lands' tundra region. Weathered as it is, its weight attests to its power.
+}
+
+TundraBone3: {
+	DisplayName: Everfrost Icebone
+	Tooltip: Bone obtained in the Guiding Lands' tundra region. Its curious form suggests untold potential.
+}
+
+TundraBone4: {
+	DisplayName: Guiding Tundra Dragonbone
+	Tooltip: Bone obtained in the Guiding Lands' tundra region. Traces of a bygone overlord, drawn by an unknown force.
+}
+
+VolcanicBone1: {
+	DisplayName: Simmering Wildbone
+	Tooltip: Bone obtained in the Guiding Lands' volcanic region. Subterranean energy has altered its material properties.
+}
+
+VolcanicBone2: {
+	DisplayName: Volcanic Wildbone
+	Tooltip: Bone obtained in the Guiding Lands' volcanic region. Weathered as it is, its weight attests to its power.
+}
+
+VolcanicBone3: {
+	DisplayName: Dragonscorched Wildbone
+	Tooltip: Bone obtained in the Guiding Lands' volcanic region. Its curious form suggests untold potential.
+}
+
+VolcanicBone4: {
+	DisplayName: Guiding Volcanic Dragonbone
+	Tooltip: Bone obtained in the Guiding Lands' volcanic region. Traces of a bygone overlord, drawn by an unknown force.
+}
+
+WildspireBone1: {
+	DisplayName: Weathered Cragbone
+	Tooltip: Bone obtained in the Guiding Lands' wildspire region. Subterranean energy has altered its material properties.
+}
+
+WildspireBone2: {
+	DisplayName: Wasteland Cragbone
+	Tooltip: Bone obtained in the Guiding Lands' wildspire region. Weathered as it is, its weight attests to its power.
+}
+
+WildspireBone3: {
+	DisplayName: Tempered Cragbone
+	Tooltip: Bone obtained in the Guiding Lands' wildspire region. Its curious form suggests untold potential.
+}
+
+WildspireBone4: {
+	DisplayName: Guiding Wasteland Dragonbone
+	Tooltip: Bone obtained in the Guiding Lands' wildspire region. Traces of a bygone overlord, drawn by an unknown force.
+}

@@ -1,6 +1,8 @@
 ﻿using MHArmorSkills.Buffs;
 using MHArmorSkills.Items.Accessories.Decorations;
+using MHArmorSkills.Items.Armor.MonsterHunter.LowRank;
 using MHArmorSkills.Items.Crafting_Materials.ArmorSphere;
+using MHArmorSkills.Items.Crafting_Materials.BiomeBones;
 using MHArmorSkills.Items.Crafting_Materials.MonsterMaterial;
 using MHArmorSkills.MHPlayer;
 using MHArmorSkills.MHPlayer.MHItemDropRule;
@@ -15,7 +17,7 @@ namespace MHArmorSkills.Global
 {
     public class GlobalNPCLoot : GlobalNPC
     {
-
+        
         public override void ModifyGlobalLoot(GlobalLoot globalLoot)
         {
             #region Gathering
@@ -219,6 +221,39 @@ namespace MHArmorSkills.Global
             globalLoot.Add(ItemDropRule.ByCondition(new HMUnderworldCondition(), ModContent.ItemType<HeatRes2>(), 220, 1, 1));
             globalLoot.Add(ItemDropRule.ByCondition(new HMUnderworldCondition(), ModContent.ItemType<FireRes2>(), 220, 1, 1));
             #endregion
+
+            #region Biome Bones
+            globalLoot.Add(ItemDropRule.ByCondition(new CoralBone1DropRule(), ModContent.ItemType<CoralBone1>(), 50, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new CoralBone2DropRule(), ModContent.ItemType<CoralBone2>(), 50, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new CoralBone3DropRule(), ModContent.ItemType<CoralBone3>(), 50, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new CoralBone4DropRule(), ModContent.ItemType<CoralBone4>(), 50, 1, 1));
+
+            globalLoot.Add(ItemDropRule.ByCondition(new ForestBone1DropRule(), ModContent.ItemType<ForestBone1>(), 50, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new ForestBone2DropRule(), ModContent.ItemType<ForestBone2>(), 50, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new ForestBone3DropRule(), ModContent.ItemType<ForestBone3>(), 50, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new ForestBone4DropRule(), ModContent.ItemType<ForestBone4>(), 50, 1, 1));
+
+            globalLoot.Add(ItemDropRule.ByCondition(new RottedBone1DropRule(), ModContent.ItemType<RottedBone1>(), 50, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new RottedBone2DropRule(), ModContent.ItemType<RottedBone2>(), 50, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new RottedBone3DropRule(), ModContent.ItemType<RottedBone3>(), 50, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new RottedBone4DropRule(), ModContent.ItemType<RottedBone4>(), 50, 1, 1));
+
+            globalLoot.Add(ItemDropRule.ByCondition(new TundraBone1DropRule(), ModContent.ItemType<TundraBone1>(), 50, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new TundraBone2DropRule(), ModContent.ItemType<TundraBone2>(), 50, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new TundraBone3DropRule(), ModContent.ItemType<TundraBone3>(), 50, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new TundraBone4DropRule(), ModContent.ItemType<TundraBone4>(), 50, 1, 1));
+
+            globalLoot.Add(ItemDropRule.ByCondition(new VolcanicBone1DropRule(), ModContent.ItemType<VolcanicBone1>(), 50, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new VolcanicBone2DropRule(), ModContent.ItemType<VolcanicBone2>(), 50, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new VolcanicBone3DropRule(), ModContent.ItemType<VolcanicBone3>(), 50, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new VolcanicBone4DropRule(), ModContent.ItemType<VolcanicBone4>(), 50, 1, 1));
+
+            globalLoot.Add(ItemDropRule.ByCondition(new WildspireBone1DropRule(), ModContent.ItemType<WildspireBone1>(), 50, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new WildspireBone2DropRule(), ModContent.ItemType<WildspireBone2>(), 50, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new WildspireBone3DropRule(), ModContent.ItemType<WildspireBone3>(), 50, 1, 1));
+            globalLoot.Add(ItemDropRule.ByCondition(new WildspireBone4DropRule(), ModContent.ItemType<WildspireBone4>(), 50, 1, 1));
+            #endregion
+
         }
         public override void ModifyNPCLoot(NPC npc, NPCLoot npcLoot)
         {
@@ -506,7 +541,11 @@ namespace MHArmorSkills.Global
 
                     break;
 
-                    #endregion
+                #endregion
+                case NPCID.Shark:
+
+                    npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<LagiacrusHelm>(), 50, 1, 1));
+                    break;
             }
         }
         private static int[] IllegalLootMultiplierNPCs => new int[] {

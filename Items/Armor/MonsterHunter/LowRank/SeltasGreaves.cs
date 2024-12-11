@@ -15,7 +15,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.LowRank
         public static readonly int Movement = 5;
         public static readonly int Minion = 1;
         public static readonly int Hero = 1;
-        public static readonly int GuardUp = 1;
+        public static readonly int GuardUp = 2;
 
         public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Movement, Minion, Hero, GuardUp);
 

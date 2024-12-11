@@ -14,12 +14,11 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
     public class ZinogreHelmZ : ModItem
     {
         public static readonly int Damage = 10;
-        public static readonly int Crit = 12;
-        public static readonly int Evasion = 2;
-        public static readonly int Latent = 1;
-        public static readonly int Unscathed = 1;
+        public static readonly int Minion = 1;
+        public static readonly int Evasion = 3;
+        public static readonly int Negative = 1;
         public static readonly int Decor1 = 1;
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Crit, Evasion, Latent,Unscathed, Decor1);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Minion, Evasion, Negative, Decor1);
 
         public override void SetDefaults()
         {
@@ -33,14 +32,14 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
         public override void UpdateEquip(Terraria.Player player)
         {
             player.GetDamage<GenericDamageClass>() += Damage/100f;
-            player.GetCritChance<GenericDamageClass>() += Crit;
+            player.maxMinions += Minion;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
-            modPlayer.LatentPower += Latent;
-            modPlayer.Unscathed += Unscathed;
+            modPlayer.NegativeCrit += Negative;
             modPlayer.Evasion += Evasion;
             modPlayer.ZinogreEssence += 1;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
             SlotPlayer.DecorationThreeSlots += Decor1;
+            SlotPlayer.DecorationOneSlots += Decor1;
         }
         public override bool IsArmorSet(Item head, Item body, Item legs)
         {

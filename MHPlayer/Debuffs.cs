@@ -1,5 +1,6 @@
 ﻿using MHArmorSkills.Buffs;
 using MHArmorSkills.Buffs.ArmorBuffs;
+using MHArmorSkills.Dusts;
 using MHArmorSkills.NPCs.NormalNPC;
 using MHArmorSkills.Projectiles;
 using Microsoft.Xna.Framework;
@@ -20,6 +21,7 @@ namespace MHArmorSkills.MHPlayer
         public bool TriggerExplosion;
         public int BlastTimer;
         public int StunnedHealthCheck;
+        public int StunnedTimer;
 
         public int FireBlightDoT;
 
@@ -40,6 +42,10 @@ namespace MHArmorSkills.MHPlayer
             #endregion
             #region Stunned
             StunnedHealthCheck = Player.statLife;
+            if (StunnedTimer > 0)
+            {
+                StunnedTimer--;
+            }
             #endregion
             if (Player.HasBuff(ModContent.BuffType<FireBlight>()))
             {
@@ -78,11 +84,12 @@ namespace MHArmorSkills.MHPlayer
             {
                 if (Main.expertMode)
                 {
-                    if (StunnedHealthCheck >= (Player.statLife + Player.statLifeMax2 * 0.25f))
+                    if (StunnedHealthCheck >= (Player.statLife + Player.statLifeMax2 * 0.25f) && StunnedTimer == 0)
                     {
-                        if (Main.rand.NextBool(5))
+                        if (Main.rand.NextBool(8))
                         {
-                            Player.AddBuff(ModContent.BuffType<Stunned>(), 120);
+                            Player.AddBuff(ModContent.BuffType<Stunned>(), 60);
+                            StunnedTimer = 10 * 60;
                         }
                     }
                 }
@@ -247,40 +254,42 @@ namespace MHArmorSkills.MHPlayer
             }
             if (Player.HasBuff(ModContent.BuffType<WaterBlight>()))
             {
-
-                for (int i = 0; i < 2; i++) // Adjust the number of dusts spawned
+                if (Main.rand.NextBool(3))
                 {
-                    int dust = Dust.NewDust(Player.position, Player.width + 5, Player.height + 5, DustID.Water, 0f, 0f, 0, Color.Blue, 0.7f);
-                    Vector2 spread = new Vector2(Main.rand.NextFloat(-1f, 1f), Main.rand.NextFloat(-1f, 1f));
-                    spread = spread.RotatedBy(Main.rand.NextFloat(0f, 360f)); // Random rotation for spread
-                    spread *= 0.8f; // Adjust the spread distance
+                    int dust = Dust.NewDust(Player.position, Player.width + 4, Player.height + 3, ModContent.DustType<WaterblightDust>(), 0f, 0f, 0, Color.White, 1f);
+                    Vector2 spread = new Vector2(Main.rand.NextFloat(-1.5f, 1.5f), Main.rand.NextFloat(-1.5f, 1.5f));
+                    spread = spread.RotatedBy(Main.rand.NextFloat(0f, 180f)); // Random rotation for spread
+                    spread *= 0.5f; // Adjust the spread distance
                     Main.dust[dust].velocity = spread;
-                    Main.dust[dust].noGravity = true;
                 }
+
 
 
             }
             if (Player.HasBuff(ModContent.BuffType<IceBlight>()))
             {
-                int dust = Dust.NewDust(Player.position, Player.width + 5, Player.height + 5, DustID.Snow, 0f, 0f, 0, Color.White, 0.4f);
-                Vector2 spread = new Vector2(Main.rand.NextFloat(-1f, 1f), Main.rand.NextFloat(-1f, 1f));
-                spread = spread.RotatedBy(Main.rand.NextFloat(0f, 360f)); // Random rotation for spread
-                spread *= 0.5f; // Adjust the spread distance
-                Main.dust[dust].velocity = spread;
-            }
-            if (Player.HasBuff(ModContent.BuffType<FireBlight>()))
-            {
-                
-                for (int i = 0; i < 2; i++) // Adjust the number of dusts spawned
+
+                if (Main.rand.NextBool(2))
                 {
-                    int dust = Dust.NewDust(Player.position, Player.width + 3, Player.height + 3, DustID.HeatRay, 0f, 0f, 0, Color.White, 1f);
-                    Vector2 spread = new Vector2(Main.rand.NextFloat(-1f, 1f), Main.rand.NextFloat(-1f, 1f));
+                    int dust = Dust.NewDust(Player.position, Player.width + 6, Player.height + 7, ModContent.DustType<IceblightDust>(), 0f, 0f, 0, Color.White, 0.4f);
+                    Vector2 spread = new Vector2(Main.rand.NextFloat(-1.5f, 1.5f), Main.rand.NextFloat(-1.5f, 1.5f));
                     spread = spread.RotatedBy(Main.rand.NextFloat(0f, 360f)); // Random rotation for spread
                     spread *= 0.5f; // Adjust the spread distance
                     Main.dust[dust].velocity = spread;
-                    Main.dust[dust].noGravity = true;
                 }
             }
+            if (Player.HasBuff(ModContent.BuffType<FireBlight>()))
+            {
+
+                int dust = Dust.NewDust(Player.position, Player.width + 4, Player.height + 3, ModContent.DustType<FireblightDust>(), 0f, 0f, 0, Color.White, 1f);
+                Vector2 spread = new Vector2(Main.rand.NextFloat(-1.5f, 1.5f), Main.rand.NextFloat(-1.5f, 1.5f));
+                spread = spread.RotatedBy(Main.rand.NextFloat(0f, 360f)); // Random rotation for spread
+                spread *= 0.5f; // Adjust the spread distance
+                Main.dust[dust].velocity = spread;
+                Main.dust[dust].noGravity = true;
+            }
+
+
         }
 
         public override void OnRespawn()
@@ -371,7 +380,17 @@ namespace MHArmorSkills.MHPlayer
             return base.PreKill(damage, hitDirection, pvp, ref playSound, ref genDust, ref damageSource);
         }
 
-
+        public override void ModifyHitNPC(NPC target, ref NPC.HitModifiers modifiers)
+        {
+            if (target.HasBuff(ModContent.BuffType<IceBlight>()))
+            {
+                modifiers.FinalDamage *= 1.05f;
+            }
+            if (target.HasBuff(ModContent.BuffType<ThunderBlight>()))
+            {
+                modifiers.CritDamage *= 1.05f;
+            }
+        }
     }
 }
 

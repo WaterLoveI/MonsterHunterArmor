@@ -16,10 +16,10 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
         public static readonly int Damage = 15;
         public static readonly int Melee = 15;
         public static readonly int Spirit = 2;
-        public static readonly int Slugger = 2;
+        public static readonly int StunRest = 2;
         public static readonly int Decor = 3;
 
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Melee, Spirit, Slugger, Decor);
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Damage, Melee, Spirit, StunRest, Decor);
 
         public override void SetDefaults()
         {
@@ -36,7 +36,7 @@ namespace MHArmorSkills.Items.Armor.MonsterHunter.HighRank
             player.GetAttackSpeed<MeleeDamageClass>() += Melee/100f;
             ArmorSkills modPlayer = player.GetModPlayer<ArmorSkills>();
             modPlayer.Spirit += Spirit;
-            modPlayer.Slugger += Slugger;
+            modPlayer.Stunresist += StunRest;
             DecorationSlots SlotPlayer = player.GetModPlayer<DecorationSlots>();
             SlotPlayer.DecorationTwoSlots += Decor;
         }

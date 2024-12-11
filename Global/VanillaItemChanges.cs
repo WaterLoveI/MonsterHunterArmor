@@ -269,6 +269,10 @@ namespace MHArmorSkills.Global
                     modPlayer.Unscathed += 1;
                     modPlayer.AntiBleeding = true;
                     break;
+                case ItemID.AncientNecroHelmet:
+                    modPlayer.Unscathed += 1;
+                    modPlayer.AntiBleeding = true;
+                    break;
                 case ItemID.NecroBreastplate:
                     modPlayer.Unscathed += 1;
                     modPlayer.ColdRes += 1;
